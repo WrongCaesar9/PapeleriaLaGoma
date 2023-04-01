@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Articulos de Papeleria y Novedades</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Artículos de Papelería y Novedades<br>"La Goma"</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <!-- Filtro por modelo -->
+        <select id="filtro-modelo">
+            <option value="">Todos los productos</option>
+            <option value="lapiceros">Lapiceros</option>
+            <option value="libretas">Libretas</option>
+            <option value="papeles">Papeles</option>
+        </select>
+
+        <!-- Filtro por precio -->
+        <select id="filtro-precio">
+            <option value="0">Todos los precios</option>
+            <option value="5">Hasta $5</option>
+            <option value="10">Hasta $10</option>
+            <option value="15">Hasta $15</option>
+        </select>
+
+        <section id="productos">
+            <h2>Productos disponibles</h2>
+            <div id="productos-contenedor"></div>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <cont><p>Nuestra papelería se encuentra en la calle Fresnos S/N Santa Maria, Chiconcuac, Estado de México.<br>Entre calle Adolfo Lopez Mateos y Veracrus<br></p></cont>
+        </section>
+
+        <section id="reservas">
+            <h2>Reservas</h2>
+            <ubic><p>Para hacer una reserva, por favor llámenos al 5547208122 o envíenos un correo electrónico a
+                moxagomezxdxd@gmail.com</p></ubic>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2021 LaGoma</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

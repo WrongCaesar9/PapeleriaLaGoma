@@ -1,0 +1,64 @@
+{
+    "productos": [
+        {
+            "nombre": "Papermate kilometrico",
+            "modelo": "lapiceros",
+            "img": "img/kilometrico.jpg",
+            "precio": 5
+        },
+        {
+            "nombre": "Pliego de caple",
+            "modelo": "papeles",
+            "img": "img/caple.jpg",
+            "precio": 7
+        },
+        {
+            "nombre": "Bic Cristal",
+            "modelo": "lapiceros",
+            "img": "img/bicris.jpg",
+            "precio": 3
+        },
+        {
+            "nombre": "Papel Bond Scool",
+            "modelo": "papeles",
+            "img": "img/papel bondscool.jpg",
+            "precio": 5
+        },
+        {
+            "nombre": "Azor Point",
+            "modelo": "lapiceros",
+            "img": "img/azorpoint.jpg",
+            "precio": 7
+        },
+        {
+            "nombre": "Cuaderno profesional Scribe Escolar Plus 100 hojas",
+            "modelo": "libretas",
+            "img": "img/Cuaderno profesional Scribe Escolar Plus 100 hojas.jpg",
+            "precio": 3
+        },
+        {
+            "nombre": "Cube",
+            "modelo": "libretas",
+            "img": "img/7-bicicleta.png",
+            "precio": 5
+        },
+        {
+            "nombre": "Bianchi",
+            "modelo": "papeles",
+            "img": "img/8-bicicleta.png",
+            "precio": 7
+        },
+        {
+            "nombre": "Merida",
+            "modelo": "papeles",
+            "img": "img/9-bicicleta.png",
+            "precio": 3
+        },
+        {
+            "nombre": "Kona",
+            "modelo": "libretas",
+            "img": "img/10-bicicleta.png",
+            "precio": 5
+        }
+    ]
+}
