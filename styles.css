@@ -14,12 +14,14 @@ body {
   nav {
     background-color: #9cd4fcb8;
     text-align: center;
+    margin: 3px;
+    padding: 0px;
   }
   
   nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
   }
   
   nav li {
@@ -71,18 +73,18 @@ body {
   }
 
   
-  #bicicletas-contenedor {
+  #productos-contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
 
 
-.bicicleta {
+.productos {
     width: 100%;
 }
 
-.bicicleta img {
+.productos img {
     width: 100%;
     object-fit: cover;
 }

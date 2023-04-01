@@ -10,55 +10,55 @@
             "nombre": "Pliego de caple",
             "modelo": "papeles",
             "img": "img/caple.jpg",
-            "precio": 7
+            "precio": 25
         },
         {
-            "nombre": "Bic Cristal",
+            "nombre": "Bic Cristal por Pz",
             "modelo": "lapiceros",
             "img": "img/bicris.jpg",
-            "precio": 3
+            "precio": 5
         },
         {
             "nombre": "Papel Bond Scool",
             "modelo": "papeles",
             "img": "img/papel bondscool.jpg",
-            "precio": 5
+            "precio": 145
         },
         {
-            "nombre": "Azor Point",
+            "nombre": "Azor Point por Pz",
             "modelo": "lapiceros",
             "img": "img/azorpoint.jpg",
-            "precio": 7
+            "precio": 6
         },
         {
             "nombre": "Cuaderno profesional Scribe Escolar Plus 100 hojas",
             "modelo": "libretas",
             "img": "img/Cuaderno profesional Scribe Escolar Plus 100 hojas.jpg",
-            "precio": 3
+            "precio": 30
         },
         {
-            "nombre": "Cube",
+            "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
             "modelo": "libretas",
-            "img": "img/7-bicicleta.png",
-            "precio": 5
+            "img": "img/Cuadernoswingmix.jpg",
+            "precio": 27
         },
         {
-            "nombre": "Bianchi",
+            "nombre": "Cartulina fosforecente",
             "modelo": "papeles",
-            "img": "img/8-bicicleta.png",
-            "precio": 7
+            "img": "img/cartufosfo.jpg",
+            "precio": 12
         },
         {
-            "nombre": "Merida",
+            "nombre": "Pliego de papel china",
             "modelo": "papeles",
-            "img": "img/9-bicicleta.png",
-            "precio": 3
+            "img": "img/papelchina.jpg",
+            "precio": 2
         },
         {
-            "nombre": "Kona",
+            "nombre": "Cuaderno 100 Hojas Profesional Norma",
             "modelo": "libretas",
-            "img": "img/10-bicicleta.png",
-            "precio": 5
+            "img": "img/cuadernonorma.jpg",
+            "precio": 50
         }
     ]
 }
