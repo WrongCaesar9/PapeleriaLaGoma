@@ -1,7 +1,7 @@
 {
     "productos": [
         {
-            "nombre": "Papermate kilometrico",
+            "nombre": "Papermate kilometrico por Pz",
             "modelo": "lapiceros",
             "img": "img/kilometrico.jpg",
             "precio": 5
@@ -66,8 +66,9 @@
             "img": "img/ladib.jpg",
             "precio": 90
         },
+        
         {
-            "nombre": "Post-IT BTS",
+            "nombre": "Agotado :(<br>Post-IT BTS",
             "modelo": "kawaii",
             "img": "img/postbts.jpg",
             "precio": 22
@@ -115,7 +116,7 @@
             "precio": 90
         },
         {
-            "nombre": "Solo queda 1 rosa.<br>Cutter pata de gato xd. Solo tengo negro, rosa y como la de la imagen :)",
+            "nombre": "Solo queda 1 rosa<br>Cutter pata de gato xd. Solo tengo negro, rosa y como la de la imagen :)",
             "modelo": "kawaii",
             "img": "img/cugat.jpg",
             "precio": 25
@@ -139,7 +140,7 @@
             "precio": 20
         },
         {
-            "nombre": "Agotado :(.<br> Engrapadora con corrector",
+            "nombre": "Agotado :(<br> Engrapadora con corrector",
             "modelo": "kawaii",
             "img": "img/grapcor.jpg",
             "precio": 35
