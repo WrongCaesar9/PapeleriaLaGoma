@@ -2,8 +2,33 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
+    background-color: rgba(247, 171, 255, 0.295);
+
   }
-  
+  /*
+  body{
+    background-color: #000000;
+    animation-name: colorchange;
+    animation-duration:120s;
+    animation-iteration-count: infinite;
+    font-family: 'Fugaz One',cursive ;
+}
+@keyframes colorchange {
+     0% {background-color: orangered;color:#000000; }
+    10% {background-color: orange;color:#222222; }
+    20% {background-color: #dac59f;color:#222222; }
+    30% {background-color: lightgreen;color:#414141; }
+    40% {background-color: rgb(8, 150, 175);color:#878787; }
+    50% {background-color: rgb(41, 77, 112);color:#A8A8A8; }
+    60% {background-color: rgb(137, 78, 255);color:#D0D0D0; }
+    70% {background-color: hotpink;color:#EDEDED; }
+    80% {background-color: pink;color:#FFFFFF; }
+    90% {background-color: #0036FF;color:#FFEFDA; }
+    100%{background-color: orangered;color:#FFE3C0; } 
+} 
+*/
+
   header {
     background-color: #1e78e7c7;
     color: white;
@@ -42,6 +67,7 @@ body {
   main {
     margin: 0 auto;
     max-width: 800px;
+  
   }
   
   section {
@@ -88,4 +114,32 @@ body {
 .productos img {
     width: 100%;
     object-fit: cover;
+}
+
+h1 {
+  font-size:15px;
+  padding-top:15px;
+  text-align:center;
+  font-size: 2vw;
+  font-weight:bold;
+  text-transform:uppercase;
+  color:white;
+  text-align:center ;
+
+  background-image:linear-gradient(to right,
+     orangered,
+      orange, gold, lightgreen,cyan,rgb(34, 71, 109), mediumpurple,hotpink,orangered
+       
+  );
+  background-size:110vw;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent ;
+  animation:color 180s linear infinite ;
+}
+
+
+@keyframes color {
+  100% {
+    background-position:-2000vw;  
+  }
 }
