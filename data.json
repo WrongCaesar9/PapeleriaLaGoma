@@ -59,19 +59,19 @@
             "modelo": "libretas",
             "img": "img/cuadernonorma.jpg",
             "precio": 50
-        }
+        },
         {
             "nombre": "Caja lapices desde 1H hasta 12B",
             "modelo": "kawai",
             "img": "img/ladib.jpg",
             "precio": 90
-        }
+        },
         {
             "nombre": "Post IT BTS",
             "modelo": "kawai",
             "img": "img/postbts.jpg",
             "precio": 22
-        }
+        },
         {
             "nombre": "Lapiz Infinito con goma",
             "modelo": "kawai",
