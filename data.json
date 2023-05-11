@@ -62,19 +62,121 @@
         },
         {
             "nombre": "Caja lapices desde 1H hasta 12B",
-            "modelo": "kawai",
+            "modelo": "kawaii",
             "img": "img/ladib.jpg",
             "precio": 90
         },
         {
-            "nombre": "Post IT BTS",
-            "modelo": "kawai",
+            "nombre": "Post-IT BTS",
+            "modelo": "kawaii",
             "img": "img/postbts.jpg",
             "precio": 22
         },
         {
+            "nombre": "Post-IT BTS Grande. Los tres colores disponibles",
+            "modelo": "kawaii",
+            "img": "img/postbtsg.jpg",
+            "precio": 35
+        },
+        {
+            "nombre": "Pluma Kurumi con 10 colores",
+            "modelo": "kawaii",
+            "img": "img/lapkudiez.jpg",
+            "precio": 30
+        },
+        {
+            "nombre": "Pluma Fuente color azul(pinta chido)",
+            "modelo": "kawaii",
+            "img": "img/plufu.jpg",
+            "precio": 35
+        },
+        {
+            "nombre": "Plumon doble punta",
+            "modelo": "kawaii",
+            "img": "img/plu605.jpg",
+            "precio": 50
+        },
+        {
+            "nombre": "Marcatextos borrables, 6 piezas",
+            "modelo": "kawaii",
+            "img": "img/marbo.jpg",
+            "precio": 50
+        },
+        {
+            "nombre": "Marcatexto doble punta, 6 piezas",
+            "modelo": "kawaii",
+            "img": "img/postbtsg.jpg",
+            "precio": 40
+        },
+        {
+            "nombre": "Pluma Kurumi 12 pz a $90, si solo deseas una son a $10",
+            "modelo": "kawaii",
+            "img": "img/kubo12.jpg",
+            "precio": 90
+        },
+        {
+            "nombre": "Cutter pata de gato xd. Solo tengo negro, rosa y como la de la imagen :)",
+            "modelo": "kawaii",
+            "img": "img/cugat.jpg",
+            "precio": 25
+        },
+        {
+            "nombre": "Pluma con plumin Fluorecentes, BTS y Kurumi",
+            "modelo": "kawaii",
+            "img": "img/plubtsku.jpg",
+            "precio": 30
+        },
+        {
+            "nombre": "Post-IT como se muestran el la imagen",
+            "modelo": "kawaii",
+            "img": "img/poskubtso.jpg",
+            "precio": 25
+        },
+        {
+            "nombre": "Goma de figuritas",
+            "modelo": "kawaii",
+            "img": "img/gomfig.jpg",
+            "precio": 20
+        },
+        {
+            "nombre": "Engrapadora con corrector",
+            "modelo": "kawaii",
+            "img": "img/grapcor.jpg",
+            "precio": 35
+        },
+        {
+            "nombre": "Mini(tamaño estandar) Engrapadora",
+            "modelo": "kawaii",
+            "img": "img/postbtsg.jpg",
+            "precio": 30
+        },
+        {
+            "nombre": "Cutter 9mm metalico",
+            "modelo": "kawaii",
+            "img": "img/cuttry.jpg",
+            "precio": 12
+        },
+        {
+            "nombre": "Bocina FX 3 pulgadas, 6W, lector de MicroSD y USB, Radio FM, Bluetooth",
+            "modelo": "kawaii",
+            "img": "img/ms1619.jpg",
+            "precio": 100
+        },
+        {
+            "nombre": "LEGOS, hay de Minecraf, Star Union xd, y Plantas vs Zombies",
+            "modelo": "kawaii",
+            "img": "img/legos.jpg",
+            "precio": 40
+        },
+        {
+            "nombre": "Corrector con plumón doble punta y pluma de gel",
+            "modelo": "kawaii",
+            "img": "img/postbtsg.jpg",
+            "precio": 30
+        },
+        {
             "nombre": "Lapiz Infinito con goma",
-            "modelo": "kawai",
+            "modelo": "kawaii",
             "img": "img/lafi.jpg",
             "precio": 10
         }

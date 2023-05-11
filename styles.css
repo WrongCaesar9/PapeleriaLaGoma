@@ -10,7 +10,7 @@ body {
     text-align: center;
     padding: 10px;
   }
-  
+
   nav {
     background-color: #9cd4fcb8;
     text-align: center;
@@ -66,6 +66,7 @@ body {
   } 
 
   footer {
+    font-size: 10;
     background-color: #0066ffc2;
     color: white;
     text-align: center;
