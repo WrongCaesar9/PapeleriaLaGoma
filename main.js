@@ -57,7 +57,7 @@ function mostrarProductos() {
     });
 }
 window.onscroll = function(){
-    console.log(document.documentElement.scrollTop);
+    //console.log(document.documentElement.scrollTop);
     if(document.documentElement.scrollTop > 200) {
       document.querySelector('.go-top-container').classList.add('show');
        
