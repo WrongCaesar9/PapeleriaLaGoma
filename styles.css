@@ -162,7 +162,7 @@ h1 {
   background: #2071b2;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.5s;
   position: absolute;
   top: 70%;
   left: 60%;
@@ -185,7 +185,7 @@ h1 {
 }
 
 .show .go-top-button {
-  animation: popup 0.3s ease-in-out;
+  animation: popup 0.7s ease-in-out;
   width: 3.6rem;
   height: 3.6rem;
   z-index: 5;

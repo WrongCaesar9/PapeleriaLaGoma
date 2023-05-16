@@ -58,7 +58,7 @@ function mostrarProductos() {
 }
 window.onscroll = function(){
     console.log(document.documentElement.scrollTop);
-    if(document.documentElement.scrollTop > 100) {
+    if(document.documentElement.scrollTop > 200) {
       document.querySelector('.go-top-container').classList.add('show');
        
     }
@@ -70,7 +70,7 @@ window.onscroll = function(){
   document.querySelector('.go-top-container').addEventListener('click', () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth"
     });
   });
 // Agregar eventos a los filtros para que al cambiar su valor, se vuelva a mostrar los articulos
