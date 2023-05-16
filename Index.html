@@ -1,79 +1,116 @@
 <!DOCTYPE html>
-<html class="no-js" lang="es"></html>
+<html lang="es">
+
+</html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Articulos de Papeleria, Novedades y Recargas</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-   
+
     <header>
-        <img class="header__logo-image" style="max-width: 100px" style="height: 100px" width="200px" height="100px" align="left" src="/logos/lagoma.png" alt="lagoma">
-        <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="70" height="70" align="right"alt="Whatsapp" onclick="window.location.href='https://wa.me/525515833826' "style="padding-right: 30px; padding-top: 30px;">
-        <h1>Artículos de Papelería y Novedades<br>"La Goma"</h1>
         
+        <img class="header__logo-image" style="max-width: 150px" style="max-height: 150px;" width="150px" height="150px"
+            align="left" src="/logos/lagoma.png" alt="lagoma">
+        <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="150" height="150" align="right"
+            alt="Whatsapp" onclick="window.location.href='https://wa.me/525515833826'" style="padding-right: 30px;">
+        <h1>Artículos de Papelería, Novedades y Recargas<br>"La Goma"</h1>
+    
         <marquee behavior="scroll" direction="left" scrollamount="12">
             <div>
-                <span style="color: #0a0a0a" class="stickerTit1">&nbsp;&nbsp;Ve a "Todos los productos" y selecciona "Papelería Kawaii TESChi". Mandame mensaje si te gusto algo(toca el logo de whatsapp), Mañana de todos modos tratare de llevar algunas cosillas.También si no has impreso lo de Orleny te lo imprimo, tienen hasta mañana a las 7:30 am xD. Proximamente, "Arigurumis". A lo que parece mas de Papeleria no le hagan caso, aun esta en desarrollo la pagina xdddd&nbsp;</span>
-        </div>
-    </marquee> 
-   
+                <span style="color: #0a0a0a" class="stickerTit1">&nbsp;&nbsp;Ve a "Todos los productos" y selecciona
+                    "Papelería Kawaii TESChi". Mandame mensaje si te gusto algo(toca el logo de whatsapp). Impresiones
+                    para Orleny, tienen hasta mañana a las 6:30 am xD.&nbsp;</span>
+            </div>
+        </marquee>
     </header>
+
     <nav>
-        <ul style="height: 30px;">
+        <ul style="height: 18px;">
             <li><a href="#productos">Productos</a></li>
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#pedidos">Pedidos</a></li>
             <li><a href="#avonfraiche">Info. Avon y Fraiche</a></li>
         </ul>
     </nav>
-    <main>
 
+    <main>
         <!-- Filtro por modelo -->
         <select id="filtro-modelo" style="height: 30px;">
             <option value="">Todos los productos</option>
-            <option value="kawaii">Papeleria Kawaii TESChi</option>
-            <option value="lapiceros">Lapiceros</option>
-            <option value="libretas">Libretas</option>
-            <option value="papeles">Papeles</option>
+            <option value="kawaii">Papelería Kawaii TESChi</option>
+            <option value="Lapiceros">Lapiceros</option>
+            <option value="Libretas">Libretas</option>
+            <option value="Papeles">Papeles</option>
+            <option value="colores">Colores</option>
+            <option value="Oficina">Oficina</option>
+            <option value="Electrónica">Electrónica</option>
+            <option value="pegamentos y adhesivos">Pegamentos y adhesivos</option>
         </select>
-
+    
         <!-- Filtro por precio -->
         <select id="filtro-precio" style="height: 30px;">
             <option value="0">Todos los precios</option>
+            <option value="5">Hasta $5</option>
+            <option value="10">Hasta $10</option>
             <option value="30">Hasta $30</option>
             <option value="50">Hasta $50</option>
             <option value="100">Hasta $100</option>
-            <option value="100">Hasta $200</option>
+            <option value="200">Hasta $200</option>
         </select>
 
         <section id="productos">
             <h2>Productos disponibles</h2>
-            <div id="productos-contenedor"></div>
-        </section>
+            <div id="productos-contenedor"></div>     
+</section>
 
         <section id="avonfraiche">
             <h2>Contamos con productos de Avon y Fraiche</h2>
-            <cont><p>Ven y conoce la calidad de los productos Avon y la gran variedad de fragancias Fraiche que despertaran tu creatividad<br></p></cont>
+            <cont>
+                <p>Ven y conoce la calidad de los productos Avon y la gran variedad de fragancias Fraiche que
+                    despertaran tu creatividad<br></p>
+            </cont>
         </section>
 
         <section id="ubicacion">
             <h2>Ubicación</h2>
-            <cont><p>Nuestra papelería se encuentra en la calle Fresnos S/N Santa Maria, Chiconcuac, Estado de México.<br>Entre calle Adolfo Lopez Mateos y Veracruz<br></p></cont>
+            <cont>
+                <p>Nuestra papelería se encuentra en la calle Fresnos S/N Santa Maria, Chiconcuac, Estado de
+                    México.<br>Entre calle Adolfo Lopez Mateos y Veracruz<br></p>
+            </cont>
         </section>
 
         <section id="pedidos">
             <h2>Pedidos</h2>
-            <ubic><p>Para hacer un pedido, por favor envienos un WhatsApp al:<br>+52 5515833826 <br><br>O al correo electrónico:<br>
-                moxagomez489@gmail.com - josuejuarez12396@gmail.com</p></ubic>
+            <ubic>
+                <p>Para hacer un pedido, por favor envienos un WhatsApp al:<br>+52 5515833826 <br><br>O al correo
+                    electrónico:<br>
+                    moxagomez489@gmail.com - josuejuarez12396@gmail.com</p>
+            </ubic>
         </section>
 
+        <div class="go-top-container">
+            <div class="go-top-button">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+
     </main>
+
     <footer>
-        <p>Copyright © 2023 LaGoma</p>
-        <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/525515833826'">
+        <p>Copyright © 2023 "La Goma"</p>
+        <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp"
+            onclick="window.location.href='https://wa.me/525547208122'">
+            <img style="margin-left: 60px;" class="btn-instagram" src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png" width="64" height="64" alt="Whatsapp"
+             onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'" >
     </footer>
-    <script src="main.js"></script>
+
+
+<script src="main.js"></script>
 </body>
 
 </html>

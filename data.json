@@ -1,62 +1,122 @@
 {
     "productos": [
         {
-            "nombre": "Papermate kilometrico por Pz",
-            "modelo": "lapiceros",
-            "img": "img/kilometrico.jpg",
+            "nombre": "Kilometrico<br>Punto Mediano",
+            "modelo": "Lapiceros",
+            "img": "img/ki_n_med.jpg",
             "precio": 5
         },
         {
+            "nombre": "Kilometrico<br>Punto Fino",
+            "modelo": "Lapiceros",
+            "img": "img/ki_n_fino.jpg",
+            "precio": 6
+        },        
+        {
             "nombre": "Pliego de caple",
-            "modelo": "papeles",
+            "modelo": "Papeles",
             "img": "img/caple.jpg",
             "precio": 25
         },
         {
-            "nombre": "Bic Cristal por Pz",
-            "modelo": "lapiceros",
+            "nombre": "Bic Cristal",
+            "modelo": "Lapiceros",
             "img": "img/bicris.jpg",
             "precio": 5
         },
         {
             "nombre": "Papel Bond Scool",
-            "modelo": "papeles",
+            "modelo": "Papeles",
             "img": "img/papel bondscool.jpg",
             "precio": 145
         },
         {
-            "nombre": "Azor Point por Pz",
-            "modelo": "lapiceros",
+            "nombre": "Azor Point<br>Puno Fino",
+            "modelo": "Lapiceros",
             "img": "img/azorpoint.jpg",
             "precio": 6
         },
         {
+            "nombre": "Colores Smarty Redondos 12 pzs",
+            "modelo": "colores",
+            "img": "img/12smartcir.jpg",
+            "precio": 65
+        },
+        {
+            "nombre": "SUPER GLUE<br>2 x $10<br>12 x $40",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/superglue.jpg",
+            "precio": 7
+        },
+        {
+            "nombre": "Cargador Tipo C<br>Marca FX",
+            "modelo": "Electrónica",
+            "img": "img/char_tp_eco.jpg",
+            "precio": 50
+        },
+        {
+            "nombre": "Cargador Tipo V8<br>Marca FX",
+            "modelo": "Electrónica",
+            "img": "img/char_v8_616_eco.jpg",
+            "precio": 40
+        },
+        {
+            "nombre": "Cargador de 3 puntas<br>V8 - C -Lightning",
+            "modelo": "Electrónica",
+            "img": "img/char_v8_616_eco.jpg",
+            "precio": 35
+        },       
+        {
+            "nombre": "Mouse econonico<br>Marca FX",
+            "modelo": "Electrónica",
+            "img": "img/mo_3037.jpg",
+            "precio": 40
+        }, 
+        {
+            "nombre": "Cable Magnético<br>Tipo: V8 y C",
+            "modelo": "Electrónica",
+            "img": "img/char_mg.jpg",
+            "precio": 35
+        },
+        {
+            "nombre": "HDMI 1.5 metros",
+            "modelo": "Electrónica",
+            "img": "img/hdmi_1_5.jpg",
+            "precio": 40
+        },
+        {
+            "nombre": "Sacapuntas con deposito",
+            "modelo": "Oficina",
+            "img": "img/sp_eco.jpg",
+            "precio": 10
+        },
+        {
             "nombre": "Cuaderno profesional Scribe Escolar Plus 100 hojas",
-            "modelo": "libretas",
+            "modelo": "Libretas",
             "img": "img/Cuaderno profesional Scribe Escolar Plus 100 hojas.jpg",
             "precio": 30
         },
         {
             "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
-            "modelo": "libretas",
+            "modelo": "Libretas",
             "img": "img/Cuadernoswingmix.jpg",
             "precio": 27
         },
         {
             "nombre": "Cartulina fosforecente",
-            "modelo": "papeles",
+            "modelo": "Papeles",
             "img": "img/cartufosfo.jpg",
             "precio": 12
         },
         {
             "nombre": "Pliego de papel china",
-            "modelo": "papeles",
+            "modelo": "Papeles",
             "img": "img/papelchina.jpg",
             "precio": 2
         },
         {
             "nombre": "Cuaderno 100 Hojas Profesional Norma",
-            "modelo": "libretas",
+            "modelo": "Libretas",
             "img": "img/cuadernonorma.jpg",
             "precio": 50
         },
@@ -80,7 +140,7 @@
             "precio": 35
         },
         {
-            "nombre": "Pluma Kurumi con 10 colores",
+            "nombre": "Pluma Kuromi con 10 colores",
             "modelo": "kawaii",
             "img": "img/lapkudiez.jpg",
             "precio": 30
@@ -92,7 +152,7 @@
             "precio": 35
         },
         {
-            "nombre": "Plumon doble punta",
+            "nombre": "Agotado :(<br>Plumon doble punta",
             "modelo": "kawaii",
             "img": "img/plu605.jpg",
             "precio": 50
@@ -110,19 +170,19 @@
             "precio": 40
         },
         {
-            "nombre": "Pluma Kurumi 12 pz a $90, si solo deseas una son a $10",
+            "nombre": "Pluma Kuromi 12 pz a $90, si solo deseas una son a $10",
             "modelo": "kawaii",
             "img": "img/kubo12.jpg",
             "precio": 90
         },
         {
-            "nombre": "Solo queda 1 rosa<br>Cutter pata de gato xd. Solo tengo negro, rosa y como la de la imagen :)",
+            "nombre": "Agotado :(<br>Cutter pata de gato",
             "modelo": "kawaii",
             "img": "img/cugat.jpg",
             "precio": 25
         },
         {
-            "nombre": "Pluma con plumin Fluorecentes, BTS y Kurumi",
+            "nombre": "Pluma con plumin Fluorecente, solo queda BTS",
             "modelo": "kawaii",
             "img": "img/plubtsku.jpg",
             "precio": 30
@@ -140,7 +200,7 @@
             "precio": 20
         },
         {
-            "nombre": "Agotado :(<br> Engrapadora con corrector",
+            "nombre": "Agotado :(<br>Engrapadora con corrector",
             "modelo": "kawaii",
             "img": "img/grapcor.jpg",
             "precio": 35
@@ -164,19 +224,19 @@
             "precio": 100
         },
         {
-            "nombre": "LEGOS, hay de Minecraf, Star Union xd, y Plantas vs Zombies",
+            "nombre": "LEGOS:<br>Minecraf<br>Star Union<br>Plantas vs Zombies",
             "modelo": "kawaii",
             "img": "img/legos.jpg",
             "precio": 40
         },
         {
-            "nombre": "Corrector con plumón doble punta y pluma de gel",
+            "nombre": "Corrector con plumón doble punta y pluma de gel<br>Color Rosa o Amarillo",
             "modelo": "kawaii",
             "img": "img/corcondos.jpg",
             "precio": 30
         },
         {
-            "nombre": "Lapiz Infinito con goma",
+            "nombre": "Solo una pieza :O<br>Lapiz Infinito con goma",
             "modelo": "kawaii",
             "img": "img/lafi.jpg",
             "precio": 10

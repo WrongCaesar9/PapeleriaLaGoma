@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     
-    background-color: rgba(247, 171, 255, 0.295);
+    background-color: rgb(255, 229, 245);
 
   }
   /*
@@ -30,7 +30,7 @@ body {
 */
 
   header {
-    background-color: #1e78e7c7;
+    background-color: #2997f1;
     color: white;
     text-align: center;
     padding: 10px;
@@ -45,35 +45,36 @@ body {
   
   nav ul {
     list-style-type: none;
-    margin: 10px;
+    margin: 1px;
     padding: 10px;
   }
   
   nav li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   
   nav a {
-    color: black;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px;
   }
   
   nav a:hover {
-    background-color: #ff7f50;
+    background-color: #ebad27;
   }
   
   main {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1100px;
   
   }
   
   section {
     margin-bottom: 20px;
-    padding: 20px;
-    background-color: #ffb9f052;
+    padding: 10px;
+    background-color: #eee4ffb7;
   }
   
   section h2 {
@@ -101,26 +102,26 @@ body {
 
   
   #productos-contenedor {
-    display: grid;
+    
+    display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 
 .productos {
-    width: 100%;
+  width: 100%;
 }
 
 .productos img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit:fill;
 }
 
 h1 {
-  font-size:15px;
+  font-size: 30px;
   padding-top:15px;
   text-align:center;
-  font-size: 2vw;
   font-weight:bold;
   text-transform:uppercase;
   color:white;
@@ -128,18 +129,82 @@ h1 {
 
   background-image:linear-gradient(to right,
      orangered,
-      orange, gold, lightgreen,cyan,rgb(34, 71, 109), mediumpurple,hotpink,orangered
+      orange, gold, lightgreen,rgb(255, 0, 149),rgb(31, 50, 156), rgb(138, 80, 255),hotpink,orangered
        
   );
   background-size:110vw;
+  background-clip: 110vw;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent ;
-  animation:color 180s linear infinite ;
+  animation:color 240s linear infinite ;
 }
 
 
 @keyframes color {
   100% {
     background-position:-2000vw;  
+  }
+}
+
+.go-top-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 0.05rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: -1;
+}
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #ff0000;
+  transition: 0.2s;
+}
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: #2071b2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 5;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+      width: 0;
+      height: 0;
+  }
+  50% {
+      width: 5rem;
+      height: 5rem;
+  }
+  100% {
+      width: 3.6rem;
+      height: 3.6rem;
   }
 }
