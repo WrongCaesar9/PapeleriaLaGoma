@@ -154,15 +154,8 @@ h1 {
   height: 6.6rem;
   z-index: -1;
 }
-.go-top-button i {
-  position: absolute;
-  font-size: 1.7rem;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  color: #ff0000;
-  transition: 0.2s;
-}
+
+
 .go-top-button {
   width: 0rem;
   height: 0rem;
@@ -177,7 +170,15 @@ h1 {
   z-index: -1;
 }
 
-
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #ff0000;
+  transition: 0.2s;
+}
 
 .show {
   z-index: 10;
