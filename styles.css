@@ -149,8 +149,8 @@ h1 {
   position: fixed;
   bottom: 1rem;
   right: 0.05rem;
-  width: 6.6rem;
-  height: 6.6rem;
+  width: 7.6rem;
+  height: 7.6rem;
   z-index: -1;
 }
 
@@ -163,8 +163,8 @@ h1 {
   cursor: pointer;
   transition: 0.5s;
   position: absolute;
-  top: 70%;
-  left: 60%;
+  top: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -185,8 +185,8 @@ h1 {
 
 .show .go-top-button {
   animation: popup 0.7s ease-in-out;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 4.6rem;
+  height: 4.6rem;
   z-index: 5;
 }
 
@@ -200,11 +200,11 @@ h1 {
       height: 0;
   }
   50% {
-      width: 5rem;
-      height: 5rem;
+      width: 7rem;
+      height: 7rem;
   }
   100% {
-      width: 3.6rem;
-      height: 3.6rem;
+      width: 4.6rem;
+      height: 4.6rem;
   }
 }
