@@ -49,6 +49,24 @@
             "precio": 7
         },
         {
+            "nombre": "Pritt Chico 11g",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/pritt_ch.jpg",
+            "precio": 16
+        },
+        {
+            "nombre": "Bully Chico 11g",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/bully_ch.jpg",
+            "precio": 12
+        },
+        {
+            "nombre": "Dixon Chico 8g",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/dixon_ch.jpg",
+            "precio": 12
+        },
+        {
             "nombre": "Cargador Tipo C<br>Marca FX",
             "modelo": "Electrónica",
             "img": "img/char_tp_eco.jpg",
@@ -89,6 +107,18 @@
             "modelo": "Oficina",
             "img": "img/sp_eco.jpg",
             "precio": 10
+        },
+        {
+            "nombre": "Goma de migajón Factis S20",
+            "modelo": "Oficina",
+            "img": "img/goma_factis_g.jpg",
+            "precio": 8
+        },       
+        {
+            "nombre": "Goma de migajón Factis 36r",
+            "modelo": "Oficina",
+            "img": "img/goma_factis_36r.jpg",
+            "precio": 3
         },
         {
             "nombre": "Cuaderno profesional Scribe Escolar Plus 100 hojas",
