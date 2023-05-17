@@ -85,11 +85,17 @@
             "precio": 35
         },       
         {
-            "nombre": "Mouse econonico<br>Marca FX",
+            "nombre": "Agotado :(<br>Mouse econonico<br>Marca FX",
             "modelo": "Electrónica",
             "img": "img/mo_3037.jpg",
             "precio": 40
-        }, 
+        },
+        {
+            "nombre": "Bocina FX 3 pulgadas, 6W, lector de MicroSD y USB, Radio FM, Bluetooth",
+            "modelo": "Electrónica",
+            "img": "img/ms1620.jpg",
+            "precio": 100
+        },        
         {
             "nombre": "Cable Magnético<br>Tipo: V8 y C",
             "modelo": "Electrónica",
@@ -112,7 +118,7 @@
             "nombre": "Goma de migajón Factis S20",
             "modelo": "Oficina",
             "img": "img/goma_factis_g.jpg",
-            "precio": 8
+            "precio": 12
         },       
         {
             "nombre": "Goma de migajón Factis 36r",
@@ -246,12 +252,6 @@
             "modelo": "kawaii",
             "img": "img/cuttry.jpg",
             "precio": 12
-        },
-        {
-            "nombre": "Bocina FX 3 pulgadas, 6W, lector de MicroSD y USB, Radio FM, Bluetooth",
-            "modelo": "kawaii",
-            "img": "img/ms1620.jpg",
-            "precio": 100
         },
         {
             "nombre": "LEGOS:<br>Minecraf<br>Star Union<br>Plantas vs Zombies",
