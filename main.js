@@ -86,20 +86,23 @@ document.getElementById("filtro-precio").addEventListener("change", mostrarProdu
 
 
 function isMobile() {
+
   if (sessionStorage.desktop)
       return false;
   else if (localStorage.mobile)
       return true;
+
   var mobile = ['iphone', 'ipad', 'android', 'blackberry', 'nokia', 'opera mini', 'windows mobile', 'windows phone', 'iemobile'];
   for (var i in mobile)
       if (navigator.userAgent.toLowerCase().indexOf(mobile[i].toLowerCase()) > 0) return true;
+
   return false;
 }
 
 const formulario = document.querySelector('#formulario');
 const buttonSubmit = document.querySelector('#submit');
 const urlDesktop = 'https://web.whatsapp.com/';
-const urlMobile = 'https://wa.me/';
+const urlMobile = 'whatsapp://';
 const telefono = '525515833826';
 
 formulario.addEventListener('submit', (event) => {
@@ -109,7 +112,7 @@ formulario.addEventListener('submit', (event) => {
   setTimeout(() => {
       let nombre = document.querySelector('#nombre').value
       let pedidof = document.querySelector('#pedidof').value
-      let mensaje = 'send?phone=' + telefono + '&text=*_Formulario de Compra_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Que producto deseas :D?*%0A' + pedidof + ''
+      let mensaje = 'send?phone=' + telefono + '&text=*_Formulario de Compra_*%0A*¿Cuál es tu nombre?*%0A' + nombre + '%0A*¿Qué producto deseas :D?*%0A' + pedidof + ''
       if(isMobile()) {
           window.open(urlMobile + mensaje, '_blank')
       }else{
@@ -117,5 +120,5 @@ formulario.addEventListener('submit', (event) => {
       }
       buttonSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar WhatsApp'
       buttonSubmit.disabled = false
-  }, 3000);
+  }, 4000);
 });
