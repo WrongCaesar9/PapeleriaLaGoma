@@ -158,15 +158,28 @@ h1 {
 .go-top-button {
   width: 0rem;
   height: 0rem;
-  background: #2071b2;
+  background: #1f6197;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.9s;
   position: absolute;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.8s ease-in-out;
+  width: 5.0rem;
+  height: 5.0rem;
+  z-index: 5;
 }
 
 .go-top-button i {
@@ -175,23 +188,11 @@ h1 {
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: #ff0000;
+  color: #ff0f0f;
   transition: 0.2s;
 }
-
-.show {
-  z-index: 10;
-}
-
-.show .go-top-button {
-  animation: popup 0.7s ease-in-out;
-  width: 4.6rem;
-  height: 4.6rem;
-  z-index: 5;
-}
-
 .show i {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -44%) scale(1);
 }
 
 @keyframes popup {
@@ -204,8 +205,8 @@ h1 {
       height: 7rem;
   }
   100% {
-      width: 4.6rem;
-      height: 4.6rem;
+      width: 5.0rem;
+      height: 5.0rem;
   }
 }
 
