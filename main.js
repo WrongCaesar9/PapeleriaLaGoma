@@ -60,10 +60,10 @@ window.onscroll = function(){
     //console.log(document.documentElement.scrollTop);
     if(document.documentElement.scrollTop > 200) {
       document.querySelector('.go-top-container').classList.add('show');
-       
     }
     else{
       document.querySelector('.go-top-container').classList.remove('show');
+      
     }
   }
    
@@ -76,9 +76,6 @@ window.onscroll = function(){
 // Agregar eventos a los filtros para que al cambiar su valor, se vuelva a mostrar los articulos
 document.getElementById("filtro-modelo").addEventListener("change", mostrarProductos);
 document.getElementById("filtro-precio").addEventListener("change", mostrarProductos);
-
-
-
 
 
 
@@ -120,5 +117,34 @@ formulario.addEventListener('submit', (event) => {
       }
       buttonSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar WhatsApp'
       buttonSubmit.disabled = false
-  }, 4000);
+  }, 1000);
+});
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('header');
+  if (window.scrollY >= 120) { // ajusta este valor según tus necesidades
+      nav.classList.add('fixed');
+  } else {
+      nav.classList.remove('fixed');
+  }
+});
+
+
+
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('nav');
+  if (window.scrollY >= 120) { // ajusta este valor según tus necesidades
+      nav.classList.add('fixed');
+  } else {
+      nav.classList.remove('fixed');
+  }
 });
