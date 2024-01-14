@@ -270,6 +270,30 @@
             "modelo": "kawaii",
             "img": "img/lafi.jpg",
             "precio": 10
+        },
+        {
+            "nombre": "Pegamento Blanco Bully 35g",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/bully_35_blanco.jpg",
+            "precio": 13
+        },
+        {
+            "nombre": "Colores Norma Redondos 12 pzs",
+            "modelo": "colores",
+            "img": "img/norma12redon.jpg",
+            "precio": 90
+        },
+        {
+            "nombre": "Plastilina Baco 10 pzs",
+            "modelo": "Arte y Manualidades",
+            "img": "img/plastilina_baco_10.jpg",
+            "precio": 12
+        },
+        {
+            "nombre": "Memoria Adata 32GB",
+            "modelo": "Electrónica",
+            "img": "img/memV250adata32.jpg",
+            "precio": 120
         }
     ]
 }
