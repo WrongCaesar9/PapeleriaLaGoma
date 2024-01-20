@@ -19,18 +19,22 @@ function mostrarProductos() {
     // Obtener los valores seleccionados en los filtros
     const filtroModelo = document.getElementById("filtro-modelo").value;
     const filtroPrecio = parseFloat(document.getElementById("filtro-precio").value);
+    const terminoBusqueda = document.getElementById("barra-busqueda").value.toLowerCase();
 
-    console.log(filtroPrecio);
-
-    // Recorrer cada producto en la papeleria
+    // Recorrer cada producto en la papelería
     window.productos.forEach(function (productos) {
-        // Comprobar si los articulos cumplen con los criterios de los filtros
-        if ((filtroModelo === "" || productos.modelo === filtroModelo) && (filtroPrecio === 0 || productos.precio <= filtroPrecio)
+        const nombreProducto = productos.nombre.toLowerCase();
+
+        // Comprobar si los artículos cumplen con los criterios de los filtros y el término de búsqueda
+        if (
+            (filtroModelo === "" || productos.modelo === filtroModelo) &&
+            (filtroPrecio === 0 || productos.precio <= filtroPrecio) &&
+            (nombreProducto.includes(terminoBusqueda) || terminoBusqueda === "")
         ) {
-            // Crear un elemento div para el articulo
+            // Crear un elemento div para el artículo
             const productosDiv = document.createElement("div");
             productosDiv.classList.add("productos");
-            // Crear una imagen para el articulo
+            // Crear una imagen para el artículo
             const productosImg = document.createElement("img");
             productosImg.src = productos.img;
             productosImg.alt = productos.modelo;
@@ -48,7 +52,7 @@ function mostrarProductos() {
 
             // Crear un p para el precio del producto
             const productosPrice = document.createElement("p");
-            productosPrice.innerHTML = "$"+productos.precio;            
+            productosPrice.innerHTML = "$" + productos.precio;
             productosDiv.appendChild(productosPrice);
 
             // Agregar el elemento div a la página
@@ -56,28 +60,16 @@ function mostrarProductos() {
         }
     });
 }
-window.onscroll = function(){
-    //console.log(document.documentElement.scrollTop);
-    if(document.documentElement.scrollTop > 200) {
-      document.querySelector('.go-top-container').classList.add('show');
-    }
-    else{
-      document.querySelector('.go-top-container').classList.remove('show');
-      
-    }
-  }
-   
-  document.querySelector('.go-top-container').addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-// Agregar eventos a los filtros para que al cambiar su valor, se vuelva a mostrar los articulos
+
+// Agregar eventos a los filtros para que al cambiar su valor, se vuelva a mostrar los artículos
 document.getElementById("filtro-modelo").addEventListener("change", mostrarProductos);
 document.getElementById("filtro-precio").addEventListener("change", mostrarProductos);
 
+// Agregar evento al botón de búsqueda para que llame a la función mostrarProductos()
+document.getElementById("btn-buscar").addEventListener("click", mostrarProductos);
 
+// Escuchar el evento de cambio en la barra de búsqueda para que muestre los productos en tiempo real
+document.getElementById("barra-busqueda").addEventListener("input", mostrarProductos);
 
 
 

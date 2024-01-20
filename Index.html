@@ -2,9 +2,10 @@
 <html lang="es-MX">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-dGlD0j55ufHkkaexEmtYgoXP5hJ6t7Q9x9bz4VfjAiS2r9MWJ8vdEjcUw5fV/Z2H" crossorigin="anonymous">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
-             
+
         <title>Articulos de Papeleria, Novedades y Recargas</title>
         <link rel="shortcut icon" href="/logos/lagomaico.png">
         <link rel="stylesheet" type="text/css" href="styles.css">
@@ -23,17 +24,18 @@
     <h1>Artículos de Papelería, Novedades y Recargas<br>"La Goma"</h1>
         <marquee behavior="scroll" direction="left" scrollamount="12">
             <div>
-                <span style="color: #0a0a0a" class="stickerTit1">&nbsp;&nbsp;Mandanos mensaje si te gusto algo. Toca el
-                    logo de whatsapp para comenzar una nueva conversación o ve a "Pedidos" y rellena el formulario. La
-                    pagina aun esta en desarrollo y puede que algunas funciones no respondan bien, seguimos trabajando para
+                <span style="color: #0a0a0a" class="stickerTit1">&nbsp;&nbsp;Mándanos mensaje si te gusto algo. Toca el
+                    logo de WhatsApp para comenzar una nueva conversación o ve a "Pedidos" y rellena el formulario. La
+                    pagina aún está en desarrollo y puede que algunas funciones no respondan bien, seguimos trabajando para
                     mejorar la calidad de nuestra atención.&nbsp;</span>
             </div>
         </marquee>
     </header>
 
     <nav>
-                    <!-- Filtro por modelo -->
-        <select id="filtro-modelo" style="height: 30px;">
+        <ul style="height: 30px;">
+                                <!-- Filtro por modelo -->
+        <select id="filtro-modelo" style="height: 27px;">
             <option value="">Todos los productos</option>
             <option value="kawaii">Papelería Kawaii TESChi</option>
             <option value="Lapiceros">Lapiceros</option>
@@ -44,9 +46,11 @@
             <option value="Electrónica">Electrónica</option>
             <option value="Pegamentos y adhesivos">Pegamentos y adhesivos</option>
             <option value="Arte y Manualidades">Arte y Manualidades</option>
+            <option value="Cómputo">Cómputo</option>
+            <option value="Sobre Pedido">Sobre pedido</option>
         </select>        
                 <!-- Filtro por precio -->
-                <select id="filtro-precio" style="height: 30px;">
+                <select id="filtro-precio" style="height: 27px;">
                     <option value="0">Todos los precios</option>
                     <option value="5">Hasta $5</option>
                     <option value="10">Hasta $10</option>
@@ -54,44 +58,21 @@
                     <option value="50">Hasta $50</option>
                     <option value="100">Hasta $100</option>
                     <option value="200">Hasta $200</option>
+                    <option value="500">Hasta $500</option>
+                    <option value="1000">Hasta $1000</option>
+                    <option value="7000">Hasta $7000</option>
                 </select>
-                
-        <ul style="height: 18px; ">
             <li><a href="#productos">Productos</a></li>
             <li><a href="#avonfraiche">Info. Avon y Fraiche</a></li>
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#pedidos">Pedidos</a></li>
-
-
+            <input type="text" id="barra-busqueda" placeholder="Escribe lo que estás buscando..." style="height: 60%; width: 15%;">
+            <button id="btn-buscar" class="btn-buscar"><img src="/logos/searchcat.png" alt="Buscar"  class="img-buscar" style="width: 45px; height: 45px; margin-bottom: -1.1rem;">
+            </button>
         </ul>
     </nav>
 
     <main>
-        <!-- Filtro por modelo -->
-        <select id="filtro-modelo" style="height: 30px;">
-            <option value="">Todos los productos</option>
-            <option value="kawaii">Papelería Kawaii TESChi</option>
-            <option value="Lapiceros">Lapiceros</option>
-            <option value="Libretas">Libretas</option>
-            <option value="Papeles">Papeles</option>
-            <option value="colores">Colores</option>
-            <option value="Oficina">Oficina</option>
-            <option value="Electrónica">Electrónica</option>
-            <option value="Pegamentos y adhesivos">Pegamentos y adhesivos</option>
-            <option value="Arte y Manualidades">Arte y Manualidades</option>
-        </select>
-
-        <!-- Filtro por precio -->
-        <select id="filtro-precio" style="height: 30px;">
-            <option value="0">Todos los precios</option>
-            <option value="5">Hasta $5</option>
-            <option value="10">Hasta $10</option>
-            <option value="30">Hasta $30</option>
-            <option value="50">Hasta $50</option>
-            <option value="100">Hasta $100</option>
-            <option value="200">Hasta $200</option>
-        </select>
-
         <section id="productos">
             <h2>Productos disponibles</h2>
             <div id="productos-contenedor"></div>

@@ -91,7 +91,7 @@
             "precio": 40
         },
         {
-            "nombre": "Bocina FX 3 pulgadas, 6W, lector de MicroSD y USB, Radio FM, Bluetooth",
+            "nombre": "Agotado :(<br>Bocina FX 3 pulgadas, 6W, lector de MicroSD y USB, Radio FM, Bluetooth",
             "modelo": "Electrónica",
             "img": "img/ms1620.jpg",
             "precio": 100
@@ -113,6 +113,12 @@
             "modelo": "Oficina",
             "img": "img/sp_eco.jpg",
             "precio": 10
+        },
+        {
+            "nombre": "Marcadores DONGCAI 12 pzs<br>NEGRO - ROJO - AZUL<br>Por caja o C/U $12",
+            "modelo": "Oficina",
+            "img": "img/mark_DONGCAI12.jpg",
+            "precio": 65
         },
         {
             "nombre": "Goma de migajón Factis S20",
@@ -305,7 +311,19 @@
             "nombre": "Teclado Mecanico Mitzu Bash-1004<br>Alambrico Fullrainbow/104",
             "modelo": "Electrónica",
             "img": "img/mitzuTecMechBash104T.jpg",
-            "precio": 60
+            "precio": 800
+        },
+        {
+            "nombre": "Teclado Mecanico Mitzu Bash-1004<br>Alambrico Fullrainbow/104",
+            "modelo": "Sobre Pedido",
+            "img": "img/mitzuTecMechBash104T.jpg",
+            "precio": 800
+        },
+        {
+            "nombre": "Tarjeta de Video MSI NVIDIA GeForce RTX 3060 Ventus 3X 12G OC<br>12GB 192-bit GDDR6, PCI Express 4.0",
+            "modelo": "Sobre Pedido",
+            "img": "img/RTX3060MSI.jpg",
+            "precio": 6500
         }
     ]
 }
