@@ -37,6 +37,12 @@
             "precio": 6
         },
         {
+            "nombre": "Azor Point<br>Puno Fino",
+            "modelo": "Lapiceros",
+            "img": "img/kilometrico.jpg",
+            "precio": 6
+        },
+        {
             "nombre": "Colores Smarty Redondos 12 pzs",
             "modelo": "colores",
             "img": "img/12smartcir.jpg",
