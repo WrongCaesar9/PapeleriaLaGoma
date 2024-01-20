@@ -118,9 +118,6 @@ formulario.addEventListener('submit', (event) => {
 
 
 
-
-
-
 window.addEventListener('scroll', function() {
   var nav = document.querySelector('header');
   if (window.scrollY >= 120) { // ajusta este valor según tus necesidades
