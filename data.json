@@ -294,6 +294,18 @@
             "modelo": "Electrónica",
             "img": "img/memV250adata32.jpg",
             "precio": 120
+        },
+        {
+            "nombre": "Pila Recargable Mitzu<br>18650 3.7 Vcc<br>2000 mAh Litio",
+            "modelo": "Electrónica",
+            "img": "img/mitzuBat18650_2000.jpg",
+            "precio": 60
+        },
+        {
+            "nombre": "Teclado Mecanico Mitzu Bash-1004<br>Alambrico Fullrainbow/104",
+            "modelo": "Electrónica",
+            "img": "img/mitzuTecMechBash104T.jpg",
+            "precio": 60
         }
     ]
 }

@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+             
+        <title>Articulos de Papeleria, Novedades y Recargas</title>
+        <link rel="shortcut icon" href="/logos/lagomaico.png">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
 </html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    
-    <link rel="shortcut icon" href="/logos/lagoma.ico">
-    <title>Articulos de Papeleria, Novedades y Recargas</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    
-</head>
 
 <body>
     <header>
@@ -34,11 +32,37 @@
     </header>
 
     <nav>
+                    <!-- Filtro por modelo -->
+        <select id="filtro-modelo" style="height: 30px;">
+            <option value="">Todos los productos</option>
+            <option value="kawaii">Papelería Kawaii TESChi</option>
+            <option value="Lapiceros">Lapiceros</option>
+            <option value="Libretas">Libretas</option>
+            <option value="Papeles">Papeles</option>
+            <option value="colores">Colores</option>
+            <option value="Oficina">Oficina</option>
+            <option value="Electrónica">Electrónica</option>
+            <option value="Pegamentos y adhesivos">Pegamentos y adhesivos</option>
+            <option value="Arte y Manualidades">Arte y Manualidades</option>
+        </select>        
+                <!-- Filtro por precio -->
+                <select id="filtro-precio" style="height: 30px;">
+                    <option value="0">Todos los precios</option>
+                    <option value="5">Hasta $5</option>
+                    <option value="10">Hasta $10</option>
+                    <option value="30">Hasta $30</option>
+                    <option value="50">Hasta $50</option>
+                    <option value="100">Hasta $100</option>
+                    <option value="200">Hasta $200</option>
+                </select>
+                
         <ul style="height: 18px; ">
             <li><a href="#productos">Productos</a></li>
             <li><a href="#avonfraiche">Info. Avon y Fraiche</a></li>
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#pedidos">Pedidos</a></li>
+
+
         </ul>
     </nav>
 
