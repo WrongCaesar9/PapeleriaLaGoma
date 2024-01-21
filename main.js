@@ -61,6 +61,24 @@ function mostrarProductos() {
     });
 }
 
+window.onscroll = function(){
+  //console.log(document.documentElement.scrollTop);
+  if(document.documentElement.scrollTop > 200) {
+    document.querySelector('.go-top-container').classList.add('show');
+  }
+  else{
+    document.querySelector('.go-top-container').classList.remove('show');
+    
+  }
+}
+ 
+document.querySelector('.go-top-container').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
 // Agregar eventos a los filtros para que al cambiar su valor, se vuelva a mostrar los artículos
 document.getElementById("filtro-modelo").addEventListener("change", mostrarProductos);
 document.getElementById("filtro-precio").addEventListener("change", mostrarProductos);
