@@ -3,8 +3,11 @@ body {
     margin: 0;
     padding: 0;
     
-    background-color: rgb(255, 229, 245);
-
+/*En esta seccion se agrego la imagen de fondo*/
+    background-image: url(/logos/Background3.png);
+    background-size: 50%;
+    background-color: rgba(216, 237, 255, 0.75);    
+    background-repeat:repeat;
   }
   /*
   body{
@@ -37,6 +40,8 @@ header.fixed {
   left:33%;
   transform: translateX(-50%);
   background-color: #2997f1;
+  background-image: url(/logos/Background2.png);
+  background-size: 30%; 
   text-align: center;
   padding: 1rem;
   font-size: 10px;
@@ -50,6 +55,8 @@ header.fixed {
     background-color: #2997f1;
     text-align: center;
     padding: 10px;
+    background-image: url(/logos/Background2.png);
+    background-size: 30%; 
     transition: 0.5s;
   }
   
@@ -77,6 +84,8 @@ header.fixed {
     width: 99.55%;
     left: 49.44%;
     transform: translateX(-50%);
+    background-image: url(/logos/Background2.png);
+    background-size: 30%;
     background-color: #2997f1;
     margin: 1px;
     padding: 0px;
@@ -84,10 +93,13 @@ header.fixed {
   }
 
   nav{
+
     text-align: center;    
-    background-color: #9cd4fcb8;
+    background-color: #acddff;
     margin: 3px;
     padding: 0px;
+     background-image: url(/logos/Background2.png);
+    background-size: 30%;   
     transition: 0.2s;
   }
 
@@ -119,18 +131,18 @@ header.fixed {
   
   nav li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: auto;
   }
   
   nav a {
-    margin: 0 auto;
+    margin:  auto;
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px;
   }
   
   nav a:hover {
-    background-color: #ebad27;
+    background-color: #ebad27e6;
   }
   
   main {
@@ -138,11 +150,11 @@ header.fixed {
     max-width: 900;
   
   }
-  
+  /*Aqui modifica parte del fondo rosa en donde se muestran los productos  #e9dcffac;*/
   section {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #eee4ffb7;
+    background-color: #ffaa5f00;
   }
   
   section h2 {
@@ -356,7 +368,7 @@ h1 {
 .formulario h1{
 	text-align: center;
 	margin-bottom: 30px;
-	color: #333;
+	color: #1d1b1b;
 	font-weight: 600;
 }
 
@@ -371,7 +383,7 @@ h1 {
 .box-input input{
   text-align: center;
 	font-size: 16px;
-	color: #333;
+	color: #100d0d;
 	border: none;
 	width: 100%;
 	outline:none;
@@ -385,7 +397,7 @@ h1 {
 	position: absolute;
 	top: 25%;
 	left: 5px;
-	color: #adadad;
+	color: #000000;
 	transform: translateY(-150%);
 	z-index: -1;
 	transition: 0.5s;
