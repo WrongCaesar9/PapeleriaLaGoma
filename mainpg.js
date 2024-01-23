@@ -1,7 +1,7 @@
 const productosContenedor = document.getElementById("productos-contenedor");
 
 // Obtener los datos de los productos
-fetch("data.json")
+fetch("datapg.json")
     .then(response => response.json())
     .then(data => {
         // Almacenar los datos en una variable global
@@ -44,11 +44,58 @@ function mostrarProductos() {
             const productosNombre = document.createElement("h3");
             productosNombre.innerHTML = productos.nombre;
             productosDiv.appendChild(productosNombre);
+       
+       
+       
+          // Crear un h4 para el enlace del producto
+          const productosEnlace = document.createElement("h4");
 
-            // Crear un p para el modelo del producto
-            const productosModel = document.createElement("p");
-            productosModel.innerHTML = productos.modelo;
-            productosDiv.appendChild(productosModel);
+          // Crear un enlace y configurarlo con la URL del producto
+          const enlaceProducto = document.createElement("a");
+          enlaceProducto.href = productos.enlace;
+          enlaceProducto.target = "_blank"; // Abrir enlace en nueva pestaña
+          enlaceProducto.textContent = "Descargalo sin miedo XD"; // Puedes cambiar el texto según tus necesidades
+
+          // Agregar el enlace al h4
+          productosEnlace.appendChild(enlaceProducto);
+
+          // Agregar el h4 al productoDiv
+          productosDiv.appendChild(productosEnlace);
+
+
+
+            /*
+            const productosEnlace = document.createElement("h4");
+            productosEnlace.href = productos.enlace;
+            productosEnlace.target = "_blank";
+            productosDiv.appendChild(productosEnlace);
+            productosEnlace.textContent = producto.enlace;
+
+
+    // Crear un h4 para cada producto
+    const h4Producto = document.createElement("h4");
+
+    // Crear un enlace y configurarlo con la URL del producto
+    const enlaceProducto = document.createElement("a");
+    enlaceProducto.href = producto.enlace;
+    enlaceProducto.target = "_blank"; // Abrir enlace en nueva pestaña
+    enlaceProducto.textContent = producto.nombre;
+
+    // Agregar el enlace al h4
+    h4Producto.appendChild(enlaceProducto);
+
+    */
+
+
+
+
+
+
+
+
+
+
+
 
             // Crear un p para el precio del producto
             const productosPrice = document.createElement("p");

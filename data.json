@@ -326,9 +326,10 @@
             "precio": 800
         },
         {
-            "nombre": "Tarjeta de Video MSI NVIDIA GeForce RTX 3060 Ventus 3X 12G OC<br>12GB 192-bit GDDR6, PCI Express 4.0",
+            "nombre": "Tarjeta de Video MSI NVIDIA GeForce RTX 3060 Ventus 3X 12G OC<br>12GB 192-bit GDDR6, PCI Express 4.0 ",
             "modelo": "Sobre Pedido",
             "img": "img/RTX3060MSI.jpg",
+            "enlace": "https://www.ejemplo.com",
             "precio": 6500
         }
     ]
