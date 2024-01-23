@@ -451,3 +451,11 @@ h1 {
   border: #09090900;
 
 }
+
+.btn-redirigir{
+  background-color: #ff0000;
+  width: 150px;
+  height: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: large
+}

@@ -7,7 +7,7 @@ body {
 /*En esta seccion se agrego la imagen de fondo*/
   background-image: url(/impg/bggames.png);
   background-size: 50%;
-  background-color: rgba(32, 28, 30, 0.603);    
+  background-color: rgba(10, 28, 36, 0.601);    
   background-repeat:repeat;
 }
  /*
@@ -41,8 +41,8 @@ header.fixed {
   left:33%;
   transform: translateX(-50%);
   background-color: #062238;
-  background-image: url(/logos/Background2.png);
-  background-size: 30%; 
+  background-image: url(/logos/gamespattern.gif);
+  background-size: 1fr; 
   text-align: center;
   padding: 1rem;
   font-size: 10px;
@@ -51,13 +51,16 @@ header.fixed {
   width: 130%;
   height: 13%;
   scale:75%;
+
 }
   header {
     background-color: #062238;
     text-align: center;
     padding: 10px;
-    background-image: url(/logos/Background2.png);
-    background-size: 30%; 
+    background-image: url(/logos/mvcsuper.gif);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-blend-mode: multiply;
     transition: 0.5s;
   }
   
@@ -85,7 +88,7 @@ header.fixed {
     width: 99.55%;
     left: 49.44%;
     transform: translateX(-50%);
-    background-image: url(/logos/Background2.png);
+    background-image: url(/logos/gamespattern.gif);
     background-size: 30%;
     background-color:#062238;
     margin: 1px;
@@ -99,8 +102,10 @@ header.fixed {
     background-color: #062238;
     margin: 3px;
     padding: 0px;
-     background-image: url(/logos/Background2.png);
-    background-size: 30%;   
+     background-image: url(/logos/mvcsuper.gif);
+    background-size: 50%;   
+    background-position-y: center;
+    background-blend-mode: multiply;
     transition: 0.2s;
   }
 
@@ -331,7 +336,7 @@ h1 {
 
 .formulario h4 {
   font-size: 25px;
-  padding-top:5px;
+  padding-top: -1rem;
   text-align:center;
   font-weight:bold;
   text-transform:uppercase;
@@ -351,7 +356,7 @@ h1 {
 .formulario{
 	width: 300px;
 	background: #fae3ff41;
-	height: 350px;
+	height: 380px;
 	padding: 10px;
 	border-radius: 20px;
   position: relative;
@@ -452,7 +457,18 @@ h1 {
 
 }
 
-
 .toplistxd{
   color: white;
+}
+
+.btn-redirigirN{
+  background-color: #51fc2e;
+  width: 150px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;  /* Alineación horizontal al centro */
+  align-items: center;    
+
 }

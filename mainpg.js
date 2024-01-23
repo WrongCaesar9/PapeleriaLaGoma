@@ -54,7 +54,7 @@ function mostrarProductos() {
           const enlaceProducto = document.createElement("a");
           enlaceProducto.href = productos.enlace;
           enlaceProducto.target = "_blank"; // Abrir enlace en nueva pestaña
-          enlaceProducto.textContent = "Descargalo sin miedo XD"; // Puedes cambiar el texto según tus necesidades
+          enlaceProducto.textContent = "Da el Salto 🐸🤙"; // Puedes cambiar el texto según tus necesidades
 
           // Agregar el enlace al h4
           productosEnlace.appendChild(enlaceProducto);
@@ -63,7 +63,10 @@ function mostrarProductos() {
           productosDiv.appendChild(productosEnlace);
 
 
-
+            // Crear un p para el modelo del producto
+            const productosModel = document.createElement("p");
+            productosModel.innerHTML = productos.modelo;
+            productosDiv.appendChild(productosModel);
             /*
             const productosEnlace = document.createElement("h4");
             productosEnlace.href = productos.enlace;
@@ -95,13 +98,6 @@ function mostrarProductos() {
 
 
 
-
-
-            // Crear un p para el precio del producto
-            const productosPrice = document.createElement("p");
-            productosPrice.innerHTML = "$" + productos.precio;
-            productosDiv.appendChild(productosPrice);
-
             // Agregar el elemento div a la página
             productosContenedor.appendChild(productosDiv);
         }
@@ -128,7 +124,7 @@ document.querySelector('.go-top-container').addEventListener('click', () => {
 
 // Agregar eventos a los filtros para que al cambiar su valor, se vuelva a mostrar los artículos
 document.getElementById("filtro-modelo").addEventListener("change", mostrarProductos);
-document.getElementById("filtro-precio").addEventListener("change", mostrarProductos);
+
 
 // Agregar evento al botón de búsqueda para que llame a la función mostrarProductos()
 document.getElementById("btn-buscar").addEventListener("click", mostrarProductos);
@@ -166,7 +162,7 @@ formulario.addEventListener('submit', (event) => {
   setTimeout(() => {
       let nombre = document.querySelector('#nombre').value
       let pedidof = document.querySelector('#pedidof').value
-      let mensaje = 'send?phone=' + telefono + '&text=*_Formulario de Compra_*%0A*¿Cuál es tu nombre?*%0A' + nombre + '%0A*¿Qué producto deseas :D?*%0A' + pedidof + ''
+      let mensaje = 'send?phone=' + telefono + '&text=*_Formulario de Sugerencia_*%0A*¿Cuál es tu nombre?*%0A' + nombre + '%0A*¿Qué deseas colocar? :D*%0A' + pedidof + ''
       if(isMobile()) {
           window.open(urlMobile + mensaje, '_blank')
       }else{
@@ -206,11 +202,6 @@ window.addEventListener('scroll', function() {
 
 
 
-
-document.getElementById("btn-redirigir").addEventListener("click", function() {
-  // Reemplaza "nueva-pagina.html" con la ruta de la página a la que deseas redirigir
-  window.location.href = "IndexPrograms.html";
-});
 
 document.getElementById("btn-redirigirN").addEventListener("click", function() {
   // Reemplaza "nueva-pagina.html" con la ruta de la página a la que deseas redirigir

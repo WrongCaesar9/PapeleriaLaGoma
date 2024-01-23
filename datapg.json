@@ -1,10 +1,333 @@
 {
     "productos": [
         {
-            "nombre": "After effects Portable ----- Ni idea de la versión XD",
+            "nombre": "Blender<br>Es un programa de...<br>¿Como no vas a saber?🤨",
+            "img": "impg/blender.png",
+            "enlace": "https://www.blender.org/download/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Blender Studio<br>Aqui encuentras rigs y modelos 3D hechos por blender :D",
+            "img": "impg/blenderstudio.png",
+            "enlace": "https://studio.blender.org/characters/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Polyhaven<br>Página donde encontraras HDRI's, Texturas y Modelos",
+            "img": "impg/polyhaven.png",
+            "enlace": "https://polyhaven.com/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Poliigon<br>Página donde encontraras HDRI's, Texturas y Modelos hechos por Polygon Runway",
+            "img": "impg/polygonRun.png",
+            "enlace": "https://www.poliigon.com/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "ambientCG<br>Página donde encontraras HDRI's, Texturas y Modelos",
+            "img": "impg/ambientcg.png",
+            "enlace": "https://ambientcg.com/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Sketchfab<br>Página para descargar modelos 3D en distintos formatos",
+            "img": "impg/sketchfab.png",
+            "enlace": "https://sketchfab.com/feed",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Thingiverse<br>Para impresión 3D<br>Página para descargar modelos 3D en formato STL",
+            "img": "impg/thingiverse.png",
+            "enlace": "https://sketchfab.com/feed",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Cults 3D<br>Para impresión 3D<br>Página para descargar modelos 3D en formato STL",
+            "img": "impg/cults.png",
+            "enlace": "https://cults3d.com/es",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Materialize<br>Software de creación de texturas",
+            "img": "impg/materialize.png",
+            "enlace": "https://boundingboxsoftware.com/materialize/getkey.php",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Rokoko Vision<br>MOCAP",
+            "img": "impg/rokokovision.png",
+            "enlace": "https://vision.rokoko.com/dashboard",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Plask.ai/<br>MOCAP",
+            "img": "impg/plask.png",
+            "enlace": "https://plask.ai/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "Photoshop Portable CS6<br>Al ser portable, no contendra todas las funciones de la versión PRO, pero te sacara de un apuro",
+            "img": "impg/phopor.png",
+            "enlace": "https://www.henrymatzar.com/Adobe-Photoshop-CS6.rar",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "Adobe Illustrator Portable<br>Al ser portable, no contendra todas las funciones de la versión PRO, pero te sacara de un apuro",
+            "img": "impg/aipor.png",
+            "enlace": "https://www.henrymatzar.com/IllustratorPortable.rar",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "After effects Portable<br>Ni idea de la versión XD",
             "img": "impg/AEPorta.png",
             "enlace": "https://drive.google.com/file/d/1p-TvsfANEY0lTlc9SUSSnneLnoFk8F1Q/view?usp=sharing",
-            "precio": 0
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "CorelDRAW 2021<br>Software de diseño gráfico<br>contraseña: www.programasvirtualespc.net",
+            "img": "impg/corel21.png",
+            "enlace": "https://www.mediafire.com/file/m93kaf0e4c61nrb/23.1.0.389-PVP.rar/file",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "Photopea<br>Practicamente es Photoshop, pero Online",
+            "img": "impg/photopea.png",
+            "enlace": "https://www.photopea.com/",
+            "modelo": "Edición"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        {
+            "nombre": "Geometry Dash 2.2<br>Debes descargar los ddl para que funcione el juego, de lo contrario te saldra un error",
+            "img": "impg/geo.png",
+            "enlace": "https://drive.google.com/drive/folders/1DFExIddmm5UN513Byh8ei_Yo8kexQwFM?usp=sharing",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "FLStudio para Android",
+            "img": "impg/flandroid.png",
+            "enlace": "https://drive.google.com/file/d/1zG7FiC9T4IMjXjZv8ZWRdzC5YDSdUnCk/view?usp=sharing",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "Emulador NeoRAGEx<br>La neta esta mamalón",
+            "img": "impg/emuladorneo.png",
+            "enlace": "https://drive.google.com/drive/folders/1K4Q1Dz_P7UJGiI8QIsWbh3WnJDhjA32h?usp=sharing",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "Loquendo para Android",
+            "img": "impg/loquendoandroid.png",
+            "enlace": "https://drive.google.com/file/d/1DO_DNYWIWHKqOwET0zu3Zm-YLvdIMLAP/view?usp=drive_link",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "Colección de Mario Bros",
+            "img": "impg/colmb.png",
+            "enlace": "https://drive.google.com/file/d/18IxelUIrfkFdvCWHeveQmyARU9prVZD_/view?usp=sharing",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "Contra ",
+            "img": "impg/contra.png",
+            "enlace": "https://drive.google.com/file/d/1J_KlLxBoWlt03zQesBEXGcHy6poKYqJo/view?usp=sharing",
+            "modelo": "Juegos"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "Los gatos sueñan con física cuántica<br>De: Jorge Blaschke",
+            "img": "impg/Lgscfc.png",
+            "enlace": "https://drive.google.com/file/d/13ivf5C0nbgEf2e114-ztpwKOTXayG1y1/view?usp=drive_link",
+            "modelo": "Libros"
+        },
+        {
+            "nombre": "Manipulacion y Psicologia Oscura<br>De: Alejandro Mendoza",
+            "img": "impg/manipsytree.png",
+            "enlace": "https://drive.google.com/file/d/1ae36JN6rT2pDD8EfAfRTWcTxzgd5CtJC/view?usp=sharing",
+            "modelo": "Libros"
+        },
+        {
+            "nombre": "Arduino Curso Práctico<br>De: Óscar Torrente Artero",
+            "img": "impg/acursoforma.png",
+            "enlace": "https://drive.google.com/file/d/1ae36JN6rT2pDD8EfAfRTWcTxzgd5CtJC/view?usp=sharing",
+            "modelo": "Libros"
+        },
+        {
+            "nombre": "Psicologia Oscura<br>De: Victor Sykes",
+            "img": "impg/psyblack.png",
+            "enlace": "https://drive.google.com/file/d/1aYZx2RWX0p75iCM6LqBC2-G4LF3ppVhm/view?usp=sharing",
+            "modelo": "Libros"
+        },
+
+
+
+
+
+
+
+
+
+
+
+        
+        {
+            "nombre": "Fritzing 0.9.9 x64<br>Programa de diseño electrónico",
+            "img": "impg/frit.png",
+            "enlace": "https://drive.google.com/file/d/1K3pKL1TOYL8FBDirhib6So9bHO3UsP6L/view?usp=sharing",
+            "modelo": "Electrónica y Robots"
+        },
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "dafont<br>Página donde encontraras fuentes para Word",
+            "img": "impg/dafont.png",
+            "enlace": "https://www.dafont.com/es/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Heavens Above<br>Página para 'observar y rastrear' satélites que orbitan la Tierra",
+            "img": "impg/heavensabove.png",
+            "enlace": "https://www.heavens-above.com/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Adobe Color",
+            "img": "impg/adobecolor.png",
+            "enlace": "https://color.adobe.com/es/create/color-wheel",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "VideoSmaller<br>Página para reducir el peso de un video no mayor a 499MB",
+            "img": "impg/videosmaller.png",
+            "enlace": "https://www.videosmaller.com/es/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Cuevana 3",
+            "img": "impg/cuevana.png",
+            "enlace": "https://cuevana.pro/peliculas",
+            "modelo": "Otros"
+        },    
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        {
+            "nombre": "ChatGPT",
+            "img": "impg/chatgpt.png",
+            "enlace": "https://chat.openai.com/",
+            "modelo": "IA"
+        },
+        {
+            "nombre": "Bing COPILOT",
+            "img": "impg/bingcopilot.png",
+            "enlace": "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx",
+            "modelo": "IA"
+        },
+        {
+            "nombre": "Google Bard",
+            "img": "impg/googlebard.png",
+            "enlace": "https://bard.google.com/chat",
+            "modelo": "IA"
+        },
+        {
+            "nombre": "DeepL Translator<br>Traductor de idiomas por IA",
+            "img": "impg/deepltranslator.png",
+            "enlace": "https://www.deepl.com/translator",
+            "modelo": "IA"
+        },
+        {
+            "nombre": "Bing Creator<br>Generador de imagenes por IA",
+            "img": "impg/bingcreator.png",
+            "enlace": "https://www.bing.com/images/create",
+            "modelo": "IA"
         }
     ]
 }
