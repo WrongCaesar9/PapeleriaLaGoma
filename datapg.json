@@ -144,12 +144,6 @@
             "modelo": "Juegos"
         },
         {
-            "nombre": "FLStudio para Android",
-            "img": "impg/flandroid.png",
-            "enlace": "https://drive.google.com/file/d/1zG7FiC9T4IMjXjZv8ZWRdzC5YDSdUnCk/view?usp=sharing",
-            "modelo": "Juegos"
-        },
-        {
             "nombre": "Emulador NeoRAGEx<br>La neta esta mamalón",
             "img": "impg/emuladorneo.png",
             "enlace": "https://drive.google.com/drive/folders/1K4Q1Dz_P7UJGiI8QIsWbh3WnJDhjA32h?usp=sharing",
@@ -234,53 +228,18 @@
             "enlace": "https://drive.google.com/file/d/1K3pKL1TOYL8FBDirhib6So9bHO3UsP6L/view?usp=sharing",
             "modelo": "Electrónica y Robots"
         },
-
-
-
-
-
-
-
-
-
-
-
         {
-            "nombre": "dafont<br>Página donde encontraras fuentes para Word",
-            "img": "impg/dafont.png",
-            "enlace": "https://www.dafont.com/es/",
-            "modelo": "Otros"
+            "nombre": "PCB wizard<br>Software para la creación de placas de circuito impreso",
+            "img": "impg/pcbwizard.png",
+            "enlace": "https://drive.google.com/drive/folders/1LumVkkEGghDvqDLbcsIGuGiuUWzp_3OC?usp=sharing",
+            "modelo": "Electrónica y Robots"
         },
         {
-            "nombre": "Heavens Above<br>Página para 'observar y rastrear' satélites que orbitan la Tierra",
-            "img": "impg/heavensabove.png",
-            "enlace": "https://www.heavens-above.com/",
-            "modelo": "Otros"
+            "nombre": "Arduino",
+            "img": "impg/arduinoide.png",
+            "enlace": "https://www.arduino.cc/en/software",
+            "modelo": "Electrónica y Robots"
         },
-        {
-            "nombre": "Adobe Color",
-            "img": "impg/adobecolor.png",
-            "enlace": "https://color.adobe.com/es/create/color-wheel",
-            "modelo": "Otros"
-        },
-        {
-            "nombre": "VideoSmaller<br>Página para reducir el peso de un video no mayor a 499MB",
-            "img": "impg/videosmaller.png",
-            "enlace": "https://www.videosmaller.com/es/",
-            "modelo": "Otros"
-        },
-        {
-            "nombre": "Cuevana 3",
-            "img": "impg/cuevana.png",
-            "enlace": "https://cuevana.pro/peliculas",
-            "modelo": "Otros"
-        },    
-        
-        
-
-
-
-
 
 
 
@@ -328,6 +287,140 @@
             "img": "impg/bingcreator.png",
             "enlace": "https://www.bing.com/images/create",
             "modelo": "IA"
-        }
+        },
+        {
+            "nombre": "Leonardo.AI<br>Generador de imagenes por IA",
+            "img": "impg/leonardoai.png",
+            "enlace": "https://app.leonardo.ai/",
+            "modelo": "IA"
+        },
+        
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "Soul Knight<br>Juegazo :)",
+            "img": "impg/soulknight.png",
+            "enlace": "https://play.google.com/store/apps/details?id=com.ChillyRoom.DungeonShooter&hl=es_419&gl=US",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "FLStudio para Android",
+            "img": "impg/flandroid.png",
+            "enlace": "https://drive.google.com/file/d/1zG7FiC9T4IMjXjZv8ZWRdzC5YDSdUnCk/view?usp=sharing",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "Escritorio remoto de Chrome<br>APK conectarse a la pc",
+            "img": "impg/remotecontrolapk.png",
+            "enlace": "https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop&hl=es&gl=US",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "Dark Wolf<br>Aplicación de android para ver peliculas, muy buena app",
+            "img": "impg/darkwolf.png",
+            "enlace": "https://play.google.com/store/apps/details?id=dark.wolf&hl=es_419&gl=US",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "DroidCam para Android",
+            "img": "impg/droidcam.png",
+            "enlace": "https://play.google.com/store/apps/details?id=com.dev47apps.droidcam&hl=es_419&gl=US",
+            "modelo": "Android"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "VirusTotal<br>Página de análisis de archivos y páginas web a través de un antivirus",
+            "img": "impg/virustotal.png",
+            "enlace": "https://www.virustotal.com/gui/home/upload",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Escritorio remoto de Chrome<br>Página para conectarse de forma remota a la pc",
+            "img": "impg/remotecontrolpc.png",
+            "enlace": "https://remotedesktop.google.com/home",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "dafont<br>Página donde encontraras fuentes para Word",
+            "img": "impg/dafont.png",
+            "enlace": "https://www.dafont.com/es/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Heavens Above<br>Página para 'observar y rastrear' satélites que orbitan la Tierra",
+            "img": "impg/heavensabove.png",
+            "enlace": "https://www.heavens-above.com/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Adobe Color",
+            "img": "impg/adobecolor.png",
+            "enlace": "https://color.adobe.com/es/create/color-wheel",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "VideoSmaller<br>Página para reducir el peso de un video no mayor a 499MB",
+            "img": "impg/videosmaller.png",
+            "enlace": "https://www.videosmaller.com/es/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Cuevana 3",
+            "img": "impg/cuevana.png",
+            "enlace": "https://cuevana.pro/peliculas",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "DroidCam",
+            "img": "impg/droidcam.png",
+            "enlace": "https://www.dev47apps.com/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Consulta tu recibo de luz CFE",
+            "img": "impg/cferecibo.png",
+            "enlace": "https://app.cfe.mx/aplicaciones/CCFE/SolicitudesCFE/Solicitudes/ConsultaTuReciboLuzGmx",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "CURP",
+            "img": "impg/curp.png",
+            "enlace": "https://www.gob.mx/curp/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Portal de Servicios al Contribuyente<br>En Organismos Auxiliares se paga lo del TESCHI ",
+            "img": "impg/servicioscontri.png",
+            "enlace": "https://sfpya.edomexico.gob.mx/recaudacion/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Mi Instagram<br>wrongcaesar9.0",
+            "img": "impg/miinsta.png",
+            "enlace": "https://www.instagram.com/wrongcaesar9.0/",
+            "modelo": "Otros"
+        } 
     ]
 }

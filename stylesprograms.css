@@ -7,7 +7,7 @@ body {
 /*En esta seccion se agrego la imagen de fondo*/
   background-image: url(/impg/bggames.png);
   background-size: 50%;
-  background-color: rgba(10, 28, 36, 0.601);    
+  background-color: rgba(81, 81, 81, 0.576);    
   background-repeat:repeat;
 }
  /*
@@ -339,16 +339,15 @@ h1 {
 
 
 .formulario h4 {
-  font-size: 25px;
-  padding-top: -1rem;
+  font-size: 18px;
+  padding-top: 0rem;
   text-align:center;
   font-weight:bold;
   text-transform:uppercase;
   text-align:center ;
 
   background-image:linear-gradient(to left,
-     orangered,
-      rgb(192, 140, 45), rgb(161, 155, 68), lightgreen,rgb(255, 0, 149),rgb(31, 50, 156), rgb(138, 80, 255),hotpink,orangered
+     orangered, rgb(10, 250, 254),rgb(115, 0, 255),rgb(31, 50, 156), rgb(138, 80, 255),orangered
        
   );
   background-size:110vw;
@@ -358,16 +357,14 @@ h1 {
   animation:color 240s linear infinite ;
 }
 .formulario{
-	width: 300px;
-	background: #fae3ff41;
-	height: 380px;
-	padding: 10px;
-	border-radius: 20px;
+	width: 290px;
+  background-color: rgba(255, 255, 255, 0.374);
+	height: 320px;
+	padding: 7px;
+	border-radius: 25px;
   position: relative;
 	left: 50%;
-	top: 1rem;
   transform: translate(-50%,0%);
-  top: 1%;
   bottom: auto;
 
 
@@ -474,5 +471,9 @@ h1 {
   display: flex;
   justify-content: center;  /* Alineación horizontal al centro */
   align-items: center;    
+
+}
+
+.box-input{
 
 }

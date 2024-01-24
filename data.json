@@ -11,18 +11,72 @@
             "modelo": "Lapiceros",
             "img": "img/ki_n_fino.jpg",
             "precio": 6
-        },        
-        {
-            "nombre": "Pliego de caple",
-            "modelo": "Papeles",
-            "img": "img/caple.jpg",
-            "precio": 25
         },
         {
             "nombre": "Bic Cristal",
             "modelo": "Lapiceros",
             "img": "img/bicris.jpg",
             "precio": 5
+        },       
+        {
+            "nombre": "Azor Point<br>Puno Fino",
+            "modelo": "Lapiceros",
+            "img": "img/azorpoint.jpg",
+            "precio": 6
+        },        
+        {
+            "nombre": "Azor Point<br>Puno Fino",
+            "modelo": "Lapiceros",
+            "img": "img/kilometrico.jpg",
+            "precio": 6
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "Cuaderno profesional Scribe Escolar Plus 100 hojas",
+            "modelo": "Libretas",
+            "img": "img/Cuaderno profesional Scribe Escolar Plus 100 hojas.jpg",
+            "precio": 30
+        },
+        {
+            "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
+            "modelo": "Libretas",
+            "img": "img/Cuadernoswingmix.jpg",
+            "precio": 27
+        },
+        {
+            "nombre": "Cuaderno 100 Hojas Profesional Norma",
+            "modelo": "Libretas",
+            "img": "img/cuadernonorma.jpg",
+            "precio": 50
+        },
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "Pliego de caple",
+            "modelo": "Papeles",
+            "img": "img/caple.jpg",
+            "precio": 25
         },
         {
             "nombre": "Papel Bond Scool",
@@ -31,89 +85,39 @@
             "precio": 145
         },
         {
-            "nombre": "Azor Point<br>Puno Fino",
-            "modelo": "Lapiceros",
-            "img": "img/azorpoint.jpg",
-            "precio": 6
-        },
-        {
-            "nombre": "Azor Point<br>Puno Fino",
-            "modelo": "Lapiceros",
-            "img": "img/kilometrico.jpg",
-            "precio": 6
-        },
-        {
-            "nombre": "Colores Smarty Redondos 12 pzs",
-            "modelo": "colores",
-            "img": "img/12smartcir.jpg",
-            "precio": 65
-        },
-        {
-            "nombre": "SUPER GLUE<br>2 x $10<br>12 x $40",
-            "modelo": "Pegamentos y adhesivos",
-            "img": "img/superglue.jpg",
-            "precio": 7
-        },
-        {
-            "nombre": "Pritt Chico 11g",
-            "modelo": "Pegamentos y adhesivos",
-            "img": "img/pritt_ch.jpg",
-            "precio": 16
-        },
-        {
-            "nombre": "Bully Chico 11g",
-            "modelo": "Pegamentos y adhesivos",
-            "img": "img/bully_ch.jpg",
+            "nombre": "Cartulina fosforecente",
+            "modelo": "Papeles",
+            "img": "img/cartufosfo.jpg",
             "precio": 12
         },
         {
-            "nombre": "Dixon Chico 8g",
-            "modelo": "Pegamentos y adhesivos",
-            "img": "img/dixon_ch.jpg",
-            "precio": 12
+            "nombre": "Pliego de papel china",
+            "modelo": "Papeles",
+            "img": "img/papelchina.jpg",
+            "precio": 2
         },
-        {
-            "nombre": "Cargador Tipo C<br>Marca FX",
-            "modelo": "Electrónica",
-            "img": "img/char_tp_eco.jpg",
-            "precio": 50
-        },
-        {
-            "nombre": "Cargador Tipo V8<br>Marca FX",
-            "modelo": "Electrónica",
-            "img": "img/char_v8_616_eco.jpg",
-            "precio": 40
-        },
-        {
-            "nombre": "Cargador de 3 puntas<br>V8 - C -Lightning",
-            "modelo": "Electrónica",
-            "img": "img/char_wir_3p.jpg",
-            "precio": 35
-        },       
-        {
-            "nombre": "Agotado :(<br>Mouse econonico<br>Marca FX",
-            "modelo": "Electrónica",
-            "img": "img/mo_3037.jpg",
-            "precio": 40
-        },
-        {
-            "nombre": "Agotado :(<br>Bocina FX 3 pulgadas, 6W, lector de MicroSD y USB, Radio FM, Bluetooth",
-            "modelo": "Electrónica",
-            "img": "img/ms1620.jpg",
-            "precio": 100
-        },        
-        {
-            "nombre": "Cable Magnético<br>Tipo: V8 y C",
-            "modelo": "Electrónica",
-            "img": "img/char_mg.jpg",
-            "precio": 35
-        },
-        {
-            "nombre": "HDMI 1.5 metros",
-            "modelo": "Electrónica",
-            "img": "img/hdmi_1_5.jpg",
-            "precio": 40
-        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
             "nombre": "Sacapuntas con deposito",
             "modelo": "Oficina",
@@ -138,36 +142,19 @@
             "img": "img/goma_factis_36r.jpg",
             "precio": 3
         },
-        {
-            "nombre": "Cuaderno profesional Scribe Escolar Plus 100 hojas",
-            "modelo": "Libretas",
-            "img": "img/Cuaderno profesional Scribe Escolar Plus 100 hojas.jpg",
-            "precio": 30
-        },
-        {
-            "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
-            "modelo": "Libretas",
-            "img": "img/Cuadernoswingmix.jpg",
-            "precio": 27
-        },
-        {
-            "nombre": "Cartulina fosforecente",
-            "modelo": "Papeles",
-            "img": "img/cartufosfo.jpg",
-            "precio": 12
-        },
-        {
-            "nombre": "Pliego de papel china",
-            "modelo": "Papeles",
-            "img": "img/papelchina.jpg",
-            "precio": 2
-        },
-        {
-            "nombre": "Cuaderno 100 Hojas Profesional Norma",
-            "modelo": "Libretas",
-            "img": "img/cuadernonorma.jpg",
-            "precio": 50
-        },
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
             "nombre": "Caja lapices desde 1H hasta 12B",
             "modelo": "kawaii",
@@ -283,6 +270,26 @@
             "img": "img/lafi.jpg",
             "precio": 10
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "SUPER GLUE<br>2 x $10<br>12 x $40",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/superglue.jpg",
+            "precio": 7
+        },
         {
             "nombre": "Pegamento Blanco Bully 35g",
             "modelo": "Pegamentos y adhesivos",
@@ -290,16 +297,120 @@
             "precio": 13
         },
         {
+            "nombre": "Pritt Chico 11g",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/pritt_ch.jpg",
+            "precio": 16
+        },
+        {
+            "nombre": "Bully Chico 11g",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/bully_ch.jpg",
+            "precio": 12
+        },
+        {
+            "nombre": "Dixon Chico 8g",
+            "modelo": "Pegamentos y adhesivos",
+            "img": "img/dixon_ch.jpg",
+            "precio": 12
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
             "nombre": "Colores Norma Redondos 12 pzs",
             "modelo": "colores",
             "img": "img/norma12redon.jpg",
             "precio": 90
         },
         {
+            "nombre": "Colores Smarty Redondos 12 pzs",
+            "modelo": "colores",
+            "img": "img/12smartcir.jpg",
+            "precio": 65
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
             "nombre": "Plastilina Baco 10 pzs",
             "modelo": "Arte y Manualidades",
             "img": "img/plastilina_baco_10.jpg",
             "precio": 12
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "Cargador Tipo C<br>Marca FX",
+            "modelo": "Electrónica",
+            "img": "img/char_tp_eco.jpg",
+            "precio": 50
+        },
+        {
+            "nombre": "Cargador Tipo V8<br>Marca FX",
+            "modelo": "Electrónica",
+            "img": "img/char_v8_616_eco.jpg",
+            "precio": 40
+        },
+        {
+            "nombre": "Cargador de 3 puntas<br>V8 - C -Lightning",
+            "modelo": "Electrónica",
+            "img": "img/char_wir_3p.jpg",
+            "precio": 35
+        },       
+        {
+            "nombre": "Agotado :(<br>Bocina FX 3 pulgadas, 6W, lector de MicroSD y USB, Radio FM, Bluetooth",
+            "modelo": "Electrónica",
+            "img": "img/ms1620.jpg",
+            "precio": 100
+        },        
+        {
+            "nombre": "Cable Magnético<br>Tipo: V8 y C",
+            "modelo": "Electrónica",
+            "img": "img/char_mg.jpg",
+            "precio": 35
+        },
+        {
+            "nombre": "HDMI 1.5 metros",
+            "modelo": "Electrónica",
+            "img": "img/hdmi_1_5.jpg",
+            "precio": 40
         },
         {
             "nombre": "Memoria Adata 32GB",
@@ -314,17 +425,35 @@
             "precio": 60
         },
         {
-            "nombre": "Teclado Mecanico Mitzu Bash-1004<br>Alambrico Fullrainbow/104",
+            "nombre": "Audifonos Bluetooth i108BT<br>Marca FX",
             "modelo": "Electrónica",
+            "img": "img/eari108bt.jpg",
+            "precio": 60
+        },
+
+
+
+
+        {
+            "nombre": "Teclado Mecanico Mitzu Bash-1004<br>Alambrico Fullrainbow/104",
+            "modelo": "Cómputo",
             "img": "img/mitzuTecMechBash104T.jpg",
             "precio": 800
         },
         {
-            "nombre": "Teclado Mecanico Mitzu Bash-1004<br>Alambrico Fullrainbow/104",
-            "modelo": "Sobre Pedido",
-            "img": "img/mitzuTecMechBash104T.jpg",
-            "precio": 800
+            "nombre": "Mouse ZGBAO 139<br>DPI: 800 / 1200<br>Iluminacion led, la neta esta chido el mouse",
+            "modelo": "Cómputo",
+            "img": "img/mo_139.jpg",
+            "precio": 120
         },
+
+
+
+
+
+
+
+
         {
             "nombre": "Tarjeta de Video MSI NVIDIA GeForce RTX 3060 Ventus 3X 12G OC<br>12GB 192-bit GDDR6, PCI Express 4.0 ",
             "modelo": "Sobre Pedido",
