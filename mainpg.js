@@ -181,7 +181,7 @@ formulario.addEventListener('submit', (event) => {
 
 window.addEventListener('scroll', function () {
   var nav = document.querySelector('header');
-  if (window.scrollY >= 450) { // ajusta este valor según tus necesidades
+  if (window.scrollY >= 120) { // ajusta este valor según tus necesidades
     nav.classList.add('fixed');
   } else {
     nav.classList.remove('fixed');
@@ -192,7 +192,7 @@ window.addEventListener('scroll', function () {
 
 window.addEventListener('scroll', function () {
   var nav = document.querySelector('nav');
-  if (window.scrollY >= 450) { // ajusta este valor según tus necesidades
+  if (window.scrollY >= 120) { // ajusta este valor según tus necesidades
     nav.classList.add('fixed');
   } else {
     nav.classList.remove('fixed');

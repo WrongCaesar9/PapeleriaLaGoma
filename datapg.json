@@ -66,7 +66,12 @@
             "enlace": "https://plask.ai/",
             "modelo": "Modelado y Diseño 3D"
         },
-
+        {
+            "nombre": "Mixamo/<br>Página para descargar animaciones para tus modelos 3D 'humanoides'",
+            "img": "impg/mixamo.png",
+            "enlace": "https://www.mixamo.com/#",
+            "modelo": "Modelado y Diseño 3D"
+        },
 
 
 
@@ -167,7 +172,12 @@
             "enlace": "https://drive.google.com/file/d/1J_KlLxBoWlt03zQesBEXGcHy6poKYqJo/view?usp=sharing",
             "modelo": "Juegos"
         },
-
+        {
+            "nombre": "3D Pinball Space Cadet",
+            "img": "impg/pinball3dw.png",
+            "enlace": "https://drive.google.com/file/d/1ClDf41v3rAWZFbzh4wKTZpMflmFWxiOR/view?usp=sharing",
+            "modelo": "Juegos"
+        },
 
 
 
@@ -357,11 +367,35 @@
             "modelo": "Otros"
         },
         {
+            "nombre": "Vacunas de Memorias USB<br>Descarga los tres archivos, ponlos en tu usb y ejecuta el .exe y el .vbs",
+            "img": "impg/vacunas.png",
+            "enlace": "https://drive.google.com/drive/folders/1374JERZboP1CfAt70iZ1Cq7RSjSoefXC?usp=sharing",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "eDEX-UI<br>Programa que emula al CMD con cosillas extra 💀🐱‍👤🕸",
+            "img": "impg/edexui.png",
+            "enlace": "https://github.com/GitSquared/edex-ui/releases",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Winrar x64",
+            "img": "impg/winrar.png",
+            "enlace": "https://drive.google.com/file/d/1ull86dlglB5qpfxpDnS1n9zam2zBLXiq/view?usp=sharing",
+            "modelo": "Otros"
+        },        
+        {
             "nombre": "Escritorio remoto de Chrome<br>Página para conectarse de forma remota a la pc",
             "img": "impg/remotecontrolpc.png",
             "enlace": "https://remotedesktop.google.com/home",
             "modelo": "Otros"
         },
+        {
+            "nombre": "I♥PDF",
+            "img": "impg/ilovepdf.png",
+            "enlace": "https://www.ilovepdf.com/es",
+            "modelo": "Otros"
+        },        
         {
             "nombre": "dafont<br>Página donde encontraras fuentes para Word",
             "img": "impg/dafont.png",
