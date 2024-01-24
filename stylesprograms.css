@@ -193,7 +193,7 @@ header.fixed {
     
     grid-gap: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 80%;
+    font-size: 78%;
     
 }
 
@@ -339,7 +339,7 @@ h1 {
 
 
 .formulario h4 {
-  font-size: 18px;
+  font-size: 15px;
   padding-top: 0rem;
   text-align:center;
   font-weight:bold;
@@ -471,9 +471,5 @@ h1 {
   display: flex;
   justify-content: center;  /* Alineación horizontal al centro */
   align-items: center;    
-
-}
-
-.box-input{
 
 }
