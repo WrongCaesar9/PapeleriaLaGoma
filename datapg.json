@@ -369,6 +369,18 @@
             "modelo": "Otros"
         },
         {
+            "nombre": "MIT App Inventor<br>Página de creación de apps 'sencillas'",
+            "img": "impg/appinventor.png",
+            "enlace": "https://ai2.appinventor.mit.edu/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Encontrar tu móvil<br>Página para encontrar tu teléfono, debe contar con WIFI o datos y tu cuenta",
+            "img": "impg/googlefind.png",
+            "enlace": "https://www.google.com/android/find/",
+            "modelo": "Otros"
+        },
+        {
             "nombre": "Heavens Above<br>Página para 'observar y rastrear' satélites que orbitan la Tierra",
             "img": "impg/heavensabove.png",
             "enlace": "https://www.heavens-above.com/",

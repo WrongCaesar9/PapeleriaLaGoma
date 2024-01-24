@@ -172,15 +172,32 @@ header.fixed {
     margin-top: 0;
   } 
 
+
+
+
+
+
+
+
+
   footer {
     font-size: 10;
     background-color: #0066ffc2;
+    background-image: url(/logos/Background2.png);
+    background-size: 30%;
     color: white;
     text-align: center;
     padding: 10px;
   }
 
   
+
+
+
+
+
+
+
   #productos-contenedor {
     
     display:grid;

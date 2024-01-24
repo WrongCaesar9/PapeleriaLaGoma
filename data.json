@@ -395,12 +395,6 @@
             "precio": 35
         },       
         {
-            "nombre": "Agotado :(<br>Bocina FX 3 pulgadas, 6W, lector de MicroSD y USB, Radio FM, Bluetooth",
-            "modelo": "Electrónica",
-            "img": "img/ms1620.jpg",
-            "precio": 100
-        },        
-        {
             "nombre": "Cable Magnético<br>Tipo: V8 y C",
             "modelo": "Electrónica",
             "img": "img/char_mg.jpg",
@@ -428,7 +422,7 @@
             "nombre": "Audifonos Bluetooth i108BT<br>Marca FX",
             "modelo": "Electrónica",
             "img": "img/eari108bt.jpg",
-            "precio": 60
+            "precio": 180
         },
 
 

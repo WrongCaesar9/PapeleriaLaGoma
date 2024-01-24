@@ -177,15 +177,31 @@ header.fixed {
     margin-top: 0;
   } 
 
+
+
+
+
+
   footer {
+    background-color: rgba(29, 26, 58, 0.931);  
+    background-image: url(/logos/gamespattern.gif);
+    background-size: 30%; 
     font-size: 10;
-    background-color: #0066ffc2;
+
+    background-blend-mode: multiply;
     color: white;
     text-align: center;
     padding: 10px;
   }
 
   
+
+
+
+
+
+
+
   #productos-contenedor {
     
     display:grid;
