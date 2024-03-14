@@ -84,7 +84,18 @@
             "enlace": "https://ultimaker.com/es/software/ultimaker-cura/#downloads",
             "modelo": "Modelado y Diseño 3D"
         },
-
+        {
+            "nombre": "EPIC GAMES<br>La idea es que descargues Unreal Engine xd<br>En video esta como instalarlo",
+            "img": "impg/epicgames.png",
+            "enlace": "https://www.unrealengine.com/en-US/download",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Quixel Mixer<br>Software que permite la creación de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
+            "img": "impg/quixelmixer.png",
+            "enlace": "https://quixel.com/products/mixer",
+            "modelo": "Modelado y Diseño 3D"
+        },
 
 
 
@@ -108,6 +119,21 @@
             "enlace": "https://spark.meta.com/download/",
             "modelo": "VR y AR"
         },
+        {
+            "nombre": "Onirix<br>La app que nos recomendo la Profa. Karen",
+            "img": "impg/onirix.png",
+            "enlace": "https://studio.onirix.com/projects",
+            "modelo": "VR y AR"
+        },
+        {
+            "nombre": "Cubo de papel para Merge Object Viewer",
+            "img": "impg/mergecubepaper.png",
+            "enlace": "https://mergeedu.com/download/file.php?f=paper-merge-cube.pdf",
+            "modelo": "VR y AR"
+        },
+
+
+
 
 
 
@@ -337,6 +363,9 @@
 
 
 
+
+
+
         
         {
             "nombre": "Fritzing 0.9.9 x64<br>Programa de diseño electrónico",
@@ -388,6 +417,11 @@
 
 
 
+
+
+
+
+
         {
             "nombre": "Raspbian OS",
             "img": "impg/raspbian.png",
@@ -406,6 +440,18 @@
             "enlace": "https://ubuntu.com/download/desktop#download",
             "modelo": "OS & Burners"
         },            
+        {
+            "nombre": "WinterOS Windows11<br>23H2W11Rev11",
+            "img": "impg/winterOS11.png",
+            "enlace": "https://www.mediafire.com/file/wpxgw0ltldq4wsk/23H2W11Rev11.iso",
+            "modelo": "OS & Burners"
+        },            
+        {
+            "nombre": "Windows11 Asistente de Instalación<br>Programa oficial para crear ISO de Windows11",
+            "img": "impg/w11assistantins.png",
+            "enlace": "https://download.microsoft.com/download/5/4/c/54c22b82-d0cd-4e34-9a06-b75823a8aede/Windows11InstallationAssistant.exe",
+            "modelo": "OS & Burners"
+        },             
         {
             "nombre": "Beini 1.2.5 OS",
             "img": "impg/beini.png",
@@ -460,6 +506,12 @@
             "enlace": "https://zenlayer.dl.sourceforge.net/project/win32diskimager/Archive/win32diskimager-1.0.0-install.exe",
             "modelo": "OS & Burners"
         },
+
+
+
+
+
+
 
 
 
@@ -623,6 +675,13 @@
             "enlace": "https://play.google.com/store/apps/details?id=com.jonathanpuckey.radiogarden",
             "modelo": "Android"
         },
+        {
+            "nombre": "Merge Object Viewer",
+            "img": "impg/mergeobjectviewerapp.png",
+            "enlace": "https://play.google.com/store/apps/details?id=com.MergeCube.ObjectViewer&hl=es_419&gl=US",
+            "modelo": "Android"
+        },
+
 
 
 
@@ -874,6 +933,12 @@
             "nombre": "VirusTotal<br>Página de análisis de archivos y páginas web a través de un antivirus",
             "img": "impg/virustotal.png",
             "enlace": "https://www.virustotal.com/gui/home/upload",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Autodesk Education<br>Debes iniciar sesión con tu cuenta normal y, en verificar, subes tu comprobante de inscripción para tener acceso a los softwares",
+            "img": "impg/autodeskeducation.png",
+            "enlace": "https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual#card-f360",
             "modelo": "Otros"
         },
         {
