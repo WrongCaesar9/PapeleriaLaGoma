@@ -91,9 +91,15 @@
             "modelo": "Modelado y Diseño 3D"
         },
         {
-            "nombre": "Quixel Mixer<br>Software que permite la creación de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
+            "nombre": "Quixel Mixer<br>Mix de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
             "img": "impg/quixelmixer.png",
             "enlace": "https://quixel.com/products/mixer",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "Adobe Substance 3D Painter<br>Para la creación de texturas<br>Otros enlace: https://pastepvp.org/?v=9016",
+            "img": "impg/substance3dpainter.png",
+            "enlace": "https://drive.google.com/file/d/1aKtQAQfOXAgTibJz4aOCtqp_EI-lT0cg/view?usp=sharing",
             "modelo": "Modelado y Diseño 3D"
         },
 
@@ -217,6 +223,12 @@
             "nombre": "EYECANDY<br>Página de biblioteca de técnicas visuales",
             "img": "impg/eyecannndy.png",
             "enlace": "https://eyecannndy.com/",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "PHYSICALLY BASED<br>A database of physically based values for CG artists",
+            "img": "impg/physicallybased.png",
+            "enlace": "https://physicallybased.info/",
             "modelo": "Edición"
         },
 
@@ -383,6 +395,18 @@
             "nombre": "Arduino",
             "img": "impg/arduinoide.png",
             "enlace": "https://www.arduino.cc/en/software",
+            "modelo": "Electrónica y Robots"
+        },
+        {
+            "nombre": "Driver Arduino Chino CH341SDER",
+            "img": "impg/CH341SDERdriver.png",
+            "enlace": "https://drive.google.com/file/d/1sF-d5LKccgjK4dEwruoZINOaW9W2JDQa/view?usp=sharing",
+            "modelo": "Electrónica y Robots"
+        },
+        {
+            "nombre": "IFTTT",
+            "img": "impg/CH341SDERdriver.png",
+            "enlace": "https://ifttt.com/explore",
             "modelo": "Electrónica y Robots"
         },
         
@@ -679,6 +703,12 @@
             "nombre": "Merge Object Viewer",
             "img": "impg/mergeobjectviewerapp.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.MergeCube.ObjectViewer&hl=es_419&gl=US",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "Blynk IoT<br>IoT basado en la nube para la conexión de HW. Código abierto, AWS, Google",
+            "img": "impg/blynkiotapp.png",
+            "enlace": "https://play.google.com/store/apps/details?id=cloud.blynk",
             "modelo": "Android"
         },
 
@@ -1047,6 +1077,12 @@
             "nombre": "CrystalDiskMark",
             "img": "impg/crystaldiskmark.png",
             "enlace": "https://netactuate.dl.sourceforge.net/project/crystaldiskmark/8.0.4c/CrystalDiskMark8_0_4c.exe",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "HDD Regenerator",
+            "img": "impg/hddregenerator.png",
+            "enlace": "https://drive.google.com/file/d/1jPl9rKJVwh94Me4BcxmRj6bcSm5BwBx2/view?usp=sharing",
             "modelo": "Otros"
         },
         {
