@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   const iniciarCarruselAutomatico = () => {
-    setInterval(avanzarImagen, 1500);
+    setInterval(avanzarImagen, 2500);
   };
 
   iniciarCarruselAutomatico();
@@ -117,7 +117,7 @@ formulario.addEventListener('submit', (event) => {
 
 window.onscroll = function () {
   //console.log(document.documentElement.scrollTop);
-  if (document.documentElement.scrollTop > 200) {
+  if (document.documentElement.scrollTop > 350) {
     document.querySelector('.go-top-container').classList.add('show');
   }
   else {
@@ -138,7 +138,7 @@ document.querySelector('.go-top-container').addEventListener('click', () => {
 
 window.addEventListener('scroll', function () {
   var nav = document.querySelector('header');
-  if (window.scrollY >= 120) { // ajusta este valor según tus necesidades
+  if (window.scrollY >= 210) { // ajusta este valor según tus necesidades
     nav.classList.add('fixed');
   } else {
     nav.classList.remove('fixed');
@@ -149,7 +149,7 @@ window.addEventListener('scroll', function () {
 
 window.addEventListener('scroll', function () {
   var nav = document.querySelector('nav');
-  if (window.scrollY >= 120) { // ajusta este valor según tus necesidades
+  if (window.scrollY >= 210) { // ajusta este valor según tus necesidades
     nav.classList.add('fixed');
   } else {
     nav.classList.remove('fixed');

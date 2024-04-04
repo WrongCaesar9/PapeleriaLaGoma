@@ -21,7 +21,7 @@ header {
 header.fixed {
   text-align: center;    
   position: fixed;
-  top: -1.7rem;
+  top: -2.2rem;
   left: 33%;
   transform: translateX(-50%);
   background-color: #414141;
