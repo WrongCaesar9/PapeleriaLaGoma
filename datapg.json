@@ -489,15 +489,15 @@
             "modelo": "OS & Burners"
         },            
         {
-            "nombre": "wifislax64-3.4 OS<br>",
+            "nombre": "Wifislax OS<br>En la parte de hasta abajo esta el link<br>Igual para el Hashcat",
             "img": "impg/wifislaxos.png",
-            "enlace": "https://s8.upfiles.download/2023/12/04/15/6P8v8tFjB4O6Joglhyapw1evxnSXqlB1YtT4FC4h.iso?name=wifislax64-3.4-final.iso&ip=2806:2f0:9360:fc0b:448d:1908:8751:8178&md5=PXZDo_ucO7MiSjmVE5rtbw&expires=1707235838",
+            "enlace": "https://foro.seguridadwireless.net/live-wifislax/wifislax64-3-4-final-paara-descargar/",
             "modelo": "OS & Burners"
         },            
         {
-            "nombre": "DRIVER NVIDIA PARA HASHCAT de ",
+            "nombre": "DRIVER NVIDIA PARA HASHCAT",
             "img": "impg/wifislaxdriver.png",
-            "enlace": "https://s5.upfiles.download/2023/12/04/14/fEeGkDb5SpvHVzt9ZtrpP9SIqLq5ImSuo3fEtkfo.xzm?name=nvidia-driver-535.129.03-1wifislax.xzm&ip=2806:2f0:9360:fc0b:448d:1908:8751:8178&md5=hUMG44vBgWoAj6SiplR5rg&expires=1707236080",
+            "enlace": "https://foro.seguridadwireless.net/live-wifislax/wifislax64-3-4-final-paara-descargar/",
             "modelo": "OS & Burners"
         },                     
         {
@@ -535,7 +535,14 @@
             "img": "impg/win32diskimager.png",
             "enlace": "https://zenlayer.dl.sourceforge.net/project/win32diskimager/Archive/win32diskimager-1.0.0-install.exe",
             "modelo": "OS & Burners"
+        },                
+        {
+            "nombre": "Licencia digital Windows 10/11",
+            "img": "impg/licenciaw1011.png",
+            "enlace": "https://drive.google.com/file/d/1_z4Rotv4hoaFuuD8MoBo7heoLiYraVRl/view?usp=sharing",
+            "modelo": "OS & Burners"
         },
+
 
 
 
