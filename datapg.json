@@ -97,11 +97,44 @@
             "modelo": "Modelado y Diseño 3D"
         },
         {
-            "nombre": "Adobe Substance 3D Painter<br>Para la creación de texturas<br>Otros enlace: https://pastepvp.org/?v=9016",
-            "img": "impg/substance3dpainter.png",
-            "enlace": "https://drive.google.com/file/d/1aKtQAQfOXAgTibJz4aOCtqp_EI-lT0cg/view?usp=sharing",
+            "nombre": "Adobe Substance 3D Painter<br>Para la creación de texturas",
+            "img": "impg/adobesubstancepainter.png",
+            "enlace": "https://www.mediafire.com/file/xg27e1x8w9r7xu0/ADB.PNT.8.3.WIN.AP.ZNT.rar/file",
             "modelo": "Modelado y Diseño 3D"
         },
+        {
+            "nombre": "Adobe Substance 3D Designer<br>Para la creación de texturas",
+            "img": "impg/adobesubstancedesigner.png",
+            "enlace": "https://www.mediafire.com/file/nxptpg6q8sxf0n8/ADB.SUB3D.DES.12.1.AP.ZNT.rar/file",
+            "modelo": "Modelado y Diseño 3D"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -932,7 +965,19 @@
             "img": "impg/blenderdev.png",
             "enlace": "https://github.com/blender/blender",
             "modelo": "GitHub"
-        },            
+        },                        
+        {
+            "nombre": "Open Moonray",
+            "img": "impg/moonray.png",
+            "enlace": "https://github.com/dreamworksanimation/openmoonray",
+            "modelo": "GitHub"
+        },             
+
+
+
+
+
+
 
 
 
@@ -1126,6 +1171,30 @@
             "nombre": "Portal de Servicios al Contribuyente<br>En Organismos Auxiliares se paga lo del TESCHI ",
             "img": "impg/servicioscontri.png",
             "enlace": "https://sfpya.edomexico.gob.mx/recaudacion/",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Plagiarism<br>Detector de plagio",
+            "img": "impg/plagiarism.png",
+            "enlace": "https://plagiarismdetector.net/es",
+            "modelo": "Otros"
+        },        
+        {
+            "nombre": "Generador APA de Scribbr",
+            "img": "impg/formatoapa.png",
+            "enlace": "https://www.scribbr.es/citar/generador/apa/",
+            "modelo": "Otros"
+        },        
+        {
+            "nombre": "Generador de Citas APA",
+            "img": "impg/biggurucitas.png",
+            "enlace": "https://app.bibguru.com/p/71554a6d-0c19-4076-b458-e8cad5f763be",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Video Highlight<br>Resumidor de videos de YouTube",
+            "img": "impg/videohighlight.png",
+            "enlace": "https://videohighlight.com/account/login?callbackUrl=https%3A%2F%2Fvideohighlight.com%2Fvideo%2Fai%2Fnew",
             "modelo": "Otros"
         },
         {
