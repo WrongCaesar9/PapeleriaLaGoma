@@ -97,6 +97,12 @@
             "modelo": "Modelado y Diseño 3D"
         },
         {
+            "nombre": "Houdini<br>Mix de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
+            "img": "impg/houdini.png",
+            "enlace": "https://drive.google.com/file/d/1GhUq_M8gIFyu3x9VFB609Sm6H5XHwUaK/view?usp=sharing",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
             "nombre": "Adobe Substance 3D Painter<br>Para la creación de texturas",
             "img": "impg/adobesubstancepainter.png",
             "enlace": "https://www.mediafire.com/file/xg27e1x8w9r7xu0/ADB.PNT.8.3.WIN.AP.ZNT.rar/file",
@@ -223,9 +229,9 @@
             "modelo": "Edición"
         },
         {
-            "nombre": "Adobe Illustrator Portable<br>Al ser portable, no contendra todas las funciones de la versión PRO, pero te sacara de un apuro",
+            "nombre": "Adobe Illustrator CC2024<br>Ultima Version",
             "img": "impg/aipor.png",
-            "enlace": "https://www.henrymatzar.com/IllustratorPortable.rar",
+            "enlace": "https://drive.google.com/file/d/1Jq1-gKtTLfY-kCN2qdOO0KxirMHeiHXU/view?usp=sharing",
             "modelo": "Edición"
         },
         {
@@ -244,6 +250,12 @@
             "nombre": "Mocha Pro 2023 10.0.1 Windows",
             "img": "impg/mochaae.png",
             "enlace": "https://cdn.borisfx.com/borisfx/store/mpp-adobe/MochaPro2023-Adobe-10.0.1-54.g58678bac292c.win.msi",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "SynthEyes Pro 2024 v23.10.1057",
+            "img": "impg/syntheyes.png",
+            "enlace": "https://drive.google.com/file/d/1Px0_VlL7tyRAuMdA1dE9vFVlwruJe-fP/view?usp=sharing",
             "modelo": "Edición"
         },
         {
