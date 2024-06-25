@@ -11,7 +11,13 @@
             "img": "impg/cinema4dr20.png",
             "enlace": "https://drive.google.com/file/d/19dZlXy0UeGLWeb0oY3T3OVLXw7YaGQXX/view",
             "modelo": "Modelado y Diseño 3D"
-        },
+        },        
+        {
+            "nombre": "Houdini 19.0<br>Simulaciones mamalonas",
+            "img": "impg/houdini.png",
+            "enlace": "https://drive.google.com/file/d/1GhUq_M8gIFyu3x9VFB609Sm6H5XHwUaK/view?usp=sharing",
+            "modelo": "Modelado y Diseño 3D"
+        },        
         {
             "nombre": "Blender Studio<br>Aqui encuentras rigs y modelos 3D hechos por blender :D",
             "img": "impg/blenderstudio.png",
@@ -97,9 +103,27 @@
             "modelo": "Modelado y Diseño 3D"
         },
         {
-            "nombre": "Houdini<br>Mix de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
+            "nombre": "Houdini 19.5.805<br>Simulaciones mamalonas",
             "img": "impg/houdini.png",
-            "enlace": "https://drive.google.com/file/d/1GhUq_M8gIFyu3x9VFB609Sm6H5XHwUaK/view?usp=sharing",
+            "enlace": "https://www.sidefx.com/download/download-houdini/108900/pdb/get/",
+            "modelo": "Modelado y Diseño 3D"
+        },                
+        {
+            "nombre": "Houdini 20.0.724<br>Simulaciones mamalonas",
+            "img": "impg/houdini.png",
+            "enlace": "https://www.sidefx.com/download/download-houdini/108900/pdb/get/",
+            "modelo": "Modelado y Diseño 3D"
+        },                
+        {
+            "nombre": "Houdini 20.0.724 PARA MAC<br>Simulaciones mamalonas",
+            "img": "impg/houdinimac.png",
+            "enlace": "https://d199n7he4uszw5.cloudfront.net/download/download-build/116770/cdn/?Expires=1719317520&Signature=2lut7KPuFXZEG0m8dkUqLP2l-qnNoWOdSidbhZWnO9LCMQ8sBWeGpU4eqrq2MCoIKfqeeVCf~h7kt9ZZFBbsFc~KsnFvUY0wPcc-Qwro~EbUStpJhjd6mkiEMm9-xWaX7WLECjmUpPt-FHRKgk23BmTj45dxG0An3G6SNM9siy-siym5IB9JAtvrFccthchyN3Xk2aM9aE9GgO0WzMUr1u1GMdD7hCE7xjfO0JPAUBKZzHvjKCp1W6ZTi6yTnW58hiEDlZrTvoiqjtTcx1gzwXlbg030AUAFB--WaR79qWYsRhZApwdNzztj-GTDzlhZdUCe7Cktd6PPpqO8z6ORPg__&Key-Pair-Id=APKAITRNKY64UW6MKIWQ",
+            "modelo": "Modelado y Diseño 3D"
+        },                
+        {
+            "nombre": "Houdini 20.0.724 PARA LINUX<br>Simulaciones mamalonas",
+            "img": "impg/houdinilinux.png",
+            "enlace": "https://d199n7he4uszw5.cloudfront.net/download/download-build/116765/cdn/?Expires=1719317702&Signature=kSf9h4cFdkVbZZHxPY2SyetC8FnFMfyKK9PdhkRl3xOQQp2lwsSkuRH1rL~nrqXxzwRTNAGDDnVR~IFV3PfaTSaKFKmUOZ8sgNeiwQfQXl3n-I7j0qj74K9x-Vzkj3ej0WuLDH9k3u1nF7ndwUcDClF~NN6wqd2tp9tozPFN1r5y0DTb0A8lcmqqGNSCBV2AIxSuKq0tzeefQtyKjRnmqwuYlWGHW1SzMdSBKpTQldtFJle0UGAe1v3vxn0qnZq3GeT69E1YQkrcMc32k67RAuIFFNN0eUZNrbRZp6H2c3cKUlg4GGWWWZ3O9HWYnAo4OPv7hnUywkQ1qIJuOfiasQ__&Key-Pair-Id=APKAITRNKY64UW6MKIWQ",
             "modelo": "Modelado y Diseño 3D"
         },
         {
@@ -320,7 +344,7 @@
             "modelo": "Juegos"
         },
         {
-            "nombre": "Emulador NeoRAGEx<br>La neta esta mamalón",
+            "nombre": "Emulador NeoRAGEx<br>La neta esta mamalón, si tienes palanca puedes utilizarla",
             "img": "impg/emuladorneo.png",
             "enlace": "https://drive.google.com/drive/folders/1K4Q1Dz_P7UJGiI8QIsWbh3WnJDhjA32h?usp=sharing",
             "modelo": "Juegos"
@@ -347,6 +371,18 @@
             "nombre": "3D Pinball Space Cadet",
             "img": "impg/pinball3dw.png",
             "enlace": "https://drive.google.com/file/d/1ClDf41v3rAWZFbzh4wKTZpMflmFWxiOR/view?usp=sharing",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "FREE ROMS<br>Descargue juegos ISO portátiles de PSP/Playstation",
+            "img": "impg/freeroms.png",
+            "enlace": "https://drive.google.com/file/d/1ClDf41v3rAWZFbzh4wKTZpMflmFWxiOR/view?usp=sharing",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "PPSSPP<br>Emulador de psp, en el link viene para PC, Android y macOS",
+            "img": "impg/ppsspp.png",
+            "enlace": "https://www.ppsspp.org/download/",
             "modelo": "Juegos"
         },
 
@@ -520,6 +556,12 @@
             "enlace": "https://ubuntu.com/download/desktop#download",
             "modelo": "OS & Burners"
         },            
+        {
+            "nombre": "TOMEX OS V2.63<br>W10/11",
+            "img": "impg/tomexos.png",
+            "enlace": "https://www.mediafire.com/file/2ne9gn67l6kgto8/TomexOS+V2.2.iso/fil",
+            "modelo": "OS & Burners"
+        },             
         {
             "nombre": "WinterOS Windows11<br>23H2W11Rev11",
             "img": "impg/winterOS11.png",
@@ -723,6 +765,12 @@
             "nombre": "GTA San Andreas<br>",
             "img": "impg/gtasaAndroid.png",
             "enlace": "https://drive.google.com/file/d/1AIhTCy7WzF9ELZiQ6k-x3anoyJiJ5KfA/view?usp=sharing",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "HiPER Calc Pro_9.2.1<br>La mejor calculadora para Android que he probado",
+            "img": "impg/HiPER Calc Pro_9.2.1.png",
+            "enlace": "https://drive.google.com/file/d/1fj8mD13q6uTqZRZ3lhKI5Ja-kStUyLV7/view?usp=sharing",
             "modelo": "Android"
         },
         {
@@ -1046,6 +1094,36 @@
             "modelo": "Otros"
         },
         {
+            "nombre": "Triage<br>Explore el entorno de pruebas de análisis de malware de Triage para analizar sus muestras de malware.",
+            "img": "impg/triage.png",
+            "enlace": "https://tria.ge/dashboard",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "Jotti<br>Jotti's malware scan es un servicio gratuito que le permite analizar archivos sospechosos con varios programas antivirus.",
+            "img": "impg/jotti.png",
+            "enlace": "https://virusscan.jotti.org/",
+            "modelo": "Otros"
+        },        
+        {
+            "nombre": "OPSWAT<br>Plataforma de ciberseguridad para detectar y prevenir amenazas de malware en archivos",
+            "img": "impg/opswat.png",
+            "enlace": "https://metadefender.opswat.com/",
+            "modelo": "Otros"
+        },        
+        {
+            "nombre": "Joe Sandbox<br>Detecta y analiza posibles archivos y URL maliciosos en Windows, Mac OS y Linux en busca de actividades sospechosas.",
+            "img": "impg/joesandbox.png",
+            "enlace": "https://www.joesandbox.com/",
+            "modelo": "Otros"
+        },        
+        {
+            "nombre": "HYBRID ANALYSIS<br>Servicio gratuito que detecta y analiza amenazas desconocidas utilizando una tecnología única de análisis híbrido.",
+            "img": "impg/hybridanalysis.png",
+            "enlace": "https://www.hybrid-analysis.com/",
+            "modelo": "Otros"
+        },
+        {
             "nombre": "Autodesk Education<br>Debes iniciar sesión con tu cuenta normal y, en verificar, subes tu comprobante de inscripción para tener acceso a los softwares",
             "img": "impg/autodeskeducation.png",
             "enlace": "https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual#card-f360",
@@ -1187,6 +1265,18 @@
             "nombre": "CURP",
             "img": "impg/curp.png",
             "enlace": "https://www.gob.mx/curp/",
+            "modelo": "Otros"
+        },        
+        {
+            "nombre": "NO derechohabiente IMSS",
+            "img": "impg/noderechohabienteimss.png",
+            "enlace": "https://digital.imss.gob.mx/derechohabiencia/tramite/solicitudConstancia",
+            "modelo": "Otros"
+        },        
+        {
+            "nombre": "Acreditación de No Afiliación ISSSTE",
+            "img": "impg/acreditacióndenoafiliación.png",
+            "enlace": "https://oficinavirtual.issste.gob.mx/Servicios/Acreditaci%C3%B3n-de-no-Afiliaci%C3%B3n",
             "modelo": "Otros"
         },
         {
