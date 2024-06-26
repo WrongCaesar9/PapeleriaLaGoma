@@ -101,29 +101,11 @@
             "img": "impg/quixelmixer.png",
             "enlace": "https://quixel.com/products/mixer",
             "modelo": "Modelado y Diseño 3D"
-        },
+        },             
         {
-            "nombre": "Houdini 19.5.805<br>Simulaciones mamalonas",
+            "nombre": "Houdini Varias VERSIONES<br>Debes crear un cuenta que sera para SideFX",
             "img": "impg/houdini.png",
-            "enlace": "https://www.sidefx.com/download/download-houdini/108900/pdb/get/",
-            "modelo": "Modelado y Diseño 3D"
-        },                
-        {
-            "nombre": "Houdini 20.0.724<br>Simulaciones mamalonas",
-            "img": "impg/houdini.png",
-            "enlace": "https://www.sidefx.com/download/download-houdini/108900/pdb/get/",
-            "modelo": "Modelado y Diseño 3D"
-        },                
-        {
-            "nombre": "Houdini 20.0.724 PARA MAC<br>Simulaciones mamalonas",
-            "img": "impg/houdinimac.png",
-            "enlace": "https://d199n7he4uszw5.cloudfront.net/download/download-build/116770/cdn/?Expires=1719317520&Signature=2lut7KPuFXZEG0m8dkUqLP2l-qnNoWOdSidbhZWnO9LCMQ8sBWeGpU4eqrq2MCoIKfqeeVCf~h7kt9ZZFBbsFc~KsnFvUY0wPcc-Qwro~EbUStpJhjd6mkiEMm9-xWaX7WLECjmUpPt-FHRKgk23BmTj45dxG0An3G6SNM9siy-siym5IB9JAtvrFccthchyN3Xk2aM9aE9GgO0WzMUr1u1GMdD7hCE7xjfO0JPAUBKZzHvjKCp1W6ZTi6yTnW58hiEDlZrTvoiqjtTcx1gzwXlbg030AUAFB--WaR79qWYsRhZApwdNzztj-GTDzlhZdUCe7Cktd6PPpqO8z6ORPg__&Key-Pair-Id=APKAITRNKY64UW6MKIWQ",
-            "modelo": "Modelado y Diseño 3D"
-        },                
-        {
-            "nombre": "Houdini 20.0.724 PARA LINUX<br>Simulaciones mamalonas",
-            "img": "impg/houdinilinux.png",
-            "enlace": "https://d199n7he4uszw5.cloudfront.net/download/download-build/116765/cdn/?Expires=1719317702&Signature=kSf9h4cFdkVbZZHxPY2SyetC8FnFMfyKK9PdhkRl3xOQQp2lwsSkuRH1rL~nrqXxzwRTNAGDDnVR~IFV3PfaTSaKFKmUOZ8sgNeiwQfQXl3n-I7j0qj74K9x-Vzkj3ej0WuLDH9k3u1nF7ndwUcDClF~NN6wqd2tp9tozPFN1r5y0DTb0A8lcmqqGNSCBV2AIxSuKq0tzeefQtyKjRnmqwuYlWGHW1SzMdSBKpTQldtFJle0UGAe1v3vxn0qnZq3GeT69E1YQkrcMc32k67RAuIFFNN0eUZNrbRZp6H2c3cKUlg4GGWWWZ3O9HWYnAo4OPv7hnUywkQ1qIJuOfiasQ__&Key-Pair-Id=APKAITRNKY64UW6MKIWQ",
+            "enlace": "https://www.sidefx.com/download/daily-builds/?production=true&python3=true",
             "modelo": "Modelado y Diseño 3D"
         },
         {
