@@ -103,7 +103,7 @@
             "modelo": "Modelado y Diseño 3D"
         },             
         {
-            "nombre": "Houdini Varias VERSIONES<br>Debes crear un cuenta que sera para SideFX",
+            "nombre": "Houdini Varias VERSIONES<br>Debes crear una cuenta que será para SideFX y te dará acceso a los daily buils",
             "img": "impg/houdini.png",
             "enlace": "https://www.sidefx.com/download/daily-builds/?production=true&python3=true",
             "modelo": "Modelado y Diseño 3D"
@@ -1302,6 +1302,12 @@
             "img": "impg/lucid.png",
             "enlace": "https://lucid.app/",
             "modelo": "Otros"
+        },
+        {
+            "nombre": "CURSO de HOUDINI<br>SOLO ADENTRATE Y DISFRUTA",
+            "img": "impg/houdini.png",
+            "enlace": "https://drive.google.com/drive/folders/12eOIgD_T1AbDYJb8k3BO23HFczTA3Kuw?usp=sharing",
+            "modelo": "Modelado y Diseño 3D"
         },
         {
             "nombre": "Mi Instagram<br>wrongcaesar9.0",
