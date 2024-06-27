@@ -1104,6 +1104,12 @@
             "img": "impg/hybridanalysis.png",
             "enlace": "https://www.hybrid-analysis.com/",
             "modelo": "Otros"
+        },       
+        {
+            "nombre": "Driver Identifier<br>software gratuito para uso personal, tiene la mayor base de datos de controladores de Windows para todas las computadoras portátiles y de escritorio.",
+            "img": "impg/driverident.png",
+            "enlace": "https://www.driveridentifier.com/",
+            "modelo": "Otros"
         },
         {
             "nombre": "Autodesk Education<br>Debes iniciar sesión con tu cuenta normal y, en verificar, subes tu comprobante de inscripción para tener acceso a los softwares",
