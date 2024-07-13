@@ -1,0 +1,756 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .frame {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15px; /* Ajusta el ancho según lo necesites */
+    height: 5000px; /* Ajusta la altura según lo necesites */
+    background: url('/gen_img/motivoMarco.jpg') repeat-y ;
+    background-size: contain;
+  }
+  
+  .frame-left {
+    left: 0;
+  }
+  
+  .frame-right {
+    right: 0;
+  }
+  
+  .frame-top,
+  .frame-bottom {
+    position: absolute;
+    width: 15px;
+    height: 5000px; /* Ajusta la altura según lo necesites */
+    background: url('/gen_img/motivoMarco.jpg') no-repeat;
+    background-size: contain;
+  }
+  
+  .frame-top {
+    top: 0;
+  }
+  
+  .frame-bottom {
+    bottom: 0;
+  }
+  
+
+
+
+
+
+
+/* styles.css */
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(/imghead/GenBGB.jpg);
+    background-size: 25rem 25rem;
+    background-repeat: unset;
+    color: aliceblue;
+}
+
+/*
+header {
+    background-image: url(/imghead/GenBG.jpg);
+    background-size: 25rem;
+    background-color: #c9c9c9;
+    color: white;
+    padding: 2em 0;
+    position: relative;
+    z-index: 2;
+}
+
+ Estilo general del header */
+header {
+    background-image: url(/imghead/GenBGB.jpg);
+    background-size: 25rem;
+    background-color: #c9c9c9;
+    
+    color: white;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo cuando el header es fijo */
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* Media queries para diferentes dispositivos */
+@media (max-width: 768px) {
+    header {
+
+        /* Ajustes específicos para móviles */
+        header.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+
+        /* Ajustes específicos para tabletas */
+        header.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+nav a {
+    margin: auto;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+  }
+
+nav a:hover {
+    transition: 0.2;
+    background-color: #000000e6;
+  }
+
+
+
+
+.menu-toggle {
+    top: 4%;
+    left: 90%;
+    right: 0;
+    z-index: 10;
+    position: fixed;
+    display: none;
+    cursor:pointer;
+    z-index: 2;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 1em;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: -200%;
+        width:180%;
+        height: 300vh;
+        background-image: url(/imghead/GenBGB.jpg);
+        background-size: 25rem;
+        align-items: center;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-list li {
+        margin: 1.5em 0;
+    }
+}
+
+/* Slider styles */
+.slider,
+.sliderW {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+}
+
+.carousel,
+.carouselW {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel-inner,
+.carousel-innerW {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-item,
+.carousel-itemW {
+    flex: 0 0 100%;
+}
+
+.carousel-item img,
+.carousel-itemW img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+button.prev,
+button.next,
+button.prevW,
+button.nextW {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prevW {
+    left: 10px;
+}
+
+button.nextW {
+    right: 10px;
+}
+
+section {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
+.products {
+    padding: 2em;
+    text-align: center;
+}
+
+.featured {
+    padding: 2em;
+    text-align: center;
+}
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-products div {
+    border: 1px solid #ddd;
+    margin: 1em;
+    padding: 1em;
+    width: 200px;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    background-image: url(/imghead/GenBG.jpg);
+    background-size: 25rem 25rem;
+    background-repeat: unset;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-instagram,
+.btn-whatsapp {
+    width: 4rem;
+    height: 4rem;
+    background: #1f6197;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.btn-instagram:hover {
+    border: solid 6px #ffa1f7;
+    transition: 0.8s;
+}
+
+.btn-whatsapp:hover {
+    border: solid 4px #44ff54;
+    transition: 0.3s;
+}
+
+
+
+.nav-listA {
+    display: contents;
+    list-style: circle;
+    margin: 0;
+    padding: 0%;
+    position: fixed;
+}
+
+.nav-listA li {
+    margin: 0 1em;
+}
+
+.nav-listA li a {
+    animation: backwards;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+/* Estilos para el carrusel */
+.carrusela {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    /* Ocultar la barra de desplazamiento horizontal */
+}
+
+.boton-retroceder,
+.boton-avanzar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 8;
+    /* Añadido */
+}
+
+.boton-retroceder {
+    left: 10px;
+    /* Ajustado para separación del borde */
+}
+
+.boton-avanzar {
+    right: 10px;
+    /* Ajustado para separación del borde */
+}
+
+/* Estilos para las imágenes */
+.imagen-carouselHome {
+    width: auto;
+    /* Cambiado de '300px' a 'auto' */
+    height: auto;
+    margin-right: 1%;
+    margin-left: 2%;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    max-height: 100%;
+    /* Añadido */
+    transition: transform 0.5s ease; /* Añadido para una transición suave */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario h4 {
+    font-size: 20px;
+    padding-top: 0rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(to right, #ffea64 0%, #564213 35%, #ffe38e 100%,#7b6505 0%, #d0ad5a 35%, #f3e0a6 100%);
+    background-size: 100%;
+    background-clip: 110vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color 240s linear infinite;
+}
+
+.formulario {
+    width: 290px;
+    background-image: url(/imghead/GenBG.jpg);
+    background-size: 20rem;
+    height: 320px;
+    padding: 7px;
+    border-radius: 25px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: auto;
+
+
+    box-shadow: 2px 2px 10px 5px rgba(33, 255, 107, 0.74);
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.box-input {
+    color: #ffffff;
+    border-bottom: 3px solid #66e7a7;
+    position: relative;
+    margin: 5px;
+    text-align: center;
+}
+
+.box-input input {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 10px;
+}
+
+.box-input span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 25%;
+    left: 5px;
+    color: #ffffff00;
+    transform: translateY(-150%);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.box-input span::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    transition: .5s;
+    color: #f50e0e;
+}
+
+.focus+span::before {
+    top: -30px;
+}
+
+.focus+span::after {
+    width: 200%;
+}
+
+.boton {
+    display: inline;
+    width: 80%;
+    height: 40px;
+    background-color: #55c985;
+    border: solid 2px #2c9b5a;
+    color: #e4ffe4;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px 2px rgb(20, 172, 68);
+}
+
+.boton:hover {
+    background-color: #2F855A;
+    border: solid 2px #2F855A;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.go-top-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 0.05rem;
+    width: 7.6rem;
+    height: 7.6rem;
+    z-index: -1;
+}
+
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #1f6197;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 5.0rem;
+    height: 5.0rem;
+    z-index: 5;
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #ff0f0f;
+    transition: 0.2s;
+}
+
+.show i {
+    transform: translate(-50%, -44%) scale(1);
+}
+
+.go-top-button:hover {
+    background-color: #ff0000;
+    border: solid 5px #aefa97;
+    transition: .5s;
+}
+
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    50% {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    100% {
+        width: 5.0rem;
+        height: 5.0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /* Cambia el ancho mínimo según tus necesidades */
+    gap: 20px;
+    justify-items: center;
+}
+
+.product {
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Evita que el contenido sobresalga del borde */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    /* Borde redondeado solo arriba */
+}
+
+.product-info {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #25D366;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #128C7E;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la tabla Men */
+#product-tableM {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#product-tableM th,
+#product-tableM td {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#product-tableM th {
+    background-color: #000000;
+}
+
+#product-tableM body tr:nth-child(even) {
+    background-color: #000000;
+}
+/* Estilos para la tabla Women */
+#product-tableW {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#product-tableW th,
+#product-tableW td {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#product-tableW th {
+    background-color: #000000;
+}
+
+#product-tableW body tr:nth-child(even) {
+    background-color: #000000;
+}
+
+
+/* Estilos para las imágenes de productos */
+.product-image {
+    width: 45%;
+    height: auto;
+}
+
+.container {
+    font-family: "NeutraDisplay-Medium";
+    font-size: 24px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    background-size: 100%;
+    
+  }
+p {
+    font-family: "NeutraDisplay-Medium";
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    background-color: #ffffff00;
+    text-align: justify;
+}
