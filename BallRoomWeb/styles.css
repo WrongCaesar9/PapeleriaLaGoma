@@ -730,6 +730,7 @@ button:hover {
     border: 2px solid #000000;
     padding: 10px;
     text-align: center;
+    text-align: justify;
 }
 
 #product-tableM th {
@@ -751,6 +752,7 @@ button:hover {
     border: 2px solid #000000;
     padding: 10px;
     text-align: center;
+    text-align: justify;
 }
 
 #product-tableW th {
