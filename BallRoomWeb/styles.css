@@ -764,7 +764,7 @@ button:hover {
 
 /* Estilos para las imágenes de productos */
 .product-image {
-    width: 45%;
+    width: 25rem;
     height: auto;
 }
 
