@@ -9,8 +9,8 @@ body {
     top: 0;
     bottom: 0;
     width: 15px; /* Ajusta el ancho según lo necesites */
-    height: 5000px; /* Ajusta la altura según lo necesites */
-    background: url('/gen_img/motivoMarco.jpg') repeat-y ;
+    height: 100%; /* Ajusta la altura según lo necesites */
+    background: url('/BallRoomWeb/gen_img/motivoMarco.jpg') repeat-y ;
     background-size: contain;
   }
   
@@ -26,8 +26,8 @@ body {
   .frame-bottom {
     position: absolute;
     width: 15px;
-    height: 5000px; /* Ajusta la altura según lo necesites */
-    background: url('/gen_img/motivoMarco.jpg') no-repeat;
+    height: 100%; /* Ajusta la altura según lo necesites */
+    background: url('/BallRoomWeb/gen_img/motivoMarco.jpg') no-repeat;
     background-size: contain;
   }
   
@@ -51,7 +51,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url(/imghead/GenBGB.jpg);
+    background-image: url(/BallRoomWeb/imghead/GenBGB.jpg);
     background-size: 25rem 25rem;
     background-repeat: unset;
     color: aliceblue;
@@ -70,7 +70,7 @@ header {
 
  Estilo general del header */
 header {
-    background-image: url(/imghead/GenBGB.jpg);
+    background-image: url(/BallRoomWeb/imghead/GenBGB.jpg);
     background-size: 25rem;
     background-color: #c9c9c9;
     
@@ -142,7 +142,10 @@ nav a {
   }
 
 nav a:hover {
-    transition: 0.2;
+    box-sizing: content-box;
+    transition: 0.4;
+    height: auto;
+    width: auto;
     background-color: #000000e6;
   }
 
@@ -200,7 +203,7 @@ nav a:hover {
         left: -200%;
         width:180%;
         height: 300vh;
-        background-image: url(/imghead/GenBGB.jpg);
+        background-image: url(/BallRoomWeb/imghead/GenBGB.jpg);
         background-size: 25rem;
         align-items: center;
         transition: 0.3s;
@@ -317,7 +320,7 @@ section {
 footer {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
-    background-image: url(/imghead/GenBG.jpg);
+    background-image: url(/BallRoomWeb/imghead/GenBG.jpg);
     background-size: 25rem 25rem;
     background-repeat: unset;
     color: white;
@@ -453,7 +456,7 @@ footer {
 
 .formulario {
     width: 290px;
-    background-image: url(/imghead/GenBG.jpg);
+    background-image: url(/BallRoomWeb/imghead/GenBG.jpg);
     background-size: 20rem;
     height: 320px;
     padding: 7px;

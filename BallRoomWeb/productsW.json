@@ -3,24 +3,24 @@
         "name": "Perfume 1",
         "description": "Descripción breve del perfume 1.",
         "price": "$1500",
-        "image": "/A_W_P/P1_W_W.jpg"
+        "image": "/BallRoomWeb/A_W_P/P1_W_W.jpg"
     },
     {
         "name": "Perfume 2",
         "description": "Descripción breve del perfume 2.",
         "price": "$600",
-        "image": "/A_W_P/BR-BlackLetterBevel_GOLDWhite.jpg"
+        "image": "/BallRoomWeb/A_W_P/BR-BlackLetterBevel_GOLDWhite.jpg"
     },
     {
         "name": "Perfume 3",
         "description": "Descripción breve del perfume 1.",
         "price": "$500",
-        "image": "/A_W_P/BR-BlackLetterBevel_GOLDWhite.jpg"
+        "image": "/BallRoomWeb/A_W_P/BR-BlackLetterBevel_GOLDWhite.jpg"
     },
     {
         "name": "Perfume 4",
         "description": "Descripción breve del perfume 2.",
         "price": "$250",
-        "image": "/A_W_P/BR-BlackLetterBevel_GOLDWhite.jpg"
+        "image": "/BallRoomWeb/A_W_P/BR-BlackLetterBevel_GOLDWhite.jpg"
     }
 ]
