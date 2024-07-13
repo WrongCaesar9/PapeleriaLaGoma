@@ -1,17 +1,45 @@
 body {
-    position: relative;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    position: relative; /* Añadido para asegurar que el marco respete el body */
   }
   
-  .frame {
+  .container {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté encima del marco */
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .elegant-frame {
     position: fixed;
     top: 0;
-    bottom: 0;
-    width: 15px; /* Ajusta el ancho según lo necesites */
-    height: 100%; /* Ajusta la altura según lo necesites */
-    background: url('/BallRoomWeb/gen_img/motivoMarco.jpg') repeat-y ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Asegura que el marco esté detrás del contenido */
+    pointer-events: none; /* Para que el marco no interfiera con los clics dentro del contenido */
+  }
+  
+  .frame-left,
+  .frame-right,
+  .frame-top,
+  .frame-bottom {
+    position: absolute;
+    background: url('/BallRoomWeb/gen_img/motivoMarco.jpg') no-repeat center center;
     background-size: contain;
+    pointer-events: none; /* Para que el marco no interfiera con los clics dentro del contenido */
+  }
+  
+  .frame-left,
+  .frame-right {
+    width: 50px; /* Ajusta este valor según el tamaño deseado del marco */
+    height: 100%;
+    top: 0;
   }
   
   .frame-left {
@@ -24,11 +52,9 @@ body {
   
   .frame-top,
   .frame-bottom {
-    position: absolute;
-    width: 15px;
-    height: 100%; /* Ajusta la altura según lo necesites */
-    background: url('/BallRoomWeb/gen_img/motivoMarco.jpg') no-repeat;
-    background-size: contain;
+    height: 50px; /* Ajusta este valor según el tamaño deseado del marco */
+    width: 100%;
+    left: 0;
   }
   
   .frame-top {
@@ -39,6 +65,8 @@ body {
     bottom: 0;
   }
   
+  
+  
 
 
 
@@ -46,7 +74,6 @@ body {
 
 
 /* styles.css */
-
 html {
     margin: 0;
     padding: 0;
