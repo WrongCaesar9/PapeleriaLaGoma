@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById('mobile-menu');
   const navList = document.querySelector('.nav-list');
-  const navListA = document.querySelector('.nav-listA');
 
   menuToggle.addEventListener('click', () => {
     navList.classList.toggle('active');
   });
+
+  // Función para cerrar el menú al seleccionar un apartado
+  function closeMenu() {
+    navList.classList.remove('active');
+  }
 
   // Mostrar la sección correspondiente
   function showSection(id) {
@@ -15,10 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
         section.style.display = 'block';
       }
     });
+    closeMenu(); // Cerrar el menú después de mostrar la sección
   }
 
-  // Inicialización
-  document.querySelectorAll('.nav-list a, .nav-listA a').forEach(link => {
+  // Inicialización para los enlaces del menú
+  document.querySelectorAll('.nav-list a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const sectionId = link.getAttribute('href').substring(1);
+      showSection(sectionId);
+    });
+  });
+
+  // Inicialización para los enlaces adicionales del menú
+  document.querySelectorAll('.nav-listA a').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const sectionId = link.getAttribute('href').substring(1);
@@ -28,6 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Mostrar la sección de inicio por defecto
   showSection('home');
+
+
+
+
+
+
+
+  
 
   // Carousel logic for "featured" section
   const carousel = document.querySelector('.carousel');
