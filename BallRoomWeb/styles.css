@@ -348,11 +348,12 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
     background-image: url(/BallRoomWeb/imghead/GenBG.jpg);
-    background-size: 25rem 100%;
+    background-size: 25rem 25rem;
     background-repeat: unset;
     color: white;
     text-align: center;
     padding: 10px;
+
 }
 
 .btn-instagram,
