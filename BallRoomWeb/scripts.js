@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setInterval(() => {
       index = (index + 1) % imagenes.length;
       mostrarImagen(index);
-  }, 2500); // Cambiar cada 3 segundos
+  }, 1500); // Cambiar cada 3 segundos
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const iniciarCarruselaAutomatico = () => {
-    setInterval(avanzarImagen, 2000);
+    setInterval(avanzarImagen, 1500);
   };
 
   iniciarCarruselaAutomatico();
