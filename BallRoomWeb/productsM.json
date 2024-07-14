@@ -7,19 +7,19 @@
     },
     {
         "name": "Perfume 2",
-        "description": "Descripción breve del perfume 2.",
+        "description": "Brief description of the perfume 2.",
         "price": "$650",
         "image": "/BallRoomWeb/A_M_P/BR-Bevel_GOLDBlack.jpg"
     },
     {
         "name": "Perfume 3",
-        "description": "Descripción breve del perfume 1.",
+        "description": "Brief description of the perfume 3.",
         "price": "$550",
         "image": "/BallRoomWeb/A_M_P/BR-Bevel_GOLDBlack.jpg"
     },
     {
         "name": "Perfume 4",
-        "description": "Descripción breve del perfume 2.",
+        "description": "Brief description of the perfume 4.",
         "price": "$60",
         "image": "/BallRoomWeb/A_M_P/BR-Bevel_GOLDBlack.jpg"
     }

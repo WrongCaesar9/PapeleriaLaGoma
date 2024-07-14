@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCarouselW();
   }
 
-  setInterval(autoSlide, 3000); // Change slide every 3 seconds
+  setInterval(autoSlide, 2000); // Change slide every 2 seconds
 
   updateCarouselW();
 });
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setInterval(() => {
       index = (index + 1) % imagenes.length;
       mostrarImagen(index);
-  }, 3000); // Cambiar cada 3 segundos
+  }, 2500); // Cambiar cada 3 segundos
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const iniciarCarruselaAutomatico = () => {
-    setInterval(avanzarImagen, 2500);
+    setInterval(avanzarImagen, 2000);
   };
 
   iniciarCarruselaAutomatico();
@@ -192,7 +192,7 @@ const formulario = document.querySelector('#formulario');
 const buttonSubmit = document.querySelector('#submit');
 const urlDesktop = 'https://web.whatsapp.com/';
 const urlMobile = 'https://api.whatsapp.com/';
-const telefono = '525515833826';
+const telefono = '0000000000';
 
 formulario.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -202,19 +202,19 @@ formulario.addEventListener('submit', (event) => {
   setTimeout(() => {
     const nombre = document.querySelector('#nombre').value;
     const pedidof = document.querySelector('#pedidof').value;
-    const mensaje = `send?phone=${telefono}&text=*_Formulario de Sugerencia_*%0A*¿Cuál es tu nombre?*%0A${nombre}%0A*Matricula, grado y grupo :D*%0A${pedidof}`;
+    const mensaje = `send?phone=${telefono}&text=*_Suggestion Form_*%0A*Ur Name:*%0A${nombre}%0A*Description:*%0A${pedidof}`;
 
     window.open(isMobile() ? urlMobile + mensaje : urlDesktop + mensaje, '_blank');
-    buttonSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar WhatsApp';
+    buttonSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Send WhatsApp';
     buttonSubmit.disabled = false;
   }, 1000);
 });
 
 function sendWhatsApp(productName, description, imagePath, price) {
-  const phoneNumber = '525515833826';
+  const phoneNumber = '0000000000';
   const baseUrl = 'https://lagoma.netlify.app';
   const imageUrl = `${baseUrl}${imagePath}`;
-  const message = `Hola, estoy interesado en el siguiente producto:\n\n*${productName}*\n${description}\n*Precio:* ${price}\n\nPuedes ver la imagen del producto aquí: ${imageUrl}`;
+  const message = `Hello, I am interested in the following product:\n\n*${productName}*\n${description}\n*Price:* ${price}\n\nYou can view the product image here: ${imageUrl}`;
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   window.open(whatsappUrl, '_blank');
@@ -252,7 +252,7 @@ function loadProducts(containerId, jsonFile) {
         productTableBody.appendChild(row);
       });
     })
-    .catch(error => console.error('Error al cargar los productos', error));
+    .catch(error => console.error('Error while loading products DX', error));
 }
 
 document.addEventListener('DOMContentLoaded', function () {

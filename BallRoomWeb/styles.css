@@ -228,7 +228,7 @@ nav a:hover {
         position: absolute;
         top: 0px;
         left: -200%;
-        width:180%;
+        width:140%;
         height: 300vh;
         background-image: url(/BallRoomWeb/imghead/GenBGB.jpg);
         background-size: 25rem;
@@ -409,7 +409,7 @@ footer {
     position: relative;
     display: flex;
     align-items: center;
-    overflow-x: hidden;
+    overflow-x:hidden;
     /* Ocultar la barra de desplazamiento horizontal */
 }
 
@@ -448,6 +448,8 @@ footer {
     max-height: 100%;
     /* Añadido */
     transition: transform 0.5s ease; /* Añadido para una transición suave */
+    transition-duration: 0.5;
+    transition: ease;
 }
 
 
@@ -485,7 +487,7 @@ footer {
     width: 290px;
     background-image: url(/BallRoomWeb/imghead/GenBG.jpg);
     background-size: 20rem;
-    height: 320px;
+    height: 330px;
     padding: 7px;
     border-radius: 25px;
     position: relative;
@@ -506,7 +508,7 @@ footer {
 
 .box-input {
     color: #ffffff;
-    border-bottom: 3px solid #66e7a7;
+    border-bottom: 2px solid #66e7a7;
     position: relative;
     margin: 5px;
     text-align: center;
@@ -751,12 +753,12 @@ button:hover {
 #product-tableW td {
     border: 2px solid #000000;
     padding: 10px;
-    text-align: center;
+    
     text-align: justify;
 }
 
 #product-tableW th {
-    background-color: #000000;
+    background-color: #111111;
 }
 
 #product-tableW body tr:nth-child(even) {
