@@ -617,15 +617,15 @@ footer {
 
 .show .go-top-button {
     animation: popup 0.8s ease-in-out;
-    width: 5.0rem;
-    height: 5.0rem;
+    width: 4.0rem;
+    height: 4.0rem;
     z-index: 5;
 }
 
 .go-top-button i {
     position: absolute;
     font-size: 1.7rem;
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     color: #ff0f0f;
@@ -654,8 +654,8 @@ footer {
     }
 
     100% {
-        width: 5.0rem;
-        height: 5.0rem;
+        width: 4.0rem;
+        height: 4.0rem;
     }
 }
 
