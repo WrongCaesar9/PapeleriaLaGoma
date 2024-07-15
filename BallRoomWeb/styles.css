@@ -443,13 +443,13 @@ footer {
     /* Cambiado de '300px' a 'auto' */
     height: auto;
     margin-right: 1%;
-    margin-left: 2%;
+    margin-left: 5%;
     scroll-snap-align: start;
     flex: 0 0 auto;
     max-height: 100%;
     /* Añadido */
-    transition: transform 0.5s ease; /* Añadido para una transición suave */
-    transition-duration: 0.5;
+    transition: transform 1s ease; /* Añadido para una transición suave */
+    transition-duration: 1s;
     transition: ease;
 }
 
@@ -732,12 +732,12 @@ button:hover {
 #product-tableM td {
     border: 2px solid #000000;
     padding: 10px;
-    text-align: center;
+    
     text-align: justify;
 }
 
 #product-tableM th {
-    background-color: #000000;
+    background-color: #111111;
 }
 
 #product-tableM body tr:nth-child(even) {
