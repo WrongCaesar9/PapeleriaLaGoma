@@ -1,0 +1,51 @@
+/* Renombrar el body a detail-body */
+.detail-body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.detail-image {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+.detail-title {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.detail-description {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.detail-price {
+    font-size: 1.5em;
+    color: #d9534f; /* Color para el precio */
+}
+
+.suggestion-list {
+    margin-top: 20px;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    margin: 10px 0;
+}
+
+.suggestion-item img {
+    width: 50px; /* Ajusta el tamaño de la imagen de sugerencia */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.suggestion-title {
+    font-size: 1.1em;
+}
+
+.suggestion-price {
+    color: #d9534f; /* Color para el precio de la sugerencia */
+}

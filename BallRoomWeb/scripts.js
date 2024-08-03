@@ -305,3 +305,136 @@ window.addEventListener('resize', function () {
 		woodmartThemeModule.scrollTop();
 	});
 })(jQuery);*/
+
+
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides,3500); // Change image every 2 seconds
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('galleryproducts.json')
+      .then(response => response.json())
+      .then(products => {
+          const productContainer = document.getElementById('product-container');
+          products.forEach(product => {
+              const productHTML = `
+                  <div class="home-column">
+                      <div class="home-card">
+                          <img src="${product.image}" alt="${product.alt}" style="width:100%">
+                          <div class="home-container">
+                              <pg>${product.title}<pg>
+                              <p class="home-title">ID: ${product.id}</p>
+                              <p>${product.description}</p>
+                              <p>${product.price}</p>
+                              <p>${product.volume}</p>
+                              <a href="https://wa.me/?text=Im%20interested%20in%20${encodeURIComponent(product.title)}%20with%20ID%20${product.id}%20with%20cost of%20${product.price}%20and%20have%20a%20volume%20of%20${product.volume}" target="_blank">
+                                  <p><button class="home-button">Contact</button></p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              `;
+              productContainer.innerHTML += productHTML;
+          });
+      })
+      .catch(error => console.error('Error loading products:', error));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Cargar los datos del producto seleccionado
+const urlParams = new URLSearchParams(window.location.search);
+const productId = urlParams.get('id');
+
+Promise.all([
+    fetch('productsM.json'),
+    fetch('productsW.json'),
+    fetch('galleryproducts.json')
+]).then(responses => Promise.all(responses.map(response => response.json())))
+  .then(data => {
+    const allProducts = [...data[0], ...data[1], ...data[2]];
+    const product = allProducts.find(p => p.id === productId || p.title === productId || p.name === productId);
+
+    if (product) {
+        document.querySelector('.detail-title').textContent = product.title || product.name;
+        document.querySelector('.detail-image').src = product.image;
+        document.querySelector('.detail-description').textContent = product.description;
+        document.querySelector('.detail-price').textContent = `Precio: ${product.price}`;
+        
+        // Agregar sugerencias
+        const suggestionList = document.querySelector('.suggestion-list');
+        const suggestions = allProducts.filter(p => p.id !== productId).slice(0, 1); // Limitar a 3 sugerencias
+
+        suggestions.forEach(suggestion => {
+            const suggestionDiv = document.createElement('div');
+            suggestionDiv.innerHTML = `
+                <img src="${suggestion.image}" alt="${suggestion.title || suggestion.name}" class="suggestion-image">
+                <p>${suggestion.title || suggestion.name} - ${suggestion.price}</p>
+                <a href="product-details.html?id=${suggestion.id}">Ver Detalles</a>
+            `;
+            suggestionList.appendChild(suggestionDiv);
+        });
+
+        // Agregar funcionalidad al botón de WhatsApp
+        const whatsappButton = document.getElementById('whatsapp-button');
+        whatsappButton.addEventListener('click', () => {
+            const message = `I am interested in the product: ${product.title || product.name}\nDescription: ${product.description}\nPrice: ${product.price}\nImage: https://lagoma.netlify.app/${product.image}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=5620886202&text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank'); // Abre WhatsApp en una nueva pestaña
+        });
+    } else {
+        console.error('Product not found');
+    }
+}).catch(error => console.error('Error charging product:', error));

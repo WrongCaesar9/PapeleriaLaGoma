@@ -9,23 +9,47 @@
     <link rel="shortcut icon" href="/BallRoomWeb/imghead/ball_ico.ico">
     <link rel="stylesheet" type="text/css" href="/BallRoomWeb/styles.css">
 
+
+
+    <style>
+        .suggestions-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #ccc;
+            max-height: 150px;
+            overflow-y: auto;
+            position: absolute;
+            background-color: white;
+            width: calc(100% - 20px);
+            z-index: 1000;
+        }
+        .suggestions-list li {
+            padding: 8px;
+            cursor: pointer;
+        }
+        .suggestions-list li:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+
 </head>
 <body >
     <header class="header">
         <nav>
             <div>
-            <a id="BallRoom" title="BallRoom" href="https://lagoma.netlify.app/BallRoomWeb/index.html">
-                <img class="header__logo-image"  style="max-width: 90px; max-height: 90px;" 
-                src="/BallRoomWeb/imghead/ballroomHead.jpg" alt="BallRoom">
+            <a id="BallRoom" title="BallRoom Logo" href="https://lagoma.netlify.app/BallRoomWeb/index.html">
+                <img class="header__logo-image" src="/BallRoomWeb/imghead/ballroomHead.jpg" alt="BallRoom">
 
             </a>
+            
         </div>
+
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-    
 
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
@@ -34,23 +58,117 @@
                 <li><a href="#women">For Women</a></li>
                 <li><a href="#aboutus">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><input style="align-content: center;margin-bottom: 1rem;" type="text" id="search-bar" placeholder="Search for products..." onkeyup="showSuggestions()">
+                    <ul style="color: #000000; text-align: center;" id="suggestions" class="suggestions-list"></ul></li>
             </ul>
+
         </nav>
+
+
+
+
+
+
     </header>
         <main>
+            <!--<h1 style="background-image: linear-gradient(to right, #ffea64 0%, #564213 35%, #ffe38e 100%,#7b6505 0%, #fbd887 35%, #312a15 100%);height: 3px; width: 100%;"></h1>-->
+
+            
+
+
 
         <section style="text-align: center;" id="home">
-            <h1 style="background-image: linear-gradient(to right, #ffea64 0%, #564213 35%, #ffe38e 100%,#7b6505 0%, #fbd887 35%, #312a15 100%);height: 3px; width: 100%;"></h1>
+            
             <div class="ballroom-graphic ballroom-graphic-text">
-                <h2 style="font-size:3rem;font-style: oblique; font-family:'Times New Roman', Times, serif;">BallRoom Home</h2>
+                <h2 class="ballroomhome">BallRoom Home</h2>
             </div>
+ <!--Code -->
+                
+ <div class="wrapper">
+    <div class="slider" id="slider">
+      <ul class="slides">
+        <li class="slide" id="slide1">
+          <a href="#">
+            
+            <img src="/BallRoomWeb/gen_img/testmainjpgs.jpg" alt="photo 1">
+          </a>
+        </li>
+        <li class="slide" id="slide2">
+          <a href="#">
+            
+            <img src="/BallRoomWeb/gen_img/3testmainjpgs.jpg" alt="photo 2">
+          </a>
+        </li>
+        <li class="slide" id="slide3">
+          <a href="#">
+            
+            <img src="/BallRoomWeb/gen_img/2testmainjpgs.jpg" alt="photo 3">
+          </a>
+        </li>
+        <li class="slide" id="slide4">
+          <a href="#">
+           
+            <img src="/BallRoomWeb/gen_img/3testmainjpgs.jpg" alt="photo 4">
+          </a>
+        </li>
+        <li class="slide" id="slide5">
+          <a href="#">
+             
+             <img src="/BallRoomWeb/gen_img/2testmainjpgs.jpg" alt="photo 5">
+          </a>
+        </li>
+        <li class="slide">
+          <a href="#">
+            <!--<p class="caption">Texto 6</p>-->
+            <img src="/BallRoomWeb/gen_img/testmainjpgs.jpg" alt="photo 1">
+          </a>
+        </li>
+      </ul>
+      <ul class="slider-controler">
+        <li><a href="#slide1">&bullet;</a></li>
+        <li><a href="#slide2">&bullet;</a></li>
+        <li><a href="#slide3">&bullet;</a></li>
+        <li><a href="#slide4">&bullet;</a></li>
+        <li><a href="#slide5">&bullet;</a></li>
+      </ul>
+    </div>
+  </div>
+    
+  <!-- End Code -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
                 <h2>
                     <u  style="color: rgb(247, 255, 142);height: 4px;"><center style="color: #000000;font-size: 80%;">MAIN PRODUCTS</center></u>
                 </h2>
                 <div class="carrusela">
                     
-                    <!-- Imágenes del carrusel -->
+                   
                     <img src="/BallRoomWeb/A_M_P/P1_M_B.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
                     <img src="/BallRoomWeb/A_W_P/P1_W_W.jpg" title="WomenWhite" alt="WomenWhite" class="imagen-carouselHome">
                     <img src="/BallRoomWeb/gen_img/BR-White.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
@@ -59,32 +177,49 @@
                     <img src="/BallRoomWeb/A_W_P/P1_W_W.jpg" title="WomenWhite" alt="WomenWhite" class="imagen-carouselHome">
                     <img src="/BallRoomWeb/gen_img/BR-White.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
                     <img src="/BallRoomWeb/gen_img/EXTRA.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
-                    <!-- Agrega más imágenes aquí -->
+                   Agrega más imágenes aquí 
                     <button class="boton-retroceder"></button>
                     <button class="boton-avanzar"></button>
                     
                 </div>
-                <!-- Imágenes del carrusel
+                 Imágenes del carrusel
                 <ul style="height: 35px; text-align: center;" class="nav-listA">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#featured">GALLERY</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="#aboutus">ABOUT US</a></li>
                 </ul>
-     -->
+-->
     
                 <div><br></div>
-                <h2>
-                    <u  style="color: rgb(247, 255, 142);height: 4px;"><center style="color: #000000;font-size: 80%;">PRODUCT GALLERY</center></u>
-                </h2>
-                    <img src="/BallRoomWeb/A_M_P/P1_M_B.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
-                    <img src="/BallRoomWeb/A_W_P/P1_W_W.jpg" title="WomenWhite" alt="WomenWhite" class="imagen-carouselHome">
-                    <img src="/BallRoomWeb/gen_img/BR-White.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
-                    <img src="/BallRoomWeb/gen_img/EXTRA.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
-                    <img src="/BallRoomWeb/A_M_P/P1_M_B.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
-                    <img src="/BallRoomWeb/A_W_P/P1_W_W.jpg" title="WomenWhite" alt="WomenWhite" class="imagen-carouselHome">
-                    <img src="/BallRoomWeb/gen_img/BR-White.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
-                    <img src="/BallRoomWeb/gen_img/EXTRA.jpg" title="MenBlack" alt="MenBlack" class="imagen-carouselHome">
+
+
+                  <section style="text-align: center;" id="home">
+                    <div class="ballroom-graphic ballroom-graphic-text">
+                        <h2 style="font-size: 150%;" class="ballroomhome">PRODUCT GALLERY</h2>
+                    </div>
+
+                
+                    <h2>
+                        <u style="color: rgb(247, 255, 142);height: 4px;"><center style="color: #000000;font-size: 80%;">MAIN PRODUCTS</center></u>
+                    </h2>
+                
+                    <div id="product-container" class="home-row"></div>
+                
+                    <p style="padding:6px; text-align: center;">Here is some of our products</p>
+                </section>
+                
+
+                 
+       
+                  
+
+
+
+
+
+
+
         </section>
 
 
@@ -118,12 +253,147 @@
                 <button class="prev">&lt;</button>
                 <button class="next">&gt;</button>
             </div>
+            <div><p></p></div><div></div>
+
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="/BallRoomWeb/A_M_P/BR-Bevel_GOLDBlack.jpg" style="width:100%">
+      <div class="textauto">Description or something</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="/BallRoomWeb/A_M_P/BR-BevelIN_GOLDBlack.jpg" style="width:100%">
+      <div class="textauto">Description or something</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="/BallRoomWeb/A_W_P/BR-Bevel_GOLDWhite.jpg" style="width:100%">
+      <div class="textauto">Description or something</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  <style>
+    .container {
+      position: relative;
+      width: 50%;
+    }
+    
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #5e5e5ec7;
+    }
+    
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    
+    .textfade {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    </style>
+    
+    <h2>Fade in Overlay</h2>
+    <p>Hover over the image to see the effect.</p>
+    <ul>
+    <div class="container">
+      <img src="/BallRoomWeb/A_M_P/BR-Clean_GOLDBlack.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="textfade">perfume con xddd</div>
+      </div>
+    </div>
+    <div class="container">
+        <img src="/BallRoomWeb/A_W_P/BR-BlackLetterBevel_GOLDWhite.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="textfade">perfume con :v :v</div>
+        </div>
+      </div>
+
+</ul>
+
+-->
+
+
 
 
 
 
 
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section id="men" class="products">
             <h2>Gentleman's Perfumes</h2>
            
@@ -185,41 +455,7 @@
 
         <section id="aboutus" class="products">
             <h2>About us</h2>
-            
-
-
-
-
-
-
-
-
-
-
-            <div class="content">
-                <style>
-                    .title-page {
-                        color: #20cbd4;
-                    }
-            
-                    .logo-fraiche {
-                        width: 100%;
-                        max-width: 300px;
-                        margin: 0 auto;
-                        display: block;
-                    }
-            
-                    .subtitle-page {
-                        margin-top: 2rem;
-                    }
-            
-                    @media (max-width: 639px) {
-                        .title-page {
-                            font-size: 3rem;
-                        }
-                    }
-                </style>
-                <div class="container">
+                    <div class="aboutus">
                     <img src="/BallRoomWeb/imghead/Blender doradoNEW.svg" alt="logo-BallRoom">
                     <p><strong><br>Scenting the World for 30 years.</strong></p>
                     <p>We are a Mexican company specialized in provoking unforgettable sensations through perfumes, essences and personal products of international personal products with international quality.</p>
@@ -417,48 +653,12 @@
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </section>
-
+<!--
         <a href="#"  aria-label="Scroll to top button"><i class="ri-arrow-up-wide-line"></i>
         </a>
-
+    -->
         <div class="go-top-container">
             <div class="go-top-button">
                 <i>
@@ -562,8 +762,106 @@
     </main>
 
 
-<script src="/BallRoomWeb/scripts.js"></script>
+    
+    <script src="/BallRoomWeb/scripts.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let allProducts = [];
+
+        // Fetch the JSON files and combine the data
+        Promise.all([
+            fetch('productsM.json').then(response => response.json()),
+            fetch('productsW.json').then(response => response.json()),
+            fetch('galleryproducts.json').then(response => response.json())
+        ]).then(data => {
+            allProducts = data.flat().map(product => {
+                // Standardize the product format
+                if (!product.id) {
+                    return {
+                        id: product.name,
+                        title: product.name,
+                        description: product.description,
+                        price: product.price,
+                        image: product.image
+                    };
+                } else {
+                    return product;
+                }
+            });
+        }).catch(error => console.error('Error loading products:', error));
+
+        window.showSuggestions = function() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const suggestions = document.getElementById('suggestions');
+            suggestions.innerHTML = '';
+            if (query) {
+                const filteredProducts = allProducts.filter(product => 
+                    product.title.toLowerCase().includes(query) ||
+                    product.description.toLowerCase().includes(query) ||
+                    product.id.toLowerCase().includes(query)
+                );
+                filteredProducts.forEach(product => {
+                    const suggestionItem = document.createElement('li');
+                    suggestionItem.textContent = `${product.title} (${product.id})`;
+                    suggestionItem.addEventListener('click', () => {
+                        window.location.href = `product-details.html?id=${product.id}`;
+                    });
+                    suggestions.appendChild(suggestionItem);
+                });
+            }
+        }
+    });
+
+
+    function displaySuggestions(suggestions) {
+    const suggestionsContainer = document.getElementById("suggestionsContainer");
+    suggestions.forEach(suggestion => {
+        const suggestionItem = document.createElement("div");
+        suggestionItem.className = "suggestion-item";
+        suggestionItem.innerHTML = `
+            <img src="${suggestion.image}" alt="${suggestion.title}">
+            <span>${suggestion.title}</span>
+        `;
+        suggestionsContainer.appendChild(suggestionItem);
+    });
+}
+
+// Dentro de loadProductDetails, después de encontrar el producto
+const suggestions = [...productsM, ...productsW, ...galleryProducts].filter(p => p.id !== productId);
+displaySuggestions(suggestions);
+
+
+
+
+
+
+
+</script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
