@@ -168,13 +168,13 @@ nav a {
     text-decoration: none;
     padding: 5px;
   }
-
+/* Color fondo botones */
 nav a:hover {
     box-sizing: content-box;
     transition: 0.4;
     height: auto;
     width: auto;
-    background-color: #000000e6;
+    background-color: #849bff;
   }
 
 
