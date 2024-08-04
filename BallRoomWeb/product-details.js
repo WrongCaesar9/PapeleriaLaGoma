@@ -43,7 +43,7 @@ Promise.all([
         // Agregar funcionalidad al botón de WhatsApp
         const whatsappButton = document.getElementById('whatsapp-button');
         whatsappButton.addEventListener('click', () => {
-            const whatsappNumber = '+525515833816';
+            const whatsappNumber = '+525515833826';
             const message = `Im interested in the product: ${product.title || product.name}\nDescription: ${product.description}\nCost: ${product.price}\nImage: https://lagoma.netlify.app/BallRoomWeb${product.image}`;
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank'); // Abre el enlace de WhatsApp en una nueva pestaña
