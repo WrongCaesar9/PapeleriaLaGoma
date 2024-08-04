@@ -449,3 +449,48 @@ Promise.all([
         console.error('Producto no encontrado');
     }
 }).catch(error => console.error('Error al cargar los productos:', error));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let mainSliderSlideIndex = 0;
+mainSliderShowSlides();
+
+function mainSliderShowSlides() {
+    let izzz;
+    let slides = document.getElementsByClassName("mainSlider-mySlides");
+    let dots = document.getElementsByClassName("mainSlider-dot");
+    for (izzz = 0; izzz < slides.length; izzz++) {
+        slides[izzz].style.display = "none";  
+    }
+    mainSliderSlideIndex++;
+    if (mainSliderSlideIndex > slides.length) {mainSliderSlideIndex = 1}    
+    for (izzz = 0; izzz < dots.length; izzz++) {
+        dots[izzz].className = dots[izzz].className.replace(" mainSlider-active", "");
+    }
+    slides[mainSliderSlideIndex-1].style.display = "block";  
+    dots[mainSliderSlideIndex-1].className += " mainSlider-active";
+    setTimeout(mainSliderShowSlides, 2000); // Change image every 2 seconds
+}
