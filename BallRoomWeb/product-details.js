@@ -35,7 +35,7 @@ Promise.all([
         const emailButton = document.getElementById('email-button');
         emailButton.addEventListener('click', () => {
             const subject = `Check out product: ${product.title || product.name}`;
-            const body = `Im interested in the product: ${product.title || product.name}\nDescription: ${product.description}\nCost: ${product.price}\nImage: https://lagoma.netlify.app/BallRoomWeb${product.image}`;
+            const body = `Im interested in the product: ${product.title || product.name}\nDescription: ${product.description}\nCost: ${product.price}\nImage: https://lagoma.netlify.app/${product.image}`;
             const mailtoUrl = `mailto:ballroomperfumes@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.location.href = mailtoUrl; // Abre el cliente de correo con el mailto URL
         });
@@ -44,7 +44,7 @@ Promise.all([
         const whatsappButton = document.getElementById('whatsapp-button');
         whatsappButton.addEventListener('click', () => {
             const whatsappNumber = '+525515833826';
-            const message = `Im interested in the product: ${product.title || product.name}\nDescription: ${product.description}\nCost: ${product.price}\nImage: https://lagoma.netlify.app/BallRoomWeb${product.image}`;
+            const message = `Im interested in the product: ${product.title || product.name}\nDescription: ${product.description}\nCost: ${product.price}\nImage: https://lagoma.netlify.app/${product.image}`;
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank'); // Abre el enlace de WhatsApp en una nueva pestaña
         });
