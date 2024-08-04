@@ -49,3 +49,266 @@
 .suggestion-price {
     color: #d9534f; /* Color para el precio de la sugerencia */
 }
+
+
+
+
+
+
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /*background-image: url(/BallRoomWeb/imghead/GenBGB.jpg);*/
+    background-color: white;
+    background-repeat: unset;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+header {
+    background-image: url(/imghead/GenBG.jpg);
+    background-size: 25rem;
+    background-color: #c9c9c9;
+    color: white;
+    padding: 2em 0;
+    position: relative;
+    z-index: 2;
+}
+
+ Estilo general del header */
+ header {
+    /*background-image: url(/BallRoomWeb/imghead/GenBGB.jpg);*/
+    
+    background-color: rgb(255, 255, 255);
+    background-size: 25rem;
+    color: rgb(255, 255, 255);
+    padding: 2rem 0;
+    position:static;
+  
+    z-index: 2;
+}
+
+/* Estilo cuando el header es fijo */
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 10;
+    
+}
+.header__logo-image{
+    max-width: 100px; 
+    max-height: 100px;
+    min-width: 90px; 
+    min-height: 90px;
+}
+/* Media queries para diferentes dispositivos */
+@media (max-width: 768px) {
+    header {
+
+        /* Ajustes específicos para móviles */
+        header.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+
+        /* Ajustes específicos para tabletas */
+        header.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+nav a {
+    margin: auto;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+  }
+/* Color fondo botones */
+nav a:hover {
+    box-sizing: content-box;
+    transition: 0.4;
+    height: auto;
+    width: auto;
+    background-color: #849bff;
+  }
+
+
+
+
+.menu-toggle {
+    top: 4%;
+    left: 90%;
+    right: 0;
+    z-index: 10;
+    position: fixed;
+    display: none;
+    cursor:pointer;
+    z-index: 2;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    margin: 4px 0;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 1em;
+}
+
+.nav-list li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: -200%;
+        width:140%;
+        height: 300vh;
+        /*background-image: url(/BallRoomWeb/imghead/GenBGB.jpg);*/
+        background-color: white;
+        background-size: 25rem;
+        align-items: center;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-list li {
+        margin: 1.5em 0;
+    }
+}
+.nav-listA {
+    display: contents;
+    list-style: circle;
+    margin: 0;
+    padding: 0%;
+    position: fixed;
+}
+
+.nav-listA li {
+    margin: 0 1em;
+}
+
+.nav-listA li a {
+    animation: backwards;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+p {
+    font-family: "NeutraDisplay-Medium";
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #000000;
+    background-color: #ffffff00;
+    text-align: justify;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    background-color: rgb(74, 74, 74);
+    color: rgb(255, 255, 255);
+
+    width: 100%;
+    height: 7rem;
+padding-top: 10px;
+
+}
+
+
+
+
+button {
+    background-color: #7ddeff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0f70ca;
+}

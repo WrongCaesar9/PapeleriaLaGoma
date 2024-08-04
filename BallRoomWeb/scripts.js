@@ -395,6 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Cargar los datos del producto seleccionado
+// Cargar los datos del producto seleccionado
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('id');
 
@@ -415,7 +416,7 @@ Promise.all([
         
         // Agregar sugerencias
         const suggestionList = document.querySelector('.suggestion-list');
-        const suggestions = allProducts.filter(p => p.id !== productId).slice(0, 1); // Limitar a 3 sugerencias
+        const suggestions = allProducts.filter(p => p.id !== productId).slice(0,0); // Limitar a 3 sugerencias
 
         suggestions.forEach(suggestion => {
             const suggestionDiv = document.createElement('div');
@@ -427,14 +428,24 @@ Promise.all([
             suggestionList.appendChild(suggestionDiv);
         });
 
+        // Agregar funcionalidad al botón de correo
+        const emailButton = document.getElementById('email-button');
+        emailButton.addEventListener('click', () => {
+            const subject = `Interesado en el producto: ${product.title || product.name}`;
+            const body = `Estoy interesado en el producto: ${product.title || product.name}\nDescripción: ${product.description}\nPrecio: ${product.price}\nImagen: ${product.image}`;
+            const mailtoUrl = `mailto:ballroomperfumes@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoUrl; // Abre el cliente de correo con el mailto URL
+        });
+
         // Agregar funcionalidad al botón de WhatsApp
         const whatsappButton = document.getElementById('whatsapp-button');
         whatsappButton.addEventListener('click', () => {
-            const message = `I am interested in the product: ${product.title || product.name}\nDescription: ${product.description}\nPrice: ${product.price}\nImage: https://lagoma.netlify.app/${product.image}`;
-            const whatsappUrl = `https://api.whatsapp.com/send?phone=5620886202&text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank'); // Abre WhatsApp en una nueva pestaña
+            const whatsappNumber = '5620886202';
+            const message = `Estoy interesado en el producto: ${product.title || product.name}\nDescripción: ${product.description}\nPrecio: ${product.price}\nImagen: ${product.image}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank'); // Abre el enlace de WhatsApp en una nueva pestaña
         });
     } else {
-        console.error('Product not found');
+        console.error('Producto no encontrado');
     }
-}).catch(error => console.error('Error charging product:', error));
+}).catch(error => console.error('Error al cargar los productos:', error));
