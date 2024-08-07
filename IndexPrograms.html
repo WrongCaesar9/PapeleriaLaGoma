@@ -15,19 +15,27 @@
 
 <body>
     <header>
+
+
+
         <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app/indexprograms"><img class="header__logo-image"
-                style="max-width: 90px; border-radius: 10px;" style="max-height: 90px;" width="90px" height="90px"
-                align="left" src="/logos/lagomaGM.png" alt="lagoma"></a>
+                style="max-width: 90px; border-radius: 10px;max-height: 90px;" align="left" 
+                src="/logos/lagomaGM.png" alt="lagoma"></a>
+
         <a id="whatsapp" title="WhatsApp TESChi"><img class="btn-whatsapp2"
-                src="https://clientes.dongee.com/whatsapp.png" width="90" height="90" align="right" alt="Whatsapp"
+                src="https://clientes.dongee.com/whatsapp.png" 
+                style="max-width: 90px; border-radius: 10px;max-height: 90px;" align="right" alt="Whatsapp"
                 onclick="window.location.href='https://wa.me/525515833826'"></a>
-        <h1>Links de Programas<br>"Para PC y Android"</h1>
+
+
+
+
+        <h1 style="font-size: 140%; font-family: 'Times New Roman', Times, serif;">Links de Programas<br>"Para PC y Android"</h1>
         <marquee behavior="scroll" direction="left" scrollamount="12">
-            <div>
-                <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;Si detectas un link caído, repórtamelo  🤙🏽 - Espero
+                        <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;Si detectas un link caído, repórtamelo  🤙🏽 - Espero
                     ir agregando mas programas y páginas que sean útiles y que en ocasiones los acortadores molestan con los
                     anuncios&nbsp;</span>
-            </div>
+        
         </marquee>
     </header>
 
@@ -60,6 +68,10 @@
             <li><a class="toplistxd" href="#sugerencia">¿Quieres agregar algo?</a></li>
             <li><a class="toplistxd" href="Index.html">Regresar a "La Goma"</a></li>
             <li><a class="toplistxd" href="Curso3D.html">Temario Curso Blender</a></li>
+            <li>Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span></li>
+
+
+
 
         </ul>
 
@@ -315,7 +327,26 @@
 
     </footer>
 
-
+    <script>
+        // create a function to update the date and time
+        function updateDateTime() {
+          // create a new `Date` object
+          const now = new Date();
+  
+          // specify 12-hour format options
+          const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+  
+          // get the current date and time as a string in 12-hour format
+          const currentDateTime = now.toLocaleString('es-MX', options);
+  
+          // update the `textContent` property of the `span` element with the `id` of `datetime`
+          document.querySelector('#datetime').textContent = currentDateTime;
+        }
+  
+        // call the `updateDateTime` function every second
+        setInterval(updateDateTime, 1000);
+      </script>
+  
     <script src="mainpg.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- Error de WhatsApp Solucionado, error fue comentar esta linea

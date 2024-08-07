@@ -36,8 +36,8 @@ body {
 header.fixed {
   text-align: center;    
   position: fixed;
-  top:-2.8rem;
-  width: max-content;
+  top:-1.5rem;
+
   left:33%;
   transform: translateX(-50%);
   background-color: #062238;
@@ -48,12 +48,13 @@ header.fixed {
   font-size: 10px;
   padding-top:15px;
   transition: 0.8s;
-  width: 130%;
-  height: 13%;
+  width: 132%;
+  height: auto;
   scale:75%;
 
 }
   header {
+    height: auto;
     background-color: #062238;
     text-align: center;
     padding: 10px;
@@ -82,11 +83,12 @@ header.fixed {
 
 
   nav.fixed{
+    height: auto;
     text-align: center;    
     position: fixed;
-    top: 7.5%;
-    width: 99.55%;
-    left: 49.44%;
+    top: 4.5rem;
+    width: 100%;
+    left: 49.9%;
     transform: translateX(-50%);
     background-image: url(/logos/gamespattern.gif);
     background-size: 30%;
@@ -97,12 +99,12 @@ header.fixed {
   }
 
   nav{
-
+width: 100%;
     text-align: center;    
     background-color: #062238;
-    margin: 3px;
+    
     padding: 0px;
-     background-image: url(/logos/mvcsuper.gif);
+    background-image: url(/logos/mvcsuper.gif);
     background-size: 50%;   
     background-position-y: center;
     background-blend-mode: multiply;
@@ -130,7 +132,7 @@ header.fixed {
 
   nav ul {
     list-style-type: none;
-    margin: 1px;
+    margin: -1%;
     padding: 10px;
   }
   

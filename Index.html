@@ -70,6 +70,7 @@
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#pedidos">Pedidos</a></li>
             <li><a href="IndexPrograms.html">Programas 👾🐱</a></li>
+            <li>Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span></li>
         </ul>
     
     
@@ -209,7 +210,25 @@ width: 428px;">
 
         </footer>
 
-
+        <script>
+            // create a function to update the date and time
+            function updateDateTime() {
+              // create a new `Date` object
+              const now = new Date();
+      
+              // specify 12-hour format options
+              const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+      
+              // get the current date and time as a string in 12-hour format
+              const currentDateTime = now.toLocaleString('es-MX', options);
+      
+              // update the `textContent` property of the `span` element with the `id` of `datetime`
+              document.querySelector('#datetime').textContent = currentDateTime;
+            }
+      
+            // call the `updateDateTime` function every second
+            setInterval(updateDateTime, 1000);
+          </script>
         <script src="main.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <!-- Error de WhatsApp Solucionado, error fue comentar esta linea-->
