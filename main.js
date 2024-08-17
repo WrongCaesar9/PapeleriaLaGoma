@@ -30,3 +30,8 @@ document.querySelectorAll('.menu-item > a').forEach(link => {
     }
   });
 });
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.menu').classList.toggle('active');
+});
+

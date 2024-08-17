@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,22 +9,24 @@ body {
   background-repeat: repeat;
 }
 
-header{
-position: fixed;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 10px 10px;
-background: rgb(61, 61, 61);
-background-image: url(/logos/Background3.png);
-color: white;
-border-bottom:2px solid rgb(68, 252, 255);
-border-top: 2px solid rgb(68, 252, 255);
-z-index: 5;
+/* Estilos del header */
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background: rgb(61, 61, 61);
+  background-image: url(/logos/Background3.png);
+  color: white;
+  border-bottom: 2px solid rgb(68, 252, 255);
+  border-top: 2px solid rgb(68, 252, 255);
+  z-index: 5;
 }
 
-header nav a{
+/* Estilos del menú de navegación */
+header nav a {
   color: #ddd;
   text-decoration: none;
   display: inline-block;
@@ -31,19 +34,22 @@ header nav a{
   transition: 0.5s;
   border-radius: 10px;
 }
-header nav a:hover{
+
+header nav a:hover {
   background-color: rgb(158, 158, 158);
 }
-header .menu a{
+
+header .menu a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
 }
-header .menu a:hover{
+
+header .menu a:hover {
   color: rgb(101, 193, 224);
 }
 
-/*Inicio Estilo básico para el menú */
+/* Estilo básico para el menú */
 .menu {
   list-style: none;
   padding: 0;
@@ -52,14 +58,17 @@ header .menu a:hover{
 }
 
 .menu-item {
+  
   position: relative;
 }
 
 .menu > .menu-item {
+  
   margin-right: 20px;
 }
 
 .menu-item a {
+  
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -84,6 +93,7 @@ header .menu a:hover{
 }
 
 .menu-item:hover > .submenu {
+  
   display: block;
 }
 
@@ -94,13 +104,30 @@ header .menu a:hover{
   display: block;
 }
 
-/*Parte responsive */
+/* Estilos para el botón de menú y el menú de navegación */
+
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: white; /* El botón tiene color blanco */
+}
+
+/* Responsive design */
 @media screen and (max-width: 768px) {
   .menu {
-    display: block;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(61, 61, 61); /* Mantiene el color de fondo del menú */
   }
 
   .menu > .menu-item {
+    
     margin: 0;
   }
 
@@ -120,14 +147,20 @@ header .menu a:hover{
   }
 
   .submenu .submenu {
+    
     padding-left: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu.active {
+    display: flex;
   }
 }
 
-/*Fin Estilo básico para el menú */
-
-
-
+/* Sección y Footer */
 section {
   padding: 1rem;
   padding-top: 5rem;
@@ -141,7 +174,7 @@ footer {
   padding: 0px 5rem;
   background-color: rgb(80, 80, 80);
   max-width: 100%;
-  border-bottom:2px solid rgb(68, 252, 255);
+  border-bottom: 2px solid rgb(68, 252, 255);
   border-top: 2px solid rgb(68, 252, 255);
   z-index: 1;
 }

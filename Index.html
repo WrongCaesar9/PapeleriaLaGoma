@@ -8,7 +8,7 @@
     <title>Articulos de Papeleria, Novedades y Recargas</title>
     <link rel="shortcut icon" href="/logos/lagomaico.png">
     <script src="https://kit.fontawesome.com/e1a7bdd601.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="Curso3D.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -17,14 +17,15 @@
         <img src="/logos/logo.svg" title="La Goma" alt="lagoma" style="min-width: 10%;min-height: 10%; max-width: 10%;max-height: 10%;">
     
         <nav>
+            <div class="menu-toggle">
+                <a href="#" class="fa-solid fa-bars"></a>
+            </div>
             <ul class="menu">
-                <!--Inicio-->
                 <li class="menu-item">
                     <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
                     <ul class="submenu">
-                        <li><a href="#papeleria">Productos papeleria</a></li>
+                        <li><a href="#papeleria">Productos papelería</a></li>
                         <li><a href="#programas">Programas</a></li>
-                        <!--B-->
                         <li class="menu-item">
                             <a href="#">Herramientas más usadas</a>
                             <ul class="submenu">
@@ -34,18 +35,13 @@
                                 <li><a href="https://lagoma.netlify.app/indexprograms">Todas las herramientas</a></li>
                             </ul>
                         </li>
-                        <!--B-->
                     </ul>
                 </li>
-                <!--Inicio-->
-
-                <!--Papeleria-->
                 <li class="menu-item">
-                    <a href="#"><i class="fa-solid fa-pen-ruler"></i> Papeleria</a>
+                    <a href="#"><i class="fa-solid fa-pen-ruler"></i> Papelería</a>
                     <ul class="submenu">
                         <li><a href="#papeleria">Todos los productos</a></li>
-                        <li><a href="#">Papeleria Kawaii</a></li>
-                        <!--Lapiceros-->
+                        <li><a href="#">Papelería Kawaii</a></li>
                         <li class="menu-item">
                             <a href="#">Lapiceros</a>
                             <ul class="submenu">
@@ -53,8 +49,6 @@
                                 <li><a href="#">Asor</a></li>
                             </ul>
                         </li>
-                        <!--Lapiceros-->
-                        <!--Libretas-->
                         <li class="menu-item">
                             <a href="#">Libretas</a>
                             <ul class="submenu">
@@ -62,8 +56,6 @@
                                 <li><a href="#">Scribe</a></li>
                             </ul>
                         </li>
-                        <!--Libretas-->
-                        <!--B-->
                         <li class="menu-item">
                             <a href="#">Cómputo</a>
                             <ul class="submenu">
@@ -71,26 +63,20 @@
                                 <li><a href="#">Mouses</a></li>
                             </ul>
                         </li>
-                        <!--B-->
                     </ul>
                 </li>
-                <!--Papeleria-->
-                <!--Programas-->
                 <li class="menu-item">
                     <a href="#"><i class="fa-solid fa-laptop-code"></i> Programas</a>
                     <ul class="submenu">
                         <li><a href="#programas">Todos los programas</a></li>
-                        <li><a href="#">Modelado y Diseño 3D</a></li><!--Filtro general-->
-                        <!--Lapiceros-->
+                        <li><a href="#">Modelado y Diseño 3D</a></li>
                         <li class="menu-item">
                             <a href="#">Antivirus</a>
                             <ul class="submenu">
-                                <li><a href="#">Malwerebites</a></li><!--Filtro especifico-->
-                                <li><a href="#">Dr. Web</a></li><!--Filtro especifico-->
+                                <li><a href="#">Malwarebytes</a></li>
+                                <li><a href="#">Dr. Web</a></li>
                             </ul>
                         </li>
-                        <!--Lapiceros-->
-                        <!--Libretas-->
                         <li class="menu-item">
                             <a href="#">Juegos</a>
                             <ul class="submenu">
@@ -98,8 +84,6 @@
                                 <li><a href="#">PC</a></li>
                             </ul>
                         </li>
-                        <!--Libretas-->
-                        <!--B-->
                         <li class="menu-item">
                             <a href="#">OS & Burners</a>
                             <ul class="submenu">
@@ -109,15 +93,11 @@
                                 <li><a href="#">TOMEX OS V2.63<br>W10/11</a></li>
                             </ul>
                         </li>
-                        <!--B-->
                     </ul>
                 </li>
-                <!--Programas-->    
                 <li class="menu-item"><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Herramientas</a></li>
                 <li class="menu-item"><a href="#"><i class="fa-solid fa-book-open"></i> Otros</a></li>
             </ul>
-    
-    
         </nav>
     
         <div class="menu">
@@ -184,10 +164,7 @@
         <cont>
             <p>Nuestra papelería se encuentra en:<br><br>Calle Fresnos S/N Santa María, Chiconcuac, Estado de
                 México.<br>Entre calle Adolfo López Mateos y Veracruz<br><br>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2235.414068089363!2d-98.89309589435383!3d19.562924617881613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e99c291e0edd%3A0xdaa7e9a8742a38e3!2sLa%20Goma!5e0!3m2!1ses-419!2smx!4v1684364992475!5m2!1ses-419!2smx"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
             </p>
         </cont>
     </section>
@@ -261,6 +238,6 @@
     <!-- Footer -->
 </body>
 <!-- scripts -->
-<script src="/Curso3D.js"></script>
+<script src="/main.js"></script>
 <!-- scripts -->
 </html>
