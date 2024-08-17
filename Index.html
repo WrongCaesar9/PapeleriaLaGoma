@@ -14,7 +14,7 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="/logos/logo.svg" title="La Goma" alt="lagoma" style="min-width: 10%;min-height: 10%; max-width: 10%;max-height: 10%;">
+        <img src="/logos/logo.svg" class="nav-logo" title="La Goma" alt="lagoma">
     
         <nav>
             <div class="menu-toggle">
@@ -37,6 +37,7 @@
                         </li>
                     </ul>
                 </li>
+                <!--Lista-->
                 <li class="menu-item">
                     <a href="#"><i class="fa-solid fa-pen-ruler"></i> Papelería</a>
                     <ul class="submenu">
@@ -65,6 +66,7 @@
                         </li>
                     </ul>
                 </li>
+                <!--Lista-->
                 <li class="menu-item">
                     <a href="#"><i class="fa-solid fa-laptop-code"></i> Programas</a>
                     <ul class="submenu">
@@ -95,17 +97,34 @@
                         </li>
                     </ul>
                 </li>
+                <!--Lista-->
                 <li class="menu-item"><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Herramientas</a></li>
-                <li class="menu-item"><a href="#"><i class="fa-solid fa-book-open"></i> Otros</a></li>
+                <!--Lista-->
+                <li class="menu-item">
+                    <a href="#"><i class="fa-solid fa-book-open"></i> Otros</a>
+                    <ul class="submenu">
+                        <li><a href="#about-us">Acerca de mi/nosotros</a></li>
+                        <li><a href="#ubicación">Ubicación</a></li>
+                        <li class="menu-item">
+                            <a href="#">Contactame</a>
+                            <ul class="submenu">
+                                <li><a href="#">Whatsapp</a></li>
+                                <li><a href="#">Correo</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </li>
+                <!--Lista-->
             </ul>
         </nav>
     
-        <div class="menu">
+        
+    
+    
+    </header><div class="menu">
             <a href="#" class="fa-solid fa-bars"></a>
         </div>
-    
-    
-    </header>
     <!-- Header -->
 
     <!-- Main -->
@@ -159,7 +178,7 @@
 <!-- Aquí se insertarán dinámicamente los programas -->
     </section>
 
-    <section id="ubicacion">
+    <section id="ubicación">
         <h2>Ubicación</h2>
         <cont>
             <p>Nuestra papelería se encuentra en:<br><br>Calle Fresnos S/N Santa María, Chiconcuac, Estado de
@@ -187,7 +206,7 @@
 
     <!-- Footer -->
     <footer>
-    
+
         <a class="icon social-icon" title="Facebook" aria-label="Facebook (Nueva pestaña)"
             href="https://www.facebook.com/josuedavid.juarezgomez.37/" target="_blank" rel="noopener"><span
                 tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" alt="Facebook" aria-label="Facebook" role="img"
@@ -230,10 +249,10 @@
                         d="M13.72 2.71l-.217.008a4.321 4.321 0 00-2.843 1.325 4.474 4.474 0 00-1.235 2.669l-.017.216-.013.242-.567-.118c-2.816-.615-4.52-1.514-6.34-3.341l-.211-.215-.448-.444-.27.532c-.763 1.444-.72 2.971.107 4.35l.117.187.648.984-1.076-.8-.101-.065a.507.507 0 00-.507.01c-.141.077-.233.263-.225.45l.01.08.005.021c.269.893.792 1.748 1.507 2.474l.982.788-1.04-.267-.088-.034a.59.59 0 00-.5.075.465.465 0 00-.168.554c.475 1.323 1.312 2.171 2.557 2.587l.212.066.573.163-.55.23c-.882.367-1.937.583-3.25.607a.582.582 0 00-.532.372.54.54 0 00.081.513l.064.074.022.018c1.203.96 3.807 1.52 7.135 1.52 5.743 0 10.446-4.951 10.622-11.127l.005-.389.104-.06c.645-.372 1.144-.987 1.427-1.747l.067-.192.021-.11a.514.514 0 00-.138-.42.512.512 0 00-.27-.135l-.08-.007-.35-.007.174-.305c.128-.224.236-.457.324-.7.076-.194.042-.37-.093-.502a.478.478 0 00-.53-.087l-.785.328c-.289.119-.535.217-.756.3l-.374.136-.342.112-.161-.016c-.883-.482-1.803-.844-2.513-.897l-.174-.006zm.004.856h.105c.4.017.96.207 1.686.565l.74.26c.765.022 1.047-.25 1.362-.343l.442-.21c.274-.076.18.269 0 .553a2.32 2.32 0 01-.291.338l-.216.211-.276.257 1.947-.235-1.947 1.785.01.095v.199c0 2.831-1.018 5.5-2.867 7.509-1.842 2.002-4.287 3.109-6.877 3.109-1.659 0-3.375-.152-4.804-.551l-.85-.238.867-.167c1.393-.27 2.393-.759 3.379-1.516l.382-.274c.225-.16.111-.51-.167-.51H5.9c-1.475 0-2.455-.318-3.114-1.033l-.372-.404.691.068c.194.014.393.018.626.013l.378-.012.11-.014c.548 0 1.108-.179 1.68-.536a.112.112 0 00-.078-.122c-1.037-.298-3.312-1.47-3.726-2.407l-.089-.473.78.295c.949.449 1.667.542 2.156.279.022 0-.382-.358-1.21-1.072C2.347 7.718 1.583 6.616 2.004 4.9l.084-.341.26.237c1.978 1.811 3.97 2.702 7.407 3.32l.53.087v-1.04a3.64 3.64 0 011.005-2.522 3.432 3.432 0 012.433-1.076z"
                         style="transform:scale(1.8)"></path>
                 </svg></span></a>
-    
+
         <div></div>
-        <p style="text-align: center; font-size: 100%; color: aliceblue;  font-family: 'Courier New', Courier, monospace;">
-            Copyright © 2024 "WrongCaesar9"</p>
+        <p style="text-align: center; font-size: 100%; color: aliceblue;  font-family: 'Courier New', Courier, monospace; margin-right: 120px;">
+            Copyright © 2024 "WrongCaesar9" <br><br>Testing Web Page</p>
     </footer>
     <!-- Footer -->
 </body>
