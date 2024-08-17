@@ -83,7 +83,7 @@ header .menu a:hover {
 }
 
 .submenu {
-  position: absolute;
+  position: static;
   left: 0;
   top: 100%;
   background-color: #444;
@@ -157,8 +157,8 @@ header .menu a:hover {
   }
 
   .menu-item a {
-    padding: 15px;
-    border-bottom: 1px solid #444;
+    padding: 8px;
+    border-bottom: 1px solid #3fefff;
   }
 
   .submenu {
@@ -168,11 +168,13 @@ header .menu a:hover {
 
   .menu-item:hover > .submenu,
   .menu-item:focus-within > .submenu {
+    border-bottom: 3px solid #ffa93f;
     display: block;
   }
 
   .submenu .submenu {
     padding-left: 15px;
+    
   }
 
   .menu-toggle {
