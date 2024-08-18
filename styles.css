@@ -32,7 +32,6 @@ header {
   min-height: 8%;
   max-width: 8%;
   max-height: 8%;
-  transition: 2s;
 }
 
 header nav a {
@@ -40,12 +39,12 @@ header nav a {
   text-decoration: none;
   display: inline-block;
   padding: 1px 5px;
-  transition: 0.5s;
   border-radius: 10px;
 }
 
 header .menu-item a:hover {
-  background-color: rgb(40, 30, 89);
+  background-color: rgb(62, 90, 173);
+  transition: 0.3s;
 }
 
 header .menu a {
@@ -54,10 +53,12 @@ header .menu a {
   font-size: 15px;
   padding-right: 115px;
   padding-left: 8px;
+  transition: 0.5s;
 }
 
 header .menu a:hover {
   color: rgb(25, 228, 62);
+  transition: 0.3s;
 }
 
 /* Estilo básico para el menú */
@@ -140,6 +141,7 @@ header .menu a:hover {
   .submenu {
     position: static;
     display: none;
+    transition: 1s;
   }
 
   .menu-item:hover > .submenu,
