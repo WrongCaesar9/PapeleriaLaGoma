@@ -4,7 +4,7 @@
         "descripcion": "Cargador economico tipo C",
         "precio": 55.00,
         "imagen": "/img/char_tp_eco.jpg",
-        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
+        "imagenes": ["/img/12smartcir.jpg", "img/ki_n_med.jpg", "img/Cuadernoswingmix.jpg"]
     },
     {
         "nombre": "Colores Smarty",

@@ -48,13 +48,21 @@ document.addEventListener("DOMContentLoaded", function() {
               const productCard = document.createElement('div');
               productCard.className = 'product-card';
 
+              // Si el array de imágenes no está definido, usar un array vacío
+              const imagenesArray = Array.isArray(producto.imagenes) ? producto.imagenes : [];
+
               productCard.innerHTML = `
                   <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image">
-                  <h1 class="product-name">${producto.nombre}</h1>
+                  <h2 class="product-name">${producto.nombre}</h2>
                   <p class="product-description">${producto.descripcion}</p>
                   <p class="product-price">$${producto.precio}</p>
-                  <button class="product-buy" onclick="comprarProducto('${producto.nombre}', '${producto.descripcion}', '${producto.precio}', '${producto.imagen}', ${JSON.stringify(producto.imagenes)})">Comprar</button>
+                  <button class="product-buy">Comprar</button>
               `;
+
+              const buyButton = productCard.querySelector('.product-buy');
+              buyButton.addEventListener('click', function() {
+                  comprarProducto(producto.nombre, producto.descripcion, producto.precio, producto.imagen, imagenesArray);
+              });
 
               container.appendChild(productCard);
           });
@@ -63,7 +71,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function comprarProducto(nombre, descripcion, precio, imagen, imagenes) {
+  // Guardamos solo si el array es válido
   localStorage.setItem('productoSeleccionado', JSON.stringify({nombre, descripcion, precio, imagen, imagenes}));
-  window.location.href = 'https://www.google.com.mx';
+  window.location.href = 'product-details.html';
 }
 //Fin Script para los productos de la papeleria
