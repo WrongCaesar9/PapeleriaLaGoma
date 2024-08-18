@@ -11,21 +11,21 @@
         "descripcion": "caja con doce colores",
         "precio": 5.00,
         "imagen": "/img/12smartcir.jpg",
-        "imagenes": ["/img/12smartcir.jpg", "img/ki_n_med.jpg", "img/Cuadernoswingmix.jpg"]
+        "imagenes": ["/img/12smartcir.jpg", "/img/12smartcir.jpg", "/img/12smartcir.jpg"]
     },
     {
         "nombre": "Kilometrico<br>Punto Mediano",
         "descripcion": "Lapicero kilometrico esta chido",
         "precio": 5.00,
         "imagen": "img/ki_n_med.jpg",
-        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
+        "imagenes": ["img/ki_n_med.jpg", "img/ki_n_med.jpg", "img/ki_n_med.jpg"]
     },
     {
         "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
         "descripcion": "Libreta Swing Mix ",
         "precio": 27,
         "imagen": "img/Cuadernoswingmix.jpg",
-        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
+        "imagenes": ["img/Cuadernoswingmix.jpg", "img/Cuadernoswingmix.jpg", "img/Cuadernoswingmix.jpg"]
     },
 
 
