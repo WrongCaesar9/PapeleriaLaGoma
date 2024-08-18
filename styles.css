@@ -292,7 +292,10 @@ footer {
 /*Estilos logos footer*/
 /*Estilos para seccion papeleria*/
 #papeleria {
-  display: flex;
+  
+  display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
   flex-wrap:wrap;
   justify-content: center;
   padding: 1rem;
