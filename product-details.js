@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
         <h2 class="product-name">${producto.nombre}</h2>
         <p class="product-description">${producto.descripcion}</p>
         <p class="product-price">$${producto.precio}</p>
-        <button onclick="enviarWhatsApp('${producto.nombre}', '${producto.precio}')">Comprar por WhatsApp</button>
-        <button onclick="enviarEmail('${producto.nombre}', '${producto.precio}')">Comprar por Email</button>
+        <button onclick="enviarWhatsApp('${producto.nombre}', '${producto.precio}', '${producto.imagen}')">Comprar por WhatsApp</button>
+        <button onclick="enviarEmail('${producto.nombre}', '${producto.precio}', '${producto.imagen}')">Comprar por Email</button>
     `;
 
     container.appendChild(productDetails);
@@ -45,15 +45,15 @@ function iniciarCarrusel() {
     }
 }
 
-function enviarWhatsApp(nombre, precio) {
-    const mensaje = `Estoy interesado en el producto: ${nombre}, que tiene un precio de $${precio}.`;
-    const url = `https://wa.me/?text=${encodeURIComponent(mensaje)}`;
+function enviarWhatsApp(nombre, precio, imagen) {
+    const mensaje = `Estoy interesado en el producto: ${nombre}, que tiene un precio de $${precio}. Aquí está la imagen: ${window.location.origin}${imagen}`;
+    const url = `https://wa.me/525515833826?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
 }
 
-function enviarEmail(nombre, precio) {
+function enviarEmail(nombre, precio, imagen) {
     const subject = `Interesado en el producto: ${nombre}`;
-    const body = `Estoy interesado en el producto: ${nombre}, que tiene un precio de $${precio}.`;
-    const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const body = `Estoy interesado en el producto: ${nombre}, que tiene un precio de $${precio}. Aquí está la imagen: ${window.location.origin}${imagen}`;
+    const mailto = `mailto:josuejuarez12396@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
 }
