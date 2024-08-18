@@ -19,6 +19,8 @@ function mainSliderShowSlides() {
     setTimeout(mainSliderShowSlides, 4000); // Change image every 2 seconds
 }
 //Fin script Carrousel mainSlider
+
+//Inicio Script para el nav
 document.querySelectorAll('.menu-item > a').forEach(link => {
   link.addEventListener('click', function (e) {
     if (window.innerWidth <= 768) {
@@ -34,4 +36,28 @@ document.querySelectorAll('.menu-item > a').forEach(link => {
 document.querySelector('.menu-toggle').addEventListener('click', function() {
   document.querySelector('.menu').classList.toggle('active');
 });
+//Fin Script para el nav
 
+//Inicio Script para los productos de la papeleria
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('productos.json')
+      .then(response => response.json())
+      .then(data => {
+          const container = document.getElementById('papeleria');
+          data.forEach(producto => {
+              const productCard = document.createElement('div');
+              productCard.className = 'product-card';
+
+              productCard.innerHTML = `
+                  <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image">
+                  <h2 class="product-name">${producto.nombre}</h2>
+                  <p class="product-description">${producto.descripcion}</p>
+                  <p class="product-price">$${producto.precio}</p>
+              `;
+
+              container.appendChild(productCard);
+          });
+      })
+      .catch(error => console.error('Error al cargar los productos:', error));
+});
+//Fin Script para los productos de la papeleria

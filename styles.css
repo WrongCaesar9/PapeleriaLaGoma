@@ -43,8 +43,8 @@ header nav a {
   border-radius: 10px;
 }
 
-header nav a:hover {
-  background-color: rgb(26, 21, 54);
+header .menu-item a:hover {
+  background-color: rgb(40, 30, 89);
 }
 
 header .menu a {
@@ -267,7 +267,7 @@ footer {
 }
  /*Final Estilo para el carrousel mainSlider*/
  /*Letra h2 LA Goma*/
-.ballroom-graphic-text h2 {
+.lagoma-graphic-text h2 {
   font-size:3rem;
   font-style: oblique;
   font-family:'Times New Roman', Times, serif;
@@ -290,3 +290,57 @@ footer {
     opacity: 0.7;
 }
 /*Estilos logos footer*/
+/*Estilos para seccion papeleria*/
+#papeleria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #papeleria {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-card {
+      width: 100%;
+      max-width: 300px;
+  }
+}
+/*Estilos para seccion papeleria*/
