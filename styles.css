@@ -124,7 +124,7 @@ header .menu a:hover {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(150, 150, 150);
   }
 
   .menu > .menu-item {
