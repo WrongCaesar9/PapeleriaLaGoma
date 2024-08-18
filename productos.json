@@ -1,7 +1,7 @@
 [
     {
-        "nombre": "Cargador C",
-        "descripcion": "Cargador economico tipo C",
+        "nombre": "Cargador Tipo C",
+        "descripcion": "Cargador económico tipo C",
         "precio": 55.00,
         "imagen": "/img/char_tp_eco.jpg",
         "imagenes": ["/img/12smartcir.jpg", "img/ki_n_med.jpg", "img/Cuadernoswingmix.jpg"]

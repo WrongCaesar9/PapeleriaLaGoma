@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
         <h2 class="product-name">${producto.nombre}</h2>
         <p class="product-description">${producto.descripcion}</p>
         <p class="product-price">$${producto.precio}</p>
-        <button onclick="enviarWhatsApp('${producto.nombre}', '${producto.precio}', '${producto.imagen}')">Comprar por WhatsApp</button>
-        <button onclick="enviarEmail('${producto.nombre}', '${producto.precio}', '${producto.imagen}')">Comprar por Email</button>
+        <button class="bt-wha" onclick="enviarWhatsApp('${producto.nombre}', '${producto.precio}', '${producto.imagen}')"><i class="fa-brands fa-whatsapp"></i> Comprar por WhatsApp</button>
+        <button class="bt-gmail" onclick="enviarEmail('${producto.nombre}', '${producto.precio}', '${producto.imagen}')"><i class="fa-regular fa-envelope"></i> Comprar por Email</button>
     `;
 
     container.appendChild(productDetails);
@@ -46,14 +46,14 @@ function iniciarCarrusel() {
 }
 
 function enviarWhatsApp(nombre, precio, imagen) {
-    const mensaje = `Estoy interesado en el producto: ${nombre}, que tiene un precio de $${precio}. Aquí está la imagen: ${window.location.origin}${imagen}`;
+    const mensaje = `*Formulario de compra*\n¡Hola! Estoy interesado en el producto: *${nombre}*\nCon un costo de: *$${precio}*\nEcha un vistazo a la imagen del producto aquí: * ${window.location.origin}${imagen} *`;
     const url = `https://wa.me/525515833826?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
 }
 
 function enviarEmail(nombre, precio, imagen) {
     const subject = `Interesado en el producto: ${nombre}`;
-    const body = `Estoy interesado en el producto: ${nombre}, que tiene un precio de $${precio}. Aquí está la imagen: ${window.location.origin}${imagen}`;
+    const body = `Formulario de compra\n¡Hola! Estoy interesado en el producto: ${nombre}\nCon un costo de: $${precio}\nEcha un vistazo a la imagen del producto aquí: ${window.location.origin}${imagen}`;
     const mailto = `mailto:josuejuarez12396@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
 }
