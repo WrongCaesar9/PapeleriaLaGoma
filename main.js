@@ -50,9 +50,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
               productCard.innerHTML = `
                   <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image">
-                  <h2 class="product-name">${producto.nombre}</h2>
+                  <h1 class="product-name">${producto.nombre}</h1>
                   <p class="product-description">${producto.descripcion}</p>
                   <p class="product-price">$${producto.precio}</p>
+                  <button class="product-buy" onclick="comprarProducto('${producto.nombre}', '${producto.descripcion}', '${producto.precio}', '${producto.imagen}', ${JSON.stringify(producto.imagenes)})">Comprar</button>
               `;
 
               container.appendChild(productCard);
@@ -60,4 +61,9 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .catch(error => console.error('Error al cargar los productos:', error));
 });
+
+function comprarProducto(nombre, descripcion, precio, imagen, imagenes) {
+  localStorage.setItem('productoSeleccionado', JSON.stringify({nombre, descripcion, precio, imagen, imagenes}));
+  window.location.href = 'https://www.google.com.mx';
+}
 //Fin Script para los productos de la papeleria

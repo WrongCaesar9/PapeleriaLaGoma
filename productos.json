@@ -3,103 +3,62 @@
         "nombre": "Cargador C",
         "descripcion": "Cargador economico tipo C",
         "precio": 55.00,
-        "imagen": "/img/char_tp_eco.jpg"
+        "imagen": "/img/char_tp_eco.jpg",
+        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
     },
     {
         "nombre": "Colores Smarty",
         "descripcion": "caja con doce colores",
         "precio": 5.00,
-        "imagen": "/img/12smartcir.jpg"
+        "imagen": "/img/12smartcir.jpg",
+        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
     },
     {
         "nombre": "Kilometrico<br>Punto Mediano",
         "descripcion": "Lapicero kilometrico esta chido",
         "precio": 5.00,
-        "imagen": "img/ki_n_med.jpg"
+        "imagen": "img/ki_n_med.jpg",
+        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
     },
     {
         "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
         "descripcion": "Libreta Swing Mix ",
         "precio": 27,
-        "imagen": "img/Cuadernoswingmix.jpg"
-    }
-
-
-
-
-
-    ,
-    {
-        "nombre": "Colores Smarty",
-        "descripcion": "caja con doce colores",
-        "precio": 5.00,
-        "imagen": "/img/12smartcir.jpg"
+        "imagen": "img/Cuadernoswingmix.jpg",
+        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
     },
+
+
+
+
+
+
     {
-        "nombre": "Kilometrico<br>Punto Mediano",
-        "descripcion": "Lapicero kilometrico esta chido",
-        "precio": 5.00,
-        "imagen": "img/ki_n_med.jpg"
-    },
-    {
-        "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
-        "descripcion": "Libreta Swing Mix ",
-        "precio": 27,
-        "imagen": "img/Cuadernoswingmix.jpg"
+        "nombre": "Cargador C",
+        "descripcion": "Cargador economico tipo C",
+        "precio": 55.00,
+        "imagen": "/img/char_tp_eco.jpg",
+        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
     },
     {
         "nombre": "Colores Smarty",
         "descripcion": "caja con doce colores",
         "precio": 5.00,
-        "imagen": "/img/12smartcir.jpg"
+        "imagen": "/img/12smartcir.jpg",
+        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
     },
     {
         "nombre": "Kilometrico<br>Punto Mediano",
         "descripcion": "Lapicero kilometrico esta chido",
         "precio": 5.00,
-        "imagen": "img/ki_n_med.jpg"
+        "imagen": "img/ki_n_med.jpg",
+        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
     },
     {
         "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
         "descripcion": "Libreta Swing Mix ",
         "precio": 27,
-        "imagen": "img/Cuadernoswingmix.jpg"
-    },
-    {
-        "nombre": "Colores Smarty",
-        "descripcion": "caja con doce colores",
-        "precio": 5.00,
-        "imagen": "/img/12smartcir.jpg"
-    },
-    {
-        "nombre": "Kilometrico<br>Punto Mediano",
-        "descripcion": "Lapicero kilometrico esta chido",
-        "precio": 5.00,
-        "imagen": "img/ki_n_med.jpg"
-    },
-    {
-        "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
-        "descripcion": "Libreta Swing Mix ",
-        "precio": 27,
-        "imagen": "img/Cuadernoswingmix.jpg"
-    },
-    {
-        "nombre": "Colores Smarty",
-        "descripcion": "caja con doce colores",
-        "precio": 5.00,
-        "imagen": "/img/12smartcir.jpg"
-    },
-    {
-        "nombre": "Kilometrico<br>Punto Mediano",
-        "descripcion": "Lapicero kilometrico esta chido",
-        "precio": 5.00,
-        "imagen": "img/ki_n_med.jpg"
-    },
-    {
-        "nombre": "Cuaderno 100 Hojas Profesional Swing Mix",
-        "descripcion": "Libreta Swing Mix ",
-        "precio": 27,
-        "imagen": "img/Cuadernoswingmix.jpg"
+        "imagen": "img/Cuadernoswingmix.jpg",
+        "imagenes": ["imagenes/cuaderno_a4_1.jpg", "imagenes/cuaderno_a4_2.jpg", "imagenes/cuaderno_a4_3.jpg"]
     }
   ]
-  
