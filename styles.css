@@ -76,7 +76,7 @@ header .menu a:hover {
 }
 
 .menu-item a {
-  color: white;
+  color: rgb(251, 5, 5);
   text-decoration: none;
   padding: 10px 20px;
   display: block;
@@ -84,10 +84,10 @@ header .menu a:hover {
 
 .submenu {
   position: static;
-  left: 0;
+  left: -0;
   top: 100%;
-  background-color: #444;
-  list-style: none;
+  background-color: #5b5b5b;
+  list-style:none;
   padding: 0;
   margin: 0;
   display: none;
@@ -96,38 +96,13 @@ header .menu a:hover {
 }
 
 .submenu .submenu {
+  background-color: #1b1b1b;
   left: 100%;
   top: 0;
 }
 
 /* Mostrar el submenú al hacer hover */
 .menu-item:hover > .submenu {
-  display: block;
-}
-
-/* Estilos para submenús en cascada */
-.submenu .submenu {
-  left: 100%;
-  top: 0;
-  transform: translateX(0); /* Alinea el submenú al lado derecho */
-  z-index: 10;
-}
-
-/* Evita que el submenú salga de la pantalla */
-.menu-item .submenu .submenu {
-  left: 100%;
-  top: 0;
-}
-
-.menu-item:hover > .submenu .submenu {
-  left: 100%; /* Mueve el submenú hacia la derecha */
-  transform: translateX(0);
-}
-
-.submenu a {
-  padding: 10px;
-  color: white;
-  text-decoration: none;
   display: block;
 }
 
@@ -179,6 +154,7 @@ header .menu a:hover {
 
   .menu-toggle {
     display: block;
+    scale: 100%;
   }
 
   .menu.active {
