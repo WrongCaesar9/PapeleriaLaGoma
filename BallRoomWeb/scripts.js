@@ -44,39 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
   showSection('home');
 
 
-
-
-
-
-
-  
-
-  // Carousel logic for "featured" section
-  const carousel = document.querySelector('.carousel');
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
-  const carouselItems = document.querySelectorAll('.carousel-item');
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    carouselItems.forEach(item => item.classList.remove('active'));
-    carouselItems[currentIndex].classList.add('active');
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
-
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
-    updateCarousel();
-  });
-
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
-    updateCarousel();
-  });
-
-  updateCarousel();
-
   // Carousel logic for "home" section with auto-slide
   const carouselW = document.querySelector('.carousel-innerW');
   const carouselWItems = document.querySelectorAll('.carousel-itemW');

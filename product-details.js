@@ -45,6 +45,34 @@ function iniciarCarrusel() {
     }
 }
 
+
+
+  // Carousel logic for "featured" section
+  const carousel = document.querySelector('.carousel');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  const carouselItems = document.querySelectorAll('.carousel-item');
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    carouselItems.forEach(item => item.classList.remove('active'));
+    carouselItems[currentIndex].classList.add('active');
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+  });
+
+  updateCarousel();
+
 function enviarWhatsApp(nombre, precio, imagen) {
     const mensaje = `*Formulario de compra*\n¡Hola! Estoy interesado en el producto: *${nombre}*\nCon un costo de: *$${precio}*\nEcha un vistazo a la imagen del producto aquí: * ${window.location.origin}${imagen} *`;
     const url = `https://wa.me/525515833826?text=${encodeURIComponent(mensaje)}`;

@@ -11,124 +11,50 @@
         <link rel="stylesheet" href="stylesdetails.css">
 </head>
 <body>
-<!-- Header -->
- <marquee behavior="scroll" direction="left" scrollamount="15" style="position: fixed;z-index: 6;">
+        <!-- Header -->
+        <marquee behavior="scroll" direction="left" scrollamount="10" style="position: fixed;z-index: 6; font-size: 14px;background-color: black; border-top: 2px solid rgb(68, 252, 255);">
             <div>
-                <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;La
-                    pagina se encuentra en desarrollo y puede y es muy probable que algunas funciones no respondan bien, seguimos trabajando
-                    para
-                    mejorar la calidad de nuestra atención.&nbsp;</span>
+                <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;<i class="fa-regular fa-clock"></i> Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span><i class="fa-regular fa-clock"></i>
+                    La pagina se encuentra en desarrollo y puede, y es muy probable, que algunas funciones no respondan bien, seguimos trabajando
+                    para mejorar la calidad de nuestra atención. &nbsp;
+                </span>
             </div>
-        </marquee>    
-<header>
-    <a class="nav-logo" href="https://lagoma.netlify.app/"><img src="/logos/logo.svg" title="La Goma" alt="lagoma"></a>
-
-    <nav>
-        <div class="menu-toggle">
+        </marquee>
+    <header>        
+        <a class="nav-logo" href="https://lagoma.netlify.app/"><img src="/logos/logo.svg" title="La Goma" alt="lagoma"></a>
+        <nav>
+            <div class="menu-toggle">
+                <a href="#" class="fa-solid fa-bars"></a>
+            </div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="https://lagoma.netlify.app/"><i class="fa-solid fa-house"></i> Ir a Inicio</a>
+                </li>
+                <!--Lista-->
+                <li class="menu-item">
+                    <a href="#"><i class="fa-solid fa-book-open"></i> Otros</a>
+                    <ul class="submenu">
+                        <li class="menu-item">
+                            <a href="#">Contactame</a>
+                            <ul class="submenu">
+                                <li><a href="https://api.whatsapp.com/send/?phone=525515833826&text=%2AMensaje+de+contacto%2A%0A%C2%A1Hola%21, %C2%A1Sígueme+en+Instagram+o+Facebook%21+XDXDXD+😸+🤙🏽+*https://www.instagram.com/wrongcaesar9.0/*+*https://www.facebook.com/josuedavid.juarezgomez.37*&type=phone_number&app_absent=0" target="_blank">Whatsapp</a></li>
+                                <li><a href="mailto:josuejuarez12396@gmail.com?subject=Hola&body=Sígueme en Instagram: https://www.instagram.com/wrongcaesar9.0/ jsdjas  XD 😸" target="_blank">Correo</a></li>
+                                <li><a href="https://www.facebook.com/josuedavid.juarezgomez.37" target="_blank">Facebook</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </li>
+                <!--Lista-->
+            </ul>
+        </nav>
+    
+        
+    
+    
+    </header><div class="menu">
             <a href="#" class="fa-solid fa-bars"></a>
         </div>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
-                <ul class="submenu">
-                    <li><a href="#papeleria">Productos papelería</a></li>
-                    <li><a href="#programas">Programas</a></li>
-                    <li class="menu-item">
-                        <a href="#">Herramientas más usadas</a>
-                        <ul class="submenu">
-                            <li><a href="https://app.cfe.mx/aplicaciones/CCFE/SolicitudesCFE/Solicitudes/ConsultaTuReciboLuzGmx">Recibo de Luz</a></li>
-                            <li><a href="https://serviciosdigitales.imss.gob.mx/gestionAsegurados-web-externo/vigencia/;JSESSIONIDASEGEXTERNO=yqDfNaRd582EaklsRpKYRwPpdOWlrAgwU0cuJ7H0ctUpXB3lXufj!1055142952">NSS</a></li>
-                            <li><a href="https://digital.imss.gob.mx/derechohabiencia/tramite/solicitudConstancia">No derecho IMSS</a></li>
-                            <li><a href="https://lagoma.netlify.app/indexprograms">Todas las herramientas</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <!--Lista-->
-            <li class="menu-item">
-                <a href="#"><i class="fa-solid fa-pen-ruler"></i> Papelería</a>
-                <ul class="submenu">
-                    <li><a href="#papeleria">Todos los productos</a></li>
-                    <li><a href="#">Papelería Kawaii</a></li>
-                    <li class="menu-item">
-                        <a href="#">Lapiceros</a>
-                        <ul class="submenu">
-                            <li><a href="#">Bic</a></li>
-                            <li><a href="#">Asor</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Libretas</a>
-                        <ul class="submenu">
-                            <li><a href="#">Smarty</a></li>
-                            <li><a href="#">Scribe</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Cómputo</a>
-                        <ul class="submenu">
-                            <li><a href="#">Teclados</a></li>
-                            <li><a href="#">Mouses</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <!--Lista-->
-            <li class="menu-item">
-                <a href="#"><i class="fa-solid fa-laptop-code"></i> Programas</a>
-                <ul class="submenu">
-                    <li><a href="#programas">Todos los programas</a></li>
-                    <li><a href="#">Modelado y Diseño 3D</a></li>
-                    <li class="menu-item">
-                        <a href="#">Antivirus</a>
-                        <ul class="submenu">
-                            <li><a href="#">Malwarebytes</a></li>
-                            <li><a href="#">Dr. Web</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Juegos</a>
-                        <ul class="submenu">
-                            <li><a href="#">Android</a></li>
-                            <li><a href="#">PC</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">OS & Burners</a>
-                        <ul class="submenu">
-                            <li><a href="#">balena etcher</a></li>
-                            <li><a href="#">Win32 Disk Imager</a></li>
-                            <li><a href="#">Beini 1.2.5 OS</a></li>
-                            <li><a href="#">TOMEX OS V2.63<br>W10/11</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <!--Lista-->
-            <li class="menu-item"><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Herramientas</a></li>
-            <!--Lista-->
-            <li class="menu-item">
-                <a href="#"><i class="fa-solid fa-book-open"></i> Otros</a>
-                <ul class="submenu">
-                    <li><a href="#about-us">Acerca de mi/nosotros</a></li>
-                    <li><a href="#ubicación">Ubicación</a></li>
-                    <li class="menu-item">
-                        <a href="#">Contactame</a>
-                        <ul class="submenu">
-                            <li><a href="#">Whatsapp</a></li>
-                            <li><a href="#">Correo</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </li> 
-                </ul>
-            </li>
-            <!--Lista-->
-        </ul>
-    </nav>
-</header><div class="menu">
-        <a href="#" class="fa-solid fa-bars"></a>
-    </div>
-<!-- Header -->
+    <!-- Header -->
 
 <!-- Detalles del producto -->
     <section id="product-details">
@@ -194,5 +120,24 @@
 <!-- Footer -->
 
     <script src="product-details.js"></script>
+    <script>
+        // create a function to update the date and time
+        function updateDateTime() {
+          // create a new `Date` object
+          const now = new Date();
+    
+          // specify 12-hour format options
+          const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+    
+          // get the current date and time as a string in 12-hour format
+          const currentDateTime = now.toLocaleString('es-MX', options);
+    
+          // update the `textContent` property of the `span` element with the `id` of `datetime`
+          document.querySelector('#datetime').textContent = currentDateTime;
+        }
+    
+        // call the `updateDateTime` function every second
+        setInterval(updateDateTime, 1000);
+      </script>
 </body>
 </html>
