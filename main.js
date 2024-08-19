@@ -29,7 +29,7 @@ document.querySelectorAll('.menu-item > a').forEach(link => {
           e.preventDefault();
 
           // Solo expandir o colapsar si estamos en una pantalla pequeña o si no tiene un href
-          if (window.innerWidth <= 768 || !this.getAttribute('href') || this.getAttribute('href') === '#') {
+          if (!this.getAttribute('href') || this.getAttribute('href') === '#') {
               submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
           }
       }
