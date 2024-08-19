@@ -70,43 +70,41 @@ header .menu a:hover {
 }
 
 .menu-item {
-  position:relative;
-  padding: 1%;
-  margin: -1%;
+  position: relative;
 }
 
 .menu > .menu-item {
-  margin-right: 2%;
+  margin-right: 20px;
 }
 
 .menu-item a {
+  color: rgb(251, 5, 5);
   text-decoration: none;
   padding: 10px 20px;
   display: block;
 }
 
 .submenu {
-  left: 10px;
+  position: static;
+  left: -0;
+  top: 100%;
   background-color: #5b5b5b;
   list-style:none;
-  padding: 10px;
+  padding: 0;
   margin: 0;
   display: none;
-  min-width: 110px;
+  min-width: 150px;
   z-index: 10;
-  border-radius: 10px;
 }
 
 .submenu .submenu {
   background-color: #1b1b1b;
-  margin-left: 0px;
-  width: 100%;
-  position:relative;
+  left: 100%;
+  top: 0;
 }
 
-/* Mostrar el submenú al hacer clic */
-.menu-item > a:focus + .submenu,
-.menu-item > a:active + .submenu {
+/* Mostrar el submenú al hacer hover */
+.menu-item:hover > .submenu {
   display: block;
 }
 
@@ -146,14 +144,15 @@ header .menu a:hover {
     transition: 1s;
   }
 
-  .menu-item > a:focus + .submenu,
-  .menu-item > a:active + .submenu {
+  .menu-item:hover > .submenu,
+  .menu-item:focus-within > .submenu {
     border-bottom: 3px solid #ffa93f;
     display: block;
   }
 
   .submenu .submenu {
     padding-left: 15px;
+    
   }
 
   .menu-toggle {
@@ -166,8 +165,14 @@ header .menu a:hover {
   }
 }
 
+
+
+
+
+
+
 /* Sección y Footer */
-section {/* Este código define el espacio entre el header nav y el primer texto de la página */
+section {/* Este codigo define el espacio entre el header nav y el primer texto de la pagina */
   padding: 1rem;
   padding-top: 5rem;
   text-align: justify;
@@ -182,11 +187,10 @@ footer {
   border-bottom: 1px solid rgb(68, 252, 255);
   z-index: 1;
 }
-
 /* Fin Sección y Footer */
 /* Fin lo esencial */
 
-/*Inicio Estilo para el carrousel mainSlider*/
+ /*Inicio Estilo para el carrousel mainSlider*/
 * {
   box-sizing: border-box;
 }
@@ -263,9 +267,8 @@ footer {
       font-size: 11px
   }
 }
-/*Final Estilo para el carrousel mainSlider*/
-
-/*Letra h2 LA Goma*/
+ /*Final Estilo para el carrousel mainSlider*/
+ /*Letra h2 LA Goma*/
 .lagoma-graphic-text h2 {
   font-size:3rem;
   font-style: oblique;
@@ -274,9 +277,8 @@ footer {
   background-clip: unset;
   font-weight: 0%;
   color: #fff;
-}
+ }
 /*Letra h2 LA Goma*/
-
 /*Estilos logos footer*/
 .icon {
   padding: 20px;
@@ -291,8 +293,9 @@ footer {
 }
 /*Estilos logos footer*/
 
-/*Estilos para sección papeleria*/
-#papeleria {
+/*  display: flex;
+  flex-wrap:wrap;Estilos para seccion papeleria*/
+  #papeleria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -358,4 +361,4 @@ footer {
         max-width: 300px;
     }
 }
-/*Estilos para sección papeleria*/
+/*Estilos para seccion papeleria*/
