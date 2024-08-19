@@ -28,6 +28,7 @@ header {
 
 /* Estilos del menú de navegación */
 .nav-logo {
+  padding: 10px 5px;
   min-width: 8%;
   min-height: 8%;
   max-width: 8%;
@@ -50,10 +51,9 @@ header .menu-item a:hover {
 header .menu a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 90%;
   padding-right: 115px;
-  padding-left: 8px;
-  transition: 0.5s;
+  padding-left: 25px;
 }
 
 header .menu a:hover {
@@ -70,37 +70,38 @@ header .menu a:hover {
 }
 
 .menu-item {
-  position: relative;
+  position:relative;
+  padding: 1%;
+  margin: -1%;
 }
 
 .menu > .menu-item {
-  margin-right: 20px;
+  margin-right: 2%;
 }
 
 .menu-item a {
-  color: rgb(251, 5, 5);
   text-decoration: none;
   padding: 10px 20px;
   display: block;
 }
 
 .submenu {
-  position: static;
-  left: -0;
-  top: 100%;
+  left: 10px;
   background-color: #5b5b5b;
   list-style:none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   display: none;
-  min-width: 150px;
+  min-width: 110px;
   z-index: 10;
+  border-radius: 10px;
 }
 
 .submenu .submenu {
   background-color: #1b1b1b;
-  left: 100%;
-  top: 0;
+  margin-left: 0px;
+  width: 100%;
+  position:relative;
 }
 
 /* Mostrar el submenú al hacer hover */
@@ -361,4 +362,4 @@ footer {
         max-width: 300px;
     }
 }
-/*Estilos para seccion papeleria*/
+/*Estilos para sección papeleria*/

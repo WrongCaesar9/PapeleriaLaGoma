@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
   showSection('home');
 
 
+
+  updateCarousel();
+
   // Carousel logic for "home" section with auto-slide
   const carouselW = document.querySelector('.carousel-innerW');
   const carouselWItems = document.querySelectorAll('.carousel-itemW');
