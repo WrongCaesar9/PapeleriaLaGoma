@@ -16,26 +16,30 @@ function mainSliderShowSlides() {
     }
     slides[mainSliderSlideIndex-1].style.display = "block";  
     dots[mainSliderSlideIndex-1].className += " mainSlider-active";
-    setTimeout(mainSliderShowSlides, 4000); // Change image every 2 seconds
+    setTimeout(mainSliderShowSlides, 4000); // Change image every 4 seconds
 }
 //Fin script Carrousel mainSlider
 
 //Inicio Script para el nav
 document.querySelectorAll('.menu-item > a').forEach(link => {
   link.addEventListener('click', function (e) {
-    if (window.innerWidth <= 768) {
       const submenu = this.nextElementSibling;
+
       if (submenu && submenu.classList.contains('submenu')) {
-        e.preventDefault();
-        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+          e.preventDefault();
+
+          // Solo expandir o colapsar si estamos en una pantalla pequeña o si no tiene un href
+          if (window.innerWidth <= 768 || !this.getAttribute('href') || this.getAttribute('href') === '#') {
+              submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+          }
       }
-    }
   });
 });
 
 document.querySelector('.menu-toggle').addEventListener('click', function() {
   document.querySelector('.menu').classList.toggle('active');
 });
+
 //Fin Script para el nav
 
 //Inicio Script para los productos de la papeleria

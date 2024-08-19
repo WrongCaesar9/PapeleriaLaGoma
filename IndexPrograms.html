@@ -66,8 +66,7 @@
             <li><a class="toplistxd" href="#productos">Programas</a></li>
             <li><a class="toplistxd" href="#videos">Videos</a></li>
             <li><a class="toplistxd" href="#sugerencia">¿Quieres agregar algo?</a></li>
-            <li><a class="toplistxd" href="Index.html">"La Goma World"</a></li>
-            <li><a class="toplistxd" href="Index.html">Evolucionando 🙏🏽</a></li>
+            <li><a class="toplistxd" href="Index.html">"La Goma"</a></li>
             <li>Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span></li>
 
 
@@ -345,6 +344,37 @@
   
         // call the `updateDateTime` function every second
         setInterval(updateDateTime, 1000);
+
+
+
+
+
+
+
+        (function(){
+	/* change these variables as you wish */
+	var due_date = new Date('2024-08-20');
+	var days_deadline = 30;
+	/* stop changing here */
+	
+	var current_date = new Date();
+	var utc1 = Date.UTC(due_date.getFullYear(), due_date.getMonth(), due_date.getDate());
+	var utc2 = Date.UTC(current_date.getFullYear(), current_date.getMonth(), current_date.getDate());
+	var days = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));
+	
+	if(days > 0) {
+		var days_late = days_deadline-days;
+		var opacity = (days_late*100/days_deadline)/100;
+			opacity = (opacity < 0) ? 0 : opacity;
+			opacity = (opacity > 1) ? 1 : opacity;
+		if(opacity >= 0 && opacity <= 1) {
+			document.getElementsByTagName("BODY")[0].style.opacity = opacity;
+		}
+		
+	}
+	
+})()
+window.alert('Esta página desaparecerá en 30 días (eso espero), y los programas pasarán a estar disponibles en https://lagoma.netlify.app');
       </script>
   
     <script src="mainpg.js"></script>
