@@ -28,7 +28,6 @@ header {
 
 /* Estilos del menú de navegación */
 .nav-logo {
-  padding: 10px 5px;
   min-width: 8%;
   min-height: 8%;
   max-width: 8%;
@@ -51,9 +50,10 @@ header .menu-item a:hover {
 header .menu a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 90%;
+  font-size: 15px;
   padding-right: 115px;
-  padding-left: 25px;
+  padding-left: 8px;
+  transition: 0.5s;
 }
 
 header .menu a:hover {
