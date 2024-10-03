@@ -1,256 +1,175 @@
-body {
+/* General */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url(/logos/Background3.png);
-  background-size: 40%;
-  background-color: rgb(97, 97, 97);
-  background-repeat: repeat;
+  overflow: hidden; /* Evitar el scroll global si no es necesario */
 }
 
-header{
-position: fixed;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 10px 10px;
-background: rgb(61, 61, 61);
-background-image: url(/logos/Background3.png);
-color: white;
-border-bottom:2px solid rgb(68, 252, 255);
-border-top: 2px solid rgb(68, 252, 255);
-z-index: 5;
-}
-
-header nav a{
-  color: #ddd;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px 10px;
-  transition: 0.5s;
-  border-radius: 10px;
-}
-header nav a:hover{
-  background-color: rgb(158, 158, 158);
-}
-header .menu a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 15px;
-}
-header .menu a:hover{
-  color: rgb(101, 193, 224);
-}
-
-/*Inicio Estilo básico para el menú */
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.layout {
   display: flex;
-}
-
-.menu-item {
-  position: relative;
-}
-
-.menu > .menu-item {
-  margin-right: 20px;
-}
-
-.menu-item a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-}
-
-.submenu {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: #444;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-  min-width: 150px;
-}
-
-.submenu .submenu {
-  left: 100%;
-  top: 0;
-}
-
-.menu-item:hover > .submenu {
-  display: block;
-}
-
-.submenu a {
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  display: block;
-}
-
-/*Parte responsive */
-@media screen and (max-width: 768px) {
-  .menu {
-    display: block;
-  }
-
-  .menu > .menu-item {
-    margin: 0;
-  }
-
-  .menu-item a {
-    padding: 15px;
-    border-bottom: 1px solid #444;
-  }
-
-  .submenu {
-    position: static;
-    display: none;
-  }
-
-  .menu-item:hover > .submenu,
-  .menu-item:focus-within > .submenu {
-    display: block;
-  }
-
-  .submenu .submenu {
-    padding-left: 15px;
-  }
-}
-
-/*Fin Estilo básico para el menú */
-
-
-
-section {
-  padding: 1rem;
-  padding-top: 5rem;
-  text-align: justify;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 5rem;
-  background-color: rgb(80, 80, 80);
-  max-width: 100%;
-  border-bottom:2px solid rgb(68, 252, 255);
-  border-top: 2px solid rgb(68, 252, 255);
-  z-index: 1;
-}
-
-/*Fin lo essencial*/
-
- /*Inicio Estilo para el carrousel mainSlider*/
-* {
-  box-sizing: border-box;
-}
-.mainSlider-body {
-  font-family: Verdana, sans-serif;
-}
-.mainSlider-mySlides {
-  display: none;
-}
-.mainSlider-img {
-  vertical-align: middle;
-}
-
-/* Slideshow container */
-.mainSlider-slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.mainSlider-text {
-  color: #000000;
-  font-size: 1rem;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: -20px;
   width: 100%;
-  text-align: center;
+  height: 100vh;
+  overflow: hidden; /* Ocultar scroll innecesario en el layout */
 }
 
-/* Number text (1/3 etc) */
-.mainSlider-numbertext {
-  color: #000000;
-  font-size: 14px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.mainSlider-dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #ffb8b8;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.mainSlider-active {
-  background-color: #703232;
-}
-
-/* Fading animation */
-.mainSlider-fade {
-  animation-name: mainSlider-fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes mainSlider-fade {
-  from {
-      opacity: .4
-  } 
-  to {
-      opacity: 1
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .mainSlider-text {
-      font-size: 11px
-  }
-}
- /*Final Estilo para el carrousel mainSlider*/
- /*Letra h2 LA Goma*/
-.ballroom-graphic-text h2 {
-  font-size:3rem;
-  font-style: oblique;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 48px;
-  background-clip: unset;
-  font-weight: 0%;
-  color: #fff;
- }
-/*Letra h2 LA Goma*/
-/*Estilos logos footer*/
-.icon {
+/* Sidebar (header a la izquierda) */
+.sidebar {
+  margin-top: 0%;
+  background-color: #333;
+  color: white;
+  width: 250px;
+  height:100%;
   padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  position: relative; /* Asegura que se mantenga en el flujo del layout */
+}
+
+.sidebar header h1 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 50%;
+}
+
+.sidebar nav ul {
+  list-style: none;
+
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+  color: white;
   text-decoration: none;
-  margin: 5px 2px;
 }
-.icon:hover {
-    opacity: 0.7;
+
+/* Contenido principal a la derecha */
+.content {
+  flex: 1; /* Ocupar todo el espacio restante a la derecha */
+  padding: 40px;
+  overflow-y: auto; /* Habilitar scroll interno si es necesario */
+  height: 100vh; /* Asegura que el contenido se mantenga en pantalla completa */
 }
-/*Estilos logos footer*/
+
+/* Ajustes específicos */
+#about img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .content {
+    padding: 20px;
+    overflow-y: auto; /* Asegura que haya scroll en contenido si es necesario */
+  }
+}
 
 
+/* Sección Sobre mí */
+#about {
+  padding: 50px;
+  text-align: center;
+}
+
+#about img {
+  width: 480px;
+  border-radius: 0;
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sección Proyectos */
+#projects {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Estilos para los proyectos */
+.project {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Estilos para imágenes y videos */
+.project img, .project video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
 
 
+/* Contacto */
+#contact {
+  padding: 50px;
+  background-color: #333;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
