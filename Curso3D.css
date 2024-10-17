@@ -6,6 +6,7 @@ body {
   display: flex;
   background-color: #ffffff;
 }
+
 h2, h3 {
   color: #000000;
 }
@@ -13,8 +14,7 @@ h1 {
   color: #ffffff;
 }
 .sidebar {
- 
-  width: 200px;
+  width: 250px;
   background-color: #000000;
   color: #fff;
   position: fixed;
@@ -68,14 +68,14 @@ h1 {
   }
 
   .sidebar.active {
-    width: 40%; /* Mostrar el sidebar cuando se activa */
+    width: 100%; /* Mostrar el sidebar cuando se activa */
   }
 
   .hamburger {
     display: fixed;
     display: block; /* Mostrar menú hamburguesa en pantallas pequeñas */
   }
-  
+
   .main-content {
     margin-top: -5%;
     margin-left: 18%;
@@ -155,3 +155,25 @@ footer {
 }
 /* Fin Sección y Footer */
 
+
+
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.blender {width: 85%; background-color: #ff862f;}
+.maya {width: 35%; background-color: #2fe0ff;}
+.hou {width: 30%; background-color: #ff632f;}
+.html {width: 70%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
