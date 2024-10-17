@@ -17,3 +17,24 @@ document.addEventListener("DOMContentLoaded", function() {
     sidebar.classList.toggle('active');
   });
 });
+// Obtener el botón
+let scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// Mostrar el botón al hacer scroll hacia abajo
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+}
+
+// Volver arriba al hacer clic
+function topFunction() {
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+}

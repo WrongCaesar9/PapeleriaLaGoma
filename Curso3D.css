@@ -27,6 +27,7 @@ h1 {
 }
 
 .sidebar nav {
+  font-size: 90%;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -156,24 +157,65 @@ footer {
 /* Fin Sección y Footer */
 
 
+/* Estilos para el botón de volver arriba */
+#scrollTopBtn {
+  display: none; /* Ocultarlo por defecto */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99; /* Asegurarse de que esté sobre otros elementos */
+  font-size: 100%;
+  background-color: #000000;
+  color: #ffffff; 
+  padding: 20px;
+  border-radius: 50%;
+  border-color: #ff5353;
+  border-style: double;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#scrollTopBtn:hover {
+  border-color: #2fe0ff;  
+  background-color: #555; /* Cambiar el color al pasar el cursor */
+}
+
+
+
+
 
 
 * {box-sizing: border-box}
 
 .container {
   width: 100%;
-  background-color: #ddd;
+  background-color: #bebebe;
 }
 
 .skills {
   text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
+  padding-top: 1%;
+  padding-bottom: 5px;
+  color: rgb(255, 255, 255);
 }
+
+.sw {width: 95%; background-color: #ff5353;}
+.f360 {width: 50%; background-color: #539bff;}
+.catia {width: 50%; background-color: #ff53f4;}
+.adk {width: 50%; background-color: #53ffc3;}
 .blender {width: 85%; background-color: #ff862f;}
+.ue {width: 50%; background-color: #afff2f;}
 .maya {width: 35%; background-color: #2fe0ff;}
 .hou {width: 30%; background-color: #ff632f;}
+
+.psd {width: 75%; background-color: #3b9dff;}
+.aiu {width: 70%; background-color: #ffc676;}
+.after {width: 70%; background-color: #bc5fff;}
+.premier {width: 70%; background-color: #3131cd;}
+
+.cppa {width: 85%; background-color: #3b9dff;}
+.cpp {width: 80%; background-color: #db86ff;}
+.py {width: 80%; background-color: #ffff3b;}
 .html {width: 70%; background-color: #04AA6D;}
 .css {width: 80%; background-color: #2196F3;}
 .js {width: 65%; background-color: #f44336;}
