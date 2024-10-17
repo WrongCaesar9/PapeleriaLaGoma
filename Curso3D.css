@@ -88,7 +88,7 @@ h1 {
 /* Estilos del contenido principal */
 .main-content {
   margin-top: -10%;
-  margin-left: 18%;
+  margin-left: 20%;
   padding: 5%;
   width: calc(150%);
 }
@@ -212,10 +212,12 @@ footer {
 .aiu {width: 70%; background-color: #ffc676;}
 .after {width: 70%; background-color: #bc5fff;}
 .premier {width: 70%; background-color: #3131cd;}
+.pt {width: 70%; background-color: #44c75c;}
+.audi {width: 40%; background-color:rgb(51, 118, 205);}
 
 .cppa {width: 85%; background-color: #3b9dff;}
 .cpp {width: 80%; background-color: #db86ff;}
 .py {width: 80%; background-color: #ffff3b;}
-.html {width: 70%; background-color: #04AA6D;}
 .css {width: 80%; background-color: #2196F3;}
+.html {width: 70%; background-color: #04AA6D;}
 .js {width: 65%; background-color: #f44336;}
