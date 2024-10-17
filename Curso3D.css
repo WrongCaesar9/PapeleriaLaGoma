@@ -1,175 +1,115 @@
-/* General */
-body, html {
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  overflow: hidden; /* Evitar el scroll global si no es necesario */
-}
-
-.layout {
   display: flex;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden; /* Ocultar scroll innecesario en el layout */
+  background-color: #ffffff;
+}
+h2, h3 {
+  color: #000000;
+}
+h1 {
+  color: #ffffff;
 }
 
-/* Sidebar (header a la izquierda) */
+/* Estilos del sidebar */
 .sidebar {
-  margin-top: 0%;
-  background-color: #333;
-  color: white;
-  width: 250px;
-  height:100%;
+  background-color: #424242;
+  color: #ffffff;
+  height: 100vh;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-
-  position: relative; /* Asegura que se mantenga en el flujo del layout */
+  position: fixed;
+  width: 15%;
 }
 
-.sidebar header h1 {
+.sidebar h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 0px;
+}
+
+.sidebar nav a {
+  display: block;
   color: #fff;
-  font-size: 24px;
-  margin-bottom: 50%;
-}
-
-.sidebar nav ul {
-  list-style: none;
-
-}
-
-.sidebar nav ul li {
-  margin-bottom: 15px;
-}
-
-.sidebar nav ul li a {
-  color: white;
   text-decoration: none;
+  padding: 10px 0;
+  font-size: 18px;
 }
 
-/* Contenido principal a la derecha */
-.content {
-  flex: 1; /* Ocupar todo el espacio restante a la derecha */
-  padding: 40px;
-  overflow-y: auto; /* Habilitar scroll interno si es necesario */
-  height: 100vh; /* Asegura que el contenido se mantenga en pantalla completa */
+.sidebar nav a:hover {
+  background-color: #878787;
+  padding-left: 15px;
+  transition: 0.3s;
 }
 
-/* Ajustes específicos */
-#about img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+/* Estilos del contenido principal */
+.main-content {
+  margin-top: -80px;
+  margin-left: 18%;
+  padding: 5%;
+  width: calc(150%);
 }
 
+#about, #contact {
+  margin-bottom: 10px;
+}
+
+#about p, #contact p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Estilos de los proyectos */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-/* Responsivo para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  .content {
-    padding: 20px;
-    overflow-y: auto; /* Asegura que haya scroll en contenido si es necesario */
-  }
-}
-
-
-/* Sección Sobre mí */
-#about {
-  padding: 50px;
-  text-align: center;
-}
-
-#about img {
-  width: 480px;
-  border-radius: 0;
-
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Sección Proyectos */
-#projects {
-  background-color: #f9f9f9;
-  padding: 50px;
-}
-
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-/* Estilos para los proyectos */
 .project {
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   text-align: center;
-  max-width: 100%;
-  border-radius: 8px;
+  padding: 20px;
 }
 
-/* Estilos para imágenes y videos */
 .project img, .project video {
   width: 100%;
-  height: auto;
+  border-bottom: 4px solid #333;
   border-radius: 8px;
-  max-height: 400px;
-  object-fit: cover;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
+.project h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.project p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 
-/* Contacto */
-#contact {
-  padding: 50px;
-  background-color: #333;
-  color: white;
-}
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Sección y Footer */
+section {/* Este codigo define el espacio entre el header nav y el primer texto de la pagina */
+  padding: 1rem;
+  padding-top: 5rem;
+  text-align: justify;
 }
-
-form input, form textarea {
-  margin: 10px 0;
-  padding: 10px;
-  width: 100%;
-  max-width: 400px;
-}
-
-/* Footer */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(80, 80, 80);
+  max-width: 100%;
+  border-top: 1px solid rgb(68, 252, 255);
+  border-bottom: 1px solid rgb(68, 252, 255);
+  z-index: 10;
 }
+/* Fin Sección y Footer */
