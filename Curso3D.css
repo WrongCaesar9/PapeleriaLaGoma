@@ -46,12 +46,16 @@ h1 {
   display: none; /* Esconder el menú hamburguesa en pantallas grandes */
   cursor: pointer;
   z-index: 1000;
+  position: fixed; /* Cambia la posición a fixed */
+  top: 20px; /* Ajusta la posición vertical */
+  left: 5px; /* Ajusta la posición horizontal */
 }
+
 
 .hamburger div {
   width: 30px;
   height: 4px;
-  background-color: #93c8fd;
+  background-color: #50bcff;
   margin: 5px;
   transition: 0.3s;
 }
@@ -68,6 +72,7 @@ h1 {
   }
 
   .hamburger {
+    display: fixed;
     display: block; /* Mostrar menú hamburguesa en pantallas pequeñas */
   }
 }
