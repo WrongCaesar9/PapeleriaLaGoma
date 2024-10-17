@@ -75,11 +75,18 @@ h1 {
     display: fixed;
     display: block; /* Mostrar menú hamburguesa en pantallas pequeñas */
   }
+  
+  .main-content {
+    margin-top: -5%;
+    margin-left: 18%;
+    padding: 5%;
+    width: calc(150%);
+  }
 }
 
 /* Estilos del contenido principal */
 .main-content {
-  margin-top: -140px;
+  margin-top: -10%;
   margin-left: 18%;
   padding: 5%;
   width: calc(150%);
