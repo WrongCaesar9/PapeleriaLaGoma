@@ -12,35 +12,64 @@ h2, h3 {
 h1 {
   color: #ffffff;
 }
-
-/* Estilos del sidebar */
 .sidebar {
-  background-color: #424242;
-  color: #ffffff;
-  height: 100vh;
-  padding: 20px;
-  position: fixed;
-  width: 15%;
-}
-
-.sidebar h2 {
-  margin-top: 0;
-  text-align: center;
-  font-size: 0px;
-}
-
-.sidebar nav a {
-  display: block;
+ 
+  width: 200px;
+  background-color: #000000;
   color: #fff;
-  text-decoration: none;
-  padding: 10px 0;
-  font-size: 18px;
+  position: fixed;
+  height: 150%;
+  transition: width 0.2s;
 }
 
-.sidebar nav a:hover {
-  background-color: #878787;
-  padding-left: 15px;
+.sidebar h1 {
+  text-align: center;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.sidebar a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.hamburger {
+  display: none; /* Esconder el menú hamburguesa en pantallas grandes */
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: #93c8fd;
+  margin: 5px;
   transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0; /* Esconder el sidebar por defecto */
+    overflow: hidden; /* Evitar scroll */
+  }
+
+  .sidebar.active {
+    width: 40%; /* Mostrar el sidebar cuando se activa */
+  }
+
+  .hamburger {
+    display: block; /* Mostrar menú hamburguesa en pantallas pequeñas */
+  }
 }
 
 /* Estilos del contenido principal */
@@ -113,3 +142,4 @@ footer {
   z-index: 10;
 }
 /* Fin Sección y Footer */
+

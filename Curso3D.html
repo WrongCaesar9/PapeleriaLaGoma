@@ -12,6 +12,12 @@
 </head>
 
 <body>
+  <!-- Botón de menú hamburguesa -->
+<div id="menu-toggle" class="hamburger">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
   <div class="sidebar">
     <h1>Portfolio</h1>
     <nav>
@@ -190,7 +196,14 @@
     </p>
     </section>
   </div>
+  <script src="/Curso3D.js"></script>
+<script>
+  const toggleMenu = document.getElementById('menu-toggle');
+  const sideNav = document.querySelector('.sidenav');
 
+  toggleMenu.addEventListener('click', function() {
+      sideNav.classList.toggle('active');
+  });
+</script>
 </body>
-
 </html>
