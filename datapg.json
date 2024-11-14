@@ -263,6 +263,19 @@
             "enlace": "https://cdn.borisfx.com/borisfx/store/mpp-adobe/MochaPro2023-Adobe-10.0.1-54.g58678bac292c.win.msi",
             "modelo": "Edición"
         },
+        
+        {
+            "nombre": "Mocha Pro para AfterFx",
+            "img": "impg/mochaae.png",
+            "enlace": "https://drive.google.com/file/d/179pA1yDlLp0DpDAN2JbkJCHmovCLjQg0/view?usp=sharing",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "Element 3D AfterFX",
+            "img": "impg/element3D.png",
+            "enlace": "https://drive.google.com/file/d/1hxZEWxV6-QElpfYS9s0iOPD7Tqk2STZv/view?usp=sharing",
+            "modelo": "Edición"
+        },
         {
             "nombre": "SynthEyes Pro 2024 v23.10.1057",
             "img": "impg/syntheyes.png",
