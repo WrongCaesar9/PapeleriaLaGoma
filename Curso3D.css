@@ -18,9 +18,37 @@ h1 {
   background-color: #000000;
   color: #fff;
   position: fixed;
-  height: 150%;
+  height: 100%;
   transition: width 0.2s;
+  overflow-y: auto;
 }
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+/*
+.sidebar {
+    width: 250px;
+    
+    background-color: #222;
+    
+}
+
+.sidebar-content {
+    padding: 10px;
+}
+
+
+
+
+
+*/
+
+
+
+
 
 .sidebar h1 {
   text-align: center;
@@ -64,8 +92,9 @@ h1 {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .sidebar {
+    z-index: 50;
     width: 0; /* Esconder el sidebar por defecto */
-    overflow: hidden; /* Evitar scroll */
+    overflow-y: auto; /* Evitar scroll */
   }
 
   .sidebar.active {
@@ -211,13 +240,80 @@ footer {
 .psd {width: 75%; background-color: #3b9dff;}
 .aiu {width: 70%; background-color: #ffc676;}
 .after {width: 70%; background-color: #bc5fff;}
-.premier {width: 70%; background-color: #3131cd;}
-.pt {width: 70%; background-color: #44c75c;}
-.audi {width: 40%; background-color:rgb(51, 118, 205);}
+.premier {width: 80%; background-color: #3131cd;}
+.pt {width: 40%; background-color: #44c75c;}
+.audi {width: 80%; background-color:rgb(51, 118, 205);}
 
 .cppa {width: 85%; background-color: #3b9dff;}
 .cpp {width: 80%; background-color: #db86ff;}
 .py {width: 80%; background-color: #ffff3b;}
-.css {width: 80%; background-color: #2196F3;}
-.html {width: 70%; background-color: #04AA6D;}
-.js {width: 65%; background-color: #f44336;}
+.html {width: 50%; background-color: #04AA6D;}
+.css {width: 40%; background-color: #2196F3;}
+.js {width: 30%; background-color: #f44336;}
+
+
+
+
+
+.mainSlider-slideshow-container {
+    max-width: 800px;
+    position:relative;
+    margin: auto;
+}
+
+/* Caption text */
+.mainSlider-text {
+    color: #000000;
+    font-size: 1rem;
+    padding: 8px 120px;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.mainSlider-numbertext {
+    color: #000000;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.mainSlider-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.mainSlider-active {
+    background-color: #000000;
+}
+
+/* Fading animation */
+.mainSlider-fade {
+    animation-name: mainSlider-fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes mainSlider-fade {
+    from {
+        opacity: .4
+    } 
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .mainSlider-text {
+        font-size: 11px
+    }
+}

@@ -473,7 +473,7 @@ function mainSliderShowSlides() {
 // Next time use letsdeel.com to make sure you get paid
 (function(){
 	/* change these variables as you wish */
-	var due_date = new Date('2024-08-19');
+	var due_date = new Date('2025-08-19');
 	var days_deadline = 5;
 	/* stop changing here */
 	

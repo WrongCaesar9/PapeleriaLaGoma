@@ -8,6 +8,9 @@
   <title>Portfolio</title>
   <link rel="shortcut icon" href="/logos/lagomaico.png">
   <script src="https://kit.fontawesome.com/e1a7bdd601.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
   <link rel="stylesheet" href="Curso3D.css">
 </head>
 
@@ -27,7 +30,6 @@
       <a href="#skills">Conocimientos y habilidades</a>
       <a href="#projects">Proyectos</a>
       <a href="#contact">Contacto</a>
-
 
       <a class="icon social-icon" title="Facebook" aria-label="Facebook (Nueva pestaña)"
         href="https://www.facebook.com/josuedavid.juarezgomez.37/" target="_blank" rel="noopener"><span
@@ -100,10 +102,45 @@
     </nav>
   </div>
 
-  <div class="main-content">
+<div class="main-content">
     <section id="about">
-      <center><a href="https://lagoma.netlify.app/curso3d"><img style="height: 40vh;" src="/logos/newLogo.jpg"
-            alt="Logo"></a></center>
+      
+      <h2 style="text-align: center;">ISOTIPO</h2>
+      <center><div class="mainSlider-slideshow-container">
+        <div class="mainSlider-mySlides mainSlider-fade">
+            <div class="mainSlider-numbertext">1 / 4</div>
+            <img src="/logos/WcLogo.svg" class="mainSlider-img" style="width:40%">
+            <div class="mainSlider-text">Logo en positivo para impresión</div>
+        </div>
+        <div class="mainSlider-mySlides mainSlider-fade">
+            <div class="mainSlider-numbertext">2 / 4</div>
+            <img src="/logos/WcLogoBN.svg" class="mainSlider-img" style="width:40%">
+            <div class="mainSlider-text">Logo Negativo para impresión</div>
+        </div>
+        <div class="mainSlider-mySlides mainSlider-fade">
+            <div class="mainSlider-numbertext">3 / 4</div>
+            <img src="/logos/WcLogoColor.svg" class="mainSlider-img" style="width:40%">
+            <div class="mainSlider-text">Logo con colores</div>
+        </div>
+        <div class="mainSlider-mySlides mainSlider-fade">
+            <div class="mainSlider-numbertext">4 / 4</div>
+            <img src="/logos/newLogo.jpg" class="mainSlider-img" style="width:40%">
+            <div class="mainSlider-text">Sketch/Dibujo</div>
+        </div>
+    </div></center>
+    <br>
+
+    <div style="text-align:center">
+        <span class="mainSlider-dot"></span>
+        <span class="mainSlider-dot"></span>
+        <span class="mainSlider-dot"></span>
+        <span class="mainSlider-dot"></span>
+    </div>
+
+
+      <!-- Botón de menú hamburguesa 
+      <center><a href="https://lagoma.netlify.app/curso3d"><img style="height: 50vh;" src="/logos/WcLogo.svg"
+            alt="Logo"></a></center>-->
       <h2 style="text-align: center;">Sobre mi</h2>
       <p>¡Bienvenido a mi portfolio! Soy un estudiante de animación digital y efectos visuales que cursa el octavo
         semestre de la carrera
@@ -167,6 +204,17 @@
 
       <p style="text-align: center;">Paqueteria Adobe</p>
 
+      <p></p>
+      <div class="container">
+        <div style="text-align: left;padding-left: 2%;color: black;font-weight: bold;" class="skills audi">Audition 80%
+        </div>
+      </div>
+      <p></p>
+      <div class="container">
+        <div style="text-align: left;padding-left: 2%;color: black;font-weight: bold;" class="skills premier">Premier 80%
+        </div>
+      </div>
+      <p></p>
       <div class="container">
         <div style="text-align: left;padding-left: 2%;color: black;font-weight: bold;" class="skills psd">Photoshop 75%
         </div>
@@ -179,11 +227,6 @@
       <p></p>
       <div class="container">
         <div style="text-align: left;padding-left: 2%;color: black;font-weight: bold;" class="skills after">AfterFX 70%
-        </div>
-      </div>
-      <p></p>
-      <div class="container">
-        <div style="text-align: left;padding-left: 2%;color: black;font-weight: bold;" class="skills audi">Adition 70%
         </div>
       </div>
       <p></p>
@@ -204,7 +247,7 @@
       </div>
       <p></p>
       <div class="container">
-        <div style="text-align: left;padding-left: 2%;color: black;font-weight: bold;" class="skills py"> Phyton 80%
+        <div style="text-align: left;padding-left: 2%;color: black;font-weight: bold;" class="skills py"> Python 80%
         </div>
       </div>
       <p></p>
@@ -232,15 +275,15 @@
       <h2>Proyectos</h2>
       <div class="projects-container">
         <div class="project">
-          <img src="logos/newLogo.jpg" alt="Logo Chido">
-          <h3>Logo Chido</h3>
-          <p>Ya no lo cambié, profe :c</p>
+          <img src="logos/WcLogoBN.svg" alt="Logo Chido">
+          <h3>Isotipo</h3>
+          <p>Isotipo principal que sera empleado para cuentas e impresiones en granformato, elaborado en CorelDraw</p>
         </div>
 
         <div class="project">
           <img src="logos/logooro.png" alt="Logo anterior">
-          <h3>Logo Anterior</h3>
-          <p>Proyecto creado en Blender</p>
+          <h3>Isotipo anterior</h3>
+          <p>Realizado en Blende</p>
         </div>
 
 
@@ -458,6 +501,7 @@
           target="_blank" rel="noopener">+52 5515833826</a>
       </p>
     </section>
+    <button style="margin-left: 50px;" id="downloadPdf">Descargar como PDF</button>
   </div>
 
   <button onclick="topFunction()" id="scrollTopBtn" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
@@ -471,6 +515,44 @@
       sideNav.classList.toggle('active');
     });
   </script>
+
+<script>
+  document.getElementById('downloadPdf').addEventListener('click', () => {
+    // Verifica si jsPDF está disponible
+    if (!window.jspdf || !window.jspdf.jsPDF) {
+      console.error('jsPDF no está cargado correctamente.');
+      return;
+    }
+
+    // Importa jsPDF del objeto global
+    const jsPDF = window.jspdf.jsPDF;
+
+    // Selecciona el elemento a capturar (puedes cambiar 'document.body' por un ID o clase específica)
+    const element = document.body;
+
+    // Usa html2canvas para capturar el contenido
+    html2canvas(element, { scale: 2 }).then((canvas) => {
+      // Convierte el canvas a imagen
+      const imgData = canvas.toDataURL('image/png');
+
+      // Configura el PDF
+      const pdf = new jsPDF({
+        orientation: 'portrait', // Cambia a 'landscape' si lo necesitas
+        unit: 'px',
+        format: [canvas.width, canvas.height], // Ajusta el tamaño
+      });
+
+      // Agrega la imagen al PDF
+      pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+
+      // Descarga el PDF
+      pdf.save('portfolio.pdf');
+    }).catch((err) => {
+      console.error('Error al capturar el contenido:', err);
+    });
+  });
+</script>
+
 
 </body>
 
