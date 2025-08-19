@@ -53,7 +53,7 @@ function mostrarProductos() {
       // Crear un enlace y configurarlo con la URL del producto
       const enlaceProducto = document.createElement("a");
       enlaceProducto.href = productos.enlace;
-      enlaceProducto.target = "_blank"; // Abrir enlace en nueva pestaña
+      enlaceProducto.target = "__blank"; // Abrir enlace en nueva pestaña
       enlaceProducto.textContent = "Da el Salto 🐸🤙"; // Puedes cambiar el texto según tus necesidades
 
       // Agregar el enlace al h4
