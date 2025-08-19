@@ -386,6 +386,12 @@
             "enlace": "https://www.ppsspp.org/download/",
             "modelo": "Juegos"
         },
+        {
+            "nombre": "Myemulator<br>El sitio web donde podrás jugar a los mejores juegos retro jamás desbloqueados en línea",
+            "img": "impg/myemulator.png",
+            "enlace": "https://myemulator.onl/",
+            "modelo": "Juegos"
+        },
 
 
 
@@ -395,6 +401,29 @@
 
 
 
+
+
+
+
+        {
+            "nombre": "Freesets<br>Es una amplia colección de los mejores recursos y herramientas gratuitos para desarrolladores y artistas, como iconos, ilustraciones, fotos, vídeos, blogs, fuentes, ...",
+            "img": "impg/freesets.png",
+            "enlace": "https://freesets.dev/",
+            "modelo": "Herramientas"
+        },
+        {
+            "nombre": "Consulta de afiliados por clave de elector<br>Checa si te afiliaron a un partido político",
+            "img": "impg/ineafiliado.png",
+            "enlace": "https://deppp-partidos.ine.mx/afiliadosPartidos/app/publico/consultaAfiliados/nacionales?execution=e1s1#form:pnlDetalleAfiliado",
+            "modelo": "Herramientas"
+        },
+        
+        {
+            "nombre": "Squoosh<br>Optimizador de imágenes que permite comprimir y comparar imágenes con diferentes códecs en su navegador",
+            "img": "impg/squoosh.png",
+            "enlace": "https://squoosh.app/",
+            "modelo": "Herramientas"
+        },
 
 
 
@@ -1219,6 +1248,12 @@
             "img": "impg/pvpc.png",
             "enlace": "https://www.programasvirtualespc.net/",
             "modelo": "Otros"
+        },
+        {
+            "nombre": "EL Enemeigos<br>Página para descargar videojuegos y programas",
+            "img": "impg/elenemigos.png",
+            "enlace": "https://elenemigos.com/",
+            "modelo": "Otros"
         },        
         {
             "nombre": "Google Academico<br>Navegador super útil si lo sabes utilizar xd",
@@ -1230,6 +1265,12 @@
             "nombre": "Cuevana 3",
             "img": "impg/cuevana.png",
             "enlace": "https://cuevana.pro/peliculas",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "TokyVideo<br>Free original series in streaming for desktop, game console, Smart TV, Mac, mobile and tablet",
+            "img": "impg/tokyvideo.png",
+            "enlace": "https://www.tokyvideo.com/es",
             "modelo": "Otros"
         },
         {
