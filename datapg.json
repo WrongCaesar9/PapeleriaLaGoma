@@ -1,6 +1,12 @@
 {
     "productos": [
         {
+            "nombre": "Ubica-T<br>App Institucional del TESCHI para conocer la distribución de los departamentos<br>",
+            "img": "impg/ubica_t.png",
+            "enlace": "https://www.blender.org/download/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
             "nombre": "Blender<br>Es un programa de...<br>¿Como no vas a saber?🤨",
             "img": "impg/blender.png",
             "enlace": "https://www.blender.org/download/",
