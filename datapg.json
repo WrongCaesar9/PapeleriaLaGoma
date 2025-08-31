@@ -1,12 +1,6 @@
 {
     "productos": [
         {
-            "nombre": "Ubica-T<br>App Institucional del TESCHI para conocer la distribución de los departamentos<br>",
-            "img": "impg/ubica_t.png",
-            "enlace": "https://lagoma.netlify.app/Archivos/Ubica-T.apk",
-            "modelo": "Modelado y Diseño 3D"
-        },
-        {
             "nombre": "Blender<br>Es un programa de...<br>¿Como no vas a saber?🤨",
             "img": "impg/blender.png",
             "enlace": "https://www.blender.org/download/",
@@ -796,7 +790,12 @@
 
 
 
-
+        {
+            "nombre": "Ubica-T<br>App Institucional del TESCHI para conocer la distribución de los departamentos<br>",
+            "img": "impg/ubica_t.png",
+            "enlace": "https://lagoma.netlify.app/Archivos/Ubica-T.apk",
+            "modelo": "Android"
+        },
         {
             "nombre": "GTA San Andreas<br>",
             "img": "impg/gtasaAndroid.png",
