@@ -25,6 +25,12 @@
             "modelo": "Modelado y Diseño 3D"
         },
         {
+            "nombre": "blendswap/<br>repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita",
+            "img": "impg/blendswap.png",
+            "enlace": "https://blendswap.com/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
             "nombre": "Polyhaven<br>Página donde encontraras HDRI's, Texturas y Modelos",
             "img": "impg/polyhaven.png",
             "enlace": "https://polyhaven.com/",
@@ -40,6 +46,12 @@
             "nombre": "ambientCG<br>Página donde encontraras HDRI's, Texturas y Modelos",
             "img": "impg/ambientcg.png",
             "enlace": "https://ambientcg.com/",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "CGHeaven<br>Página donde encontraras HDRI's, Texturas y Modelos",
+            "img": "impg/CGheaven.png",
+            "enlace": "https://cgheven.com/",
             "modelo": "Modelado y Diseño 3D"
         },
         {
@@ -422,6 +434,43 @@
             "nombre": "Squoosh<br>Optimizador de imágenes que permite comprimir y comparar imágenes con diferentes códecs en su navegador",
             "img": "impg/squoosh.png",
             "enlace": "https://squoosh.app/",
+            "modelo": "Herramientas"
+        },
+        
+        {
+            "nombre": "Consulta tu recibo de luz CFE",
+            "img": "impg/cferecibo.png",
+            "enlace": "https://app.cfe.mx/aplicaciones/CCFE/SolicitudesCFE/Solicitudes/ConsultaTuReciboLuzGmx",
+            "modelo": "Herramientas"
+        },
+        {
+            "nombre": "Pago de Tenencia y Derechos de Control Vehicular",
+            "img": "impg/tenenciavehicular.png",
+            "enlace": "https://tenencia.edomex.gob.mx/TenenciaIndividual/tenencia/A06E1A88B8A6ED4B#/",
+            "modelo": "Herramientas"
+        },
+        {
+            "nombre": "CURP",
+            "img": "impg/curp.png",
+            "enlace": "https://www.gob.mx/curp/",
+            "modelo": "Herramientas"
+        },        
+        {
+            "nombre": "NO derechohabiente IMSS",
+            "img": "impg/noderechohabienteimss.png",
+            "enlace": "https://digital.imss.gob.mx/derechohabiencia/tramite/solicitudConstancia",
+            "modelo": "Herramientas"
+        },        
+        {
+            "nombre": "Acreditación de No Afiliación ISSSTE",
+            "img": "impg/acreditacióndenoafiliación.png",
+            "enlace": "https://oficinavirtual.issste.gob.mx/Servicios/Acreditaci%C3%B3n-de-no-Afiliaci%C3%B3n",
+            "modelo": "Herramientas"
+        },
+        {
+            "nombre": "Portal de Servicios al Contribuyente<br>En Organismos Auxiliares se paga lo del TESCHI ",
+            "img": "impg/servicioscontri.png",
+            "enlace": "https://sfpya.edomexico.gob.mx/recaudacion/",
             "modelo": "Herramientas"
         },
 
@@ -1300,42 +1349,6 @@
             "nombre": "MSI Afterburner",
             "img": "impg/msiafterburner.png",
             "enlace": "https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1707365167~acl=/*~hmac=850193a09bf2aca57899a9fbc4bbe0e7065b78a3a8d0d1ea358883b24eeb8cac",
-            "modelo": "Otros"
-        },
-        {
-            "nombre": "Consulta tu recibo de luz CFE",
-            "img": "impg/cferecibo.png",
-            "enlace": "https://app.cfe.mx/aplicaciones/CCFE/SolicitudesCFE/Solicitudes/ConsultaTuReciboLuzGmx",
-            "modelo": "Otros"
-        },
-        {
-            "nombre": "Pago de Tenencia y Derechos de Control Vehicular",
-            "img": "impg/tenenciavehicular.png",
-            "enlace": "https://tenencia.edomex.gob.mx/TenenciaIndividual/tenencia/A06E1A88B8A6ED4B#/",
-            "modelo": "Otros"
-        },
-        {
-            "nombre": "CURP",
-            "img": "impg/curp.png",
-            "enlace": "https://www.gob.mx/curp/",
-            "modelo": "Otros"
-        },        
-        {
-            "nombre": "NO derechohabiente IMSS",
-            "img": "impg/noderechohabienteimss.png",
-            "enlace": "https://digital.imss.gob.mx/derechohabiencia/tramite/solicitudConstancia",
-            "modelo": "Otros"
-        },        
-        {
-            "nombre": "Acreditación de No Afiliación ISSSTE",
-            "img": "impg/acreditacióndenoafiliación.png",
-            "enlace": "https://oficinavirtual.issste.gob.mx/Servicios/Acreditaci%C3%B3n-de-no-Afiliaci%C3%B3n",
-            "modelo": "Otros"
-        },
-        {
-            "nombre": "Portal de Servicios al Contribuyente<br>En Organismos Auxiliares se paga lo del TESCHI ",
-            "img": "impg/servicioscontri.png",
-            "enlace": "https://sfpya.edomexico.gob.mx/recaudacion/",
             "modelo": "Otros"
         },
         {

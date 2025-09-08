@@ -200,10 +200,3 @@ window.addEventListener('scroll', function () {
 });
 
 
-
-
-
-document.getElementById("btn-redirigirN").addEventListener("click", function () {
-  // Reemplaza "nueva-pagina.html" con la ruta de la página a la que deseas redirigir
-  window.location.href = "Index.html";
-});

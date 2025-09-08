@@ -23,7 +23,7 @@
         <a id="whatsapp" title="WhatsApp TESChi"><img class="btn-whatsapp2"
                 src="https://clientes.dongee.com/whatsapp.png" 
                 style="max-width: 90px; border-radius: 10px;max-height: 90px;" align="right" alt="Whatsapp"
-                onclick="window.location.href='https://wa.me/525515833826'"></a>
+                onclick="window.location.href='https://wa.me/525515833826'" fetchpriority="high"></a>
 
 
 
@@ -321,7 +321,7 @@
                 src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
                 width="64" height="64" alt="Instagram"
                 onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'"></a>
-        <p>Copyright © 2024 "La Goma"</p>
+        <p>Copyright © 2025 "La Goma" <br>Última actualización: <span id="fecha-actualizacion"></span> </p>
 
 
     </footer>
@@ -373,6 +373,29 @@
     <script src="mainpg.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js">
     </script>
+    <script>
+  // Obtener el elemento donde se mostrará la fecha
+  const fechaElemento = document.getElementById('fecha-actualizacion');
+
+  // Crear un nuevo objeto de fecha
+  const fechaActual = new Date();
+
+  // Formatear la fecha para mostrar solo día, mes y año
+  const dia = fechaActual.getDate();
+  const mes = fechaActual.getMonth() + 1; // Los meses son base 0, por eso se suma 1
+  const año = fechaActual.getFullYear();
+
+  // Añadir ceros iniciales si el día o el mes son de un solo dígito
+  const diaFormateado = dia < 10 ? '0' + dia : dia;
+  const mesFormateado = mes < 10 ? '0' + mes : mes;
+
+  // Construir la cadena de la fecha
+  const fechaFormateada = `${diaFormateado}/${mesFormateado}/${año}`;
+
+  // Mostrar la fecha en el elemento HTML
+  fechaElemento.textContent = fechaFormateada;
+</script>
+
     <!-- Error de WhatsApp Solucionado, error fue comentar esta linea
     
     
