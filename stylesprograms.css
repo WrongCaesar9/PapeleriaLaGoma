@@ -196,18 +196,47 @@ header.fixed {
 
 
 
+#productos-contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  font-family: Arial;
+  font-size: 0.7rem;
+    align-items: stretch; /* obliga a las tarjetas a medir lo mismo */
+
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
   #productos-contenedor {
-    
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 10px;
-    font-family: Arial;
-    font-size: 0.7rem;
-    
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+  #productos-contenedor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Opcional: aún más chico (teléfonos muy pequeños) */
+@media (max-width: 480px) {
+  #productos-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
+
 .productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #54656d3f; /* opcional, para dar uniformidad */
+  padding: 10px;
+  border-radius: 6px;
+  height: 100%; /* fuerza al div a ocupar todo el alto posible */
   font-size: 100%;
   width: auto;
 }

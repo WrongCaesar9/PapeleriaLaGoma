@@ -425,28 +425,35 @@ Barra de iconos compartir End-->
     <script src="https://kit.fontawesome.com/a076d05399.js">
     </script>
     <script>
-  // Obtener el elemento donde se mostrará la fecha
+  // Obtener el elemento donde se mostrará la fecha y hora
   const fechaElemento = document.getElementById('fecha-actualizacion');
 
   // Crear un nuevo objeto de fecha
   const fechaActual = new Date();
 
-  // Formatear la fecha para mostrar solo día, mes y año
+  // Formatear la fecha
   const dia = fechaActual.getDate();
-  const mes = fechaActual.getMonth() + 1; // Los meses son base 0, por eso se suma 1
+  const mes = fechaActual.getMonth() + 1;
   const año = fechaActual.getFullYear();
 
-  // Añadir ceros iniciales si el día o el mes son de un solo dígito
+  // Formatear la hora
+  let horas = fechaActual.getHours();
+  let minutos = fechaActual.getMinutes();
+  let segundos = fechaActual.getSeconds();
+
+  // Añadir ceros iniciales si hace falta
   const diaFormateado = dia < 10 ? '0' + dia : dia;
   const mesFormateado = mes < 10 ? '0' + mes : mes;
+  const horasFormateadas = horas < 10 ? '0' + horas : horas;
+  const minutosFormateados = minutos < 10 ? '0' + minutos : minutos;
+  const segundosFormateados = segundos < 10 ? '0' + segundos : segundos;
 
-  // Construir la cadena de la fecha
-  const fechaFormateada = `${diaFormateado}/${mesFormateado}/${año}`;
+  // Construir la cadena final
+  const fechaHoraFormateada = `${diaFormateado}/${mesFormateado}/${año} ${horasFormateadas}:${minutosFormateados}:${segundosFormateados}`;
 
-  // Mostrar la fecha en el elemento HTML
-  fechaElemento.textContent = fechaFormateada;
+  // Mostrarlo en el elemento
+  fechaElemento.textContent = fechaHoraFormateada;
 </script>
-
     <!-- Error de WhatsApp Solucionado, error fue comentar esta linea
     
     
