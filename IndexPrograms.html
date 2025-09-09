@@ -107,10 +107,64 @@
 
 
         <p></p>
-        <input type="text" id="barra-busqueda" placeholder="¿Que estás buscando? :3" style="margin-bottom: 1rem;">
-        <button id="btn-buscar" class="btn-buscar"><img src="/logos/searchcat.png" alt="Buscar" class="img-buscar"
-                style="width: 45px; height: 45px; margin-bottom: -1.1rem;">
-        </button>
+        <!--li><a class="toplistxd" href="Index.html">"La Goma"</a></li-->
+<div style="position: relative; display: inline-block;">
+    <input type="text" id="barra-busqueda" placeholder="¿Que estás buscando? :3" 
+           style="width: 11.5rem;margin-bottom: 0.2rem; padding-right: 10px; border: 2px solid #ffffff; 
+           border-radius: 5px; padding: 4px 30px 4px 2px; font-size: 16px;">
+    
+    <span id="clear-search" style="position: absolute; right: 70px; top: 50%; transform: translateY(-50%); 
+          cursor: pointer; display: none; font-size: 20px; color: #999; z-index: 2; 
+          transition: color 0.3s; width: 20px; height: 20px; text-align: center; line-height: 20px;"
+          onclick="clearSearch()" onmouseover="this.style.color='#3897f0'" onmouseout="this.style.color='#999'">
+        X
+    </span>
+    
+    <button id="btn-buscar" class="btn-buscar" style="background: none; border: none; cursor: pointer;">
+        <img src="/logos/searchcat.png" alt="Buscar" class="img-buscar"
+             style="width: 45px; height: 45px; margin-bottom: -1.1rem;">
+    </button>
+</div>
+
+<script>
+function clearSearch() {
+    const searchBar = document.getElementById('barra-busqueda');
+    searchBar.value = '';
+    document.getElementById('clear-search').style.display = 'none';
+    searchBar.focus();
+}
+
+document.getElementById('barra-busqueda').addEventListener('input', function() {
+    const clearButton = document.getElementById('clear-search');
+    clearButton.style.display = this.value.length > 0 ? 'block' : 'none';
+});
+
+// Mostrar la "X" también cuando hay texto al enfocar
+document.getElementById('barra-busqueda').addEventListener('focus', function() {
+    if (this.value.length > 0) {
+        document.getElementById('clear-search').style.display = 'block';
+    }
+});
+</script>
+<script>
+function clearSearch() {
+    const searchBar = document.getElementById('barra-busqueda');
+    searchBar.value = '';
+    document.getElementById('clear-search').style.display = 'none';
+    searchBar.focus();
+    
+    // Fuerza el evento input manualmente
+    if ("createEvent" in document) {
+        var evt = document.createEvent("HTMLEvents");
+        evt.initEvent("input", false, true);
+        searchBar.dispatchEvent(evt);
+    } else {
+        searchBar.fireEvent("oninput");
+    }
+}
+</script>
+
+<!--li><a class="toplistxd" href="Index.html">"La Goma"</a></li-->
     </nav>
 
 
@@ -372,7 +426,7 @@ Barra de iconos compartir End-->
                 src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
                 width="64" height="64" alt="Instagram"
                 onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'"></a>
-        <p>Copyright © 2025 "La Goma" <br>Última actualización: <span id="fecha-actualizacion"></span> </p>
+        <p>Copyright © 2025 "La Goma" <br>Última actualización: <span id="fecha-actualizacion"></span> at: 3:46 am</p>
 
 
     </footer>
@@ -425,35 +479,28 @@ Barra de iconos compartir End-->
     <script src="https://kit.fontawesome.com/a076d05399.js">
     </script>
     <script>
-  // Obtener el elemento donde se mostrará la fecha y hora
+  // Obtener el elemento donde se mostrará la fecha
   const fechaElemento = document.getElementById('fecha-actualizacion');
 
   // Crear un nuevo objeto de fecha
   const fechaActual = new Date();
 
-  // Formatear la fecha
+  // Formatear la fecha para mostrar solo día, mes y año
   const dia = fechaActual.getDate();
-  const mes = fechaActual.getMonth() + 1;
+  const mes = fechaActual.getMonth() + 1; // Los meses son base 0, por eso se suma 1
   const año = fechaActual.getFullYear();
 
-  // Formatear la hora
-  let horas = fechaActual.getHours();
-  let minutos = fechaActual.getMinutes();
-  let segundos = fechaActual.getSeconds();
-
-  // Añadir ceros iniciales si hace falta
+  // Añadir ceros iniciales si el día o el mes son de un solo dígito
   const diaFormateado = dia < 10 ? '0' + dia : dia;
   const mesFormateado = mes < 10 ? '0' + mes : mes;
-  const horasFormateadas = horas < 10 ? '0' + horas : horas;
-  const minutosFormateados = minutos < 10 ? '0' + minutos : minutos;
-  const segundosFormateados = segundos < 10 ? '0' + segundos : segundos;
 
-  // Construir la cadena final
-  const fechaHoraFormateada = `${diaFormateado}/${mesFormateado}/${año} ${horasFormateadas}:${minutosFormateados}:${segundosFormateados}`;
+  // Construir la cadena de la fecha
+  const fechaFormateada = `${diaFormateado}/${mesFormateado}/${año}`;
 
-  // Mostrarlo en el elemento
-  fechaElemento.textContent = fechaHoraFormateada;
+  // Mostrar la fecha en el elemento HTML
+  fechaElemento.textContent = fechaFormateada;
 </script>
+
     <!-- Error de WhatsApp Solucionado, error fue comentar esta linea
     
     

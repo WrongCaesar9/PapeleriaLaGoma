@@ -281,7 +281,6 @@
             "enlace": "https://cdn.borisfx.com/borisfx/store/mpp-adobe/MochaPro2023-Adobe-10.0.1-54.g58678bac292c.win.msi",
             "modelo": "Edición"
         },
-        
         {
             "nombre": "Mocha Pro para AfterFx",
             "img": "impg/mochaae.png",
@@ -292,6 +291,12 @@
             "nombre": "Element 3D AfterFX",
             "img": "impg/element3D.png",
             "enlace": "https://drive.google.com/file/d/1hxZEWxV6-QElpfYS9s0iOPD7Tqk2STZv/view?usp=sharing",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "Duik Bassel v2_16.2.30<br>Herramienta gratuita de rigging y animación de personajes para After Effects.",
+            "img": "impg/duikae.png",
+            "enlace": "https://drive.google.com/file/d/1cl41oLExZVeT6UN2b7lceMZpNmv3eKtQ/view?usp=sharing",
             "modelo": "Edición"
         },
         {
@@ -313,9 +318,21 @@
             "modelo": "Edición"
         },
         {
+            "nombre": "GyroFlow<br>Herramienta avanzada de estabilización de video giroscópica para cinematografía, videografía con drones y mucho más.",
+            "img": "impg/gyroflow.png",
+            "enlace": "https://gyroflow.xyz/",
+            "modelo": "Edición"
+        },
+        {
             "nombre": "PHYSICALLY BASED<br>A database of physically based values for CG artists",
             "img": "impg/physicallybased.png",
             "enlace": "https://physicallybased.info/",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "Ableton<br>software de creación musical (DAW)Espera a que se genere un nuevo link<br>contraseña: elenemigos.com",
+            "img": "impg/abletondoce.png",
+            "enlace": "https://download856.mediafire.com/w6nmftp3ybvg6kyv3fcCvX587KY9y5PRuTiwKLrBlWJVvtNvUWCBFzpSP7L259Y7x3mwVvpGBjOI-7s8RvrmhdAp92gOiT969zgathSrUDyMBQlc7EPyEo1-hMuUXIudZTFkBYomjVfckgVbuyteuNeMLl5Y_pVYiL4GAP9vOSgVfHE/4zeqxcs2co36lyi/Ableton+Live+12+Suite+v12.1.10_ELENEMIGOS.rar",
             "modelo": "Edición"
         },
 
@@ -439,6 +456,12 @@
             "nombre": "Tinify<br>Smart AVIF, WebP, PNG and JPEG Compression for Faster Websites",
             "img": "impg/tinify.png",
             "enlace": "https://tinypng.com/",
+            "modelo": "Herramientas"
+        },        
+        {
+            "nombre": "PineTools<br>ofrece una colección de herramientas en línea gratuitas para trabajar con texto, imágenes, listas, números y archivos",
+            "img": "impg/pinetools.png",
+            "enlace": "https://pinetools.com/es/",
             "modelo": "Herramientas"
         },
         {

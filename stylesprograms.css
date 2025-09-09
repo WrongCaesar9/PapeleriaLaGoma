@@ -201,15 +201,15 @@ header.fixed {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
   font-family: Arial;
-  font-size: 0.7rem;
-    align-items: stretch; /* obliga a las tarjetas a medir lo mismo */
+  font-size: 0.8rem;
+  align-items: stretch; /* obliga a las tarjetas a medir lo mismo */
 
 }
 
 /* Para pantallas medianas (tablets) */
 @media (max-width: 1024px) {
   #productos-contenedor {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -233,9 +233,9 @@ header.fixed {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #54656d3f; /* opcional, para dar uniformidad */
-  padding: 10px;
-  border-radius: 6px;
+  background: #335a613f; /* opcional, para dar uniformidad */
+  padding: 3px;
+  border-radius: 10px;
   height: 100%; /* fuerza al div a ocupar todo el alto posible */
   font-size: 100%;
   width: auto;
@@ -515,6 +515,7 @@ h1 {
   align-items: center;    
 
 }
+
 
 
 
