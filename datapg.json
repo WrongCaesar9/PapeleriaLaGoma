@@ -694,7 +694,7 @@
             "modelo": "OS & Burners"
         },             
         {
-            "nombre": "DigitalOcean",
+            "nombre": "DigitalOcean<br>De pago<br>Mas enfocado a Gaming e IA",
             "img": "impg/paperspaceVM.png",
             "enlace": "https://www.paperspace.com/",
             "modelo": "OS & Burners"
@@ -1051,6 +1051,12 @@
             "nombre": "Sololearn",
             "img": "impg/sololearn.png",
             "enlace": "https://www.sololearn.com/",
+            "modelo": "Coding"
+        },
+        {
+            "nombre": "PageSpeed Insightsge<br>Herramienta de Google que analiza el rendimiento de una página web en dispositivos móviles y de escritorio",
+            "img": "impg/pagespeedinsi.png",
+            "enlace": "https://pagespeed.web.dev/",
             "modelo": "Coding"
         },  
 
@@ -1438,6 +1444,30 @@
             "img": "impg/miinsta.png",
             "enlace": "https://www.instagram.com/wrongcaesar9.0/",
             "modelo": "Otros"
-        } 
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "nombre": "Azteca 7 XHIMT-TDT",
+            "img": "impg/canalsiete.png",
+            "enlace": "https://mdstrm.com/live-stream/609ad46a7a441137107d7a81",
+            "modelo": "Canales TV"
+        }
     ]
 }
