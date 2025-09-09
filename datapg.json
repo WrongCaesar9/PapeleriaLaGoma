@@ -25,7 +25,7 @@
             "modelo": "Modelado y Diseño 3D"
         },
         {
-            "nombre": "blendswap/<br>repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita",
+            "nombre": "blendswap<br>repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita",
             "img": "impg/blendswap.png",
             "enlace": "https://blendswap.com/",
             "modelo": "Modelado y Diseño 3D"
@@ -265,7 +265,7 @@
         },
         {
             "nombre": "After Effects V.2024<br>contraseña: www.artistapirata.com",
-            "img": "impg/AEPorta.png",
+            "img": "impg/afterfxpc.png",
             "enlace": "https://drive.google.com/file/d/1CHKZOJ09KnKKBiymL3oYLDNu0iqN53Z5/view?usp=sharing",
             "modelo": "Edición"
         },
@@ -428,15 +428,19 @@
             "img": "impg/ineafiliado.png",
             "enlace": "https://deppp-partidos.ine.mx/afiliadosPartidos/app/publico/consultaAfiliados/nacionales?execution=e1s1#form:pnlDetalleAfiliado",
             "modelo": "Herramientas"
-        },
-        
+        },        
         {
             "nombre": "Squoosh<br>Optimizador de imágenes que permite comprimir y comparar imágenes con diferentes códecs en su navegador",
             "img": "impg/squoosh.png",
             "enlace": "https://squoosh.app/",
             "modelo": "Herramientas"
+        },        
+        {
+            "nombre": "Tinify<br>Smart AVIF, WebP, PNG and JPEG Compression for Faster Websites",
+            "img": "impg/tinify.png",
+            "enlace": "https://tinypng.com/",
+            "modelo": "Herramientas"
         },
-        
         {
             "nombre": "Consulta tu recibo de luz CFE",
             "img": "impg/cferecibo.png",
