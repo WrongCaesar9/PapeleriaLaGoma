@@ -17,6 +17,12 @@
             "img": "impg/houdini.png",
             "enlace": "https://drive.google.com/file/d/1GhUq_M8gIFyu3x9VFB609Sm6H5XHwUaK/view?usp=sharing",
             "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "CURSO de HOUDINI<br>SOLO ADENTRATE Y DISFRUTA",
+            "img": "impg/houdini.png",
+            "enlace": "https://drive.google.com/drive/folders/12eOIgD_T1AbDYJb8k3BO23HFczTA3Kuw?usp=sharing",
+            "modelo": "Modelado y Diseño 3D"
         },        
         {
             "nombre": "Blender Studio<br>Aqui encuentras rigs y modelos 3D hechos por blender :D",
@@ -419,6 +425,12 @@
             "nombre": "Myemulator<br>El sitio web donde podrás jugar a los mejores juegos retro jamás desbloqueados en línea",
             "img": "impg/myemulator.png",
             "enlace": "https://myemulator.onl/",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "EL Enemeigos<br>Página para descargar videojuegos y programas",
+            "img": "impg/elenemigos.png",
+            "enlace": "https://elenemigos.com/",
             "modelo": "Juegos"
         },
 
@@ -1371,12 +1383,6 @@
             "img": "impg/pvpc.png",
             "enlace": "https://www.programasvirtualespc.net/",
             "modelo": "Otros"
-        },
-        {
-            "nombre": "EL Enemeigos<br>Página para descargar videojuegos y programas",
-            "img": "impg/elenemigos.png",
-            "enlace": "https://elenemigos.com/",
-            "modelo": "Otros"
         },        
         {
             "nombre": "Google Academico<br>Navegador super útil si lo sabes utilizar xd",
@@ -1456,41 +1462,54 @@
             "enlace": "https://lucid.app/",
             "modelo": "Otros"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "CURSO de HOUDINI<br>SOLO ADENTRATE Y DISFRUTA",
-            "img": "impg/houdini.png",
-            "enlace": "https://drive.google.com/drive/folders/12eOIgD_T1AbDYJb8k3BO23HFczTA3Kuw?usp=sharing",
-            "modelo": "Modelado y Diseño 3D"
+            "nombre": "Azteca 7 XHIMT-TDT En Vivo",
+            "img": "impg/canalsiete.png",
+            "enlace": "https://mdstrm.com/live-stream/609ad46a7a441137107d7a81",
+            "modelo": "Canales TV"
         },
+        {
+            "nombre": "Canal 6 MTCH-TDT En Vivo<br>Multimedios Televisión",
+            "img": "impg/canalseiscdmx.png",
+            "enlace": "https://mdstrm.com/live-stream/5f2d9d6ff17144074bd8a284",
+            "modelo": "Canales TV"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
             "nombre": "Mi Instagram<br>wrongcaesar9.0<br>Mi portfolio<br>https://lagoma.netlify.app/portfolio",
             "img": "impg/miinsta.png",
             "enlace": "https://www.instagram.com/wrongcaesar9.0/",
             "modelo": "Otros"
-        },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {
-            "nombre": "Azteca 7 XHIMT-TDT",
-            "img": "impg/canalsiete.png",
-            "enlace": "https://mdstrm.com/live-stream/609ad46a7a441137107d7a81",
-            "modelo": "Canales TV"
         }
     ]
 }

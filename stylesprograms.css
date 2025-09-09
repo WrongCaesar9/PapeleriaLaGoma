@@ -46,7 +46,7 @@ header.fixed {
   padding: 1rem;
   font-size: 15px;
   padding-top:15px;
-  transition: 0.8s;
+  transition: 1s;
   width: 132%;
   height: auto;
   scale:75%;
@@ -59,7 +59,7 @@ header.fixed {
     text-align: center;
     padding: 10px;
     width: auto;
-    transition: 0.8s;
+    transition: 1s;
   }
   
   /*  background-image: url(/logos/mvcsuper.gif);
@@ -210,20 +210,22 @@ header.fixed {
 @media (max-width: 1024px) {
   #productos-contenedor {
     grid-template-columns: repeat(3, 1fr);
+  font-size: 0.6rem;
   }
 }
 
 /* Para pantallas pequeñas (teléfonos) */
 @media (max-width: 768px) {
   #productos-contenedor {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.6rem;
   }
 }
 
 /* Opcional: aún más chico (teléfonos muy pequeños) */
 @media (max-width: 480px) {
   #productos-contenedor {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
