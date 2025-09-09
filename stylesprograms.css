@@ -199,23 +199,25 @@ header.fixed {
   #productos-contenedor {
     
     display:grid;
-    grid-template-columns: repeat(4,1fr);
-    
+    grid-template-columns: repeat(5,1fr);
     grid-gap: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 78%;
+    font-family: Arial;
+    font-size: 0.7rem;
     
 }
 
 
 .productos {
+  font-size: 100%;
   width: auto;
 }
 
 .productos img {
   width: 100%;
-  object-fit:fill;
+object-fit: fill;
 }
+
+
 
 h1 {
   font-size: 25px;
@@ -350,7 +352,7 @@ h1 {
 
 .formulario h4 {
   font-size: 15px;
-  padding-top: 0rem;
+  padding-top: 0.5rem;
   text-align:center;
   font-weight:bold;
   text-transform:uppercase;
@@ -367,6 +369,7 @@ h1 {
   animation:color 240s linear infinite ;
 }
 .formulario{
+  z-index: -1;
 	width: 290px;
   background-color: rgba(255, 255, 255, 0.374);
 	height: 320px;
