@@ -304,7 +304,7 @@ h1 {
 
 
 .show {
-  z-index: 10;
+  z-index: 30;
 }
 
 .show .go-top-button {
