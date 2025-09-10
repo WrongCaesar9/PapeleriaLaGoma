@@ -311,7 +311,7 @@ h1 {
   animation: popup 0.8s ease-in-out;
   width: 5.0rem;
   height: 5.0rem;
-  z-index: 5;
+  z-index: 20;
 }
 
 .go-top-button i {
