@@ -279,13 +279,48 @@ h1 {
 
 .go-top-container {
   position: fixed;
-  bottom: 1rem;
+  bottom: 0.1rem;
   right: 0.05rem;
   width: 7.6rem;
   height: 7.6rem;
   z-index: -1;
 }
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .go-top-container {
+  
+  position: fixed;
+  bottom: 3rem;
+  right: 0.05rem;
+  width: 7.6rem;
+  height: 7.6rem;
+  z-index: -1;
+  }
+}
 
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+  .go-top-container {
+  position: fixed;
+  bottom: 3rem;
+  right: 0.05rem;
+  width: 7.6rem;
+  height: 7.6rem;
+  z-index: -1;
+  }
+}
+
+/* Opcional: aún más chico (teléfonos muy pequeños) */
+@media (max-width: 480px) {
+  .go-top-container {
+  position: fixed;
+  bottom: 3rem;
+  right: 0.05rem;
+  width: 7.6rem;
+  height: 7.6rem;
+  z-index: -1;
+  }
+}
 
 .go-top-button {
   width: 0rem;
