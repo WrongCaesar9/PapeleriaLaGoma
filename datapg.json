@@ -849,6 +849,12 @@
             "modelo": "IA"
         },
         {
+            "nombre": "Gemini Nano Banana<br>Tip: Genera un nuevo chat para volver a tener tokens",
+            "img": "impg/nanobanana.png",
+            "enlace": "https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image-preview",
+            "modelo": "IA"
+        },
+        {
             "nombre": "DeepL Translator<br>Traductor de idiomas por IA",
             "img": "impg/deepltranslator.png",
             "enlace": "https://www.deepl.com/translator",
@@ -869,7 +875,13 @@
         {
             "nombre": "DeepFiction AI<br>Generador de historias con imagenes/videos por IA",
             "img": "impg/deepfiction.png",
-            "enlace": "https://www.deepfiction.ai/?via=victor-hugo",
+            "enlace": "https://www.deepfiction.ai/",
+            "modelo": "IA"
+        },
+        {
+            "nombre": "You.com<br>Motor de búsqueda con IA que proporciona acceso a herramientas de IA personalizables",
+            "img": "impg/youcom.png",
+            "enlace": "https://you.com/home",
             "modelo": "IA"
         },
         {
