@@ -36,7 +36,7 @@ function mostrarProductos() {
       productosDiv.classList.add("productos");
       // Crear una imagen para el artículo
       const productosImg = document.createElement("img");
-      productosImg.src = productos.img;
+      productosImg.src = productos.img; // Agregar un parámetro de versión para evitar el caché
       productosImg.alt = productos.modelo;
       productosDiv.appendChild(productosImg);
 

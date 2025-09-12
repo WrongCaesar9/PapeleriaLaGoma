@@ -524,9 +524,8 @@
             "enlace": "https://www.vccgenerator.org/",
             "modelo": "Herramientas"
         },
-
-
-
+        
+                
 
 
 
@@ -718,15 +717,15 @@
             "modelo": "OS & Burners"
         },            
         {
-            "nombre": "Wifislax OS<br>En la parte de hasta abajo esta el link<br>Igual para el Hashcat",
+            "nombre": "Wifislax OS<br>Hay un PEDOTE con el servidor de descargas, asi que no se puede bajar :'(<br>Tengo una ISO vieja si lo quieren",
             "img": "impg/wifislaxos.png",
-            "enlace": "https://foro.seguridadwireless.net/live-wifislax/wifislax64-3-4-final-paara-descargar/",
+            "enlace": "https://foro.seguridadwireless.net/live-wifislax/wifislax64-4-0-final-iso-para-descarga",
             "modelo": "OS & Burners"
         },            
         {
             "nombre": "DRIVER NVIDIA PARA HASHCAT",
             "img": "impg/wifislaxdriver.png",
-            "enlace": "https://foro.seguridadwireless.net/live-wifislax/wifislax64-3-4-final-paara-descargar/",
+            "enlace": "https://www.nvidia.com/es-es/drivers/unix/",
             "modelo": "OS & Burners"
         },                     
         {
@@ -1011,6 +1010,42 @@
             "enlace": "https://play.google.com/store/apps/details?id=cloud.blynk",
             "modelo": "Android"
         },
+        {
+            "nombre": "Termux<br>Emulador de terminal y entorno Linux para Android",
+            "img": "impg/termux.png",
+            "enlace": "https://play.google.com/store/apps/details?id=com.termux&hl=es_MX&gl=US",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "APK Editor Free<br>Editor de APK para Android (renombrar, recompilar, firmar, etc.)",
+            "img": "impg/apkeditorfree.png",
+            "enlace": "https://drive.google.com/file/d/1jPxGGIMW9udkixHgcs3fIfqZXRyyrXQK/view?usp=sharing",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "3D PDF Reader<br>Lector de archivos 3D en PDF",
+            "img": "impg/pdfreadertresde.png",
+            "enlace": "https://drive.google.com/file/d/1yr1mb1rFSMXq5vKAcrkXWcgloWhRogKX/view?usp=sharing",
+            "modelo": "Android"
+        },
+        {
+            "nombre": "Nomad Sculp<br>Escultura 3D para Android de pago<br>similar a ZBrush, subiere la apk crackeada después xd",
+            "img": "impg/nomadsculp.png",
+            "enlace": "https://play.google.com/store/apps/details?id=com.stephaneginier.nomad&hl=es_MX",
+            "modelo": "Android"
+        },        
+        {
+            "nombre": "RealityScan Mobile<br>Escanea objetos del mundo real y conviértelos en modelos 3D de alta calidad<br>por Epic Games<br>Fotogrametría para los compas",
+            "img": "impg/realityscan.png",
+            "enlace": "https://play.google.com/store/apps/details?id=com.epicgames.realityscan",
+            "modelo": "Android"
+        },        
+        {
+            "nombre": "MeowFace<br>facetracking app, envia ARKit-style blendshapes a varias aplicaciones VTuber(Inochi Session, VSeeFace, Live2D)<br>el Prof. Portillo le sabe a esto XD",
+            "img": "impg/meowface.png",
+            "enlace": "https://suvidriel.itch.io/meowface",
+            "modelo": "Android"
+        },
 
 
 
@@ -1051,12 +1086,6 @@
             "nombre": "Sololearn - Learn to Code",
             "img": "impg/sololearnandroid.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.sololearn&hl=es_MX&gl=US",
-            "modelo": "Coding"
-        },
-        {
-            "nombre": "Termux",
-            "img": "impg/termux.png",
-            "enlace": "https://play.google.com/store/apps/details?id=com.termux&hl=es_MX&gl=US",
             "modelo": "Coding"
         },
         {
@@ -1141,6 +1170,31 @@
 
 
 
+        {
+            "nombre": "ExifTool<br>Es una aplicación de CMD para leer, escribir y editar metadatos en una amplia variedad de archivos",
+            "img": "impg/exiftool.png",
+            "enlace": "https://exiftool.org/",
+            "modelo": "Metadatos"
+        },                
+        {
+            "nombre": "Google Dorking Documentation<br>El arte de buscar en Google utilizando operadores avanzados para encontrar información específica que no es fácilmente accesible a través de búsquedas estándar.",
+            "img": "impg/googledorking.png",
+            "enlace": "https://www.splunk.com/en_us/blog/learn/google-dorking.html",
+            "modelo": "Metadatos"
+        },                        
+        {
+            "nombre": "Facebook Crawler<br>Es una herramienta que permite verificar y depurar cómo Facebook ve y extrae información de sus páginas web.",
+            "img": "impg/facebookcrawler.png",
+            "enlace": "https://developers.facebook.com/tools/debug/",
+            "modelo": "Metadatos"
+        },
+
+
+
+
+
+
+
 
 
 
@@ -1195,7 +1249,13 @@
             "img": "impg/github.png",
             "enlace": "https://github.com/",
             "modelo": "GitHub"
-        },
+        },                                        
+        {
+            "nombre": "Google Dorking/Hacking<br>Repo con varios dorks hecho por speinador en donde encontraras dorks y ejemplos de uso",
+            "img": "impg/googledorkinggithub.png",
+            "enlace": "https://github.com/speinador/Google_Hacking",
+            "modelo": "GitHub"
+        }, 
         {
             "nombre": "Releases de la APK<br>de Blender",
             "img": "impg/blenderandroidreleases.png",
@@ -1243,7 +1303,7 @@
             "img": "impg/moonray.png",
             "enlace": "https://github.com/dreamworksanimation/openmoonray",
             "modelo": "GitHub"
-        },             
+        },            
 
 
 
