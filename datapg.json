@@ -735,15 +735,15 @@
             "modelo": "OS & Burners"
         },            
         {
-            "nombre": "VMware Windows",
+            "nombre": "VMware Workstation Player 17.6.3 Windows<br>Ultima version gratuita para uso personal",
             "img": "impg/vmwarew.png",
-            "enlace": "https://download3.vmware.com/software/WKST-PLAYER-1750/VMware-player-full-17.5.0-22583795.exe",
+            "enlace": "https://files04.tchspt.com/down/VMware-player-17.6.3-24583834.exe",
             "modelo": "OS & Burners"
         },             
         {
-            "nombre": "VMware Linux",
+            "nombre": "VMware Workstation Player 17.6.3 Linux<br><a target='_blank' href='https://www.techspot.com/downloads/1969-vmware-player.html'>Links alternos</a>",
             "img": "impg/vmwarel.png",
-            "enlace": "https://download3.vmware.com/software/WKST-PLAYER-1750/VMware-Player-Full-17.5.0-22583795.x86_64.bundle",
+            "enlace": "https://files02.tchspt.com/down/VMware-Player-17.6.3-24583834.x86_64.bundle.tar",
             "modelo": "OS & Burners"
         },             
         {
