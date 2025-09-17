@@ -53,27 +53,28 @@
 
 <body>
     <header>
-        <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app"><img
-                class="header__logo-image" style="max-width: 90px; border-radius: 10px;max-height: 90px;" align="left"
-                src="/logos/lagomaGM.png" alt="lagoma" fetchpriority="high"></a>
+        <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app"><img class="header__logo-image"
+                style="max-width: 90px; border-radius: 10px;max-height: 90px;" align="left" src="/logos/lagomaGM.png"
+                alt="lagoma" fetchpriority="high"></a>
     
         <a id="whatsapp" title="WhatsApp"><img class="btn-whatsapp2" src="https://clientes.dongee.com/whatsapp.png"
                 style="max-width: 90px; border-radius: 10px;max-height: 90px;" align="right" alt="Whatsapp"
                 onclick="window.location.href='https://wa.me/525515833826'" fetchpriority="high"></a>
     
         <h1 style="font-size: 140%; font-family: 'Times New Roman', Times, serif;">Links de Programas<br>"PC y Android"</h1>
-        <marquee behavior="scroll" direction="left" scrollamount="12">
-            <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;Si detectas un link caído, repórtamelo 🤙🏽 -
-                Espero
-                ir agregando mas programas y páginas que sean útiles y que en ocasiones los acortadores molestan con los
-                anuncios&nbsp;</span>
-        </marquee>
+    
     
         <nav>
+            <marquee behavior="scroll" direction="left" scrollamount="12">
+                <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;Si detectas un link caído, repórtamelo 🤙🏽 -
+                    Espero
+                    ir agregando mas programas y páginas que sean útiles y que en ocasiones los acortadores molestan con los
+                    anuncios&nbsp;</span>
+            </marquee>
             <ul style="height: auto; color: #ffffff;">
                 <!-- Filtro por modelo -->
                 <select id="filtro-modelo"
-                    style="height: 27px; width: auto; background-color: rgb(21, 22, 22); color: #ffffff;border-radius: 5%; border-style:dotted;box-shadow: 2px 2px 10px 5px rgb(73, 73, 73);">
+                    style="height: 27px; width: auto; background-color: rgb(21, 22, 22); color: #ffffff;border-radius: 5%; border-style:dotted;box-shadow: 2px 2px 10px 5px rgb(73, 73, 73);font-size: 1rem;">
                     <option value="">Todos los programas</option>
                     <option value="Modelado y Diseño 3D">Modelado y Diseño 3D</option>
                     <option value="Edición">Edición</option>
@@ -104,19 +105,32 @@
                 <!--li><a class="toplistxd" href="Index.html">"La Goma"</a></li-->
                 <li>Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span></li>
     
+
+<select id="mi-selector" style="height: 30px; width: auto; background-color: rgb(21, 22, 22); color: #ffffff;border-radius: 5%; border-style:dotted;box-shadow: 2px 2px 10px 5px rgb(114, 64, 64); font-size: 1rem;">
+    <option value="">Canales de YouTube Chidos</option>
+    <option value="https://www.youtube.com/@BlenderGuru">Blender Guru</option>
+    <option value="https://www.youtube.com/@Polyfjord">Polyfjord</option>
+    <option value="https://www.youtube.com/@esperandoelrender">Esperando el Render</option>
+    <option value="https://www.youtube.com/@auraprods">AuraProds</option>
+    <option value="https://www.youtube.com/@polygonrunway">Polygon Runway</option>
+    <option value="https://www.youtube.com/@s4vitar">S4vitar</option>
+    <option value="https://www.youtube.com/@Linkfydev">Linkfy</option>
+    <option value="https://www.youtube.com/@BlenderHoy">Blender Hoy</option>
+</select>
+
             </ul>
     
     
     
     
-            <p></p>            
+            <p></p>
             <div style="position: relative; display: inline-block;">
                 <input type="text" id="barra-busqueda" placeholder="¿Que estás buscando? :3" style="width: 11.5rem;margin-bottom: 0.2rem; padding-right: 10px; border: 2px solid #ffffff; 
-               border-radius: 5px; padding: 4px 30px 4px 2px; font-size: 16px;">
+                   border-radius: 5px; padding: 4px 30px 4px 2px; font-size: 16px;">
     
                 <span id="clear-search" style="position: absolute; right: 70px; top: 50%; transform: translateY(-50%); 
-              cursor: pointer; display: none; font-size: 20px; color: #999; z-index: 2; 
-              transition: color 0.3s; width: 20px; height: 20px; text-align: center; line-height: 20px;"
+                  cursor: pointer; display: none; font-size: 20px; color: #999; z-index: 2; 
+                  transition: color 0.3s; width: 20px; height: 20px; text-align: center; line-height: 20px;"
                     onclick="clearSearch()" onmouseover="this.style.color='#3897f0'" onmouseout="this.style.color='#999'">
                     X
                 </span>
@@ -307,8 +321,16 @@
             src="https://platform-api.sharethis.com/js/sharethis.js#property=650476d13b8450001ac45ec7&amp;product=inline-share-buttons&amp;source=platform"></script>
         <!--Barra de iconos compartir End-->
     </footer>
-
-
+<script>
+// Script para abrir enlaces en una nueva pestaña mediante un selector
+document.getElementById('mi-selector').addEventListener('change', function() {
+    const url = this.value;
+    if (url) {
+        window.open(url, '_blank');
+        this.value = ''; // Vuelve a la opción por defecto
+    }
+});
+</script>
 <script>
     // Script sirve para mostrar la hora en formato de 12 horas con AM/PM en el elemento con id "datetime" dentro del header
     // create a function to update the date and time

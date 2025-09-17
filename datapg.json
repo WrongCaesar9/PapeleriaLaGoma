@@ -138,6 +138,13 @@
             "enlace": "https://www.mediafire.com/file/nxptpg6q8sxf0n8/ADB.SUB3D.DES.12.1.AP.ZNT.rar/file",
             "modelo": "Modelado y Diseño 3D"
         },
+        {
+            "nombre": "COLMAP workflow<br><a  target=_blank href=https://github.com/colmap/colmap/releases/tag/3.12.3>Colmap</a><br><a  target=_blank href=https://ffmpeg.org/>Ffmpeg</a><br><a  target=_blank href=https://gist.github.com/polyfjord/4ed7e8988bdb9674145f1c270440200d>Batch reconstruct</a><br><a  target=_blank href=https://github.com/SBCV/Blender-Addon-Photogrammetry-Importer>BlenderAddonPhotogrammetryImporter</a><br>Video de instalación y uso en el enlace de abajo",
+            "img": "impg/colmap.png",
+            "enlace": "https://www.youtube.com/watch?v=xx85eyN1Xc0",
+            "modelo": "Modelado y Diseño 3D"
+        },
+
 
 
 
