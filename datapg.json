@@ -700,6 +700,12 @@
             "modelo": "OS & Burners"
         },            
         {
+            "nombre": "Tails OS<br>Live OS para preservar tu privacidad y anonimato",
+            "img": "impg/tailsos.png",
+            "enlace": "https://tails.net/install/index.es.html",
+            "modelo": "OS & Burners"
+        },            
+        {
             "nombre": "TOMEX OS V2.63<br>W10/11",
             "img": "impg/tomexos.png",
             "enlace": "https://www.mediafire.com/file/2ne9gn67l6kgto8/TomexOS+V2.2.iso/fil",
@@ -883,6 +889,12 @@
             "img": "impg/leonardoai.png",
             "enlace": "https://app.leonardo.ai/",
             "modelo": "IA"
+        },                
+        {
+            "nombre": "Lovart<br>Generador de imagenes por IA",
+            "img": "impg/lovart.png",
+            "enlace": "https://www.lovart.ai/fr",
+            "modelo": "Otros"
         },
         {
             "nombre": "DeepFiction AI<br>Generador de historias con imagenes/videos por IA",
@@ -1564,6 +1576,24 @@
             "nombre": "Lucid<br>Puedes crear diagramas de flujo",
             "img": "impg/lucid.png",
             "enlace": "https://lucid.app/",
+            "modelo": "Otros"
+        },                
+        {
+            "nombre": "Noiiz<br>Banco de sonidos",
+            "img": "impg/noiiz.png",
+            "enlace": "https://www.noiiz.com/sounds",
+            "modelo": "Otros"
+        },                
+        {
+            "nombre": "Splice Sounds<br>Banco de sonidos por créditos mensuales",
+            "img": "impg/splicesounds.png",
+            "enlace": "https://splice.com/sounds",
+            "modelo": "Otros"
+        },                
+        {
+            "nombre": "Kubernetes",
+            "img": "impg/kubernetes.png",
+            "enlace": "https://kubernetes.io/releases/download/",
             "modelo": "Otros"
         },
 
