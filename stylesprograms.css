@@ -643,3 +643,42 @@ h1 {
   align-items: center;
 
 }
+
+
+/* Estilos de los proyectos */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.project {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.project img, .project video {
+  width: 100%;
+  border-bottom: 4px solid #646363;
+  border-radius: 8px;
+  border-style: dotted;
+}
+
+.project h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #fff9f9;
+  align-items: stretch;
+}
+
+.project p {
+  color: #f7f4f4;
+  font-size: 16px;
+  margin-bottom: 10px;
+  align-items: stretch;
+}
