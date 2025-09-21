@@ -17,12 +17,6 @@
             "img": "impg/houdini.png",
             "enlace": "https://drive.google.com/file/d/1GhUq_M8gIFyu3x9VFB609Sm6H5XHwUaK/view?usp=sharing",
             "modelo": "Modelado y Diseño 3D"
-        },
-        {
-            "nombre": "CURSO de HOUDINI<br>SOLO ADENTRATE Y DISFRUTA",
-            "img": "impg/houdini.png",
-            "enlace": "https://drive.google.com/drive/folders/12eOIgD_T1AbDYJb8k3BO23HFczTA3Kuw?usp=sharing",
-            "modelo": "Modelado y Diseño 3D"
         },        
         {
             "nombre": "Blender Studio<br>Aqui encuentras rigs y modelos 3D hechos por blender :D",
@@ -124,6 +118,12 @@
             "nombre": "Houdini Varias VERSIONES<br>Debes crear una cuenta que será para SideFX y te dará acceso a los daily buils",
             "img": "impg/houdini.png",
             "enlace": "https://www.sidefx.com/download/daily-builds/?production=true&python3=true",
+            "modelo": "Modelado y Diseño 3D"
+        },
+        {
+            "nombre": "CURSO de HOUDINI<br>SOLO ADENTRATE Y DISFRUTA",
+            "img": "impg/houdini.png",
+            "enlace": "https://drive.google.com/drive/folders/12eOIgD_T1AbDYJb8k3BO23HFczTA3Kuw?usp=sharing",
             "modelo": "Modelado y Diseño 3D"
         },
         {
@@ -343,9 +343,15 @@
             "modelo": "Edición"
         },
         {
-            "nombre": "Ableton<br>software de creación musical (DAW)Espera a que se genere un nuevo link<br>contraseña: elenemigos.com",
+            "nombre": "Ableton Live<br>software de creación musical (DAW)Espera a que se genere un nuevo link<br>contraseña: elenemigos.com",
             "img": "impg/abletondoce.png",
             "enlace": "https://download856.mediafire.com/w6nmftp3ybvg6kyv3fcCvX587KY9y5PRuTiwKLrBlWJVvtNvUWCBFzpSP7L259Y7x3mwVvpGBjOI-7s8RvrmhdAp92gOiT969zgathSrUDyMBQlc7EPyEo1-hMuUXIudZTFkBYomjVfckgVbuyteuNeMLl5Y_pVYiL4GAP9vOSgVfHE/4zeqxcs2co36lyi/Ableton+Live+12+Suite+v12.1.10_ELENEMIGOS.rar",
+            "modelo": "Edición"
+        },
+        {
+            "nombre": "Serum2<br>Popular sintetizador virtual Xfer Records Serum<br>Funciona en FL Studio y Ableton Live",
+            "img": "impg/serumdos.png",
+            "enlace": "https://www.mediafire.com/file/kvyl18ws3b0nc2z/Xfer+Records+Serum+v2.0.18+WIN-VR.zip",
             "modelo": "Edición"
         },
 
