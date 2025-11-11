@@ -648,8 +648,13 @@
             "img": "impg/espwifi.png",
             "enlace": "https://drive.google.com/drive/folders/1degx7So3FDlYn9Pk8Smxtrzm0gHCJz0x?usp=sharing",
             "modelo": "Electrónica y Robots"
+        },        
+        {
+            "nombre": "Bottango<br>software gratuito y de código abierto diseñado para animar robots, animatrónicos y otros proyectos de hardware de forma visual y sin necesidad de programar", 
+            "img": "impg/bottango.png",
+            "enlace": "https://www.bottango.com/#download",
+            "modelo": "Electrónica y Robots"
         },
-        
         
         
 
