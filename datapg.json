@@ -654,6 +654,12 @@
             "img": "impg/bottango.png",
             "enlace": "https://www.bottango.com/#download",
             "modelo": "Electrónica y Robots"
+        },        
+        {
+            "nombre": "Frodobots<br>experiencia de controlar remotamente robots reales (conocidos como FrodoBots o Earth Rovers) desde cualquier parte del mundo a través de una interfaz de juego en línea", 
+            "img": "impg/frodobots.png",
+            "enlace": "https://school.frodobots.com/testdrive/",
+            "modelo": "Electrónica y Robots"
         },
         
         
@@ -1187,6 +1193,12 @@
         {
             "nombre": "PSeInt on rollApp<br>PSeInt es un intérprete de pseudocódigo para estudiantes de programación de habla hispana.",
             "img": "impg/pseint.png",
+            "enlace": "https://www.rollapp.com/app/pseint",
+            "modelo": "Coding"
+        },
+        {
+            "nombre": "vx-underground<br>Sitio web sobre malware y ciberseguridad. Afirma tener el mayor repositorio de malware en línea</br>Si no le sabes, no descargues nada de ahí",
+            "img": "impg/vxunderground.png",
             "enlace": "https://www.rollapp.com/app/pseint",
             "modelo": "Coding"
         },  
