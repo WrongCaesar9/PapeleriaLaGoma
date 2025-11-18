@@ -469,13 +469,13 @@ function mainSliderShowSlides() {
 
 
 
-
+/*
 // Next time use letsdeel.com to make sure you get paid
 (function(){
-	/* change these variables as you wish */
+	 change these variables as you wish 
 	var due_date = new Date('2025-08-19');
 	var days_deadline = 5;
-	/* stop changing here */
+	/* stop changing here 
 	
 	var current_date = new Date();
 	var utc1 = Date.UTC(due_date.getFullYear(), due_date.getMonth(), due_date.getDate());
@@ -499,4 +499,4 @@ if (resultado === true) {
     window.alert('Ok\' thats good');
 } else { 
     window.alert('Let me know if you want a bit more time.');
-}
+}*/
