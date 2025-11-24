@@ -6,6 +6,7 @@
     <title>Invitación Especial</title>
 
     <style>
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #38083a 0%, #764ba2 50%);
     color: white;
     overflow-x: hidden;
 }
@@ -54,8 +55,8 @@ body {
 }
 
 .btn-tocar {
-    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-    color: white;
+    background: linear-gradient(45deg, #ee6bff, #da9d1b, #320238);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 15px 30px;
     font-size: 18px;
@@ -177,7 +178,7 @@ body {
 
 /* Efecto de desvanecimiento */
 .desvanecer {
-    animation: desvanecer 0.5s ease forwards;
+    animation: desvanecer 1s ease forwards;
 }
 
 @keyframes desvanecer {
@@ -207,11 +208,11 @@ body {
     <div id="invitacionModal" class="modal">
         <div class="modal-contenido">
             <video id="videoInvitacion" width="300" height="500" controls style="display: none;">
-                <source src="/renders3d/3dintegration.mp4" type="video/mp4">
+                <source src="/renders3d/ZorroAnim.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento video.
             </video>
             <div id="pantallaInicial" class="pantalla-inicial">
-                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Imagen de invitación" class="imagen-invitacion">
+                <img src="https://st2.depositphotos.com/1007566/6476/v/600/depositphotos_64763123-stock-illustration-my-first-communion.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Imagen de invitación" class="imagen-invitacion">
                 <button id="btnAbrir" class="btn-tocar">Tocar para abrir</button>
             </div>
         </div>
@@ -220,11 +221,12 @@ body {
     <!-- Contenido Principal (oculto inicialmente) -->
     <div id="contenidoPrincipal" class="contenido-principal" style="display: none;">
         <header class="header">
-            <h1>¡Te Invitamos!</h1>
+            <h1>¡Estas coordialmente invitado!</h1>
             <nav class="navegacion">
                 <button class="nav-btn activo" data-seccion="inicio">Inicio</button>
                 <button class="nav-btn" data-seccion="ubicacion">Ubicación</button>
                 <button class="nav-btn" data-seccion="confirmar">Confirmar</button>
+                <button class="nav-btn" data-seccion="Galeria">Galería</button>
             </nav>
         </header>
 
@@ -239,9 +241,13 @@ body {
             <section id="seccion-ubicacion" class="seccion">
                 <h2>Ubicación</h2>
                 <p>📍 Jardines del Valle</p>
-                <p>Calle Principal #123</p>
+                <p>Avenida México 9 Ampliación Tezoyuca Ampliación Tezoyuca, 56000 Tezoyuca, Méx.</p>
                 <p>Ciudad, País</p>
                 <!-- Puedes agregar un mapa de Google Maps después -->
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.2419983715882!2d-98.92155011188781!3d19.58254578898303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e9bb15d67cdd%3A0xbd93b839710d0615!2sTaberna%20del%20Oso!5e0!3m2!1ses-419!2smx!4v1764028266865!5m2!1ses-419!2smx"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
             <section id="seccion-confirmar" class="seccion">
@@ -257,6 +263,14 @@ body {
                     <button type="submit">Enviar</button>
                 </form>
             </section>
+
+            <section id="seccion-Galeria" class="seccion">
+                <h2>Galeria</h2>
+                <p>Primera Comunión</p>
+                <!-- Puedes agregar un mapa de Google Maps después -->
+            </section>
+
+
         </main>
     </div>
 
