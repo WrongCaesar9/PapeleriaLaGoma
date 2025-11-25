@@ -69,16 +69,18 @@ body {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
 }
-/* Meta Countdown Pantalla Principal */
+/*Countdown Pantalla Principal */
     .countdown {
       margin-top: 5%;
-      display: flex;
+      align-items: center;
+      display:inline-flex;
       gap: 10px;
       justify-content: center;
-      margin-bottom: 12px
+      margin-bottom: 12px;
     }
 
     .countdown .item {
+      
       background: rgba(255, 255, 255, 0.03);
       padding: 10px;
       border-radius: 8px;
@@ -87,6 +89,7 @@ body {
     }
 
     .countdown .item .num {
+      
       font-weight: 700;
       font-size: 20px
     }
@@ -225,39 +228,19 @@ body {
 <body>
     <!-- Modal/Pantalla Inicial -->
     <div id="invitacionModal" class="modal">
-        <div class="modal-contenido">
-            <video id="videoInvitacion" width="300" height="500" controls style="display: none;">
-                <source src="/renders3d/ZorroAnim.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento video.
-            </video>
-            <div id="pantallaInicial" class="pantalla-inicial">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI1N-YLC1uW3FKs2el3rv6lmWZt4AuBL3z0Nw6t02-f0Oot6o6hn-pBrYfogw-0WPtVs&usqp=CAU?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Imagen de invitación" class="imagen-invitacion">
-                <button id="btnAbrir" class="btn-tocar">Tocar para abrir</button>
-
-
-        <div class="countdown" id="countdown">
-          <div class="item">
-            <div class="num" id="days">00</div>
-            <div class="lbl">Días</div>
-          </div>
-          <div class="item">
-            <div class="num" id="hours">00</div>
-            <div class="lbl">Horas</div>
-          </div>
-          <div class="item">
-            <div class="num" id="mins">00</div>
-            <div class="lbl">Min</div>
-          </div>
-          <div class="item">
-            <div class="num" id="secs">00</div>
-            <div class="lbl">Seg</div>
-          </div>
-          <p><span id="dateText">--</span></p>
+      <div class="modal-contenido">
+        <video id="videoInvitacion" width="300" height="500" controls style="display: none;">
+          <source src="/renders3d/ZorroAnim.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento video.
+        </video>
+        <div id="pantallaInicial" class="pantalla-inicial">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI1N-YLC1uW3FKs2el3rv6lmWZt4AuBL3z0Nw6t02-f0Oot6o6hn-pBrYfogw-0WPtVs&usqp=CAU?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            alt="Imagen de invitación" class="imagen-invitacion">
+          <button id="btnAbrir" class="btn-tocar">Tocar para abrir</button>
         </div>
-
-                
-            </div>
-        </div>
+        
+      </div>
     </div>
 
     <!-- Contenido Principal (oculto inicialmente) -->
