@@ -1,6 +1,7 @@
 /* Calcula la altura exacta que necesita compensación */
 #productos {
   padding-top: 14rem;
+
 }
 
 #videos {
@@ -269,6 +270,7 @@ footer {
   font-family: Arial;
   font-size: 0.7rem;
   align-items: stretch;
+
   /*  obliga a las tarjetas a medir lo mismo */
 
 
@@ -681,4 +683,24 @@ h1 {
   font-size: 16px;
   margin-bottom: 10px;
   align-items: stretch;
+}
+
+@keyframes appear {
+  from {
+    
+    clip-path: inset(10% 10% 0 0);
+    transform: translatex(-200px);
+    }
+  to {
+  
+  clip-path: inset(0 0 0 0);
+  transform: translatex(0px);
+    }
+}
+
+
+.productos{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 22%;
 }
