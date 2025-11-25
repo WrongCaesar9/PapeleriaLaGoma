@@ -388,14 +388,321 @@
             </section>
 
             <section id="seccion-Galeria" class="seccion">
-                <h2>Galeria</h2>
-                <p>Primera Comunión</p>
-                <!-- Puedes agregar un mapa de Google Maps después -->
+                <h2>Galería</h2>
+                <p>Mis XV años</p>
+                <!-- Reemplazo para $SELECTION_PLACEHOLDER$: inicializador que reconstruye el carrusel para un loop perfecto -->
+                <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    // Esperar un poco para asegurarnos que el markup original ya esté presente
+                    setTimeout(() => {
+                        const gallery = document.getElementById('carouselGallery');
+                        if (!gallery) return;
+
+                        // Leer imágenes actuales (si existen) para reconstruir el carrusel
+                        const existingImgs = Array.from(gallery.querySelectorAll('.carousel-slide img'));
+                        if (existingImgs.length === 0) return;
+
+                        const imgs = existingImgs.map(img => ({ src: img.src, alt: img.alt || '' }));
+                        const n = imgs.length;
+
+                        // Construir nuevo HTML: clonamos primero y último para loop "seamless"
+                        const trackSlides = [];
+                        // clon último
+                        trackSlides.push(`<div class="carousel-slide"><img src="${imgs[n-1].src}" alt="${imgs[n-1].alt}"></div>`);
+                        // slides reales
+                        imgs.forEach(i => trackSlides.push(`<div class="carousel-slide"><img src="${i.src}" alt="${i.alt}"></div>`));
+                        // clon primero
+                        trackSlides.push(`<div class="carousel-slide"><img src="${imgs[0].src}" alt="${imgs[0].alt}"></div>`);
+
+                        gallery.innerHTML = `
+                            <div class="carousel-track">
+                                ${trackSlides.join('')}
+                            </div>
+
+                            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                            <button class="carousel-btn next" aria-label="Siguiente">›</button>
+
+                            <div class="carousel-dots" aria-hidden="false"></div>
+                        `;
+
+                        // Inicializar comportamiento con loop seamless
+                        const track = gallery.querySelector('.carousel-track');
+                        const slides = Array.from(gallery.querySelectorAll('.carousel-slide'));
+                        const btnPrev = gallery.querySelector('.carousel-btn.prev');
+                        const btnNext = gallery.querySelector('.carousel-btn.next');
+                        const dotsContainer = gallery.querySelector('.carousel-dots');
+
+                        let index = 0; // índice lógico (0..n-1) de las slides reales
+                        let isTransitioning = false;
+                        let autoplayId = null;
+
+                        // Crear dots para n slides reales
+                        for (let i = 0; i < n; i++) {
+                            const d = document.createElement('button');
+                            d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                            d.dataset.index = i;
+                            d.setAttribute('aria-label', 'Ir a imagen ' + (i + 1));
+                            dotsContainer.appendChild(d);
+                        }
+                        const dots = Array.from(dotsContainer.children);
+
+                        // Ajustes iniciales: mover el track para mostrar la primera slide real (índice 1 en DOM por clon previo)
+                        function setTransition(enabled) {
+                            track.style.transition = enabled ? 'transform 0.5s ease' : 'none';
+                        }
+                        function updateTransform() {
+                            // track index = index + 1 (por clon al inicio)
+                            track.style.transform = `translateX(-${(index + 1) * 100}%)`;
+                            dots.forEach((dot, dIdx) => dot.classList.toggle('active', dIdx === index));
+                        }
+
+                        // Control de finalización de transición para resetear cuando saltamos a clon
+                        track.addEventListener('transitionstart', () => { isTransitioning = true; });
+                        track.addEventListener('transitionend', () => {
+                            isTransitioning = false;
+                            // Si estuvimos en el clon al principio (index === -1 -> último real)
+                            if (index < 0) {
+                                setTransition(false);
+                                index = n - 1;
+                                updateTransform();
+                                // forzar reflow antes de reactivar transición
+                                void track.offsetWidth;
+                                setTransition(true);
+                            } else if (index >= n) {
+                                setTransition(false);
+                                index = 0;
+                                updateTransform();
+                                void track.offsetWidth;
+                                setTransition(true);
+                            }
+                        });
+
+                        function goTo(i) {
+                            if (isTransitioning) return;
+                            index = i;
+                            // permitimos índices fuera de 0..n-1 para activar el efecto de clon (p.ej -1 o n)
+                            setTransition(true);
+                            updateTransform();
+                        }
+
+                        btnPrev.addEventListener('click', () => goTo(index - 1));
+                        btnNext.addEventListener('click', () => goTo(index + 1));
+
+                        dots.forEach(dot => dot.addEventListener('click', () => goTo(Number(dot.dataset.index))));
+
+                        // Autoplay
+                        function startAutoplay() {
+                            stopAutoplay();
+                            autoplayId = setInterval(() => goTo(index + 1), 4000);
+                        }
+                        function stopAutoplay() {
+                            if (autoplayId) { clearInterval(autoplayId); autoplayId = null; }
+                        }
+                        gallery.addEventListener('mouseenter', stopAutoplay);
+                        gallery.addEventListener('mouseleave', startAutoplay);
+
+                        // Touch (swipe)
+                        let startX = 0, moved = false;
+                        gallery.addEventListener('touchstart', e => {
+                            stopAutoplay();
+                            startX = e.touches[0].clientX;
+                            moved = false;
+                        }, { passive: true });
+                        gallery.addEventListener('touchmove', e => {
+                            const dx = e.touches[0].clientX - startX;
+                            if (Math.abs(dx) > 10) moved = true;
+                        }, { passive: true });
+                        gallery.addEventListener('touchend', e => {
+                            if (!moved) { startAutoplay(); return; }
+                            const endX = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientX : startX;
+                            const dx = endX - startX;
+                            if (dx > 40) goTo(index - 1);
+                            else if (dx < -40) goTo(index + 1);
+                            startAutoplay();
+                        });
+
+                        // Inicializar estado
+                        setTransition(false);
+                        updateTransform(); // coloca en primer slide real
+                        void track.offsetWidth; // reflow
+                        setTransition(true);
+                        startAutoplay();
+
+                        // Reajustar en resize para mantener el cálculo si es necesario
+                        window.addEventListener('resize', () => {
+                            // reactivar transform basado en tamaño actual
+                            updateTransform();
+                        });
+                    }, 50);
+                });
+                </script>
+                <style>
+                /* Carousel responsive ajustable al ancho */
+                .carousel-gallery {
+                    position: relative;
+                    width: 100%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+                    margin: 16px 0;
+                }
+                .carousel-track {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                    will-change: transform;
+                }
+                .carousel-slide {
+                    min-width: 100%;
+                    flex: 0 0 100%;
+                }
+                .carousel-slide img {
+                    display: block;
+                    width: 100%;
+                    height: 380px;
+                    object-fit: cover;
+                }
+
+                /* Controls */
+                .carousel-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: rgba(255,255,255,0.15);
+                    border: none;
+                    color: white;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    backdrop-filter: blur(6px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .carousel-btn:hover { background: rgba(255,255,255,0.25); }
+                .carousel-btn.prev { left: 12px; }
+                .carousel-btn.next { right: 12px; }
+
+                /* Dots */
+                .carousel-dots {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 10px;
+                    display: flex;
+                    gap: 8px;
+                }
+                .carousel-dot {
+                    width: 10px;
+                    height: 10px;
+                    background: rgba(255,255,255,0.35);
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                .carousel-dot.active { background: rgba(255,255,255,0.95); }
+
+                /* Responsive heights */
+                @media (max-width: 768px) {
+                    .carousel-slide img { height: 260px; }
+                }
+                @media (max-width: 420px) {
+                    .carousel-slide img { height: 200px; }
+                }
+                </style>
+
+                <div class="carousel-gallery" id="carouselGallery" aria-label="Galería de fotos">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1015/1200/800" alt="Foto 1"></div>
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1016/1200/800" alt="Foto 2"></div>
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1018/1200/800" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1020/1200/800" alt="Foto 4"></div>
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1024/1200/800" alt="Foto 5"></div>
+                    </div>
+
+                    <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                    <button class="carousel-btn next" aria-label="Siguiente">›</button>
+
+                    <div class="carousel-dots" aria-hidden="false"></div>
+                </div>
+
+                <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const gallery = document.getElementById('carouselGallery');
+                    if (!gallery) return;
+
+                    const track = gallery.querySelector('.carousel-track');
+                    const slides = Array.from(gallery.querySelectorAll('.carousel-slide'));
+                    const btnPrev = gallery.querySelector('.carousel-btn.prev');
+                    const btnNext = gallery.querySelector('.carousel-btn.next');
+                    const dotsContainer = gallery.querySelector('.carousel-dots');
+
+                    let index = 0;
+                    let autoplayId = null;
+
+                    // Crear dots
+                    slides.forEach((_, i) => {
+                        const d = document.createElement('button');
+                        d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                        d.dataset.index = i;
+                        d.setAttribute('aria-label', 'Ir a imagen ' + (i+1));
+                        dotsContainer.appendChild(d);
+                    });
+                    const dots = Array.from(dotsContainer.children);
+
+                    function goTo(i) {
+                        index = (i + slides.length) % slides.length;
+                        track.style.transform = `translateX(-${index * 100}%)`;
+                        dots.forEach((dot, dIdx) => dot.classList.toggle('active', dIdx === index));
+                    }
+
+                    btnPrev.addEventListener('click', () => goTo(index - 1));
+                    btnNext.addEventListener('click', () => goTo(index + 1));
+
+                    dots.forEach(dot => dot.addEventListener('click', () => goTo(Number(dot.dataset.index))));
+
+                    // Autoplay
+                    function startAutoplay() {
+                        stopAutoplay();
+                        autoplayId = setInterval(() => goTo(index + 1), 4000);
+                    }
+                    function stopAutoplay() {
+                        if (autoplayId) { clearInterval(autoplayId); autoplayId = null; }
+                    }
+                    gallery.addEventListener('mouseenter', stopAutoplay);
+                    gallery.addEventListener('mouseleave', startAutoplay);
+
+                    // Touch (swipe)
+                    let startX = 0, moved = false;
+                    gallery.addEventListener('touchstart', e => {
+                        stopAutoplay();
+                        startX = e.touches[0].clientX;
+                        moved = false;
+                    }, {passive:true});
+                    gallery.addEventListener('touchmove', e => {
+                        const dx = e.touches[0].clientX - startX;
+                        if (Math.abs(dx) > 10) moved = true;
+                    }, {passive:true});
+                    gallery.addEventListener('touchend', e => {
+                        if (!moved) { startAutoplay(); return; }
+                        const endX = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientX : startX;
+                        const dx = endX - startX;
+                        if (dx > 40) goTo(index - 1);
+                        else if (dx < -40) goTo(index + 1);
+                        startAutoplay();
+                    });
+
+                    // Iniciar
+                    goTo(0);
+                    startAutoplay();
+
+                    // Mejora: recalcular transform si se cambia el tamaño (opcional)
+                    window.addEventListener('resize', () => goTo(index));
+                });
+                </script>
+
             </section>
-
-
         </main>
-
     </div>
 
     <script>
