@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,259 +9,306 @@
     <link rel="icon" type="image/ico" href="https://lagoma.netlify.app/logos/logooro.ico" sizes="192x192">
     <link rel="shortcut icon" href="/logos/xv_ico.ico">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 
 
     <style>
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #38083a 0%, #764ba2 50%);
-    color: rgb(255, 255, 255);
-    overflow-x: hidden;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #38083a 0%, #764ba2 50%);
+            color: rgb(255, 255, 255);
+            overflow-x: hidden;
+        }
 
-/* Modal/Pantalla Inicial */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(64, 10, 84, 1) 0%, rgba(187, 122, 207, 1) 20%, rgba(138, 59, 156, 1) 40%, rgba(205, 129, 222, 1) 60%, rgba(159, 62, 181, 1) 80%, rgba(190, 93, 222, 1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    transition: opacity 0.5s ease;
-}
 
-.modal-contenido {
-    text-align: center;
-    animation: aparecer 1s ease;
-}
+        /* Custom controls */
+        .controls {
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.48));
+            padding: 8px;
+            border-radius: 10px
+        }
 
-@keyframes aparecer {
-    from { opacity: 0; transform: scale(0.8); }
-    to { opacity: 1; transform: scale(1); }
-}
 
-.imagen-invitacion {
-    width: 300px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
+        /* Modal/Pantalla Inicial */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(64, 10, 84, 1) 0%, rgba(187, 122, 207, 1) 20%, rgba(138, 59, 156, 1) 40%, rgba(205, 129, 222, 1) 60%, rgba(159, 62, 181, 1) 80%, rgba(190, 93, 222, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
 
-.btn-tocar {
-    background: linear-gradient(45deg,rgba(8, 8, 8, 0.479));
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 15px 30px;
-    font-size: 20px;
-      font-family: "Cormorant Upright", serif;
-  font-style: oblique;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0px 15px 20px rgba(255, 149, 108, 0.4);
-}
+        .modal-contenido {
+            text-align: center;
+            animation: aparecer 1s ease;
+        }
 
-.btn-tocar:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
-}
-/*Countdown Pantalla Principal */
-    .countdown {
-      margin-top: 5%;
-      align-items: center;
-      display:inline-flex;
-      gap: 10px;
-      justify-content: center;
-      margin-bottom: 12px;
-    }
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0.1);
+            }
 
-    .countdown .item {
-      
-      background: rgba(255, 255, 255, 0.03);
-      padding: 10px;
-      border-radius: 8px;
-      text-align: center;
-      min-width: 64px
-    }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-    .countdown .item .num {
-      
-      font-weight: 700;
-      font-size: 20px
-    }
-/* Contenido Principal */
-.contenido-principal {
-    min-height: 100vh;
-    padding: 20px;
-}
-.contenido-principal {
-    text-align: center;
-    animation: aparecer-principal 1.5s ease;
-}
+        .imagen-invitacion {
+            /*300x500*/
+            width: 300px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
 
-@keyframes aparecer-principal {
-    from { opacity: 0; transform: scale(0.5); }
-    to { opacity: 1; transform: scale(1); }
-}
-.header {
-    text-align: center;
-    margin-bottom: 40px;
-}
+        .btn-tocar {
+            background: linear-gradient(45deg, rgba(8, 8, 8, 0.479));
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-family: "Cormorant Upright", serif;
+            font-style: oblique;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 15px 20px rgba(255, 149, 108, 0.4);
+        }
 
-.header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
+        .btn-tocar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
+        }
 
-.navegacion {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
-}
+        /*Countdown Pantalla Principal */
+        .countdown {
+            margin-top: 5%;
+            align-items: center;
+            display: inline-flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
 
-.nav-btn {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-}
+        .countdown .item {
 
-.nav-btn.activo,
-.nav-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.5);
-}
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 64px
+        }
 
-/* Secciones */
-.secciones {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-}
+        .countdown .item .num {
 
-.seccion {
-    display: none;
-    animation: deslizar 0.5s ease;
-}
+            font-weight: 700;
+            font-size: 20px
+        }
 
-@keyframes deslizar {
-    from { opacity: 0; transform: translateX(20px); }
-    to { opacity: 1; transform: translateX(0); }
-}
+        /* Contenido Principal */
+        .contenido-principal {
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-.seccion.activa {
-    display: block;
-}
+        .contenido-principal {
+            text-align: center;
+            animation: aparecer-principal 1.5s ease;
+        }
 
-.seccion h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
+        @keyframes aparecer-principal {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
 
-.seccion p {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-/* Formulario */
-.formulario-confirmacion {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-}
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-.formulario-confirmacion input,
-.formulario-confirmacion select,
-.formulario-confirmacion button {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-}
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
 
-.formulario-confirmacion input,
-.formulario-confirmacion select {
-    background: rgba(255, 255, 255, 0.9);
-}
+        .navegacion {
+            display: inline;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
 
-.formulario-confirmacion button {
-    background: linear-gradient(45deg, #4ecdc4, #44a08d);
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
 
-.formulario-confirmacion button:hover {
-    transform: translateY(-2px);
-}
+        .nav-btn.activo,
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
 
-/* Efecto de desvanecimiento */
-.desvanecer {
-    animation: desvanecer 1s ease forwards;
-}
+        /* Secciones */
+        .secciones {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-@keyframes desvanecer {
-    to { opacity: 0; }
-}
+        .seccion {
+            display: none;
+            animation: deslizar 0.5s ease;
+        }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .imagen-invitacion {
-        width: 250px;
-        height: 400px;
-    }
-    
-    .navegacion {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .header h1 {
-        font-size: 2rem;
-    }
-}
+        @keyframes deslizar {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .seccion.activa {
+            display: block;
+        }
+
+        .seccion h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .seccion p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Formulario */
+        .formulario-confirmacion {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+        }
+
+        .formulario-confirmacion input,
+        .formulario-confirmacion select,
+        .formulario-confirmacion button {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .formulario-confirmacion input,
+        .formulario-confirmacion select {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .formulario-confirmacion button {
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .formulario-confirmacion button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Efecto de desvanecimiento */
+        .desvanecer {
+            animation: desvanecer 1s ease forwards;
+        }
+
+        @keyframes desvanecer {
+            to {
+                opacity: 0;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .imagen-invitacion {
+                width: 250px;
+                height: 400px;
+            }
+
+            .navegacion {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- Modal/Pantalla Inicial -->
     <div id="invitacionModal" class="modal">
-      <div class="modal-contenido">
-        <video id="videoInvitacion" width="300" height="500" controls style="display: none;">
-          <source src="/renders3d/ZorroAnim.mp4" type="video/mp4">
-          Tu navegador no soporta el elemento video.
-        </video>
-        <div id="pantallaInicial" class="pantalla-inicial">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI1N-YLC1uW3FKs2el3rv6lmWZt4AuBL3z0Nw6t02-f0Oot6o6hn-pBrYfogw-0WPtVs&usqp=CAU?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-            alt="Imagen de invitación" class="imagen-invitacion">
-          <button id="btnAbrir" class="btn-tocar">Tocar para abrir</button>
+        <div class="modal-contenido">
+            <video id="videoInvitacion" width="250" height="500" controls style="display: none;">
+                <source src="/renders3d/ZorroAnim.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento video.
+            </video>
+            <div id="pantallaInicial" class="pantalla-inicial">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI1N-YLC1uW3FKs2el3rv6lmWZt4AuBL3z0Nw6t02-f0Oot6o6hn-pBrYfogw-0WPtVs&usqp=CAU?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    alt="Imagen de invitación" class="imagen-invitacion">
+                <div>
+                    <button id="btnAbrir" class="btn-tocar">Tocar para abrir</button>
+                </div>
+            </div>
+
         </div>
-        
-      </div>
     </div>
 
     <!-- Contenido Principal (oculto inicialmente) -->
@@ -283,38 +331,38 @@ body {
                 <p><strong>Fecha:</strong> 15 de Diciembre, 2024</p>
                 <p><strong>Hora:</strong> 7:00 PM</p>
 
-        <center>
-            <div class="countdown" id="countdown">
-                <div class="item">
-                    <div class="num" id="days">00</div>
-                    <div class="lbl">Días</div>
-                </div>
-                <div class="item">
-                    <div class="num" id="hours">00</div>
-                    <div class="lbl">Horas</div>
-                </div>
-                <div class="item">
-                    <div class="num" id="mins">00</div>
-                    <div class="lbl">Min</div>
-                </div>
-                <div class="item">
-                    <div class="num" id="secs">00</div>
-                    <div class="lbl">Seg</div>
-                </div>
-            </div>
-        </center>
-        <center>
-            <p><span id="dateText">--</span></p>
-        </center>
+                <center>
+                    <div class="countdown" id="countdown">
+                        <div class="item">
+                            <div class="num" id="days">00</div>
+                            <div class="lbl">Días</div>
+                        </div>
+                        <div class="item">
+                            <div class="num" id="hours">00</div>
+                            <div class="lbl">Horas</div>
+                        </div>
+                        <div class="item">
+                            <div class="num" id="mins">00</div>
+                            <div class="lbl">Min</div>
+                        </div>
+                        <div class="item">
+                            <div class="num" id="secs">00</div>
+                            <div class="lbl">Seg</div>
+                        </div>
+                    </div>
+                </center>
+                <center>
+                    <p><span id="dateText">--</span></p>
+                </center>
 
 
             </section>
 
             <section id="seccion-ubicacion" class="seccion">
                 <h2>Ubicación</h2>
-                <p>📍 Jardines del Valle</p>
-                <p>Avenida México 9 Ampliación Tezoyuca Ampliación Tezoyuca, 56000 Tezoyuca, Méx.</p>
-                <p>Ciudad, País</p>
+                <p>📍 A un costado de Taberna del Oso</p>
+                <p>Avenida México 9 Ampliación Tezoyuca Ampliación Tezoyuca, C.P. 56000</p>
+                <p>Tezoyuca, Estado de México</p>
                 <!-- Puedes agregar un mapa de Google Maps después -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.2419983715882!2d-98.92155011188781!3d19.58254578898303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e9bb15d67cdd%3A0xbd93b839710d0615!2sTaberna%20del%20Oso!5e0!3m2!1ses-419!2smx!4v1764028266865!5m2!1ses-419!2smx"
@@ -325,16 +373,18 @@ body {
 
             <section id="seccion-confirmar" class="seccion">
                 <h2>Confirma tu Asistencia</h2>
-                <form class="formulario-confirmacion">
-                    <input type="text" placeholder="Tu nombre" required>
-                    <input type="email" placeholder="Tu email" required>
-                    <select>
-                        <option value="">¿Asistirás?</option>
-                        <option value="si">¡Sí, estaré ahí!</option>
-                        <option value="no">Lo siento, no podré asistir</option>
-                    </select>
-                    <button type="submit">Enviar</button>
-                </form>
+                <center>
+                    <form class="formulario-confirmacion">
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu email" required>
+                        <select>
+                            <option value="">¿Asistirás?</option>
+                            <option value="si">¡Sí, estaré ahí!</option>
+                            <option value="no">Lo siento, no podré asistir</option>
+                        </select>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </center>
             </section>
 
             <section id="seccion-Galeria" class="seccion">
@@ -345,118 +395,120 @@ body {
 
 
         </main>
+
     </div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-    // Elementos principales
-    const modal = document.getElementById('invitacionModal');
-    const contenidoPrincipal = document.getElementById('contenidoPrincipal');
-    const btnAbrir = document.getElementById('btnAbrir');
-    const video = document.getElementById('videoInvitacion');
-    const pantallaInicial = document.getElementById('pantallaInicial');
-    
-    // Elementos de navegación
-    const navBtns = document.querySelectorAll('.nav-btn');
-    const secciones = document.querySelectorAll('.seccion');
+        document.addEventListener('DOMContentLoaded', function () {
+            // Elementos principales
+            const modal = document.getElementById('invitacionModal');
+            const contenidoPrincipal = document.getElementById('contenidoPrincipal');
+            const btnAbrir = document.getElementById('btnAbrir');
+            const video = document.getElementById('videoInvitacion');
+            const pantallaInicial = document.getElementById('pantallaInicial');
 
-    // 1. Manejar la apertura de la invitación
-    btnAbrir.addEventListener('click', function() {
-        // Ocultar la pantalla inicial y mostrar el video
-        pantallaInicial.style.display = 'none';
-        video.style.display = 'block';
-        video.play();
-        
-        // Cuando el video termine, mostrar el contenido principal
-        video.onended = function() {
-            // Efecto de desvanecimiento
-            modal.classList.add('desvanecer');
-            
-            // Después de la animación, ocultar modal y mostrar contenido
-            setTimeout(function() {
-                modal.style.display = 'none';
-                contenidoPrincipal.style.display = 'block';
-                
-                // Pequeño retraso para la animación de entrada del contenido
-                setTimeout(function() {
-                    contenidoPrincipal.style.opacity = '1';
-                }, 50);
-            }, 500);
-        };
-    });
+            // Elementos de navegación
+            const navBtns = document.querySelectorAll('.nav-btn');
+            const secciones = document.querySelectorAll('.seccion');
 
-    // 2. Navegación entre secciones
-    navBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const seccionObjetivo = this.getAttribute('data-seccion');
-            
-            // Actualizar botones activos
-            navBtns.forEach(b => b.classList.remove('activo'));
-            this.classList.add('activo');
-            
-            // Mostrar sección correspondiente
-            secciones.forEach(seccion => {
-                seccion.classList.remove('activa');
-                if (seccion.id === `seccion-${seccionObjetivo}`) {
-                    setTimeout(() => {
-                        seccion.classList.add('activa');
-                    }, 50);
+            // 1. Manejar la apertura de la invitación
+            btnAbrir.addEventListener('click', function () {
+                // Ocultar la pantalla inicial y mostrar el video
+                pantallaInicial.style.display = 'none';
+                video.style.display = 'block';
+                video.play();
+
+                // Cuando el video termine, mostrar el contenido principal
+                video.onended = function () {
+                    // Efecto de desvanecimiento
+                    modal.classList.add('desvanecer');
+
+                    // Después de la animación, ocultar modal y mostrar contenido
+                    setTimeout(function () {
+                        modal.style.display = 'none';
+                        contenidoPrincipal.style.display = 'block';
+
+                        // Pequeño retraso para la animación de entrada del contenido
+                        setTimeout(function () {
+                            contenidoPrincipal.style.opacity = '1';
+                        }, 50);
+                    }, 500);
+                };
+            });
+
+            // 2. Navegación entre secciones
+            navBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const seccionObjetivo = this.getAttribute('data-seccion');
+
+                    // Actualizar botones activos
+                    navBtns.forEach(b => b.classList.remove('activo'));
+                    this.classList.add('activo');
+
+                    // Mostrar sección correspondiente
+                    secciones.forEach(seccion => {
+                        seccion.classList.remove('activa');
+                        if (seccion.id === `seccion-${seccionObjetivo}`) {
+                            setTimeout(() => {
+                                seccion.classList.add('activa');
+                            }, 50);
+                        }
+                    });
+                });
+            });
+
+            // 3. Manejar el envío del formulario (prevenir envío real por ahora)
+            const formulario = document.querySelector('.formulario-confirmacion');
+            if (formulario) {
+                formulario.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    alert('¡Gracias por confirmar! En una implementación real, esto enviaría los datos a un servidor.');
+                    // Aquí podrías agregar una llamada AJAX/Fetch para enviar los datos
+                });
+            }
+
+            // 4. Opcional: Permitir saltar el video con tecla Escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && modal.style.display !== 'none') {
+                    modal.style.display = 'none';
+                    contenidoPrincipal.style.display = 'block';
                 }
             });
         });
-    });
 
-    // 3. Manejar el envío del formulario (prevenir envío real por ahora)
-    const formulario = document.querySelector('.formulario-confirmacion');
-    if (formulario) {
-        formulario.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('¡Gracias por confirmar! En una implementación real, esto enviaría los datos a un servidor.');
-            // Aquí podrías agregar una llamada AJAX/Fetch para enviar los datos
-        });
-    }
 
-    // 4. Opcional: Permitir saltar el video con tecla Escape
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && modal.style.display !== 'none') {
-            modal.style.display = 'none';
-            contenidoPrincipal.style.display = 'block';
+        // -------- CONFIG ----------
+        // Cambia esto por la fecha y hora del evento (ISO 8601)
+        const eventDate = new Date('2026-01-11T15:00:00-03:00');
+        // Título/fecha de texto
+        document.getElementById('dateText').textContent = eventDate.toLocaleString();
+
+        // -------- COUNTDOWN ----------
+        const $days = document.getElementById('days');
+        const $hours = document.getElementById('hours');
+        const $mins = document.getElementById('mins');
+        const $secs = document.getElementById('secs');
+
+        function updateCountdown() {
+            const now = new Date();
+            let diff = Math.max(0, eventDate - now);
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            diff -= days * (1000 * 60 * 60 * 24);
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            diff -= hours * (1000 * 60 * 60);
+            const mins = Math.floor(diff / (1000 * 60));
+            diff -= mins * (1000 * 60);
+            const secs = Math.floor(diff / 1000);
+            $days.textContent = String(days).padStart(2, '0');
+            $hours.textContent = String(hours).padStart(2, '0');
+            $mins.textContent = String(mins).padStart(2, '0');
+            $secs.textContent = String(secs).padStart(2, '0');
         }
-    });
-});
-
-
-// -------- CONFIG ----------
-    // Cambia esto por la fecha y hora del evento (ISO 8601)
-    const eventDate = new Date('2026-01-11T15:00:00-03:00');
-    // Título/fecha de texto
-    document.getElementById('dateText').textContent = eventDate.toLocaleString();
-
-    // -------- COUNTDOWN ----------
-    const $days = document.getElementById('days');
-    const $hours = document.getElementById('hours');
-    const $mins = document.getElementById('mins');
-    const $secs = document.getElementById('secs');
-
-    function updateCountdown() {
-      const now = new Date();
-      let diff = Math.max(0, eventDate - now);
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      diff -= days * (1000 * 60 * 60 * 24);
-      const hours = Math.floor(diff / (1000 * 60 * 60));
-      diff -= hours * (1000 * 60 * 60);
-      const mins = Math.floor(diff / (1000 * 60));
-      diff -= mins * (1000 * 60);
-      const secs = Math.floor(diff / 1000);
-      $days.textContent = String(days).padStart(2, '0');
-      $hours.textContent = String(hours).padStart(2, '0');
-      $mins.textContent = String(mins).padStart(2, '0');
-      $secs.textContent = String(secs).padStart(2, '0');
-    }
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
 
 
     </script>
 </body>
+
 </html>
