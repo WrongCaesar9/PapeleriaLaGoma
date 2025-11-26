@@ -178,11 +178,12 @@
             background: rgba(255, 255, 255, 0.2);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 10px 20px;
+            padding: 10px 40px;/*20px*/
             border-radius: 25px;
             cursor: pointer;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            margin-top: 10px;
         }
 
         .nav-btn.activo,
@@ -293,13 +294,10 @@
 
         /* Estilos mínimos para los controles de audio */
         .audio-controls {
-            position: fixed;
-            left: 12px;
-            bottom: 80px;
-            /* arriba de los controles existentes */
-            display: flex;
-            gap: 8px;
-            z-index: 1200;
+        position: fixed;
+        margin-top: 10px;
+        display: flex;
+        z-index: 1200;
         }
 
         .audio-wrapper audio {
@@ -307,31 +305,20 @@
         }
 
         .audioBtns {
+            /* arriba de los controles existentes */
             background: rgba(255, 255, 255, 0.2);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 10px 15px;
+            padding: 8px;
             border-radius: 25px;
             cursor: pointer;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
         }
-
     </style>
 </head>
 
 <body>
-    <!-- Contenido Principal (oculto inicialmente) -->
-    <!-- Audio de fondo + controles (insertar aquí) -->
-    <div class="audio-wrapper" aria-hidden="false">
-        <audio id="bgAudio" src="/Archivos/Tu_estas_aqui.mp3" preload="auto" loop></audio>
-
-        <div class="audio-controls" role="region" aria-label="Controles de audio">
-            <button class="audioBtns" id="btnMute" type="button" aria-pressed="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg></button>
-            <button class="audioBtns" id="btnPause" type="button" aria-pressed="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
-        </div>
-    </div>
-
 
     <!-- Modal/Pantalla Inicial -->
     <div id="invitacionModal" class="modal">
@@ -352,6 +339,27 @@
 
     <!-- Contenido Principal (oculto inicialmente) -->
     <div id="contenidoPrincipal" class="contenido-principal" style="display: none;">
+            <!-- Contenido Principal (oculto inicialmente) -->
+    <!-- Audio de fondo + controles (insertar aquí) -->
+    <div class="audio-wrapper" aria-hidden="false">
+        <audio id="bgAudio" src="/Archivos/Tu_estas_aqui.mp3" preload="auto" loop></audio>
+
+        <div class="audio-controls" role="region" aria-label="Controles de audio">
+            <button class="audioBtns" id="btnMute" type="button" aria-pressed="false"><svg width="15" height="15"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg></button>
+            <button class="audioBtns" id="btnPause" type="button" aria-pressed="false"><svg width="15" height="15"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg></button>
+        </div>
+    </div>
+
+
+
         <header class="header">
             <h1>¡Estas coordialmente invitado!</h1>
             <nav class="navegacion">
@@ -889,58 +897,58 @@
             const contenido = document.getElementById('contenidoPrincipal');
 
             function updateButtons() {
-            // SVG para sonido activado
-            const muteIcon = audio.muted ? 
-                '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>' :
-                '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>';
-            
-            // SVG para play/pause
-            const pauseIcon = audio.paused ?
-                '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>' :
-                '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
-            
-            btnMute.innerHTML = muteIcon;
-            btnMute.setAttribute('aria-pressed', String(audio.muted));
-            btnPause.innerHTML = pauseIcon;
-            btnPause.setAttribute('aria-pressed', String(!audio.paused));
+                // SVG para sonido activado
+                const muteIcon = audio.muted ?
+                    '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>' :
+                    '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>';
+
+                // SVG para play/pause
+                const pauseIcon = audio.paused ?
+                    '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>' :
+                    '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+
+                btnMute.innerHTML = muteIcon;
+                btnMute.setAttribute('aria-pressed', String(audio.muted));
+                btnPause.innerHTML = pauseIcon;
+                btnPause.setAttribute('aria-pressed', String(!audio.paused));
             }
 
             btnMute.addEventListener('click', function () {
-            audio.muted = !audio.muted;
-            updateButtons();
+                audio.muted = !audio.muted;
+                updateButtons();
             });
 
             btnPause.addEventListener('click', function () {
-            if (audio.paused) {
-                audio.play().catch(() => {
-                audio.muted = true;
-                audio.play().catch(() => { });
-                }).finally(updateButtons);
-            } else {
-                audio.pause();
-                updateButtons();
-            }
+                if (audio.paused) {
+                    audio.play().catch(() => {
+                        audio.muted = true;
+                        audio.play().catch(() => { });
+                    }).finally(updateButtons);
+                } else {
+                    audio.pause();
+                    updateButtons();
+                }
             });
 
             if (contenido) {
-            const mo = new MutationObserver(() => {
-                const visible = window.getComputedStyle(contenido).display !== 'none';
-                if (visible) {
-                audio.play().catch(() => {
-                    audio.muted = true;
-                    audio.play().catch(() => { });
-                }).finally(updateButtons);
-                mo.disconnect();
-                }
-            });
-            mo.observe(contenido, { attributes: true, attributeFilter: ['style'] });
+                const mo = new MutationObserver(() => {
+                    const visible = window.getComputedStyle(contenido).display !== 'none';
+                    if (visible) {
+                        audio.play().catch(() => {
+                            audio.muted = true;
+                            audio.play().catch(() => { });
+                        }).finally(updateButtons);
+                        mo.disconnect();
+                    }
+                });
+                mo.observe(contenido, { attributes: true, attributeFilter: ['style'] });
 
-            if (window.getComputedStyle(contenido).display !== 'none') {
-                audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
-                mo.disconnect();
-            }
+                if (window.getComputedStyle(contenido).display !== 'none') {
+                    audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
+                    mo.disconnect();
+                }
             } else {
-            audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
+                audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
             }
         });
 
