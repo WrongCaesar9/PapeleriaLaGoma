@@ -178,7 +178,8 @@
             background: rgba(255, 255, 255, 0.2);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 10px 40px;/*20px*/
+            padding: 10px 40px;
+            /*20px*/
             border-radius: 25px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -294,10 +295,10 @@
 
         /* Estilos mínimos para los controles de audio */
         .audio-controls {
-        position: fixed;
-        margin-top: 10px;
-        display: flex;
-        z-index: 1200;
+            position: fixed;
+            margin-bottom: 1px;
+            display: flex;
+            z-index: 1200;
         }
 
         .audio-wrapper audio {
@@ -315,11 +316,73 @@
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
         }
+
+.sparkle-blink {
+    /* Combina la animación de parpadeo y la de brillo */
+    animation: 
+        blink-animation 1s steps(1, start) infinite, 
+        glow-animation 1s ease-in-out infinite alternate; 
+}
+
+/* Animación de parpadeo (cambia la opacidad bruscamente) */
+@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Animación de brillo (cambia la sombra del texto para crear un efecto neón/destello) */
+@keyframes glow-animation {
+    from {
+        /* Múltiples sombras para un brillo intenso */
+        text-shadow: 
+            0 0 10px #fff, 
+            0 0 20px #fff, 
+            0 0 30px #e60073, /* Color de brillo (ej: magenta) */
+            0 0 40px #e60073, 
+            0 0 50px #e60073, 
+            0 0 60px #e60073, 
+            0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 
+            0 0 20px #fff, 
+            0 0 30px #ff4da6, /* Color de brillo alternativo */
+            0 0 40px #ff4da6, 
+            0 0 50px #ff4da6, 
+            0 0 60px #ff4da6, 
+            0 0 70px #ff4da6, 
+            0 0 80px #ff4da6;
+    }
+}
+
+.star {
+            position: absolute;
+            background: #faf6a5; /* Color blanco para las estrellas */
+            border-radius: 50%; /* Forma de círculo */
+            opacity: 0.8;
+            /* Aplica la animación twinkle con duración y retardo variables */
+            animation-name: twinkle;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        /* Define el efecto de parpadeo/destello */
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.8; /* Visible */
+                box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff; /* Efecto glow/sparkle */
+            }
+            50% {
+                opacity: 0.1; /* Casi invisible (parpadeo) */
+                box-shadow: none;
+            }
+        }
+
     </style>
 </head>
 
 <body>
-
     <!-- Modal/Pantalla Inicial -->
     <div id="invitacionModal" class="modal">
         <div class="modal-contenido">
@@ -339,16 +402,16 @@
 
     <!-- Contenido Principal (oculto inicialmente) -->
     <div id="contenidoPrincipal" class="contenido-principal" style="display: none;">
-            <!-- Contenido Principal (oculto inicialmente) -->
-    <!-- Audio de fondo + controles (insertar aquí) -->
-    <div class="audio-wrapper" aria-hidden="false">
-        <audio id="bgAudio" src="/Archivos/Tu_estas_aqui.mp3" preload="auto" loop></audio>
+        <!-- Contenido Principal (oculto inicialmente) -->
+        <!-- Audio de fondo + controles (insertar aquí) -->
+        <div class="audio-wrapper" aria-hidden="false">
+            <audio id="bgAudio" src="/Archivos/Tu_estas_aqui.mp3" preload="auto" loop></audio>
 
-        <div class="audio-controls" role="region" aria-label="Controles de audio">
-            <button visibility: hidden class="audioBtns" id="btnMute" type="button" aria-pressed="false"></button>
-            <button class="audioBtns" id="btnPause" type="button" aria-pressed="false"></button>
+            <div class="audio-controls" role="region" aria-label="Controles de audio">
+                <button visibility: hidden class="audioBtns" id="btnMute" type="button" aria-pressed="false"></button>
+                <button class="audioBtns" id="btnPause" type="button" aria-pressed="false"></button>
+            </div>
         </div>
-    </div>
 
 
 
@@ -370,7 +433,7 @@
                 <p><strong>Fecha:</strong> 15 de Diciembre, 2024</p>
                 <p><strong>Hora:</strong> 7:00 PM</p>
 
-                <center>
+                <center class="sparkle-blink">
                     <div class="countdown" id="countdown">
                         <div class="item">
                             <div class="num" id="days">00</div>
@@ -944,7 +1007,34 @@
             }
         });
 
+        // Función para crear múltiples estrellas
+        function createStars() {
+            const numberOfStars = 100; // Ajusta la cantidad de estrellas
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
 
+                // Tamaño aleatorio
+                const size = Math.random() * 3 + 1; // Entre 1px y 4px
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+
+                // Posición aleatoria en toda la pantalla (viewport width/height)
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.top = `${Math.random() * 100}vh`;
+
+                // Duración de animación aleatoria para un parpadeo asíncrono
+                star.style.animationDuration = `${Math.random() * 2 + 1}s`; // Entre 1s y 3s
+
+                // Retraso de animación aleatorio para que no empiecen todas a la vez
+                star.style.animationDelay = `${Math.random() * 2}s`; // Entre 0s y 2s
+
+                document.body.appendChild(star);
+            }
+        }
+
+        // Ejecuta la función al cargar la página
+        createStars();
 
     </script>
 </body>
