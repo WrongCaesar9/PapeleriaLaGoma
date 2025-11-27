@@ -356,28 +356,7 @@
     }
 }
 
-.star {
-            position: absolute;
-            background: #faf6a5; /* Color blanco para las estrellas */
-            border-radius: 50%; /* Forma de círculo */
-            opacity: 0.8;
-            /* Aplica la animación twinkle con duración y retardo variables */
-            animation-name: twinkle;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
 
-        /* Define el efecto de parpadeo/destello */
-        @keyframes twinkle {
-            0%, 100% {
-                opacity: 0.8; /* Visible */
-                box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff; /* Efecto glow/sparkle */
-            }
-            50% {
-                opacity: 0.1; /* Casi invisible (parpadeo) */
-                box-shadow: none;
-            }
-        }
 
     </style>
 </head>
@@ -1007,34 +986,7 @@
             }
         });
 
-        // Función para crear múltiples estrellas
-        function createStars() {
-            const numberOfStars = 100; // Ajusta la cantidad de estrellas
-            for (let i = 0; i < numberOfStars; i++) {
-                const star = document.createElement('div');
-                star.classList.add('star');
 
-                // Tamaño aleatorio
-                const size = Math.random() * 3 + 1; // Entre 1px y 4px
-                star.style.width = `${size}px`;
-                star.style.height = `${size}px`;
-
-                // Posición aleatoria en toda la pantalla (viewport width/height)
-                star.style.left = `${Math.random() * 100}vw`;
-                star.style.top = `${Math.random() * 100}vh`;
-
-                // Duración de animación aleatoria para un parpadeo asíncrono
-                star.style.animationDuration = `${Math.random() * 2 + 1}s`; // Entre 1s y 3s
-
-                // Retraso de animación aleatorio para que no empiecen todas a la vez
-                star.style.animationDelay = `${Math.random() * 2}s`; // Entre 0s y 2s
-
-                document.body.appendChild(star);
-            }
-        }
-
-        // Ejecuta la función al cargar la página
-        createStars();
 
     </script>
 </body>
