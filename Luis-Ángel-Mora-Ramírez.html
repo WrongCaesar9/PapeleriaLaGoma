@@ -316,48 +316,6 @@
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
         }
-
-.sparkle-blink {
-    /* Combina la animación de parpadeo y la de brillo */
-    animation: 
-        blink-animation 1s steps(1, start) infinite, 
-        glow-animation 1s ease-in-out infinite alternate; 
-}
-
-/* Animación de parpadeo (cambia la opacidad bruscamente) */
-@keyframes blink-animation {
-    50% {
-        opacity: 0;
-    }
-}
-
-/* Animación de brillo (cambia la sombra del texto para crear un efecto neón/destello) */
-@keyframes glow-animation {
-    from {
-        /* Múltiples sombras para un brillo intenso */
-        text-shadow: 
-            0 0 10px #fff, 
-            0 0 20px #fff, 
-            0 0 30px #e60073, /* Color de brillo (ej: magenta) */
-            0 0 40px #e60073, 
-            0 0 50px #e60073, 
-            0 0 60px #e60073, 
-            0 0 70px #e60073;
-    }
-    to {
-        text-shadow: 
-            0 0 20px #fff, 
-            0 0 30px #ff4da6, /* Color de brillo alternativo */
-            0 0 40px #ff4da6, 
-            0 0 50px #ff4da6, 
-            0 0 60px #ff4da6, 
-            0 0 70px #ff4da6, 
-            0 0 80px #ff4da6;
-    }
-}
-
-
-
     </style>
 </head>
 
@@ -412,7 +370,7 @@
                 <p><strong>Fecha:</strong> 15 de Diciembre, 2024</p>
                 <p><strong>Hora:</strong> 7:00 PM</p>
 
-                <center class="sparkle-blink">
+                <center>
                     <div class="countdown" id="countdown">
                         <div class="item">
                             <div class="num" id="days">00</div>
