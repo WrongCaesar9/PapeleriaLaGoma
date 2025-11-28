@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 
     <!-- Favicon -->
@@ -95,7 +96,7 @@
             border: none;
             padding: 15px 30px;
             font-size: 20px;
-            font-family: "Cormorant Upright", serif;
+            font-family: "Great Vibes", cursive;
             font-style: oblique;
             border-radius: 50px;
             cursor: pointer;
@@ -231,49 +232,98 @@
             font-size: 1.1rem;
         }
 
-        /* Formulario */
-        .formulario-confirmacion {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 400px;
-        }
+        /* Estilos para las opciones de radio personalizadas */
+.opcion-asistencia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
 
-        .formulario-confirmacion input,
-        .formulario-confirmacion select,
-        .formulario-confirmacion button {
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-        }
+.opcion-asistencia label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
 
-        .formulario-confirmacion input,
-        .formulario-confirmacion select {
-            background: rgba(255, 255, 255, 0.9);
-        }
+.opcion-asistencia label:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
 
-        .formulario-confirmacion button {
-            background: linear-gradient(45deg, #4ecdc4, #44a08d);
-            color: white;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
+.opcion-asistencia input[type="radio"] {
+    display: none;
+}
 
-        .formulario-confirmacion button:hover {
-            transform: translateY(-2px);
-        }
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
 
-        /* Efecto de desvanecimiento */
-        .desvanecer {
-            animation: desvanecer 1s ease forwards;
-        }
+.opcion-asistencia input[type="radio"]:checked + .radio-custom {
+    border-color: #25D366;
+    background: #25D366;
+}
 
-        @keyframes desvanecer {
-            to {
-                opacity: 0;
-            }
-        }
+.opcion-asistencia input[type="radio"]:checked + .radio-custom::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+}
+
+.opcion-asistencia input[type="radio"]:checked ~ span:last-child {
+    color: #25D366;
+    font-weight: bold;
+}
+
+/* Botón de WhatsApp con logo */
+.btn-whatsapp {
+    background: linear-gradient(45deg, #25D366, #128C7E) !important;
+    color: white !important;
+    border: none !important;
+    padding: 15px 25px !important;
+    font-size: 17px !important;
+    border-radius: 50px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    margin-top: 15px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
+    background: linear-gradient(45deg, #25D366, #25D366) !important;
+}
+
+.btn-whatsapp:active {
+    transform: scale(1.02) !important;
+}
+
+/* Asegurar que el SVG herede los colores correctamente */
+.btn-whatsapp svg {
+    flex-shrink: 0;
+}
 
 
 
@@ -336,7 +386,7 @@
 
 
         <header class="header">
-            <h1>¡Estas coordialmente invitado!</h1>
+            <h1 style="font-family: Great Vibes, cursive;">¡XV Años!<p><br>Luis Ángel Mora Rodrígues</p></h1>
             <nav class="navegacion">
                 <button class="nav-btn activo" data-seccion="inicio">Inicio</button>
                 <button class="nav-btn" data-seccion="ubicacion">Ubicación</button>
@@ -393,21 +443,38 @@
                 </iframe>
             </section>
 
+
+
+
             <section id="seccion-confirmar" class="seccion">
-                <h2>Confirma tu Asistencia</h2>
-                <center>
-                    <form class="formulario-confirmacion">
-                        <input type="text" placeholder="Tu nombre" required>
-                        <input type="email" placeholder="Tu email" required>
-                        <select>
-                            <option value="">¿Asistirás?</option>
-                            <option value="si">¡Sí, estaré ahí!</option>
-                            <option value="no">Lo siento, no podré asistir</option>
-                        </select>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </center>
-            </section>
+    <h2>Confirma tu Asistencia</h2>
+    <center>
+    <form class="formulario-confirmacion">
+        <div class="opcion-asistencia">
+            <label>
+                <input type="radio" name="asistencia" value="si" required>
+                <span class="radio-custom"></span>
+                ¡Sí, estaré ahí! 🎉
+            </label>
+            <label>
+                <input type="radio" name="asistencia" value="no">
+                <span class="radio-custom"></span>
+                Lo siento, no podré asistir 😔
+            </label>
+            <label>
+                <input type="radio" name="asistencia" value="talvez">
+                <span class="radio-custom"></span>
+                Tal vez / No estoy seguro 🤔
+            </label>
+        </div>
+        <button type="submit" class="btn-whatsapp">
+            Enviar WhatsApp <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" fill="currentColor"/>
+    </svg>
+        </button>
+    </form></center>
+</section>
+           
 
             <section id="seccion-Galeria" class="seccion">
                 <h2>Galería</h2>
@@ -812,15 +879,52 @@
                 });
             });
 
-            // 3. Manejar el envío del formulario (prevenir envío real por ahora)
-            const formulario = document.querySelector('.formulario-confirmacion');
-            if (formulario) {
-                formulario.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    alert('¡Gracias por confirmar! En una implementación real, esto enviaría los datos a un servidor.');
-                    // Aquí podrías agregar una llamada AJAX/Fetch para enviar los datos
-                });
-            }
+            // 3. Manejar el envío del formulario a WhatsApp
+const formulario = document.querySelector('.formulario-confirmacion');
+if (formulario) {
+    formulario.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Obtener la opción seleccionada
+        const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
+        
+        if (!opcionSeleccionada) {
+            alert('Por favor, selecciona una opción de asistencia.');
+            return;
+        }
+        
+        const asistencia = opcionSeleccionada.value;
+        let mensaje = '';
+        
+        // Personalizar el mensaje según la opción
+        switch(asistencia) {
+            case 'si':
+                mensaje = '¡Hola! Confirmo que SÍ asistiré al evento. ¡Nos vemos ahí! 🎉';
+                break;
+            case 'no':
+                mensaje = 'Hola! Lamentablemente NO podré asistir al evento. ¡Mucho éxito!';
+                break;
+            case 'talvez':
+                mensaje = 'Hola! Todavía no estoy seguro si podré asistir al evento. Te confirmo más cerca de la fecha.';
+                break;
+        }
+        
+        // Agregar información del evento al mensaje (opcional)
+        mensaje += '%0A%0A*Evento:* Celebración Especial%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
+        
+        // Número de teléfono (reemplaza con el número real)
+        const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
+        
+        // Crear el enlace de WhatsApp
+        const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+        
+        // Abrir WhatsApp
+        window.open(urlWhatsApp, '_blank');
+        
+        // Opcional: Mostrar mensaje de confirmación
+        alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
+    });
+}
 
             // 4. Opcional: Permitir saltar el video con tecla Escape
             document.addEventListener('keydown', function (e) {
