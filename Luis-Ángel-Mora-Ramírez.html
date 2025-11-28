@@ -81,11 +81,11 @@
 
         .imagen-invitacion {
             /*300x500*/
-            width: 300px;
-            height: 500px;
+            width: 100%;
+            height: 600px;
             object-fit: cover;
             border-radius: 15px;
-            margin-bottom: 20px;
+            /*margin-bottom: 20px;*/
             box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
         }
 
@@ -275,11 +275,11 @@
             }
         }
 
-        /* Responsive */
+        /* Responsive 
         @media (max-width: 768px) {
             .imagen-invitacion {
-                width: 250px;
-                height: 400px;
+                width: 380px;
+                height: 800px;
             }
 
             .navegacion {
@@ -290,21 +290,21 @@
             .header h1 {
                 font-size: 2rem;
             }
-        }
+        }*/
 
 
         /* Responsive */
-        @media (max-height: 480px) {
-            .imagen-invitacion {
-                /*300x500*/
-                width: 125px;
-                height: 200px;
-                object-fit: cover;
-                border-radius: 15px;
-                margin-bottom: -10px;
-                box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
-            }
-
+        @media (max-height: 900px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 950px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+/*margin-bottom: 20px;
             .navegacion {
                 flex-direction: column;
                 align-items: center;
@@ -332,12 +332,97 @@
             .btn-tocar:hover {
                 transform: scale(0.55);
                 box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
-            }
-
-
+            }*/
+        }
+        @media (max-height: 1200px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 110%;
+            height: 680px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
         }
 
-
+        @media (max-height: 1280px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 900px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        }
+        @media (max-height: 1300px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 950px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        }
+           @media (max-height: 700px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 670px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        }     
+        @media (max-height: 740px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 750px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        } 
+        @media (max-height: 885px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 890px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        } 
+        @media (max-height: 915px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 930px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        } 
+        @media (max-height: 815px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 830px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        } 
         /* Estilos mínimos para los controles de audio */
         .audio-controls {
             position: fixed;
@@ -372,12 +457,10 @@
                 <source src="/Archivos/vid_ver.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento video.
             </video>
-            <div id="pantallaInicial" class="pantalla-inicial">
+            <div id="pantallaInicial" class="pantalla-inicial" style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <img alt="Imagen de invitación" class="imagen-invitacion"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI1N-YLC1uW3FKs2el3rv6lmWZt4AuBL3z0Nw6t02-f0Oot6o6hn-pBrYfogw-0WPtVs&usqp=CAU?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
-                <div>
-                    <button id="btnAbrir" class="btn-tocar">Tocar para abrir</button>
-                </div>
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI1N-YLC1uW3FKs2el3rv6lmWZt4AuBL3z0Nw6t02-f0Oot6o6hn-pBrYfogw-0WPtVs&usqp=CAU">
+                <button id="btnAbrir" class="btn-tocar" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">Toca para abrir</button>
             </div>
         </div>
     </div>
