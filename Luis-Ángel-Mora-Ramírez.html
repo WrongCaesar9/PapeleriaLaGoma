@@ -813,6 +813,16 @@
 
                         // Mejora: recalcular transform si se cambia el tamaño (opcional)
                         window.addEventListener('resize', () => goTo(index));
+
+                        // Detener audio al salir del navegador
+                        document.addEventListener('visibilitychange', function() {
+                            const audio = document.getElementById('bgAudio');
+                            if (document.visibilityState === 'hidden') {
+                                audio.pause();
+                            } else {
+                                audio.play();
+                            }
+                        });
                     });
                 </script>
 
