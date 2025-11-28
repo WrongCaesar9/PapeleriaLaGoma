@@ -27,7 +27,13 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #38083a 0%, #764ba2 50%);
+            background-color: #20063b;
+            background-image: url('/Archivos/in.jpg');
+             background-attachment: fixed; /* 2. Fija la imagen para que no se mueva con el scroll */
+  background-repeat: no-repeat; /* 3. Evita que la imagen se repita */
+  background-size: cover; /* 4. Ajusta la imagen para que cubra todo el contenedor */
+  /* El contenido se desplaza sobre la imagen fija */
+  height: 100vh;
             color: rgb(255, 255, 255);
             overflow-x: hidden;
         }
@@ -55,7 +61,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(64, 10, 84, 1) 0%, rgba(187, 122, 207, 1) 20%, rgba(138, 59, 156, 1) 40%, rgba(205, 129, 222, 1) 60%, rgba(159, 62, 181, 1) 80%, rgba(190, 93, 222, 1) 100%);
+            background-color: #20063b;
+            background-image: url('/Archivos/in.jpg');
+            
+            background-attachment: fixed; /* 2. Fija la imagen para que no se mueva con el scroll */
+  background-repeat: no-repeat; /* 3. Evita que la imagen se repita */
+  background-size: cover; /* 4. Ajusta la imagen para que cubra todo el contenedor */
+  /* El contenido se desplaza sobre la imagen fija */
+  height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -88,6 +101,7 @@
             border-radius: 15px;
             /*margin-bottom: 20px;*/
             box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+
         }
 
 /* Botón con corona animada */
@@ -100,6 +114,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(241, 148, 255, 0.928);
+    border: 2px solid rgba(255, 202, 244, 0.755);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,7 +191,8 @@
             padding: 10px;
             border-radius: 8px;
             text-align: center;
-            min-width: 64px
+            min-width: 64px;
+border: 2px solid rgba(255, 202, 244, 0.755);
         }
 
         .countdown .item .num {
@@ -229,7 +245,7 @@
         .nav-btn {
             background: rgba(255, 255, 255, 0.2);
             color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            border: 2px solid rgba(255, 202, 244, 0.755);
             padding: 10px 40px;
             /*20px*/
             border-radius: 25px;
