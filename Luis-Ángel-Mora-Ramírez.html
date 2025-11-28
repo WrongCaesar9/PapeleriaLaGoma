@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
@@ -345,7 +345,6 @@
             box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
         }
         }
-
         @media (max-height: 1280px) {
         .imagen-invitacion {
             /*300x500*/
@@ -424,7 +423,7 @@
         }
         } 
 
-                @media (max-height: 680px) {
+        @media (max-height: 680px) {
         .imagen-invitacion {
             /*300x500*/
             width: 100%;
@@ -435,6 +434,32 @@
             box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
         }
         } 
+
+        @media (max-height: 1100px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        }         
+        @media (max-height: 1108px) {
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 770px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+        } 
+
+
+
         /* Estilos mínimos para los controles de audio */
         .audio-controls {
             position: fixed;
@@ -471,7 +496,7 @@
             </video>
             <div id="pantallaInicial" class="pantalla-inicial" style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <img alt="Imagen de invitación" class="imagen-invitacion"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI1N-YLC1uW3FKs2el3rv6lmWZt4AuBL3z0Nw6t02-f0Oot6o6hn-pBrYfogw-0WPtVs&usqp=CAU">
+                    src="/Archivos/invi_splash.png">
                 <button id="btnAbrir" class="btn-tocar" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">Toca para abrir</button>
             </div>
         </div>
