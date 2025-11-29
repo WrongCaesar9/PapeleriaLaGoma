@@ -27,8 +27,8 @@
         content="XV años | Luis Ángel Mora Ramírez | Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
     <meta property="og:url" content="https://lagoma.netlify.app/luis-angel-mora-ramirez">
     <meta property="og:image" content="https://lagoma.netlify.app/logos/og_splash_600.jpg">
-<meta property="og:image:width" content="600">
-<meta property="og:image:height" content="600">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:alt" content="OG Image XV años | Luis Ángel Mora Ramírez">
 
@@ -100,9 +100,6 @@
             z-index: -1;
         }
 
-
-
-
         /* Custom controls */
         .controls {
             position: absolute;
@@ -117,7 +114,6 @@
             border-radius: 10px
         }
 
-
         /* Modal/Pantalla Inicial */
         .modal {
             overflow-x: hidden;
@@ -126,7 +122,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -136,7 +131,7 @@
 
         .modal-contenido {
             text-align: center;
-            animation: aparecer 1s ease;
+            animation: aparecer 0.7s ease-in-out backwards;
         }
 
         @keyframes aparecer {
@@ -276,20 +271,10 @@
 
         .contenido-principal {
             text-align: center;
-            animation: aparecer-principal 1.5s ease;
+            animation: aparecer-principal 1.5s ease-out backwards;
         }
 
-        @keyframes aparecer-principal {
-            from {
-                opacity: 0;
-                transform: scale(0.5);
-            }
 
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
 
         .header {
             text-align: center;
@@ -300,28 +285,23 @@
             font-size: 2.5rem;
             margin-bottom: -50px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            font-family:"Great Vibes", cursive;
+            font-family: "Great Vibes", cursive;
             padding-top: 7%;
         }
 
         .navegacion {
-           
             justify-content: center;
             gap: 15px;
             margin-bottom: 30px;
+            position: fixed;
+            top: 10px;
+            left: 0;
+            right: 0;
+            display: flex;
+            gap: 10px;
+            padding: 0px 100px;
+            z-index: 1000;
 
-
-
-
-                    position: fixed;
-        top: 10px;
-        left: 0;
-        right: 0;
-        display: flex;
-    
-        gap: 10px;
-        padding: 0px 100px;
-        z-index: 1000;
         }
 
         .nav-btn {
@@ -353,27 +333,32 @@
             position: relative;
             max-width: 600px;
             margin: 0 auto;
+
         }
 
         .seccion {
             display: none;
             animation: deslizar 0.5s ease;
+
         }
 
         @keyframes deslizar {
             from {
                 opacity: 0;
                 transform: translateX(20px);
+
             }
 
             to {
                 opacity: 1;
                 transform: translateX(0);
+
             }
         }
 
         .seccion.activa {
             display: block;
+
         }
 
         .seccion h2 {
@@ -383,21 +368,25 @@
             font-weight: 100;
             font-style: normal;
             font-size: 2rem;
+
         }
 
         .seccion p {
             margin-bottom: 10px;
             font-size: 1.1rem;
+
         }
 
         /* Efecto de desvanecimiento */
         .desvanecer {
-            animation: desvanecer 0.5s ease forwards;
+            animation: desvanecer 0.1s ease forwards;
+
         }
 
         @keyframes desvanecer {
             to {
                 opacity: 0;
+
             }
         }
 
@@ -413,6 +402,7 @@
             flex-direction: column;
             gap: 15px;
             margin-bottom: 25px;
+
         }
 
         .opcion-asistencia label {
@@ -425,15 +415,18 @@
             cursor: pointer;
             transition: all 0.3s ease;
             border: 2px solid transparent;
+
         }
 
         .opcion-asistencia label:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateX(5px);
+
         }
 
         .opcion-asistencia input[type="radio"] {
             display: none;
+
         }
 
         .radio-custom {
@@ -443,11 +436,13 @@
             border-radius: 50%;
             position: relative;
             transition: all 0.3s ease;
+
         }
 
         .opcion-asistencia input[type="radio"]:checked+.radio-custom {
             border-color: #25D366;
             background: #25D366;
+
         }
 
         .opcion-asistencia input[type="radio"]:checked+.radio-custom::after {
@@ -459,6 +454,7 @@
             height: 8px;
             background: white;
             border-radius: 50%;
+
         }
 
         .opcion-asistencia input[type="radio"]:checked~span:last-child {
@@ -515,8 +511,9 @@
             position: fixed;
             margin-bottom: 1px;
             display: flex;
-            top: 95%; left: 90%;
-             transform: translate(-50%, -50%);
+            top: 95%;
+            left: 90%;
+            transform: translate(-50%, -50%);
             z-index: 1200;
         }
 
@@ -529,8 +526,8 @@
             background: rgba(255, 255, 255, 0.2);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 8px;
-            border-radius: 18px;
+            padding: 6px 6px;
+            border-radius: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
@@ -539,53 +536,105 @@
 
         /* Responsive design */
 
-.xv-a-a p {
- padding-top: 100%;
-}
-
-@media (max-width: 1000px) {
-    /* Contenedor para los botones */
-    .navegacion {
-        position: fixed;
-        top: 10px;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        padding: 0px 100px;
-        z-index: 1000;
-    }
-
-    .nav-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(255, 255, 255, 0.2);
-        color: rgb(255, 255, 255);
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        padding: 8px 15px;
-        border-radius: 25px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
-        font-family: "Playwrite NG Modern", cursive;
-        font-optical-sizing: auto;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 12px;
-        white-space: nowrap;
-        flex: 1; /* Que se expandan igual */
-        max-width: 90px; /* Ancho máximo */
-    }
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: -35px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            font-family:"Great Vibes", cursive;
-            padding-top: 18%;
+        .xv-a-a p {
+            padding-top: 100%;
         }
-}
+
+        @media (max-width: 1000px) {
+
+            /* Contenedor para los botones */
+            .navegacion {
+                position: fixed;
+                top: 10px;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                padding: 0px 100px;
+                z-index: 1000;
+            }
+
+            .nav-btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.2);
+                color: rgb(255, 255, 255);
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                padding: 8px 15px;
+                border-radius: 25px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(10px);
+                font-family: "Playwrite NG Modern", cursive;
+                font-optical-sizing: auto;
+                font-weight: 100;
+                font-style: normal;
+                font-size: 12px;
+                white-space: nowrap;
+                flex: 1;
+                /* Que se expandan igual */
+                max-width: 90px;
+                /* Ancho máximo */
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+                margin-bottom: -35px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                font-family: "Great Vibes", cursive;
+                padding-top: 18%;
+            }
+            .audio-controls {
+            position: fixed;
+            margin-bottom: 1px;
+            display: flex;
+            top: 95%;
+            left: 92%;
+            transform: translate(-50%, -50%);
+            z-index: 1200;
+            animation: aparecer-principal 1.5s ease;
+        }
+
+                .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+
+        }
+        }
+
+                @keyframes aparecer-principal {
+            from {
+                opacity: 0;
+                transform: scale(4);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .video-aparecer {
+            animation: video-aparecer 0.4s ease-in-out forwards;
+
+        }
+            @keyframes video-aparecer {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: -1.0;
+                transform: scale(1.5);
+            }
+        }
     </style>
 </head>
 
@@ -646,19 +695,20 @@
 
 
         <header class="header"> <!-- Botón hamburguesa -->
-<div class="menu-toggle" id="menuToggle">
-    <span></span>
-    <span></span>
-    <span></span>
-</div><nav class="navegacion">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion">
                 <button class="nav-btn activo" data-seccion="inicio">Inicio</button>
                 <button class="nav-btn" data-seccion="ubicacion">Ubicación</button>
                 <button class="nav-btn" data-seccion="confirmar">Confirmar</button>
                 <button class="nav-btn" data-seccion="Galeria">Galería</button>
             </nav>
-            <h1 >¡XV Años!</h1>
-            <h1 >Luis Ángel Mora Ramírez</h1>
-           
+            <h1>¡XV Años!</h1>
+            <h1>Luis Ángel Mora Ramírez</h1>
+
         </header>
 
         <main class="secciones">
@@ -708,7 +758,7 @@
             </section>
 
             <section id="seccion-ubicacion" class="seccion">
-                <h2>Ceremonia y Recepción</h2>
+                <h2 style="margin-top: 80px;">Ceremonia y Recepción</h2>
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
@@ -733,7 +783,7 @@
 
 
             <section id="seccion-confirmar" class="seccion">
-                <h2>Confirma tu Asistencia</h2>
+                <h2 style="margin-top: 80px;">Confirma tu Asistencia</h2>
                 <center>
                     <form class="formulario-confirmacion">
                         <div class="opcion-asistencia">
@@ -766,7 +816,7 @@
 
 
             <section id="seccion-Galeria" class="seccion">
-                <h2>Galería</h2>
+                <h2 style="margin-top: 80px;">Galería</h2>
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
@@ -1127,107 +1177,138 @@
             const navBtns = document.querySelectorAll('.nav-btn');
             const secciones = document.querySelectorAll('.seccion');
 
+            // Variables para detectar doble tap
+            let lastTap = 0;
+            const doubleTapDelay = 300; // milisegundos entre taps
+
             // 1. Manejar la apertura de la invitación
             btnAbrir.addEventListener('click', function () {
-                // Ocultar la pantalla inicial y mostrar el video
-                pantallaInicial.style.display = 'none';
-                video.style.display = 'block';
-                video.play();
+            abrirInvitacion();
+            });
 
-                // Cuando el video termine, mostrar el contenido principal
-                video.onended = function () {
-                    // Efecto de desvanecimiento
-                    modal.classList.add('desvanecer');
+            function abrirInvitacion() {
+            // Ocultar la pantalla inicial y mostrar el video
+            pantallaInicial.style.display = 'none';
+            video.style.display = 'block';
+            video.play();
 
-                    // Después de la animación, ocultar modal y mostrar contenido
-                    setTimeout(function () {
-                        modal.style.display = 'none';
-                        contenidoPrincipal.style.display = 'block';
+            // Cuando el video termine, mostrar el contenido principal
+            video.onended = function () {
+                cerrarModal();
+            };
+            }
 
-                        // Pequeño retraso para la animación de entrada del contenido
-                        setTimeout(function () {
-                            contenidoPrincipal.style.opacity = '1';
-                        }, 50);
-                    }, 500);
-                };
+            function cerrarModal() {
+            // Efecto de desvanecimiento
+            modal.classList.add('desvanecer');
+            modal.classList.add('video-aparecer');
+
+            // Después de la animación, ocultar modal y mostrar contenido
+            setTimeout(function () {
+                modal.style.display = 'none';
+                contenidoPrincipal.style.display = 'block';
+
+                // Pequeño retraso para la animación de entrada del contenido
+                setTimeout(function () {
+                contenidoPrincipal.style.opacity = '1';
+                }, 50);
+            }, 500);
+            }
+
+            // Detectar doble tap en pantalla táctil
+            modal.addEventListener('touchend', function (e) {
+            const currentTime = new Date().getTime();
+            const tapLength = currentTime - lastTap;
+
+            if (tapLength < doubleTapDelay && tapLength > 0) {
+                // Doble tap detectado
+                e.preventDefault();
+                if (video.style.display === 'block') {
+                cerrarModal();
+                } else {
+                abrirInvitacion();
+                }
+            }
+            lastTap = currentTime;
             });
 
             // 2. Navegación entre secciones
             navBtns.forEach(btn => {
-                btn.addEventListener('click', function () {
-                    const seccionObjetivo = this.getAttribute('data-seccion');
+            btn.addEventListener('click', function () {
+                const seccionObjetivo = this.getAttribute('data-seccion');
 
-                    // Actualizar botones activos
-                    navBtns.forEach(b => b.classList.remove('activo'));
-                    this.classList.add('activo');
+                // Actualizar botones activos
+                navBtns.forEach(b => b.classList.remove('activo'));
+                this.classList.add('activo');
 
-                    // Mostrar sección correspondiente
-                    secciones.forEach(seccion => {
-                        seccion.classList.remove('activa');
-                        if (seccion.id === `seccion-${seccionObjetivo}`) {
-                            setTimeout(() => {
-                                seccion.classList.add('activa');
-                            }, 50);
-                        }
-                    });
+                // Mostrar sección correspondiente
+                secciones.forEach(seccion => {
+                seccion.classList.remove('activa');
+                if (seccion.id === `seccion-${seccionObjetivo}`) {
+                    setTimeout(() => {
+                    seccion.classList.add('activa');
+                    }, 50);
+                }
                 });
+            });
             });
 
             // 3. Manejar el envío del formulario a WhatsApp
             const formulario = document.querySelector('.formulario-confirmacion');
             if (formulario) {
-                formulario.addEventListener('submit', function (e) {
-                    e.preventDefault();
+            formulario.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-                    // Obtener la opción seleccionada
-                    const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
+                // Obtener la opción seleccionada
+                const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
 
-                    if (!opcionSeleccionada) {
-                        alert('Por favor, selecciona una opción de asistencia.');
-                        return;
-                    }
+                if (!opcionSeleccionada) {
+                alert('Por favor, selecciona una opción de asistencia.');
+                return;
+                }
 
-                    const asistencia = opcionSeleccionada.value;
-                    let mensaje = '';
+                const asistencia = opcionSeleccionada.value;
+                let mensaje = '';
 
-                    // Personalizar el mensaje según la opción
-                    switch (asistencia) {
-                        case 'si':
-                            mensaje = '¡Hola! Confirmo que *SÍ asistiré* al evento. ¡Nos vemos!';
-                            break;
-                        case 'no':
-                            mensaje = 'Hola! Lamentablemente *NO podré asistir* al evento. ¡Mucho éxito!';
-                            break;
-                        case 'talvez':
-                            mensaje = 'Hola! Todavía *no estoy seguro* si podré asistir al evento. Te confirmo más cerca de la fecha.';
-                            break;
-                    }
+                // Personalizar el mensaje según la opción
+                switch (asistencia) {
+                case 'si':
+                    mensaje = '¡Hola! Confirmo que *SÍ asistiré* al evento. ¡Nos vemos!';
+                    break;
+                case 'no':
+                    mensaje = 'Hola! Lamentablemente *NO podré asistir* al evento. ¡Mucho éxito!';
+                    break;
+                case 'talvez':
+                    mensaje = 'Hola! Todavía *no estoy seguro* si podré asistir al evento. Te confirmo más cerca de la fecha.';
+                    break;
+                }
 
-                    // Agregar información del evento al mensaje (opcional)
-                    mensaje += '%0A%0A*XV Años* Luis Ángel Mora Ramírez%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
+                // Agregar información del evento al mensaje (opcional)
+                mensaje += '%0A%0A*XV Años* Luis Ángel Mora Ramírez%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
 
-                    // Número de teléfono (reemplaza con el número real)
-                    const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
+                // Número de teléfono (reemplaza con el número real)
+                const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
 
-                    // Crear el enlace de WhatsApp
-                    const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+                // Crear el enlace de WhatsApp
+                const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
 
-                    // Abrir WhatsApp
-                    window.open(urlWhatsApp, '_blank');
+                // Abrir WhatsApp
+                window.open(urlWhatsApp, '_blank');
 
-                    // Opcional: Mostrar mensaje de confirmación
-                    alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
-                });
+                // Opcional: Mostrar mensaje de confirmación
+                alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
+            });
             }
 
             // 4. Opcional: Permitir saltar el video con tecla Escape
             document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' && modal.style.display !== 'none') {
-                    modal.style.display = 'none';
-                    contenidoPrincipal.style.display = 'block';
-                }
+            if (e.key === 'Escape' || e.key === 'Enter' && modal.style.display !== 'none') {
+                modal.style.display = 'none';
+                contenidoPrincipal.style.display = 'block';
+            }
             });
         });
+      
 
 
         // -------- CONFIG ----------
