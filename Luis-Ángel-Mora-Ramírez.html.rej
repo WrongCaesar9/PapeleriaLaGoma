@@ -1,0 +1,20 @@
+diff a/Luis-Ángel-Mora-Ramírez.html b/Luis-Ángel-Mora-Ramírez.html	(rejected hunks)
+@@ -126,17 +126,7 @@
+ 
+         /* Modal/Pantalla Inicial */
+         .modal {
+-            background: linear-gradient(45deg,
+-                    #270241 0%,
+-                    #340c59 25%,
+-                    #1c022a 50%,
+-                    #380544 75%,
+-                    #1d011d 100%);
+-            background-size: 100% 400%;
+-            background-image:
+-                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+-                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+-            background-size: 50px 50px, 30px 30px;
++        
+            
+             overflow-x: hidden;
+             position: relative;
