@@ -295,6 +295,16 @@ border: 2px solid rgba(255, 202, 244, 0.755);
             margin-bottom: 10px;
             font-size: 1.1rem;
         }
+/* Efecto de desvanecimiento */
+.desvanecer {
+    animation: desvanecer 0.5s ease forwards;
+}
+
+@keyframes desvanecer {
+    to { opacity: 0; }
+}
+
+
 
         /* Estilos para las opciones de radio personalizadas */
 .opcion-asistencia {
@@ -892,7 +902,7 @@ border: 2px solid rgba(255, 202, 244, 0.755);
                         // Autoplay
                         function startAutoplay() {
                             stopAutoplay();
-                            autoplayId = setInterval(() => goTo(index + 1), 4000);
+                            autoplayId = setInterval(() => goTo(index), 4000);
                         }
                         function stopAutoplay() {
                             if (autoplayId) { clearInterval(autoplayId); autoplayId = null; }
@@ -927,15 +937,7 @@ border: 2px solid rgba(255, 202, 244, 0.755);
                         // Mejora: recalcular transform si se cambia el tamaño (opcional)
                         window.addEventListener('resize', () => goTo(index));
 
-                        // Detener audio al salir del navegador
-                        document.addEventListener('visibilitychange', function() {
-                            const audio = document.getElementById('bgAudio');
-                            if (document.visibilityState === 'hidden') {
-                                audio.pause();
-                            } else {
-                                audio.play();
-                            }
-                        });
+                        
                     });
                 </script>
 
@@ -1132,6 +1134,18 @@ if (formulario) {
                 }
             });
 
+// Detener audio al salir del navegador
+                        document.addEventListener('visibilitychange', function() {
+                            const audio = document.getElementById('bgAudio');
+                            if (document.visibilityState === 'hidden') {
+                                audio.pause();
+                                updateButtons();
+                            } else {
+                                audio.play();
+                                updateButtons();
+                            }
+                        });
+
             if (contenido) {
                 const mo = new MutationObserver(() => {
                     const visible = window.getComputedStyle(contenido).display !== 'none';
@@ -1153,16 +1167,6 @@ if (formulario) {
                 audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
             }
         });
-
-btnAbrir.addEventListener('click', function() {
-    // Agregar clase de animación rápida al hacer click
-    const corona = this.querySelector('.corona-svg');
-    corona.style.animation = 'suspiro-dramatico 0.5s ease-in-out';
-    
-    setTimeout(() => {
-        corona.style.animation = 'suspiro-dramatico 3s ease-in-out infinite';
-    }, 500);
-});
 
     </script>
 </body>
