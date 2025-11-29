@@ -707,7 +707,7 @@
                 <button class="nav-btn" data-seccion="Galeria">Galería</button>
             </nav>
             <h1>¡XV Años!</h1>
-            <h1 style="word-spacing: 15px;">Luis Ángel Mora Ramírez</h1>
+            <h1 style="word-spacing: 12px; letter-spacing: 1px;">Luis Ángel Mora Ramírez</h1>
 
         </header>
 
@@ -1367,12 +1367,12 @@
                 btnPause.setAttribute('aria-pressed', String(!audio.paused));
             }
 
-            btnMute.addEventListener('click', function () {
+            btnMute.addEventListener('click' || e.key === ' ', function () {
                 audio.muted = !audio.muted;
                 updateButtons();
             });
 
-            btnPause.addEventListener('click', function () {
+            btnPause.addEventListener('click' || e.key === ' ', function () {
                 if (audio.paused) {
                     audio.play().catch(() => {
                         audio.muted = true;
