@@ -2,22 +2,71 @@
 <html lang="es-MX">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="dns-prefetch" href="https://lagoma.netlify.app/luis-ángel-mora-ramírez/">
+    <link rel="preconnect" href="https://lagoma.netlify.app/luis-ángel-mora-ramírez" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis XV años - Luis Ángel Mora Ramírez</title>
+    <!-- SEO básico -->
+    <title>XV años | Luis Ángel Mora Ramírez</title>
+    <meta name="description" content="XV años | Luis Ángel Mora Ramírez">
+    <meta name="keywords" content="invitación, card, invitation card">
+    <meta name="author" content="WrongCaesar9">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lagoma.netlify.app/luis-ángel-mora-ramírez/">
+
+
+
+    <meta name="description" content="Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="XV años | Luis Ángel Mora Ramírez">
+    <meta property="og:description"
+        content="Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
+    <meta property="og:url" content="https://lagoma.netlify.app/luis-ángel-mora-ramírez/">
+    <meta property="og:site_name" content="XV años | Luis Ángel Mora Ramírez">
+    <meta property="article:modified_time" content="2025-11-29T01:01:00+00:00">
+    <meta property="og:image"
+        content="https://lagoma.netlify.app/logos/oginvitacion_luis">
+    <meta property="og:image:width" content="430">
+    <meta property="og:image:height" content="530">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+NG+Modern:wght@100&display=swap" rel="stylesheet">
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+NG+Modern:wght@100&display=swap"
+        rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="https://lagoma.netlify.app/logos/logooro.ico" sizes="192x192">
     <link rel="shortcut icon" href="/logos/xv_ico.ico">
     <style>
+        /* Ocultar scrollbar */
+        ::-webkit-scrollbar {
+            display: none;
+        }
         /* Reset CSS */
         * {
             margin: 0;
@@ -27,10 +76,37 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #38083a 0%, #764ba2 50%);
-            color: rgb(255, 255, 255);
+            /* Base del terciopelo morado */
+            background: linear-gradient(45deg,
+                    #270241 0%,
+                    #340c59 25%,
+                    #1c022a 50%,
+                    #380544 75%,
+                    #1d011d 100%);
+            background-size: 100% 400%;
+            background-blend-mode: overlay, screen, screen, screen;
+            color: white;
             overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
         }
+
+        /* Patrón de textura de terciopelo */
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px, 30px 30px;
+            z-index: -1; 
+        }
+
+    
 
 
         /* Custom controls */
@@ -50,12 +126,27 @@
 
         /* Modal/Pantalla Inicial */
         .modal {
+            background: linear-gradient(45deg,
+                    #270241 0%,
+                    #340c59 25%,
+                    #1c022a 50%,
+                    #380544 75%,
+                    #1d011d 100%);
+            background-size: 100% 400%;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px, 30px 30px;
+           
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(64, 10, 84, 1) 0%, rgba(187, 122, 207, 1) 20%, rgba(138, 59, 156, 1) 40%, rgba(205, 129, 222, 1) 60%, rgba(159, 62, 181, 1) 80%, rgba(190, 93, 222, 1) 100%);
+            /*background: linear-gradient(135deg, rgba(64, 10, 84, 1) 0%, rgba(187, 122, 207, 1) 20%, rgba(138, 59, 156, 1) 40%, rgba(205, 129, 222, 1) 60%, rgba(159, 62, 181, 1) 80%, rgba(190, 93, 222, 1) 100%);*/
             display: flex;
             justify-content: center;
             align-items: center;
@@ -90,78 +181,86 @@
             box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
         }
 
-/* Botón con corona animada */
-.btn-tocar {
-    background: linear-gradient(45deg, #38083a , #764ba2);
-    color: #8B4513;
-    border: none;
-    padding: 20px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(241, 148, 255, 0.928);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    font-weight: 600;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgb(255, 255, 255);
-}
+        /* Botón con corona animada */
+        .btn-tocar {
+            background: linear-gradient(45deg, #38083a, #764ba2);
+            color: #8B4513;
+            border: none;
+            padding: 20px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(241, 148, 255, 0.928);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgb(255, 255, 255);
+        }
 
-.btn-tocar:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(241, 48, 255, 0.6);
-    
-}
+        .btn-tocar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(241, 48, 255, 0.6);
 
-/* Animación de "suspiro" - escala continua */
-@keyframes suspiro {
-    0%, 100% {
-        transform: scale(0.6);
-    }
-    50% {
-        transform: scale(0.9);
-    }
-}
-/* Animación de "suspiro" - escala continua */
-@keyframes suspirodos {
-    0%, 100% {
-        left: 100%
-    }
-    50%{
-        left: -100%;
-    }
-}
-/* Animación específica para la corona */
-.corona-svg {
-    animation: suspiro 1s ease-in-out infinite;
-    filter: drop-shadow(0 2px 3px rgba(229, 45, 232, 0.3));
-    
-}
+        }
 
-/* Efecto de brillo en hover */
-.btn-tocar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-    transition: left 0.5s;
-    animation: suspirodos 2s ease-in-out infinite;
-}
+        /* Animación de "suspiro" - escala continua */
+        @keyframes suspiro {
 
-.btn-tocar:hover::before {
-    left: 100%;
-}
+            0%,
+            100% {
+                transform: scale(0.6);
+            }
 
-/* Efecto de partículas doradas (opcional) */
-.btn-tocar:hover .corona-svg {
-    filter: drop-shadow(0 0 8px rgba(247, 160, 255, 0.8));
-}
+            50% {
+                transform: scale(0.9);
+            }
+        }
+
+        /* Animación de "suspiro" - escala continua */
+        @keyframes suspirodos {
+
+            0%,
+            100% {
+                left: 100%
+            }
+
+            50% {
+                left: -100%;
+            }
+        }
+
+        /* Animación específica para la corona */
+        .corona-svg {
+            animation: suspiro 1s ease-in-out infinite;
+            filter: drop-shadow(0 2px 3px rgba(229, 45, 232, 0.3));
+
+        }
+
+        /* Efecto de brillo en hover */
+        .btn-tocar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+            animation: suspirodos 2s ease-in-out infinite;
+        }
+
+        .btn-tocar:hover::before {
+            left: 100%;
+        }
+
+        /* Efecto de partículas doradas (opcional) */
+        .btn-tocar:hover .corona-svg {
+            filter: drop-shadow(0 0 8px rgba(247, 160, 255, 0.8));
+        }
 
         /*Countdown Pantalla Principal */
         .countdown {
@@ -180,7 +279,7 @@
             border-radius: 8px;
             text-align: center;
             min-width: 64px;
-border: 2px solid rgba(255, 202, 244, 0.755);
+            border: 2px solid rgba(255, 202, 244, 0.755);
         }
 
         .countdown .item .num {
@@ -241,11 +340,11 @@ border: 2px solid rgba(255, 202, 244, 0.755);
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
             margin-top: 10px;
-              font-family: "Playwrite NG Modern", cursive;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  
+            font-family: "Playwrite NG Modern", cursive;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+
         }
 
         .nav-btn.activo,
@@ -284,10 +383,10 @@ border: 2px solid rgba(255, 202, 244, 0.755);
 
         .seccion h2 {
             margin-bottom: 20px;
-              font-family: "Playwrite NG Modern", cursive;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+            font-family: "Playwrite NG Modern", cursive;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
             font-size: 2rem;
         }
 
@@ -295,116 +394,119 @@ border: 2px solid rgba(255, 202, 244, 0.755);
             margin-bottom: 10px;
             font-size: 1.1rem;
         }
-/* Efecto de desvanecimiento */
-.desvanecer {
-    animation: desvanecer 0.5s ease forwards;
-}
 
-@keyframes desvanecer {
-    to { opacity: 0; }
-}
+        /* Efecto de desvanecimiento */
+        .desvanecer {
+            animation: desvanecer 0.5s ease forwards;
+        }
+
+        @keyframes desvanecer {
+            to {
+                opacity: 0;
+            }
+        }
 
 
 
         /* Estilos para las opciones de radio personalizadas */
-.opcion-asistencia {
-    display: flex;
-      font-family: "Playwrite NG Modern", cursive;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 25px;
-}
+        .opcion-asistencia {
+            display: flex;
+            font-family: "Playwrite NG Modern", cursive;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
 
-.opcion-asistencia label {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
+        .opcion-asistencia label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
 
-.opcion-asistencia label:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateX(5px);
-}
+        .opcion-asistencia label:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
 
-.opcion-asistencia input[type="radio"] {
-    display: none;
-}
+        .opcion-asistencia input[type="radio"] {
+            display: none;
+        }
 
-.radio-custom {
-    width: 20px;
-    height: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    position: relative;
-    transition: all 0.3s ease;
-}
+        .radio-custom {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            position: relative;
+            transition: all 0.3s ease;
+        }
 
-.opcion-asistencia input[type="radio"]:checked + .radio-custom {
-    border-color: #25D366;
-    background: #25D366;
-}
+        .opcion-asistencia input[type="radio"]:checked+.radio-custom {
+            border-color: #25D366;
+            background: #25D366;
+        }
 
-.opcion-asistencia input[type="radio"]:checked + .radio-custom::after {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 8px;
-    height: 8px;
-    background: white;
-    border-radius: 50%;
-}
+        .opcion-asistencia input[type="radio"]:checked+.radio-custom::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+        }
 
-.opcion-asistencia input[type="radio"]:checked ~ span:last-child {
-    color: #25D366;
-    font-weight: bold;
-}
+        .opcion-asistencia input[type="radio"]:checked~span:last-child {
+            color: #25D366;
+            font-weight: bold;
+        }
 
-/* Botón de WhatsApp con logo */
-.btn-whatsapp {
-    background: linear-gradient(45deg, #25D366, #128C7E) !important;
-    color: white !important;
-    border: none !important;
-    padding: 15px 25px !important;
-      font-family: "Playwrite NG Modern", cursive !important;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-    border-radius: 50px !important;
-    cursor: pointer !important;
-    transition: all 0.3s ease !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 12px !important;
-    margin-top: 15px !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.5px !important;
-}
+        /* Botón de WhatsApp con logo */
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E) !important;
+            color: white !important;
+            border: none !important;
+            padding: 15px 25px !important;
+            font-family: "Playwrite NG Modern", cursive !important;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            border-radius: 50px !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 12px !important;
+            margin-top: 15px !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.5px !important;
+        }
 
-.btn-whatsapp:hover {
-    transform: scale(1.05) !important;
-    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
-    background: linear-gradient(45deg, #25D366, #25D366) !important;
-}
+        .btn-whatsapp:hover {
+            transform: scale(1.05) !important;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
+            background: linear-gradient(45deg, #25D366, #25D366) !important;
+        }
 
-.btn-whatsapp:active {
-    transform: scale(1.02) !important;
-}
+        .btn-whatsapp:active {
+            transform: scale(1.02) !important;
+        }
 
-/* Asegurar que el SVG herede los colores correctamente */
-.btn-whatsapp svg {
-    flex-shrink: 0;
-}
+        /* Asegurar que el SVG herede los colores correctamente */
+        .btn-whatsapp svg {
+            flex-shrink: 0;
+        }
 
 
 
@@ -435,7 +537,8 @@ border: 2px solid rgba(255, 202, 244, 0.755);
     </style>
 </head>
 
-<body>
+<body >
+
     <!-- Modal/Pantalla Inicial -->
     <div id="invitacionModal" class="modal">
         <div class="modal-contenido">
@@ -443,30 +546,34 @@ border: 2px solid rgba(255, 202, 244, 0.755);
                 <source src="/Archivos/vid_ver.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento video.
             </video>
-            <div id="pantallaInicial" class="pantalla-inicial" style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <img alt="Imagen de invitación" class="imagen-invitacion"
-                    src="/Archivos/invi_splash_jpg.jpg">
-               
-               <button id="btnAbrir" class="btn-tocar" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
-    <svg style="scale: calc(2);" class="corona-svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
-        <!-- Corona más detallada -->
-        
-        <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5Z" stroke="#FEE7FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M5 16H19V19C19 20.1046 18.1046 21 17 21H7C5.89543 21 5 20.1046 5 19V16Z" stroke="#FEE7FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    
-        <!-- Piedras preciosas -->
-        <circle cx="12" cy="8" r="1.5" fill="#F216F2"/>
-        <circle cx="8" cy="10" r="0.9" fill="#F665F6"/>
-        <circle cx="16" cy="10" r="0.9" fill="#F665F6"/>
-        <circle cx="6" cy="12" r="0.7" fill="#FBBCFB"/>
-        <circle cx="18" cy="12" r="0.7" fill="#FBBCFB"/>
-    </svg>
-    
-</button>
-               
-               
-               
-                    
+            <div id="pantallaInicial" class="pantalla-inicial"
+                style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img alt="Imagen de invitación" class="imagen-invitacion" src="/Archivos/invi_splash_jpg.jpg">
+
+                <button id="btnAbrir" class="btn-tocar"
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+                    <svg style="scale: calc(2);" class="corona-svg" width="32" height="32" viewBox="0 0 24 24"
+                        fill="none">
+                        <!-- Corona más detallada -->
+
+                        <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5Z" stroke="#FEE7FE" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 16H19V19C19 20.1046 18.1046 21 17 21H7C5.89543 21 5 20.1046 5 19V16Z"
+                            stroke="#FEE7FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <!-- Piedras preciosas -->
+                        <circle cx="12" cy="8" r="1.5" fill="#F216F2" />
+                        <circle cx="8" cy="10" r="0.9" fill="#F665F6" />
+                        <circle cx="16" cy="10" r="0.9" fill="#F665F6" />
+                        <circle cx="6" cy="12" r="0.7" fill="#FBBCFB" />
+                        <circle cx="18" cy="12" r="0.7" fill="#FBBCFB" />
+                    </svg>
+
+                </button>
+
+
+
+
             </div>
         </div>
     </div>
@@ -487,7 +594,8 @@ border: 2px solid rgba(255, 202, 244, 0.755);
 
 
         <header class="header">
-            <h1 style="font-family: Great Vibes, cursive;">¡XV Años!<p><br>Luis Ángel Mora Rodrígues</p></h1>
+            <h1 style="font-family: Great Vibes, cursive;">¡XV Años!<p><br>Luis Ángel Mora Rodrígues</p>
+            </h1>
             <nav class="navegacion">
                 <button class="nav-btn activo" data-seccion="inicio">Inicio</button>
                 <button class="nav-btn" data-seccion="ubicacion">Ubicación</button>
@@ -543,15 +651,15 @@ border: 2px solid rgba(255, 202, 244, 0.755);
 
             <section id="seccion-ubicacion" class="seccion">
                 <h2>Ubicación</h2>
-                <p  style="  font-family: Playwrite NG Modern, cursive;
+                <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
                   font-style: normal;">📍 A un costado de Taberna del Oso</p>
-                <p  style="  font-family: Playwrite NG Modern, cursive;
+                <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
                   font-style: normal;">Avenida México 9 Ampliación Tezoyuca Ampliación Tezoyuca, C.P. 56000</p>
-                <p  style="  font-family: Playwrite NG Modern, cursive;
+                <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
                   font-style: normal;">Tezoyuca, Estado de México</p>
@@ -567,34 +675,37 @@ border: 2px solid rgba(255, 202, 244, 0.755);
 
 
             <section id="seccion-confirmar" class="seccion">
-    <h2>Confirma tu Asistencia</h2>
-    <center>
-    <form class="formulario-confirmacion">
-        <div class="opcion-asistencia">
-            <label>
-                <input type="radio" name="asistencia" value="si" required>
-                <span class="radio-custom"></span>
-                ¡Sí, estaré ahí! 🎉
-            </label>
-            <label>
-                <input type="radio" name="asistencia" value="no">
-                <span class="radio-custom"></span>
-                Lo siento, no podré asistir 😔
-            </label>
-            <label>
-                <input type="radio" name="asistencia" value="talvez">
-                <span class="radio-custom"></span>
-                Tal vez / No estoy seguro 🤔
-            </label>
-        </div>
-        <button type="submit" class="btn-whatsapp">
-            Enviar WhatsApp <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" fill="currentColor"/>
-    </svg>
-        </button>
-    </form></center>
-</section>
-           
+                <h2>Confirma tu Asistencia</h2>
+                <center>
+                    <form class="formulario-confirmacion">
+                        <div class="opcion-asistencia">
+                            <label>
+                                <input type="radio" name="asistencia" value="si" required>
+                                <span class="radio-custom"></span>
+                                ¡Sí, estaré ahí! 🎉
+                            </label>
+                            <label>
+                                <input type="radio" name="asistencia" value="no">
+                                <span class="radio-custom"></span>
+                                Lo siento, no podré asistir 😔
+                            </label>
+                            <label>
+                                <input type="radio" name="asistencia" value="talvez">
+                                <span class="radio-custom"></span>
+                                Tal vez / No estoy seguro 🤔
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-whatsapp">
+                            Enviar WhatsApp <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </form>
+                </center>
+            </section>
+
 
             <section id="seccion-Galeria" class="seccion">
                 <h2>Galería</h2>
@@ -937,7 +1048,7 @@ border: 2px solid rgba(255, 202, 244, 0.755);
                         // Mejora: recalcular transform si se cambia el tamaño (opcional)
                         window.addEventListener('resize', () => goTo(index));
 
-                        
+
                     });
                 </script>
 
@@ -1005,51 +1116,51 @@ border: 2px solid rgba(255, 202, 244, 0.755);
             });
 
             // 3. Manejar el envío del formulario a WhatsApp
-const formulario = document.querySelector('.formulario-confirmacion');
-if (formulario) {
-    formulario.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Obtener la opción seleccionada
-        const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
-        
-        if (!opcionSeleccionada) {
-            alert('Por favor, selecciona una opción de asistencia.');
-            return;
-        }
-        
-        const asistencia = opcionSeleccionada.value;
-        let mensaje = '';
-        
-        // Personalizar el mensaje según la opción
-        switch(asistencia) {
-            case 'si':
-                mensaje = '¡Hola! Confirmo que SÍ asistiré al evento. ¡Nos vemos ahí! 🎉';
-                break;
-            case 'no':
-                mensaje = 'Hola! Lamentablemente NO podré asistir al evento. ¡Mucho éxito!';
-                break;
-            case 'talvez':
-                mensaje = 'Hola! Todavía no estoy seguro si podré asistir al evento. Te confirmo más cerca de la fecha.';
-                break;
-        }
-        
-        // Agregar información del evento al mensaje (opcional)
-        mensaje += '%0A%0A*Evento:* Celebración Especial%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
-        
-        // Número de teléfono (reemplaza con el número real)
-        const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
-        
-        // Crear el enlace de WhatsApp
-        const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
-        
-        // Abrir WhatsApp
-        window.open(urlWhatsApp, '_blank');
-        
-        // Opcional: Mostrar mensaje de confirmación
-        alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
-    });
-}
+            const formulario = document.querySelector('.formulario-confirmacion');
+            if (formulario) {
+                formulario.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Obtener la opción seleccionada
+                    const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
+
+                    if (!opcionSeleccionada) {
+                        alert('Por favor, selecciona una opción de asistencia.');
+                        return;
+                    }
+
+                    const asistencia = opcionSeleccionada.value;
+                    let mensaje = '';
+
+                    // Personalizar el mensaje según la opción
+                    switch (asistencia) {
+                        case 'si':
+                            mensaje = '¡Hola! Confirmo que SÍ asistiré al evento. ¡Nos vemos ahí! 🎉';
+                            break;
+                        case 'no':
+                            mensaje = 'Hola! Lamentablemente NO podré asistir al evento. ¡Mucho éxito!';
+                            break;
+                        case 'talvez':
+                            mensaje = 'Hola! Todavía no estoy seguro si podré asistir al evento. Te confirmo más cerca de la fecha.';
+                            break;
+                    }
+
+                    // Agregar información del evento al mensaje (opcional)
+                    mensaje += '%0A%0A*Evento:* Celebración Especial%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
+
+                    // Número de teléfono (reemplaza con el número real)
+                    const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
+
+                    // Crear el enlace de WhatsApp
+                    const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+
+                    // Abrir WhatsApp
+                    window.open(urlWhatsApp, '_blank');
+
+                    // Opcional: Mostrar mensaje de confirmación
+                    alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
+                });
+            }
 
             // 4. Opcional: Permitir saltar el video con tecla Escape
             document.addEventListener('keydown', function (e) {
@@ -1134,17 +1245,17 @@ if (formulario) {
                 }
             });
 
-// Detener audio al salir del navegador
-                        document.addEventListener('visibilitychange', function() {
-                            const audio = document.getElementById('bgAudio');
-                            if (document.visibilityState === 'hidden') {
-                                audio.pause();
-                                updateButtons();
-                            } else {
-                                audio.play();
-                                updateButtons();
-                            }
-                        });
+            // Detener audio al salir del navegador
+            document.addEventListener('visibilitychange', function () {
+                const audio = document.getElementById('bgAudio');
+                if (document.visibilityState === 'hidden') {
+                    audio.pause();
+                    updateButtons();
+                } else {
+                    audio.play();
+                    updateButtons();
+                }
+            });
 
             if (contenido) {
                 const mo = new MutationObserver(() => {
