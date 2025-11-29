@@ -684,7 +684,7 @@
         <!-- Contenido Principal (oculto inicialmente) -->
         <!-- Audio de fondo + controles (insertar aquí) -->
         <div class="audio-wrapper" aria-hidden="false">
-            <audio id="bgAudio" src="/Archivos/Tu_estas_aqui.mp3" preload="auto" loop></audio>
+            <audio id="bgAudio" src="/Archivos/heart_of_boy.mp3" preload="auto" loop></audio>
 
             <div class="audio-controls" role="region" aria-label="Controles de audio">
                 <button visibility: hidden class="audioBtns" id="btnMute" type="button" aria-pressed="false"></button>
@@ -714,17 +714,17 @@
         <main class="secciones">
             <section id="seccion-inicio" class="seccion activa">
                 <h2 style="margin-top: 80px;">Querida  familia y amigos:</h2>
-                <h2>Hoy dejo atrás la niñez y abro las alas hacia nuevos sueños.</h2>
+                <h2>Pronto dejaré atrás la niñez y abriré las alas hacia nuevos sueños.</h2>
                 <h2>Gracias por acompañarme en este viaje.</h2>
-                <p style="font-family: Crimson Text, serif;
+                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
                   font-weight: 700;
-                  font-style: italic;">¡No te pierdas este evento increíble!</p>
-                <p style="font-family: Crimson Text, serif;
+                  font-style: italic; font-size: 150%;">¡No te pierdas este evento increíble!</p>
+                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
                   font-weight: 700;
-                  font-style: italic;"><strong>Fecha:</strong> 15 de Diciembre, 2024</p>
-                <p style="font-family: Crimson Text, serif;
+                  font-style: italic; font-size: 150%;"> 11 de Enero de 2026</p>
+                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
                   font-weight: 700;
-                  font-style: italic;"><strong>Hora:</strong> 7:00 PM</p>
+                  font-style: italic; font-size: 150%;">A la 1:00 PM</p>
 
                 <center>
                     <div style="font-family: Crimson Text, serif;
@@ -751,7 +751,7 @@
                 <center>
                     <p style="font-family: Crimson Text, serif;
                   font-weight: 700;
-                  font-style: italic;"><span id="dateText">--</span></p>
+                  font-style: italic; letter-spacing: 3px; word-spacing: 4px;"><span id="dateText">--</span></p>
                 </center>
 
 
@@ -1312,8 +1312,8 @@
 
 
         // -------- CONFIG ----------
-        // Cambia esto por la fecha y hora del evento (ISO 8601)
-        const eventDate = new Date('2026-01-11T15:00:00-03:00');
+        // Cambia esto por la fecha y hora del evento (ISO 8601) ejemplo 2025-11-29T18:00:00-06:00
+        const eventDate = new Date('2026-01-11T13:00:00-06:00');
         // Título/fecha de texto
         document.getElementById('dateText').textContent = eventDate.toLocaleString();
 
