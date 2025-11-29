@@ -298,15 +298,30 @@
 
         .header h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            margin-bottom: -50px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family:"Great Vibes", cursive;
+            padding-top: 7%;
         }
 
         .navegacion {
-            display: inline;
+           
             justify-content: center;
             gap: 15px;
             margin-bottom: 30px;
+
+
+
+
+                    position: fixed;
+        top: 10px;
+        left: 0;
+        right: 0;
+        display: flex;
+    
+        gap: 10px;
+        padding: 0px 100px;
+        z-index: 1000;
         }
 
         .nav-btn {
@@ -362,7 +377,7 @@
         }
 
         .seccion h2 {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-family: "Playwrite NG Modern", cursive;
             font-optical-sizing: auto;
             font-weight: 100;
@@ -491,11 +506,17 @@
 
 
 
-        /* Estilos mínimos para los controles de audio */
+        /* Estilos mínimos para los controles de audio
+         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;
+        
+        
+        */
         .audio-controls {
             position: fixed;
             margin-bottom: 1px;
             display: flex;
+            top: 95%; left: 90%;
+             transform: translate(-50%, -50%);
             z-index: 1200;
         }
 
@@ -514,6 +535,57 @@
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
         }
+
+
+        /* Responsive design */
+
+.xv-a-a p {
+ padding-top: 100%;
+}
+
+@media (max-width: 1000px) {
+    /* Contenedor para los botones */
+    .navegacion {
+        position: fixed;
+        top: 10px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 0px 100px;
+        z-index: 1000;
+    }
+
+    .nav-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        padding: 8px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+        font-family: "Playwrite NG Modern", cursive;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 12px;
+        white-space: nowrap;
+        flex: 1; /* Que se expandan igual */
+        max-width: 90px; /* Ancho máximo */
+    }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: -35px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family:"Great Vibes", cursive;
+            padding-top: 18%;
+        }
+}
     </style>
 </head>
 
@@ -573,21 +645,27 @@
 
 
 
-        <header class="header">
-            <h1 style="font-family: Great Vibes, cursive;">¡XV Años!<p><br>Luis Ángel Mora Ramírez</p>
-            </h1>
-            <nav class="navegacion">
+        <header class="header"> <!-- Botón hamburguesa -->
+<div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</div><nav class="navegacion">
                 <button class="nav-btn activo" data-seccion="inicio">Inicio</button>
                 <button class="nav-btn" data-seccion="ubicacion">Ubicación</button>
                 <button class="nav-btn" data-seccion="confirmar">Confirmar</button>
                 <button class="nav-btn" data-seccion="Galeria">Galería</button>
             </nav>
+            <h1 >¡XV Años!</h1>
+            <h1 >Luis Ángel Mora Ramírez</h1>
+           
         </header>
 
         <main class="secciones">
             <section id="seccion-inicio" class="seccion activa">
-                <h2>Celebración Especial</h2>
-                <h2>SON XV!! Acuerdate</h2>
+                <h2 style="margin-top: 80px;">Querido invitado:</h2>
+                <h2>Hoy dejo atrás la niñez y abro las alas hacia nuevos sueños.</h2>
+                <h2>Gracias por acompañarme en este viaje.</h2>
                 <p style="font-family: Crimson Text, serif;
                   font-weight: 700;
                   font-style: italic;">¡No te pierdas este evento increíble!</p>
@@ -630,22 +708,22 @@
             </section>
 
             <section id="seccion-ubicacion" class="seccion">
-                <h2>Ubicación</h2>
+                <h2>Ceremonia y Recepción</h2>
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
-                  font-style: normal;">📍 A un costado de Taberna del Oso</p>
+                  font-style: normal;">📍 Boutique Y Regalos "Pablin"</p>
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
-                  font-style: normal;">Avenida México 9 Ampliación Tezoyuca Ampliación Tezoyuca, C.P. 56000</p>
+                  font-style: normal;">Av. México Manzana 006, 56010 Amp. Tezoyuca, Méx.</p>
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
                   font-style: normal;">Tezoyuca, Estado de México</p>
                 <!-- Puedes agregar un mapa de Google Maps después -->
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.2419983715882!2d-98.92155011188781!3d19.58254578898303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e9bb15d67cdd%3A0xbd93b839710d0615!2sTaberna%20del%20Oso!5e0!3m2!1ses-419!2smx!4v1764028266865!5m2!1ses-419!2smx"
+                    src="https://www.google.com/maps/embed?pb=!4v1764410842815!6m8!1m7!1s0fa3x8hrLmi9T-qFV0XTbQ!2m2!1d19.58220774431477!2d-98.92130057619909!3f270.89!4f0.6700000000000017!5f0.7820865974627469"
                     width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -1115,18 +1193,18 @@
                     // Personalizar el mensaje según la opción
                     switch (asistencia) {
                         case 'si':
-                            mensaje = '¡Hola! Confirmo que SÍ asistiré al evento. ¡Nos vemos ahí! 🎉';
+                            mensaje = '¡Hola! Confirmo que *SÍ asistiré* al evento. ¡Nos vemos!';
                             break;
                         case 'no':
-                            mensaje = 'Hola! Lamentablemente NO podré asistir al evento. ¡Mucho éxito!';
+                            mensaje = 'Hola! Lamentablemente *NO podré asistir* al evento. ¡Mucho éxito!';
                             break;
                         case 'talvez':
-                            mensaje = 'Hola! Todavía no estoy seguro si podré asistir al evento. Te confirmo más cerca de la fecha.';
+                            mensaje = 'Hola! Todavía *no estoy seguro* si podré asistir al evento. Te confirmo más cerca de la fecha.';
                             break;
                     }
 
                     // Agregar información del evento al mensaje (opcional)
-                    mensaje += '%0A%0A*Evento:* Celebración Especial%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
+                    mensaje += '%0A%0A*XV Años* Luis Ángel Mora Ramírez%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
 
                     // Número de teléfono (reemplaza con el número real)
                     const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
