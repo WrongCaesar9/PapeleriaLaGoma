@@ -702,11 +702,11 @@
 
     <!-- Modal/Pantalla Inicial -->
     <div id="invitacionModal" class="modal">
-        <div class="modal-contenido">
+        <div class="modal-contenido"><span class="wave-text" style="font-size: 0.8rem; color: white; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);"> Presione ESC para omitir</span>
             <video id="videoInvitacion" class="imagen-invitacion" style="display: none;"><!-- controls  -->
                 <source src="/Archivos/vid_ver.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento video.
-            </video>
+                            </video>
             <div id="pantallaInicial" class="pantalla-inicial"
                 style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <img alt="Imagen de invitación" class="imagen-invitacion" src="/Archivos/invi_splash_jpg.jpg">
@@ -731,12 +731,13 @@
                     </svg>
 
                 </button>
+                
 
 
 
 
             </div>
-        </div>
+        <span class="wave-text" style="font-size: 0.8rem; color: white; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);"> Toque dos veces la pantalla para omitir</span></div>
     </div>
 
     <!-- Contenido Principal (oculto inicialmente) -->
@@ -776,10 +777,12 @@
                 <h2 id="line1" style="margin-top: 80px; opacity: 0;"></h2>
 <h2 id="line2" style="opacity: 0;"></h2>
 <h2 id="line3" style="opacity: 0;"></h2>
-<p id="line4" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, cursive; font-weight: 600; font-style: italic; font-size: 150%; opacity: 0;"></p>
-<p id="line5" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 600; font-style: italic; font-size: 150%; opacity: 0;"></p>
-<p id="line6" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 600; font-style: italic; font-size: 150%; opacity: 0;"></p>
-<p id="line7" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 250%; opacity: 0;"></p>
+<p id="line4" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, cursive; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line5" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line6" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 400; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line7" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line8" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 400; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line9" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 250%; opacity: 0;"></p>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -789,9 +792,11 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'line2', text: 'Pronto dejaré atrás la niñez y abriré las alas hacia nuevos sueños.' },
         { id: 'line3', text: 'Gracias por acompañarme en este viaje.' },
         { id: 'line4', text: '<br>' },
-        { id: 'line5', text: 'Ceremonia: <br>Parroquia de San Buenaventura<br>a las 13:45 hrs' },
-        { id: 'line6', text: 'Recepción: <br>Boutique Y Regalos "Pablin" <br>a partir de las 16:00 hrs' },
-        { id: 'line7', text: '<br>¡Tu presencia hará que este día sea inolvidable!' }
+        { id: 'line5', text: 'Ceremonia:' },
+        { id: 'line6', text: 'Parroquia de San Buenaventura<br>a las 13:45 hrs' },
+        { id: 'line7', text: 'Recepción:' },
+        { id: 'line8', text: 'Boutique Y Regalos "Pablin"<br>a partir de las 16:00 hrs' },
+        { id: 'line9', text: '<br>¡Tu presencia hará que este día sea inolvidable!' }
     ];
     
     let currentLine = 0;
