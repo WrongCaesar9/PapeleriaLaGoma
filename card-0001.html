@@ -66,7 +66,7 @@
             font-size: 2rem;
     animation: wave 2s ease-in-out infinite;
 }
-
+/* Asignar diferentes retrasos a cada letra */
 .wave-text span:nth-child(1) {
     animation-delay: 0s;
 }
@@ -78,6 +78,15 @@
 }
 .wave-text span:nth-child(4) {
     animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
 }
 
 @keyframes wave {
@@ -819,7 +828,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Esperar a que el video termine
     video.addEventListener('ended', function() {
         // Iniciar el typewriter cuando termine el video
-        setTimeout(typeLine, 1500);
+        setTimeout(typeLine, 2000);
     });
     
     // Por si el video ya terminó o hay algún error
@@ -957,7 +966,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="wave-container">
     
 </div><h2 style="margin-top: 80px;" class="wave-text">
-        <span>📸  </span><span>G</span><span>a</span><span>l</span><span>e</span><span>r</span><span>í</span><span>a</span><span>  📸</span>
+        <span>G</span><span>a</span><span>l</span><span>e</span><span>r</span><span>í</span><span>a</span>
     </h2>
                 </h2>
                 <p style="  font-family: Playwrite NG Modern, cursive;
