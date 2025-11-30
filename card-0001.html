@@ -776,9 +776,10 @@
                 <h2 id="line1" style="margin-top: 80px; opacity: 0;"></h2>
 <h2 id="line2" style="opacity: 0;"></h2>
 <h2 id="line3" style="opacity: 0;"></h2>
-<p id="line4" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
-<p id="line5" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
-<p id="line6" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line4" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, cursive; font-weight: 600; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line5" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 600; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line6" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 600; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line7" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 250%; opacity: 0;"></p>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -787,9 +788,10 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'line1', text: 'Querida familia y amigos:' },
         { id: 'line2', text: 'Pronto dejaré atrás la niñez y abriré las alas hacia nuevos sueños.' },
         { id: 'line3', text: 'Gracias por acompañarme en este viaje.' },
-        { id: 'line4', text: '¡No te pierdas este evento increíble!' },
-        { id: 'line5', text: 'Domingo<br>11/01/2026' },
-        { id: 'line6', text: 'A la 1:00 PM' }
+        { id: 'line4', text: '<br>' },
+        { id: 'line5', text: 'Ceremonia: <br>Parroquia de San Buenaventura<br>a las 13:45 hrs' },
+        { id: 'line6', text: 'Recepción: <br>Boutique Y Regalos "Pablin" <br>a partir de las 16:00 hrs' },
+        { id: 'line7', text: '<br>¡Tu presencia hará que este día sea inolvidable!' }
     ];
     
     let currentLine = 0;
@@ -887,7 +889,42 @@ document.addEventListener('DOMContentLoaded', function() {
             </section>
 
             <section id="seccion-ubicacion" class="seccion">
-                <h2 style="margin-top: 80px;">Ceremonia y Recepción</h2>
+                <h2 style="margin-top: 80px;">Ceremonia</h2>
+                <p style="  font-family: Playwrite NG Modern, cursive;
+                  font-optical-sizing: auto;
+                  font-weight: 100;
+                  font-style: normal;">📍Parroquia de San Buenaventura📍</p>
+                <p style="  font-family: Playwrite NG Modern, cursive;
+                  font-optical-sizing: auto;
+                  font-weight: 100;
+                  font-style: normal;">Pl. de La Constitución Manzana 020, 56000 Tezoyuca, Méx.</p>
+                <!-- Puedes agregar un mapa de Google Maps después -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1764530797527!6m8!1m7!1serIEaqzZ-J0wR1w7FVmH2w!2m2!1d19.59424941896591!2d-98.90583944204003!3f322.6562692029593!4f11.507045695929193!5f0.7820865974627469"
+                    width="100%" height="360" style="border:0; padding-bottom: 50px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div style="border:0; padding-bottom: 50px;">
+                    <a style="background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 40px;
+            /*20px*/
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            margin-top: 10px;
+            font-family: Playwrite NG Modern, cursive;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+" href='https://maps.app.goo.gl/mCR2TwrysLMy1TVE9'>Abrir Mapa</a>
+                </div>
+
+
+
+                <h2 style="margin-top: 40px;">Recepción</h2>
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
@@ -895,11 +932,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
-                  font-style: normal;">Av. México Manzana 006, 56010 Amp. Tezoyuca, Méx.</p>
-                <p style="  font-family: Playwrite NG Modern, cursive;
-                  font-optical-sizing: auto;
-                  font-weight: 100;
-                  font-style: normal;">Tezoyuca, Estado de México</p>
+                  font-style: normal;">Av. México Manzana 006, 56010 Amp. Tezoyuca</p>
+
+                  
                 <!-- Puedes agregar un mapa de Google Maps después -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!4v1764474040036!6m8!1m7!1sqyNKWM37z_Zz3pXfJ4sACQ!2m2!1d19.58223664975216!2d-98.92135102054169!3f262.6426688495862!4f-6.3451083352688045!5f0.5705891215334251"
@@ -921,9 +956,10 @@ document.addEventListener('DOMContentLoaded', function() {
             font-optical-sizing: auto;
             font-weight: 100;
             font-style: normal;
-" href='https://maps.app.goo.gl/jhBk9HQ6zskGXHEV7'>Ver en Google Maps</a>
+" href='https://maps.app.goo.gl/jhBk9HQ6zskGXHEV7'>Abrir Mapa</a>
                 </div>
             </section>
+
 
 
 
@@ -1834,8 +1870,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             break;
                     }
 
-                    // Agregar información del evento al mensaje (opcional)
-                    mensaje += '%0A%0A*XV Años* Luis Ángel Mora Ramírez%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 1:00 PM';
+                    /* Agregar información del evento al mensaje (opcional
+                   'Ceremonia: <br>Parroquia de San Buenaventura<br>a las 13:45 hrs' },
+        { id: 'line6', text: 'Recepción: <br>Boutique Y Regalos "Pablin" <br>a partir de las 16:00 hrs' 
+                
+                
+                )*/
+                    mensaje += '%0A%0A*XV Años |* Luis Ángel Mora Ramírez%0A%0A*Fecha:* 11 de Enero 2026%0A%0A*Ceremonia:* 01:45 PM en Parroquia de San Buenaventura%0A%0A*Recepción:* 04:00 PM en Boutique y Regalos "Pablin"%0A';
 
                     // Número de teléfono (reemplaza con el número real)
                     const telefono = '525538400082'; // ← CAMBIA ESTE NÚMERO
@@ -1865,7 +1906,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // -------- CONFIG ----------
         // Cambia esto por la fecha y hora del evento (ISO 8601) ejemplo 2025-11-29T18:00:00-06:00
-        const eventDate = new Date('2026-01-11T13:00:00-06:00');
+        const eventDate = new Date('2026-01-11T13:45:00-06:00');
         // Título/fecha de texto
         document.getElementById('dateText').textContent = eventDate.toLocaleString();
 
