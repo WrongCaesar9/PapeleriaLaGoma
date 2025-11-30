@@ -56,6 +56,40 @@
     <link rel="icon" type="image/ico" href="https://lagoma.netlify.app/logos/xv_ico.ico" sizes="192x192">
     <link rel="shortcut icon" href="/logos/xv_ico.ico">
     <style>
+        /* Animación de texto ondulado */
+.wave-text span {
+    display: inline-block;
+    font-family: "Playwrite NG Modern", cursive;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 2rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
         /* Ocultar scrollbar */
         ::-webkit-scrollbar {
             display: none;
@@ -70,13 +104,27 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            /* Base del terciopelo morado */
+            /* Base del terciopelo morado
+            background: linear-gradient(45deg,
+                    #7620b4 0%,
+                    #340c59 25%,
+                    #470e65 50%,
+                    #701186 75%,
+                    #4c0650 100%);
             background: linear-gradient(45deg,
                     #270241 0%,
                     #340c59 25%,
                     #1c022a 50%,
                     #380544 75%,
                     #1d011d 100%);
+            
+            */
+            background: linear-gradient(45deg,
+                    #470c70 0%,
+                    #1f0539 25%,
+                    #310549 50%,
+                    #4f094f 75%,
+                    #3c074c 100%);
             background-size: 100% 400%;
             background-blend-mode: overlay, screen, screen, screen;
             color: white;
@@ -586,30 +634,31 @@
                 font-family: "Great Vibes", cursive;
                 padding-top: 18%;
             }
+
             .audio-controls {
-            position: fixed;
-            margin-bottom: 1px;
-            display: flex;
-            top: 95%;
-            left: 92%;
-            transform: translate(-50%, -50%);
-            z-index: 1200;
-            animation: aparecer-principal 1.5s ease;
+                position: fixed;
+                margin-bottom: 1px;
+                display: flex;
+                top: 95%;
+                left: 92%;
+                transform: translate(-50%, -50%);
+                z-index: 1200;
+                animation: aparecer-principal 1.5s ease;
+            }
+
+            .imagen-invitacion {
+                /*300x500*/
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                border-radius: 15px;
+                /*margin-bottom: 20px;*/
+                box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+
+            }
         }
 
-                .imagen-invitacion {
-            /*300x500*/
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
-            border-radius: 15px;
-            /*margin-bottom: 20px;*/
-            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
-
-        }
-        }
-
-                @keyframes aparecer-principal {
+        @keyframes aparecer-principal {
             from {
                 opacity: 0;
                 transform: scale(0);
@@ -620,11 +669,13 @@
                 transform: scale(1);
             }
         }
+
         .video-aparecer {
             animation: video-aparecer 0.4s ease-in-out forwards;
 
         }
-            @keyframes video-aparecer {
+
+        @keyframes video-aparecer {
             from {
                 opacity: 1;
                 transform: scale(1);
@@ -713,18 +764,87 @@
 
         <main class="secciones">
             <section id="seccion-inicio" class="seccion activa">
-                <h2 style="margin-top: 80px;">Querida  familia y amigos:</h2>
-                <h2>Pronto dejaré atrás la niñez y abriré las alas hacia nuevos sueños.</h2>
-                <h2>Gracias por acompañarme en este viaje.</h2>
-                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
-                  font-weight: 700;
-                  font-style: italic; font-size: 150%;">¡No te pierdas este evento increíble!</p>
-                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
-                  font-weight: 700;
-                  font-style: italic; font-size: 150%;">Domingo<br>11/01/2026</p>
-                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
-                  font-weight: 700;
-                  font-style: italic; font-size: 150%;">A la 1:00 PM</p>
+                <h2 id="line1" style="margin-top: 80px; opacity: 0;"></h2>
+<h2 id="line2" style="opacity: 0;"></h2>
+<h2 id="line3" style="opacity: 0;"></h2>
+<p id="line4" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line5" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
+<p id="line6" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('videoInvitacion');
+    const texts = [
+        { id: 'line1', text: 'Querida familia y amigos:' },
+        { id: 'line2', text: 'Pronto dejaré atrás la niñez y abriré las alas hacia nuevos sueños.' },
+        { id: 'line3', text: 'Gracias por acompañarme en este viaje.' },
+        { id: 'line4', text: '¡No te pierdas este evento increíble!' },
+        { id: 'line5', text: 'Domingo<br>11/01/2026' },
+        { id: 'line6', text: 'A la 1:00 PM' }
+    ];
+    
+    let currentLine = 0;
+    
+    function typeLine() {
+        if (currentLine >= texts.length) return;
+        
+        const current = texts[currentLine];
+        const element = document.getElementById(current.id);
+        const text = current.text;
+        let index = 0;
+        
+        element.style.opacity = '1';
+        
+        function typeChar() {
+            if (index < text.length) {
+                // Manejar <br> como salto de línea
+                if (text.substring(index, index + 4) === '<br>') {
+                    element.innerHTML += '<br>';
+                    index += 4;
+                } else {
+                    element.innerHTML += text[index];
+                    index++;
+                }
+                setTimeout(typeChar, 50);
+            } else {
+                // Terminó esta línea, pasar a la siguiente
+                currentLine++;
+                setTimeout(typeLine, 500);
+            }
+        }
+        
+        typeChar();
+    }
+    
+    // Esperar a que el video termine
+    video.addEventListener('ended', function() {
+        // Iniciar el typewriter cuando termine el video
+        setTimeout(typeLine, 1500);
+    });
+    
+    // Por si el video ya terminó o hay algún error
+    if (video) {
+        video.addEventListener('ended', startTypewriter);
+        
+        // También iniciar si el video ya terminó
+        if (video.readyState >= 4 && video.currentTime >= video.duration - 0.1) {
+            startTypewriter();
+        }
+        
+        // Por si acaso el video falla, iniciar después de 5 segundos
+        setTimeout(function() {
+            if (!typewriterStarted) {
+                startTypewriter();
+            }
+        }, 5000);
+        
+    } else {
+        // Si no hay video, iniciar inmediatamente
+        startTypewriter();
+    }
+    
+});
+</script>
 
                 <center>
                     <div style="font-family: Crimson Text, serif;
@@ -777,8 +897,8 @@
                     width="100%" height="360" style="border:0; padding-bottom: 50px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-            <div   style="border:0; padding-bottom: 50px;">
-                <a style="background: rgba(255, 255, 255, 0.2);
+                <div style="border:0; padding-bottom: 50px;">
+                    <a style="background: rgba(255, 255, 255, 0.2);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.3);
             padding: 10px 40px;
@@ -793,7 +913,7 @@
             font-weight: 100;
             font-style: normal;
 " href='https://maps.app.goo.gl/jhBk9HQ6zskGXHEV7'>Ver en Google Maps</a>
-            </div>
+                </div>
             </section>
 
 
@@ -833,7 +953,13 @@
 
 
             <section id="seccion-Galeria" class="seccion">
-                <h2 style="margin-top: 80px;">Galería</h2>
+                <h2 hidden style="margin-top: 80px;">Galería
+                    <div class="wave-container">
+    
+</div><h2 style="margin-top: 80px;" class="wave-text">
+        <span>G</span><span>a</span><span>l</span><span>e</span><span>r</span><span>í</span><span>a</span>
+    </h2>
+                </h2>
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
@@ -986,50 +1112,51 @@
                 </script>
                 <style>
                     /* Carousel responsive ajustable al ancho */
-.carousel-gallery {
-    width: 100%;
-    max-width: 400px;
-    margin: 30px auto;
-    overflow: hidden;
-    position: relative;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 10px;
-}
+                    .carousel-gallery {
+                        width: 100%;
+                        max-width: 400px;
+                        margin: 30px auto;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 15px;
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(10px);
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        padding: 10px;
+                    }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    height: 500px;/* Altura fija para mantener proporción */
-}
+                    .carousel-track {
+                        display: flex;
+                        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                        height: 500px;
+                        /* Altura fija para mantener proporción */
+                    }
 
-.carousel-slide {
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
+                    .carousel-slide {
+                        min-width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                    }
 
-.carousel-slide img {
-    max-width: 95%;
-    max-height: 95%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 
-        0 8px 25px rgba(0, 0, 0, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease;
-}
+                    .carousel-slide img {
+                        max-width: 95%;
+                        max-height: 95%;
+                        width: auto;
+                        height: auto;
+                        object-fit: contain;
+                        border-radius: 10px;
+                        box-shadow:
+                            0 8px 25px rgba(0, 0, 0, 0.4),
+                            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                        transition: transform 0.3s ease;
+                    }
 
-/* Efecto hover sutil */
-.carousel-slide img:hover {
-    transform: scale(1.3);
-}
+                    /* Efecto hover sutil */
+                    .carousel-slide img:hover {
+                        transform: scale(1.3);
+                    }
 
                     /* Controls */
                     .carousel-btn {
@@ -1074,8 +1201,15 @@
                     .carousel-dot {
                         width: 10px;
                         height: 10px;
-                        background: rgba(255, 255, 255, 0.35);
+                        background: transparent;
                         border-radius: 50%;
+                          
+                        border: 1px solid transparent; /* Define el grosor y hace el borde transparente */
+  box-shadow: 
+    /* Sombra exterior para el efecto de desenfoque */
+    0 0 2px 2px rgba(244, 136, 250, 0.816), 
+    /* Sombra interior para crear el borde nítido */
+    inset 0 0 0 1px rgba(255, 121, 228, 0.83); 
                         cursor: pointer;
                     }
 
@@ -1085,43 +1219,43 @@
 
 
                     /* Responsive heights */
-@media (max-width: 768px) {
-    .carousel-gallery {
-    width: 100%;
-    max-width: 500px;
-        margin: 20px auto;
-    }
-    
-    .carousel-track {
-        height: 580px;
-    }
-    
-    .carousel-slide img {
-        max-width: 85%;
-        max-height: 85%;
-    }
-}
+                    @media (max-width: 768px) {
+                        .carousel-gallery {
+                            width: 100%;
+                            max-width: 500px;
+                            margin: 20px auto;
+                        }
 
-@media (max-width: 480px) {
-    .carousel-gallery {
-            width: 100%;
-    max-width: 500px;
-    }
-    
-    .carousel-track {
-        height: 530px;
-    }
-        .carousel-slide img {
-        max-width: 95%;
-        max-height: 95%;
-    }
-}
-                    
+                        .carousel-track {
+                            height: 400px;
+                        }
+
+                        .carousel-slide img {
+                            max-width: 85%;
+                            max-height: 85%;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        .carousel-gallery {
+                            width: 100%;
+                            max-width: 500px;
+                        }
+
+                        .carousel-track {
+                            height: 430px;
+                        }
+
+                        .carousel-slide img {
+                            max-width: 95%;
+                            max-height: 95%;
+                        }
+                    }
                 </style>
 
                 <div class="carousel-gallery" id="carouselGallery" aria-label="Galería de fotos">
                     <div class="carousel-track">
-                       <div class="carousel-slide"><img src="/Archivos/05.png" alt="Foto 1">
+                        <div class="carousel-slide"><img src="/Archivos/05.png" alt="Foto 1">
                         </div>
                         <div class="carousel-slide"><img src="/Archivos/01.png" alt="Foto 2">
                         </div>
@@ -1138,8 +1272,11 @@
 
                     <div class="carousel-dots" aria-hidden="false"></div>
                 </div>
-                <div style="padding-bottom: 500px;"></div>
-
+                <div style="padding-bottom: 50px;"></div>
+                <p style="  font-family: Playwrite NG Modern, cursive;
+                  font-optical-sizing: auto;
+                  font-weight: 100;
+                  font-style: normal;">Cargando galería Post Evento...</p>
                 <script>
                     document.addEventListener('DOMContentLoaded', function () {
                         const gallery = document.getElementById('carouselGallery');
@@ -1216,7 +1353,343 @@
 
                     });
                 </script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        // Esperar un poco para asegurarnos que el markup original ya esté presente
+                        setTimeout(() => {
+                            const gallery2 = document.getElementById('carouselGallery2');
+                            if (!gallery2) return;
 
+                            // Leer imágenes actuales (si existen) para reconstruir el carrusel
+                            const existingImgs2 = Array.from(gallery2.querySelectorAll('.carousel-slide2 img'));
+                            if (existingImgs2.length === 0) return;
+
+                            const imgs2 = existingImgs2.map(img => ({ src: img.src, alt: img.alt || '' }));
+                            const n2 = imgs2.length;
+
+                            // Construir nuevo HTML: clonamos primero y último para loop "seamless"
+                            const trackSlides2 = [];
+                            // clon último
+                            trackSlides2.push(`<div class="carousel-slide2"><img src="${imgs2[n2 - 1].src}" alt="${imgs2[n2 - 1].alt}"></div>`);
+                            // slides reales
+                            imgs2.forEach(i => trackSlides2.push(`<div class="carousel-slide2"><img src="${i.src}" alt="${i.alt}"></div>`));
+                            // clon primero
+                            trackSlides2.push(`<div class="carousel-slide2"><img src="${imgs2[0].src}" alt="${imgs2[0].alt}"></div>`);
+
+                            gallery2.innerHTML = `
+            <div class="carousel-track2">
+                ${trackSlides2.join('')}
+            </div>
+
+            <button class="carousel-btn2 prev2" aria-label="Anterior">‹</button>
+            <button class="carousel-btn2 next2" aria-label="Siguiente">›</button>
+
+            <div class="carousel-dots2" aria-hidden="false"></div>
+        `;
+
+                            // Inicializar comportamiento con loop seamless
+                            const track2 = gallery2.querySelector('.carousel-track2');
+                            const slides2 = Array.from(gallery2.querySelectorAll('.carousel-slide2'));
+                            const btnPrev2 = gallery2.querySelector('.carousel-btn2.prev2');
+                            const btnNext2 = gallery2.querySelector('.carousel-btn2.next2');
+                            const dotsContainer2 = gallery2.querySelector('.carousel-dots2');
+
+                            let index2 = 0; // índice lógico (0..n-1) de las slides reales
+                            let isTransitioning2 = false;
+                            let autoplayId2 = null;
+
+                            // Crear dots para n slides reales
+                            for (let i = 0; i < n2; i++) {
+                                const d = document.createElement('button');
+                                d.className = 'carousel-dot2' + (i === 0 ? ' active' : '');
+                                d.dataset.index = i;
+                                d.setAttribute('aria-label', 'Ir a imagen ' + (i + 1));
+                                dotsContainer2.appendChild(d);
+                            }
+                            const dots2 = Array.from(dotsContainer2.children);
+
+                            // Ajustes iniciales: mover el track para mostrar la primera slide real (índice 1 en DOM por clon previo)
+                            function setTransition2(enabled) {
+                                track2.style.transition = enabled ? 'transform 0.5s ease' : 'none';
+                            }
+                            function updateTransform2() {
+                                // track index = index + 1 (por clon al inicio)
+                                track2.style.transform = `translateX(-${(index2 + 1) * 100}%)`;
+                                dots2.forEach((dot, dIdx) => dot.classList.toggle('active', dIdx === index2));
+                            }
+
+                            // Control de finalización de transición para resetear cuando saltamos a clon
+                            track2.addEventListener('transitionstart', () => { isTransitioning2 = true; });
+                            track2.addEventListener('transitionend', () => {
+                                isTransitioning2 = false;
+                                // Si estuvimos en el clon al principio (index === -1 -> último real)
+                                if (index2 < 0) {
+                                    setTransition2(false);
+                                    index2 = n2 - 1;
+                                    updateTransform2();
+                                    // forzar reflow antes de reactivar transición
+                                    void track2.offsetWidth;
+                                    setTransition2(true);
+                                } else if (index2 >= n2) {
+                                    setTransition2(false);
+                                    index2 = 0;
+                                    updateTransform2();
+                                    void track2.offsetWidth;
+                                    setTransition2(true);
+                                }
+                            });
+
+                            function goTo2(i) {
+                                if (isTransitioning2) return;
+                                index2 = i;
+                                // permitimos índices fuera de 0..n-1 para activar el efecto de clon (p.ej -1 o n)
+                                setTransition2(true);
+                                updateTransform2();
+                            }
+
+                            btnPrev2.addEventListener('click', () => goTo2(index2 - 1));
+                            btnNext2.addEventListener('click', () => goTo2(index2 + 1));
+
+                            dots2.forEach(dot => dot.addEventListener('click', () => goTo2(Number(dot.dataset.index))));
+
+                            // Autoplay
+                            function startAutoplay2() {
+                                stopAutoplay2();
+                                autoplayId2 = setInterval(() => goTo2(index2 + 1), 4000);
+                            }
+                            function stopAutoplay2() {
+                                if (autoplayId2) { clearInterval(autoplayId2); autoplayId2 = null; }
+                            }
+                            gallery2.addEventListener('mouseenter', stopAutoplay2);
+                            gallery2.addEventListener('mouseleave', startAutoplay2);
+
+                            // Touch (swipe)
+                            let startX2 = 0, moved2 = false;
+                            gallery2.addEventListener('touchstart', e => {
+                                stopAutoplay2();
+                                startX2 = e.touches[0].clientX;
+                                moved2 = false;
+                            }, { passive: true });
+                            gallery2.addEventListener('touchmove', e => {
+                                const dx = e.touches[0].clientX - startX2;
+                                if (Math.abs(dx) > 10) moved2 = true;
+                            }, { passive: true });
+                            gallery2.addEventListener('touchend', e => {
+                                if (!moved2) { startAutoplay2(); return; }
+                                const endX = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientX : startX2;
+                                const dx = endX - startX2;
+                                if (dx > 40) goTo2(index2 - 1);
+                                else if (dx < -40) goTo2(index2 + 1);
+                                startAutoplay2();
+                            });
+
+                            // Inicializar estado
+                            setTransition2(false);
+                            updateTransform2(); // coloca en primer slide real
+                            void track2.offsetWidth; // reflow
+                            setTransition2(true);
+                            startAutoplay2();
+
+                            // Reajustar en resize para mantener el cálculo si es necesario
+                            window.addEventListener('resize', () => {
+                                // reactivar transform basado en tamaño actual
+                                updateTransform2();
+                            });
+                        }, 50);
+                    });
+                </script>
+                <style>
+                    /* Carousel responsive ajustable al ancho */
+                    .carousel-gallery2 {
+                        width: 100%;
+                        max-width: 400px;
+                        margin: 30px auto;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 15px;
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(10px);
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        padding: 10px;
+                    }
+
+                    .carousel-track2 {
+                        display: flex;
+                        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                        height: 500px;
+                        /* Altura fija para mantener proporción */
+                    }
+
+                    .carousel-slide2 {
+                        min-width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                    }
+
+                    .carousel-slide2 img {
+                        max-width: 95%;
+                        max-height: 95%;
+                        width: auto;
+                        height: auto;
+                        object-fit: contain;
+                        border-radius: 10px;
+                        box-shadow:
+                            0 8px 25px rgba(0, 0, 0, 0.4),
+                            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                        transition: transform 0.3s ease;
+                    }
+
+                    /* Efecto hover sutil */
+                    .carousel-slide2 img:hover {
+                        transform: scale(1.3);
+                    }
+
+                    /* Controls */
+                    .carousel-btn2 {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: rgba(255, 255, 255, 0.15);
+                        border: none;
+                        color: white;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        backdrop-filter: blur(6px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .carousel-btn2:hover {
+                        background: rgba(255, 255, 255, 0.25);
+                    }
+
+                    .carousel-btn2.prev2 {
+                        left: 12px;
+                    }
+
+                    .carousel-btn2.next2 {
+                        right: 12px;
+                    }
+
+                    /* Dots */
+                    .carousel-dots2 {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 10px;
+                        display: flex;
+                        gap: 8px;
+                    }
+
+                    .carousel-dot2 {
+                        width: 10px;
+                        height: 10px;
+                        background: transparent;
+                        border-radius: 50%;
+                          
+                        border: 1px solid transparent; /* Define el grosor y hace el borde transparente */
+  box-shadow: 
+    /* Sombra exterior para el efecto de desenfoque */
+    0 0 2px 2px rgba(244, 136, 250, 0.816), 
+    /* Sombra interior para crear el borde nítido */
+    inset 0 0 0 1px rgba(255, 121, 228, 0.83); 
+                        cursor: pointer;
+                    }
+
+                    .carousel-dot2.active {
+                        background: rgba(255, 255, 255, 0.95);
+                    }
+
+                    /* Responsive heights */
+                    @media (max-width: 768px) {
+                        .carousel-gallery2 {
+                            width: 100%;
+                            max-width: 500px;
+                            margin: 20px auto;
+                        }
+
+                        .carousel-track2 {
+                            height: 400px;
+                        }
+
+                        .carousel-slide2 img {
+                            max-width: 85%;
+                            max-height: 85%;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        .carousel-gallery2 {
+                            width: 100%;
+                            max-width: 500px;
+                        }
+
+                        .carousel-track2 {
+                            height: 430px;
+                        }
+
+                        .carousel-slide2 img {
+                            max-width: 95%;
+                            max-height: 95%;
+                        }
+                    }
+                </style>
+
+                <div class="carousel-gallery2" id="carouselGallery2" aria-label="Galería de fotos">
+                    <div class="carousel-track2">
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 1">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 2">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 3">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 4">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 5">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 6">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 7">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 8">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 9">
+                        </div>
+                        <div class="carousel-slide2"><img
+                                src="https://i.pinimg.com/originals/e1/dc/7d/e1dc7d5820ba672b1a7ea67dc24f4e8f.gif"
+                                alt="Recuerdo 10">
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn2 prev2" aria-label="Anterior">‹</button>
+                    <button class="carousel-btn2 next2" aria-label="Siguiente">›</button>
+
+                    <div class="carousel-dots2" aria-hidden="false"></div>
+                </div>
+                <div style="padding-bottom: 50px;"></div>
             </section>
         </main>
     </div>
@@ -1234,138 +1707,151 @@
             const navBtns = document.querySelectorAll('.nav-btn');
             const secciones = document.querySelectorAll('.seccion');
 
+// Función para saltar al final del video
+            function skipToEnd() {
+    const video = document.getElementById('videoInvitacion');
+    video.pause();
+    video.currentTime = video.duration;
+    video.dispatchEvent(new Event('ended'));
+}
+
+// Llamar la función cuando quieras
+
             // Variables para detectar doble tap
             let lastTap = 0;
             const doubleTapDelay = 300; // milisegundos entre taps
 
             // 1. Manejar la apertura de la invitación
             btnAbrir.addEventListener('click', function () {
-            abrirInvitacion();
+                abrirInvitacion();
             });
 
             function abrirInvitacion() {
-            // Ocultar la pantalla inicial y mostrar el video
-            pantallaInicial.style.display = 'none';
-            video.style.display = 'block';
-            video.play();
+                // Ocultar la pantalla inicial y mostrar el video
+                pantallaInicial.style.display = 'none';
+                video.style.display = 'block';
+                video.play();
 
-            // Cuando el video termine, mostrar el contenido principal
-            video.onended = function () {
-                cerrarModal();
-            };
+                // Cuando el video termine, mostrar el contenido principal
+                video.onended = function () {
+                    cerrarModal();
+                };
             }
 
             function cerrarModal() {
-            // Efecto de desvanecimiento
-            modal.classList.add('desvanecer');
-            modal.classList.add('video-aparecer');
+                // Efecto de desvanecimiento
+                
+                modal.classList.add('desvanecer');
+                modal.classList.add('video-aparecer');
 
-            // Después de la animación, ocultar modal y mostrar contenido
-            setTimeout(function () {
-                modal.style.display = 'none';
-                contenidoPrincipal.style.display = 'block';
-
-                // Pequeño retraso para la animación de entrada del contenido
+                // Después de la animación, ocultar modal y mostrar contenido
                 setTimeout(function () {
-                contenidoPrincipal.style.opacity = '1';
-                }, 50);
-            }, 500);
+                    modal.style.display = 'none';
+                    contenidoPrincipal.style.display = 'block';
+
+                    // Pequeño retraso para la animación de entrada del contenido
+                    setTimeout(function () {
+                        contenidoPrincipal.style.opacity = '1';
+                    }, 50);
+                }, 500);
             }
 
             // Detectar doble tap en pantalla táctil
             modal.addEventListener('touchend', function (e) {
-            const currentTime = new Date().getTime();
-            const tapLength = currentTime - lastTap;
+                const currentTime = new Date().getTime();
+                const tapLength = currentTime - lastTap;
 
-            if (tapLength < doubleTapDelay && tapLength > 0) {
-                // Doble tap detectado
-                e.preventDefault();
-                if (video.style.display === 'block') {
-                cerrarModal();
-                } else {
-                abrirInvitacion();
+                if (tapLength < doubleTapDelay && tapLength > 0) {
+                    // Doble tap detectado
+                    e.preventDefault();
+                    if (video.style.display === 'block') {
+                        cerrarModal();
+                        skipToEnd();// Saltar al final del video
+                    } else {
+                        abrirInvitacion();
+                    }
                 }
-            }
-            lastTap = currentTime;
+                lastTap = currentTime;
             });
 
             // 2. Navegación entre secciones
             navBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                const seccionObjetivo = this.getAttribute('data-seccion');
+                btn.addEventListener('click', function () {
+                    const seccionObjetivo = this.getAttribute('data-seccion');
 
-                // Actualizar botones activos
-                navBtns.forEach(b => b.classList.remove('activo'));
-                this.classList.add('activo');
+                    // Actualizar botones activos
+                    navBtns.forEach(b => b.classList.remove('activo'));
+                    this.classList.add('activo');
 
-                // Mostrar sección correspondiente
-                secciones.forEach(seccion => {
-                seccion.classList.remove('activa');
-                if (seccion.id === `seccion-${seccionObjetivo}`) {
-                    setTimeout(() => {
-                    seccion.classList.add('activa');
-                    }, 50);
-                }
+                    // Mostrar sección correspondiente
+                    secciones.forEach(seccion => {
+                        seccion.classList.remove('activa');
+                        if (seccion.id === `seccion-${seccionObjetivo}`) {
+                            setTimeout(() => {
+                                seccion.classList.add('activa');
+                            }, 50);
+                        }
+                    });
                 });
-            });
             });
 
             // 3. Manejar el envío del formulario a WhatsApp
             const formulario = document.querySelector('.formulario-confirmacion');
             if (formulario) {
-            formulario.addEventListener('submit', function (e) {
-                e.preventDefault();
+                formulario.addEventListener('submit', function (e) {
+                    e.preventDefault();
 
-                // Obtener la opción seleccionada
-                const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
+                    // Obtener la opción seleccionada
+                    const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
 
-                if (!opcionSeleccionada) {
-                alert('Por favor, selecciona una opción de asistencia.');
-                return;
-                }
+                    if (!opcionSeleccionada) {
+                        alert('Por favor, selecciona una opción de asistencia.');
+                        return;
+                    }
 
-                const asistencia = opcionSeleccionada.value;
-                let mensaje = '';
+                    const asistencia = opcionSeleccionada.value;
+                    let mensaje = '';
 
-                // Personalizar el mensaje según la opción
-                switch (asistencia) {
-                case 'si':
-                    mensaje = '¡Hola! Confirmo que *SÍ asistiré* al evento. ¡Nos vemos!';
-                    break;
-                case 'no':
-                    mensaje = 'Hola! Lamentablemente *NO podré asistir* al evento. ¡Mucho éxito!';
-                    break;
-                case 'talvez':
-                    mensaje = 'Hola! Todavía *no estoy seguro* si podré asistir al evento. Te confirmo más cerca de la fecha.';
-                    break;
-                }
+                    // Personalizar el mensaje según la opción
+                    switch (asistencia) {
+                        case 'si':
+                            mensaje = '¡Hola! Confirmo que *SÍ asistiré* al evento. ¡Nos vemos!';
+                            break;
+                        case 'no':
+                            mensaje = 'Hola! Lamentablemente *NO podré asistir* al evento. ¡Mucho éxito!';
+                            break;
+                        case 'talvez':
+                            mensaje = 'Hola! Todavía *no estoy seguro* si podré asistir al evento. Te confirmo más cerca de la fecha.';
+                            break;
+                    }
 
-                // Agregar información del evento al mensaje (opcional)
-                mensaje += '%0A%0A*XV Años* Luis Ángel Mora Ramírez%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
+                    // Agregar información del evento al mensaje (opcional)
+                    mensaje += '%0A%0A*XV Años* Luis Ángel Mora Ramírez%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
 
-                // Número de teléfono (reemplaza con el número real)
-                const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
+                    // Número de teléfono (reemplaza con el número real)
+                    const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
 
-                // Crear el enlace de WhatsApp
-                const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+                    // Crear el enlace de WhatsApp
+                    const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
 
-                // Abrir WhatsApp
-                window.open(urlWhatsApp, '_blank');
+                    // Abrir WhatsApp
+                    window.open(urlWhatsApp, '_blank');
 
-                // Opcional: Mostrar mensaje de confirmación
-                alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
-            });
+                    // Opcional: Mostrar mensaje de confirmación
+                    alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
+                });
             }
 
             // 4. Opcional: Permitir saltar el video con tecla Escape
             document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' || e.key === 'Enter' && modal.style.display !== 'none') {
-                modal.style.display = 'none';
-                contenidoPrincipal.style.display = 'block';
-            }
+                if (e.key === 'Escape' || e.key === 'Enter' && modal.style.display !== 'none') {
+                    modal.style.display = 'none';
+                    contenidoPrincipal.style.display = 'block';
+                    skipToEnd();
+                }
             });
         });
-      
+
 
 
         // -------- CONFIG ----------
