@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="dns-prefetch" href="https://lagoma.netlify.app/card-0001">
+    <link rel="preconnect" href="https://lagoma.netlify.app/card-0001" crossorigin>
+
+    <!-- SEO básico -->
+    <title>XV años | Luis Ángel Mora Ramírez</title>
+    <meta name="description"
+        content="XV años | Luis Ángel Mora Ramírez | Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
+    <meta name="keywords" content="invitación, card, invitation card">
+    <meta name="author" content="WrongCaesar9">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lagoma.netlify.app/card-0001">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="XV años | Luis Ángel Mora Ramírez">
+    <meta property="og:site_name" content="La Goma">
+    <meta property="og:description"
+        content="XV años | Luis Ángel Mora Ramírez | Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
+    <meta property="og:url" content="https://lagoma.netlify.app/card-0001">
+    <meta property="og:image" content="https://lagoma.netlify.app/logos/og_splash_600.jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="OG Image XV años | Luis Ángel Mora Ramírez">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XV años | Luis Ángel Mora Ramírez">
+    <meta name="twitter:description"
+        content="XV años | Luis Ángel Mora Ramírez | Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
+    <meta name="twitter:image" content="https://lagoma.netlify.app/logos/og_splash_600.jpg">
+    <meta name="twitter:site" content="@WrongCaesar9">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+NG+Modern:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="https://lagoma.netlify.app/logos/xv_ico.ico" sizes="192x192">
+    <link rel="shortcut icon" href="/logos/xv_ico.ico">
+    <style>
+        /* Ocultar scrollbar */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            /* Base del terciopelo morado */
+            background: linear-gradient(45deg,
+                    #270241 0%,
+                    #340c59 25%,
+                    #1c022a 50%,
+                    #380544 75%,
+                    #1d011d 100%);
+            background-size: 100% 400%;
+            background-blend-mode: overlay, screen, screen, screen;
+            color: white;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Patrón de textura de terciopelo */
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(255, 212, 19, 0.064) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px, 30px 30px;
+            z-index: -1;
+        }
+
+        /* Custom controls */
+        .controls {
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.48));
+            padding: 8px;
+            border-radius: 10px
+        }
+
+        /* Modal/Pantalla Inicial */
+        .modal {
+            overflow-x: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+
+        .modal-contenido {
+            text-align: center;
+            animation: aparecer 0.7s ease-in-out backwards;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0.1);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Botón con corona animada */
+        .btn-tocar {
+            background: linear-gradient(45deg, #38083a, #764ba2);
+            color: #8B4513;
+            border: none;
+            padding: 20px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(241, 148, 255, 0.928);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .btn-tocar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(241, 48, 255, 0.6);
+
+        }
+
+        /* Animación de "suspiro" - escala continua */
+        @keyframes suspiro {
+
+            0%,
+            100% {
+                transform: scale(0.6);
+            }
+
+            50% {
+                transform: scale(0.9);
+            }
+        }
+
+        /* Animación de "suspiro" - escala continua */
+        @keyframes suspirodos {
+
+            0%,
+            100% {
+                left: 100%
+            }
+
+            50% {
+                left: -100%;
+            }
+        }
+
+        /* Animación específica para la corona */
+        .corona-svg {
+            animation: suspiro 1s ease-in-out infinite;
+            filter: drop-shadow(0 2px 3px rgba(229, 45, 232, 0.3));
+
+        }
+
+        /* Efecto de brillo en hover */
+        .btn-tocar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+            animation: suspirodos 2s ease-in-out infinite;
+        }
+
+        .btn-tocar:hover::before {
+            left: 100%;
+        }
+
+        /* Efecto de partículas doradas (opcional) */
+        .btn-tocar:hover .corona-svg {
+            filter: drop-shadow(0 0 8px rgba(247, 160, 255, 0.8));
+        }
+
+        /*Countdown Pantalla Principal */
+        .countdown {
+            margin-top: 5%;
+            align-items: center;
+            display: inline-flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .countdown .item {
+
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 64px;
+            border: 2px solid rgba(255, 202, 244, 0.755);
+        }
+
+        .countdown .item .num {
+
+            font-weight: 700;
+            font-size: 20px
+        }
+
+        /* Contenido Principal */
+        .contenido-principal {
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .contenido-principal {
+            text-align: center;
+            animation: aparecer-principal 1.5s ease-out backwards;
+        }
+
+
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: -50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family: "Great Vibes", cursive;
+            padding-top: 7%;
+        }
+
+        .navegacion {
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            position: fixed;
+            top: 10px;
+            left: 0;
+            right: 0;
+            display: flex;
+            gap: 10px;
+            padding: 0px 100px;
+            z-index: 1000;
+
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 40px;
+            /*20px*/
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            margin-top: 10px;
+            font-family: "Playwrite NG Modern", cursive;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+
+        }
+
+        .nav-btn.activo,
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Secciones */
+        .secciones {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+
+        }
+
+        .seccion {
+            display: none;
+            animation: deslizar 0.5s ease;
+
+        }
+
+        @keyframes deslizar {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+
+            }
+        }
+
+        .seccion.activa {
+            display: block;
+
+        }
+
+        .seccion h2 {
+            margin-bottom: 10px;
+            font-family: "Playwrite NG Modern", cursive;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 2rem;
+
+        }
+
+        .seccion p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+
+        }
+
+        /* Efecto de desvanecimiento */
+        .desvanecer {
+            animation: desvanecer 0.1s ease forwards;
+
+        }
+
+        @keyframes desvanecer {
+            to {
+                opacity: 0;
+
+            }
+        }
+
+
+
+        /* Estilos para las opciones de radio personalizadas */
+        .opcion-asistencia {
+            display: flex;
+            font-family: "Playwrite NG Modern", cursive;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+
+        }
+
+        .opcion-asistencia label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+
+        }
+
+        .opcion-asistencia label:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+
+        }
+
+        .opcion-asistencia input[type="radio"] {
+            display: none;
+
+        }
+
+        .radio-custom {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            position: relative;
+            transition: all 0.3s ease;
+
+        }
+
+        .opcion-asistencia input[type="radio"]:checked+.radio-custom {
+            border-color: #25D366;
+            background: #25D366;
+
+        }
+
+        .opcion-asistencia input[type="radio"]:checked+.radio-custom::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+
+        }
+
+        .opcion-asistencia input[type="radio"]:checked~span:last-child {
+            color: #25D366;
+            font-weight: bold;
+        }
+
+        /* Botón de WhatsApp con logo */
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E) !important;
+            color: white !important;
+            border: none !important;
+            padding: 15px 25px !important;
+            font-family: "Playwrite NG Modern", cursive !important;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            border-radius: 50px !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 12px !important;
+            margin-top: 15px !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.05) !important;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
+            background: linear-gradient(45deg, #25D366, #25D366) !important;
+        }
+
+        .btn-whatsapp:active {
+            transform: scale(1.02) !important;
+        }
+
+        /* Asegurar que el SVG herede los colores correctamente */
+        .btn-whatsapp svg {
+            flex-shrink: 0;
+        }
+
+
+
+
+        /* Estilos mínimos para los controles de audio
+         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;
+        
+        
+        */
+        .audio-controls {
+            position: fixed;
+            margin-bottom: 1px;
+            display: flex;
+            top: 95%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+            z-index: 1200;
+        }
+
+        .audio-wrapper audio {
+            display: none;
+        }
+
+        .audioBtns {
+            /* arriba de los controles existentes */
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 6px 6px;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+
+        /* Responsive design */
+
+        .xv-a-a p {
+            padding-top: 100%;
+        }
+
+        @media (max-width: 1000px) {
+
+            /* Contenedor para los botones */
+            .navegacion {
+                position: fixed;
+                top: 10px;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                padding: 0px 100px;
+                z-index: 1000;
+            }
+
+            .nav-btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.2);
+                color: rgb(255, 255, 255);
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                padding: 8px 15px;
+                border-radius: 25px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(10px);
+                font-family: "Playwrite NG Modern", cursive;
+                font-optical-sizing: auto;
+                font-weight: 100;
+                font-style: normal;
+                font-size: 12px;
+                white-space: nowrap;
+                flex: 1;
+                /* Que se expandan igual */
+                max-width: 90px;
+                /* Ancho máximo */
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+                margin-bottom: -35px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                font-family: "Great Vibes", cursive;
+                padding-top: 18%;
+            }
+            .audio-controls {
+            position: fixed;
+            margin-bottom: 1px;
+            display: flex;
+            top: 95%;
+            left: 92%;
+            transform: translate(-50%, -50%);
+            z-index: 1200;
+            animation: aparecer-principal 1.5s ease;
+        }
+
+                .imagen-invitacion {
+            /*300x500*/
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 15px;
+            /*margin-bottom: 20px;*/
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+
+        }
+        }
+
+                @keyframes aparecer-principal {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .video-aparecer {
+            animation: video-aparecer 0.4s ease-in-out forwards;
+
+        }
+            @keyframes video-aparecer {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: -1.0;
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Modal/Pantalla Inicial -->
+    <div id="invitacionModal" class="modal">
+        <div class="modal-contenido">
+            <video id="videoInvitacion" class="imagen-invitacion" style="display: none;"><!-- controls  -->
+                <source src="/Archivos/vid_ver.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento video.
+            </video>
+            <div id="pantallaInicial" class="pantalla-inicial"
+                style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img alt="Imagen de invitación" class="imagen-invitacion" src="/Archivos/invi_splash_jpg.jpg">
+
+                <button id="btnAbrir" class="btn-tocar"
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+                    <svg style="scale: calc(2);" class="corona-svg" width="32" height="32" viewBox="0 0 24 24"
+                        fill="none">
+                        <!-- Corona más detallada -->
+
+                        <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5Z" stroke="#FEE7FE" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 16H19V19C19 20.1046 18.1046 21 17 21H7C5.89543 21 5 20.1046 5 19V16Z"
+                            stroke="#FEE7FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <!-- Piedras preciosas -->
+                        <circle cx="12" cy="8" r="1.5" fill="#F216F2" />
+                        <circle cx="8" cy="10" r="0.9" fill="#F665F6" />
+                        <circle cx="16" cy="10" r="0.9" fill="#F665F6" />
+                        <circle cx="6" cy="12" r="0.7" fill="#FBBCFB" />
+                        <circle cx="18" cy="12" r="0.7" fill="#FBBCFB" />
+                    </svg>
+
+                </button>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido Principal (oculto inicialmente) -->
+    <div id="contenidoPrincipal" class="contenido-principal" style="display: none;">
+        <!-- Contenido Principal (oculto inicialmente) -->
+        <!-- Audio de fondo + controles (insertar aquí) -->
+        <div class="audio-wrapper" aria-hidden="false">
+            <audio id="bgAudio" src="/Archivos/heart_of_boy.mp3" preload="auto" loop></audio>
+
+            <div class="audio-controls" role="region" aria-label="Controles de audio">
+                <button visibility: hidden class="audioBtns" id="btnMute" type="button" aria-pressed="false"></button>
+                <button class="audioBtns" id="btnPause" type="button" aria-pressed="false"></button>
+            </div>
+        </div>
+
+
+
+        <header class="header"> <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion">
+                <button class="nav-btn activo" data-seccion="inicio">Inicio</button>
+                <button class="nav-btn" data-seccion="ubicacion">Ubicación</button>
+                <button class="nav-btn" data-seccion="confirmar">Confirmar</button>
+                <button class="nav-btn" data-seccion="Galeria">Galería</button>
+            </nav>
+            <h1>¡XV Años!</h1>
+            <h1 style="word-spacing: 12px; letter-spacing: 1px;">Luis Ángel Mora Ramírez</h1>
+
+        </header>
+
+        <main class="secciones">
+            <section id="seccion-inicio" class="seccion activa">
+                <h2 style="margin-top: 80px;">Querida  familia y amigos:</h2>
+                <h2>Pronto dejaré atrás la niñez y abriré las alas hacia nuevos sueños.</h2>
+                <h2>Gracias por acompañarme en este viaje.</h2>
+                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
+                  font-weight: 700;
+                  font-style: italic; font-size: 150%;">¡No te pierdas este evento increíble!</p>
+                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
+                  font-weight: 700;
+                  font-style: italic; font-size: 150%;"> 11 de Enero de 2026</p>
+                <p style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, serif;
+                  font-weight: 700;
+                  font-style: italic; font-size: 150%;">A la 1:00 PM</p>
+
+                <center>
+                    <div style="font-family: Crimson Text, serif;
+                  font-weight: 700;
+                  font-style: italic;" class="countdown" id="countdown">
+                        <div class="item">
+                            <div class="num" id="days">00</div>
+                            <div class="lbl">Días</div>
+                        </div>
+                        <div class="item">
+                            <div class="num" id="hours">00</div>
+                            <div class="lbl">Horas</div>
+                        </div>
+                        <div class="item">
+                            <div class="num" id="mins">00</div>
+                            <div class="lbl">Min</div>
+                        </div>
+                        <div class="item">
+                            <div class="num" id="secs">00</div>
+                            <div class="lbl">Seg</div>
+                        </div>
+                    </div>
+                </center>
+                <center>
+                    <p style="font-family: Crimson Text, serif;
+                  font-weight: 700;
+                  font-style: italic; letter-spacing: 3px; word-spacing: 4px;"><span id="dateText">--</span></p>
+                </center>
+
+
+            </section>
+
+            <section id="seccion-ubicacion" class="seccion">
+                <h2 style="margin-top: 80px;">Ceremonia y Recepción</h2>
+                <p style="  font-family: Playwrite NG Modern, cursive;
+                  font-optical-sizing: auto;
+                  font-weight: 100;
+                  font-style: normal;">📍 Boutique Y Regalos "Pablin"</p>
+                <p style="  font-family: Playwrite NG Modern, cursive;
+                  font-optical-sizing: auto;
+                  font-weight: 100;
+                  font-style: normal;">Av. México Manzana 006, 56010 Amp. Tezoyuca, Méx.</p>
+                <p style="  font-family: Playwrite NG Modern, cursive;
+                  font-optical-sizing: auto;
+                  font-weight: 100;
+                  font-style: normal;">Tezoyuca, Estado de México</p>
+                <!-- Puedes agregar un mapa de Google Maps después -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1764410842815!6m8!1m7!1s0fa3x8hrLmi9T-qFV0XTbQ!2m2!1d19.58220774431477!2d-98.92130057619909!3f270.89!4f0.6700000000000017!5f0.7820865974627469"
+                    width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+
+
+
+
+            <section id="seccion-confirmar" class="seccion">
+                <h2 style="margin-top: 80px;">Confirma tu Asistencia</h2>
+                <center>
+                    <form class="formulario-confirmacion">
+                        <div class="opcion-asistencia">
+                            <label>
+                                <input type="radio" name="asistencia" value="si" required>
+                                <span class="radio-custom"></span>
+                                ¡Sí, estaré ahí!
+                            </label>
+                            <label>
+                                <input type="radio" name="asistencia" value="no">
+                                <span class="radio-custom"></span>
+                                Lo siento, no podré asistir
+                            </label>
+                            <label>
+                                <input type="radio" name="asistencia" value="talvez">
+                                <span class="radio-custom"></span>
+                                Tal vez / No estoy seguro
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-whatsapp">
+                            Enviar WhatsApp <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </form>
+                </center>
+            </section>
+
+
+            <section id="seccion-Galeria" class="seccion">
+                <h2 style="margin-top: 80px;">Galería</h2>
+                <p style="  font-family: Playwrite NG Modern, cursive;
+                  font-optical-sizing: auto;
+                  font-weight: 100;
+                  font-style: normal;">Mis XV años</p>
+                <!-- Reemplazo para $SELECTION_PLACEHOLDER$: inicializador que reconstruye el carrusel para un loop perfecto -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        // Esperar un poco para asegurarnos que el markup original ya esté presente
+                        setTimeout(() => {
+                            const gallery = document.getElementById('carouselGallery');
+                            if (!gallery) return;
+
+                            // Leer imágenes actuales (si existen) para reconstruir el carrusel
+                            const existingImgs = Array.from(gallery.querySelectorAll('.carousel-slide img'));
+                            if (existingImgs.length === 0) return;
+
+                            const imgs = existingImgs.map(img => ({ src: img.src, alt: img.alt || '' }));
+                            const n = imgs.length;
+
+                            // Construir nuevo HTML: clonamos primero y último para loop "seamless"
+                            const trackSlides = [];
+                            // clon último
+                            trackSlides.push(`<div class="carousel-slide"><img src="${imgs[n - 1].src}" alt="${imgs[n - 1].alt}"></div>`);
+                            // slides reales
+                            imgs.forEach(i => trackSlides.push(`<div class="carousel-slide"><img src="${i.src}" alt="${i.alt}"></div>`));
+                            // clon primero
+                            trackSlides.push(`<div class="carousel-slide"><img src="${imgs[0].src}" alt="${imgs[0].alt}"></div>`);
+
+                            gallery.innerHTML = `
+                            <div class="carousel-track">
+                                ${trackSlides.join('')}
+                            </div>
+
+                            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                            <button class="carousel-btn next" aria-label="Siguiente">›</button>
+
+                            <div class="carousel-dots" aria-hidden="false"></div>
+                        `;
+
+                            // Inicializar comportamiento con loop seamless
+                            const track = gallery.querySelector('.carousel-track');
+                            const slides = Array.from(gallery.querySelectorAll('.carousel-slide'));
+                            const btnPrev = gallery.querySelector('.carousel-btn.prev');
+                            const btnNext = gallery.querySelector('.carousel-btn.next');
+                            const dotsContainer = gallery.querySelector('.carousel-dots');
+
+                            let index = 0; // índice lógico (0..n-1) de las slides reales
+                            let isTransitioning = false;
+                            let autoplayId = null;
+
+                            // Crear dots para n slides reales
+                            for (let i = 0; i < n; i++) {
+                                const d = document.createElement('button');
+                                d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                                d.dataset.index = i;
+                                d.setAttribute('aria-label', 'Ir a imagen ' + (i + 1));
+                                dotsContainer.appendChild(d);
+                            }
+                            const dots = Array.from(dotsContainer.children);
+
+                            // Ajustes iniciales: mover el track para mostrar la primera slide real (índice 1 en DOM por clon previo)
+                            function setTransition(enabled) {
+                                track.style.transition = enabled ? 'transform 0.5s ease' : 'none';
+                            }
+                            function updateTransform() {
+                                // track index = index + 1 (por clon al inicio)
+                                track.style.transform = `translateX(-${(index + 1) * 100}%)`;
+                                dots.forEach((dot, dIdx) => dot.classList.toggle('active', dIdx === index));
+                            }
+
+                            // Control de finalización de transición para resetear cuando saltamos a clon
+                            track.addEventListener('transitionstart', () => { isTransitioning = true; });
+                            track.addEventListener('transitionend', () => {
+                                isTransitioning = false;
+                                // Si estuvimos en el clon al principio (index === -1 -> último real)
+                                if (index < 0) {
+                                    setTransition(false);
+                                    index = n - 1;
+                                    updateTransform();
+                                    // forzar reflow antes de reactivar transición
+                                    void track.offsetWidth;
+                                    setTransition(true);
+                                } else if (index >= n) {
+                                    setTransition(false);
+                                    index = 0;
+                                    updateTransform();
+                                    void track.offsetWidth;
+                                    setTransition(true);
+                                }
+                            });
+
+                            function goTo(i) {
+                                if (isTransitioning) return;
+                                index = i;
+                                // permitimos índices fuera de 0..n-1 para activar el efecto de clon (p.ej -1 o n)
+                                setTransition(true);
+                                updateTransform();
+                            }
+
+                            btnPrev.addEventListener('click', () => goTo(index - 1));
+                            btnNext.addEventListener('click', () => goTo(index + 1));
+
+                            dots.forEach(dot => dot.addEventListener('click', () => goTo(Number(dot.dataset.index))));
+
+                            // Autoplay
+                            function startAutoplay() {
+                                stopAutoplay();
+                                autoplayId = setInterval(() => goTo(index + 1), 4000);
+                            }
+                            function stopAutoplay() {
+                                if (autoplayId) { clearInterval(autoplayId); autoplayId = null; }
+                            }
+                            gallery.addEventListener('mouseenter', stopAutoplay);
+                            gallery.addEventListener('mouseleave', startAutoplay);
+
+                            // Touch (swipe)
+                            let startX = 0, moved = false;
+                            gallery.addEventListener('touchstart', e => {
+                                stopAutoplay();
+                                startX = e.touches[0].clientX;
+                                moved = false;
+                            }, { passive: true });
+                            gallery.addEventListener('touchmove', e => {
+                                const dx = e.touches[0].clientX - startX;
+                                if (Math.abs(dx) > 10) moved = true;
+                            }, { passive: true });
+                            gallery.addEventListener('touchend', e => {
+                                if (!moved) { startAutoplay(); return; }
+                                const endX = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientX : startX;
+                                const dx = endX - startX;
+                                if (dx > 40) goTo(index - 1);
+                                else if (dx < -40) goTo(index + 1);
+                                startAutoplay();
+                            });
+
+                            // Inicializar estado
+                            setTransition(false);
+                            updateTransform(); // coloca en primer slide real
+                            void track.offsetWidth; // reflow
+                            setTransition(true);
+                            startAutoplay();
+
+                            // Reajustar en resize para mantener el cálculo si es necesario
+                            window.addEventListener('resize', () => {
+                                // reactivar transform basado en tamaño actual
+                                updateTransform();
+                            });
+                        }, 50);
+                    });
+                </script>
+                <style>
+                    /* Carousel responsive ajustable al ancho */
+                    .carousel-gallery {
+                        position: relative;
+                        width: 100%;
+                        max-width: 100%;
+                        overflow: hidden;
+                        border-radius: 12px;
+                        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+                        margin: 16px 0;
+                    }
+
+                    .carousel-track {
+                        display: flex;
+                        transition: transform 0.5s ease;
+                        will-change: transform;
+                    }
+
+                    .carousel-slide {
+                        min-width: 100%;
+                        flex: 0 0 100%;
+                    }
+
+                    .carousel-slide img {
+                        display: block;
+                        width: 100%;
+                        height: 380px;
+                        object-fit: cover;
+                    }
+
+                    /* Controls */
+                    .carousel-btn {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: rgba(255, 255, 255, 0.15);
+                        border: none;
+                        color: white;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        backdrop-filter: blur(6px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .carousel-btn:hover {
+                        background: rgba(255, 255, 255, 0.25);
+                    }
+
+                    .carousel-btn.prev {
+                        left: 12px;
+                    }
+
+                    .carousel-btn.next {
+                        right: 12px;
+                    }
+
+                    /* Dots */
+                    .carousel-dots {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 10px;
+                        display: flex;
+                        gap: 8px;
+                    }
+
+                    .carousel-dot {
+                        width: 10px;
+                        height: 10px;
+                        background: rgba(255, 255, 255, 0.35);
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+
+                    .carousel-dot.active {
+                        background: rgba(255, 255, 255, 0.95);
+                    }
+
+                    /* Responsive heights */
+                    @media (max-width: 768px) {
+                        .carousel-slide img {
+                            height: 260px;
+                        }
+                    }
+
+                    @media (max-width: 420px) {
+                        .carousel-slide img {
+                            height: 200px;
+                        }
+                    }
+                </style>
+
+                <div class="carousel-gallery" id="carouselGallery" aria-label="Galería de fotos">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1015/1200/800" alt="Foto 1">
+                        </div>
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1016/1200/800" alt="Foto 2">
+                        </div>
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1018/1200/800" alt="Foto 3">
+                        </div>
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1020/1200/800" alt="Foto 4">
+                        </div>
+                        <div class="carousel-slide"><img src="https://picsum.photos/id/1024/1200/800" alt="Foto 5">
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                    <button class="carousel-btn next" aria-label="Siguiente">›</button>
+
+                    <div class="carousel-dots" aria-hidden="false"></div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const gallery = document.getElementById('carouselGallery');
+                        if (!gallery) return;
+
+                        const track = gallery.querySelector('.carousel-track');
+                        const slides = Array.from(gallery.querySelectorAll('.carousel-slide'));
+                        const btnPrev = gallery.querySelector('.carousel-btn.prev');
+                        const btnNext = gallery.querySelector('.carousel-btn.next');
+                        const dotsContainer = gallery.querySelector('.carousel-dots');
+
+                        let index = 0;
+                        let autoplayId = null;
+
+                        // Crear dots
+                        slides.forEach((_, i) => {
+                            const d = document.createElement('button');
+                            d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                            d.dataset.index = i;
+                            d.setAttribute('aria-label', 'Ir a imagen ' + (i + 1));
+                            dotsContainer.appendChild(d);
+                        });
+                        const dots = Array.from(dotsContainer.children);
+
+                        function goTo(i) {
+                            index = (i + slides.length) % slides.length;
+                            track.style.transform = `translateX(-${index * 100}%)`;
+                            dots.forEach((dot, dIdx) => dot.classList.toggle('active', dIdx === index));
+                        }
+
+                        btnPrev.addEventListener('click', () => goTo(index - 1));
+                        btnNext.addEventListener('click', () => goTo(index + 1));
+
+                        dots.forEach(dot => dot.addEventListener('click', () => goTo(Number(dot.dataset.index))));
+
+                        // Autoplay
+                        function startAutoplay() {
+                            stopAutoplay();
+                            autoplayId = setInterval(() => goTo(index), 4000);
+                        }
+                        function stopAutoplay() {
+                            if (autoplayId) { clearInterval(autoplayId); autoplayId = null; }
+                        }
+                        gallery.addEventListener('mouseenter', stopAutoplay);
+                        gallery.addEventListener('mouseleave', startAutoplay);
+
+                        // Touch (swipe)
+                        let startX = 0, moved = false;
+                        gallery.addEventListener('touchstart', e => {
+                            stopAutoplay();
+                            startX = e.touches[0].clientX;
+                            moved = false;
+                        }, { passive: true });
+                        gallery.addEventListener('touchmove', e => {
+                            const dx = e.touches[0].clientX - startX;
+                            if (Math.abs(dx) > 10) moved = true;
+                        }, { passive: true });
+                        gallery.addEventListener('touchend', e => {
+                            if (!moved) { startAutoplay(); return; }
+                            const endX = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientX : startX;
+                            const dx = endX - startX;
+                            if (dx > 40) goTo(index - 1);
+                            else if (dx < -40) goTo(index + 1);
+                            startAutoplay();
+                        });
+
+                        // Iniciar
+                        goTo(0);
+                        startAutoplay();
+
+                        // Mejora: recalcular transform si se cambia el tamaño (opcional)
+                        window.addEventListener('resize', () => goTo(index));
+
+
+                    });
+                </script>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Elementos principales
+            const modal = document.getElementById('invitacionModal');
+            const contenidoPrincipal = document.getElementById('contenidoPrincipal');
+            const btnAbrir = document.getElementById('btnAbrir');
+            const video = document.getElementById('videoInvitacion');
+            const pantallaInicial = document.getElementById('pantallaInicial');
+
+            // Elementos de navegación
+            const navBtns = document.querySelectorAll('.nav-btn');
+            const secciones = document.querySelectorAll('.seccion');
+
+            // Variables para detectar doble tap
+            let lastTap = 0;
+            const doubleTapDelay = 300; // milisegundos entre taps
+
+            // 1. Manejar la apertura de la invitación
+            btnAbrir.addEventListener('click', function () {
+            abrirInvitacion();
+            });
+
+            function abrirInvitacion() {
+            // Ocultar la pantalla inicial y mostrar el video
+            pantallaInicial.style.display = 'none';
+            video.style.display = 'block';
+            video.play();
+
+            // Cuando el video termine, mostrar el contenido principal
+            video.onended = function () {
+                cerrarModal();
+            };
+            }
+
+            function cerrarModal() {
+            // Efecto de desvanecimiento
+            modal.classList.add('desvanecer');
+            modal.classList.add('video-aparecer');
+
+            // Después de la animación, ocultar modal y mostrar contenido
+            setTimeout(function () {
+                modal.style.display = 'none';
+                contenidoPrincipal.style.display = 'block';
+
+                // Pequeño retraso para la animación de entrada del contenido
+                setTimeout(function () {
+                contenidoPrincipal.style.opacity = '1';
+                }, 50);
+            }, 500);
+            }
+
+            // Detectar doble tap en pantalla táctil
+            modal.addEventListener('touchend', function (e) {
+            const currentTime = new Date().getTime();
+            const tapLength = currentTime - lastTap;
+
+            if (tapLength < doubleTapDelay && tapLength > 0) {
+                // Doble tap detectado
+                e.preventDefault();
+                if (video.style.display === 'block') {
+                cerrarModal();
+                } else {
+                abrirInvitacion();
+                }
+            }
+            lastTap = currentTime;
+            });
+
+            // 2. Navegación entre secciones
+            navBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const seccionObjetivo = this.getAttribute('data-seccion');
+
+                // Actualizar botones activos
+                navBtns.forEach(b => b.classList.remove('activo'));
+                this.classList.add('activo');
+
+                // Mostrar sección correspondiente
+                secciones.forEach(seccion => {
+                seccion.classList.remove('activa');
+                if (seccion.id === `seccion-${seccionObjetivo}`) {
+                    setTimeout(() => {
+                    seccion.classList.add('activa');
+                    }, 50);
+                }
+                });
+            });
+            });
+
+            // 3. Manejar el envío del formulario a WhatsApp
+            const formulario = document.querySelector('.formulario-confirmacion');
+            if (formulario) {
+            formulario.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Obtener la opción seleccionada
+                const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
+
+                if (!opcionSeleccionada) {
+                alert('Por favor, selecciona una opción de asistencia.');
+                return;
+                }
+
+                const asistencia = opcionSeleccionada.value;
+                let mensaje = '';
+
+                // Personalizar el mensaje según la opción
+                switch (asistencia) {
+                case 'si':
+                    mensaje = '¡Hola! Confirmo que *SÍ asistiré* al evento. ¡Nos vemos!';
+                    break;
+                case 'no':
+                    mensaje = 'Hola! Lamentablemente *NO podré asistir* al evento. ¡Mucho éxito!';
+                    break;
+                case 'talvez':
+                    mensaje = 'Hola! Todavía *no estoy seguro* si podré asistir al evento. Te confirmo más cerca de la fecha.';
+                    break;
+                }
+
+                // Agregar información del evento al mensaje (opcional)
+                mensaje += '%0A%0A*XV Años* Luis Ángel Mora Ramírez%0A*Fecha:* 11 de Enero, 2025%0A*Hora:* 12:00 PM';
+
+                // Número de teléfono (reemplaza con el número real)
+                const telefono = '525547208122'; // ← CAMBIA ESTE NÚMERO
+
+                // Crear el enlace de WhatsApp
+                const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+
+                // Abrir WhatsApp
+                window.open(urlWhatsApp, '_blank');
+
+                // Opcional: Mostrar mensaje de confirmación
+                alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
+            });
+            }
+
+            // 4. Opcional: Permitir saltar el video con tecla Escape
+            document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' || e.key === 'Enter' && modal.style.display !== 'none') {
+                modal.style.display = 'none';
+                contenidoPrincipal.style.display = 'block';
+            }
+            });
+        });
+      
+
+
+        // -------- CONFIG ----------
+        // Cambia esto por la fecha y hora del evento (ISO 8601) ejemplo 2025-11-29T18:00:00-06:00
+        const eventDate = new Date('2026-01-11T13:00:00-06:00');
+        // Título/fecha de texto
+        document.getElementById('dateText').textContent = eventDate.toLocaleString();
+
+        // -------- COUNTDOWN ----------
+        const $days = document.getElementById('days');
+        const $hours = document.getElementById('hours');
+        const $mins = document.getElementById('mins');
+        const $secs = document.getElementById('secs');
+
+        function updateCountdown() {
+            const now = new Date();
+            let diff = Math.max(0, eventDate - now);
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            diff -= days * (1000 * 60 * 60 * 24);
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            diff -= hours * (1000 * 60 * 60);
+            const mins = Math.floor(diff / (1000 * 60));
+            diff -= mins * (1000 * 60);
+            const secs = Math.floor(diff / 1000);
+            $days.textContent = String(days).padStart(2, '0');
+            $hours.textContent = String(hours).padStart(2, '0');
+            $mins.textContent = String(mins).padStart(2, '0');
+            $secs.textContent = String(secs).padStart(2, '0');
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+
+
+        //Script Audio de fondo + controles
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('bgAudio');
+            const btnMute = document.getElementById('btnMute');
+            const btnPause = document.getElementById('btnPause');
+            const contenido = document.getElementById('contenidoPrincipal');
+
+            function updateButtons() {
+                // SVG para sonido activado
+                const muteIcon = audio.muted ?
+                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>' :
+                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>';
+
+                // SVG para play/pause
+                const pauseIcon = audio.paused ?
+                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>' :
+                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+
+                btnMute.innerHTML = muteIcon;
+                btnMute.setAttribute('aria-pressed', String(audio.muted));
+                btnPause.innerHTML = pauseIcon;
+                btnPause.setAttribute('aria-pressed', String(!audio.paused));
+            }
+
+            btnMute.addEventListener('click' || e.key === ' ', function () {
+                audio.muted = !audio.muted;
+                updateButtons();
+            });
+
+            btnPause.addEventListener('click' || e.key === ' ', function () {
+                if (audio.paused) {
+                    audio.play().catch(() => {
+                        audio.muted = true;
+                        audio.play().catch(() => { });
+                    }).finally(updateButtons);
+                } else {
+                    audio.pause();
+                    updateButtons();
+                }
+            });
+
+            // Detener audio al salir del navegador
+            document.addEventListener('visibilitychange', function () {
+                const audio = document.getElementById('bgAudio');
+                if (document.visibilityState === 'hidden') {
+                    audio.pause();
+                    updateButtons();
+                } else {
+                    audio.play();
+                    updateButtons();
+                }
+            });
+
+            if (contenido) {
+                const mo = new MutationObserver(() => {
+                    const visible = window.getComputedStyle(contenido).display !== 'none';
+                    if (visible) {
+                        audio.play().catch(() => {
+                            audio.muted = true;
+                            audio.play().catch(() => { });
+                        }).finally(updateButtons);
+                        mo.disconnect();
+                    }
+                });
+                mo.observe(contenido, { attributes: true, attributeFilter: ['style'] });
+
+                if (window.getComputedStyle(contenido).display !== 'none') {
+                    audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
+                    mo.disconnect();
+                }
+            } else {
+                audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
+            }
+        });
+
+    </script>
+</body>
+
+</html>
