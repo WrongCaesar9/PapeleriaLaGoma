@@ -77,7 +77,11 @@
 
         <nav>
             <marquee behavior="scroll" direction="left" scrollamount="15">
-                <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;Uee necesito que me mandes foto de la lamina de la impresora, justo donde tiene la rejilla para que le haga unos huecos y se puedan colocar unos seguros a la pieza y se atore ahi, para no usar imanes y evitar que se caiga y se rompa alv&nbsp;</span>
+                <span style="color: #ffffff;" class="stickerTit1">&nbsp;&nbsp;Uee necesito que me mandes foto de la
+                    lamina de tu plotter, justo donde tiene la rejilla para que le haga unos huecos y se puedan
+                    colocar unos seguros a la pieza y se atore ahi, para no usar imanes y evitar que se caiga y se rompa
+                    alv&nbsp;</span>
+                    <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span>
             </marquee>
 
             <p></p>
@@ -87,13 +91,15 @@
     <main>
 
 
-    <section style="z-index: -100; padding-top: 200px;">
-      <h2 style="text-align: justify;">Me lo mandas o me dices que pedo 🤙🏾</h2>
-            <p>Uee necesito que me mandes foto de la lamina de la impresora, justo donde tiene la rejilla para que le haga unos huecos y se puedan colocar unos seguros a la pieza y se atore ahi, para no usar imanes y evitar que se caiga y se rompa alv</p>
-    </section>
+        <section style="z-index: -100; padding-top: 200px;">
+            <h2 style="text-align: justify; font-size: 250%;">Me mandas la foto o me dices que pedo!!</h2>
+            <p style=" font-size: 250%;">Uee necesito que me mandes foto de la lamina de la impresora, justo donde tiene la rejilla para que le
+                haga unos huecos y se puedan colocar unos seguros a la pieza y se atore ahi, para no usar imanes y
+                evitar que se caiga y se rompa alv</p>
+        </section>
 
 
-        <section style="z-index: -100; padding-top: 200px;" class="view" id="mod3d250mm">
+        <section style="z-index: -100; padding-top: 50px;" class="view" id="mod3d250mm">
             <h2>Modelo dimensiones(xyz/mm): <br>250x60x150</h2>
             <div class="block" id="productos-contenedor"></div>
 
@@ -105,7 +111,7 @@
                 skybox-image="https://cdn.polyhaven.com/asset_img/primary/studio_country_hall.png?height=760&quality=95"
                 camera-controls
                 style="width: 80vh; height: 80vh; max-width: 600px; max-height: 600px; margin-left: auto; margin-right: auto;"
-                alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+                alt="3D model of a piece"
                 src="/Archivos/pieza250.glb"></model-viewer>
         </section>
 
@@ -114,7 +120,7 @@
             <h2>Modelo dimensiones(xyz/mm): <br>200x60x150</h2>
             <div class="block" id="productos-contenedor"></div>
 
-            <!-- Import the component -->
+            
             <script type="module"
                 src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
             <!-- Use it like any other HTML element -->
@@ -122,11 +128,125 @@
                 skybox-image="https://cdn.polyhaven.com/asset_img/primary/studio_country_hall.png?height=760&quality=95"
                 camera-controls
                 style="width: 80vh; height: 80vh; max-width: 600px; max-height: 600px; margin-left: auto; margin-right: auto;"
-                alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+                alt="3D model of a piece"
                 src="/Archivos/pieza200.glb"></model-viewer>
         </section>
 
+<!-- Modelo AR -->
+ <h2>Modelos de Realidad Aumentada <br> En tu telefono checas como se ve, se activa una opcion para el AR, y hay vas viendo si esta chida la de 20cm. Ya si no, te mando el stl y el archivo de Blender, pero necesito que me digas uee!!</h2>
+        <section style="z-index: -100; padding-top: 50px;" class="view" id="mod3d200mm">
+            <h2>Modelo Realidad Aumentada</h2>
 
+
+            <model-viewer
+                style="width: 80vh; height: 80vh; max-width: 600px; max-height: 600px; margin-left: auto; margin-right: auto;"
+                id="model-viewer" src="/Archivos/pieza200_AR.glb" ar ar-modes="scene-viewer quick-look" camera-controls
+                touch-action="pan-y" alt="A 3D model" shadow-intensity="2" auto-rotate 
+                skybox-image="https://cdn.polyhaven.com/asset_img/primary/studio_country_hall.png?height=760&quality=95"
+                skybox-height="0.75m" max-camera-orbit="auto 90deg auto">
+                <div id="error" class="hide">AR is not supported on this device</div>
+                    <button slot="ar-button" style="background-color: rgb(206, 169, 255); border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px;
+        padding: 8px 12px; font-size: 14px; cursor: pointer;">
+     🧱 Activa la realidad amentada uee!! 
+  </button>
+            </model-viewer>
+            <script>
+                document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
+                    if (event.detail.status === 'failed') {
+                        const error = document.querySelector("#error");
+                        error.classList.remove('hide');
+                        error.addEventListener('transitionend', (event) => {
+                            error.classList.add('hide');
+                        });
+                    }
+                });
+            </script>
+            <style>
+                #error {
+                    background-color: #ffffffdd;
+                    border-radius: 16px;
+                    padding: 16px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate3d(-50%, -50%, 0);
+                    transition: opacity 0.3s;
+                }
+
+                #error.hide {
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: visibility 2s, opacity 1s 1s;
+                }
+            </style>
+            <!-- ios-src="../../shared-assets/models/Astronaut.usdz" xr-environment -->
+        </section>
+
+<!-- Modelo AR -->
+        <section style="z-index: -100; padding-top: 50px;" class="view" id="mod3d250mm">
+            <h2>Modelo Realidad Aumentada</h2>
+
+
+            <model-viewer
+                style="width: 80vh; height: 80vh; max-width: 600px; max-height: 600px; margin-left: auto; margin-right: auto;"
+                id="model-viewer" src="/Archivos/pieza250_AR.glb" ar ar-modes="scene-viewer quick-look" camera-controls
+                touch-action="pan-y" alt="A 3D model" shadow-intensity="2" auto-rotate
+                skybox-image="https://cdn.polyhaven.com/asset_img/primary/studio_country_hall.png?height=760&quality=95"
+                skybox-height="0.75m" max-camera-orbit="auto 90deg auto">
+                <div id="error" class="hide">AR is not supported on this device</div>
+                    <button slot="ar-button" style="background-color: rgb(206, 169, 255); border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px;
+        padding: 8px 12px; font-size: 14px; cursor: pointer;">
+     🧱 Activa la realidad amentada uee!! 
+  </button>
+            </model-viewer>
+            <script>
+                document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
+                    if (event.detail.status === 'failed') {
+                        const error = document.querySelector("#error");
+                        error.classList.remove('hide');
+                        error.addEventListener('transitionend', (event) => {
+                            error.classList.add('hide');
+                        });
+                    }
+                });
+            </script>
+            <style>
+                #error {
+                    background-color: #ffffffdd;
+                    border-radius: 16px;
+                    padding: 16px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate3d(-50%, -50%, 0);
+                    transition: opacity 0.3s;
+                }
+
+                #error.hide {
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: visibility 2s, opacity 1s 1s;
+                }
+            </style>
+            <!-- ios-src="../../shared-assets/models/Astronaut.usdz" xr-environment -->
+        </section>
+<!-- Modelo AR 
+        <section style="z-index: -100; padding-top: 50px;" class="view" id="mod3d250mm">
+<model-viewer src="/Archivos/pieza250.glb" ar ar-placement="wall" touch-action="pan-y" alt="A 3D model of some wall art"
+    shadow-intensity="2"
+     skybox-image="https://cdn.polyhaven.com/asset_img/primary/studio_country_hall.png?height=760&quality=95"
+                skybox-height="0.75m"
+    camera-controls
+    style="width: 80vh; height: 80vh; max-width: 600px; max-height: 600px; margin-left: auto; margin-right: auto;">
+    <button slot="ar-button" style="background-color: rgb(206, 169, 255); border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px;
+        padding: 8px 12px; font-size: 14px; cursor: pointer;">
+     🧱 Activa la realidad amentada uee!! 
+  </button>
+</model-viewer>
+</section>
+-->
+
+<!-- Go-top button -->
         <div class="go-top-container">
             <div class="go-top-button">
                 <i class="fas fa-chevron-up">
@@ -193,35 +313,7 @@
             // update the `textContent` property of the `span` element with the `id` of `datetime`
             document.querySelector('#datetime').textContent = currentDateTime;
         }
-
-        // call the `updateDateTime` function every second
         setInterval(updateDateTime, 1000);
-        /*
-            // Next time use letsdeel.com to make sure you get paid
-            (function () {
-                /* change these variables as you wish 
-                var due_date = new Date('2024-08-19');
-                var days_deadline = 30;
-                /* stop changing here 
-        
-                var current_date = new Date();
-                var utc1 = Date.UTC(due_date.getFullYear(), due_date.getMonth(), due_date.getDate());
-                var utc2 = Date.UTC(current_date.getFullYear(), current_date.getMonth(), current_date.getDate());
-                var days = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));
-        
-                if (days > 0) {
-                    var days_late = days_deadline - days;
-                    var opacity = (days_late * 100 / days_deadline) / 100;
-                    opacity = (opacity < 0) ? 0 : opacity;
-                    opacity = (opacity > 1) ? 1 : opacity;
-                    if (opacity >= 0 && opacity <= 1) {
-                        document.getElementsByTagName("html")[0].style.opacity = opacity;
-                    }
-        
-                }
-        
-            })()
-            window.alert("Esta página desaparecerá en los siguientes 30 días (eso espero), y los programas pasaran a estar disponibles en \"https://lagoma.netlify.app\"");*/
     </script>
     <script src="mainpg.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js">
