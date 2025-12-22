@@ -282,6 +282,15 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     font-size: 0.7rem;
   }
+#productos {
+  padding-top: 14rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
 }
 
 @media (max-width: 1370px) {
@@ -289,6 +298,15 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     font-size: 0.8rem;
   }
+#productos {
+  padding-top: 14rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
 }
 
 @media (max-width: 1230px) {
@@ -296,6 +314,15 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     font-size: 0.6rem;
   }
+#productos {
+  padding-top: 15rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
 }
 
 /* Para pantallas pequeñas (teléfonos) */
@@ -304,6 +331,15 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     font-size: 0.6rem;
   }
+#productos {
+  padding-top: 15rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
 }
 
 /* Opcional: aún más chico (teléfonos muy pequeños) */
@@ -311,6 +347,15 @@ footer {
   #productos-contenedor {
     grid-template-columns: repeat(1, 1fr);
   }
+#productos {
+  padding-top: 16rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
 }
 
 
