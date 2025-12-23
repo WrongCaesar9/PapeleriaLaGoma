@@ -11,6 +11,7 @@
 #sugerencia {
   padding-top: 14rem;
 }
+
 #addons {
   padding-top: 13rem;
 }
@@ -58,7 +59,7 @@ main {
 header {
   text-align: center;
   position: fixed;
-  top: -1.5rem;
+  top: -2.5rem;
   left: 33%;
   transform: translateX(-50%);
   background-color: rgb(19, 19, 20);
@@ -70,25 +71,30 @@ header {
   width: 132%;
   height: auto;
   scale: 75%;
-  
+
 }
 
 nav {
-  height: auto;
-  text-align: center;
-  position: fixed;
-  top: 6.8rem;
-  width: 100%;
-  left: 49.9%;
-  transform: translateX(-50%);
-
   background-color: rgb(19, 19, 20);
-  margin: 1px;
-  padding-top: auto;
-
+  text-align: center;
+  width: 100%;
+  height: 100px;
   font-size: 1.2rem;
 }
 
+.whole-search-bar {
+  position: relative;
+  top: -180px;
+  left: -10px;
+  display: inline-block;
+}
+
+.datetime {
+  position: relative;
+  top: -130px;
+  left: 50px;
+  display: inline-block;
+}
 
 /*
 header.fixed {
@@ -306,51 +312,55 @@ footer {
 
 
 .paginacion-estilos {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .paginacion-estilos button {
-    background-color: #335a61; /* Usé un color parecido a tu fondo */
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    transition: background 0.3s;
+  background-color: #335a61;
+  /* Usé un color parecido a tu fondo */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  transition: background 0.3s;
 }
 
 .paginacion-estilos button:hover {
-    background-color: #1a2f33;
+  background-color: #1a2f33;
 }
 
 /* Estilo para el botón de la página actual */
 .paginacion-estilos button.active {
-    background-color: #ff9800; /* Un color que resalte (naranja ejemplo) */
-    font-weight: bold;
-    transform: scale(1.1);
+  background-color: #ff9800;
+  /* Un color que resalte (naranja ejemplo) */
+  font-weight: bold;
+  transform: scale(1.1);
 }
 
 /* Clase para cuando no hay productos */
 .no-resultados {
-    grid-column: 1 / -1; /* TRUCO: Hace que ocupe todo el ancho del grid */
-    text-align: center;
-    padding: 50px;
-    color: #335a61; /* Tu color temático */
-    font-size: 1.5rem;
-    font-weight: bold;
+  grid-column: 1 / -1;
+  /* TRUCO: Hace que ocupe todo el ancho del grid */
+  text-align: center;
+  padding: 50px;
+  color: #335a61;
+  /* Tu color temático */
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .no-resultados p {
-    font-size: 1rem;
-    color: #666;
-    margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
 }
 
 
@@ -602,12 +612,12 @@ h1 {
   background-color: rgb(72, 72, 72);
   cursor: pointer;
   border-radius: 10px;
-margin-right: auto;
+  margin-right: auto;
 }
 
 .list-ch {
   color: rgb(255, 255, 255);
-  background-color: black;
+  background-color: transparent;
   border: none;
   padding: 7px;
   font-size: 1.2rem;
@@ -618,7 +628,7 @@ margin-right: auto;
   background-color: rgb(72, 72, 72);
   cursor: pointer;
   border-radius: 10px;
-margin-right: auto;
+  margin-right: auto;
 }
 
 
@@ -655,7 +665,8 @@ margin-right: auto;
   padding: 20px;
 }
 
-.project img, .project video {
+.project img,
+.project video {
   width: 100%;
   border-bottom: 4px solid #646363;
   border-radius: 8px;
@@ -679,23 +690,73 @@ margin-right: auto;
 
 
 
-.productos{
+.productos {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 22%;
 }
 
 .productos img {
-    width: 100%;
-    /* ESTA ES LA MAGIA DEL CLS */
-    aspect-ratio: 1 / 1; /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
-    object-fit: cover; /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
-    display: block;    /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
-    background-image: url(https://i.pinimg.com/originals/a4/62/d1/a462d192479048db0f02f4466b900e0a.gif);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
+  width: 100%;
+  /* ESTA ES LA MAGIA DEL CLS */
+  aspect-ratio: 1 / 1;
+  /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
+  object-fit: cover;
+  /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
+  display: block;
+  /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
+  background-image: url(https://i.pinimg.com/originals/a4/62/d1/a462d192479048db0f02f4466b900e0a.gif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. Agregamos suavidad al movimiento */
+header,
+nav {
+  transition: top 0.4s ease-in-out;
+  /* Esto hace que suba y baje suavecito */
+  z-index: 1000;
+  /* Aseguramos que siempre esté encima de todo */
+}
+
+/* 2. Clase para cuando se esconden */
+/* Usamos !important para asegurar que sobreescriba tu 'top' original */
+.escondido {
+  top: -200px !important;
+  /* Los mandamos muy arriba, fuera de la pantalla */
+}
+
 
 
 
@@ -710,36 +771,66 @@ margin-right: auto;
     grid-template-columns: repeat(5, 1fr);
     font-size: 0.7rem;
   }
-#productos {
-  padding-top: 14rem;
 
+  #productos {
+    padding-top: 10rem;
+
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+  .go-top-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #1f6197;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 3.0rem;
+    height: 3.0rem;
+
+  }
+
+  #addons {
+    padding-top: 10rem;
+  }
+
+  #videos {
+    padding-top: 10rem;
+  }
+  nav {
+  background-color: rgb(19, 19, 20);
+  text-align: center;
+  width: 100%;
+  height: 95px;
+  font-size: 1.2rem;
 }
-nav li {
+
+.whole-search-bar {
+  position: relative;
+  top: -140px;
+  left: 650px;
   display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
+  scale: 100%;
 }
-.go-top-button {
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  background-color: #1f6197;
-  cursor: pointer;
-  transition: 0.9s;
-  position: absolute;
-  top: 95%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-.show .go-top-button {
-  animation: popup 0.8s ease-in-out;
-  width: 3.0rem;
-  height: 3.0rem;
-
-}
-#addons {
-  padding-top: 13rem;
+.datetime {
+  position: relative;
+  top: -140px;
+  left: 90px;
+  display: inline-block;
 }
 }
 
@@ -748,36 +839,70 @@ nav li {
     grid-template-columns: repeat(4, 1fr);
     font-size: 0.8rem;
   }
-#productos {
-  padding-top: 14rem;
 
+  #productos {
+    padding-top: 11rem;
+
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+  .go-top-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #1f6197;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 3.0rem;
+    height: 3.0rem;
+
+  }
+
+  #addons {
+    padding-top: 11rem;
+  }
+
+  #videos {
+    padding-top: 11rem;
+  }
+  nav {
+  background-color: rgb(19, 19, 20);
+  text-align: center;
+  width: 100%;
+  height: 85px;
+  font-size: 1.2rem;
 }
-nav li {
+
+.whole-search-bar {
+  position: relative;
+  top: -150px;
+  left: 570px;
   display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
+  scale: 100%;
 }
-.go-top-button {
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  background-color: #1f6197;
-  cursor: pointer;
-  transition: 0.9s;
-  position: absolute;
-  top: 95%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+.escondido {
+  top: -250px !important;
+  /* Los mandamos muy arriba, fuera de la pantalla */
 }
-.show .go-top-button {
-  animation: popup 0.8s ease-in-out;
-  width: 3.0rem;
-  height: 3.0rem;
-
-}
-#addons {
-  padding-top: 13rem;
+.datetime {
+  position: relative;
+  top: -140px;
+  left: 25px;
+  display: inline-block;
 }
 }
 
@@ -786,39 +911,70 @@ nav li {
     grid-template-columns: repeat(3, 1fr);
     font-size: 0.6rem;
   }
-#productos {
-  padding-top: 15rem;
 
+  #productos {
+    padding-top: 12rem;
+
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+  .go-top-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #1f6197;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 3.0rem;
+    height: 3.0rem;
+
+  }
+
+  #addons {
+    padding-top: 14rem;
+  }
+
+  #videos {
+    padding-top: 14rem;
+  }
+  nav {
+  background-color: rgb(19, 19, 20);
+  text-align: center;
+  width: 100%;
+  height: 125px;
+  font-size: 1.2rem;
 }
-nav li {
+
+.whole-search-bar {
+  position: relative;
+  top: -150px;
+  left: -350px;
   display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
+  scale: 100%;
 }
-.go-top-button {
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  background-color: #1f6197;
-  cursor: pointer;
-  transition: 0.9s;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+.escondido {
+  top: -250px !important;
+  /* Los mandamos muy arriba, fuera de la pantalla */
 }
-.show .go-top-button {
-  animation: popup 0.8s ease-in-out;
-  width: 3.0rem;
-  height: 3.0rem;
-
-}
-#addons {
-  padding-top: 13rem;
-}
-#videos {
-  padding-top: 15rem;
+.datetime {
+  position: relative;
+  top: -140px;
+  left: -100px;
+  display: inline-block;
 }
 }
 
@@ -828,39 +984,60 @@ nav li {
     grid-template-columns: repeat(2, 1fr);
     font-size: 0.6rem;
   }
-#productos {
-  padding-top: 15rem;
 
+  #productos {
+    padding-top: 13rem;
+
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+  .go-top-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #1f6197;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 3.0rem;
+    height: 3.0rem;
+
+  }
+
+  #addons {
+    padding-top: 14rem;
+  }
+
+  #videos {
+    padding-top: 14rem;
+  }
+  nav {
+  background-color: rgb(19, 19, 20);
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  font-size: 1.2rem;
 }
-nav li {
+
+.whole-search-bar {
+  position: relative;
+  top: -220px;
+  left: -250px;
   display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
-}
-.go-top-button {
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  background-color: #1f6197;
-  cursor: pointer;
-  transition: 0.9s;
-  position: absolute;
-  top: 60%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-.show .go-top-button {
-  animation: popup 0.8s ease-in-out;
-  width: 3.0rem;
-  height: 3.0rem;
-
-}
-#addons {
-  padding-top: 16rem;
-}
-#videos {
-  padding-top: 15rem;
+  scale: 85%;
 }
 }
 
@@ -869,14 +1046,38 @@ nav li {
   #productos-contenedor {
     grid-template-columns: repeat(1, 1fr);
   }
-#productos {
-  padding-top: 16rem;
 
+  #productos {
+    padding-top: 16rem;
+
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+    #addons {
+    padding-top: 14rem;
+  }
+
+  #videos {
+    padding-top: 14rem;
+  }
+  nav {
+  background-color: rgb(19, 19, 20);
+  text-align: center;
+  width: 100%;
+  height: 180px;
+  font-size: 1.2rem;
 }
-nav li {
+
+.whole-search-bar {
+  position: relative;
+  top: -30px;
+  left: -20px;
   display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
+  scale: 85%;
 }
 }
 
@@ -901,29 +1102,19 @@ nav li {
 
 @keyframes appear {
   from {
-    
+
     clip-path: inset(10% 10% 0 0);
     transform: translatex(-200px);
-    }
+  }
+
   to {
-  
-  clip-path: inset(0 0 0 0);
-  transform: translatex(0px);
-    }
+
+    clip-path: inset(0 0 0 0);
+    transform: translatex(0px);
+  }
 }
 
 
 
 
 
-/* 1. Agregamos suavidad al movimiento */
-header, nav {
-    transition: top 0.4s ease-in-out; /* Esto hace que suba y baje suavecito */
-    z-index: 1000; /* Aseguramos que siempre esté encima de todo */
-}
-
-/* 2. Clase para cuando se esconden */
-/* Usamos !important para asegurar que sobreescriba tu 'top' original */
-.escondido {
-    top: -200px !important; /* Los mandamos muy arriba, fuera de la pantalla */
-}

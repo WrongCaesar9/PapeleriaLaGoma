@@ -290,5 +290,5 @@ formulario.addEventListener('submit', (event) => {
 
 
 
-// Código de fecha de actualización
-document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";
+/* Código de fecha de actualización
+document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";*/
