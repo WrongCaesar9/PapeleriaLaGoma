@@ -109,8 +109,20 @@
                     <option value="0">NA</option>
                 </select>
 
-                <select id="mi-selector"
-                    style="height: 30px; width: auto; background-color: rgb(21, 22, 22); color: #ffffff;border-radius: 5%; border-style:dotted;box-shadow: 2px 2px 10px 5px rgb(114, 64, 64); font-size: 1rem;">
+                <button class="toplistxd" onclick="navegar('productos')">Programas</button>
+                <button class="toplistxd" onclick="navegar('videos')">Videos</button>
+                <button class="toplistxd" onclick="navegar('addons')">Add-ons Blender</button>
+                <button class="toplistxd" onclick="navegar('sugerencia')">¿Quieres agregar algo?</button>
+
+
+                <!--<li><a class="toplistxd" href="#sugerencia">¿Quieres agregar algo?</a></li>
+                <li><a class="toplistxd" href="#productos">Programas</a></li>
+                <li><a class="toplistxd" href="#videos">Videos</a></li>
+                <li><a class="toplistxd" href="https://lagoma.netlify.app/add-ons">Add-ons Blender</a></li>
+                -->
+                <li><a class="toplistxd" href="/Archivos/Ubica-T.apk">Ubica-T App TESChi</a></li>
+                <!--li><a class="toplistxd" href="Index.html">"La Goma"</a></li-->
+                <select id="list-ch" class="list-ch">
                     <option value="">Canales de YouTube Shidos</option>
                     <option value="https://www.youtube.com/c/Programaci%C3%B3nATS">Programación ATS 🥺🕊</option>
                     <option value="https://www.youtube.com/@esperandoelrender">Esperando el Render</option>
@@ -191,20 +203,6 @@
                     <option value="https://www.youtube.com/@sanago">사나고 Sanago</option>
                     <option value="https://www.youtube.com/@wrongcaesar9">WrongCaesar9</option>
                 </select>
-
-                <button class="toplistxd" onclick="navegar('productos')">Programas</button>
-                <button class="toplistxd" onclick="navegar('videos')">Videos</button>
-                <button class="toplistxd" onclick="navegar('addons')">Add-ons Blender</button>
-                <button class="toplistxd" onclick="navegar('sugerencia')">¿Quieres agregar algo?</button>
-
-
-                <!--<li><a class="toplistxd" href="#sugerencia">¿Quieres agregar algo?</a></li>
-                <li><a class="toplistxd" href="#productos">Programas</a></li>
-                <li><a class="toplistxd" href="#videos">Videos</a></li>
-                <li><a class="toplistxd" href="https://lagoma.netlify.app/add-ons">Add-ons Blender</a></li>
-                -->
-                <li><a class="toplistxd" href="/Archivos/Ubica-T.apk">Ubica-T App TESChi</a></li>
-                <!--li><a class="toplistxd" href="Index.html">"La Goma"</a></li-->
                 <li>Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span></li>
             </ul>
 
@@ -481,22 +479,18 @@
         </section>
 
         <section id="sugerencia" class="view" style="display:none;">
-            <h2>¿Quieres agregar algo?</h2>
+            <h2>¿Buscas otra cosa?</h2>
             <form id="formulario" class="formulario">
-                <h4>¿Quieres agregar un nuevo archivo?<br>Mandame mensaje :D</h4>
+                <h4>Mandame mensaje :D</h4>
                 <div class="box-input">
-
                     <input class="escnamew" name="nombre" id="nombre" type="text" required=""
                         style="height: 20px;text-align:center justify;width: 95%;" placeholder="Escribe tu nombre">
-
                 </div>
                 <div class="box-input">
-
                     <textarea id="pedidof" name="pedidof" required="" cols="30" rows="4" style="margin-top: 1rem; resize: none;
                     background-color: transparent; border-color: lightgreen; border-radius: 10px; border-style: dashed;
                     border-width: 2px; padding: 12px;" data-min-length="2"
                         placeholder="¿Que deseas colocar? :D"></textarea>
-
                 </div>
                 <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
             </form>
@@ -517,10 +511,7 @@
 
         <div class="go-top-container">
             <div class="go-top-button">
-                <i class="fas fa-chevron-up">
-                    <a id="go-top-button" title="Dar Salto"><img width="70px" height="70px"
-                            src="https://cdn-icons-png.flaticon.com/512/892/892550.png"></a>
-                </i>
+                <a id="go-top-button" title="Dar Salto"></a>
             </div>
         </div>
     </main>
@@ -552,7 +543,7 @@
     </footer>
     <script>
         // Script para abrir enlaces en una nueva pestaña mediante un selector
-        document.getElementById('mi-selector').addEventListener('change', function () {
+        document.getElementById('list-ch').addEventListener('change', function () {
             const url = this.value;
             if (url) {
                 window.open(url, '_blank');

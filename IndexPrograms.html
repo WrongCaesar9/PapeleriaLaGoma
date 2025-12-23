@@ -52,15 +52,8 @@
 </head>
 
 
-
-
-
-
-
-
-
 <body>
-    <header style="z-index: 1;">
+    <header>
         <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app"><img class="header__logo-image"
                 style="max-width: 90px; border-radius: 10px;max-height: 90px;" align="left" src="/logos/lagomaGM.png"
                 alt="lagoma" fetchpriority="high"></a>
@@ -110,8 +103,24 @@
                     <option value="0">NA</option>
                 </select>
 
-                <select id="mi-selector"
-                    style="height: 30px; width: auto; background-color: rgb(21, 22, 22); color: #ffffff;border-radius: 5%; border-style:dotted;box-shadow: 2px 2px 10px 5px rgb(114, 64, 64); font-size: 1rem;">
+                <button class="toplistxd" onclick="navegar('productos')">Programas</button>
+                <button class="toplistxd" onclick="navegar('videos')">Videos</button>
+                <button class="toplistxd" onclick="navegar('addons')">Add-ons Blender</button>
+                <button class="toplistxd" onclick="navegar('sugerencia')">¿Algo más?</button>
+
+
+                <!--<li><a class="toplistxd" href="#sugerencia">¿Quieres agregar algo?</a></li>
+                <li><a class="toplistxd" href="#productos">Programas</a></li>
+                <li><a class="toplistxd" href="#videos">Videos</a></li>
+                <li><a class="toplistxd" href="https://lagoma.netlify.app/add-ons">Add-ons Blender</a></li>
+                -->
+                <li><a class="toplistxd" href="/Archivos/Ubica-T.apk">Ubica-T App TESChi</a></li>
+                <!--li><a class="toplistxd" href="Index.html">"La Goma"</a></li
+                
+                onchange="if (this.value) window.open(this.value, '_blank');" //esta linea va en el select y lo que hace es abrir en nueva pestaña el link seleccionado mediante el valor del option y el codigo js hace el resto
+                -->
+
+                <select id="list-ch" class="list-ch">
                     <option value="">Canales de YouTube Shidos</option>
                     <option value="https://www.youtube.com/c/Programaci%C3%B3nATS">Programación ATS 🥺🕊</option>
                     <option value="https://www.youtube.com/@esperandoelrender">Esperando el Render</option>
@@ -193,19 +202,6 @@
                     <option value="https://www.youtube.com/@wrongcaesar9">WrongCaesar9</option>
                 </select>
 
-                <button class="toplistxd" onclick="navegar('productos')">Programas</button>
-                <button class="toplistxd" onclick="navegar('videos')">Videos</button>
-                <button class="toplistxd" onclick="navegar('addons')">Add-ons Blender</button>
-                <button class="toplistxd" onclick="navegar('sugerencia')">¿Quieres agregar algo?</button>
-                
-                
-                <!--<li><a class="toplistxd" href="#sugerencia">¿Quieres agregar algo?</a></li>
-                <li><a class="toplistxd" href="#productos">Programas</a></li>
-                <li><a class="toplistxd" href="#videos">Videos</a></li>
-                <li><a class="toplistxd" href="https://lagoma.netlify.app/add-ons">Add-ons Blender</a></li>
-                -->
-                <li><a class="toplistxd" href="/Archivos/Ubica-T.apk">Ubica-T App TESChi</a></li>
-                <!--li><a class="toplistxd" href="Index.html">"La Goma"</a></li-->
                 <li>Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span></li>
             </ul>
 
@@ -349,97 +345,148 @@
 
 
 
-<section id="addons" class="view" style="display:none;">
-            <h2 style="font-size: 2.2rem; font-style: normal; text-align: center;" >Add-ons Blender</h2>
-            <p style="font-size: 1.5rem; font-style: normal; text-align: center;"><br>Toca las imágenes para ir a la descarga directa o a la página oficial.
+        <section id="addons" class="view" style="display:none;">
+            <h2 style="font-size: 2.2rem; font-style: normal; text-align: center;">Add-ons Blender</h2>
+            <p style="font-size: 1.5rem; font-style: normal; text-align: center;"><br>Toca las imágenes para ir a la
+                descarga directa o a la página oficial.
                 <br>Recuerda siempre apoyar a los desarrolladores donando o comprando sus productos si te es posible :D
             </p>
-        
-        
+
+
             <div class="projects-container">
                 <div class="project">
                     <a href="https://cdn.discordapp.com/attachments/707744835624501260/1419429357369163918/Weather_It_v1.0.zip?ex=68d1ba1a&is=68d0689a&hm=bc6d02055937c633347011f2fda06faf4b3a6b855b323ef693998d7b402b57ec&"
                         target="_blank">
                         <img src="/addons/weatherit_v1.jpg" alt="weatherit_v1"></a>
                     <h3>Weather It! v1.0 </h3>
-                    <p style="text-align: justify;">Crea efectos meteorológicos totalmente personalizables, desde tormentas
+                    <p style="text-align: justify;">Crea efectos meteorológicos totalmente personalizables, desde
+                        tormentas
                         intensas y lluvias torrenciales hasta
-                        neblinas suaves y nevadas. ¡Incluye rebotes realistas de lluvia en las superficies y acumulación de
+                        neblinas suaves y nevadas. ¡Incluye rebotes realistas de lluvia en las superficies y acumulación
+                        de
                         nieve en el
                         suelo para una inmersión aún mayor!</p>
-        
+
                 </div>
-        
-        
+
+
                 <div class="project">
-                    <iframe width="1080" style="max-width:100%;" height="auto" src="https://www.youtube.com/embed/fwzbIUffcR4" frameborder="0" allowfullscreen></iframe>
-                    <a href="https://studio.blender.org/projects/impulse-purchase/" target="_blank"><img width="1080" style="max-width:100%;" height="auto" src="https://studio.blender.org/files/cache/d1/b3/d1b3ac4e65163a9f9361bf85628c387c.jpg" alt="xd"></a>
+                    <iframe width="1080" style="max-width:100%;" height="auto"
+                        src="https://www.youtube.com/embed/fwzbIUffcR4" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://studio.blender.org/projects/impulse-purchase/" target="_blank"><img width="1080"
+                            style="max-width:100%;" height="auto"
+                            src="https://studio.blender.org/files/cache/d1/b3/d1b3ac4e65163a9f9361bf85628c387c.jpg"
+                            alt="xd"></a>
                     <h3>Blender + OSC Live Puppeteering Demo</h3>
                     <p>Puppeteering setup</p>
-                    <a style="color: #ffffff;" href="https://studio.blender.org/projects/impulse-purchase/" target="_blank">Link</a>
-                </div>
-        
-                <div class="project">
-                    <a href="https://github.com/efficientAF/DroneCamPlus" target="_blank"><img width="1080" style="max-width:100%;" height="auto" src="https://www.helicomicro.com/wp-content/uploads/2024/12/drone-fpv-blender-01.jpg" alt="xd"></a>
-                    <h3>DroneCam Plus</h3>
-                    <p>Proyecto Open Source de GitHub</p>
-                    <p style="text-align: justify;">Te permite volar la cámara como un dron usando un gamepad Xbox360 o un control remoto RC como entrada</p>
-                    <a style="color: #ffffff;" href="https://globglob.gumroad.com/l/dronecam-blender-addon" target="_blank">Addon original de pago</a>
-                </div>
-        
-                <div class="project">
-                    <iframe width="1080" style="max-width:100%;" height="auto" src="https://www.youtube.com/embed/NMh_PPwCABc?si=Es5PetOxSACxM-6C" frameborder="0" allowfullscreen></iframe>
-                    <h3>blendixserial Addon</h3>
-                    <a href="https://electronicstree.com/blendixserial-addon/" target="_blank"><img width="1080" style="max-width:100%;" height="auto" src="https://electronicstree.com/wp-content/uploads/2023/12/blendixserial_addon-1024x127.png.webp" alt="xd"></a>
-                    <h3>blendixserial Arduino Library</h3>
-                    <a href="Arduino Library for blendixserial Addon" target="_blank"><img width="1080" style="max-width:100%;" height="auto" src="https://electronicstree.com/wp-content/uploads/2023/12/blendixserial-1024x127.png.webp" alt="xd"></a>
-                    <p style="text-align: justify;">Controla dispositivos electrónicos desde Arduino a Blender y viceversa a través de comunicación serial</p>
-                    <p style="text-align: justify;">La neta esta bien pasado de verga, puedes hacer un shingo de cosas xd</p>
+                    <a style="color: #ffffff;" href="https://studio.blender.org/projects/impulse-purchase/"
+                        target="_blank">Link</a>
                 </div>
 
                 <div class="project">
-                    <iframe width="1080" style="max-width:100%;" height="auto" src="https://www.youtube.com/embed/yeJxMaNQAzg?si=l18LUPrhs3VKTnRB" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://github.com/efficientAF/DroneCamPlus" target="_blank"><img width="1080"
+                            style="max-width:100%;" height="auto"
+                            src="https://www.helicomicro.com/wp-content/uploads/2024/12/drone-fpv-blender-01.jpg"
+                            alt="xd"></a>
+                    <h3>DroneCam Plus</h3>
+                    <p>Proyecto Open Source de GitHub</p>
+                    <p style="text-align: justify;">Te permite volar la cámara como un dron usando un gamepad Xbox360 o
+                        un control remoto RC como entrada</p>
+                    <a style="color: #ffffff;" href="https://globglob.gumroad.com/l/dronecam-blender-addon"
+                        target="_blank">Addon original de pago</a>
+                </div>
+
+                <div class="project">
+                    <iframe width="1080" style="max-width:100%;" height="auto"
+                        src="https://www.youtube.com/embed/NMh_PPwCABc?si=Es5PetOxSACxM-6C" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>blendixserial Addon</h3>
+                    <a href="https://electronicstree.com/blendixserial-addon/" target="_blank"><img width="1080"
+                            style="max-width:100%;" height="auto"
+                            src="https://electronicstree.com/wp-content/uploads/2023/12/blendixserial_addon-1024x127.png.webp"
+                            alt="xd"></a>
+                    <h3>blendixserial Arduino Library</h3>
+                    <a href="Arduino Library for blendixserial Addon" target="_blank"><img width="1080"
+                            style="max-width:100%;" height="auto"
+                            src="https://electronicstree.com/wp-content/uploads/2023/12/blendixserial-1024x127.png.webp"
+                            alt="xd"></a>
+                    <p style="text-align: justify;">Controla dispositivos electrónicos desde Arduino a Blender y
+                        viceversa a través de comunicación serial</p>
+                    <p style="text-align: justify;">La neta esta bien pasado de verga, puedes hacer un shingo de cosas
+                        xd</p>
+                </div>
+
+                <div class="project">
+                    <iframe width="1080" style="max-width:100%;" height="auto"
+                        src="https://www.youtube.com/embed/yeJxMaNQAzg?si=l18LUPrhs3VKTnRB" frameborder="0"
+                        allowfullscreen></iframe>
                     <h3>Blender servo animation Add-on</h3>
-                    <a href="https://github.com/timhendriks93/blender-servo-animation"
-                        target="_blank">
+                    <a href="https://github.com/timhendriks93/blender-servo-animation" target="_blank">
                         <img src="/addons/blender_servo_animation.png" alt="weatherit_v1"></a>
-                    <p style="text-align: justify;">Export your Blender animation to servo position values. They can be used with an Arduino compatible micro controller to move PWM-driven servos according to your animation.</p>
-                    <p style="text-align: justify;">Animate your robot or animatronic project and take advantage of Blender's animation tools!</p>
-                    <a style="color: #ffffff;" href="https://github.com/timhendriks93/blender-servo-animation-arduino/tree/main" target="_blank">Libreria para Arduino<br>blender-servo-animation-arduino</a>
+                    <p style="text-align: justify;">Export your Blender animation to servo position values. They can be
+                        used with an Arduino compatible micro controller to move PWM-driven servos according to your
+                        animation.</p>
+                    <p style="text-align: justify;">Animate your robot or animatronic project and take advantage of
+                        Blender's animation tools!</p>
+                    <a style="color: #ffffff;"
+                        href="https://github.com/timhendriks93/blender-servo-animation-arduino/tree/main"
+                        target="_blank">Libreria para Arduino<br>blender-servo-animation-arduino</a>
                 </div>
 
                 <div class="project">
                     <video width="1080" style="max-width:100%;" controls>
-                        <source src="https://extensions.blender.org/media/videos/87/87f783070e4a1ed3c8adaae561b15f7b7f9f54168d46b9c5a60433e1ae40661a.mp4" type="video/mp4">
+                        <source
+                            src="https://extensions.blender.org/media/videos/87/87f783070e4a1ed3c8adaae561b15f7b7f9f54168d46b9c5a60433e1ae40661a.mp4"
+                            type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video></video>
-                    <a href="https://extensions.blender.org/add-ons/node-to-python/" target="_blank"><img width="1080" style="max-width:100%;" height="auto" src="https://raw.githubusercontent.com/BrendanParmer/NodeToPython/main/docs/img/logo.png" alt="xd"></a>
+                    <a href="https://extensions.blender.org/add-ons/node-to-python/" target="_blank"><img width="1080"
+                            style="max-width:100%;" height="auto"
+                            src="https://raw.githubusercontent.com/BrendanParmer/NodeToPython/main/docs/img/logo.png"
+                            alt="xd"></a>
                     <h3>Node To Python</h3>
-                    <p style="text-align: justify;">¡Un complemento de Blender para crear scripts y complementos! Este complemento tomará sus nodos de geometría, materiales y nodos de composición y los convertirá en código Python legible</p>
-                    <a style="color: #ffffff;" href="https://github.com/BrendanParmer/NodeToPython" target="_blank">Link Repo GitHub</a>
-                </div>
-                
-                <div class="project">
-                    <a href="https://github.com/carson-katri/geometry-script?tab=readme-ov-file" target="_blank"><img width="1080" style="max-width:100%; z-index: -2;" height="auto" src="https://raw.githubusercontent.com/carson-katri/geometry-script/main/book/src/images/wordmark.png" alt="xd"></a>
-                    <h3>Geometry Script</h3>
-                    <p style="text-align: justify;">Geometry Script es una API de Python robusta pero fácil de usar para crear geometry nodes con código</p>
+                    <p style="text-align: justify;">¡Un complemento de Blender para crear scripts y complementos! Este
+                        complemento tomará sus nodos de geometría, materiales y nodos de composición y los convertirá en
+                        código Python legible</p>
+                    <a style="color: #ffffff;" href="https://github.com/BrendanParmer/NodeToPython" target="_blank">Link
+                        Repo GitHub</a>
                 </div>
 
                 <div class="project">
-                    <iframe width="1080" style="max-width:100%;" height="auto" src="https://www.youtube.com/embed/7FBVukiQNbQ?si=184ud1qlT7XPVf_4" frameborder="0" allowfullscreen></iframe>
-                    <a href="https://extensions.blender.org/add-ons/easyweight/" target="_blank"><img width="1080" style="max-width:100%;" height="auto" src="https://extensions.blender.org/media/thumbnails/30/30bff3624dfa1167fa4897afede7a694ab733874bff35fc4729bb63cc44241a6_1920x1080.webp" alt="xd"></a>
+                    <a href="https://github.com/carson-katri/geometry-script?tab=readme-ov-file" target="_blank"><img
+                            width="1080" style="max-width:100%; z-index: -2;" height="auto"
+                            src="https://raw.githubusercontent.com/carson-katri/geometry-script/main/book/src/images/wordmark.png"
+                            alt="xd"></a>
+                    <h3>Geometry Script</h3>
+                    <p style="text-align: justify;">Geometry Script es una API de Python robusta pero fácil de usar para
+                        crear geometry nodes con código</p>
+                </div>
+
+                <div class="project">
+                    <iframe width="1080" style="max-width:100%;" height="auto"
+                        src="https://www.youtube.com/embed/7FBVukiQNbQ?si=184ud1qlT7XPVf_4" frameborder="0"
+                        allowfullscreen></iframe>
+                    <a href="https://extensions.blender.org/add-ons/easyweight/" target="_blank"><img width="1080"
+                            style="max-width:100%;" height="auto"
+                            src="https://extensions.blender.org/media/thumbnails/30/30bff3624dfa1167fa4897afede7a694ab733874bff35fc4729bb63cc44241a6_1920x1080.webp"
+                            alt="xd"></a>
                     <h3>EasyWeight</h3>
                     <p>Potencia el flujo de tra</p>
                 </div>
 
                 <div class="project">
-                    <a href="https://www.blenderkit.com/get-blenderkit/" target="_blank"><img width="1080" style="max-width:100%; z-index: -2;" height="auto" src="https://assets.superhivemarket.com/store/productimage/715331/image/eb2209db0387eb7beba0650ef63c1d78.png" alt="xd"></a>
+                    <a href="https://www.blenderkit.com/get-blenderkit/" target="_blank"><img width="1080"
+                            style="max-width:100%; z-index: -2;" height="auto"
+                            src="https://assets.superhivemarket.com/store/productimage/715331/image/eb2209db0387eb7beba0650ef63c1d78.png"
+                            alt="xd"></a>
                     <h3>BlenderKit</h3>
-                    <p style="text-align: justify;">BlenderKit es una plataforma de activos 3D integrada en Blender que ofrece una amplia biblioteca de modelos, materiales y pinceles para mejorar tu flujo de trabajo creativo.</p>                    
+                    <p style="text-align: justify;">BlenderKit es una plataforma de activos 3D integrada en Blender que
+                        ofrece una amplia biblioteca de modelos, materiales y pinceles para mejorar tu flujo de trabajo
+                        creativo.</p>
                 </div>
 
-                
-        
+
+
             </div>
         </section>
 
@@ -452,12 +499,12 @@
 
 
         <section id="sugerencia" class="view" style="display:none;">
-            <h2>¿Quieres agregar algo?</h2>
+            <h2>¿Buscas otra cosa?</h2>
 
 
 
             <form id="formulario" class="formulario">
-                <h4>¿Quieres agregar un nuevo archivo?<br>Mandame mensaje :D</h4>
+                <h4>Mandame mensaje :D</h4>
                 <div class="box-input">
 
                     <input class="escnamew" name="nombre" id="nombre" type="text" required=""
@@ -501,10 +548,7 @@
 
         <div class="go-top-container">
             <div class="go-top-button">
-                <i class="fas fa-chevron-up">
-                    <a id="go-top-button" title="Dar Salto"><img width="70px" height="70px"
-                            src="https://cdn-icons-png.flaticon.com/512/892/892550.png"></a>
-                </i>
+                <a id="go-top-button" title="Dar Salto"></a>
             </div>
         </div>
 
@@ -564,7 +608,7 @@ Barra de iconos compartir End-->
 
     <script>
         // Script para abrir enlaces en una nueva pestaña mediante un selector
-        document.getElementById('mi-selector').addEventListener('change', function () {
+        document.getElementById('list-ch').addEventListener('change', function () {
             const url = this.value;
             if (url) {
                 window.open(url, '_blank');

@@ -128,6 +128,24 @@ function setupPaginacion(totalItems) {
     }
 }
 
+// Código del botón "Ir arriba"
+window.onscroll = function () {
+  //console.log(document.documentElement.scrollTop);
+  if (document.documentElement.scrollTop > 200) {
+    document.querySelector('.go-top-container').classList.add('show');
+  }
+  else {
+    document.querySelector('.go-top-container').classList.remove('show');
+
+  }
+}
+
+document.querySelector('.go-top-container').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 // EVENTOS: IMPORTANTE
 // Cuando se filtra, debemos "resetear" a la página 1, 
 // si no, podríamos quedarnos en la página 5 sin resultados.
@@ -213,26 +231,6 @@ formulario.addEventListener('submit', (event) => {
 
 
 
-
-window.onscroll = function () {
-  //console.log(document.documentElement.scrollTop);
-  if (document.documentElement.scrollTop > 200) {
-    document.querySelector('.go-top-container').classList.add('show');
-  }
-  else {
-    document.querySelector('.go-top-container').classList.remove('show');
-
-  }
-}
-
-document.querySelector('.go-top-container').addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
-
-
 window.addEventListener('scroll', function () {
   var nav = document.querySelector('header');
   if (window.scrollY >= 400) { // ajusta este valor según tus necesidades
@@ -259,3 +257,42 @@ document.getElementById("fecha-actualizacion").textContent = "Última actualizac
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Buscamos los elementos. 
+    // OJO: Si tus etiquetas NO son <header> y <nav>, cambia esto.
+    // Ejemplo: si tienes <div id="mi-header"> usa document.getElementById('mi-header')
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+
+    // Verificación de seguridad (El 'Console Log')
+    if (!header || !nav) {
+        console.error("❌ ERROR: No encuentro el header o el nav. Revisa si son etiquetas <header> o divs.");
+        return; // Si no existen, detenemos el código para que no de errores
+    } else {
+        console.log("✅ Header y Nav encontrados. El script está listo.");
+    }
+
+    let ubicacionPrincipal = window.scrollY;
+
+    window.addEventListener('scroll', function() {
+        let desplazamientoActual = window.scrollY;
+
+        // Imprime en consola cuánto has bajado (para ver si detecta el scroll)
+        // console.log("Haciendo scroll...", desplazamientoActual); 
+
+        if (ubicacionPrincipal >= desplazamientoActual) {
+            // SUBIENDO (Mostrar)
+            header.classList.remove('escondido');
+            nav.classList.remove('escondido');
+        } else {
+            // BAJANDO (Ocultar)
+            // Agregamos un pequeño margen (50px) para que no parpadee apenas bajes
+            if (desplazamientoActual > 50) { 
+                header.classList.add('escondido');
+                nav.classList.add('escondido');
+            }
+        }
+
+        ubicacionPrincipal = desplazamientoActual;
+    });
+});

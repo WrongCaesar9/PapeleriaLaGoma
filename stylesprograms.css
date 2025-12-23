@@ -12,7 +12,7 @@
   padding-top: 14rem;
 }
 #addons {
-  padding-top: 14rem;
+  padding-top: 13rem;
 }
 
 body {
@@ -70,6 +70,7 @@ header {
   width: 132%;
   height: auto;
   scale: 75%;
+  
 }
 
 nav {
@@ -279,87 +280,7 @@ footer {
 
 }
 
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1600px) {
-  #productos-contenedor {
-    grid-template-columns: repeat(5, 1fr);
-    font-size: 0.7rem;
-  }
-#productos {
-  padding-top: 14rem;
 
-}
-nav li {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
-}
-}
-
-@media (max-width: 1370px) {
-  #productos-contenedor {
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 0.8rem;
-  }
-#productos {
-  padding-top: 14rem;
-
-}
-nav li {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
-}
-}
-
-@media (max-width: 1230px) {
-  #productos-contenedor {
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 0.6rem;
-  }
-#productos {
-  padding-top: 15rem;
-
-}
-nav li {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
-}
-}
-
-/* Para pantallas pequeñas (teléfonos) */
-@media (max-width: 768px) {
-  #productos-contenedor {
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 0.6rem;
-  }
-#productos {
-  padding-top: 15rem;
-
-}
-nav li {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
-}
-}
-
-/* Opcional: aún más chico (teléfonos muy pequeños) */
-@media (max-width: 480px) {
-  #productos-contenedor {
-    grid-template-columns: repeat(1, 1fr);
-  }
-#productos {
-  padding-top: 16rem;
-
-}
-nav li {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: auto;
-}
-}
 
 
 
@@ -464,55 +385,19 @@ h1 {
 
 .go-top-container {
   position: fixed;
-  bottom: 0.1rem;
-  right: 0.05rem;
+  bottom: 2.5rem;
+  right: -1.5rem;
   width: 7.6rem;
   height: 7.6rem;
+  transition: 0.5s;
   z-index: -1;
 }
 
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
-  .go-top-container {
-
-    position: fixed;
-    bottom: 3rem;
-    right: 0.05rem;
-    width: 7.6rem;
-    height: 7.6rem;
-    z-index: -1;
-  }
-}
-
-/* Para pantallas pequeñas (teléfonos) */
-@media (max-width: 768px) {
-  .go-top-container {
-    position: fixed;
-    bottom: 3rem;
-    right: 0.05rem;
-    width: 7.6rem;
-    height: 7.6rem;
-    z-index: -1;
-  }
-}
-
-/* Opcional: aún más chico (teléfonos muy pequeños) */
-@media (max-width: 480px) {
-  .go-top-container {
-    position: fixed;
-    bottom: 3rem;
-    right: 0.05rem;
-    width: 7.6rem;
-    height: 7.6rem;
-    z-index: -1;
-  }
-}
-
 .go-top-button {
-  width: 0rem;
-  height: 0rem;
-  background: #1f6197;
+  width: 0px;
+  height: 0px;
   border-radius: 50%;
+  background-color: #1f6197;
   cursor: pointer;
   transition: 0.9s;
   position: absolute;
@@ -532,21 +417,9 @@ h1 {
   animation: popup 0.8s ease-in-out;
   width: 5.0rem;
   height: 5.0rem;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/892/892550.png);
+  background-size: cover;
   z-index: 20;
-}
-
-.go-top-button i {
-  position: absolute;
-  font-size: 1.7rem;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  color: #ff0f0f;
-  transition: 0.2s;
-}
-
-.show i {
-  transform: translate(-50%, -44%) scale(1);
 }
 
 .go-top-button:hover {
@@ -555,22 +428,8 @@ h1 {
   transition: .5s;
 }
 
-@keyframes popup {
-  0% {
-    width: 0;
-    height: 0;
-  }
 
-  50% {
-    width: 7rem;
-    height: 7rem;
-  }
 
-  100% {
-    width: 5.0rem;
-    height: 5.0rem;
-  }
-}
 
 .btn-instagram {
   position: static;
@@ -731,11 +590,39 @@ h1 {
 }
 
 .toplistxd {
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   border: none;
+  padding: 7px;
   font-size: 1.2rem;
 }
+
+.toplistxd:hover {
+  color: #d3d3d3;
+  background-color: rgb(72, 72, 72);
+  cursor: pointer;
+  border-radius: 10px;
+margin-right: auto;
+}
+
+.list-ch {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border: none;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+
+.list-ch:hover {
+  color: #d3d3d3;
+  background-color: rgb(72, 72, 72);
+  cursor: pointer;
+  border-radius: 10px;
+margin-right: auto;
+}
+
+
+
 
 .btn-redirigirN {
   background-color: #51fc2e;
@@ -789,6 +676,219 @@ h1 {
   align-items: stretch;
 }
 
+
+
+
+.productos{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 22%;
+}
+
+
+
+
+
+
+
+/* Media Queries para Responsividad */
+
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1600px) {
+  #productos-contenedor {
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 0.7rem;
+  }
+#productos {
+  padding-top: 14rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
+.go-top-button {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #1f6197;
+  cursor: pointer;
+  transition: 0.9s;
+  position: absolute;
+  top: 95%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.show .go-top-button {
+  animation: popup 0.8s ease-in-out;
+  width: 3.0rem;
+  height: 3.0rem;
+
+}
+#addons {
+  padding-top: 13rem;
+}
+}
+
+@media (max-width: 1370px) {
+  #productos-contenedor {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 0.8rem;
+  }
+#productos {
+  padding-top: 14rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
+.go-top-button {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #1f6197;
+  cursor: pointer;
+  transition: 0.9s;
+  position: absolute;
+  top: 95%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.show .go-top-button {
+  animation: popup 0.8s ease-in-out;
+  width: 3.0rem;
+  height: 3.0rem;
+
+}
+#addons {
+  padding-top: 13rem;
+}
+}
+
+@media (max-width: 1230px) {
+  #productos-contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 0.6rem;
+  }
+#productos {
+  padding-top: 15rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
+.go-top-button {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #1f6197;
+  cursor: pointer;
+  transition: 0.9s;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.show .go-top-button {
+  animation: popup 0.8s ease-in-out;
+  width: 3.0rem;
+  height: 3.0rem;
+
+}
+#addons {
+  padding-top: 13rem;
+}
+#videos {
+  padding-top: 15rem;
+}
+}
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+  #productos-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.6rem;
+  }
+#productos {
+  padding-top: 15rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
+.go-top-button {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #1f6197;
+  cursor: pointer;
+  transition: 0.9s;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.show .go-top-button {
+  animation: popup 0.8s ease-in-out;
+  width: 3.0rem;
+  height: 3.0rem;
+
+}
+#addons {
+  padding-top: 16rem;
+}
+#videos {
+  padding-top: 15rem;
+}
+}
+
+/* Opcional: aún más chico (teléfonos muy pequeños) */
+@media (max-width: 480px) {
+  #productos-contenedor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+#productos {
+  padding-top: 16rem;
+
+}
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+}
+}
+
+/* Animaciones */
+
+@keyframes popup {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  50% {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  100% {
+    width: 3.0rem;
+    height: 3.0rem;
+  }
+}
+
 @keyframes appear {
   from {
     
@@ -803,8 +903,17 @@ h1 {
 }
 
 
-.productos{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 22%;
+
+
+
+/* 1. Agregamos suavidad al movimiento */
+header, nav {
+    transition: top 0.4s ease-in-out; /* Esto hace que suba y baje suavecito */
+    z-index: 1000; /* Aseguramos que siempre esté encima de todo */
+}
+
+/* 2. Clase para cuando se esconden */
+/* Usamos !important para asegurar que sobreescriba tu 'top' original */
+.escondido {
+    top: -200px !important; /* Los mandamos muy arriba, fuera de la pantalla */
 }
