@@ -184,7 +184,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 // EVENTOS: IMPORTANTE
 // Cuando se filtra, debemos "resetear" a la página 1, 
 // si no, podríamos quedarnos en la página 5 sin resultados.
