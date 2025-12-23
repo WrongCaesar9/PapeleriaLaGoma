@@ -381,6 +381,59 @@ nav li {
 
 
 
+.paginacion-estilos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.paginacion-estilos button {
+    background-color: #335a61; /* Usé un color parecido a tu fondo */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.paginacion-estilos button:hover {
+    background-color: #1a2f33;
+}
+
+/* Estilo para el botón de la página actual */
+.paginacion-estilos button.active {
+    background-color: #ff9800; /* Un color que resalte (naranja ejemplo) */
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+/* Clase para cuando no hay productos */
+.no-resultados {
+    grid-column: 1 / -1; /* TRUCO: Hace que ocupe todo el ancho del grid */
+    text-align: center;
+    padding: 50px;
+    color: #335a61; /* Tu color temático */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.no-resultados p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+/* Estilos para los títulos con efecto de color animado */
+
+
+
 h1 {
   font-size: 25px;
   padding-top: 15px;

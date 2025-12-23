@@ -1,139 +1,177 @@
+// Código de paginación
 const productosContenedor = document.getElementById("productos-contenedor");
+const paginacionContenedor = document.getElementById("paginacion-contenedor");
 
-// Obtener los datos de los productos
+// VARIABLES DE PAGINACIÓN
+let paginaActual = 1;
+const elementosPorPagina = 15; // ¡Cámbialo a 10, 20 o lo que gustes!
+
+// Obtener los datos
 fetch("datapg.json")
   .then(response => response.json())
   .then(data => {
-    // Almacenar los datos en una variable global
     window.productos = data.productos;
-    // Mostrar los productos en la página
     mostrarProductos();
   })
   .catch(error => console.error(error));
 
-// Función para mostrar los productos en la página
-function mostrarProductos() {
-  const productosContenedor = document.getElementById("productos-contenedor");
-  productosContenedor.innerHTML = "";
 
-  // Obtener los valores seleccionados en los filtros
+function mostrarProductos() {
+  productosContenedor.innerHTML = "";
+  
+  // 1. OBTENER VALORES DE FILTROS
   const filtroModelo = document.getElementById("filtro-modelo").value;
-  const filtroPrecio = parseFloat(document.getElementById("filtro-precio").value);
+  // Usamos || 0 por si el input está vacío o es inválido
+  const filtroPrecio = parseFloat(document.getElementById("filtro-precio").value) || 0; 
   const terminoBusqueda = document.getElementById("barra-busqueda").value.toLowerCase();
 
-  // Recorrer cada producto en la papelería
-  window.productos.forEach(function (productos) {
-    const nombreProducto = productos.nombre.toLowerCase();
+  // 2. FILTRAR PRIMERO (Creamos una lista temporal con los resultados válidos)
+  // Usamos .filter en lugar de .forEach para obtener un nuevo array limpio
+  const productosFiltrados = window.productos.filter(producto => {
+      const nombreProducto = producto.nombre.toLowerCase();
+      
+      // Tu misma lógica de filtrado:
+      return (
+          (filtroModelo === "" || producto.modelo === filtroModelo) &&
+          (filtroPrecio === 0 || producto.precio <= filtroPrecio) &&
+          (nombreProducto.includes(terminoBusqueda) || terminoBusqueda === "")
+      );
+  });
 
-    // Comprobar si los artículos cumplen con los criterios de los filtros y el término de búsqueda
-    if (
-      (filtroModelo === "" || productos.modelo === filtroModelo) &&
-      (filtroPrecio === 0 || productos.precio <= filtroPrecio) &&
-      (nombreProducto.includes(terminoBusqueda) || terminoBusqueda === "")
-    ) {
-      // Crear un elemento div para el artículo
+
+
+  // --- NUEVO CÓDIGO: EL MESERO RESPONDE ---
+  if (productosFiltrados.length === 0) {
+      // 1. Limpiamos el contenedor
+      productosContenedor.innerHTML = `
+          <div class="no-resultados">
+              <h3>🐸 Ups, no encontramos nada por aquí</h3>
+              <p>Salta a otros filtros o busca con otro nombre.</p>
+          </div>
+      `;
+      
+      // 2. Limpiamos la paginación (para que no salgan botones)
+      paginacionContenedor.innerHTML = "";
+      
+      // 3. DETENEMOS LA FUNCIÓN (Return)
+      // Esto es importante: le decimos al código "ya no hagas nada más abajo"
+      return; 
+  }
+  // --- FIN DEL NUEVO CÓDIGO ---
+
+  // 3. MATEMÁTICAS DE PAGINACIÓN
+  const indiceInicio = (paginaActual - 1) * elementosPorPagina;
+  const indiceFinal = indiceInicio + elementosPorPagina;
+  
+  // Recortamos la lista filtrada para mostrar solo la página actual
+  const productosParaMostrar = productosFiltrados.slice(indiceInicio, indiceFinal);
+
+  // 4. DIBUJAR LOS PRODUCTOS (Solo los de esta página)
+  productosParaMostrar.forEach(producto => {
+      // --- Aquí va TU código de creación de elementos intacto ---
       const productosDiv = document.createElement("div");
       productosDiv.classList.add("productos");
-      // Crear una imagen para el artículo
+
       const productosImg = document.createElement("img");
-      productosImg.src = productos.img; // Agregar un parámetro de versión para evitar el caché
-      productosImg.alt = productos.modelo;
+      productosImg.src = producto.img; 
+      productosImg.alt = producto.modelo;
       productosDiv.appendChild(productosImg);
 
-      // Crear un h3 para el nombre del producto
       const productosNombre = document.createElement("h3");
-      productosNombre.innerHTML = productos.nombre;
+      productosNombre.innerHTML = producto.nombre;
       productosDiv.appendChild(productosNombre);
 
-
-
-      // Crear un h4 para el enlace del producto
       const productosEnlace = document.createElement("h4");
-
-      // Crear un enlace y configurarlo con la URL del producto
       const enlaceProducto = document.createElement("a");
-      enlaceProducto.href = productos.enlace;
-      enlaceProducto.target = "__blank"; // Abrir enlace en nueva pestaña
-      enlaceProducto.textContent = "Da el Salto 🐸🤙"; // Puedes cambiar el texto según tus necesidades
-
-      // Agregar el enlace al h4
+      enlaceProducto.href = producto.enlace;
+      enlaceProducto.target = "__blank";
+      enlaceProducto.textContent = "Da el Salto 🐸🤙";
       productosEnlace.appendChild(enlaceProducto);
-
-      // Agregar el h4 al productoDiv
       productosDiv.appendChild(productosEnlace);
 
-
-      // Crear un p para el modelo del producto
       const productosModel = document.createElement("p");
-      productosModel.innerHTML = productos.modelo;
+      productosModel.innerHTML = producto.modelo;
       productosDiv.appendChild(productosModel);
-      /*
-      const productosEnlace = document.createElement("h4");
-      productosEnlace.href = productos.enlace;
-      productosEnlace.target = "_blank";
-      productosDiv.appendChild(productosEnlace);
-      productosEnlace.textContent = producto.enlace;
 
-
-// Crear un h4 para cada producto
-const h4Producto = document.createElement("h4");
-
-// Crear un enlace y configurarlo con la URL del producto
-const enlaceProducto = document.createElement("a");
-enlaceProducto.href = producto.enlace;
-enlaceProducto.target = "_blank"; // Abrir enlace en nueva pestaña
-enlaceProducto.textContent = producto.nombre;
-
-// Agregar el enlace al h4
-h4Producto.appendChild(enlaceProducto);
-
-*/
-
-
-
-
-
-
-
-
-
-
-      // Agregar el elemento div a la página
       productosContenedor.appendChild(productosDiv);
+  });
+
+  // 5. DIBUJAR LOS BOTONES DE PAGINACIÓN
+  // Le pasamos el total de productos FILTRADOS (no el total global)
+  setupPaginacion(productosFiltrados.length);
+}
+
+function setupPaginacion(totalItems) {
+    paginacionContenedor.innerHTML = "";
+
+    // Si no hay productos o caben todos en una página, no mostramos botones
+    if (totalItems <= elementosPorPagina) return;
+
+    const totalPaginas = Math.ceil(totalItems / elementosPorPagina);
+
+    for (let i = 1; i <= totalPaginas; i++) {
+        const boton = document.createElement("button");
+        boton.innerText = i;
+        
+        if (i === paginaActual) {
+            boton.classList.add("active");
+        }
+
+        boton.addEventListener("click", () => {
+            paginaActual = i;
+            mostrarProductos(); // Recargar productos con la nueva página
+            // Opcional: Hacer scroll suave hacia arriba al cambiar de página
+            document.getElementById("productos").scrollIntoView({ behavior: 'smooth' });
+        });
+
+        paginacionContenedor.appendChild(boton);
     }
-  });
 }
 
-window.onscroll = function () {
-  //console.log(document.documentElement.scrollTop);
-  if (document.documentElement.scrollTop > 200) {
-    document.querySelector('.go-top-container').classList.add('show');
-  }
-  else {
-    document.querySelector('.go-top-container').classList.remove('show');
+// EVENTOS: IMPORTANTE
+// Cuando se filtra, debemos "resetear" a la página 1, 
+// si no, podríamos quedarnos en la página 5 sin resultados.
 
-  }
-}
-
-document.querySelector('.go-top-container').addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+document.getElementById("filtro-modelo").addEventListener("change", () => {
+    paginaActual = 1; 
+    mostrarProductos();
 });
 
-// Agregar eventos a los filtros para que al cambiar su valor, se vuelva a mostrar los artículos
-document.getElementById("filtro-modelo").addEventListener("change", mostrarProductos);
+document.getElementById("btn-buscar").addEventListener("click", () => {
+    paginaActual = 1;
+    mostrarProductos();
+});
 
+document.getElementById("barra-busqueda").addEventListener("input", () => {
+    paginaActual = 1;
+    mostrarProductos();
+});
 
-// Agregar evento al botón de búsqueda para que llame a la función mostrarProductos()
-document.getElementById("btn-buscar").addEventListener("click", mostrarProductos);
+//Aquí termina el código de paginación
+// Función de navegación entre secciones que se llama SPA por sus siglas en inglés (Single Page Application) 
+function navegar(idSeccion) {
+    // 1. Ocultar TODAS las secciones
+    const todasLasSecciones = document.querySelectorAll('.view');
+    todasLasSecciones.forEach(seccion => {
+        seccion.style.display = 'none';
+    });
 
-// Escuchar el evento de cambio en la barra de búsqueda para que muestre los productos en tiempo real
-document.getElementById("barra-busqueda").addEventListener("input", mostrarProductos);
+    // 2. Mostrar la sección que queremos ver
+    const seccionActiva = document.getElementById(idSeccion);
+    if (seccionActiva) {
+        seccionActiva.style.display = 'block'; // O 'grid' si usas grid en el contenedor padre
+        
+        // TRUCO PRO: Si entramos a productos, reseteamos la vista
+        if (idSeccion === 'productos') {
+            // Opcional: Si quieres que cada vez que entre se recarguen los productos
+            // mostrarProductos(); 
+        }
+    }
+}
+// Agrega esto al final de la función navegar:
+window.location.hash = idSeccion;
 
-
-
+// Código de formulario WhatsApp
 
 function isMobile() {
 
@@ -176,7 +214,23 @@ formulario.addEventListener('submit', (event) => {
 
 
 
+window.onscroll = function () {
+  //console.log(document.documentElement.scrollTop);
+  if (document.documentElement.scrollTop > 200) {
+    document.querySelector('.go-top-container').classList.add('show');
+  }
+  else {
+    document.querySelector('.go-top-container').classList.remove('show');
 
+  }
+}
+
+document.querySelector('.go-top-container').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 
 
 window.addEventListener('scroll', function () {
