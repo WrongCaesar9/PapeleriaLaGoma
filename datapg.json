@@ -146,13 +146,13 @@
         },
         {
             "nombre": "Armory3D<br>Motor de juego 3D integrado con Blender",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://armory3d.org/",
             "modelo": "Modelado y Diseño 3D"
         }, 
         {
             "nombre": "Blockbench<br>Editor de modelos 3D gratuito para crear modelos de baja poli y pixel art",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://www.blockbench.net/",
             "modelo": "Modelado y Diseño 3D"
         },
@@ -273,25 +273,25 @@
         },
         {
             "nombre": "GIMP<br>Programa de edición de imágenes de código abierto",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://www.gimp.org/downloads/",
             "modelo": "Edición"
         },
         {
             "nombre": "Inkscape<br>Editor de gráficos vectoriales de código abierto",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://inkscape.org/release/inkscape-1.4.2/windows/64-bit/exe/dl/",
             "modelo": "Edición"
         },
         {
             "nombre": "Darktable<br>Software de flujo de trabajo fotográfico de código abierto y editor de imágenes RAW",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://www.darktable.org/install/",
             "modelo": "Edición"
         },
         {
             "nombre": "Affinity<br>ofrece edición fotográfica, diseño vectorial, ilustración y maquetación profesional; todo en una sola aplicación y de forma gratuita.",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://www.affinity.studio/es_es/download",
             "modelo": "Edición"
         },
@@ -393,13 +393,13 @@
         },
         {
             "nombre": "Plugins 4 Free<br>Descarga plugins VST gratis para producción musical",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://plugins4free.com/",
             "modelo": "Edición"
         },
         {
             "nombre": "TouchDesigner<br>Plataforma visual para la creación de experiencias interactivas en tiempo real y multimedia unificadas atraves de la programación visual",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://derivative.ca/download",
             "modelo": "Edición"
         },
@@ -449,7 +449,7 @@
         },        
         {
             "nombre": "Snow Bros 1 y 2",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://lagoma.netlify.app/Archivos/SnowBros1y2.rar",
             "modelo": "Juegos"
         },      
@@ -497,7 +497,7 @@
         },
         {
             "nombre": "PCSX2<br>Emulador de PlayStation 2",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://pcsx2.net/",
             "modelo": "Juegos"
         },
@@ -597,6 +597,12 @@
             "img": "impg/vccgenerator.png",
             "enlace": "https://www.vccgenerator.org/",
             "modelo": "Herramientas"
+        },                        
+        {
+            "nombre": "Temp Mail<br>Servicio de correo electrónico temporal para proteger tu privacidad en línea",
+            "img": "impg/",
+            "enlace": "https://temp-mail.org/",
+            "modelo": "Herramientas"
         },
         {
             "nombre": "spacedesk<br>Convierte tu tablet o smartphone en una segunda pantalla para tu PC, no es mirror de pantalla, es una extensión de escritorio",
@@ -605,26 +611,26 @@
             "modelo": "Herramientas"
         },
         {
-            "nombre": "Exe para instalar Office 365<a  target=_blank href=https://www.wps.com/blog/office-365-activator-txt-command-step-by-step-guide/>Guia de activación</a>",
+            "nombre": "Exe para instalar Office 365 <br><a  target=_blank href=https://massgrave.dev/>Guia de activación</a><br><a  target=_blank href=https://github.com/massgravel/Microsoft-Activation-Scripts?tab=readme-ov-file> Te recomiendo ver el GitHub </a>",
             "img": "impg/officeinstaller.png",
             "enlace": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?productReleaseID=O365ProPlusRetail&platform=Def&language=es-es&TaxRegion=pr&correlationId=65675957-173e-4ce3-a2ac-aea917252b04&token=0c8ef2d3-a5d6-4df8-9b9e-0d86488908ec&version=O16GA&source=O15OLSO365&Br=2",
             "modelo": "Herramientas"
         },
         {
             "nombre": "Proton Mail<br>Correo electrónico seguro y cifrado",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://proton.me/mail",
             "modelo": "Herramientas"
         },
         {
             "nombre": "Proton VPN<br>Servicio de VPN seguro y privado",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://protonvpn.com/",
             "modelo": "Herramientas"
         },
         {
             "nombre": "VoiceMod<br>Aplicación para cambiar la voz en tiempo real",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://www.voicemod.net/",
             "modelo": "Herramientas"
         },
@@ -718,7 +724,7 @@
         },
         {
             "nombre": "DCA Lab<br>Plataforma para experimentar con circuitos electrónicos",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://dcaclab.com/es/lab",
             "modelo": "Electrónica y Robots"
         },
@@ -988,7 +994,7 @@
         },
         {
             "nombre": "Emergent",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://app.emergent.sh/home",
             "modelo": "IA"
         },
@@ -1259,7 +1265,7 @@
         },     
         {
             "nombre": "Nmap es una herramienta de código abierto para la exploración de redes y auditorías de seguridad. Permite descubrir hosts y servicios en una red informática, creando un mapa de la red. Nmap utiliza paquetes IP crudos para determinar qué hosts están disponibles en la red, qué servicios ofrecen, qué sistemas operativos están ejecutando, qué tipos de filtros de paquetes/firewalls están en uso, y otras características.",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://nmap.org/download.html",
             "modelo": "Coding"
         },             
@@ -1313,10 +1319,16 @@
         },
         {
             "nombre": "Artemis es un escáner modular de vulnerabilidades. Es la herramienta que impulsa las actividades de escaneo de CERT PL comprobando diversos aspectos de la seguridad del sitio web y creando mensajes fáciles de leer listos para ser enviados a las organizaciones escaneadas.",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://github.com/CERT-Polska/Artemis",
             "modelo": "Coding"
-        },  
+        }, 
+        {
+            "nombre": "TeKnoLiberty<br>\"Su objetivo es desmentir toda la mierda desperdigada por los feds y lamebotas estadistas\" - TeknoLiberty",
+            "img": "impg/",
+            "enlace": "https://teknoliberty.com",
+            "modelo": "Coding"
+        },   
 
 
 
@@ -1345,7 +1357,6 @@
             "enlace": "https://developers.facebook.com/tools/debug/",
             "modelo": "Metadatos"
         },
-
 
 
 
@@ -1463,19 +1474,19 @@
         },                        
         {
             "nombre": "Arduino Xbox Series X Controller ESP32<br>librería para usar un control Xbox Series X con Arduino y ESP32",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://github.com/asukiaaa/arduino-XboxSeriesXControllerESP32?tab=readme-ov-file",
             "modelo": "GitHub"
         },                                   
         {
             "nombre": "copyparty<br>Servidor de archivos web de código abierto y autohospedado",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://github.com/9001/copyparty",
             "modelo": "GitHub"
         },                    
         {
             "nombre": "RemoveWindowsAI<br>¿Porqué? La versión actual de Windows 11 para 25H2 y futuras incluirán cada vez más funciones y componentes de IA. Este script pretende eliminar TODAS estas funciones para mejorar la experiencia del usuario, la privacidad y la seguridad.",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://github.com/zoicware/RemoveWindowsAI",
             "modelo": "GitHub"
         },     
@@ -1754,7 +1765,7 @@
         },
         {
             "nombre": "Henry Matzar<br>Herramientas gratuitas para diseñadores",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://www.henrymatzar.com/herramientas/",
             "modelo": "Otros"
         },
@@ -1766,7 +1777,7 @@
         },
         {
             "nombre": "PingMe<br>Servicio de mensajería instantánea enfocado en la privacidad y seguridad de los usuarios</br>Es de pago y el mejor pais para elegir es UnitedKingdom(demomento)",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://pingme.tel/",
             "modelo": "Otros"
         },
@@ -1822,46 +1833,52 @@
 
         {
             "nombre": "Web Devs<br>Recopilación de tutoriales y recursos para desarrolladores web",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://desarrolladoresweb.org/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "CSS Text Animations",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://prismic.io/blog/css-text-animations",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "HTML Color Codes",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://htmlcolorcodes.com/es/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "CSS Gradient<br>Generador de degradados para CSS",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://cssgradient.io/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "Can I use...<br>Comprueba la compatibilidad de las características web en los navegadores",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://caniuse.com/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "WebDevTrick<br>Recopilación de tutoriales y recursos para desarrolladores web",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://webdevtrick.com/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "Model Viewer<br>Visualizador de modelos 3D en el navegador",
-            "img": "impg/default.png",
+            "img": "impg/",
             "enlace": "https://modelviewer.dev/",
             "modelo": "Desarrollo Web"
         },
+
+
+
+
+
+
 
 
 

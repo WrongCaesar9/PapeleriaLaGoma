@@ -685,7 +685,17 @@ margin-right: auto;
   animation-range: entry 0% cover 22%;
 }
 
-
+.productos img {
+    width: 100%;
+    /* ESTA ES LA MAGIA DEL CLS */
+    aspect-ratio: 1 / 1; /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
+    object-fit: cover; /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
+    display: block;    /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
+    background-image: url(https://i.pinimg.com/originals/a4/62/d1/a462d192479048db0f02f4466b900e0a.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
 
 
 
