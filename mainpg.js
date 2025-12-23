@@ -162,7 +162,7 @@ function navegar(idSeccion) {
         seccionActiva.style.display = 'block'; // O 'grid' si usas grid en el contenedor padre
         
         // TRUCO PRO: Si entramos a productos, reseteamos la vista
-        if (idSeccion === 'productos') {
+        if (idSeccion === 'videos') {
             // Opcional: Si quieres que cada vez que entre se recarguen los productos
             // mostrarProductos(); 
         }

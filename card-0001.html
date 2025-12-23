@@ -57,46 +57,56 @@
     <link rel="shortcut icon" href="/logos/xv_ico.ico">
     <style>
         /* Animación de texto ondulado */
-.wave-text span {
-    display: inline-block;
-    font-family: "Playwrite NG Modern", cursive;
+        .wave-text span {
+            display: inline-block;
+            font-family: "Playwrite NG Modern", cursive;
             font-optical-sizing: auto;
             font-weight: 100;
             font-style: normal;
             font-size: 2rem;
-    animation: wave 2s ease-in-out infinite;
-}
-/* Asignar diferentes retrasos a cada letra */
-.wave-text span:nth-child(1) {
-    animation-delay: 0s;
-}
-.wave-text span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-.wave-text span:nth-child(3) {
-    animation-delay: 0.4s;
-}
-.wave-text span:nth-child(4) {
-    animation-delay: 0.6s;
-}
-.wave-text span:nth-child(5) {
-    animation-delay: 0.8s;
-}
-.wave-text span:nth-child(6) {
-    animation-delay: 1s;
-}
-.wave-text span:nth-child(7) {
-    animation-delay: 1.2s;
-}
+            animation: wave 2s ease-in-out infinite;
+        }
 
-@keyframes wave {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
+        /* Asignar diferentes retrasos a cada letra */
+        .wave-text span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .wave-text span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .wave-text span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .wave-text span:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        .wave-text span:nth-child(5) {
+            animation-delay: 0.8s;
+        }
+
+        .wave-text span:nth-child(6) {
+            animation-delay: 1s;
+        }
+
+        .wave-text span:nth-child(7) {
+            animation-delay: 1.2s;
+        }
+
+        @keyframes wave {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
 
 
         /* Ocultar scrollbar */
@@ -698,15 +708,15 @@
 
         .damas_style {
             width: 100%;
-                        max-width: 400px;
-                        margin: 30px auto;
-                        overflow: hidden;
-                        position: relative;
-                        border-radius: 15px;
-                        background: rgba(255, 255, 255, 0.1);
-                        backdrop-filter: blur(10px);
-                        border: 1px solid rgba(255, 255, 255, 0.2);
-                        padding: 10px;
+            max-width: 400px;
+            margin: 30px auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 10px;
         }
     </style>
 </head>
@@ -715,11 +725,13 @@
 
     <!-- Modal/Pantalla Inicial -->
     <div id="invitacionModal" class="modal">
-        <div class="modal-contenido"><span class="wave-text" style="font-size: 0.8rem; color: white; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);"> Presione ESC para omitir</span>
+        <div class="modal-contenido"><span class="wave-text"
+                style="font-size: 0.8rem; color: white; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);"> Presione ESC para
+                omitir</span>
             <video id="videoInvitacion" class="imagen-invitacion" style="display: none;"><!-- controls  -->
                 <source src="/Archivos/vid_ver.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento video.
-                            </video>
+            </video>
             <div id="pantallaInicial" class="pantalla-inicial"
                 style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <img alt="Imagen de invitación" class="imagen-invitacion" src="/Archivos/invi_splash_jpg.jpg">
@@ -744,13 +756,16 @@
                     </svg>
 
                 </button>
-                
+
 
 
 
 
             </div>
-        <span class="wave-text" style="font-size: 0.8rem; color: white; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);"> Toque dos veces la pantalla para omitir</span></div>
+            <span class="wave-text"
+                style="font-size: 0.8rem; color: white; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);"> Toque dos veces
+                la pantalla para omitir</span>
+        </div>
     </div>
 
     <!-- Contenido Principal (oculto inicialmente) -->
@@ -780,7 +795,7 @@
                 <button class="nav-btn" data-seccion="ubicacion">Ubicación</button>
                 <button class="nav-btn" data-seccion="confirmar">Confirmar</button>
                 <button class="nav-btn" data-seccion="Galeria">Galería</button>
-               
+
             </nav>
             <h1>¡XV Años!</h1>
             <h1 style="word-spacing: 12px;">Luis Ángel Mora Ramírez</h1>
@@ -790,93 +805,105 @@
         <main class="secciones">
             <section id="seccion-inicio" class="seccion activa">
                 <h2 id="line1" style="margin-top: 80px; opacity: 0;"></h2>
-<h2 id="line2" style="opacity: 0;"></h2>
-<h2 id="line3" style="opacity: 0;"></h2>
-<p id="line4" style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, cursive; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;"></p>
-<p id="line5" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 700; font-style: italic; font-size: 200%; opacity: 0;"></p>
-<p id="line6" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 400; font-style: italic; font-size: 150%; opacity: 0;"></p>
-<p id="line7" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 700; font-style: italic; font-size: 200%; opacity: 0;"></p>
-<p id="line8" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 400; font-style: italic; font-size: 150%; opacity: 0;"></p>
-<p id="line9" style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 250%; opacity: 0;"></p>
+                <h2 id="line2" style="opacity: 0;"></h2>
+                <h2 id="line3" style="opacity: 0;"></h2>
+                <p id="line4"
+                    style="letter-spacing: 1px; word-spacing: 3px; font-family: Crimson Text, cursive; font-weight: 700; font-style: italic; font-size: 150%; opacity: 0;">
+                </p>
+                <p id="line5"
+                    style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 700; font-style: italic; font-size: 200%; opacity: 0;">
+                </p>
+                <p id="line6"
+                    style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 400; font-style: italic; font-size: 150%; opacity: 0;">
+                </p>
+                <p id="line7"
+                    style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 700; font-style: italic; font-size: 200%; opacity: 0;">
+                </p>
+                <p id="line8"
+                    style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 400; font-style: italic; font-size: 150%; opacity: 0;">
+                </p>
+                <p id="line9"
+                    style="letter-spacing: 1px; word-spacing: 3px; font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 250%; opacity: 0;">
+                </p>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('videoInvitacion');
-    const texts = [
-        { id: 'line1', text: 'Querida familia y amigos:' },
-        { id: 'line2', text: 'Pronto dejaré atrás la niñez y abriré las alas hacia nuevos sueños.' },
-        { id: 'line3', text: 'Gracias por acompañarme en este viaje.' },
-        { id: 'line4', text: '<br>' },
-        { id: 'line5', text: 'Ceremonia:' },
-        { id: 'line6', text: 'Parroquia de San Buenaventura<br>a las 13:45 hrs' },
-        { id: 'line7', text: 'Recepción:' },
-        { id: 'line8', text: 'Boutique Y Regalos "Pablin"<br>a partir de las 16:00 hrs' },
-        { id: 'line9', text: '<br>¡Tu presencia hará que este día sea inolvidable!' }
-    ];
-    
-    let currentLine = 0;
-    
-    function typeLine() {
-        if (currentLine >= texts.length) return;
-        
-        const current = texts[currentLine];
-        const element = document.getElementById(current.id);
-        const text = current.text;
-        let index = 0;
-        
-        element.style.opacity = '1';
-        
-        function typeChar() {
-            if (index < text.length) {
-                // Manejar <br> como salto de línea
-                if (text.substring(index, index + 4) === '<br>') {
-                    element.innerHTML += '<br>';
-                    index += 4;
-                } else {
-                    element.innerHTML += text[index];
-                    index++;
-                }
-                setTimeout(typeChar, 50);
-            } else {
-                // Terminó esta línea, pasar a la siguiente
-                currentLine++;
-                setTimeout(typeLine, 500);
-            }
-        }
-        
-        typeChar();
-    }
-    
-    // Esperar a que el video termine
-    video.addEventListener('ended', function() {
-        // Iniciar el typewriter cuando termine el video
-        setTimeout(typeLine, 2000);
-    });
-    
-    // Por si el video ya terminó o hay algún error
-    if (video) {
-        video.addEventListener('ended', startTypewriter);
-        
-        // También iniciar si el video ya terminó
-        if (video.readyState >= 4 && video.currentTime >= video.duration - 0.1) {
-            startTypewriter();
-        }
-        
-        // Por si acaso el video falla, iniciar después de 5 segundos
-        setTimeout(function() {
-            if (!typewriterStarted) {
-                startTypewriter();
-            }
-        }, 5000);
-        
-    } else {
-        // Si no hay video, iniciar inmediatamente
-        startTypewriter();
-    }
-    
-});
-</script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const video = document.getElementById('videoInvitacion');
+                        const texts = [
+                            { id: 'line1', text: 'Querida familia y amigos:' },
+                            { id: 'line2', text: 'Pronto dejaré atrás la niñez y abriré las alas hacia nuevos sueños.' },
+                            { id: 'line3', text: 'Gracias por acompañarme en este viaje.' },
+                            { id: 'line4', text: '<br>' },
+                            { id: 'line5', text: 'Ceremonia:' },
+                            { id: 'line6', text: 'Parroquia de San Buenaventura<br>a las 13:45 hrs' },
+                            { id: 'line7', text: 'Recepción:' },
+                            { id: 'line8', text: 'Boutique Y Regalos "Pablin"<br>a partir de las 16:00 hrs' },
+                            { id: 'line9', text: '<br>¡Tu presencia hará que este día sea inolvidable!' }
+                        ];
+
+                        let currentLine = 0;
+
+                        function typeLine() {
+                            if (currentLine >= texts.length) return;
+
+                            const current = texts[currentLine];
+                            const element = document.getElementById(current.id);
+                            const text = current.text;
+                            let index = 0;
+
+                            element.style.opacity = '1';
+
+                            function typeChar() {
+                                if (index < text.length) {
+                                    // Manejar <br> como salto de línea
+                                    if (text.substring(index, index + 4) === '<br>') {
+                                        element.innerHTML += '<br>';
+                                        index += 4;
+                                    } else {
+                                        element.innerHTML += text[index];
+                                        index++;
+                                    }
+                                    setTimeout(typeChar, 50);
+                                } else {
+                                    // Terminó esta línea, pasar a la siguiente
+                                    currentLine++;
+                                    setTimeout(typeLine, 500);
+                                }
+                            }
+
+                            typeChar();
+                        }
+
+                        // Esperar a que el video termine
+                        video.addEventListener('ended', function () {
+                            // Iniciar el typewriter cuando termine el video
+                            setTimeout(typeLine, 2000);
+                        });
+
+                        // Por si el video ya terminó o hay algún error
+                        if (video) {
+                            video.addEventListener('ended', startTypewriter);
+
+                            // También iniciar si el video ya terminó
+                            if (video.readyState >= 4 && video.currentTime >= video.duration - 0.1) {
+                                startTypewriter();
+                            }
+
+                            // Por si acaso el video falla, iniciar después de 5 segundos
+                            setTimeout(function () {
+                                if (!typewriterStarted) {
+                                    startTypewriter();
+                                }
+                            }, 5000);
+
+                        } else {
+                            // Si no hay video, iniciar inmediatamente
+                            startTypewriter();
+                        }
+
+                    });
+                </script>
 
                 <center>
                     <div style="font-family: Crimson Text, serif;
@@ -908,30 +935,50 @@ document.addEventListener('DOMContentLoaded', function() {
                 Chambelanas: 
                 
                 -->
-                <h1  style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 280%; letter-spacing: 3px; word-spacing: 4px; margin-top: 50px; margin-bottom: 10px;">-•-•-•-•-•-</h1>
-<h1  style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 280%; letter-spacing: 3px; word-spacing: 4px; margin-top: 50px; margin-bottom: 10px;">Mamá y Abuela:</h1>
-<h1  style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 150%; letter-spacing: 3px; word-spacing: 4px; margin-bottom: 50px; margin-bottom: 50px;">María de los Angeles Mora<br>Esperanza Ramírez</h1>
-<h1  style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 280%; letter-spacing: 3px; word-spacing: 4px; margin-bottom: 10px;">Padrinos de Ceremonia:</h1>
-<h1  style="font-family: Great Vibes, cursive; font-weight: 100; font-style: italic; font-size: 150%; letter-spacing: 3px; word-spacing: 4px;">Susana Olivares<br>Oscar Palma</h1>
+                <h1
+                    style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 280%; letter-spacing: 3px; word-spacing: 4px; margin-top: 50px; margin-bottom: 10px;">
+                    -•-•-•-•-•-</h1>
+                <h1
+                    style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 280%; letter-spacing: 3px; word-spacing: 4px; margin-top: 50px; margin-bottom: 10px;">
+                    Mamá y Abuela:</h1>
+                <h1
+                    style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 150%; letter-spacing: 3px; word-spacing: 4px; margin-bottom: 50px; margin-bottom: 50px;">
+                    María de los Angeles Mora<br>Esperanza Ramírez</h1>
+                <h1
+                    style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 280%; letter-spacing: 3px; word-spacing: 4px; margin-bottom: 10px;">
+                    Padrinos de Ceremonia:</h1>
+                <h1
+                    style="font-family: Great Vibes, cursive; font-weight: 100; font-style: italic; font-size: 150%; letter-spacing: 3px; word-spacing: 4px;">
+                    Susana Olivares<br>Oscar Palma</h1>
 
-<h1  style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 280%; letter-spacing: 3px; word-spacing: 4px; margin-top: 50px;">Damas</h1>
+                <h1
+                    style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 280%; letter-spacing: 3px; word-spacing: 4px; margin-top: 50px;">
+                    Damas</h1>
 
-<div class="damas_style" >
-          <img style="width: 100%;" src="https://lagoma.netlify.app/Archivos/Dama_01.png" alt="Dama-1">
-          <h3 style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">Aline Elena</h3>
-        </div>
-        <div class="damas_style" >
-          <img style="width: 100%;" src="https://lagoma.netlify.app/Archivos/Dama_02.png" alt="Dama-2">
-          <h3 style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">Dalia Valeria</h3>
-        </div>
-        <div class="damas_style" >
-          <img style="width: 100%;" src="https://lagoma.netlify.app/Archivos/Dama_03.png" alt="Dama-3">
-          <h3 style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">Hannie María</h3>
-        </div>
-        <div class="damas_style" >
-          <img style="width: 100%;" src="https://lagoma.netlify.app/Archivos/Dama_04.png" alt="Dama-4">
-          <h3 style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">Jakmeni Lizeth</h3>
-        </div>
+                <div class="damas_style">
+                    <img style="width: 100%;" src="https://lagoma.netlify.app/Archivos/Dama_01.png" alt="Dama-1">
+                    <h3
+                        style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">
+                        Aline Elena</h3>
+                </div>
+                <div class="damas_style">
+                    <img style="width: 100%;" src="https://lagoma.netlify.app/Archivos/Dama_02.png" alt="Dama-2">
+                    <h3
+                        style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">
+                        Dalia Valeria</h3>
+                </div>
+                <div class="damas_style">
+                    <img style="width: 100%;" src="https://lagoma.netlify.app/Archivos/Dama_03.png" alt="Dama-3">
+                    <h3
+                        style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">
+                        Hannie María</h3>
+                </div>
+                <div class="damas_style">
+                    <img style="width: 100%;" src="https://lagoma.netlify.app/Archivos/Dama_04.png" alt="Dama-4">
+                    <h3
+                        style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">
+                        Jakmeni Lizeth</h3>
+                </div>
             </section>
 
             <section id="seccion-ubicacion" class="seccion">
@@ -980,7 +1027,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   font-weight: 100;
                   font-style: normal;">Av. México Manzana 006, 56010 Amp. Tezoyuca</p>
 
-                  
+
                 <!-- Puedes agregar un mapa de Google Maps después -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!4v1764474040036!6m8!1m7!1sqyNKWM37z_Zz3pXfJ4sACQ!2m2!1d19.58223664975216!2d-98.92135102054169!3f262.6426688495862!4f-6.3451083352688045!5f0.5705891215334251"
@@ -1046,10 +1093,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <section id="seccion-Galeria" class="seccion">
                 <h2 hidden style="margin-top: 80px;">Galería
                     <div class="wave-container">
-    
-</div><h2 style="margin-top: 80px;" class="wave-text">
-        <span>G</span><span>a</span><span>l</span><span>e</span><span>r</span><span>í</span><span>a</span>
-    </h2>
+
+                    </div>
+                    <h2 style="margin-top: 80px;" class="wave-text">
+                        <span>G</span><span>a</span><span>l</span><span>e</span><span>r</span><span>í</span><span>a</span>
+                    </h2>
                 </h2>
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
@@ -1294,13 +1342,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         height: 10px;
                         background: transparent;
                         border-radius: 50%;
-                          
-                        border: 1px solid transparent; /* Define el grosor y hace el borde transparente */
-  box-shadow: 
-    /* Sombra exterior para el efecto de desenfoque */
-    0 0 2px 2px rgba(244, 136, 250, 0.816), 
-    /* Sombra interior para crear el borde nítido */
-    inset 0 0 0 1px rgba(255, 121, 228, 0.83); 
+
+                        border: 1px solid transparent;
+                        /* Define el grosor y hace el borde transparente */
+                        box-shadow:
+                            /* Sombra exterior para el efecto de desenfoque */
+                            0 0 2px 2px rgba(244, 136, 250, 0.816),
+                            /* Sombra interior para crear el borde nítido */
+                            inset 0 0 0 1px rgba(255, 121, 228, 0.83);
                         cursor: pointer;
                     }
 
@@ -1706,13 +1755,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         height: 10px;
                         background: transparent;
                         border-radius: 50%;
-                          
-                        border: 1px solid transparent; /* Define el grosor y hace el borde transparente */
-  box-shadow: 
-    /* Sombra exterior para el efecto de desenfoque */
-    0 0 2px 2px rgba(244, 136, 250, 0.816), 
-    /* Sombra interior para crear el borde nítido */
-    inset 0 0 0 1px rgba(255, 121, 228, 0.83); 
+
+                        border: 1px solid transparent;
+                        /* Define el grosor y hace el borde transparente */
+                        box-shadow:
+                            /* Sombra exterior para el efecto de desenfoque */
+                            0 0 2px 2px rgba(244, 136, 250, 0.816),
+                            /* Sombra interior para crear el borde nítido */
+                            inset 0 0 0 1px rgba(255, 121, 228, 0.83);
                         cursor: pointer;
                     }
 
@@ -1822,15 +1872,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const navBtns = document.querySelectorAll('.nav-btn');
             const secciones = document.querySelectorAll('.seccion');
 
-// Función para saltar al final del video
+            // Función para saltar al final del video
             function skipToEnd() {
-    const video = document.getElementById('videoInvitacion');
-    video.pause();
-    video.currentTime = video.duration;
-    video.dispatchEvent(new Event('ended'));
-}
+                const video = document.getElementById('videoInvitacion');
+                video.pause();
+                video.currentTime = video.duration;
+                video.dispatchEvent(new Event('ended'));
+            }
 
-// Llamar la función cuando quieras
+            // Llamar la función cuando quieras
 
             // Variables para detectar doble tap
             let lastTap = 0;
@@ -1855,7 +1905,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             function cerrarModal() {
                 // Efecto de desvanecimiento
-                
+
                 modal.classList.add('desvanecer');
                 modal.classList.add('video-aparecer');
 
