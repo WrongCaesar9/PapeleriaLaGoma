@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fecha de publicación/creación (Dublin Core) -->
+    <meta name="dcterms.created" content="2025-04-01">
+    <!-- Fecha de última modificación (Open Graph, útil para redes sociales y SEO) -->
+    <meta property="article:modified_time" content="2025-12-23T04:55:00Z">
+
+    <link rel="dns-prefetch" href="https://lagoma.netlify.app/indexprograms">
+    <link rel="preconnect" href="https://lagoma.netlify.app/indexprograms" crossorigin>
+
+    <!-- SEO básico -->
+    <title>Programas, Herramientas y más - WrongCaesar9</title>
+    <meta name="description"
+        content="WrongCaesar9 | Accede a software y herramientas para optimizar tu flujo creativo, académico y digital.">
+    <meta name="keywords" content="programas, programs, adobe, descargas, herramientas, software">
+    <meta name="author" content="WrongCaesar9">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lagoma.netlify.app/indexprograms">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Programas, Herramientas y más - WrongCaesar9">
+    <meta property="og:site_name" content="La Goma">
+    <meta property="og:description"
+        content="WrongCaesar9 | Accede a software y herramientas para optimizar tu flujo creativo, académico y digital.">
+    <meta property="og:url" content="https://lagoma.netlify.app/indexprograms">
+    <meta property="og:image" content="https://lagoma.netlify.app/logos/ogimg.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo de La Goma - Programas y herramientas">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Programas, Herramientas y más - WrongCaesar9">
+    <meta name="twitter:description"
+        content="WrongCaesar9 | Accede a software y herramientas para optimizar tu flujo creativo, académico y digital.">
+    <meta name="twitter:image" content="https://lagoma.netlify.app/logos/ogimg.jpg">
+    <meta name="twitter:site" content="@WrongCaesar9">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://lagoma.netlify.app/logos/lagomaGM.ico" sizes="192x192">
+    <link rel="shortcut icon" href="https://lagoma.netlify.app/logos/lagomaGM.png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="nvcss.css">
+</head>
+
+<body>
+  <div></div>
+
+
+
+
+  <!-- Botón de menú hamburguesa -->
+  <div style="z-index: 1;" id="menu-toggle" class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div style="z-index: 1;" class="sidebar">
+    <h2 style="font-size: 150%;"><a href="https://lagoma.netlify.app/portfolio">Links de
+        Programas<br></a></h2>
+    <h1 style="font-size: 150%; font-family: 'Times New Roman', Times, serif;top: -2.5rem;">"PC y Android"
+    </h1>
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+      <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;Diseño de pagina en testeo&nbsp;</span>
+    </marquee>
+    <!-- Filtro por precio -->
+    <select visibility: hidden id="filtro-precio" style="height: 0px;width: 0px;">
+      <option value="0">NA</option>
+    </select>
+    <nav>
+      <button onclick="navegar('productos')">Programas</button>
+      <button onclick="navegar('videos')">Videos</button>
+      <button onclick="navegar('addons')">Add-ons Blender</button>
+      <button onclick="navegar('sugerencia')">¿Algo más?</button>
+      <button onclick="window.open('/Archivos/Ubica-T.apk', '_blank')">Ubica-T App TESChi</button>
+
+      <!--   BARRA DE BÚSQUEDA -->
+      <div class="whole-search-bar">
+        <input type="text" id="barra-busqueda" placeholder="¿Que estás buscando? :3">
+
+        <span src="/logos/searchcat.png" id="clear-search" onclick="clearSearch()" onmouseover="this.style.color='red'"
+          onmouseout="this.style.color='green'">
+          X
+        </span><button visibility: hidden id="btn-buscar" class="btn-buscar">
+          <img visibility: hidden src="/logos/searchcat.png" alt="Buscar" class="img-buscar"
+            style="width: 35px; height: 35px;">
+        </button>
+
+        <script>
+          function clearSearch() {
+            const searchBar = document.getElementById('barra-busqueda');
+            searchBar.value = '';
+            document.getElementById('clear-search').style.display = 'none';
+            searchBar.focus();
+          }
+
+          document.getElementById('barra-busqueda').addEventListener('input', function () {
+            const clearButton = document.getElementById('clear-search');
+            clearButton.style.display = this.value.length > 0 ? 'block' : 'none';
+          });
+
+          // Mostrar la "X" también cuando hay texto al enfocar
+          document.getElementById('barra-busqueda').addEventListener('focus', function () {
+            if (this.value.length > 0) {
+              document.getElementById('clear-search').style.display = 'block';
+            }
+          });
+        </script>
+        <script>
+          function clearSearch() {
+            const searchBar = document.getElementById('barra-busqueda');
+            searchBar.value = '';
+            document.getElementById('clear-search').style.display = 'none';
+            searchBar.focus();
+
+            // Fuerza el evento input manualmente
+            if ("createEvent" in document) {
+              var evt = document.createEvent("HTMLEvents");
+              evt.initEvent("input", false, true);
+              searchBar.dispatchEvent(evt);
+            } else {
+              searchBar.fireEvent("oninput");
+            }
+          }
+        </script>
+      </div>
+      <!--   BARRA DE BÚSQUEDA -->
+
+
+      <!--   BARRA DE BÚSQUEDA -->
+      <div></div>
+      <p style="text-align: center; font-size: 80%; color: aliceblue;  font-family: 'Courier New', Courier, monospace;">
+        Copyright © 2025 "WrongCaesar9"</p>
+    </nav>
+
+  </div>
+
+  <div class="main-content">
+
+
+
+    <section style="z-index: -100;" class="view" id="productos"> <span
+        style="font-family:'Times New Roman', Times, serif" id="datetime"></span>
+      <h2>PROGRAMAS DISPONIBLES</h2>
+      <h2>"Ser experto en algo no es saberlo todo, sino conocer
+        perfectamente las 1000 formas en que puede salir mal." - Niels Bohr</h2>
+      <!-- Filtro por modelo -->
+      <select id="filtro-modelo" class="list-ch">
+        <option value="">Todos los programas</option>
+        <option value="Modelado y Diseño 3D">Modelado y Diseño 3D</option>
+        <option value="Edición">Edición</option>
+        <option value="VR y AR">VR y AR</option>
+        <option value="Juegos">Juegos</option>
+        <option value="Herramientas">Herramientas</option>
+        <option value="Libros">Libros</option>
+        <option value="Electrónica y Robots">Electrónica y Robots</option>
+        <option value="Android">Android</option>
+        <option value="IA">IA's</option>
+        <option value="Coding">Coding</option>
+        <option value="Metadatos">Metadatos</option>
+        <option value="GitHub">GitHub</option>
+        <option value="OS & Burners">OS & Burners</option>
+        <option value="Canales TV">Canales TV</option>
+        <option value="Desarrollo Web">Desarrollo Web</option>
+        <option value="Otros">Otros</option>
+      </select>
+      <!-- Contenedor de productos -->
+      <div class="productos-contenedor">
+        <div class="block" id="productos-contenedor"></div>
+      </div>
+      <div id="paginacion-contenedor" class="paginacion-estilos"></div>
+    </section>
+<div class="videos-contenedor">
+    <section id="videos" class="view" style="display:none;">
+      <h2>Videos y listas de reproducción que se me han hecho interesantes y quisiera compartir :D</h2>
+      <cont>
+        <center>
+
+          <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/videoseries?si=32h3pzKMPkuTAS4C&amp;list=PLpnEmaHNAN7afg-qJGee-VmQDMaXsjHkn"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
+          <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/videoseries?si=dclucXN6uVldxLgl&amp;list=PLhQ290f8z8FNFtX27YEEk-3P8CyxE9LtK"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
+          <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/videoseries?si=XlpAL5XfM7LmrL6Z&amp;list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          <br>
+
+          <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/videoseries?si=G_mXEsJkpNOYdyG6&amp;list=PLYNtiJhbyduYSRyW7HtK_dslMQMsmRQFJ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+
+          <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/videoseries?si=JoWxAjlIvQMEJWmw&amp;list=PLpnEmaHNAN7Zaj9S0RtYbhyNWH5T3oB8V"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+
+          <iframe width="auto" height="auto" src="https://www.youtube.com/embed/rldy9yY0yDU?si=b-viEslkiOLRJEgi"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
+          <div></div>
+          <div></div>
+          <br>
+
+          <div></div>
+          <h2>Abre las listas de reproducción<br>Encontraras mas videos xd</h2>
+      </cont>
+
+      </center>
+    </section>
+
+</div>
+
+
+
+    <section id="addons" class="view" style="display:none;">
+      <h2>Add-ons Blender</h2>
+      <p style="font-size: 1.5rem; font-style: normal; text-align: center;"><br>Toca las imágenes para ir a la
+        descarga directa o a la página oficial.
+        <br>Recuerda siempre apoyar a los desarrolladores donando o comprando sus productos si te es posible :D
+      </p>
+
+
+      <div class="addons-container">
+        <div class="addons">
+          <a href="https://cdn.discordapp.com/attachments/707744835624501260/1419429357369163918/Weather_It_v1.0.zip?ex=68d1ba1a&is=68d0689a&hm=bc6d02055937c633347011f2fda06faf4b3a6b855b323ef693998d7b402b57ec&"
+            target="_blank">
+            <img src="/addons/weatherit_v1.jpg" alt="weatherit_v1"></a>
+          <h3>Weather It! v1.0 </h3>
+          <p style="text-align: justify;">Crea efectos meteorológicos totalmente personalizables, desde
+            tormentas
+            intensas y lluvias torrenciales hasta
+            neblinas suaves y nevadas. ¡Incluye rebotes realistas de lluvia en las superficies y acumulación
+            de
+            nieve en el
+            suelo para una inmersión aún mayor!</p>
+
+        </div>
+
+
+        <div class="addons">
+          <iframe width="1080" style="max-width:100%;" height="auto" src="https://www.youtube.com/embed/fwzbIUffcR4"
+            frameborder="0" allowfullscreen></iframe>
+          <a href="https://studio.blender.org/projects/impulse-purchase/" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://studio.blender.org/files/cache/d1/b3/d1b3ac4e65163a9f9361bf85628c387c.jpg" alt="xd"></a>
+          <h3>Blender + OSC Live Puppeteering Demo</h3>
+          <p>Puppeteering setup</p>
+          <a style="color: #ffffff;" href="https://studio.blender.org/projects/impulse-purchase/"
+            target="_blank">Link</a>
+        </div>
+
+        <div class="addons">
+          <a href="https://github.com/efficientAF/DroneCamPlus" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://www.helicomicro.com/wp-content/uploads/2024/12/drone-fpv-blender-01.jpg" alt="xd"></a>
+          <h3>DroneCam Plus</h3>
+          <p>Proyecto Open Source de GitHub</p>
+          <p style="text-align: justify;">Te permite volar la cámara como un dron usando un gamepad Xbox360 o
+            un control remoto RC como entrada</p>
+          <a style="color: #ffffff;" href="https://globglob.gumroad.com/l/dronecam-blender-addon" target="_blank">Addon
+            original de pago</a>
+        </div>
+
+        <div class="addons">
+          <iframe width="1080" style="max-width:100%;" height="auto"
+            src="https://www.youtube.com/embed/NMh_PPwCABc?si=Es5PetOxSACxM-6C" frameborder="0"
+            allowfullscreen></iframe>
+          <h3>blendixserial Addon</h3>
+          <a href="https://electronicstree.com/blendixserial-addon/" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://electronicstree.com/wp-content/uploads/2023/12/blendixserial_addon-1024x127.png.webp"
+              alt="xd"></a>
+          <h3>blendixserial Arduino Library</h3>
+          <a href="Arduino Library for blendixserial Addon" target="_blank"><img width="1080" style="max-width:100%;"
+              height="auto" src="https://electronicstree.com/wp-content/uploads/2023/12/blendixserial-1024x127.png.webp"
+              alt="xd"></a>
+          <p style="text-align: justify;">Controla dispositivos electrónicos desde Arduino a Blender y
+            viceversa a través de comunicación serial</p>
+          <p style="text-align: justify;">La neta esta bien pasado de verga, puedes hacer un shingo de cosas
+            xd</p>
+        </div>
+
+        <div class="addons">
+          <iframe width="1080" style="max-width:100%;" height="auto"
+            src="https://www.youtube.com/embed/yeJxMaNQAzg?si=l18LUPrhs3VKTnRB" frameborder="0"
+            allowfullscreen></iframe>
+          <h3>Blender servo animation Add-on</h3>
+          <a href="https://github.com/timhendriks93/blender-servo-animation" target="_blank">
+            <img src="/addons/blender_servo_animation.png" alt="weatherit_v1"></a>
+          <p style="text-align: justify;">Export your Blender animation to servo position values. They can be
+            used with an Arduino compatible micro controller to move PWM-driven servos according to your
+            animation.</p>
+          <p style="text-align: justify;">Animate your robot or animatronic project and take advantage of
+            Blender's animation tools!</p>
+          <a style="color: #ffffff;" href="https://github.com/timhendriks93/blender-servo-animation-arduino/tree/main"
+            target="_blank">Libreria para Arduino<br>blender-servo-animation-arduino</a>
+        </div>
+
+        <div class="addons">
+          <video width="1080" style="max-width:100%;" controls>
+            <source
+              src="https://extensions.blender.org/media/videos/87/87f783070e4a1ed3c8adaae561b15f7b7f9f54168d46b9c5a60433e1ae40661a.mp4"
+              type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video></video>
+          <a href="https://extensions.blender.org/add-ons/node-to-python/" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://raw.githubusercontent.com/BrendanParmer/NodeToPython/main/docs/img/logo.png" alt="xd"></a>
+          <h3>Node To Python</h3>
+          <p style="text-align: justify;">¡Un complemento de Blender para crear scripts y complementos! Este
+            complemento tomará sus nodos de geometría, materiales y nodos de composición y los convertirá en
+            código Python legible</p>
+          <a style="color: #ffffff;" href="https://github.com/BrendanParmer/NodeToPython" target="_blank">Link
+            Repo GitHub</a>
+        </div>
+
+        <div class="addons">
+          <a href="https://github.com/carson-katri/geometry-script?tab=readme-ov-file" target="_blank"><img width="1080"
+              style="max-width:100%; z-index: -2;" height="auto"
+              src="https://raw.githubusercontent.com/carson-katri/geometry-script/main/book/src/images/wordmark.png"
+              alt="xd"></a>
+          <h3>Geometry Script</h3>
+          <p style="text-align: justify;">Geometry Script es una API de Python robusta pero fácil de usar para
+            crear geometry nodes con código</p>
+        </div>
+
+        <div class="addons">
+          <iframe width="1080" style="max-width:100%;" height="auto"
+            src="https://www.youtube.com/embed/7FBVukiQNbQ?si=184ud1qlT7XPVf_4" frameborder="0"
+            allowfullscreen></iframe>
+          <a href="https://extensions.blender.org/add-ons/easyweight/" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://extensions.blender.org/media/thumbnails/30/30bff3624dfa1167fa4897afede7a694ab733874bff35fc4729bb63cc44241a6_1920x1080.webp"
+              alt="xd"></a>
+          <h3>EasyWeight</h3>
+          <p>Potencia el flujo de tra</p>
+        </div>
+
+        <div class="addons">
+          <a href="https://www.blenderkit.com/get-blenderkit/" target="_blank"><img width="1080"
+              style="max-width:100%; z-index: -2;" height="auto"
+              src="https://assets.superhivemarket.com/store/productimage/715331/image/eb2209db0387eb7beba0650ef63c1d78.png"
+              alt="xd"></a>
+          <h3>BlenderKit</h3>
+          <p style="text-align: justify;">BlenderKit es una plataforma de activos 3D integrada en Blender que
+            ofrece una amplia biblioteca de modelos, materiales y pinceles para mejorar tu flujo de trabajo
+            creativo.</p>
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="sugerencia" class="view" style="display:none;">
+      <h2>¿Buscas otra cosa?</h2>
+
+
+
+      <form id="formulario" class="formulario">
+        <h4>Mandame mensaje :D</h4>
+        <div class="box-input">
+
+          <input class="escnamew" name="nombre" id="nombre" type="text" required=""
+            style="height: 20px;text-align:center justify;width: 95%;" placeholder="Escribe tu nombre">
+
+        </div>
+        <div class="box-input">
+
+          <textarea id="pedidof" name="pedidof" required="" cols="30" rows="4" style="margin-top: 1rem; resize: none;
+                    background-color: transparent; border-color: lightgreen; border-radius: 10px; border-style: dashed;
+                    border-width: 2px; padding: 12px;" data-min-length="2"
+            placeholder="¿Que deseas colocar? :D"></textarea>
+
+        </div>
+        <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+      </form>
+
+
+
+
+      <script type="text/javascript">
+        $(".box-input input").on("focus", function () {
+          $(this).addClass("focus");
+        });
+
+        $(".box-input input").on("blur", function () {
+          if ($(this).val() == "") {
+            $(this).removeClass("focus");
+          }
+        });
+
+      </script>
+
+
+
+    </section>
+
+
+
+
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <a id="go-top-button" title="Dar Salto"></a>
+      </div>
+    </div>
+    <script src="/programsjs.js"></script>
+
+
+    <script>
+      const toggleMenu = document.getElementById('menu-toggle');
+      const sideNav = document.querySelector('.sidenav');
+
+      toggleMenu.addEventListener('click', function () {
+        sideNav.classList.toggle('active');
+      });
+    </script>
+
+
+
+
+</body>
+<!--Barra de iconos compartir Init-->
+<div>
+  <div class="sharethis-inline-share-buttons st-center st-lang-es st-has-labels  st-inline-share-buttons" id="st-5">
+    <div class="st-total"></div>
+    <span class="st-label"></span>
+    <span class="st-shares">
+      Veces compartido
+  </div>
+</div>
+<script async="async" type="text/javascript"
+  src="https://platform-api.sharethis.com/js/sharethis.js#property=650476d13b8450001ac45ec7&amp;product=inline-share-buttons&amp;source=platform"></script>
+<!--Barra de iconos compartir End-->
+
+</html>
