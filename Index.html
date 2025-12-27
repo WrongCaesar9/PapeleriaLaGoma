@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Fecha de publicación/creación (Dublin Core) -->
     <meta name="dcterms.created" content="2025-04-01">
@@ -64,11 +64,11 @@
         <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app/indexprograms"><img class="header__logo-image"
                 style="max-width: 90px; border-radius: 10px;max-height: 90px;margin-top: 15px;" align="left" src="/logos/lagomaGM.png"
                 alt="lagoma" fetchpriority="high"></a>
-
+<!--
         <a id="whatsapp" title="WhatsApp"><img class="btn-whatsapp2" src="https://clientes.dongee.com/whatsapp.png"
                 style="max-width: 90px; border-radius: 10px;max-height: 90px;margin-top: 15px;" align="right" alt="Whatsapp"
                 onclick="window.location.href='https://wa.me/525515833826'" fetchpriority="high"></a>
-
+-->
         <h1 style="font-size: 150%; font-family: 'Times New Roman', Times, serif;top: -2.5rem;">Links de
             Programas<br>"PC y Android"
         </h1>
@@ -215,60 +215,15 @@
 
 
          
-            <div class="whole-search-bar">
-                <input type="text" id="barra-busqueda" placeholder="¿Que estás buscando? :3" style="width: 11.5rem;margin-bottom: 0.2rem; padding-right: 10px; border: 2px solid #ffffff; 
-                   border-radius: 5px; padding: 4px 30px 4px 2px; font-size: 16px;">
+        <!--   BARRA DE BÚSQUEDA -->
+        <div class="whole-search-bar">
+          <input type="search" id="barra-busqueda" placeholder="¿Que estás buscando? :3"><img src="/logos/searchcat.png"
+            alt="Buscar" class="img-buscar" style="width: 30px; height: 30px;">
 
-                <span id="clear-search" style="position: absolute; right: 70px; top: 50%; transform: translateY(-50%); 
-                  cursor: pointer; display: none; font-size: 20px; color: #999; z-index: 2; 
-                  transition: color 0.3s; width: 20px; height: 20px; text-align: center; line-height: 20px;"
-                    onclick="clearSearch()" onmouseover="this.style.color='#3897f0'"
-                    onmouseout="this.style.color='#999'">
-                    X
-                </span>
+        </div>
+        <!--   BARRA DE BÚSQUEDA -->
 
-                <button id="btn-buscar" class="btn-buscar" style="background: none; border: none; cursor: pointer;">
-                    <img src="/logos/searchcat.png" alt="Buscar" class="img-buscar" style="width: 45px; height: 45px;">
-                </button>
-            </div>
 
-            <script>
-                function clearSearch() {
-                    const searchBar = document.getElementById('barra-busqueda');
-                    searchBar.value = '';
-                    document.getElementById('clear-search').style.display = 'none';
-                    searchBar.focus();
-                }
-
-                document.getElementById('barra-busqueda').addEventListener('input', function () {
-                    const clearButton = document.getElementById('clear-search');
-                    clearButton.style.display = this.value.length > 0 ? 'block' : 'none';
-                });
-
-                // Mostrar la "X" también cuando hay texto al enfocar
-                document.getElementById('barra-busqueda').addEventListener('focus', function () {
-                    if (this.value.length > 0) {
-                        document.getElementById('clear-search').style.display = 'block';
-                    }
-                });
-            </script>
-            <script>
-                function clearSearch() {
-                    const searchBar = document.getElementById('barra-busqueda');
-                    searchBar.value = '';
-                    document.getElementById('clear-search').style.display = 'none';
-                    searchBar.focus();
-
-                    // Fuerza el evento input manualmente
-                    if ("createEvent" in document) {
-                        var evt = document.createEvent("HTMLEvents");
-                        evt.initEvent("input", false, true);
-                        searchBar.dispatchEvent(evt);
-                    } else {
-                        searchBar.fireEvent("oninput");
-                    }
-                }
-            </script>
         </nav>
         
     </header>
@@ -532,7 +487,7 @@
                 onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'"></a>
         <p>Copyright © 2025 "La Goma"</p>
         <p style="font-size: 0.8rem;">Última actualización: 23/12/2025 at: 04:55</p>
-        <!--Barra de iconos compartir Init-->
+        <!--Barra de iconos compartir Init
         <div>
             <div class="sharethis-inline-share-buttons st-center st-lang-es st-has-labels  st-inline-share-buttons"
                 id="st-5">
@@ -541,7 +496,7 @@
                 <span class="st-shares">
                     Veces compartido
             </div>
-        </div>
+        </div>-->
         <script async="async" type="text/javascript"
             src="https://platform-api.sharethis.com/js/sharethis.js#property=650476d13b8450001ac45ec7&amp;product=inline-share-buttons&amp;source=platform"></script>
         <!--Barra de iconos compartir End-->

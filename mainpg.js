@@ -214,11 +214,6 @@ document.getElementById("filtro-modelo").addEventListener("change", () => {
   mostrarProductos();
 });
 
-document.getElementById("btn-buscar").addEventListener("click", () => {
-  paginaActual = 1;
-  mostrarProductos();
-});
-
 document.getElementById("barra-busqueda").addEventListener("input", () => {
   paginaActual = 1;
   mostrarProductos();
@@ -245,8 +240,6 @@ function navegar(idSeccion) {
     }
   }
 }
-// Agrega esto al final de la función navegar:
-window.location.hash = idSeccion;
 
 // Código de formulario WhatsApp
 function isMobile() {

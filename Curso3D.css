@@ -46,7 +46,12 @@ nav a {
 
 */
 
+  .main-content {
 
+    margin-left:calc(15%) ;
+    padding: 5%;
+    width: 100%;
+  }
 
 
 
@@ -114,13 +119,7 @@ nav a {
   }
 }
 
-/* Estilos del contenido principal */
-.main-content {
-  margin-top: -10%;
-  margin-left: 20%;
-  padding: 5%;
-  width: calc(150%);
-}
+
 
 #about, #contact {
   margin-bottom: 10px;
