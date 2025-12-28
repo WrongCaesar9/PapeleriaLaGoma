@@ -304,6 +304,11 @@ formulario.addEventListener('submit', (event) => {
 
 
 
+app.get('/blender', async (req, res) => {
+  const response = await fetch('https://lagoma.netlify.app');
+  const html = await response.text();
+  res.send(html);
+});
 
 /* Código de fecha de actualización
 document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";*/
