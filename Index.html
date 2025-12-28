@@ -51,39 +51,140 @@
     <link rel="stylesheet" type="text/css" href="stylesprograms.css">
 </head>
 
-
-
-
-
-
-
-
-
 <body>
-<header>Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span>
-        <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app/indexprograms"><img class="header__logo-image"
-                style="max-width: 90px; border-radius: 10px;max-height: 90px;margin-top: 15px;" align="left" src="/logos/lagomaGM.png"
-                alt="lagoma" fetchpriority="high"></a>
-<!--
+    <header>
+        <div>
+            <div class="marquee-wrapper">
+
+                <marquee behavior="scroll" direction="left" scrollamount="7">
+                    Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span> Si detectas un
+                    link caído, repórtamelo 🤙🏽 - Espero ir agregando más programas y páginas útiles.
+                </marquee>
+            </div>
+            <div class="header-brand">
+                <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app/indexprograms">
+                    <img class="header__logo-image" src="/logos/lagomaGM.png" alt="lagoma">
+                </a>
+                <div class="brand-text">
+                    <h1>Links de Programas</h1>
+                    <span>"PC y Android"</span>
+                </div>
+                <span id="datetime" style="display:none;"></span>
+                <div class="nav-group">
+                    <button class="thingi-btn primary" onclick="navegar('productos')">Programas</button>
+                    <button class="thingi-btn" onclick="navegar('videos')">Videos</button>
+                    <button class="thingi-btn" onclick="navegar('addons')">Add-ons</button>
+                    <button class="thingi-btn" onclick="navegar('sugerencia')">¿Algo más?</button>
+                    <a class="thingi-btn link-btn" href="/Archivos/Ubica-T.apk">App TESChi</a>
+                </div>
+                <div class="filter-group">
+                    <select id="list-ch" class="thingi-select"
+                        onchange="if (this.value) window.open(this.value);">
+                        <option value="">Canales de YouTube Shidos</option>
+                        <option value="https://www.youtube.com/c/Programaci%C3%B3nATS">Programación ATS 🥺🕊</option>
+                        <option value="https://www.youtube.com/@esperandoelrender">Esperando el Render</option>
+                        <option value="https://www.youtube.com/@auraprods">AuraProds</option>
+                        <option value="https://www.youtube.com/@BlenderGuru">Blender Guru</option>
+                        <option value="https://www.youtube.com/@Polyfjord">Polyfjord</option>
+                        <option value="https://www.youtube.com/@polygonrunway">Polygon Runway</option>
+                        <option value="https://www.youtube.com/@TheDucky3D">Ducky3D</option>
+                        <option value="https://www.youtube.com/@RyanKingArt">Ryan King Art</option>
+                        <option value="https://www.youtube.com/@SouthernShotty">SouthernShotty</option>
+                        <option value="https://www.youtube.com/@KennyPhases">KennyPhases</option>
+                        <option value="https://www.youtube.com/@NIXO3D">NIXO 3D</option>
+
+                        <option value="https://www.youtube.com/@CGGeek">CG Geek</option>
+                        <option value="https://www.youtube.com/@Sanctus_ES">Sanctus - Blender Procedural</option>
+
+                        <option value="https://www.youtube.com/@DateunVlog/videos">Date un Vlog</option>
+                        <option value="https://www.youtube.com/@QuantumFracture">Quantum Fracture</option>
+                        <option value="https://www.youtube.com/@HRom">HRom</option>
+                        <option value="https://www.youtube.com/@eltraductor_ok">El Traductor de Ingeniería</option>
+
+                        <option value="https://www.youtube.com/@pixlwaystudio">Pixlway</option>
+                        <option value="https://www.youtube.com/@chuckcg">ChuckCG</option>
+                        <option value="https://www.youtube.com/@WillCogley">Will Cogley</option>
+                        <option value="https://www.youtube.com/@levimagony">Levi Magony</option>
+                        <option value="https://www.youtube.com/@waltdisneyimagineering">Walt Disney Imagineering
+                        </option>
+                        <option value="https://www.youtube.com/@DisneyResearchHub">Disney Research Hub</option>
+                        <option value="https://www.youtube.com/@DotCSV">DotCSV</option>
+                        <option value="https://www.youtube.com/@DotCSVlab">DotCSV Lab</option>
+                        <option value="https://www.youtube.com/@PIXXO3D">PIXXO 3D</option>
+                        <option value="https://www.youtube.com/@indianvfxschool">Indian VFX School</option>
+                        <option value="https://www.youtube.com/@MiwuScienceEspanol">Miwu Science Español</option>
+
+
+                        <option value="https://www.youtube.com/@str3dloki">Alex Baeza (Str3Dlok)</option>
+                        <option value="https://www.youtube.com/@MarcosAlberca">Marcos Alberca</option>
+                        <option value="https://www.youtube.com/@BennyProductions">Benny Productions</option>
+                        <option value="https://www.youtube.com/@PiXimperfect">PiXimperfect</option>
+                        <option value="https://www.youtube.com/@marcocreativo">Marco Creativo</option>
+
+                        <option value="https://www.youtube.com/@CGMatter">CG Matter</option>
+                        <option value="https://www.youtube.com/@BadNormals">Bad Normals</option>
+                        <option value="https://www.youtube.com/@BlenderVitals">Blender Vitals</option>
+                        <option value="https://www.youtube.com/@BlenderMadeEasy">Blender Made Easy</option>
+                        <option value="https://www.youtube.com/@Brackeys">Brackeys</option>
+                        <option value="https://www.youtube.com/@Jayanam">Jayanam</option>
+                        <option value="https://www.youtube.com/@RocoDeLaPortilla">Roco De La Portilla</option>
+                        <option value="https://www.youtube.com/@MographMentor">Mograph Mentor</option>
+                        <option value="https://www.youtube.com/@NineBetweens">Nine Between</option>
+                        <option value="https://www.youtube.com/@Smeaf">Smeaf</option>
+                        <option value="https://www.youtube.com/@JoeyCarlino/videos">Joey Carlino</option>
+                        <option value="https://www.youtube.com/@CGBoost">CG Boost</option>
+                        <option value="https://www.youtube.com/@FlippedNormals">Flipped Normals</option>
+                        <option value="https://www.youtube.com/@nuvamotions">nuvamotions</option>
+                        <option value="https://www.youtube.com/@nuvaproductions">nuvaproductions</option>
+                        <option value="https://www.youtube.com/@MoveShapes/videos">Move Shapes</option>
+                        <option value="https://www.youtube.com/@BenMarriott">Ben Marriott</option>
+                        <option value="https://www.youtube.com/@s4vitar">s4vitar</option>
+                        <option value="https://www.youtube.com/@Linkfydev">Linkfy</option>
+                        <option value="https://www.youtube.com/@WebflippyOfficialPage">Photoshop Tutorials by Webflippy
+                        </option>
+                        <option value="https://www.youtube.com/@ReadyForMasterclass">Ready For Masterclass</option>
+                        <option value="https://www.youtube.com/@TheCGEssentials">The CG Essentials</option>
+                        <option value="https://www.youtube.com/@BlenderSecrets">Blender Secrets</option>
+                        <option value="https://www.youtube.com/@BlenderHoy">Blender Hoy</option>
+                        <option value="https://www.youtube.com/@FaztCode">Fazt Code</option>
+                        <option value="https://www.youtube.com/@gzilbalodist">Gints Zilbalodis</option>
+                        <option value="https://www.youtube.com/@chachomotion">chachomotion</option>
+                        <option value="https://www.youtube.com/@CinecomCrew">Cinecom.net</option>
+                        <option value="https://www.youtube.com/tomstantonengineering">Tom Stanton</option>
+                        <option value="https://www.youtube.com/@AprendeyVerifica">Aprende y Verifica</option>
+                        <option value="https://www.youtube.com/@BenEater">Ben Eater</option>
+                        <option value="https://www.youtube.com/@ALEXLABS">ALEX LAB</option>
+                        <option value="https://www.youtube.com/@integza">Integza</option>
+                        <option value="https://www.youtube.com/@HowToMechatronics">How To Mechatronics</option>
+                        <option value="https://www.youtube.com/@softwaredeingenieria/videos">Software de Ingeniería
+                            CADCAM
+                        </option>
+                        <option value="https://www.youtube.com/@sanago">사나고 Sanago</option>
+                        <option value="https://www.youtube.com/@wrongcaesar9">WrongCaesar9</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--
         <a id="whatsapp" title="WhatsApp"><img class="btn-whatsapp2" src="https://clientes.dongee.com/whatsapp.png"
                 style="max-width: 90px; border-radius: 10px;max-height: 90px;margin-top: 15px;" align="right" alt="Whatsapp"
                 onclick="window.location.href='https://wa.me/525515833826'" fetchpriority="high"></a>
 -->
-        <h1 style="font-size: 150%; font-family: 'Times New Roman', Times, serif;top: -2.5rem;">Links de
-            Programas<br>"PC y Android"
-        </h1>
 
+        </div>
+        </div>
+        <!-- Filtro por precio -->
+        <select visibility: hidden id="filtro-precio" style="height: 0px;width: 0px;">
+            <option value="0">NA</option>
+        </select>
+    </header>
 
-        <nav>
-            
-            <ul style="height: auto; color: #ffffff;"><marquee behavior="scroll" direction="left" scrollamount="15">
-                <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;Si detectas un link caído, repórtamelo 🤙🏽
-                    -
-                    Espero
-                    ir agregando mas programas y páginas que sean útiles y que en ocasiones los acortadores molestan con
-                    los
-                    anuncios&nbsp;</span>
-            </marquee>
+    <main>
+        <section style="z-index: -100;" class="view" id="productos">
+            <h2>PROGRAMAS DISPONIBLES</h2>
+            <h2 style="font-size: 100%;margin-top: -1.5rem;">"Ser experto en algo no es saberlo todo, sino conocer
+                perfectamente las 1000 formas en que puede salir mal." - Niels Bohr</h2>
+            <div>
                 <!-- Filtro por modelo -->
                 <select id="filtro-modelo" class="list-ch">
                     <option value="">Todos los programas</option>
@@ -103,136 +204,17 @@
                     <option value="Canales TV">Canales TV</option>
                     <option value="Desarrollo Web">Desarrollo Web</option>
                     <option value="Otros">Otros</option>
-                </select>
-                <!-- Filtro por precio -->
-                <select visibility: hidden id="filtro-precio" style="height: 0px;width: 0px;">
-                    <option value="0">NA</option>
-                </select>
-
-                <button class="toplistxd" onclick="navegar('productos')">Programas</button>
-                <button class="toplistxd" onclick="navegar('videos')">Videos</button>
-                <button class="toplistxd" onclick="navegar('addons')">Add-ons Blender</button>
-                <button class="toplistxd" onclick="navegar('sugerencia')">¿Algo más?</button>
-
-
-                <!--<li><a class="toplistxd" href="#sugerencia">¿Quieres agregar algo?</a></li>
-                <li><a class="toplistxd" href="#productos">Programas</a></li>
-                <li><a class="toplistxd" href="#videos">Videos</a></li>
-                <li><a class="toplistxd" href="https://lagoma.netlify.app/add-ons">Add-ons Blender</a></li>
-                -->
-                <li><a class="toplistxd" href="/Archivos/Ubica-T.apk">Ubica-T App TESChi</a></li>
-                <!--li><a class="toplistxd" href="Index.html">"La Goma"</a></li
-                
-                onchange="if (this.value) window.open(this.value, '_blank');" //esta linea va en el select y lo que hace es abrir en nueva pestaña el link seleccionado mediante el valor del option y el codigo js hace el resto
-                -->
-
-                <select id="list-ch" class="list-ch">
-                    <option value="">Canales de YouTube Shidos</option>
-                    <option value="https://www.youtube.com/c/Programaci%C3%B3nATS">Programación ATS 🥺🕊</option>
-                    <option value="https://www.youtube.com/@esperandoelrender">Esperando el Render</option>
-                    <option value="https://www.youtube.com/@auraprods">AuraProds</option>
-                    <option value="https://www.youtube.com/@BlenderGuru">Blender Guru</option>
-                    <option value="https://www.youtube.com/@Polyfjord">Polyfjord</option>
-                    <option value="https://www.youtube.com/@polygonrunway">Polygon Runway</option>
-                    <option value="https://www.youtube.com/@TheDucky3D">Ducky3D</option>
-                    <option value="https://www.youtube.com/@RyanKingArt">Ryan King Art</option>
-                    <option value="https://www.youtube.com/@SouthernShotty">SouthernShotty</option>
-                    <option value="https://www.youtube.com/@KennyPhases">KennyPhases</option>
-                    <option value="https://www.youtube.com/@NIXO3D">NIXO 3D</option>
-
-                    <option value="https://www.youtube.com/@CGGeek">CG Geek</option>
-                    <option value="https://www.youtube.com/@Sanctus_ES">Sanctus - Blender Procedural</option>
-
-                    <option value="https://www.youtube.com/@DateunVlog/videos">Date un Vlog</option>
-                    <option value="https://www.youtube.com/@QuantumFracture">Quantum Fracture</option>
-                    <option value="https://www.youtube.com/@HRom">HRom</option>
-                    <option value="https://www.youtube.com/@eltraductor_ok">El Traductor de Ingeniería</option>
-
-                    <option value="https://www.youtube.com/@pixlwaystudio">Pixlway</option>
-                    <option value="https://www.youtube.com/@chuckcg">ChuckCG</option>
-                    <option value="https://www.youtube.com/@WillCogley">Will Cogley</option>
-                    <option value="https://www.youtube.com/@levimagony">Levi Magony</option>
-                    <option value="https://www.youtube.com/@waltdisneyimagineering">Walt Disney Imagineering</option>
-                    <option value="https://www.youtube.com/@DisneyResearchHub">Disney Research Hub</option>
-                    <option value="https://www.youtube.com/@DotCSV">DotCSV</option>
-                    <option value="https://www.youtube.com/@DotCSVlab">DotCSV Lab</option>
-                    <option value="https://www.youtube.com/@PIXXO3D">PIXXO 3D</option>
-                    <option value="https://www.youtube.com/@indianvfxschool">Indian VFX School</option>
-                    <option value="https://www.youtube.com/@MiwuScienceEspanol">Miwu Science Español</option>
-
-
-                    <option value="https://www.youtube.com/@str3dloki">Alex Baeza (Str3Dlok)</option>
-                    <option value="https://www.youtube.com/@MarcosAlberca">Marcos Alberca</option>
-                    <option value="https://www.youtube.com/@BennyProductions">Benny Productions</option>
-                    <option value="https://www.youtube.com/@PiXimperfect">PiXimperfect</option>
-                    <option value="https://www.youtube.com/@marcocreativo">Marco Creativo</option>
-
-                    <option value="https://www.youtube.com/@CGMatter">CG Matter</option>
-                    <option value="https://www.youtube.com/@BadNormals">Bad Normals</option>
-                    <option value="https://www.youtube.com/@BlenderVitals">Blender Vitals</option>
-                    <option value="https://www.youtube.com/@BlenderMadeEasy">Blender Made Easy</option>
-                    <option value="https://www.youtube.com/@Brackeys">Brackeys</option>
-                    <option value="https://www.youtube.com/@Jayanam">Jayanam</option>
-                    <option value="https://www.youtube.com/@RocoDeLaPortilla">Roco De La Portilla</option>
-                    <option value="https://www.youtube.com/@MographMentor">Mograph Mentor</option>
-                    <option value="https://www.youtube.com/@NineBetweens">Nine Between</option>
-                    <option value="https://www.youtube.com/@Smeaf">Smeaf</option>
-                    <option value="https://www.youtube.com/@JoeyCarlino/videos">Joey Carlino</option>
-                    <option value="https://www.youtube.com/@CGBoost">CG Boost</option>
-                    <option value="https://www.youtube.com/@FlippedNormals">Flipped Normals</option>
-                    <option value="https://www.youtube.com/@nuvamotions">nuvamotions</option>
-                    <option value="https://www.youtube.com/@nuvaproductions">nuvaproductions</option>
-                    <option value="https://www.youtube.com/@MoveShapes/videos">Move Shapes</option>
-                    <option value="https://www.youtube.com/@BenMarriott">Ben Marriott</option>
-                    <option value="https://www.youtube.com/@s4vitar">s4vitar</option>
-                    <option value="https://www.youtube.com/@Linkfydev">Linkfy</option>
-                    <option value="https://www.youtube.com/@WebflippyOfficialPage">Photoshop Tutorials by Webflippy
-                    </option>
-                    <option value="https://www.youtube.com/@ReadyForMasterclass">Ready For Masterclass</option>
-                    <option value="https://www.youtube.com/@TheCGEssentials">The CG Essentials</option>
-                    <option value="https://www.youtube.com/@BlenderSecrets">Blender Secrets</option>
-                    <option value="https://www.youtube.com/@BlenderHoy">Blender Hoy</option>
-                    <option value="https://www.youtube.com/@FaztCode">Fazt Code</option>
-                    <option value="https://www.youtube.com/@gzilbalodist">Gints Zilbalodis</option>
-                    <option value="https://www.youtube.com/@chachomotion">chachomotion</option>
-                    <option value="https://www.youtube.com/@CinecomCrew">Cinecom.net</option>
-                    <option value="https://www.youtube.com/tomstantonengineering">Tom Stanton</option>
-                    <option value="https://www.youtube.com/@AprendeyVerifica">Aprende y Verifica</option>
-                    <option value="https://www.youtube.com/@BenEater">Ben Eater</option>
-                    <option value="https://www.youtube.com/@ALEXLABS">ALEX LAB</option>
-                    <option value="https://www.youtube.com/@integza">Integza</option>
-                    <option value="https://www.youtube.com/@HowToMechatronics">How To Mechatronics</option>
-                    <option value="https://www.youtube.com/@softwaredeingenieria/videos">Software de Ingeniería CADCAM
-                    </option>
-                    <option value="https://www.youtube.com/@sanago">사나고 Sanago</option>
-                    <option value="https://www.youtube.com/@wrongcaesar9">WrongCaesar9</option>
+                    <!--   BARRA DE BÚSQUEDA -->
+                    <div class="whole-search-bar">
+                        <input type="search" id="barra-busqueda" placeholder="¿Que estás buscando? :3">
+                        <img src="/logos/searchcat.png" alt="Buscar" class="img-buscar"
+                            style="width: 30px; height: 30px;">
+                    </div>
+                    <!--   BARRA DE BÚSQUEDA -->
                 </select>
 
-               <!-- <li class="datetime">Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span></li> -->
-            </ul>
+            </div>
 
-
-
-
-         
-        <!--   BARRA DE BÚSQUEDA -->
-        <div class="whole-search-bar">
-          <input type="search" id="barra-busqueda" placeholder="¿Que estás buscando? :3"><img src="/logos/searchcat.png"
-            alt="Buscar" class="img-buscar" style="width: 30px; height: 30px;">
-
-        </div>
-        <!--   BARRA DE BÚSQUEDA -->
-
-
-        </nav>
-        
-    </header>
-    <main>
-
-        <section style="z-index: -100;" class="view" id="productos">
-            <h2>PROGRAMAS DISPONIBLES</h2>
-            <h2 style="font-size: 100%;margin-top: -1.5rem;">"Ser experto en algo no es saberlo todo, sino conocer
-                perfectamente las 1000 formas en que puede salir mal." - Niels Bohr</h2>
             <div class="block" id="productos-contenedor"></div>
             <div id="paginacion-contenedor" class="paginacion-estilos"></div>
         </section>
@@ -474,9 +456,7 @@
                 <a id="go-top-button" title="Dar Salto"></a>
             </div>
         </div>
-    </main>
-
-    <footer>
+        <footer>
 
         <a id="whatsapp" title="WhatsApp Principal"><img class="btn-whatsapp"
                 src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp"
@@ -486,7 +466,7 @@
                 width="64" height="64" alt="Instagram"
                 onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'"></a>
         <p>Copyright © 2025 "La Goma"</p>
-        <p style="font-size: 0.8rem;">Última actualización: 23/12/2025 at: 04:55</p>
+        <p style="font-size: 0.8rem;">Última actualización: 28/12/2025 at: 02:40</p>
         <!--Barra de iconos compartir Init
         <div>
             <div class="sharethis-inline-share-buttons st-center st-lang-es st-has-labels  st-inline-share-buttons"
@@ -501,6 +481,9 @@
             src="https://platform-api.sharethis.com/js/sharethis.js#property=650476d13b8450001ac45ec7&amp;product=inline-share-buttons&amp;source=platform"></script>
         <!--Barra de iconos compartir End-->
     </footer>
+    </main>
+
+    
     <script>
         // Script para abrir enlaces en una nueva pestaña mediante un selector
         document.getElementById('list-ch').addEventListener('change', function () {

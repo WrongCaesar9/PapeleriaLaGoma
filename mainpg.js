@@ -179,12 +179,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (ubicacionPrincipal >= desplazamientoActual) {
             // Subiendo
             header.classList.remove('escondido');
-            nav.classList.remove('escondido');
         } else {
             // Bajando (con el margen de 50px para evitar parpadeos)
             if (desplazamientoActual > 200) { 
                 header.classList.add('escondido');
-                nav.classList.add('escondido');
             }
         }
 

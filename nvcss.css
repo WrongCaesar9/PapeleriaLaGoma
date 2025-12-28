@@ -1,3 +1,4 @@
+
 /* Calcula la altura exacta que necesita compensación */
 #productos {
   padding-top: 0rem;
@@ -151,7 +152,13 @@ body {
   background-color: rgba(81, 81, 81, 0.6);
   background-repeat: repeat;
 }
-
+.marquee-wrapper {
+    background-color: #6b6b6b; /* Azul estilo Thingiverse */
+    color: white;
+    font-size: 16px;
+    padding: 0 0;
+    font-weight: bold;
+}
 h2,
 h3 {
   font-size: 24px;
@@ -570,6 +577,18 @@ section cont {
 
 }
 
+footer {
+  background-color: rgba(11, 11, 12, 0.931);
+  border-radius: 0  0 20px 20px;
+  /*background-image: url(/logos/mvcsuper.gif);
+    background-size: auto; */
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding-top: 10px;
+}
 
 /* Responsive Styles */
 @media (max-width: 760px) {

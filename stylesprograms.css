@@ -57,181 +57,236 @@ main {
 */
 
 header {
-  text-align: center;
-  position: fixed;
-  top: -2.5rem;
-  left: 33%;
-  transform: translateX(-50%);
-  background-color: rgb(19, 19, 20);
-  background-size: 1fr;
-  text-align: center;
-  padding: 1rem;
-  font-size: 15px;
-  padding-top: 15px;
-  width: 132%;
-  height: auto;
-  scale: 75%;
-
-}
-
-nav {
-  background-color: rgb(19, 19, 20);
-  text-align: center;
-  width: 100%;
-  height: 100px;
-  font-size: 1.2rem;
-}
-
-.whole-search-bar {
-  display: inline-flex;
-  width: 100%;
-  cursor: grab;
-}
-
-.whole-search-bar input {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  border: 2px solid #444;
-  padding: 4px 3px 4px 2px;
-  /*xUp yLarge yHihg */
-  font-size: 14px;
-  background: transparent;
-  color: white;
-  padding: 8px;
-  
-}
-
-.datetime {
-  position: relative;
-  top: -130px;
-  left: 50px;
-  display: inline-block;
-}
-
-/*
-header.fixed {
-  text-align: center;    
-  position: fixed;
-  top:-1.5rem;
-  left:33%;
-  transform: translateX(-50%);
-  background-color: rgb(19, 19, 20);
-  background-size: 1fr; 
-  text-align: center;
-  padding: 1rem;
-  font-size: 15px;
-  padding-top:15px;
-  transition: 1s;
-  width: 132%;
-  height: auto;
-  scale: 75%;
-
-}
-
-
-
-
-  header {
-    height: auto;
-    background-color: rgb(19, 19, 20);
-    text-align: center;
-    padding: 10px;
-    width: auto;
-    transition: 1s;
-  }
-  */
-/*  background-image: url(/logos/mvcsuper.gif);
-  @charset "utf-8";
-  header{
-    background-color: #9cd4fcb8;
-    text-align: center;
-    margin: 50px;
-    padding: 0px;
-  position:fixed;
-  background-color: #2997f1;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  }
-*/
-/* 
-  
-    nav.fixed{
-    height: auto;
-    text-align: center;    
+    
     position: fixed;
-    top: 6.8rem;
     width: 100%;
-    left: 49.9%;
-    transform: translateX(-50%);
+    top: 0;
 
-    background-color: rgb(19, 19, 20);
-    margin: 1px;
-    padding-top: auto;
-    transition: 0.8;
-    font-size: 1.2rem;
+}
+/* 1. IDENTIDAD (Logo y Texto) */
+.header-brand {
+  background-color: #2b2b2b; /* Tu color oscuro base */
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto; /* No se encoge */
+}
+.header__logo-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+.brand-text h1 {
+    font-family: 'Times New Roman', serif; /* Tu fuente original */
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+
+.brand-text span {
+    font-size: 0.8rem;
+    color: #afddff; /* Acento azul */
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+/* 2. BARRA DE BÚSQUEDA (Estilo Wide) */
+.header-search {
+    flex: 1 1 300px; /* Crece, pero mínimo 300px antes de bajar */
+    display: flex;
+    justify-content: center;
+}
+
+.search-box-container {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    background-color: #4d4d4d;
+    border-radius: 25px;
+    padding: 4px 10px;
+    border: 1px solid #444;
+}
+
+#barra-busqueda {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* 3. CONTROLES Y NAVEGACIÓN */
+
+
+.nav-group, .filter-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo de Botones tipo "Thingiverse" */
+.thingi-btn, .thingi-select {
+    background-color: #3a3a43;
+    color: #ffffff;
+    border: 2px solid #444;
+    padding: 4px 15px;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 1s;
+    width:max-content;
+}
+
+.thingi-btn:hover, .thingi-select:hover {
+    background-color: #9797f4;
+    border-color: #daf747;
+    color: white;
+}
+
+/* Botón "Primario" (Para resaltar Programas) */
+.thingi-btn.primary {
+    background-color: #248bfb;
+    border-color: #248bfb;
+    color: white;
+    font-weight: bold;
+}
+
+.thingi-btn.primary:hover {
+    background-color: #1a6fc4;
+}
+
+/* Estilo específico para los selects */
+.thingi-select {
+
+  max-width: 300px;
+  /* Evita que el select se haga gigante */
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* RESPONSIVE: Ajustes para móvil */
+@media (max-width: 768px) {
+  .page-header-capsule {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    font-size: 10px;
   }
 
-  nav{
-    background-repeat: no-repeat;
-    background-size: 100%; 
-    text-align: center;    
-    background-color: rgba(19, 19, 20, 0);
-    width: 99%;
-    transition: 0.8s;
+  .brand-text h1 {
+    font-family: 'Times New Roman', serif;
+    /* Tu fuente original */
+    font-size: 10px;
+    color: white;
+    margin: 0;
+    line-height: 1;
   }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  background-blend-mode: multiply;    background-image: url(/logos/mvcsuper.gif);
-  @charset "utf-8";
-  nav{
-    background-color: #9cd4fcb8;
-    text-align: center;
-    margin: 3px;
-    padding: 0px;
-  display:grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  background: aliceblue;
-  font-family: sans-serif;
-  position:fixed;
-  top:0;
-  width:100%;
+  /* 1. IDENTIDAD (Logo y Texto) */
+  .header-brand {
+    background-color: #2b2b2b;
+    font-size: 1rem;
+    flex: 0 0 auto;
+    /* No se encoge */
+    width: 100%;
+    height: 100px;
   }
 
-*/
+  .brand-text span {
+    font-size: 0.5rem;
+    color: #b8ffaf;
+    /* Acento azul */
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 800;
+  }
 
-nav ul {
-  list-style-type: none;
-  padding: 5px;
+  .header__logo-image {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    object-fit: cover;
+
+  }
+
+  .nav-group,
+  .filter-group {
+    display: inline-flex;
+    inline-size: 1px;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* Estilo de Botones tipo "Thingiverse" */
+.thingi-btn, .thingi-select {
+    background-color: #3a3a43;
+    color: #ffffff;
+    border: 1px solid #444;
+    padding: 1px 8px;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 1s;
+    width:max-content;
 }
 
-nav li {
-  display: inline-block;
-  margin-right: auto;
+.thingi-btn:hover, .thingi-select:hover {
+    background-color: #9797f4;
+    border-color: #daf747;
+    color: white;
 }
 
-nav a {
-  margin: auto;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 10px;
+/* Botón "Primario" (Para resaltar Programas) */
+.thingi-btn.primary {
+    background-color: #248bfb;
+    border-color: #248bfb;
+    color: white;
+    font-weight: bold;
 }
 
-nav a:hover {
-  background-color: #3f5461e6;
+.thingi-btn.primary:hover {
+    background-color: #1a6fc4;
 }
+
+/* Estilo específico para los selects */
+.thingi-select {
+  max-width: 190px;
+  /* Evita que el select se haga gigante */
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+}
+
+
+
+.marquee-wrapper {
+    background-color: #1a1919; /* Azul estilo Thingiverse */
+    color: white;
+    font-size: 16px;
+    padding: 0 0;
+}
+
+
+
 
 main {
   margin: 0 auto;
@@ -263,7 +318,37 @@ section cont {
 
 
 
+.whole-search-bar {  
+  background-color: #393939;
+  display: inline-flex;
+  margin: 10px auto;
+  width: 100%;
+}
 
+.whole-search-bar input {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  border: 2px solid #444;
+  padding: 4px 3px 4px 2px;
+  /*xUp yLarge yHihg */
+  
+  padding: 8px;
+
+}
+input[type="search"]::placeholder {
+  color: #b8c5d3; /* Un azul vibrante */
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+}
+
+.datetime {
+  position: relative;
+  top: -130px;
+  left: 50px;
+  display: inline-block;
+}
 
 
 footer {
@@ -630,8 +715,8 @@ h1 {
 
 .list-ch {
   color: rgb(255, 255, 255);
-  background-color: transparent;
-  border: none;
+  background-color: rgb(72, 72, 72);
+  border-radius: 10px;
   padding: 7px;
   font-size: 1.2rem;
 }
@@ -755,7 +840,7 @@ h1 {
 
 
 /* 1. Agregamos suavidad al movimiento */
-header,
+header, .header-brand
 nav {
   transition: top 0.4s ease-in-out;
   /* Esto hace que suba y baje suavecito */
@@ -786,21 +871,21 @@ nav {
   }
 
   #productos {
-    padding-top: 13rem;
+    padding-top: 7%;
 
   }
   #addons {
-    padding-top: 15rem;
+    padding-top: 6rem;
   }
 
   #videos {
-    padding-top: 15rem;
+    padding-top: 6rem;
   }
-  nav li {
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: auto;
+
+  #sugerencia{
+    padding-top: 14rem;
   }
+
 
   .go-top-button {
     width: 0px;
@@ -822,23 +907,6 @@ nav {
     height: 3.0rem;
 
   }
-
-
-  nav {
-  background-color: rgb(19, 19, 20);
-  text-align: center;
-  width: 100%;
-  height: 95px;
-  font-size: 1.2rem;
-}
-
-.whole-search-bar {
-  position: relative;
-  top: -140px;
-  left: 650px;
-  display: inline-block;
-  scale: 100%;
-}
 .datetime {
   position: relative;
   top: -140px;
@@ -928,7 +996,7 @@ nav {
   }
 
   #productos {
-    padding-top: 15rem;
+ padding-top: 10%;
   }
 #sugerencia {
   padding-top: 16rem;
@@ -1000,15 +1068,17 @@ nav {
 @media (max-width: 768px) {
   #productos-contenedor {
     grid-template-columns: repeat(2, 1fr);
-    font-size: 0.6rem;
+    font-size: 12px;
   }
 
   #productos {
-    padding-top: 13rem;
+padding-top: 30%;
   }
-#sugerencia {
-  padding-top: 16rem;
-}
+
+  #sugerencia {
+    padding-top: 16rem;
+  }
+
   #addons {
     padding-top: 18rem;
   }
@@ -1016,6 +1086,7 @@ nav {
   #videos {
     padding-top: 16rem;
   }
+
   nav li {
     display: inline-block;
     margin-top: 20px;
@@ -1040,28 +1111,14 @@ nav {
     animation: popup 0.8s ease-in-out;
     width: 3.0rem;
     height: 3.0rem;
-
   }
 
-
-  nav {
-  background-color: rgb(19, 19, 20);
-  text-align: center;
-  width: 100%;
-  height: 150px;
-  font-size: 1.2rem;
+  .whole-search-bar {
+    position: relative;
+    display: inline-block;
+  }
 }
-
-.whole-search-bar {
-  position: relative;
-  top: -220px;
-  left: -250px;
-  display: inline-block;
-  scale: 85%;
-}
-}
-
-/* Opcional: aún más chico (teléfonos muy pequeños) */
+/* Opcional: aún más chico (teléfonos muy pequeños)
 @media (max-width: 480px) {
   #productos-contenedor {
     grid-template-columns: repeat(1, 1fr);
@@ -1100,7 +1157,7 @@ nav {
   scale: 85%;
 }
 }
-
+ */
 /* Animaciones */
 
 @keyframes popup {
