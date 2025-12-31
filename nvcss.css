@@ -369,7 +369,22 @@ nav button {
   font-size: 14px;
   margin-bottom: 10px;
 }
+.list-ch {
+  color: rgb(255, 255, 255);
+  background-color: rgb(72, 72, 72);
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 16px;
+  width: 100%;
+}
 
+.list-ch:hover {
+  color: #d3d3d3;
+  background-color: rgb(72, 72, 72);
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: auto;
+}
 #productos-contenedor {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   display: grid;
