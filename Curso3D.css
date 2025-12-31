@@ -23,6 +23,7 @@ h1 {
   overflow-y: auto;
 }
 nav a {
+   border-radius: 10px;
     display: block;
     color: #fff;
     text-decoration: none;
@@ -47,7 +48,6 @@ nav a {
 */
 
   .main-content {
-
     margin-left:calc(15%) ;
     padding: 5%;
     width: 100%;

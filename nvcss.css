@@ -1,4 +1,3 @@
-
 /* Calcula la altura exacta que necesita compensación */
 #productos {
   padding-top: 0rem;
@@ -115,7 +114,7 @@
   transition: .5s;
 }
 
-.whole-search-bar {  
+.whole-search-bar {
   display: inline-flex;
   margin: 0 auto;
   width: 100%;
@@ -132,8 +131,10 @@
   padding: 8px;
 
 }
+
 input[type="search"]::placeholder {
-  color: #b8c5d3; /* Un azul vibrante */
+  color: #b8c5d3;
+  /* Un azul vibrante */
   font-size: 16px;
   font-family: 'Arial', sans-serif;
   font-style: italic;
@@ -152,13 +153,16 @@ body {
   background-color: rgba(81, 81, 81, 0.6);
   background-repeat: repeat;
 }
+
 .marquee-wrapper {
-    background-color: #6b6b6b; /* Azul estilo Thingiverse */
-    color: white;
-    font-size: 16px;
-    padding: 0 0;
-    font-weight: bold;
+  background-color: #6b6b6b;
+  /* Azul estilo Thingiverse */
+  color: white;
+  font-size: 16px;
+  padding: 0 0;
+  font-weight: bold;
 }
+
 h2,
 h3 {
   font-size: 24px;
@@ -171,11 +175,17 @@ h1 {
 
 nav button {
   color: rgb(255, 255, 255);
+  display: block;
+    text-decoration: none;
+    margin: 10px 0;
   background-color: transparent;
   border: none;
+  border-radius: 5px;
   padding: 7px;
   font-size: 1.2rem;
 }
+
+
 
 .nav-button:hover {
   color: #d3d3d3;
@@ -184,13 +194,15 @@ nav button {
   border-radius: 10px;
   margin-right: auto;
 }
+
 /* Estilos del contenido principal */
-  .main-content {
-    display: block;
-    margin-left: 20%;
-    padding: 3px;
-    width: 100%;
-  }
+.main-content {
+  display: block;
+  margin-left: 20%;
+  padding: 3px;
+  width: 100%;
+}
+
 .sidebar {
   width: 19%;
   background-color: #000000;
@@ -215,13 +227,16 @@ nav button {
 }
 
 .sidebar nav {
-  font-size: 90%;
   display: flex;
   flex-direction: column;
   padding: 5px;
 }
 
+
+
+
 .sidebar a {
+  font-size: 20px;
   color: white;
   padding: 10px;
   text-decoration: none;
@@ -232,6 +247,7 @@ nav button {
 }
 
 .sidebar button {
+  width: 100%;
   background-color: transparent;
   display: block;
   margin: 0 auto;
@@ -260,7 +276,7 @@ nav button {
 
 /* Ocultar el checkbox y mostrar icono en móvil */
 .menu-toggle {
-    width: 25px;
+  width: 25px;
   height: 3px;
   margin: 5px auto;
   display: none;
@@ -317,17 +333,19 @@ nav button {
 /* Estilos de los addons y productos */
 .addons-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4px;
+  margin: 2px 0 0 0;
 }
 
 .addons {
+  justify-content: space-between;
   background-color: #6b6b6b;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
-  padding: 20px;
+  padding: 5px;
 }
 
 .addons img,
@@ -337,34 +355,36 @@ nav button {
   border-radius: 8px;
 }
 
+
+
+
 .addons h3 {
-  margin: 15px 0 10px;
-  font-size: 20px;
+  margin: 4px 0 4px;
+  font-size: 16px;
   color: #ffffff;
 }
 
 .addons p {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
 #productos-contenedor {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   display: grid;
   grid-gap: 5px;
   font-family: Arial;
-  font-size: 0.7rem;
+  font-size: 12px;
   align-items: stretch;
   margin: 10px 0 0 0;
-  border: 10px solid #21b65f;
 }
 
 .productos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #6b6b6b;
+  background-color: #393939;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(223, 206, 206, 0.1);
   overflow: hidden;
@@ -414,7 +434,7 @@ nav button {
 }
 
 .productos p {
-  color: #412338;
+  color: #ffffff;
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
@@ -579,7 +599,7 @@ section cont {
 
 footer {
   background-color: rgba(11, 11, 12, 0.931);
-  border-radius: 0  0 20px 20px;
+  border-radius: 0 0 20px 20px;
   /*background-image: url(/logos/mvcsuper.gif);
     background-size: auto; */
   font-size: 10px;
@@ -606,7 +626,8 @@ footer {
   }
 
   .sidebar a {
-    color: red;
+    color: rgb(255, 255, 255);
+    text-align: center;
   }
 
   .sidebar.active {
@@ -626,10 +647,17 @@ footer {
 
   }
 
+  .addons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2px;
+  }
+
+
   #productos-contenedor {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 4px;
     text-align: justify;
     font-family: Arial;
     font-size: 0.4rem;
@@ -637,9 +665,9 @@ footer {
   }
 
   #videos-contenedor {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 4px;
     text-align: justify;
     font-family: Arial;
     font-size: 0.4rem;
@@ -663,28 +691,30 @@ footer {
     color: #ffffff;
   }
 
-.whole-search-bar {  
-  display: inline-flex;
-  margin: 0 auto;
-  width: 100%;
-}
+  .whole-search-bar {
+    display: inline-flex;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-.whole-search-bar input {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  border: 2px solid #c5d8ff;
-  padding: 0px 0px 0px 0px;
-  /*xUp yLarge yHihg */
-  background-color: #393939;
-  padding: 1px;
-}
-input[type="search"]::placeholder {
-  color: #b8c5d3; /* Un azul vibrante */
-  font-size: 10px;
-  font-family: 'Arial', sans-serif;
-  font-style: italic;
-}
+  .whole-search-bar input {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #c5d8ff;
+    padding: 0px 0px 0px 0px;
+    /*xUp yLarge yHihg */
+    background-color: #393939;
+    padding: 1px;
+  }
+
+  input[type="search"]::placeholder {
+    color: #b8c5d3;
+    /* Un azul vibrante */
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+  }
 
   .go-top-button {
     width: 0px;
@@ -706,6 +736,13 @@ input[type="search"]::placeholder {
   }
 }
 
+
+
+.productos {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 22%;
+}
 /* Animaciones */
 
 @keyframes popup {
@@ -724,6 +761,22 @@ input[type="search"]::placeholder {
     height: 2.0rem;
   }
 }
+
+
+@keyframes appear {
+  from {
+
+    clip-path: inset(2% 10% 0 0);
+    transform: translatex(-150px);
+  }
+
+  to {
+
+    clip-path: inset(0 0 0 0);
+    transform: translatex(0px);
+  }
+}
+
 
 h1 {
   font-size: 25px;

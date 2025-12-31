@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Obtener el menú lateral y los enlaces
   const sidebar = document.querySelector('.sidebar');
-  const links = document.querySelectorAll('.sidebar nav button');
+  const links = document.querySelectorAll('.sidebar nav a');
 
   // Añadir un evento de clic a cada enlace
   links.forEach(link => {
