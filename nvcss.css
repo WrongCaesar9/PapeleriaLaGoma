@@ -385,6 +385,7 @@ nav button {
   border-radius: 10px;
   margin-right: auto;
 }
+
 #productos-contenedor {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   display: grid;
