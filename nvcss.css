@@ -176,8 +176,8 @@ h1 {
 nav button {
   color: rgb(255, 255, 255);
   display: block;
-    text-decoration: none;
-    margin: 10px 0;
+  text-decoration: none;
+  margin: 10px 0;
   background-color: transparent;
   border: none;
   border-radius: 5px;
@@ -369,6 +369,7 @@ nav button {
   font-size: 14px;
   margin-bottom: 10px;
 }
+
 .list-ch {
   color: rgb(255, 255, 255);
   background-color: rgb(72, 72, 72);
@@ -668,6 +669,14 @@ footer {
     gap: 2px;
   }
 
+  .list-ch {
+    color: rgb(255, 255, 255);
+    background-color: rgb(72, 72, 72);
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 10px;
+    width: 100%;
+  }
 
   #productos-contenedor {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -758,6 +767,7 @@ footer {
   animation-timeline: view();
   animation-range: entry 0% cover 22%;
 }
+
 /* Animaciones */
 
 @keyframes popup {
