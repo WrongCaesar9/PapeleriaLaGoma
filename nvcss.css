@@ -439,6 +439,7 @@ nav button {
 .productos a {
   font-size: 0.8rem;
   color: #021395;
+  transition: 0.5s;
 }
 
 .productos a:hover {
