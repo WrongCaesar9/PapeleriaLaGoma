@@ -718,6 +718,19 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 10px;
         }
+
+        .vidspost_style {
+            width: 100%;
+            /*max-width: 400px;*/
+            margin: 30px auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -1440,7 +1453,7 @@
                 <p style="  font-family: Playwrite NG Modern, cursive;
                   font-optical-sizing: auto;
                   font-weight: 100;
-                  font-style: normal;">Cargando galería Post Evento...</p>
+                  font-style: normal;">Galeria del Evento</p>
                 <script>
                     document.addEventListener('DOMContentLoaded', function () {
                         const gallery = document.getElementById('carouselGallery');
@@ -1855,6 +1868,17 @@
                     <div class="carousel-dots2" aria-hidden="false"></div>
                 </div>
                 <div style="padding-bottom: 50px;"></div>
+
+                <div class="vidspost_style">
+                
+            <video controls>
+            <source  style="height: 30%;"  src="/Archivos/vid1.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+          </video>
+                  <!--  <h3
+                        style="font-family: Great Vibes, cursive; font-weight: 500; font-style: italic; font-size: 200%; letter-spacing: 3px; word-spacing: 4px; margin-top: 20px;">
+                        Aline Elena</h3>-->
+                </div>
             </section>
         </main>
     </div>
