@@ -520,6 +520,18 @@
             "enlace": "https://elenemigos.com/",
             "modelo": "Juegos"
         },
+        {
+            "nombre": "Colección de emuladores retro<br>Emuladores de distintas consolas de Nintendo",
+            "img": "impg/coleccioemuladores.png",
+            "enlace": "https://mega.nz/folder/7shhgaYA#_K51l2982e9g4wccaIRAAw",
+            "modelo": "Juegos"
+        },
+        {
+            "nombre": "Pack de emuladores<br>No recuerdo todos, pero tiene PS1, PS2, PSP, N64, SNES, GBA, entre otros",
+            "img": "impg/coleccioemuPS.png",
+            "enlace": "https://www.mediafire.com/file/uj8sl3uznercc9n/Pack_de_Emuladores_Para_PC.rar/file",
+            "modelo": "Juegos"
+        },
 
 
 
@@ -639,6 +651,12 @@
             "nombre": "VoiceMod<br>Aplicación para cambiar la voz en tiempo real",
             "img": "impg/",
             "enlace": "https://www.voicemod.net/",
+            "modelo": "Herramientas"
+        },
+        {
+            "nombre": "TikFinity<br>ofrece una amplia gama de funciones interactivas gratuitas para tu transmisión en vivo en TikTok, con integración desde Texto a Voz y Alertas de Sonido hasta integraciones IFTTT para dispositivos inteligentes",
+            "img": "impg/tikfinity.png",
+            "enlace": "https://tikfinity.zerody.one/",
             "modelo": "Herramientas"
         },
         
@@ -1690,6 +1708,12 @@
             "nombre": "TokyVideo<br>Free original series in streaming for desktop, game console, Smart TV, Mac, mobile and tablet",
             "img": "impg/tokyvideo.png",
             "enlace": "https://www.tokyvideo.com/es",
+            "modelo": "Otros"
+        },
+        {
+            "nombre": "pelisplushd<br>Página para ver películas en streaming, tiene una gran variedad de películas y series",
+            "img": "impg/pelisplushd.png",
+            "enlace": "https://www25.pelisplushd.to/",
             "modelo": "Otros"
         },
         {
