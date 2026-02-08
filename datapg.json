@@ -659,6 +659,12 @@
             "enlace": "https://tikfinity.zerody.one/",
             "modelo": "Herramientas"
         },
+        {
+            "nombre": "RIFE Video Frame Interpolation<br>Ayuda a aumentar los FPS de un video por medio de interpolación de frames<br><a  target=_blank href=https://www.youtube.com/watch?v=gf_on-dbwyU>Video de instlación</a>",
+            "img": "impg/rifeframe.png",
+            "enlace": "https://github.com/hzwer/ECCV2022-RIFE?tab=readme-ov-file",
+            "modelo": "Otros"
+        }
         
                 
 
@@ -1611,7 +1617,7 @@
         {
             "nombre": "Vacunas de Memorias USB<br>Descarga los tres archivos, ponlos en tu usb y ejecuta el .exe y el .vbs",
             "img": "impg/vacunas.png",
-            "enlace": "https://drive.google.com/drive/folders/1374JERZboP1CfAt70iZ1Cq7RSjSoefXC?usp=sharing",
+            "enlace": "https://www.mediafire.com/folder/ygjpcmrvmvk95/Vacunas+Memorias",
             "modelo": "Otros"
         },
         {
@@ -1929,5 +1935,6 @@
             "enlace": "https://www.instagram.com/wrongcaesar9.0/",
             "modelo": "Otros"
         }
+   
     ]
 }
