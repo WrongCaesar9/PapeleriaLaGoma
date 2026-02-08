@@ -82,14 +82,14 @@ header {
 }
 .brand-text h1 {
     font-family: 'Times New Roman', serif; /* Tu fuente original */
-    font-size: 18px;
+    font-size: 14px;
     color: white;
     margin: 0;
     line-height: 1;
 }
 
 .brand-text span {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: #afddff; /* Acento azul */
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
@@ -337,7 +337,7 @@ section cont {
 
 }
 input[type="search"]::placeholder {
-  color: #053568; /* Un azul vibrante */
+  color: #ededed; /* Un azul vibrante */
   font-size: 16px;
   font-family: 'Arial Narrow Bold', sans-serif ;
   font-style: italic;
