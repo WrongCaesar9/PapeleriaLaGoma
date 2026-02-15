@@ -1,4 +1,4 @@
-/* Calcula la altura exacta que necesita compensación 
+Calcula la altura exacta que necesita compensación 
 #productos {
   padding-top: 1rem;
 
@@ -15,7 +15,11 @@
 #addons {
   padding-top: 18rem;
 }
-*/
+
+#blenderDLSS {
+  padding-top: 100px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
