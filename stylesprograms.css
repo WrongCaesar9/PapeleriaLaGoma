@@ -792,6 +792,60 @@ h1 {
 
 
 
+.projectDLSS {
+  background-color: #808080;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 4px 4px;
+  width: 70%;
+  max-width: 700px;
+}
+.projectDLSS img,
+.projectDLSS video {
+  width: 100%;
+  border-bottom: 4px solid #646363;
+  border-radius: 8px;
+}
+.projectDLSS p {
+  color: #f7f4f4;
+  font-size: 16px;
+  margin-bottom: 10px;
+  align-items: stretch;
+  text-align: justify;
+}
+
+
+.code-container {
+  position: relative;
+background-color: #333;
+  padding: 1px 5px;
+  border-radius: 8px;
+  font-family: monospace;
+}
+.copy-btn {
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.copy-btn:hover {
+  background: #005f99;
+}
+pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+
+
+
 
 .productos {
   animation: appear linear;
@@ -1134,6 +1188,15 @@ padding-top: 130px;
     position: relative;
     display: inline-block;
   }
+  .projectDLSS {
+  background-color: #808080;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 4px 4px;
+  width: 100%;
+}
 }
 /* Opcional: aún más chico (teléfonos muy pequeños)
 @media (max-width: 480px) {

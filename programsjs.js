@@ -310,5 +310,14 @@ app.get('/blender', async (req, res) => {
   res.send(html);
 });
 
+function copyCode(button) {
+  // Selecciona el texto dentro del bloque <code>
+  const code = button.nextElementSibling.innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    button.innerText = "✅ Copiado!";
+    setTimeout(() => button.innerText = "📋 Copiar", 2000);
+  });
+}
+
 /* Código de fecha de actualización
 document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";*/

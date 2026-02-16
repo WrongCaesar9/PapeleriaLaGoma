@@ -300,7 +300,13 @@ formulario.addEventListener('submit', (event) => {
 
 
 
-
+function copyCode(button) {
+  const codeElement = button.nextElementSibling.querySelector("code"); const codeText = codeElement.innerText; // Intentar con navigator.clipboard 
+  if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(codeText).then(() => { button.innerText = "Copiado"; setTimeout(() => button.innerText = "Copiar", 2000); }); } else {
+    // Fallback para móviles 
+    const textArea = document.createElement("textarea"); textArea.value = codeText; document.body.appendChild(textArea); textArea.select(); document.execCommand("copy"); document.body.removeChild(textArea); button.innerText = "Copiado"; setTimeout(() => button.innerText = "Copiar", 2000);
+  }
+}
 
 /* Código de fecha de actualización
 document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";*/
