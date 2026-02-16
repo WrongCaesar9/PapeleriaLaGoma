@@ -1076,25 +1076,38 @@ nav {
   }
 
   #productos {
-padding-top: 30%;
+padding-top: 130px;
   }
 
   #sugerencia {
-    padding-top: 16rem;
+    padding-top: 130px;
   }
 
   #addons {
-    padding-top: 18rem;
+    padding-top: 130px;
   }
 
   #videos {
-    padding-top: 16rem;
+    padding-top: 130px;
+  }
+
+  #blenderDLSS {
+    padding-top: 130px;
   }
 
   nav li {
     display: inline-block;
     margin-top: 20px;
     margin-right: auto;
+  }
+
+  .nav-group {
+    display:table-cell;
+    inline-size: 1px;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 100%;
+    height: auto;
   }
 
   .go-top-button {

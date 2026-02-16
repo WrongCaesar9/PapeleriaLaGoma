@@ -303,10 +303,10 @@ nav button {
   transition: all 0.3s ease-in-out;
 }
 
-/* Opcional: Efecto de 'X' para el icono */
+/* Opcional: Efecto de 'X' para el icono 
 #menu-toggle:checked~.hamburger-icon .bar:nth-child(2) {
   opacity: 0;
-  /* Oculta la barra del medio */
+   Oculta la barra del medio 
 }
 
 #menu-toggle:checked~.hamburger-icon .bar:nth-child(1) {
@@ -320,7 +320,7 @@ nav button {
 #menu-toggle:checked+.hamburger {
   background-color: #163dcc;
 }
-
+*/
 
 
 #about,
@@ -557,7 +557,7 @@ section cont {
   /* Usé un color parecido a tu fondo */
   color: white;
   border: none;
-  padding: 8px 15px;
+  padding: 4px 8px;
   border-radius: 5px;
   cursor: pointer;
   font-family: Arial, sans-serif;
