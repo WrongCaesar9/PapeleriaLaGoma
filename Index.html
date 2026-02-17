@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=yes">
 
     <!-- Fecha de publicación/creación (Dublin Core) -->
     <meta name="dcterms.created" content="2025-04-01">
@@ -66,8 +66,8 @@
                     <img class="header__logo-image" src="/logos/lagomaGM.png" alt="lagoma">
                 </a>
                 <div class="brand-text">
-                    <h1>Links de Programas</h1>
-                    <span>"PC y Android"</span>
+                    <h1>Herramientas<br>y<br>Programas </h1>
+                    <center><span>"PC y Android"</span></center>
                 </div>
                 <span id="datetime" style="display:none;"></span>
                 <div class="nav-group">
@@ -124,8 +124,8 @@
                     <div class="whole-search-bar">
                         <input type="search" id="barra-busqueda" placeholder="¿Que estás buscando? :3"
                             style="background-color: rgb(72, 72, 72);; border-radius: 10px; margin-left: 10px; width: 230px;">
-                        <img src="/logos/searchcat.png" alt="Buscar" class="img-buscar"
-                            style="width: 30px; height: 30px; cursor: grab;">
+                        <a onclick="window.open('https://www.google.com/search?q=' + document.getElementById('barra-busqueda').value)"><img title="Buscar en Google" src="/logos/searchcat.png" alt="Buscar" class="img-buscar"
+                            style="width: 30px; height: 30px; cursor: grab;"></a>
                     </div>
                     <!--   BARRA DE BÚSQUEDA -->
                 </select>
@@ -427,141 +427,159 @@
 
         <section id="blenderDLSS" class="view" style="display: none;">
             <h2>Blender con DLSS</h2>
-
-
+        
+        
             <center> <iframe style="max-width:90%;" width="560" height="280"
                     src="https://www.youtube.com/embed/iBiSKfjTNDY?si=zpXeKgJNICD88kLB" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </center>
-
-<h2><a target="_blank" href="https://projects.blender.org/blender/blender/pulls/153077">Fork de Blender con DLSS creado por Patrick Mours </a></h2>
-
-
-
-
-                
-
-                <p style="font-size: 1.5rem; font-style: normal; text-align: justify;"><br>Aqui encontraras los pasos
-                    para crear tu
-                    propia versión de Blender con DLSS en Windows.
-                    <br>Recuerda que este proceso puede ser un poco técnico, pero con paciencia y siguiendo los pasos
-                    correctamente,
-                    podrás disfrutar de una experiencia de renderizado mejorada en Blender. No se puede colocar un
-                    enlace directo a
-                    la descarga de esta versión personalizada de Blender debido a las políticas de distribución, pero te
-                    guiaré a
-                    través del proceso para que puedas crearla tú mismo.
-                </p>
-
-                <h2 style="font-size: 2rem; font-style: normal; text-align: center;">Pasos para crear tu propia versión
-                    de Blender
-                    con DLSS:</h2>
-                <p style="font-size: 1.5rem; font-style: normal; text-align: justify;"><br>1. Requisitos previos:
-                    <br>- Asegúrate de tener una tarjeta gráfica compatible con DLSS (NVIDIA RTX de la serie 20 o
-                    superior).
-                    <br>- Instala los controladores más recientes para tu tarjeta gráfica, checa que tengas los Drivers de NVIDIA 590+.
-                    <br>- Debes tener cuenta de NVIDIA Developer para acceder a los recursos necesarios para compilar
-                    Blender con
-                    DLSS.
-                    <br>- Descarga <a target=_blank href="https://developer.nvidia.com/designworks/optix/download">OptiX
-                        SDK</a>
-                    desde el sitio web de NVIDIA y asegúrate de tenerlo instalado en tu sistema.
-                    <br>- También deberas descargar el <a target="_blank" href="https://github.com/NVIDIA/DLSS">SDK de
-                        NVIDIA
-                        DLSS</a> desde el repositorio de GItHub de NVIDIA(Toda la carpeta del repositorio es necesaria,
-                    no solo el
-                    contenido de la carpeta "sdk").
-                    <center>
-                        <div class="projectDLSS">
-                            <a target="_blank" href="https://github.com/NVIDIA/DLSS/archive/refs/heads/main.zip"><img
-                                    title="Descarga directa" style="width: 100%;cursor:grab;" src="/imgDLSS/carpetaZipDLSS.jpg"
-                                    alt="Desccarga el ZIP completo del repositorio de DLSS"></a>
-                        </div>
-                    </center>
-                    <br>- Descarga <a target="_blank" href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Cuda Toolkit</a> de NVIDIA 
-                    <br>- Descarga e instala CMake para configurar el entorno de compilación.
-                    (https://cmake.org/download/)
-                    <br>- Descarga e instala Visual Studio (recomendada la versión 2019 o superior) con las herramientas
-                    de
-                    desarrollo de C++.
-                    <br>- Descarga e instala Git para clonar el repositorio de Blender.
-                    <br>- Asegúrate de tener suficiente espacio en disco y una conexión a Internet estable para descargar los
-                    recursos necesarios y compilar Blender.
-
-
-
-
-
-                    <br><br>2. Clonar el repositorio de Blender:
-                    <br>- Abre una terminal o línea de comandos y ejecuta el siguiente comando para clonar el repositorio de Blender:
-                    
-
-
-<!-- Bloque de código con botón copiar -->
- <!-- Incluye Prism -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
-
-
-
-<div class="code-container">
-  <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
-  <pre><code class="language-shell-session">
-git clone https://projects.blender.org/pmoursnv/blender.git
-cd blender
-git checkout dlss-pr
-  </code></pre>
-</div>
-<div class="code-container">
-  <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
-  <pre><code class="language-shell-session">
-git checkout dlss-pr
-  </code></pre>
-</div>
-
-
-
-
-
-
-                    <br>- Navega al directorio del repositorio clonado: <br><code>cd blender</code>
-                    <br><br>3. Configurar el entorno de compilación:
-                    <br>- Crea un directorio de compilación dentro del directorio del repositorio de Blender: <br><code>mkdir build</code>
-                    <br>- Navega al directorio de compilación: <br><code>cd build</code>
-<center>
-                        <div class="projectDLSS">
-                            <img
-                                    title="dlss-pr" style="width: 100%;cursor:grab;" src="/imgDLSS/gitcheckoutdlss-pr.jpg"
-                                    alt="debe estar en la rama dlss-pr para compilar Blender con DLSS">
-                        </div>
-                    </center>
-                    <br>- Ejecuta CMake para configurar el entorno de compilación, asegurándote de especificar las rutas correctas para el SDK de OptiX y el SDK de DLSS:
-                    <br><code>cmake .. -G "Visual Studio 16 2019" -DCMAKE_BUILD_TYPE=Release -DWITH_CUDA=ON -DWITH_OPTIX=ON -DWITH_DLSS=ON -DOPTIX_SDK_ROOT="ruta/a/OptiX_SDK" -DDLSS_SDK_ROOT="ruta/a/DLSS_SDK"</code>
-                    <br>- Reemplaza "ruta/a/OptiX_SDK" y "ruta/a/DLSS_SDK" con las rutas reales donde instalaste los SDK de OptiX y DLSS en tu sistema.
-                    <br><br>4. Compilar Blender:
-                    <br>- Una vez que CMake haya configurado el entorno de compilación correctamente, abre el archivo de solución de Visual Studio generado (blender.sln) y selecciona la configuración "Release".
-                    <br>- Compila el proyecto seleccionando "Build Solution" en Visual Studio. Esto puede tardar un tiempo dependiendo de tu hardware.
-                    <br><br>5. Ejecutar Blender con DLSS:
-                    <br>- Una vez que la compilación haya finalizado, navega al directorio de salida donde se encuentra el ejecutable de Blender (generalmente en build/bin/Release) y ejecuta Blender.
-                    <br>- Para habilitar DLSS en Blender, ve a las preferencias de renderizado y selecciona "NVIDIA DLSS" como el motor de renderizado. Asegúrate de que tu escena esté configurada para usar la GPU y que DLSS esté habilitado en las opciones de renderizado.
-                    <br><br>¡Y eso es todo! Ahora deberías tener tu propia versión personalizada de Blender con soporte para DLSS. Disfruta de un renderizado más rápido y de una calidad visual mejorada en tus proyectos de Blender. Recuerda que este proceso puede ser un poco técnico, así que no dudes en buscar ayuda en la comunidad de Blender o en los foros de NVIDIA si encuentras algún problema durante la compilación o el uso de Blender con DLSS.</p>
-
-                    <h2>Fuentes</h2>
-                    <ul style="font-size: 1.5rem; font-style: normal; text-align: justify;">
-                        <li><a target="_blank" href="https://www.youtube.com/watch?v=iBiSKfjTNDY">Video de YouTube
-                                sobre Blender con DLSS</a></li>
-                        <li><a target="_blank" href="https://developer.nvidia.com/designworks/optix/download">OptiX SDK
-                                de NVIDIA</a></li>
-                        <li><a target="_blank" href="https://developer.nvidia.com/dlss">SDK de NVIDIA DLSS</a></li>
-                        <li><a target="_blank" href="https://git.blender.org/blender.git">Repositorio de Blender en Git</a></li>
-                        <li><a target="_blank" href="https://cmake.org/download/">CMake</a></li>
-                        <li><a target="_blank" href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a></li>
-                        <li><a target="_blank" href="https://git-scm.com/downloads">Git</a></li>
-                        <li><a target="_blank" href="https://learn.microsoft.com/es-es/visualstudio/ide/walkthrough-building-an-application?view=visualstudio">Tutorial: Compilación de una aplicación</a></li>
-                    </ul>
+            </center>
+        
+            <h2><a target="_blank" href="https://projects.blender.org/blender/blender/pulls/153077">Fork de Blender con DLSS
+                    creado por Patrick Mours </a></h2>
+        
+        
+        
+        
+        
+        
+            <p style="font-size: 1.5rem; font-style: normal; text-align: justify;"><br>Aqui encontraras los pasos
+                para crear tu
+                propia versión de Blender con DLSS en Windows.
+                <br>Recuerda que este proceso puede ser un poco técnico, pero con paciencia y siguiendo los pasos
+                correctamente,
+                podrás disfrutar de una experiencia de renderizado mejorada en Blender. No se puede colocar un
+                enlace directo a
+                la descarga de esta versión personalizada de Blender debido a las políticas de distribución, pero te
+                guiaré a
+                través del proceso para que puedas crearla tú mismo.
+            </p>
+        
+            <h2 style="font-size: 2rem; font-style: normal; text-align: center;">Pasos para crear tu propia versión
+                de Blender
+                con DLSS:</h2>
+            <p style="font-size: 1.5rem; font-style: normal; text-align: justify;"><br>1. Requisitos previos:
+                <br>- Asegúrate de tener una tarjeta gráfica compatible con DLSS (NVIDIA RTX de la serie 20 o
+                superior).
+                <br>- Instala los controladores más recientes para tu tarjeta gráfica, checa que tengas los Drivers de NVIDIA
+                590+.
+                <br>- Debes tener cuenta de NVIDIA Developer para acceder a los recursos necesarios para compilar
+                Blender con
+                DLSS.
+                <br>- Descarga <a target=_blank href="https://developer.nvidia.com/designworks/optix/download">OptiX
+                    SDK</a>
+                desde el sitio web de NVIDIA y asegúrate de tenerlo instalado en tu sistema.
+                <br>- También deberas descargar el <a target="_blank" href="https://github.com/NVIDIA/DLSS">SDK de
+                    NVIDIA
+                    DLSS</a> desde el repositorio de GItHub de NVIDIA(Toda la carpeta del repositorio es necesaria,
+                no solo el
+                contenido de la carpeta "sdk").
+                <center>
+                    <div class="projectDLSS">
+                        <a target="_blank" href="https://github.com/NVIDIA/DLSS/archive/refs/heads/main.zip"><img
+                                title="Descarga directa" style="width: 100%;cursor:grab;" src="/imgDLSS/carpetaZipDLSS.jpg"
+                                alt="Desccarga el ZIP completo del repositorio de DLSS"></a>
+                    </div>
+                </center>
+                <br>- Descarga <a target="_blank"
+                    href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Cuda Toolkit</a> de
+                NVIDIA
+                <br>- Descarga e instala CMake para configurar el entorno de compilación.
+                (https://cmake.org/download/)
+                <br>- Descarga e instala Visual Studio (recomendada la versión 2019 o superior) con las herramientas
+                de
+                desarrollo de C++.
+                <br>- Descarga e instala Git para clonar el repositorio de Blender.
+                <br>- Asegúrate de tener suficiente espacio en disco y una conexión a Internet estable para descargar los
+                recursos necesarios y compilar Blender.
+        
+        
+        
+        
+        
+                <br><br>2. Clonar el repositorio de Blender:
+                <br>- Abre una terminal o línea de comandos y ejecuta el siguiente comando para clonar el repositorio de
+                Blender:
+        
+        
+        
+                <!-- Bloque de código con botón copiar -->
+                <!-- Incluye Prism -->
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+                    rel="stylesheet" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+        
+        
+        
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+                <pre><code class="language-shell-session">
+        git clone https://projects.blender.org/pmoursnv/blender.git
+        cd blender
+        git checkout dlss-pr
+          </code></pre>
+            </div>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+                <pre><code class="language-shell-session">
+        git checkout dlss-pr
+          </code></pre>
+            </div>
+        
+        
+        
+        
+        
+        
+            <br>- Navega al directorio del repositorio clonado: <br><code>cd blender</code>
+            <br><br>3. Configurar el entorno de compilación:
+            <br>- Crea un directorio de compilación dentro del directorio del repositorio de Blender:
+            <br><code>mkdir build</code>
+            <br>- Navega al directorio de compilación: <br><code>cd build</code>
+            <center>
+                <div class="projectDLSS">
+                    <img title="dlss-pr" style="width: 100%;cursor:grab;" src="/imgDLSS/gitcheckoutdlss-pr.jpg"
+                        alt="debe estar en la rama dlss-pr para compilar Blender con DLSS">
+                </div>
+            </center>
+            <br>- Ejecuta CMake para configurar el entorno de compilación, asegurándote de especificar las rutas correctas para
+            el SDK de OptiX y el SDK de DLSS:
+            <br><code>cmake .. -G "Visual Studio 16 2019" -DCMAKE_BUILD_TYPE=Release -DWITH_CUDA=ON -DWITH_OPTIX=ON -DWITH_DLSS=ON -DOPTIX_SDK_ROOT="ruta/a/OptiX_SDK" -DDLSS_SDK_ROOT="ruta/a/DLSS_SDK"</code>
+            <br>- Reemplaza "ruta/a/OptiX_SDK" y "ruta/a/DLSS_SDK" con las rutas reales donde instalaste los SDK de OptiX y DLSS
+            en tu sistema.
+            <br><br>4. Compilar Blender:
+            <br>- Una vez que CMake haya configurado el entorno de compilación correctamente, abre el archivo de solución de
+            Visual Studio generado (blender.sln) y selecciona la configuración "Release".
+            <br>- Compila el proyecto seleccionando "Build Solution" en Visual Studio. Esto puede tardar un tiempo dependiendo
+            de tu hardware.
+            <br><br>5. Ejecutar Blender con DLSS:
+            <br>- Una vez que la compilación haya finalizado, navega al directorio de salida donde se encuentra el ejecutable de
+            Blender (generalmente en build/bin/Release) y ejecuta Blender.
+            <br>- Para habilitar DLSS en Blender, ve a las preferencias de renderizado y selecciona "NVIDIA DLSS" como el motor
+            de renderizado. Asegúrate de que tu escena esté configurada para usar la GPU y que DLSS esté habilitado en las
+            opciones de renderizado.
+            <br><br>¡Y eso es todo! Ahora deberías tener tu propia versión personalizada de Blender con soporte para DLSS.
+            Disfruta de un renderizado más rápido y de una calidad visual mejorada en tus proyectos de Blender. Recuerda que
+            este proceso puede ser un poco técnico, así que no dudes en buscar ayuda en la comunidad de Blender o en los foros
+            de NVIDIA si encuentras algún problema durante la compilación o el uso de Blender con DLSS.</p>
+        
+            <h2>Fuentes</h2>
+            <ul style="font-size: 1.5rem; font-style: normal; text-align: justify;">
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=iBiSKfjTNDY">Video de YouTube
+                        sobre Blender con DLSS</a></li>
+                <li><a target="_blank" href="https://developer.nvidia.com/designworks/optix/download">OptiX SDK
+                        de NVIDIA</a></li>
+                <li><a target="_blank" href="https://developer.nvidia.com/dlss">SDK de NVIDIA DLSS</a></li>
+                <li><a target="_blank" href="https://git.blender.org/blender.git">Repositorio de Blender en Git</a></li>
+                <li><a target="_blank" href="https://cmake.org/download/">CMake</a></li>
+                <li><a target="_blank" href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a></li>
+                <li><a target="_blank" href="https://git-scm.com/downloads">Git</a></li>
+                <li><a target="_blank"
+                        href="https://learn.microsoft.com/es-es/visualstudio/ide/walkthrough-building-an-application?view=visualstudio">Tutorial:
+                        Compilación de una aplicación</a></li>
+            </ul>
         </section>
 
 

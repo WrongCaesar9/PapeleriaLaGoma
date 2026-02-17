@@ -102,7 +102,7 @@ function mostrarProductos() {
     productosNombre.innerHTML = producto.nombre;
     productosDiv.appendChild(productosNombre);
 
-    const productosEnlace = document.createElement("p");
+    const productosEnlace = document.createElement("h3");
     const enlaceProducto = document.createElement("a");
     enlaceProducto.href = producto.enlace;
     enlaceProducto.target = "__blank";
@@ -110,7 +110,7 @@ function mostrarProductos() {
     productosEnlace.appendChild(enlaceProducto);
     productosDiv.appendChild(productosEnlace);
 
-    const productosModel = document.createElement("div");
+    const productosModel = document.createElement("p");
     productosModel.innerHTML = producto.modelo;
     productosDiv.appendChild(productosModel);
 

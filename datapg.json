@@ -663,7 +663,19 @@
             "nombre": "RIFE Video Frame Interpolation<br>Ayuda a aumentar los FPS de un video por medio de interpolación de frames<br><a  target=_blank href=https://www.youtube.com/watch?v=gf_on-dbwyU>Video de instlación</a>",
             "img": "impg/rifeframe.png",
             "enlace": "https://github.com/hzwer/ECCV2022-RIFE?tab=readme-ov-file",
-            "modelo": "Otros"
+            "modelo": "Herramientas"
+        },
+        {
+            "nombre": "Wix Toolset<br>Software para crear instaladores de Windows",
+            "img": "impg/wixtoolset.png",
+            "enlace": "https://www.firegiant.com/wixtoolset/",
+            "modelo": "Herramientas"
+        },        
+        {
+            "nombre": "Figma<br>Herramienta de diseño de interfaces y prototipado de diseño UX/UI",
+            "img": "impg/figma.png",
+            "enlace": "https://www.figma.com/",
+            "modelo": "Herramientas"
         },
         
                 
@@ -1707,7 +1719,7 @@
         {
             "nombre": "Cuevana 3",
             "img": "impg/cuevana.png",
-            "enlace": "https://cuevana.pro/peliculas",
+            "enlace": "https://cue.cuevana3.nu/",
             "modelo": "Otros"
         },
         {

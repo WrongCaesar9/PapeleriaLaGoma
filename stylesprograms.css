@@ -1,6 +1,6 @@
 Calcula la altura exacta que necesita compensación 
 #productos {
-  padding-top: 1rem;
+  padding-top: 130px;
 
 }
 
@@ -9,7 +9,7 @@ Calcula la altura exacta que necesita compensación
 }
 
 #sugerencia {
-  padding-top: 14rem;
+  padding-top: 100px;
 }
 
 #addons {
@@ -17,20 +17,33 @@ Calcula la altura exacta que necesita compensación
 }
 
 #blenderDLSS {
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 
-  /*En esta seccion se agrego la imagen de fondo*/
+  /*En esta seccion se agrego la imagen de fondo
+    background-color: rgba(81, 81, 81, 0.6);*/
   background-image: url(/impg/bggames.png);
   background-size: 20%;
-  background-color: rgba(81, 81, 81, 0.6);
+  background-color: rgb(162, 163, 175);
   background-repeat: repeat;
+}
+
+body a {
+  color: #112a7d;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+body a:hover {
+  color: #903bd5;
+  text-decoration:wavy underline;
+  transition: color 0.3s ease;
 }
 
 main {
@@ -78,11 +91,12 @@ header {
     flex: 0 0 auto; /* No se encoge */
 }
 .header__logo-image {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 8px;
     object-fit: cover;
     border: 2px solid #333;
+    margin-left: 20px;
 }
 .brand-text h1 {
     font-family: 'Times New Roman', serif; /* Tu fuente original */
@@ -412,7 +426,19 @@ footer {
   object-fit: fill;
 }
 
+.productos a {
+  font-size: 0.8rem;
+  color: #021395;
+  transition: 0.5s;
+}
 
+.productos a:hover {
+  color: #449502;
+  padding: 1px 5px;
+  border-radius: 10px;
+  background-color: cornsilk;
+  transition: 0.5s;
+}
 
 .paginacion-estilos {
   display: flex;
@@ -930,7 +956,7 @@ nav {
   }
 
   #productos {
-    padding-top: 7%;
+    padding-top: 130px;
 
   }
   #addons {
@@ -980,7 +1006,7 @@ nav {
     font-size: 0.8rem;
   }
   #productos {
-    padding-top: 13rem;
+    padding-top: 130px;
   }
 #sugerencia {
   padding-top: 16rem;
@@ -1054,10 +1080,10 @@ nav {
   }
 
   #productos {
- padding-top: 10%;
+ padding-top: 130px;
   }
 #sugerencia {
-  padding-top: 16rem;
+  padding-top: 250px;
 }
   #addons {
     padding-top: 18rem;

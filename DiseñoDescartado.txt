@@ -1,0 +1,559 @@
+<body fetchpriority="high">
+
+  <div style="z-index: 1;" class="sidebar">
+    <!-- Botón de menú hamburguesa -->
+    <div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger-icon">
+        <div id="menu-toggle" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+    </div>
+    <button onclick="window.open('https:\/\/lagoma.netlify.app/')">
+      <h1 style="text-transform:none">WrongCaesar9<br>Link diseño anterior<br>¿Errores? 2 para llevar xd</h1>
+    </button>
+    <h1>"PC y Android"</h1>
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+      <span style="color: #ffffff" class="stickerTit1">&nbsp;&nbsp;Diseño de pagina en testeo&nbsp;</span>
+    </marquee>
+    <!-- Filtro por precio -->
+    <select visibility: hidden id="filtro-precio" style="height: 0px;width: 0px;">
+      <option value="0">NA</option>
+    </select>
+    <nav>
+      <a onclick="navegar('productos')">Programas</a>
+      <a onclick="navegar('videos')">Videos</a>
+      <a onclick="navegar('addons')">Add-ons Blender</a>
+      <a onclick="navegar('blenderDLSS')">Blender con DLSS</a>
+      <a onclick="navegar('sugerencia')">¿Algo más?</a>
+      <a href="/Archivos/Ubica-T.apk" target="_blank">Ubica-T App TESChi</a>
+
+      <select id="list-ch" class="list-ch" onchange="if (this.value) window.open(this.value);">
+        <option value="">Canales de YouTube Shidos</option>
+        <option value="https://www.youtube.com/c/Programaci%C3%B3nATS">Programación ATS 🥺🕊</option>
+        <option value="https://www.youtube.com/@esperandoelrender">Esperando el Render</option>
+        <option value="https://www.youtube.com/@auraprods">AuraProds</option>
+        <option value="https://www.youtube.com/@BlenderGuru">Blender Guru</option>
+        <option value="https://www.youtube.com/@Polyfjord">Polyfjord</option>
+        <option value="https://www.youtube.com/@polygonrunway">Polygon Runway</option>
+        <option value="https://www.youtube.com/@TheDucky3D">Ducky3D</option>
+        <option value="https://www.youtube.com/@RyanKingArt">Ryan King Art</option>
+        <option value="https://www.youtube.com/@SouthernShotty">SouthernShotty</option>
+        <option value="https://www.youtube.com/@KennyPhases">KennyPhases</option>
+        <option value="https://www.youtube.com/@NIXO3D">NIXO 3D</option>
+
+        <option value="https://www.youtube.com/@CGGeek">CG Geek</option>
+        <option value="https://www.youtube.com/@Sanctus_ES">Sanctus - Blender Procedural</option>
+
+        <option value="https://www.youtube.com/@DateunVlog/videos">Date un Vlog</option>
+        <option value="https://www.youtube.com/@QuantumFracture">Quantum Fracture</option>
+        <option value="https://www.youtube.com/@HRom">HRom</option>
+        <option value="https://www.youtube.com/@eltraductor_ok">El Traductor de Ingeniería</option>
+
+        <option value="https://www.youtube.com/@pixlwaystudio">Pixlway</option>
+        <option value="https://www.youtube.com/@chuckcg">ChuckCG</option>
+        <option value="https://www.youtube.com/@WillCogley">Will Cogley</option>
+        <option value="https://www.youtube.com/@levimagony">Levi Magony</option>
+        <option value="https://www.youtube.com/@waltdisneyimagineering">Walt Disney Imagineering
+        </option>
+        <option value="https://www.youtube.com/@DisneyResearchHub">Disney Research Hub</option>
+        <option value="https://www.youtube.com/@DotCSV">DotCSV</option>
+        <option value="https://www.youtube.com/@DotCSVlab">DotCSV Lab</option>
+        <option value="https://www.youtube.com/@PIXXO3D">PIXXO 3D</option>
+        <option value="https://www.youtube.com/@indianvfxschool">Indian VFX School</option>
+        <option value="https://www.youtube.com/@MiwuScienceEspanol">Miwu Science Español</option>
+
+
+        <option value="https://www.youtube.com/@str3dloki">Alex Baeza (Str3Dlok)</option>
+        <option value="https://www.youtube.com/@MarcosAlberca">Marcos Alberca</option>
+        <option value="https://www.youtube.com/@BennyProductions">Benny Productions</option>
+        <option value="https://www.youtube.com/@PiXimperfect">PiXimperfect</option>
+        <option value="https://www.youtube.com/@marcocreativo">Marco Creativo</option>
+
+        <option value="https://www.youtube.com/@CGMatter">CG Matter</option>
+        <option value="https://www.youtube.com/@BadNormals">Bad Normals</option>
+        <option value="https://www.youtube.com/@BlenderVitals">Blender Vitals</option>
+        <option value="https://www.youtube.com/@BlenderMadeEasy">Blender Made Easy</option>
+        <option value="https://www.youtube.com/@Brackeys">Brackeys</option>
+        <option value="https://www.youtube.com/@Jayanam">Jayanam</option>
+        <option value="https://www.youtube.com/@RocoDeLaPortilla">Roco De La Portilla</option>
+        <option value="https://www.youtube.com/@MographMentor">Mograph Mentor</option>
+        <option value="https://www.youtube.com/@NineBetweens">Nine Between</option>
+        <option value="https://www.youtube.com/@Smeaf">Smeaf</option>
+        <option value="https://www.youtube.com/@JoeyCarlino/videos">Joey Carlino</option>
+        <option value="https://www.youtube.com/@CGBoost">CG Boost</option>
+        <option value="https://www.youtube.com/@FlippedNormals">Flipped Normals</option>
+        <option value="https://www.youtube.com/@nuvamotions">nuvamotions</option>
+        <option value="https://www.youtube.com/@nuvaproductions">nuvaproductions</option>
+        <option value="https://www.youtube.com/@MoveShapes/videos">Move Shapes</option>
+        <option value="https://www.youtube.com/@BenMarriott">Ben Marriott</option>
+        <option value="https://www.youtube.com/@s4vitar">s4vitar</option>
+        <option value="https://www.youtube.com/@Linkfydev">Linkfy</option>
+        <option value="https://www.youtube.com/@WebflippyOfficialPage">Photoshop Tutorials by Webflippy
+        </option>
+        <option value="https://www.youtube.com/@ReadyForMasterclass">Ready For Masterclass</option>
+        <option value="https://www.youtube.com/@TheCGEssentials">The CG Essentials</option>
+        <option value="https://www.youtube.com/@BlenderSecrets">Blender Secrets</option>
+        <option value="https://www.youtube.com/@BlenderHoy">Blender Hoy</option>
+        <option value="https://www.youtube.com/@FaztCode">Fazt Code</option>
+        <option value="https://www.youtube.com/@gzilbalodist">Gints Zilbalodis</option>
+        <option value="https://www.youtube.com/@chachomotion">chachomotion</option>
+        <option value="https://www.youtube.com/@CinecomCrew">Cinecom.net</option>
+        <option value="https://www.youtube.com/tomstantonengineering">Tom Stanton</option>
+        <option value="https://www.youtube.com/@AprendeyVerifica">Aprende y Verifica</option>
+        <option value="https://www.youtube.com/@BenEater">Ben Eater</option>
+        <option value="https://www.youtube.com/@ALEXLABS">ALEX LAB</option>
+        <option value="https://www.youtube.com/@integza">Integza</option>
+        <option value="https://www.youtube.com/@HowToMechatronics">How To Mechatronics</option>
+        <option value="https://www.youtube.com/@softwaredeingenieria/videos">Software de Ingeniería
+          CADCAM
+        </option>
+        <option value="https://www.youtube.com/@sanago">사나고 Sanago</option>
+        <option value="https://www.youtube.com/@wrongcaesar9">WrongCaesar9</option>
+      </select>
+      <div></div>
+      <p
+        style="text-align: center; font-size: 16px; color: aliceblue;  font-family: 'Courier New', Courier, monospace;">
+        Copyright © 2025 "WrongCaesar9"</p>
+      <p
+        style="text-align: center; font-size: 16px; color: aliceblue;  font-family: 'Courier New', Courier, monospace;">
+        Última actualización: 08/02/2026 at: 03:15</p>
+    </nav>
+
+  </div>
+  <div class="main-content">
+
+
+
+    <section style="z-index: -100;" class="view" id="productos">
+      
+      <h2>PROGRAMAS DISPONIBLES</h2>
+      <h2>"Ser experto en algo no es saberlo todo, sino conocer
+        perfectamente las 1000 formas en que puede salir mal." - Niels Bohr</h2>
+      <!--   BARRA DE BÚSQUEDA -->
+      <div class="whole-search-bar">
+        <input type="search" id="barra-busqueda" placeholder="¿Que estás buscando? :3"><img src="/logos/searchcat.png"
+          alt="Buscar" class="img-buscar" style="width: 35px; height: 35px; cursor: grab;">
+
+
+        <!--   BARRA DE BÚSQUEDA -->
+        <!-- Filtro por modelo -->
+        <select id="filtro-modelo" class="list-ch">
+          <option value="">Todos los programas</option>
+          <option value="Modelado y Diseño 3D">Modelado y Diseño 3D</option>
+          <option value="Edición">Edición</option>
+          <option value="VR y AR">VR y AR</option>
+          <option value="Juegos">Juegos</option>
+          <option value="Herramientas">Herramientas</option>
+          <option value="Libros">Libros</option>
+          <option value="Electrónica y Robots">Electrónica y Robots</option>
+          <option value="Android">Android</option>
+          <option value="IA">IA's</option>
+          <option value="Coding">Coding</option>
+          <option value="Metadatos">Metadatos</option>
+          <option value="GitHub">GitHub</option>
+          <option value="OS & Burners">OS & Burners</option>
+          <option value="Canales TV">Canales TV</option>
+          <option value="Desarrollo Web">Desarrollo Web</option>
+          <option value="Otros">Otros</option>
+        </select>
+      </div>
+      <!-- Contenedor de productos -->
+      <div class="productos-contenedor">
+        <div class="block" id="productos-contenedor"></div>
+      </div>
+      <div id="paginacion-contenedor" class="paginacion-estilos"></div>
+    </section>
+    <div class="videos-contenedor">
+      <section id="videos" class="view" style="display:none;">
+        <h2>Videos y listas de reproducción que se me han hecho interesantes y quisiera compartir :D</h2>
+         <select id="list-ch" class="list-ch" style="margin-top: 20px; margin-bottom: 30px;" onchange="if (this.value) window.open(this.value);">
+        <option value="">Canales de YouTube Shidos</option>
+        <option value="https://www.youtube.com/c/Programaci%C3%B3nATS">Programación ATS 🥺🕊</option>
+        <option value="https://www.youtube.com/@esperandoelrender">Esperando el Render</option>
+        <option value="https://www.youtube.com/@auraprods">AuraProds</option>
+        <option value="https://www.youtube.com/@BlenderGuru">Blender Guru</option>
+        <option value="https://www.youtube.com/@Polyfjord">Polyfjord</option>
+        <option value="https://www.youtube.com/@polygonrunway">Polygon Runway</option>
+        <option value="https://www.youtube.com/@TheDucky3D">Ducky3D</option>
+        <option value="https://www.youtube.com/@RyanKingArt">Ryan King Art</option>
+        <option value="https://www.youtube.com/@SouthernShotty">SouthernShotty</option>
+        <option value="https://www.youtube.com/@KennyPhases">KennyPhases</option>
+        <option value="https://www.youtube.com/@NIXO3D">NIXO 3D</option>
+
+        <option value="https://www.youtube.com/@CGGeek">CG Geek</option>
+        <option value="https://www.youtube.com/@Sanctus_ES">Sanctus - Blender Procedural</option>
+
+        <option value="https://www.youtube.com/@DateunVlog/videos">Date un Vlog</option>
+        <option value="https://www.youtube.com/@QuantumFracture">Quantum Fracture</option>
+        <option value="https://www.youtube.com/@HRom">HRom</option>
+        <option value="https://www.youtube.com/@eltraductor_ok">El Traductor de Ingeniería</option>
+
+        <option value="https://www.youtube.com/@pixlwaystudio">Pixlway</option>
+        <option value="https://www.youtube.com/@chuckcg">ChuckCG</option>
+        <option value="https://www.youtube.com/@WillCogley">Will Cogley</option>
+        <option value="https://www.youtube.com/@levimagony">Levi Magony</option>
+        <option value="https://www.youtube.com/@waltdisneyimagineering">Walt Disney Imagineering
+        </option>
+        <option value="https://www.youtube.com/@DisneyResearchHub">Disney Research Hub</option>
+        <option value="https://www.youtube.com/@DotCSV">DotCSV</option>
+        <option value="https://www.youtube.com/@DotCSVlab">DotCSV Lab</option>
+        <option value="https://www.youtube.com/@PIXXO3D">PIXXO 3D</option>
+        <option value="https://www.youtube.com/@indianvfxschool">Indian VFX School</option>
+        <option value="https://www.youtube.com/@MiwuScienceEspanol">Miwu Science Español</option>
+
+
+        <option value="https://www.youtube.com/@str3dloki">Alex Baeza (Str3Dlok)</option>
+        <option value="https://www.youtube.com/@MarcosAlberca">Marcos Alberca</option>
+        <option value="https://www.youtube.com/@BennyProductions">Benny Productions</option>
+        <option value="https://www.youtube.com/@PiXimperfect">PiXimperfect</option>
+        <option value="https://www.youtube.com/@marcocreativo">Marco Creativo</option>
+
+        <option value="https://www.youtube.com/@CGMatter">CG Matter</option>
+        <option value="https://www.youtube.com/@BadNormals">Bad Normals</option>
+        <option value="https://www.youtube.com/@BlenderVitals">Blender Vitals</option>
+        <option value="https://www.youtube.com/@BlenderMadeEasy">Blender Made Easy</option>
+        <option value="https://www.youtube.com/@Brackeys">Brackeys</option>
+        <option value="https://www.youtube.com/@Jayanam">Jayanam</option>
+        <option value="https://www.youtube.com/@RocoDeLaPortilla">Roco De La Portilla</option>
+        <option value="https://www.youtube.com/@MographMentor">Mograph Mentor</option>
+        <option value="https://www.youtube.com/@NineBetweens">Nine Between</option>
+        <option value="https://www.youtube.com/@Smeaf">Smeaf</option>
+        <option value="https://www.youtube.com/@JoeyCarlino/videos">Joey Carlino</option>
+        <option value="https://www.youtube.com/@CGBoost">CG Boost</option>
+        <option value="https://www.youtube.com/@FlippedNormals">Flipped Normals</option>
+        <option value="https://www.youtube.com/@nuvamotions">nuvamotions</option>
+        <option value="https://www.youtube.com/@nuvaproductions">nuvaproductions</option>
+        <option value="https://www.youtube.com/@MoveShapes/videos">Move Shapes</option>
+        <option value="https://www.youtube.com/@BenMarriott">Ben Marriott</option>
+        <option value="https://www.youtube.com/@s4vitar">s4vitar</option>
+        <option value="https://www.youtube.com/@Linkfydev">Linkfy</option>
+        <option value="https://www.youtube.com/@WebflippyOfficialPage">Photoshop Tutorials by Webflippy
+        </option>
+        <option value="https://www.youtube.com/@ReadyForMasterclass">Ready For Masterclass</option>
+        <option value="https://www.youtube.com/@TheCGEssentials">The CG Essentials</option>
+        <option value="https://www.youtube.com/@BlenderSecrets">Blender Secrets</option>
+        <option value="https://www.youtube.com/@BlenderHoy">Blender Hoy</option>
+        <option value="https://www.youtube.com/@FaztCode">Fazt Code</option>
+        <option value="https://www.youtube.com/@gzilbalodist">Gints Zilbalodis</option>
+        <option value="https://www.youtube.com/@chachomotion">chachomotion</option>
+        <option value="https://www.youtube.com/@CinecomCrew">Cinecom.net</option>
+        <option value="https://www.youtube.com/tomstantonengineering">Tom Stanton</option>
+        <option value="https://www.youtube.com/@AprendeyVerifica">Aprende y Verifica</option>
+        <option value="https://www.youtube.com/@BenEater">Ben Eater</option>
+        <option value="https://www.youtube.com/@ALEXLABS">ALEX LAB</option>
+        <option value="https://www.youtube.com/@integza">Integza</option>
+        <option value="https://www.youtube.com/@HowToMechatronics">How To Mechatronics</option>
+        <option value="https://www.youtube.com/@softwaredeingenieria/videos">Software de Ingeniería
+          CADCAM
+        </option>
+        <option value="https://www.youtube.com/@sanago">사나고 Sanago</option>
+        <option value="https://www.youtube.com/@wrongcaesar9">WrongCaesar9</option>
+      </select>
+        <cont>
+          <center>
+
+            <iframe width="auto" height="auto"
+              src="https://www.youtube.com/embed/videoseries?si=32h3pzKMPkuTAS4C&amp;list=PLpnEmaHNAN7afg-qJGee-VmQDMaXsjHkn"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+            <iframe width="auto" height="auto"
+              src="https://www.youtube.com/embed/videoseries?si=dclucXN6uVldxLgl&amp;list=PLhQ290f8z8FNFtX27YEEk-3P8CyxE9LtK"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+            <iframe width="auto" height="auto"
+              src="https://www.youtube.com/embed/videoseries?si=XlpAL5XfM7LmrL6Z&amp;list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+            <br>
+
+            <iframe width="auto" height="auto"
+              src="https://www.youtube.com/embed/videoseries?si=G_mXEsJkpNOYdyG6&amp;list=PLYNtiJhbyduYSRyW7HtK_dslMQMsmRQFJ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="auto" height="auto"
+              src="https://www.youtube.com/embed/videoseries?si=JoWxAjlIvQMEJWmw&amp;list=PLpnEmaHNAN7Zaj9S0RtYbhyNWH5T3oB8V"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/rldy9yY0yDU?si=b-viEslkiOLRJEgi"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+            <div></div>
+            <div></div>
+            <br>
+
+            <div></div>
+            <h2>Abre las listas de reproducción<br>Encontraras mas videos xd</h2>
+        </cont>
+
+        </center>
+      </section>
+
+    </div>
+
+
+
+    <section id="addons" class="view" style="display:none;">
+      <h2>Add-ons Blender</h2>
+      <p style="font-size: 1.5rem; font-style: normal; text-align: center;"><br>Toca las imágenes para ir a la
+        descarga directa o a la página oficial.
+        <br>Recuerda siempre apoyar a los desarrolladores donando o comprando sus productos si te es posible :D
+      </p>
+
+
+      <div class="addons-container">
+        <div class="addons">
+          <a href="https://www.mediafire.com/file/jshch51z1baob3o/Weather_It%2521_v1.0.zip/file"
+            target="_blank">
+            <img src="/addons/weatherit_v1.jpg" alt="weatherit_v1"></a>
+          <h3>Weather It! v1.0 </h3>
+          <p style="text-align: justify;">Crea efectos meteorológicos totalmente personalizables, desde
+            tormentas
+            intensas y lluvias torrenciales hasta
+            neblinas suaves y nevadas. ¡Incluye rebotes realistas de lluvia en las superficies y acumulación
+            de
+            nieve en el
+            suelo para una inmersión aún mayor!</p>
+
+        </div>
+
+
+        <div class="addons">
+          <iframe width="1080" style="max-width:100%;" height="auto" src="https://www.youtube.com/embed/fwzbIUffcR4"
+            frameborder="0" allowfullscreen></iframe>
+          <a href="https://studio.blender.org/projects/impulse-purchase/" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://studio.blender.org/files/cache/d1/b3/d1b3ac4e65163a9f9361bf85628c387c.jpg" alt="xd"></a>
+          <h3>Blender + OSC Live Puppeteering Demo</h3>
+          <p>Puppeteering setup</p>
+          <a style="color: #ffffff;" href="https://studio.blender.org/projects/impulse-purchase/"
+            target="_blank">Link</a>
+        </div>
+
+        <div class="addons">
+          <a href="https://github.com/efficientAF/DroneCamPlus" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://www.helicomicro.com/wp-content/uploads/2024/12/drone-fpv-blender-01.jpg" alt="xd"></a>
+          <h3>DroneCam Plus</h3>
+          <p>Proyecto Open Source de GitHub</p>
+          <p style="text-align: justify;">Te permite volar la cámara como un dron usando un gamepad Xbox360 o
+            un control remoto RC como entrada</p>
+          <a style="color: #ffffff;" href="https://globglob.gumroad.com/l/dronecam-blender-addon" target="_blank">Addon
+            original de pago</a>
+        </div>
+
+        <div class="addons">
+          <iframe width="1080" style="max-width:100%;" height="auto"
+            src="https://www.youtube.com/embed/NMh_PPwCABc?si=Es5PetOxSACxM-6C" frameborder="0"
+            allowfullscreen></iframe>
+          <h3>blendixserial Addon</h3>
+          <a href="https://electronicstree.com/blendixserial-addon/" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://electronicstree.com/wp-content/uploads/2023/12/blendixserial_addon-1024x127.png.webp"
+              alt="xd"></a>
+          <h3>blendixserial Arduino Library</h3>
+          <a href="Arduino Library for blendixserial Addon" target="_blank"><img width="1080" style="max-width:100%;"
+              height="auto" src="https://electronicstree.com/wp-content/uploads/2023/12/blendixserial-1024x127.png.webp"
+              alt="xd"></a>
+          <p style="text-align: justify;">Controla dispositivos electrónicos desde Arduino a Blender y
+            viceversa a través de comunicación serial</p>
+          <p style="text-align: justify;">La neta esta bien pasado de verga, puedes hacer un shingo de cosas
+            xd</p>
+        </div>
+
+        <div class="addons">
+          <iframe width="1080" style="max-width:100%;" height="auto"
+            src="https://www.youtube.com/embed/yeJxMaNQAzg?si=l18LUPrhs3VKTnRB" frameborder="0"
+            allowfullscreen></iframe>
+          <h3>Blender servo animation Add-on</h3>
+          <a href="https://github.com/timhendriks93/blender-servo-animation" target="_blank">
+            <img src="/addons/blender_servo_animation.png" alt="weatherit_v1"></a>
+          <p style="text-align: justify;">Export your Blender animation to servo position values. They can be
+            used with an Arduino compatible micro controller to move PWM-driven servos according to your
+            animation.</p>
+          <p style="text-align: justify;">Animate your robot or animatronic project and take advantage of
+            Blender's animation tools!</p>
+          <a style="color: #ffffff;" href="https://github.com/timhendriks93/blender-servo-animation-arduino/tree/main"
+            target="_blank">Libreria para Arduino<br>blender-servo-animation-arduino</a>
+        </div>
+
+        <div class="addons">
+          <video width="1080" style="max-width:100%;" controls>
+            <source
+              src="https://extensions.blender.org/media/videos/87/87f783070e4a1ed3c8adaae561b15f7b7f9f54168d46b9c5a60433e1ae40661a.mp4"
+              type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video></video>
+          <a href="https://extensions.blender.org/add-ons/node-to-python/" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://raw.githubusercontent.com/BrendanParmer/NodeToPython/main/docs/img/logo.png" alt="xd"></a>
+          <h3>Node To Python</h3>
+          <p style="text-align: justify;">¡Un complemento de Blender para crear scripts y complementos! Este
+            complemento tomará sus nodos de geometría, materiales y nodos de composición y los convertirá en
+            código Python legible</p>
+          <a style="color: #ffffff;" href="https://github.com/BrendanParmer/NodeToPython" target="_blank">Link
+            Repo GitHub</a>
+        </div>
+
+        <div class="addons">
+          <a href="https://github.com/carson-katri/geometry-script?tab=readme-ov-file" target="_blank"><img width="1080"
+              style="max-width:100%; z-index: -2;" height="auto"
+              src="https://raw.githubusercontent.com/carson-katri/geometry-script/main/book/src/images/wordmark.png"
+              alt="xd"></a>
+          <h3>Geometry Script</h3>
+          <p style="text-align: justify;">Geometry Script es una API de Python robusta pero fácil de usar para
+            crear geometry nodes con código</p>
+        </div>
+
+        <div class="addons">
+          <iframe width="1080" style="max-width:100%;" height="auto"
+            src="https://www.youtube.com/embed/7FBVukiQNbQ?si=184ud1qlT7XPVf_4" frameborder="0"
+            allowfullscreen></iframe>
+          <a href="https://extensions.blender.org/add-ons/easyweight/" target="_blank"><img width="1080"
+              style="max-width:100%;" height="auto"
+              src="https://extensions.blender.org/media/thumbnails/30/30bff3624dfa1167fa4897afede7a694ab733874bff35fc4729bb63cc44241a6_1920x1080.webp"
+              alt="xd"></a>
+          <h3>EasyWeight</h3>
+          <p>Potencia el flujo de tra</p>
+        </div>
+
+        <div class="addons">
+          <a href="https://www.blenderkit.com/get-blenderkit/" target="_blank"><img width="1080"
+              style="max-width:100%; z-index: -2;" height="auto"
+              src="https://assets.superhivemarket.com/store/productimage/715331/image/eb2209db0387eb7beba0650ef63c1d78.png"
+              alt="xd"></a>
+          <h3>BlenderKit</h3>
+          <p style="text-align: justify;">BlenderKit es una plataforma de activos 3D integrada en Blender que
+            ofrece una amplia biblioteca de modelos, materiales y pinceles para mejorar tu flujo de trabajo
+            creativo.</p>
+        </div>
+
+
+
+      </div>
+    </section>
+
+<section id="blenderDLSS" class="view" style="display: none;">
+  <h2>Blender con DLSS</h2>
+      
+   <div class="addons">
+          <a href="https://instagram.fmex26-1.fna.fbcdn.net/v/t39.30808-6/630957928_1438055611033660_7817615182902486166_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzgyODUxOTA3NTk0NjQ2NzE0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE1MzZ4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=7skcws76JQ0Q7kNvwGn_6gp&_nc_oc=AdnLsIyIKlRiTXNWFrSiqsiJI-26dWZwRxYMgUqGqtuNaZrGgJq8l55r3JY6ffSmTDzoR2hA0OqUn2ruX8XyHwHd&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmex26-1.fna&_nc_gid=ksU7BS9mBf4h9MpleMwg5w&oh=00_AfufnOEe7fTSb0YsoOlbFDQpzxFJw-dYnOBqEZOKEvuCzQ&oe=69973E64" target="_blank">
+            <img src="https://instagram.fmex26-1.fna.fbcdn.net/v/t39.30808-6/630957928_1438055611033660_7817615182902486166_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzgyODUxOTA3NTk0NjQ2NzE0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE1MzZ4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=7skcws76JQ0Q7kNvwGn_6gp&_nc_oc=AdnLsIyIKlRiTXNWFrSiqsiJI-26dWZwRxYMgUqGqtuNaZrGgJq8l55r3JY6ffSmTDzoR2hA0OqUn2ruX8XyHwHd&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmex26-1.fna&_nc_gid=ksU7BS9mBf4h9MpleMwg5w&oh=00_AfufnOEe7fTSb0YsoOlbFDQpzxFJw-dYnOBqEZOKEvuCzQ&oe=69973E64" alt="A1"></a>
+        </div>
+      
+      <p style="font-size: 1.5rem; font-style: normal; text-align: justify;"><br>Aqui encontraras los pasos para crear tu propia versión de Blender con DLSS, el cual es un renderizador de inteligencia artificial que acelera el renderizado en tiempo real y mejora la calidad visual en escenas complejas. Este proyecto es ideal para aquellos que desean aprovechar al máximo su hardware y experimentar con las últimas tecnologías en gráficos por computadora.
+        <br>Recuerda que este proceso puede ser un poco técnico, pero con paciencia y siguiendo los pasos correctamente, podrás disfrutar de una experiencia de renderizado mejorada en Blender. No se puede colocar un enlace directo a la descarga de esta versión personalizada de Blender debido a las políticas de distribución, pero te guiaré a través del proceso para que puedas crearla tú mismo. !Vamos a ello!
+      </p>
+</section>
+
+
+
+
+
+
+
+    <section id="sugerencia" class="view" style="display:none;">
+      <!--
+      <iframe width="1000" height="315" 
+  src="https://lagoma.netlify.app" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+-->
+
+      <h2>¿Buscas otra cosa?</h2>
+      <form id="formulario" class="formulario">
+        <h4>Mandame WaZza :D</h4>
+        <div class="box-input">
+          <input class="escnamew" name="nombre" id="nombre" type="text" required=""
+            style="height: 20px;text-align:center justify;width: 95%;" placeholder="Escribe tu nombre">
+        </div>
+        <div class="box-input">
+          <textarea id="pedidof" name="pedidof" required="" cols="30" rows="4" style="margin-top: 1rem; resize: none;
+                    background-color: transparent; border-color: lightgreen; border-radius: 10px; border-style: dashed;
+                    border-width: 2px; padding: 12px;" data-min-length="2"
+            placeholder="¿Que deseas colocar? :D"></textarea>
+        </div>
+        <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+      </form>
+      <script type="text/javascript">
+
+
+
+
+        $(".box-input input").on("focus", function () {
+          $(this).addClass("focus");
+        });
+
+        $(".box-input input").on("blur", function () {
+          if ($(this).val() == "") {
+            $(this).removeClass("focus");
+          }
+        });
+
+      </script>
+    </section>
+
+    <script>
+      const toggleMenu = document.getElementById('menu-toggle');
+      const sideNav = document.querySelector('.sidenav');
+
+      toggleMenu.addEventListener('click', function () {
+        sideNav.classList.toggle('active');
+      });
+    </script>
+    <footer>
+
+      <a id="whatsapp" title="WhatsApp Principal"><img class="btn-whatsapp"
+          src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp"
+          onclick="window.location.href='https://wa.me/525515833826'"></a>
+      <a id="instagram" title="Instagram wrongcaesar9.0"><img style="margin-left: 60px;" class="btn-instagram"
+          src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
+          width="64" height="64" alt="Instagram"
+          onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'"></a>
+      <p>Copyright © 2026 "La Goma"</p>
+      <p style="font-size: 0.8rem;">Última actualización: 23/12/2025 at: 04:55</p>
+      <script async="async" type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=650476d13b8450001ac45ec7&amp;product=inline-share-buttons&amp;source=platform"></script>
+    </footer>
+  </div>
+  <div class="go-top-container">
+    <div class="go-top-button">
+      <a id="go-top-button" title="Dar Salto"></a>
+    </div>
+  </div>
+
+  <script src="/programsjs.js"></script>
+</body>
+
+<!--Barra de iconos compartir End
+<div>
+  <div class="sharethis-inline-share-buttons st-center st-lang-es st-has-labels  st-inline-share-buttons" id="st-5">
+    <div class="st-total"></div>
+    <span class="st-label"></span>
+    <span class="st-shares">
+      Veces compartido
+  </div>
+</div>
+-->
