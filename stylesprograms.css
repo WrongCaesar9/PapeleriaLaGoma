@@ -1,4 +1,4 @@
-Calcula la altura exacta que necesita compensación 
+/*Calcula la altura exacta que necesita compensación 
 #productos {
   padding-top: 130px;
 
@@ -13,13 +13,13 @@ Calcula la altura exacta que necesita compensación
 }
 
 #addons {
-  padding-top: 18rem;
+  padding-top: 130px;
 }
 
 #blenderDLSS {
   padding-top: 130px;
 }
-
+*/
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -42,7 +42,7 @@ body a {
 
 body a:hover {
   color: #903bd5;
-  text-decoration:wavy underline;
+  text-decoration: wavy underline;
   transition: color 0.3s ease;
 }
 
@@ -74,115 +74,131 @@ main {
 */
 
 header {
-    
-    position: fixed;
-    width: 100%;
-    top: 0;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
 
 }
+
 /* 1. IDENTIDAD (Logo y Texto) */
 .header-brand {
-  background-color: #2b2b2b; /* Tu color oscuro base */
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex: 0 0 auto; /* No se encoge */
+  background-color: #2b2b2b;
+  /* Tu color oscuro base */
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+  /* No se encoge */
 }
+
 .header__logo-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    object-fit: cover;
-    border: 2px solid #333;
-    margin-left: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #333;
+  margin-left: 20px;
 }
+
 .brand-text h1 {
-    font-family: 'Times New Roman', serif; /* Tu fuente original */
-    font-size: 14px;
-    color: white;
-    margin: 0;
-    line-height: 1;
+  font-family: 'Times New Roman', serif;
+  /* Tu fuente original */
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  line-height: 1;
 }
 
 .brand-text span {
-    font-size: 0.6rem;
-    color: #afddff; /* Acento azul */
-    font-family: Arial, sans-serif;
-    letter-spacing: 1px;
+  font-size: 0.6rem;
+  color: #afddff;
+  /* Acento azul */
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 
 
 /* 2. BARRA DE BÚSQUEDA (Estilo Wide) */
 .header-search {
-    flex: 1 1 300px; /* Crece, pero mínimo 300px antes de bajar */
-    display: flex;
-    justify-content: center;
+  flex: 1 1 300px;
+  /* Crece, pero mínimo 300px antes de bajar */
+  display: flex;
+  justify-content: center;
 }
 
 .search-box-container {
-    display: flex;
-    width: 100%;
-    max-width: 300px;
-    background-color: #4d4d4d;
-    border-radius: 25px;
-    padding: 4px 10px;
-    border: 1px solid #444;
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  background-color: #4d4d4d;
+  border-radius: 25px;
+  padding: 4px 10px;
+  border: 1px solid #444;
 }
 
 #barra-busqueda {
-    flex-grow: 1;
-    background: transparent;
-    border: none;
-    color: white;
-    padding: 8px;
-    outline: none;
-    font-size: 1rem;
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 8px;
+  margin: 15px 5px 10px 10px;
+  outline: none;
+  font-size: 1rem;
 }
 
 /* 3. CONTROLES Y NAVEGACIÓN */
 
 
-.nav-group, .filter-group {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+.nav-group {
+  margin: -35px 5px 10px 5px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 /* Estilo de Botones tipo "Thingiverse" */
-.thingi-btn, .thingi-select {
-    background-color: #3a3a43;
-    color: #ffffff;
-    border: 2px solid #444;
-    padding: 4px 15px;
-    margin: 0;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    transition: all 1s;
-    width:max-content;
+.thingi-btn,
+.thingi-select {
+  background-color: #3a3a43;
+  color: #ffffff;
+  border: 2px solid #444;
+  padding: 4px 15px;
+  margin: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 1s;
+  width: max-content;
 }
 
-.thingi-btn:hover, .thingi-select:hover {
-    background-color: #9797f4;
-    border-color: #daf747;
-    color: white;
+.thingi-btn:hover,
+.thingi-select:hover {
+  background-color: #9797f4;
+  border-color: #daf747;
+  color: white;
 }
 
 /* Botón "Primario" (Para resaltar Programas) */
 .thingi-btn.primary {
-    background-color: #248bfb;
-    border-color: #248bfb;
-    color: white;
-    font-weight: bold;
+  background-color: #248bfb;
+  border-color: #248bfb;
+  color: white;
+  font-weight: bold;
 }
 
 .thingi-btn.primary:hover {
-    background-color: #1a6fc4;
+  background-color: #1a6fc4;
 }
 
 /* Estilo específico para los selects */
@@ -211,6 +227,7 @@ header {
     color: white;
     margin: 0;
     line-height: 1;
+    display: none;
   }
 
   /* 1. IDENTIDAD (Logo y Texto) */
@@ -230,11 +247,12 @@ header {
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
     font-weight: 800;
+        display: none;
   }
 
   .header__logo-image {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 2px;
     object-fit: cover;
 
@@ -252,55 +270,58 @@ header {
 
 
   /* Estilo de Botones tipo "Thingiverse" */
-.thingi-btn, .thingi-select {
+  .thingi-btn,
+  .thingi-select {
     background-color: #3a3a43;
     color: #ffffff;
     border: 1px solid #444;
     padding: 1px 8px;
-    margin: 0;
+    margin: 10px 10px 0px 0px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 12px;
     text-decoration: none;
     transition: all 1s;
-    width:max-content;
-}
+    width: max-content;
+  }
 
-.thingi-btn:hover, .thingi-select:hover {
+  .thingi-btn:hover,
+  .thingi-select:hover {
     background-color: #9797f4;
     border-color: #daf747;
     color: white;
-}
+  }
 
-/* Botón "Primario" (Para resaltar Programas) */
-.thingi-btn.primary {
+  /* Botón "Primario" (Para resaltar Programas) */
+  .thingi-btn.primary {
     background-color: #248bfb;
     border-color: #248bfb;
     color: white;
     font-weight: bold;
-}
+  }
 
-.thingi-btn.primary:hover {
+  .thingi-btn.primary:hover {
     background-color: #1a6fc4;
-}
+  }
 
-/* Estilo específico para los selects */
-.thingi-select {
-  max-width: 190px;
-  /* Evita que el select se haga gigante */
-  margin: 0;
-  padding: 0;
-  outline: none;
-}
+  /* Estilo específico para los selects */
+  .thingi-select {
+    max-width: 190px;
+    /* Evita que el select se haga gigante */
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
 }
 
 
 
 .marquee-wrapper {
-    background-color: #1a1919; /* Azul estilo Thingiverse */
-    color: white;
-    font-size: 16px;
-    padding: 0 0;
+  background-color: #1a1919;
+  /* Azul estilo Thingiverse */
+  color: white;
+  font-size: 16px;
+  padding: 0 0;
 }
 
 
@@ -336,11 +357,12 @@ section cont {
 
 
 
-.whole-search-bar {  
+.whole-search-bar {
   background-color: #393939;
   display: inline-flex;
   margin: 10px auto;
   width: 100%;
+  
 }
 
 .whole-search-bar input {
@@ -350,14 +372,16 @@ section cont {
   border: 2px solid #444;
   padding: 4px 3px 4px 2px;
   /*xUp yLarge yHihg */
-  
+
   padding: 8px;
 
 }
+
 input[type="search"]::placeholder {
-  color: #ededed; /* Un azul vibrante */
+  color: #ededed;
+  /* Un azul vibrante */
   font-size: 16px;
-  font-family: 'Arial Narrow Bold', sans-serif ;
+  font-family: 'Arial Narrow Bold', sans-serif;
   font-style: italic;
   width: 105%;
 }
@@ -828,12 +852,14 @@ h1 {
   width: 70%;
   max-width: 700px;
 }
+
 .projectDLSS img,
 .projectDLSS video {
   width: 100%;
   border-bottom: 4px solid #646363;
   border-radius: 8px;
 }
+
 .projectDLSS p {
   color: #f7f4f4;
   font-size: 16px;
@@ -842,14 +868,51 @@ h1 {
   text-align: justify;
 }
 
+.projectDLSS ul {
+  color: #f7f4f4;
+  font-size: 16px;
+  margin-bottom: 10px;
+  align-items: stretch;
+  text-align: justify;
+}
 
 .code-container {
   position: relative;
-background-color: #333;
+  background-color: #333;
   padding: 1px 5px;
   border-radius: 8px;
   font-family: monospace;
 }
+
+.dlssinfo {
+  background-color: #6b6b6b7b;
+  padding: 5px 2px 5px 5px;
+  border-radius: 8px;
+  font-family: monospace;
+  width: 95%;
+  margin: 5px auto;
+
+}
+
+aside {
+  color: #f7f4f4;
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.comentariosDlSS {
+  background-color: rgba(44, 44, 44, 0.937);
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 90%;
+  margin: -5px auto;
+}
+
 .copy-btn {
   position: absolute;
   top: 23px;
@@ -861,9 +924,11 @@ background-color: #333;
   border-radius: 4px;
   cursor: pointer;
 }
+
 .copy-btn:hover {
   background: #005f99;
 }
+
 pre {
   margin: 0;
   overflow-x: auto;
@@ -925,8 +990,8 @@ pre {
 
 
 /* 1. Agregamos suavidad al movimiento */
-header, .header-brand
-nav {
+header,
+.header-brand nav {
   transition: top 0.4s ease-in-out;
   /* Esto hace que suba y baje suavecito */
   z-index: 1000;
@@ -959,16 +1024,21 @@ nav {
     padding-top: 130px;
 
   }
+
   #addons {
-    padding-top: 6rem;
+    padding-top: 130px;
   }
 
   #videos {
-    padding-top: 6rem;
+    padding-top: 130px;
   }
 
-  #sugerencia{
-    padding-top: 14rem;
+  #sugerencia {
+    padding-top: 130px;
+  }
+
+  #blenderDLSS {
+    padding-top: 130px;
   }
 
 
@@ -992,12 +1062,13 @@ nav {
     height: 3.0rem;
 
   }
-.datetime {
-  position: relative;
-  top: -140px;
-  left: 90px;
-  display: inline-block;
-}
+
+  .datetime {
+    position: relative;
+    top: -140px;
+    left: 90px;
+    display: inline-block;
+  }
 }
 
 @media (max-width: 1370px) {
@@ -1005,18 +1076,26 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     font-size: 0.8rem;
   }
+
   #productos {
     padding-top: 130px;
+
   }
-#sugerencia {
-  padding-top: 16rem;
-}
+
   #addons {
-    padding-top: 18rem;
+    padding-top: 130px;
   }
 
   #videos {
-    padding-top: 16rem;
+    padding-top: 130px;
+  }
+
+  #sugerencia {
+    padding-top: 130px;
+  }
+
+  #blenderDLSS {
+    padding-top: 130px;
   }
 
   nav li {
@@ -1047,30 +1126,32 @@ nav {
   }
 
   nav {
-  background-color: rgb(19, 19, 20);
-  text-align: center;
-  width: 100%;
-  height: 85px;
-  font-size: 1.2rem;
-}
+    background-color: rgb(19, 19, 20);
+    text-align: center;
+    width: 100%;
+    height: 85px;
+    font-size: 1.2rem;
+  }
 
-.whole-search-bar {
-  position: relative;
-  top: -150px;
-  left: 570px;
-  display: inline-block;
-  scale: 100%;
-}
-.escondido {
-  top: -250px !important;
-  /* Los mandamos muy arriba, fuera de la pantalla */
-}
-.datetime {
-  position: relative;
-  top: -140px;
-  left: 25px;
-  display: inline-block;
-}
+  .whole-search-bar {
+    position: relative;
+    top: -150px;
+    left: 570px;
+    display: inline-block;
+    scale: 100%;
+  }
+
+  .escondido {
+    top: -250px !important;
+    /* Los mandamos muy arriba, fuera de la pantalla */
+  }
+
+  .datetime {
+    position: relative;
+    top: -140px;
+    left: 25px;
+    display: inline-block;
+  }
 }
 
 @media (max-width: 1230px) {
@@ -1080,17 +1161,24 @@ nav {
   }
 
   #productos {
- padding-top: 130px;
+    padding-top: 130px;
+
   }
-#sugerencia {
-  padding-top: 250px;
-}
+
   #addons {
-    padding-top: 18rem;
+    padding-top: 130px;
   }
 
   #videos {
-    padding-top: 16rem;
+    padding-top: 130px;
+  }
+
+  #sugerencia {
+    padding-top: 130px;
+  }
+
+  #blenderDLSS {
+    padding-top: 130px;
   }
 
   nav li {
@@ -1122,30 +1210,32 @@ nav {
 
 
   nav {
-  background-color: rgb(19, 19, 20);
-  text-align: center;
-  width: 100%;
-  height: 125px;
-  font-size: 1.2rem;
-}
+    background-color: rgb(19, 19, 20);
+    text-align: center;
+    width: 100%;
+    height: 125px;
+    font-size: 1.2rem;
+  }
 
-.whole-search-bar {
-  position: relative;
-  top: -150px;
-  left: -350px;
-  display: inline-block;
-  scale: 100%;
-}
-.escondido {
-  top: -250px !important;
-  /* Los mandamos muy arriba, fuera de la pantalla */
-}
-.datetime {
-  position: relative;
-  top: -140px;
-  left: -100px;
-  display: inline-block;
-}
+  .whole-search-bar {
+    position: relative;
+    top: -150px;
+    left: -350px;
+    display: inline-block;
+    scale: 100%;
+  }
+
+  .escondido {
+    top: -250px !important;
+    /* Los mandamos muy arriba, fuera de la pantalla */
+  }
+
+  .datetime {
+    position: relative;
+    top: -140px;
+    left: -100px;
+    display: inline-block;
+  }
 }
 
 /* Para pantallas pequeñas (teléfonos) */
@@ -1156,11 +1246,8 @@ nav {
   }
 
   #productos {
-padding-top: 130px;
-  }
+    padding-top: 140px;
 
-  #sugerencia {
-    padding-top: 130px;
   }
 
   #addons {
@@ -1168,6 +1255,10 @@ padding-top: 130px;
   }
 
   #videos {
+    padding-top: 130px;
+  }
+
+  #sugerencia {
     padding-top: 130px;
   }
 
@@ -1182,7 +1273,7 @@ padding-top: 130px;
   }
 
   .nav-group {
-    display:table-cell;
+    display: table-cell;
     inline-size: 1px;
     flex-wrap: wrap;
     justify-content: end;
@@ -1214,16 +1305,18 @@ padding-top: 130px;
     position: relative;
     display: inline-block;
   }
+
   .projectDLSS {
-  background-color: #808080;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  padding: 4px 4px;
-  width: 100%;
+    background-color: #808080;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 4px 4px;
+    width: 100%;
+  }
 }
-}
+
 /* Opcional: aún más chico (teléfonos muy pequeños)
 @media (max-width: 480px) {
   #productos-contenedor {
@@ -1296,8 +1389,3 @@ padding-top: 130px;
     transform: translatex(0px);
   }
 }
-
-
-
-
-
