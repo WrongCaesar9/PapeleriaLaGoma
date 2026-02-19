@@ -72,11 +72,11 @@
                 </div>
                 <span id="datetime" style="display:none;"></span>
                 <div class="nav-group">
-                    <button class="thingi-btn primary" onclick="navegar('productos')">Programas</button>
+                    <button class="thingi-btn" onclick="navegar('productos')">Programas</button>
                     <button class="thingi-btn" onclick="navegar('videos')">Videos</button>
                     <button class="thingi-btn" onclick="navegar('addons')">Add-ons</button>
                     <button class="thingi-btn" onclick="navegar('blenderDLSS')">Blender con DLSS</button>
-                    <button class="thingi-btn" onclick="navegar('sugerencia')">¿Algo más?</button>
+                    <button class="thingi-btn" onclick="navegar('sugerencia')" style="display: none;">¿Algo más?</button>
                     <a class="thingi-btn link-btn" href="/Archivos/Ubica-T.apk">App TESChi</a>
                 </div>
 
@@ -427,28 +427,34 @@
 
 
         <section id="blenderDLSS" class="view" style="display: none;">
+        
+            <div class="dlssinfo">
+            
             <h2>Blender con DLSS</h2>
         
         
             <center> <iframe style="max-width:90%;" width="560" height="280"
-                    src="https://www.youtube.com/embed/iBiSKfjTNDY?si=zpXeKgJNICD88kLB" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                src="https://www.youtube.com/embed/iBiSKfjTNDY?si=zpXeKgJNICD88kLB" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </center>
         
             <h2><a target="_blank" href="https://projects.blender.org/blender/blender/pulls/153077">Fork de Blender con DLSS
-                    creado por Patrick Mours </a></h2>
+                creado por Patrick Mours </a></h2>
         
         
         
         
         
         
-            <p style="font-size: 1.5rem; font-style: normal; text-align: justify;"><br>Aqui encontraras los pasos
+            <p style="font-size: 18px; font-style: normal; text-align: justify;">
+            </p>
+            <p>Aqui encontraras los pasos
                 para crear tu
                 propia versión de Blender con DLSS en Windows.
-                <br>Recuerda que este proceso puede ser un poco técnico, pero con paciencia y siguiendo los pasos
+            </p>
+            <p>Recuerda que este proceso puede ser un poco técnico, pero con paciencia y siguiendo los pasos
                 correctamente,
                 podrás disfrutar de una experiencia de renderizado mejorada en Blender. No se puede colocar un
                 enlace directo a
@@ -457,76 +463,83 @@
                 través del proceso para que puedas crearla tú mismo.
             </p>
         
-            <h2 style="font-size: 2rem; font-style: normal; text-align: center;">Pasos para crear tu propia versión
+            <h2 style="font-size: 18px; font-style: normal; text-align: center;">Pasos para crear tu propia versión
                 de Blender
                 con DLSS:</h2>
-            <p style="font-size: 1.5rem; font-style: normal; text-align: justify;"><br>1. Requisitos previos:
-                <br>- Asegúrate de tener una tarjeta gráfica compatible con DLSS (NVIDIA RTX de la serie 20 o
-                superior).
-                <br>- Instala los controladores más recientes para tu tarjeta gráfica, checa que tengas los Drivers de NVIDIA
-                590+.
-                <br>- Debes tener cuenta de NVIDIA Developer para acceder a los recursos necesarios para compilar
-                Blender con
-                DLSS.
-                <br>- Descarga <a target=_blank href="https://developer.nvidia.com/designworks/optix/download">OptiX
-                    SDK</a>
-                desde el sitio web de NVIDIA y asegúrate de tenerlo instalado en tu sistema.
-                <br>- También deberas descargar el <a target="_blank" href="https://github.com/NVIDIA/DLSS">SDK de
-                    NVIDIA
-                    DLSS</a> desde el repositorio de GItHub de NVIDIA(Toda la carpeta del repositorio es necesaria,
-                no solo el
-                contenido de la carpeta "sdk").
-                <center>
-                    <div class="projectDLSS">
-                        <a target="_blank" href="https://github.com/NVIDIA/DLSS/archive/refs/heads/main.zip"><img
-                                title="Descarga directa" style="width: 100%;cursor:grab;" src="/imgDLSS/carpetaZipDLSS.jpg"
-                                alt="Desccarga el ZIP completo del repositorio de DLSS"></a>
-                    </div>
-                </center>
-                <br>- Descarga <a target="_blank"
-                    href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Cuda Toolkit</a> de
+            <p style="font-size: 18px; font-style: normal; text-align: justify;">1. Requisitos previos:</p>
+            <p>- Asegúrate de tener una tarjeta gráfica compatible con DLSS (NVIDIA RTX de la serie 20 o
+                superior).</p>
+            <p>- Instala los controladores más recientes para tu tarjeta gráfica, checa que tengas los Drivers de
                 NVIDIA
-                <br>- Descarga e instala CMake para configurar el entorno de compilación.
-                (https://cmake.org/download/)
-                <br>- Descarga e instala Visual Studio (recomendada la versión 2019 o superior) con las herramientas
+                590+.</p>
+            <p>- Debes tener cuenta de NVIDIA Developer para acceder a los recursos necesarios para compilar
+                Blender con
+                DLSS.</p>
+            <p>- Descarga <a target=_blank href="https://developer.nvidia.com/designworks/optix/download">OptiX
+                SDK</a>
+                desde el sitio web de NVIDIA y asegúrate de tenerlo instalado en tu sistema.</p>
+            <p>- También deberas descargar el <a target="_blank" href="https://github.com/NVIDIA/DLSS">SDK de
+                NVIDIA
+                DLSS</a> desde el repositorio de GItHub de NVIDIA(Toda la carpeta del repositorio es necesaria,
+                no solo el
+                contenido de la carpeta "sdk").</p>
+            <center>
+                <figure>
+                <div class="projectDLSS">
+                    <a target="_blank" href="https://github.com/NVIDIA/DLSS/archive/refs/heads/main.zip"><img
+                        title="Descarga directa" style="width: 100%;cursor:grab;"
+                        src="/imgDLSS/carpetaZipDLSS.jpg"
+                        alt="Desccarga el ZIP completo del repositorio de DLSS"></a>
+                </div>
+                <figcaption>Fig.1 - Carpeta ZIP del repositorio de DLSS</figcaption>
+                </figure>
+            </center>
+            <p>- Descarga <a target="_blank"
+                href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Cuda Toolkit</a>
                 de
-                desarrollo de C++.
-                <br>- Descarga e instala Git para clonar el repositorio de Blender.
-                <br>- Asegúrate de tener suficiente espacio en disco y una conexión a Internet estable para descargar los
-                recursos necesarios y compilar Blender.
+                NVIDIA</p>
+            <p>- Descarga e instala CMake para configurar el entorno de compilación.
+                (https://cmake.org/download/)
+                https://visualstudio.microsoft.com/es/vs/community/</p>
+            <p>- Descarga e instala <a target="_blank"
+                href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Visual Studio
+                Community 2022</a> con la opción de "Desarrollo para el escritorio con C++"</p>
+            <p>- Descarga e instala Git para clonar el repositorio de Blender.</p>
+            <p>- Asegúrate de tener suficiente espacio en disco y una conexión a Internet estable para descargar los
+                recursos necesarios y compilar Blender.</p>
         
         
         
         
         
-                <br><br>2. Clonar el repositorio de Blender:
-                <br>- Abre una terminal o línea de comandos y ejecuta el siguiente comando para clonar el repositorio de
-                Blender:
+            <p>2. Clonar el repositorio de Blender:</p>
+            <p>- Abre una terminal o línea de comandos y ejecuta el siguiente comando para clonar el repositorio de
+                Blender:</p>
         
         
         
-                <!-- Bloque de código con botón copiar -->
-                <!-- Incluye Prism -->
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
-                    rel="stylesheet" />
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+            <!-- Bloque de código con botón copiar -->
+            <!-- Incluye Prism -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+                rel="stylesheet" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
         
         
         
             <div class="code-container">
                 <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
                 <pre><code class="language-shell-session">
-        git clone https://projects.blender.org/pmoursnv/blender.git
-        cd blender
-        git checkout dlss-pr
-          </code></pre>
+            git clone https://projects.blender.org/pmoursnv/blender.git
+            cd blender
+            git checkout dlss-pr
+              </code></pre>
             </div>
             <div class="code-container">
                 <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
                 <pre><code class="language-shell-session">
-        git checkout dlss-pr
-          </code></pre>
+            git checkout dlss-pr
+              </code></pre>
             </div>
         
         
@@ -534,55 +547,107 @@
         
         
         
-            <br>- Navega al directorio del repositorio clonado: <br><code>cd blender</code>
-            <br><br>3. Configurar el entorno de compilación:
-            <br>- Crea un directorio de compilación dentro del directorio del repositorio de Blender:
-            <br><code>mkdir build</code>
-            <br>- Navega al directorio de compilación: <br><code>cd build</code>
+            <p>- Navega al directorio del repositorio clonado: </p>
+            <p><code>cd blender</code></p>
+            <p>3. Configurar el entorno de compilación:</p>
+            <p>- Crea un directorio de compilación dentro del directorio del repositorio de Blender:</p>
+            <p><code>mkdir build</code></p>
+            <p>- Navega al directorio de compilación: </p>
+            <p><code>cd build</code></p>
             <center>
                 <div class="projectDLSS">
-                    <img title="dlss-pr" style="width: 100%;cursor:grab;" src="/imgDLSS/gitcheckoutdlss-pr.jpg"
-                        alt="debe estar en la rama dlss-pr para compilar Blender con DLSS">
+                <img title="dlss-pr" style="width: 100%;cursor:grab;" src="/imgDLSS/gitcheckoutdlss-pr.jpg"
+                    alt="debe estar en la rama dlss-pr para compilar Blender con DLSS">
                 </div>
             </center>
-            <br>- Ejecuta CMake para configurar el entorno de compilación, asegurándote de especificar las rutas correctas para
-            el SDK de OptiX y el SDK de DLSS:
-            <br><code>cmake .. -G "Visual Studio 16 2019" -DCMAKE_BUILD_TYPE=Release -DWITH_CUDA=ON -DWITH_OPTIX=ON -DWITH_DLSS=ON -DOPTIX_SDK_ROOT="ruta/a/OptiX_SDK" -DDLSS_SDK_ROOT="ruta/a/DLSS_SDK"</code>
-            <br>- Reemplaza "ruta/a/OptiX_SDK" y "ruta/a/DLSS_SDK" con las rutas reales donde instalaste los SDK de OptiX y DLSS
-            en tu sistema.
-            <br><br>4. Compilar Blender:
-            <br>- Una vez que CMake haya configurado el entorno de compilación correctamente, abre el archivo de solución de
-            Visual Studio generado (blender.sln) y selecciona la configuración "Release".
-            <br>- Compila el proyecto seleccionando "Build Solution" en Visual Studio. Esto puede tardar un tiempo dependiendo
-            de tu hardware.
-            <br><br>5. Ejecutar Blender con DLSS:
-            <br>- Una vez que la compilación haya finalizado, navega al directorio de salida donde se encuentra el ejecutable de
-            Blender (generalmente en build/bin/Release) y ejecuta Blender.
-            <br>- Para habilitar DLSS en Blender, ve a las preferencias de renderizado y selecciona "NVIDIA DLSS" como el motor
+            <p>- Ejecuta CMake para configurar el entorno de compilación, asegurándote de especificar las rutas correctas
+            para
+            el SDK de OptiX y el SDK de DLSS:</p>
+            <p><code>cmake .. -G "Visual Studio 16 2019" -DCMAKE_BUILD_TYPE=Release -DWITH_CUDA=ON -DWITH_OPTIX=ON -DWITH_DLSS=ON -DOPTIX_SDK_ROOT="ruta/a/OptiX_SDK" -DDLSS_SDK_ROOT="ruta/a/DLSS_SDK"</code></p>
+            <p>- Reemplaza "ruta/a/OptiX_SDK" y "ruta/a/DLSS_SDK" con las rutas reales donde instalaste los SDK de OptiX y
+            DLSS
+            en tu sistema.</p>
+            <p>4. Compilar Blender:</p>
+            <p>- Una vez que CMake haya configurado el entorno de compilación correctamente, abre el archivo de solución de
+            Visual Studio generado (blender.sln) y selecciona la configuración "Release".</p>
+            <p>- Compila el proyecto seleccionando "Build Solution" en Visual Studio. Esto puede tardar un tiempo
+            dependiendo
+            de tu hardware.</p>
+            <p>5. Ejecutar Blender con DLSS:</p>
+            <p>- Una vez que la compilación haya finalizado, navega al directorio de salida donde se encuentra el
+            ejecutable de
+            Blender (generalmente en build/bin/Release) y ejecuta Blender.</p>
+            <p>- Para habilitar DLSS en Blender, ve a las preferencias de renderizado y selecciona "NVIDIA DLSS" como el
+            motor
             de renderizado. Asegúrate de que tu escena esté configurada para usar la GPU y que DLSS esté habilitado en las
-            opciones de renderizado.
-            <br><br>¡Y eso es todo! Ahora deberías tener tu propia versión personalizada de Blender con soporte para DLSS.
+            opciones de renderizado.</p>
+            <p>¡Y eso es todo! Ahora deberías tener tu propia versión personalizada de Blender con soporte para DLSS.
             Disfruta de un renderizado más rápido y de una calidad visual mejorada en tus proyectos de Blender. Recuerda que
-            este proceso puede ser un poco técnico, así que no dudes en buscar ayuda en la comunidad de Blender o en los foros
+            este proceso puede ser un poco técnico, así que no dudes en buscar ayuda en la comunidad de Blender o en los
+            foros
             de NVIDIA si encuentras algún problema durante la compilación o el uso de Blender con DLSS.</p>
         
             <h2>Fuentes</h2>
-            <ul style="font-size: 1.5rem; font-style: normal; text-align: justify;">
+            <ul>
                 <li><a target="_blank" href="https://www.youtube.com/watch?v=iBiSKfjTNDY">Video de YouTube
-                        sobre Blender con DLSS</a></li>
+                    sobre Blender con DLSS</a></li>
                 <li><a target="_blank" href="https://developer.nvidia.com/designworks/optix/download">OptiX SDK
-                        de NVIDIA</a></li>
+                    de NVIDIA</a></li>
                 <li><a target="_blank" href="https://developer.nvidia.com/dlss">SDK de NVIDIA DLSS</a></li>
                 <li><a target="_blank" href="https://git.blender.org/blender.git">Repositorio de Blender en Git</a></li>
                 <li><a target="_blank" href="https://cmake.org/download/">CMake</a></li>
-                <li><a target="_blank" href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a></li>
+                <li><a target="_blank" href="https://visualstudio.microsoft.com/es/vs/community/">Visual Studio Community
+                    2022</a></li>
                 <li><a target="_blank" href="https://git-scm.com/downloads">Git</a></li>
                 <li><a target="_blank"
-                        href="https://learn.microsoft.com/es-es/visualstudio/ide/walkthrough-building-an-application?view=visualstudio">Tutorial:
-                        Compilación de una aplicación</a></li>
+                    href="https://learn.microsoft.com/es-es/visualstudio/ide/walkthrough-building-an-application?view=visualstudio">Tutorial:
+                    Compilación de una aplicación</a></li>
             </ul>
-        </section>
+        
+          
+        
+            </div>
+            <div class="comentariosDlSS">
+            <h2 style="font-size: 18px; font-style: normal; text-align: center; color: #ffffff;">Comentarios</h2>
+            <script src="https://giscus.app/client.js" data-repo="WrongCaesar9/PapeleriaLaGoma" data-repo-id="R_kgDOJRUChA"
+                data-category="General" data-category-id="DIC_kwDOJRUChM4C2mw_" data-mapping="title" data-strict="0"
+                data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="gray"
+                data-lang="es" crossorigin="anonymous" async>
+                </script>
+            </div>
 
+
+
+            <!--
+            <aside>
+                    <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions,
+                        international pavilions, award-winning fireworks and seasonal special events.</p>
+                </aside>
+        
+                <details>
+                    <summary>Crear tu formulario</summary>
+                    <p>Para crear tu formulario, sigue estos pasos:</p>
+                    <ol>
+                        <li>Abre tu editor de texto o IDE favorito.</li>
+                        <li>Escribe el código HTML para tu formulario. Aquí tienes un ejemplo básico:</li>
+                        <pre><code class="language-html">
+        <form action="/submit" method="post">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name"><br><br>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email"><br><br>
+          
+          <input type="submit" value="Enviar">
+        </form>
+            </code></pre>
+                        <li>Personaliza el formulario según tus necesidades, agregando más campos o estilos CSS si lo deseas.
+                        </li>
+                        <li>Guarda el archivo con una extensión .html, por ejemplo, "formulario.html".</li>
+                        <li>Abre el archivo en tu navegador para ver tu formulario en acción.</li>
+                </details>
+                -->
+        </section>
 
         <section id="sugerencia" class="view" style="display:none;">
             <h2>¿Buscas otra cosa?</h2>
@@ -622,13 +687,14 @@
         </div>
         <footer>
 
-            <a id="whatsapp" title="WhatsApp Principal"><img class="btn-whatsapp"
+            <!--<a id="whatsapp" title="WhatsApp Principal"><img class="btn-whatsapp"
                     src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp"
-                    onclick="window.location.href='https://wa.me/525515833826'"></a>
+                    onclick="window.location.href='https://wa.me/525515833826'"></a> -->
             <a id="instagram" title="Instagram wrongcaesar9.0"><img style="margin-left: 60px;" class="btn-instagram"
                     src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
                     width="64" height="64" alt="Instagram"
                     onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'"></a>
+                    
             <p>Copyright © 2026 "La Goma"</p>
             <p style="font-size: 0.8rem;">Última actualización: 08/02/2026 at: 03:15</p>
             <!--Barra de iconos compartir Init
