@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes">
 
-    <!-- Fecha de publicación/creación (Dublin Core) -->
+    <!-- Fecha de publicación/creación (Dublin Core) <a  target=_blank href=https://lagoma.netlify.app/portfolio>Mi portfolio</a>-->
     <meta name="dcterms.created" content="2025-04-01">
     <!-- Fecha de última modificación (Open Graph, útil para redes sociales y SEO) -->
     <meta property="article:modified_time" content="2026-02-08T03:15:00Z">
@@ -454,17 +454,15 @@
                 </p>
                 <p>Recuerda que este proceso puede ser un poco técnico, pero con paciencia y siguiendo los pasos
                     correctamente,
-                    podrás disfrutar de una experiencia de renderizado mejorada en Blender. No se puede colocar un
+                    podrás disfrutar de una experiencia de renderizado dentro del render viewport mejorada en Blender. No se puede colocar un
                     <a title="😉" target="_blank" href="https://drive.usercontent.google.com/download?id=1O2-mnDmSZ5XABrSRJutFuszUSczfvwMj&export=download&authuser=0&confirm=t&uuid=0a67cde4-3396-4ff6-b01a-89aa95c54274&at=APcXIO3QjYiHeENfRpVWnKsV63OB%3A1771229196724" style="color:#000000; text-decoration-line: none; cursor:-webkit-zoom-in;">enlace directo</a> (guiño guiño) para
                     la descarga de esta versión personalizada de Blender debido a las políticas de distribución, pero te
                     guiaré a
                     través del proceso para que puedas crearla tú mismo.
                 </p>
         
-                <h2 style="font-size: 18px; font-style: normal; text-align: center;">Pasos para crear tu propia versión
-                    de Blender
-                    con DLSS:</h2>
-                <p style="font-size: 18px; font-style: normal; text-align: justify;">1. Requisitos previos:</p>
+                
+                <h2 style="text-align: justify;">1. Requisitos previos:</h2>
                 <p>- Asegúrate de tener una tarjeta gráfica compatible con DLSS (NVIDIA RTX de la serie 20 o
                     superior).</p>
                 <p>- Instala los controladores más recientes para tu tarjeta gráfica, checa que tus drivers sean 590 o superior.</p>
@@ -573,6 +571,36 @@
                 <p>- Reemplaza "ruta/a/OptiX_SDK" y "ruta/a/DLSS_SDK" con las rutas reales donde instalaste los SDK de OptiX y
                     DLSS
                     en tu sistema.</p>
+                <h2>Edita las variables de entorno</h2>
+                <p>Para asegurarte de que CMake pueda encontrar los SDKs de OptiX y DLSS, necesitas editar las variables de entorno del sistema:</p>
+                
+                    <p>Establece la variable de entorno <code>OPTIX_ROOT</code> y <code>OPTIX_ROOT_DIR</code> a la ruta donde instalaste el SDK de OptiX.</p>
+                    <p>En Windows, puedes hacer esto a través del Panel de Control -> Sistema -> Configuración avanzada del sistema -> Variables de entorno. Agrega una nueva variable de entorno con el nombre <code>OPTIX_ROOT</code> y el valor que corresponda a la ruta de instalación del SDK de OptiX (por ejemplo, <code>C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.1.0</code>).</p>
+                    <p>También puedes establecer esta variable de entorno desde la línea de comandos utilizando el comando <code>setx</code>. Abre una ventana de CMD con privilegios de administrador y ejecuta el siguiente comando:</p>
+                    <p><code>setx 
+                    setx OPTIX_ROOT_DIR "C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.X.X"
+                      </code>
+                    Cambia correctamente tu version de Optix</p>
+                    <p>Y en una ventana de CMD ejecuta el siguiente comando para setear la variable de entorno: </p>
+
+<div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+                    <pre><code class="language-shell-session">
+                    setx OPTIX_ROOT_DIR "C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.1.0"
+                      </code></pre>
+                </div>
+                    <p>Establece la variable de entorno <code>DLSS_SDK_ROOT</code> a la ruta donde instalaste el SDK de DLSS.</p>
+                
+                    <p>Asegurate de que en PATH este la ruta del compilador de Visual Studio generalmente algo como:
+                        <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+                    <pre><code class="language-shell-session">
+                    C:\Program Files (x86)\MicrosoftVisualStudio\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64
+                      </code></pre>
+                </div>
+                        <p>para que CMake pueda encontrar el compilador de  C/C++ necesario para compilar Blender.</p>
+                          
+
                 <p>4. Compilar Blender:</p>
                 <p>- Una vez que CMake haya configurado el entorno de compilación correctamente, abre el archivo de solución de
                     Visual Studio generado (blender.sln) y selecciona la configuración "Release".</p>
@@ -594,9 +622,30 @@
                     este proceso puede ser un poco técnico, así que no dudes en buscar ayuda en la comunidad de Blender o en los
                     foros
                     de NVIDIA si encuentras algún problema durante la compilación o el uso de Blender con DLSS.</p>
-        
-                <h2>Fuentes</h2>
-                <ul>
+
+
+
+<details>
+    <summary>Personaliza tu splash</summary>
+    <ol>
+        <p>Si quieres personalizar el splash de tu versión personalizada de Blender, puedes seguir estos pasos:</p>
+                <p>- Navega al directorio de tu repositorio clonado de Blender y luego al directorio "release/datafiles/splash".</p>
+                <p>- Aquí encontrarás los archivos de imagen que se utilizan para el splash de Blender. Puedes reemplazar estos archivos con tus propias imágenes personalizadas. Asegúrate de mantener el mismo formato y resolución que los archivos originales para que se muestren correctamente.</p>
+                <p>- Después de reemplazar los archivos de imagen, vuelve a compilar Blender siguiendo los pasos mencionados anteriormente para que los cambios en el splash se reflejen en tu versión personalizada de Blender.</p>   
+<center>
+                    <div class="projectDLSS">
+                        <aside>Splash original</aside>
+                        <img title="Splash original" style="width: 100%;cursor:grab;" src="/imgDLSS/splashLeg.jpg"
+                            alt="debe estar en la rama dlss-pr para compilar Blender con DLSS">
+                            <aside>Splash modificado</aside>
+                        <img title="Splash modificado" style="width: 100%;cursor:grab;" src="/imgDLSS/splashMod.jpg"
+                            alt="debe estar en la rama dlss-pr para compilar Blender con DLSS">
+                    </div>
+                </center>
+</details>
+<details>
+    <summary>Fuentes</summary>
+<ul>
                     <li><a target="_blank" href="https://www.youtube.com/watch?v=iBiSKfjTNDY">Video de YouTube
                             sobre Blender con DLSS</a></li>
                     <li><a target="_blank" href="https://developer.nvidia.com/designworks/optix/download">OptiX SDK
@@ -604,7 +653,7 @@
                     <li><a target="_blank" href="https://developer.nvidia.com/dlss">SDK de NVIDIA DLSS</a></li>
                     <li><a target="_blank" href="https://git.blender.org/blender.git">Repositorio de Blender en Git</a></li>
                     <li><a target="_blank" href="https://cmake.org/download/">CMake</a></li>
-                    <li><a target="_blank" href="https://visualstudio.microsoft.com/es/vs/community/">Visual Studio Community
+                    <li><a target="_blank" href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Visual Studio Community
                             2022</a></li>
                     <li><a target="_blank" href="https://git-scm.com/downloads">Git</a></li>
                     <li><a target="_blank"
@@ -614,9 +663,12 @@
                             href="https://www.reddit.com/r/blenderhelp/comments/1qw16z5/help_with_compiling_blender_with_dlss/?share_id=E_qXF_bG9nTem0lmghbIn&tl=es-419&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1">Tutorial:
                             Reddit sobre cómo compilar Blender con DLSS</a></li>
                 </ul>
+</details>
+                
+                
         
         
-        
+        <p style="text-align: justify;">Si tienes alguna pregunta o necesitas ayuda durante el proceso de compilación, no dudes en buscar ayuda en la comunidad de Blender o en los foros de NVIDIA. ¡Buena suerte y disfruta de tu versión de Blender con DLSS!</p>
             </div>
             <div class="comentariosDlSS">
                 <h2 style="font-size: 18px; font-style: normal; text-align: center; color: #ffffff;">Comentarios</h2>
