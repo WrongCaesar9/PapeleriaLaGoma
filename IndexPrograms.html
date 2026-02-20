@@ -426,12 +426,27 @@
         </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
 <section id="blenderDLSS" class="view" style="display: none;">
 
     <div class="dlssinfo">
 
-        <h2>Blender con DLSS</h2>
+        <h2>Blender con DLSS<br>Aún se esta trabajando en esta sección y falta información</h2>
 
 
         <center> <iframe style="max-width:90%;" width="560" height="280"
@@ -441,13 +456,6 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </center>
 
-        <h2><a target="_blank" href="https://projects.blender.org/blender/blender/pulls/153077">Fork de Blender con DLSS
-                creado por Patrick Mours </a></h2>
-
-
-
-
-
 
         <p></p>
         <p>Aqui encontraras los pasos
@@ -456,17 +464,26 @@
         </p>
         <p>Recuerda que este proceso puede ser un poco técnico, pero con paciencia y siguiendo los pasos
             correctamente,
-            podrás disfrutar de una experiencia de renderizado dentro del render viewport mejorada en Blender. No se
-            puede colocar un
-            <a title="😉" target="_blank"
-                href="https://drive.usercontent.google.com/download?id=1O2-mnDmSZ5XABrSRJutFuszUSczfvwMj&export=download&authuser=0&confirm=t&uuid=0a67cde4-3396-4ff6-b01a-89aa95c54274&at=APcXIO3QjYiHeENfRpVWnKsV63OB%3A1771229196724"
-                style="color:#000000; text-decoration-line: none; cursor:-webkit-zoom-in;">enlace directo</a> (guiño
-            guiño) para
-            la descarga de esta versión personalizada de Blender debido a las políticas de distribución, pero te
-            guiaré a
-            través del proceso para que puedas crearla tú mismo.
+            podrás disfrutar de una experiencia de renderizado dentro del render viewport mejorada en Blender.
+            <br>Te dejo mi versión de Blender con DLSS por si quieres probarla sin necesidad de compilarla tú mismo,
+            aunque te recomiendo seguir los pasos para que puedas personalizarla a tu gusto y tener un mejor
+            entendimiento de cómo funciona el proceso de compilación y un poco de la integración de DLSS en Blender.
         </p>
+        <div style="font-size: 16px; font-style: italic; text-align: justify;">
+            <p><a title="Descargar" style="font-size: 16px; font-style: italic; text-align: justify;" target="_blank"
+                    href="https://www.mediafire.com/file/d6ty38s3xn6s5rq/ReleaseDLSS.rar/file">Descarga directa de mi
+                    versión de Blender con DLSS</a>
+            <p>Esta es una compilación experimental no oficial.<br>
+                Uso educativo y personal únicamente.<br>
+                No redistribuir comercialmente.<br>
+                Requiere: Windows 10/11 + GPU NVIDIA RTX<br>
 
+                Compilado por: <a target="_blank" href="https://www.instagram.com/wrongcaesar9.0/">WrongCaesar9</a><br>
+                Basado en: Blender <a target="_blank"
+                    href="https://projects.blender.org/blender/blender/pulls/153077(dlss-pr branch)">PR #153077</a></p>
+
+            </p>
+        </div>
 
 
 
@@ -529,7 +546,8 @@
                     Community 2022</a> con la opción de "Desarrollo para el escritorio con C++"</p>
             <p>- Descarga e instala <a target="_blank" href="https://git-scm.com/install/windows">Git</a> para clonar el
                 repositorio de Blender.</p>
-            <p>- Asegúrate de tener suficiente espacio en disco (unos 30GB) y una conexión a Internet estable para
+            <p>- Asegúrate de tener suficiente espacio en disco (unos 30GB aprox.) y una conexión a Internet estable
+                para
                 descargar los
                 recursos necesarios y compilar Blender.</p>
         </details>
@@ -598,7 +616,6 @@
         <details>
             <summary>3. Edita las variables de entorno</summary>
 
-            <h2>4. Edita las variables de entorno</h2>
             <p>Para asegurarte de que CMake pueda encontrar los SDKs de OptiX y DLSS, necesitas editar las variables de
                 entorno del sistema:</p>
 
@@ -614,17 +631,13 @@
                 <code>setx</code>. Abre una ventana de CMD con privilegios de administrador y ejecuta el siguiente
                 comando:
             </p>
-            <p><code>setx 
-                    setx OPTIX_ROOT_DIR "C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.X.X"
-                      </code>
-                Cambia correctamente tu version de Optix</p>
+            <p><code>setx OPTIX_ROOT_DIR "C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.X.X"</code></p>
+            <p> Cambia correctamente tu version de Optix</p>
             <p>Y en una ventana de CMD ejecuta el siguiente comando para setear la variable de entorno: </p>
-
             <div class="code-container">
                 <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
                 <pre><code class="language-shell-session">
-                    setx OPTIX_ROOT_DIR "C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.1.0"
-                      </code></pre>
+                            setx OPTIX_ROOT_DIR "C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.1.0"</code></pre>
             </div>
             <p>Establece la variable de entorno <code>DLSS_SDK_ROOT</code> a la ruta donde instalaste el SDK de DLSS.
             </p>
@@ -633,8 +646,8 @@
             <div class="code-container">
                 <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
                 <pre><code class="language-shell-session">
-                    C:\Program Files (x86)\MicrosoftVisualStudio\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64
-                      </code></pre>
+                            C:\Program Files (x86)\MicrosoftVisualStudio\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64
+                              </code></pre>
             </div>
             <p>para que CMake pueda encontrar el compilador de C/C++ necesario para compilar Blender.</p>
 
@@ -662,22 +675,53 @@
                 "build".</p>
             <p>- Abre CMake GUI</p>
             <p>- En "Where is the source code", selecciona la ruta del directorio donde clonaste el repositorio de
-                Blender (por ejemplo, C:\Users\TU_USUARIO\Documents\blenderGit\blender).</p>
+                Blender</p>
             <p>- En "Where to build the binaries", selecciona la ruta del directorio de compilación que creaste
-                anteriormente (por ejemplo, C:\Users\TU_USUARIO\Documents\blenderGit\build).</p>
+                anteriormente</p>
             <p>- Haz clic en "Configure" y selecciona el generador de Visual Studio correspondiente a tu versión de
                 Visual Studio (por ejemplo, "Visual Studio 17 2022") y la plataforma (x64).</p>
             <center>
                 <div class="projectDLSS">
-                    <img title="dlss-pr" style="width: 100%;cursor:grab;" src="/imgDLSS/gitcheckoutdlss-pr.jpg"
-                        alt="debe estar en la rama dlss-pr para compilar Blender con DLSS">
+                    <img title="Configure CMake" style="width: 100%;cursor:grab;" src="/imgDLSS/cmakeconfig.jpg"
+                        alt="Configure CMake">
                 </div>
             </center>
-            <p>- CMake comenzará a configurar el entorno de compilación. Si todo está configurado correctamente,
-                deberías ver que CMake encuentra los SDKs de OptiX y DLSS sin errores. Si hay algún error, revisa las
-                variables de entorno y asegúrate de que las rutas sean correctas.</p>
-            <p>- Después de que CMake haya configurado el entorno de compilación correctamente, haz clic en "Generate"
-                para generar los archivos de solución de Visual Studio.</p>
+            <p>- Marca la casilla "Advanced"</p>
+            <p>- CMake comenzará a configurar el entorno de compilación. Si todo está configurado correctamente, no
+                deberías ver ningún error relacionado con la detección de los SDKs de OptiX o DLSS.</p>
+            <p>- Deberas ver opciones relacionadas con DLSS en la configuración de CMake, asegúrate de habilitarlas para
+                incluir el
+                soporte de DLSS en tu compilación de Blender:</p>
+            <p>- Busca las siguientes opciones en la configuración de CMake y asegúrate de que estén habilitadas:</p>
+            <ul>
+                <li><code>WITH_CYCLES_DEVICE_CUDA ----- [✓]</code></li>
+                <li><code>WITH_CYCLES_DEVICE_OPTIX ---- [✓]</code></li>
+                <li><code>WITH_DLSS ------------------- [✓]</code></li>
+                <li><code>DLSS_SDK_ROOT --------------- [✓]</code> (o la ruta donde tengas el SDK de DLSS)</li>
+            </ul>
+            <p>- Si ves errores relacionados con la detección de los SDKs, revisa las variables de entorno y asegúrate
+                de
+                que estén configuradas correctamente.</p>
+
+            <p>- Agrega DLSS_INCLUDE_DIR</p>
+            <p>- Add entry: DLSS_INCLUDE_DIR | Type: PATH</p>
+            <p> Value: <code>C:/Users/TU_USUARIO/Downloads/DLSS-main/DLSS-main/include</code></p>
+
+            <p>- Add entry: DLSS_LIBRARY | Type: FILEPATH</p>
+            <p> Value:<code>C:/Users/TU_USUARIO/Downloads/DLSS-main/DLSS-main/lib/Windows_x86_64/x64/nvsdk_ngx_s.lib</code>
+            </p>
+
+            <p>- Agrega OPTIX_INCLUDE_DIR</p>
+            <p>- Add entry: OPTIX_INCLUDE_DIR | Type: PATH | Value:
+                <code>C:/ProgramData/NVIDIA Corporation/OptiX SDK 9.1.0/include</code></p>
+            <p>- Agrega OPTIX_LIBRARY</p>
+            <p>- Add entry: OPTIX_LIBRARY | Type: FILEPATH | Value:
+                <code>C:/ProgramData/NVIDIA Corporation/OptiX SDK 9.1.0/lib/x86_64/optix.lib</code></p>
+            <p>- Busca o agrega OPTIX_ROOT_DIR y verifica que apunte a tu instalación de OptiX:</p>
+
+            o Ejemplo: C:/ProgramData/NVIDIA Corporation/OptiX SDK 9.1.0
+
+
 
 
 
@@ -860,7 +904,6 @@
                         </details>
                         -->
 </section>
-
 
 
 
