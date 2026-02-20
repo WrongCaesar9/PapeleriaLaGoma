@@ -860,8 +860,7 @@ h1 {
   border-radius: 8px;
 }
 
-.projectDLSS ul {
-  color: #f7f4f4;
+.projectDLSS ul,li {
   font-size: 16px;
   margin-bottom: 10px;
   align-items: stretch;
@@ -870,12 +869,26 @@ h1 {
 
 .code-container {
   position: relative;
-  border-radius: 8px;
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: rgb(220, 100, 20);
+  background-color: #353535;
+  padding: 2px;
+  font-size: 18px;
 
 }
 
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+  font-size: 16px;
+}
 
 .dlssinfo {
   background-color: #6b6b6b7b;
@@ -926,10 +939,6 @@ aside {
   background: #005f99;
 }
 
-pre {
-  margin: 0;
-  overflow-x: auto;
-}
  summary{
   cursor: pointer;
   font-weight: bold;
