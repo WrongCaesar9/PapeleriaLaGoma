@@ -65,7 +65,7 @@
 
                 <marquee behavior="scroll" direction="left" scrollamount="7">
                     Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span> Si detectas un
-                    link caído, repórtamelo 🤙🏽 - Espero ir agregando más programas y páginas útiles
+                    link caído, repórtamelo 🤙🏽 - Espero ir agregando más programas y páginas útiles <a class="thingi-btn link-btn" href="/Archivos/Ubica-T.apk">App TESChi</a>
                 </marquee>
             </div>
             <div class="header-brand">
@@ -81,9 +81,9 @@
                     <button class="thingi-btn" onclick="navegar('productos')">Programas</button>
                     <button class="thingi-btn" onclick="navegar('videos')">Videos</button>
                     <button class="thingi-btn" onclick="navegar('addons')">Add-ons</button>
-                    <button class="thingi-btn" onclick="navegar('blenderDLSS')">Blender con DLSS</button>
+                    <button class="thingi-btn blenderDLSS" onclick="navegar('blenderDLSS')">Blender con DLSS</button>
                     <button class="thingi-btn" onclick="navegar('sugerencia')" style="display: none;">¿Algo más?</button>
-                    <a class="thingi-btn link-btn" href="/Archivos/Ubica-T.apk">App TESChi</a>
+                    
                 </div>
 
             </div>
@@ -110,7 +110,7 @@
     <main>
         <section style="z-index: -100;" class="view" id="productos">
             <h2>PROGRAMAS DISPONIBLES</h2>
-            <h2 style="font-size: 100%;margin-top: -1.5rem;display: none;">"Ser experto en algo no es saberlo todo, sino conocer
+            <h2 style="font-size: 100%;margin-top: -1.5rem;display: none;display: none;">"Ser experto en algo no es saberlo todo, sino conocer
                 perfectamente las 1000 formas en que puede salir mal." - Niels Bohr</h2>
             <div>
                 <!-- Filtro por modelo -->
@@ -464,13 +464,13 @@
         </p>
         <p>Recuerda que este proceso puede ser un poco técnico, pero con paciencia y siguiendo los pasos
             correctamente,
-            podrás disfrutar de una experiencia de renderizado dentro del render viewport mejorada en Blender.
+            podrás disfrutar de esta increíble función dentro de Blender.
             <br>Te dejo mi versión de Blender con DLSS por si quieres probarla sin necesidad de compilarla tú mismo,
             aunque te recomiendo seguir los pasos para que puedas personalizarla a tu gusto y tener un mejor
-            entendimiento de cómo funciona el proceso de compilación y un poco de la integración de DLSS en Blender.
+            entendimiento de cómo funciona este proceso.
         </p>
-        <div style="font-size: 16px; font-style: italic; text-align: justify;">
-            <p><a title="Descargar" style="font-size: 16px; font-style: italic; text-align: justify;" target="_blank"
+        <div>
+            <p><a title="Descargar" target="_blank"
                     href="https://www.mediafire.com/file/d6ty38s3xn6s5rq/ReleaseDLSS.rar/file">Descarga directa de mi
                     versión de Blender con DLSS</a>
             <p>Esta es una compilación experimental no oficial.<br>
@@ -479,12 +479,14 @@
                 Requiere: Windows 10/11 + GPU NVIDIA RTX<br>
 
                 Compilado por: <a target="_blank" href="https://www.instagram.com/wrongcaesar9.0/">WrongCaesar9</a><br>
-                Basado en Fork: <a target="_blank"
-                    href="https://projects.blender.org/blender/blender/pulls/153077">PR #153077</a> | Patrick Mours</p>
+                Basado en el Fork: <a target="_blank"
+                    href="https://projects.blender.org/blender/blender/pulls/153077">PR #153077</a> | Patrick Mours<br><br>
+                <a target="_blank"
+                        href="https://drive.google.com/file/d/1O2-mnDmSZ5XABrSRJutFuszUSczfvwMj/">Link de una build distinta ajena</a>
+                    </p>
 
             </p>
-            <a target="_blank"
-                        href="https://drive.google.com/file/d/1O2-mnDmSZ5XABrSRJutFuszUSczfvwMj/">Link de una build distinta ajena</a>
+            
         </div>
 
 
@@ -499,8 +501,7 @@
 
         <details>
             <summary>1. Requisitos</summary>
-            <p>- Asegúrate de tener una tarjeta gráfica compatible con DLSS (NVIDIA RTX de la serie 20 o
-                superior).</p>
+            <p>- Tarjeta gráfica de NVIDIA RTX de la serie 20 o superior.</p>
             <p>- Instala los controladores más recientes para tu tarjeta gráfica, checa que tus drivers sean 590 o
                 superior.</p>
             <center>
@@ -513,12 +514,22 @@
                         información del sistema</figcaption>
                 </figure>
             </center>
-            <p>- Debes tener cuenta de NVIDIA Developer para acceder a los recursos necesarios para compilar
-                Blender con
-                DLSS.</p>
-            <p>- Descarga <a target=_blank href="https://developer.nvidia.com/designworks/optix/download">OptiX
-                    SDK</a>
-                desde el sitio web de NVIDIA y asegúrate de tenerlo instalado en tu sistema.</p>
+            <p>Deberas descargar e instalar:</p>
+            <p>- <a target=_blank href="https://developer.nvidia.com/designworks/optix/download">OptiX
+                    SDK</a> (Debes tener cuenta de NVIDIA)</p>
+            <p>- <a target="_blank"
+                    href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Cuda
+                    Toolkit</a>
+                de
+                NVIDIA</p>
+            <p>- <a target="_blank" href="https://cmake.org/download/">CMake</a> para configurar el
+                entorno de compilación.</p>
+            <p>- <a target="_blank"
+                    href="https://visualstudio.microsoft.com/es/vs/community/">Visual
+                    Studio
+                    Community 2022</a> y dentro de las opciones de instalación marca "Desarrollo para el escritorio con C++"</p>
+            <p>- <a target="_blank" href="https://git-scm.com/install/windows">Git</a> para clonar el
+                repositorio de Blender.</p>
             <p>- También deberas descargar el <a target="_blank" href="https://github.com/NVIDIA/DLSS">SDK de
                     NVIDIA
                     DLSS</a> desde el repositorio de GItHub de NVIDIA(Toda la carpeta del repositorio es necesaria,
@@ -535,23 +546,8 @@
                     <figcaption>Carpeta ZIP del repositorio de DLSS</figcaption>
                 </figure>
             </center>
-            <p>- Descarga <a target="_blank"
-                    href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Cuda
-                    Toolkit</a>
-                de
-                NVIDIA</p>
-            <p>- Descarga e instala <a target="_blank" href="https://cmake.org/download/">CMake</a> para configurar el
-                entorno de compilación.</p>
-            <p>- Descarga e instala <a target="_blank"
-                    href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Visual
-                    Studio
-                    Community 2022</a> con la opción de "Desarrollo para el escritorio con C++"</p>
-            <p>- Descarga e instala <a target="_blank" href="https://git-scm.com/install/windows">Git</a> para clonar el
-                repositorio de Blender.</p>
-            <p>- Asegúrate de tener suficiente espacio en disco (unos 30GB aprox.) y una conexión a Internet estable
-                para
-                descargar los
-                recursos necesarios y compilar Blender.</p>
+            <p>- Asegúrate de tener suficiente espacio en disco (unos 30GB aprox.) y una conexión a internet estable
+                para descargar los recursos necesarios y compilar Blender.</p>
         </details>
 
 
@@ -586,15 +582,12 @@
                         alt="debe estar en la rama dlss-pr para compilar Blender con DLSS">
                 </div>
             </center>
-            <div class="code-container">
+            <div style="display: none;" class="code-container">
                 <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
                 <pre><code class="language-shell-session">
                     git checkout dlss-pr
                       </code></pre>
             </div>
-            <p>- Navega al directorio del repositorio clonado: </p>
-            <p><code>cd blender</code></p>
-
         </details>
 
 
@@ -756,12 +749,18 @@
 
         <details>
             <summary>5. Compilar Blender:</summary>
-            <p>- Una vez que CMake haya configurado el entorno de compilación correctamente, abre el archivo de solución
-                de
-                Visual Studio generado (blender.sln) y selecciona la configuración "Release".</p>
-            <p>- Compila el proyecto seleccionando "Build Solution" en Visual Studio. Esto puede tardar un tiempo
-                dependiendo
-                de tu hardware.</p>
+            <p>- Una vez que CMake haya configurado el entorno de compilación, dirigete a la carpeta donde se encuentre tu archivo de solución de Visual Studio (la carpeta debe contener un archivo llamado "blender.sln")</p>  
+            <p>- Y ejecuta el siguiente comando para comenzar la compilación de Blender con soporte para DLSS:</p>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+                <pre><code class="language-shell-session">
+                    cmake --build . --config Release
+                      </code></pre>
+            </div>
+            <p>Este proceso puede tardar un tiempo dependiendo de tu hardware, así que ten paciencia mientras se compila Blender</p>
+            <p>- Si la compilación se completa sin errores, deberías tener el ejecutable de Blender en la siguiente ubicación: <code>build/bin/Release</code></p>
+            <p>- Si encuentras errores durante la compilación, revisa los mensajes de error en la terminal para identificar el problema. Asegúrate de que todas las dependencias estén correctamente configuradas y que las rutas a los SDKs sean correctas.</p>
+            <p>- Puedes preguntar en la sección de comentarios si necesitas ayuda. Yo intentaré ayudarte 😸</p>
         </details>
 
 
@@ -812,16 +811,13 @@
 
         <details>
             <summary>Personaliza tu splash</summary>
-            <ol>
                 <p>Si quieres personalizar el splash de tu versión personalizada de Blender, puedes seguir estos pasos:
                 </p>
                 <p>- Navega al directorio de tu repositorio clonado de Blender y luego al directorio
                     "release/datafiles/splash".</p>
-                <p>- Aquí encontrarás los archivos de imagen que se utilizan para el splash de Blender. Puedes
-                    reemplazar estos archivos con tus propias imágenes personalizadas. Asegúrate de mantener el mismo
-                    formato y resolución que los archivos originales para que se muestren correctamente.</p>
-                <p>- Después de reemplazar los archivos de imagen, vuelve a compilar Blender siguiendo los pasos
-                    mencionados anteriormente para que los cambios en el splash se reflejen en tu versión personalizada
+                <p>- Aquí encontrarás la imagen original que se utiliza para el splash de Blender. Debes
+                    reemplazar esa imagen con la tuya personalizada, asegurándote de mantener el mismo nombre y formato del archivo original</p>
+                <p>- Por ultimo, vuelve a compilar Blender siguiendo los pasos anteriores para que los cambios en el splash se reflejen en tu versión personalizada
                     de Blender.</p>
                 <center>
                     <div class="projectDLSS">
@@ -835,8 +831,9 @@
                 </center>
         </details>
         <details>
-            <summary>Fuentes</summary>
+            <summary>Quizas te interese...</summary>
             <ul>
+                <li><a target="_blank" href="https://www.linkedin.com/pulse/navengando-por-el-terminal-git-bash-para-alarc%C3%B3n-acurero/">Guia de Git Bash</a></li>
                 <li><a target="_blank" href="https://www.youtube.com/watch?v=iBiSKfjTNDY">Video de YouTube
                         sobre Blender con DLSS</a></li>
                 <li><a target="_blank" href="https://developer.nvidia.com/designworks/optix/download">OptiX SDK
@@ -845,7 +842,7 @@
                 <li><a target="_blank" href="https://git.blender.org/blender.git">Repositorio de Blender en Git</a></li>
                 <li><a target="_blank" href="https://cmake.org/download/">CMake</a></li>
                 <li><a target="_blank"
-                        href="https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64">Visual
+                        href="https://visualstudio.microsoft.com/es/vs/community/">Visual
                         Studio Community
                         2022</a></li>
                 <li><a target="_blank" href="https://git-scm.com/downloads">Git</a></li>
@@ -965,7 +962,7 @@
                     onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'"></a>
                     
             <p>Copyright © 2026 "La Goma"</p>
-            <p style="font-size: 0.8rem;">Última actualización: 22/02/2026 at: 17:10</p>
+            <p style="font-size: 0.8rem;">Última actualización: 04/03/2026 at: 02:18</p>
             <!--Barra de iconos compartir Init
         <div>
             <div class="sharethis-inline-share-buttons st-center st-lang-es st-has-labels  st-inline-share-buttons"

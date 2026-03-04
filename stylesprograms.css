@@ -182,7 +182,10 @@ header {
   width: max-content;
 }
 
-.thingi-btn:hover,
+
+
+
+.thingi-btn:hover, .thingi-btn.link-btn:hover,
 .thingi-select:hover {
   background-color: #9797f4;
   border-color: #daf747;
@@ -199,6 +202,17 @@ header {
 
 .thingi-btn.primary:hover {
   background-color: #1a6fc4;
+}
+
+.thingi-btn.blenderDLSS {
+  background-color: #dc7e37;
+  font-weight: 600;
+}
+
+.thingi-btn.link-btn {
+  background-color: #59c946;
+  border-color: #076402;
+  color: white;
 }
 
 /* Estilo específico para los selects */
@@ -937,6 +951,18 @@ aside {
 
 .copy-btn:hover {
   background: #005f99;
+}
+
+details {
+  padding: 5px 5px 5px 10px;
+  border-radius: 8px;
+  font-family: monospace;
+  width: 95%;
+  margin: 5px auto;
+}
+
+details[open] {
+  background-color: #ffffff7b;
 }
 
  summary{
