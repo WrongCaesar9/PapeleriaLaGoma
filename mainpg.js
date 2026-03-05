@@ -221,35 +221,40 @@ document.getElementById("barra-busqueda").addEventListener("input", () => {
 
 // Función de navegación entre secciones
 function navegar(idSeccion, event) {
-    // 1. Seleccionar todos los botones del grupo
+    // 1. Quitar 'active' de todos los botones
     const botones = document.querySelectorAll('.thingi-btn');
-
-    // 2. Quitar la clase 'active' de todos los botones
     botones.forEach(btn => btn.classList.remove('active'));
 
-    // 3. Si hay evento, marcar el botón clicado como activo
+    // 2. Si hay evento, marcar el botón clicado
     if (event && event.currentTarget) {
         event.currentTarget.classList.add('active');
+    } else {
+        // Si no hay evento (ej. carga inicial con hash), buscar el botón que corresponde
+        const btnTarget = document.querySelector(`.thingi-btn[onclick*="${idSeccion}"]`);
+        if (btnTarget) btnTarget.classList.add('active');
     }
 
-    // 4. Ocultar TODAS las secciones
+    // 3. Ocultar todas las secciones
     const todasLasSecciones = document.querySelectorAll('.view');
-    todasLasSecciones.forEach(seccion => {
-        seccion.style.display = 'none';
-    });
+    todasLasSecciones.forEach(seccion => seccion.style.display = 'none');
 
-    // 5. Mostrar la sección que queremos ver
+    // 4. Mostrar la sección activa
     const seccionActiva = document.getElementById(idSeccion);
     if (seccionActiva) {
         seccionActiva.style.display = 'block';
-
-        // Scroll suave hacia la sección
         seccionActiva.scrollIntoView({ behavior: 'smooth' });
-
-        // Actualizar la URL con el hash (para compartir el link)
         history.pushState(null, null, '#' + idSeccion);
     }
 }
+
+// Al cargar la página, si hay un hash en la URL, mostrar esa sección y marcar el botón
+window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        navegar(hash);
+    }
+});
+
 
 // Al cargar la página, si hay un hash en la URL, mostrar esa sección
 window.addEventListener('DOMContentLoaded', () => {
