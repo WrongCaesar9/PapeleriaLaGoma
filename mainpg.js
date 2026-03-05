@@ -219,40 +219,46 @@ document.getElementById("barra-busqueda").addEventListener("input", () => {
 
 //Aquí termina el código de paginación
 
-// Función de navegación entre secciones que se llama SPA por sus siglas en inglés (Single Page Application) 
-function navegar(id) {
-  // 1. Seleccionar todos los botones del grupo
-  const botones = document.querySelectorAll('.thingi-btn');
+// Función de navegación entre secciones
+function navegar(idSeccion, event) {
+    // 1. Seleccionar todos los botones del grupo
+    const botones = document.querySelectorAll('.thingi-btn');
 
-  // 2. Quitar la clase 'active' de todos los botones
-  botones.forEach(btn => btn.classList.remove('active'));
+    // 2. Quitar la clase 'active' de todos los botones
+    botones.forEach(btn => btn.classList.remove('active'));
 
-  // 3. Buscar el botón que corresponde a esta sección y activarlo
-  botones.forEach(btn => {
-    if (btn.getAttribute('onclick').includes(`'${id}'`)) {
-      btn.classList.add('active');
+    // 3. Si hay evento, marcar el botón clicado como activo
+    if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active');
     }
-  });
 
-  // 4. Ocultar todas las secciones
-  document.querySelectorAll('.view').forEach(sec => sec.style.display = 'none');
+    // 4. Ocultar TODAS las secciones
+    const todasLasSecciones = document.querySelectorAll('.view');
+    todasLasSecciones.forEach(seccion => {
+        seccion.style.display = 'none';
+    });
 
-  // 5. Mostrar la sección deseada
-  const target = document.getElementById(id);
-  if (target) {
-    target.style.display = 'block';
-    target.scrollIntoView({ behavior: 'smooth' });
-  }
+    // 5. Mostrar la sección que queremos ver
+    const seccionActiva = document.getElementById(idSeccion);
+    if (seccionActiva) {
+        seccionActiva.style.display = 'block';
 
-  // 6. Actualizar la URL con el hash (para compartir el link)
-  history.pushState(null, null, '#' + id);
+        // Scroll suave hacia la sección
+        seccionActiva.scrollIntoView({ behavior: 'smooth' });
+
+        // Actualizar la URL con el hash (para compartir el link)
+        history.pushState(null, null, '#' + idSeccion);
+    }
 }
 
 // Al cargar la página, si hay un hash en la URL, mostrar esa sección
 window.addEventListener('DOMContentLoaded', () => {
-  const hash = window.location.hash.substring(1);
-  if (hash) navegar(hash);
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        navegar(hash);
+    }
 });
+
 
 window.addEventListener('load', () => {
     const hash = window.location.hash.substring(1); // Obtiene 'videos' de '#videos'
