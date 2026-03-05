@@ -81,9 +81,7 @@
                     <button class="thingi-btn"
                         onclick="window.open('https://lagoma.netlify.app/index.html#programas')">Programas</button>
                     <button class="thingi-btn"
-                        onclick="window.open('https://lagoma.netlify.app/index.html#videos')">Videos</button>
-                    <button class="thingi-btn"
-                        onclick="window.open('https://lagoma.netlify.app/index.html#addons')">Add-ons</button>
+                        onclick="navegar('addons')">Add-ons</button>
                     <button class="thingi-btn active" onclick="navegar('USBFormatCMD')">¿Sirve?</button>
                     <button class="thingi-btn blenderDLSS"
                         onclick="window.open('https://lagoma.netlify.app/index.html#blenderDLSS')">Blender con
@@ -185,12 +183,14 @@
 <p>            Paso 2. Escribe cmd en el cuadro de búsqueda y pulsa "Enter" para que aparezca Símbolo del sistema (CMD).</p>
 <p>            Paso 3. Escribe las siguientes líneas de comando una a una y pulsa "Enter" cada vez:</p>
 <button type="button" class="toast-btn" title="Copiar código" onclick="copyC(this); mostrarToast()">
-  <code>diskpart</code>
-</button>
-
-
-<p>            •	list disk</p>
-<p>            •	select disk + número (Sustituye el número por el número de tu unidad USB).</p>
+    <code>diskpart</code>
+</button><br><br>
+<button type="button" class="toast-btn" title="Copiar código" onclick="copyC(this); mostrarToast()">
+    <code>list disk</code>
+</button><br><br>
+<button type="button" class="toast-btn" title="Copiar código" onclick="copyC(this); mostrarToast()">
+    <code>select disk</code>
+</button> + número
 <p>            •	list volume</p>
 <p>            •	select volume + número (Sustituye el número por el número de volumen de tu memoria USB).</p>
 <p>            •	format fs=ntfs quick  (También puedes sustituir NTFS por FAT32 o exFAT).</p>

@@ -507,6 +507,11 @@ footer {
   transition: 0.5s;
 }
 
+.programas p {
+  font-size: 14px;
+  color: #000000;
+}
+
 .paginacion-estilos {
   display: flex;
   justify-content: center;
@@ -1024,6 +1029,8 @@ details[open] {
   background-position: center;
   border-radius: 10px;
 }
+
+
 
 
 

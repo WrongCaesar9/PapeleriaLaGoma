@@ -117,7 +117,7 @@ function mostrarprogramas() {
     programasContenedor.appendChild(programasDiv);
   });
 
-  // 5. DIBUJAR LOS BOTONES DE PAGINACIÓN
+  // 5. DIBUJAR LOS BOTONES DE PAGINACIÓN     programasModel.innerHTML = producto.modelo + " - Updated:" + producto.fecha;
   // Le pasamos el total de programas FILTRADOS (no el total global)
   setupPaginacion(programasFiltrados.length);
 }
@@ -220,34 +220,39 @@ document.getElementById("barra-busqueda").addEventListener("input", () => {
 //Aquí termina el código de paginación
 
 // Función de navegación entre secciones que se llama SPA por sus siglas en inglés (Single Page Application) 
-function navegar(idSeccion) {
-      // 1. Seleccionar todos los botones del grupo
-    const botones = document.querySelectorAll('.thingi-btn');
+function navegar(id) {
+  // 1. Seleccionar todos los botones del grupo
+  const botones = document.querySelectorAll('.thingi-btn');
 
-    // 2. Quitar la clase 'active' de todos los botones
-    botones.forEach(btn => btn.classList.remove('active'));
-        // 3. Buscar el botón que activó la función y ponerle la clase 'active'
-    // Usamos el evento actual para identificar el botón clicado
-    event.currentTarget.classList.add('active');
+  // 2. Quitar la clase 'active' de todos los botones
+  botones.forEach(btn => btn.classList.remove('active'));
 
-  // 1. Ocultar TODAS las secciones
-  const todasLasSecciones = document.querySelectorAll('.view');
-  todasLasSecciones.forEach(seccion => {
-    seccion.style.display = 'none';
+  // 3. Buscar el botón que corresponde a esta sección y activarlo
+  botones.forEach(btn => {
+    if (btn.getAttribute('onclick').includes(`'${id}'`)) {
+      btn.classList.add('active');
+    }
   });
 
-  // 2. Mostrar la sección que queremos ver
-  const seccionActiva = document.getElementById(idSeccion);
-  if (seccionActiva) {
-    seccionActiva.style.display = 'block'; // O 'grid' si usas grid en el contenedor padre
+  // 4. Ocultar todas las secciones
+  document.querySelectorAll('.view').forEach(sec => sec.style.display = 'none');
 
-    // TRUCO PRO: Si entramos a programas, reseteamos la vista
-    if (idSeccion === 'videos') {
-      // Opcional: Si quieres que cada vez que entre se recarguen los programas
-      // mostrarprogramas(); 
-    }
+  // 5. Mostrar la sección deseada
+  const target = document.getElementById(id);
+  if (target) {
+    target.style.display = 'block';
+    target.scrollIntoView({ behavior: 'smooth' });
   }
+
+  // 6. Actualizar la URL con el hash (para compartir el link)
+  history.pushState(null, null, '#' + id);
 }
+
+// Al cargar la página, si hay un hash en la URL, mostrar esa sección
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash.substring(1);
+  if (hash) navegar(hash);
+});
 
 window.addEventListener('load', () => {
     const hash = window.location.hash.substring(1); // Obtiene 'videos' de '#videos'
@@ -359,7 +364,7 @@ function mostrarToast() {
     // Crear el elemento div
     const toast = document.createElement('div');
     toast.className = 'toast success'; // Se puede cambiar a 'error'
-    toast.innerText = '¡Acción completada exitosamente!';
+    toast.innerText = '¡Acción exitosa!';
     
     // Añadir al contenedor
     container.appendChild(toast);
