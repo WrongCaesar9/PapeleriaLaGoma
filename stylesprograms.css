@@ -1,5 +1,5 @@
 /*Calcula la altura exacta que necesita compensación 
-#productos {
+#programas {
   padding-top: 130px;
 
 }
@@ -48,6 +48,30 @@ body a:hover {
 
 main {
   min-width: 480px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 10px 20px 10px 20px; 
+  text-align: justify;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 10px 20px 10px 20px; 
+  text-align: center;
+}
+
+li {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 10px 20px 10px 40px; 
+  text-align: justify;
 }
 
 /*
@@ -177,17 +201,22 @@ header {
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
   text-decoration: none;
   transition: all 1s;
   width: max-content;
 }
 
-
-
-
 .thingi-btn:hover, .thingi-btn.link-btn:hover,
 .thingi-select:hover {
   background-color: #9797f4;
+  border-color: #daf747;
+  color: white;
+}
+
+/* Este es el estilo que se mantendrá fijo al hacer clic */
+.thingi-btn.active {
+  background-color: #6666ed;
   border-color: #daf747;
   color: white;
 }
@@ -347,7 +376,7 @@ main {
 
 }
 
-/*Aqui modifica parte del fondo rosa en donde se muestran los productos  #e9dcffac;*/
+/*Aqui modifica parte del fondo rosa en donde se muestran los programas  #e9dcffac;*/
 section {
   margin-bottom: 20px;
   padding: 10px;
@@ -428,7 +457,7 @@ footer {
 
 
 
-#productos-contenedor {
+#programas-contenedor {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
@@ -445,7 +474,7 @@ footer {
 
 
 
-.productos {
+.programas {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -459,18 +488,18 @@ footer {
   width: auto;
 }
 
-.productos img {
+.programas img {
   width: 100%;
   object-fit: fill;
 }
 
-.productos a {
+.programas a {
   font-size: 0.8rem;
   color: #021395;
   transition: 0.5s;
 }
 
-.productos a:hover {
+.programas a:hover {
   color: #449502;
   padding: 1px 5px;
   border-radius: 10px;
@@ -512,7 +541,7 @@ footer {
   transform: scale(1.1);
 }
 
-/* Clase para cuando no hay productos */
+/* Clase para cuando no hay programas */
 .no-resultados {
   grid-column: 1 / -1;
   /* TRUCO: Hace que ocupe todo el ancho del grid */
@@ -890,9 +919,9 @@ h1 {
 code {
   font-family: Consolas,"courier new";
   color: rgb(220, 100, 20);
-  background-color: #353535;
+  background-color: #2b2a2a;
   padding: 2px;
-  font-size: 18px;
+  font-size: 16px;
 
 }
 
@@ -914,9 +943,8 @@ pre {
 
 }
 .dlssinfo p {
-  font-size: 18px;
   margin-bottom: 10px;
-  align-items: stretch;
+
   text-align: justify;
 }
 
@@ -976,13 +1004,13 @@ details[open] {
 
 
 
-.productos {
+.programas {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 22%;
 }
 
-.productos img {
+.programas img {
   width: 100%;
   /* ESTA ES LA MAGIA DEL CLS */
   aspect-ratio: 1 / 1;
@@ -1009,6 +1037,53 @@ details[open] {
 
 
 
+
+
+
+
+
+
+
+
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Tipos de alerta */
+.toast.success { background-color: #4CAF50; }
+.toast.error { background-color: #f44336; }
+
+.toast-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.toast-btn:hover {
+    background-color: #0056b3;
+}
 
 
 
@@ -1053,12 +1128,12 @@ header,
 
 /* Para pantallas medianas (tablets) */
 @media (max-width: 1600px) {
-  #productos-contenedor {
+  #programas-contenedor {
     grid-template-columns: repeat(5, 1fr);
     font-size: 0.7rem;
   }
 
-  #productos {
+  #programas {
     padding-top: 130px;
 
   }
@@ -1110,12 +1185,12 @@ header,
 }
 
 @media (max-width: 1370px) {
-  #productos-contenedor {
+  #programas-contenedor {
     grid-template-columns: repeat(4, 1fr);
     font-size: 0.8rem;
   }
 
-  #productos {
+  #programas {
     padding-top: 130px;
 
   }
@@ -1193,12 +1268,12 @@ header,
 }
 
 @media (max-width: 1230px) {
-  #productos-contenedor {
+  #programas-contenedor {
     grid-template-columns: repeat(3, 1fr);
     font-size: 0.6rem;
   }
 
-  #productos {
+  #programas {
     padding-top: 130px;
 
   }
@@ -1278,12 +1353,12 @@ header,
 
 /* Para pantallas pequeñas (teléfonos) */
 @media (max-width: 768px) {
-  #productos-contenedor {
+  #programas-contenedor {
     grid-template-columns: repeat(2, 1fr);
     font-size: 12px;
   }
 
-  #productos {
+  #programas {
     padding-top: 140px;
 
   }
@@ -1357,11 +1432,11 @@ header,
 
 /* Opcional: aún más chico (teléfonos muy pequeños)
 @media (max-width: 480px) {
-  #productos-contenedor {
+  #programas-contenedor {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  #productos {
+  #programas {
     padding-top: 16rem;
 
   }

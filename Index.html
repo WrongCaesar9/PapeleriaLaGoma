@@ -78,9 +78,10 @@
                 </div>
                 <span id="datetime" style="display:none;"></span>
                 <div class="nav-group">
-                    <button class="thingi-btn" onclick="navegar('productos')">Programas</button>
+                    <button class="thingi-btn active" onclick="navegar('programas')" >Programas</button>
                     <button class="thingi-btn" onclick="navegar('videos')">Videos</button>
                     <button class="thingi-btn" onclick="navegar('addons')">Add-ons</button>
+                    <button class="thingi-btn" onclick="window.open('https://lagoma.netlify.app/flash_drive_format_with_cmd.html')">¿Sirve?</button>
                     <button class="thingi-btn blenderDLSS" onclick="navegar('blenderDLSS')">Blender con DLSS</button>
                     <button class="thingi-btn" onclick="navegar('sugerencia')" style="display: none;">¿Algo más?</button>
                     
@@ -108,7 +109,7 @@
     </header>
 
     <main>
-        <section style="z-index: -100;" class="view" id="productos">
+        <section style="z-index: -100;" class="view" id="programas">
             <h2>PROGRAMAS DISPONIBLES</h2>
             <h2 style="font-size: 100%;margin-top: -1.5rem;display: none;display: none;">"Ser experto en algo no es saberlo todo, sino conocer
                 perfectamente las 1000 formas en que puede salir mal." - Niels Bohr</h2>
@@ -144,11 +145,12 @@
 
             </div>
 
-            <div class="block" id="productos-contenedor"></div>
+            <div class="block" id="programas-contenedor"></div>
             <div id="paginacion-contenedor" class="paginacion-estilos"></div>
         </section>
 
         <section id="videos" class="view" style="display:none;">
+            <h2>Videos</h2>
             <h2>Videos y listas de reproducción que se me han hecho interesantes y quisiera compartir :D</h2>
 
             <div class="filter-group" style="margin-bottom: 20px;justify-content: center;">
@@ -297,7 +299,7 @@
 
 
         <section id="addons" class="view" style="display:none;">
-            <h2 style="font-size: 2.2rem; font-style: normal; text-align: center;">Add-ons Blender</h2>
+            <h2>Add-ons Blender</h2>
             <p style="font-size: 1.5rem; font-style: normal; text-align: center;"><br>Toca las imágenes para ir a la
                 descarga directa o a la página oficial.
                 <br>Recuerda siempre apoyar a los desarrolladores donando o comprando sus productos si te es posible :D
@@ -443,7 +445,6 @@
 
 
 <section id="blenderDLSS" class="view" style="display: none;">
-
     <div class="dlssinfo">
 
         <h2>Blender con DLSS<br>Aún se esta trabajando en esta sección y falta información. <br> Hola gente de YuTu :3</h2>
@@ -514,7 +515,7 @@
                         información del sistema</figcaption>
                 </figure>
             </center>
-            <p>Deberás descargar e instalar:</p>
+            <p style="font-weight: bold ;">Deberás descargar e instalar:</p>
             <p>- <a target=_blank href="https://developer.nvidia.com/designworks/optix/download">OptiX
                     SDK</a> (Debes tener cuenta de NVIDIA)</p>
             <p>- <a target="_blank"

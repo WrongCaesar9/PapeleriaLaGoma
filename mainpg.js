@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Código de paginación
-const productosContenedor = document.getElementById("productos-contenedor");
+const programasContenedor = document.getElementById("programas-contenedor");
 const paginacionContenedor = document.getElementById("paginacion-contenedor");
 
 // VARIABLES DE PAGINACIÓN
@@ -31,14 +31,14 @@ const elementosPorPagina = 15; // ¡Cámbialo a 10, 20 o lo que gustes!
 fetch("datapg.json")
   .then(response => response.json())
   .then(data => {
-    window.productos = data.productos;
-    mostrarProductos();
+    window.programas = data.programas;
+    mostrarprogramas();
   })
   .catch(error => console.error(error));
 
 
-function mostrarProductos() {
-  productosContenedor.innerHTML = "";
+function mostrarprogramas() {
+  programasContenedor.innerHTML = "";
 
   // 1. OBTENER VALORES DE FILTROS
   const filtroModelo = document.getElementById("filtro-modelo").value;
@@ -48,7 +48,7 @@ function mostrarProductos() {
 
   // 2. FILTRAR PRIMERO (Creamos una lista temporal con los resultados válidos)
   // Usamos .filter en lugar de .forEach para obtener un nuevo array limpio
-  const productosFiltrados = window.productos.filter(producto => {
+  const programasFiltrados = window.programas.filter(producto => {
     const nombreProducto = producto.nombre.toLowerCase();
 
     // Tu misma lógica de filtrado:
@@ -62,9 +62,9 @@ function mostrarProductos() {
 
 
   // --- NUEVO CÓDIGO: EL MESERO RESPONDE ---
-  if (productosFiltrados.length === 0) {
+  if (programasFiltrados.length === 0) {
     // 1. Limpiamos el contenedor
-    productosContenedor.innerHTML = `
+    programasContenedor.innerHTML = `
           <div class="no-resultados">
               <h3>🐸 Ups, no encontramos nada por aquí</h3>
               <p>Salta a otros filtros o busca con otro nombre.</p>
@@ -85,47 +85,47 @@ function mostrarProductos() {
   const indiceFinal = indiceInicio + elementosPorPagina;
 
   // Recortamos la lista filtrada para mostrar solo la página actual
-  const productosParaMostrar = productosFiltrados.slice(indiceInicio, indiceFinal);
+  const programasParaMostrar = programasFiltrados.slice(indiceInicio, indiceFinal);
 
-  // 4. DIBUJAR LOS PRODUCTOS (Solo los de esta página)
-  productosParaMostrar.forEach(producto => {
+  // 4. DIBUJAR LOS programas (Solo los de esta página)
+  programasParaMostrar.forEach(producto => {
     // --- Aquí va TU código de creación de elementos intacto ---
-    const productosDiv = document.createElement("div");
-    productosDiv.classList.add("productos");
+    const programasDiv = document.createElement("div");
+    programasDiv.classList.add("programas");
 
-    const productosImg = document.createElement("img");
-    productosImg.src = producto.img;
-    productosImg.alt = producto.modelo;
-    productosDiv.appendChild(productosImg);
+    const programasImg = document.createElement("img");
+    programasImg.src = producto.img;
+    programasImg.alt = producto.modelo;
+    programasDiv.appendChild(programasImg);
 
-    const productosNombre = document.createElement("h3");
-    productosNombre.innerHTML = producto.nombre;
-    productosDiv.appendChild(productosNombre);
+    const programasNombre = document.createElement("h3");
+    programasNombre.innerHTML = producto.nombre;
+    programasDiv.appendChild(programasNombre);
 
-    const productosEnlace = document.createElement("h3");
+    const programasEnlace = document.createElement("h3");
     const enlaceProducto = document.createElement("a");
     enlaceProducto.href = producto.enlace;
     enlaceProducto.target = "__blank";
     enlaceProducto.textContent = "Da el Salto 🐸🤙";
-    productosEnlace.appendChild(enlaceProducto);
-    productosDiv.appendChild(productosEnlace);
+    programasEnlace.appendChild(enlaceProducto);
+    programasDiv.appendChild(programasEnlace);
 
-    const productosModel = document.createElement("p");
-    productosModel.innerHTML = producto.modelo;
-    productosDiv.appendChild(productosModel);
+    const programasModel = document.createElement("p");
+    programasModel.innerHTML = producto.modelo;
+    programasDiv.appendChild(programasModel);
 
-    productosContenedor.appendChild(productosDiv);
+    programasContenedor.appendChild(programasDiv);
   });
 
   // 5. DIBUJAR LOS BOTONES DE PAGINACIÓN
-  // Le pasamos el total de productos FILTRADOS (no el total global)
-  setupPaginacion(productosFiltrados.length);
+  // Le pasamos el total de programas FILTRADOS (no el total global)
+  setupPaginacion(programasFiltrados.length);
 }
 
 function setupPaginacion(totalItems) {
   paginacionContenedor.innerHTML = "";
 
-  // Si no hay productos o caben todos en una página, no mostramos botones
+  // Si no hay programas o caben todos en una página, no mostramos botones
   if (totalItems <= elementosPorPagina) return;
 
   const totalPaginas = Math.ceil(totalItems / elementosPorPagina);
@@ -140,9 +140,9 @@ function setupPaginacion(totalItems) {
 
     boton.addEventListener("click", () => {
       paginaActual = i;
-      mostrarProductos(); // Recargar productos con la nueva página
+      mostrarprogramas(); // Recargar programas con la nueva página
       // Opcional: Hacer scroll suave hacia arriba al cambiar de página
-      document.getElementById("productos").scrollIntoView({ behavior: 'smooth' });
+      document.getElementById("programas").scrollIntoView({ behavior: 'smooth' });
     });
 
     paginacionContenedor.appendChild(boton);
@@ -209,17 +209,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.getElementById("filtro-modelo").addEventListener("change", () => {
   paginaActual = 1;
-  mostrarProductos();
+  mostrarprogramas();
 });
 
 document.getElementById("barra-busqueda").addEventListener("input", () => {
   paginaActual = 1;
-  mostrarProductos();
+  mostrarprogramas();
 });
 
 //Aquí termina el código de paginación
+
 // Función de navegación entre secciones que se llama SPA por sus siglas en inglés (Single Page Application) 
 function navegar(idSeccion) {
+      // 1. Seleccionar todos los botones del grupo
+    const botones = document.querySelectorAll('.thingi-btn');
+
+    // 2. Quitar la clase 'active' de todos los botones
+    botones.forEach(btn => btn.classList.remove('active'));
+        // 3. Buscar el botón que activó la función y ponerle la clase 'active'
+    // Usamos el evento actual para identificar el botón clicado
+    event.currentTarget.classList.add('active');
+
   // 1. Ocultar TODAS las secciones
   const todasLasSecciones = document.querySelectorAll('.view');
   todasLasSecciones.forEach(seccion => {
@@ -231,13 +241,31 @@ function navegar(idSeccion) {
   if (seccionActiva) {
     seccionActiva.style.display = 'block'; // O 'grid' si usas grid en el contenedor padre
 
-    // TRUCO PRO: Si entramos a productos, reseteamos la vista
+    // TRUCO PRO: Si entramos a programas, reseteamos la vista
     if (idSeccion === 'videos') {
-      // Opcional: Si quieres que cada vez que entre se recarguen los productos
-      // mostrarProductos(); 
+      // Opcional: Si quieres que cada vez que entre se recarguen los programas
+      // mostrarprogramas(); 
     }
   }
 }
+
+window.addEventListener('load', () => {
+    const hash = window.location.hash.substring(1); // Obtiene 'videos' de '#videos'
+    if (hash) {
+        const botones = document.querySelectorAll('.thingi-btn');
+        botones.forEach(btn => {
+            // Verifica si el onclick del botón contiene el nombre de la sección
+            if (btn.getAttribute('onclick').includes(`'${hash}'`)) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+});
+
+
+
 
 // Código de formulario WhatsApp
 function isMobile() {
@@ -308,5 +336,79 @@ function copyCode(button) {
   }
 }
 
-/* Código de fecha de actualización
+async function copyC(bt) {
+    // 1. Obtener el texto (asumiendo que está en un bloque <pre> o <code>)
+    const textToCopy = bt.innerText;
+    
+    try {
+        // 2. Copiar al portapapeles
+        await navigator.clipboard.writeText(textToCopy);
+        
+        // 3. Feedback visual (sin bloquear la pantalla con alert)
+        const originalText = bt.innerText;
+        bt.innerText = "¡Copiado!";
+        setTimeout(() => bt.innerText = originalText, 2000);
+    } catch (err) {
+        alert("Error al copiar: ", err);
+    }
+}
+
+function mostrarToast() {
+    const container = document.getElementById('toast-container');
+    
+    // Crear el elemento div
+    const toast = document.createElement('div');
+    toast.className = 'toast success'; // Se puede cambiar a 'error'
+    toast.innerText = '¡Acción completada exitosamente!';
+    
+    // Añadir al contenedor
+    container.appendChild(toast);
+    
+    // Mostrar la alerta (activar animación)
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 100);
+    
+    // Eliminar la alerta automáticamente después de 3 segundos
+    setTimeout(() => {
+        toast.classList.remove('show');
+        // Eliminar del DOM después de la transición
+        setTimeout(() => {
+            container.removeChild(toast);
+        }, 500);
+    }, 3000);
+}
+
+
+
+
+/* 
+function copyCode(button) {
+  const codeElement = button.nextElementSibling.querySelector("code");
+  const codeText = codeElement.innerText;
+  
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(codeText).then(() => {
+      button.innerText = "Copiado";
+      alert("¡Código copiado al portapapeles!");
+      setTimeout(() => button.innerText = "Copiar", 2000);
+    });
+  } else {
+    // Fallback para móviles
+    const textArea = document.createElement("textarea");
+    textArea.value = codeText;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+    button.innerText = "Copiado";
+    alert("¡Código copiado al portapapeles!");
+    setTimeout(() => button.innerText = "Copiar", 2000);
+  }
+}
+
+
+
+
+Código de fecha de actualización
 document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";*/

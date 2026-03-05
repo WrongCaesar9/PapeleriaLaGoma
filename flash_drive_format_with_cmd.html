@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes">
+
+    <!-- Fecha de publicación/creación (Dublin Core) <a  target=_blank href=https://lagoma.netlify.app/portfolio>Mi portfolio</a>-->
+    <meta name="dcterms.created" content="2025-04-01">
+    <!-- Fecha de última modificación (Open Graph, útil para redes sociales y SEO) -->
+    <meta property="article:modified_time" content="2026-02-08T03:15:00Z">
+
+    <link rel="dns-prefetch" href="https://lagoma.netlify.app">
+    <link rel="preconnect" href="https://lagoma.netlify.app" crossorigin>
+
+    <!-- SEO básico -->
+    <title>Programas, Herramientas y más - WrongCaesar9</title>
+    <meta name="description"
+        content="WrongCaesar9 | Accede a software y herramientas para optimizar tu flujo creativo, académico y digital.">
+    <meta name="keywords" content="programas, programs, adobe, descargas, herramientas, software">
+    <meta name="author" content="WrongCaesar9">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lagoma.netlify.app">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Programas, Herramientas y más - WrongCaesar9">
+    <meta property="og:site_name" content="La Goma">
+    <meta property="og:description"
+        content="WrongCaesar9 | Accede a software y herramientas para optimizar tu flujo creativo, académico y digital.">
+    <meta property="og:url" content="https://lagoma.netlify.app">
+    <meta property="og:image" content="https://lagoma.netlify.app/logos/ogimg.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo de La Goma - Programas y herramientas">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Programas, Herramientas y más - WrongCaesar9">
+    <meta name="twitter:description"
+        content="WrongCaesar9 | Accede a software y herramientas para optimizar tu flujo creativo, académico y digital.">
+    <meta name="twitter:image" content="https://lagoma.netlify.app/logos/ogimg.jpg">
+    <meta name="twitter:site" content="@WrongCaesar9">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://lagoma.netlify.app/logos/lagomaGM.ico" sizes="192x192">
+    <link rel="shortcut icon" href="https://lagoma.netlify.app/logos/lagomaGM.png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="stylesprograms.css">
+
+    <!-- Bloque de código con botón copiar -->
+    <!-- Incluye Prism -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="marquee-wrapper">
+
+                <marquee behavior="scroll" direction="left" scrollamount="7">
+                    Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span> Si detectas un
+                    link caído, repórtamelo 🤙🏽 - Espero ir agregando más programas y páginas útiles <a
+                        class="thingi-btn link-btn" href="/Archivos/Ubica-T.apk">App TESChi</a>
+                </marquee>
+            </div>
+            <div class="header-brand">
+                <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app/indexprograms">
+                    <img class="header__logo-image" src="/logos/lagomaGM.png" alt="lagoma">
+                </a>
+                <div class="brand-text">
+                    <h1>Herramientas<br>y<br>Programas </h1>
+                    <center><span>"PC y Android"</span></center>
+                </div>
+                <span id="datetime" style="display:none;"></span>
+                <div class="nav-group">
+                    <button class="thingi-btn"
+                        onclick="window.open('https://lagoma.netlify.app/index.html#programas')">Programas</button>
+                    <button class="thingi-btn"
+                        onclick="window.open('https://lagoma.netlify.app/index.html#videos')">Videos</button>
+                    <button class="thingi-btn"
+                        onclick="window.open('https://lagoma.netlify.app/index.html#addons')">Add-ons</button>
+                    <button class="thingi-btn active" onclick="navegar('USBFormatCMD')">¿Sirve?</button>
+                    <button class="thingi-btn blenderDLSS"
+                        onclick="window.open('https://lagoma.netlify.app/index.html#blenderDLSS')">Blender con
+                        DLSS</button>
+                    <button class="thingi-btn" onclick="window.open('https://lagoma.netlify.app/index.html#sugerencia')"
+                        style="display: none;">¿Algo más?</button>
+
+                </div>
+
+            </div>
+
+            <!--
+        <a id="whatsapp" title="WhatsApp"><img class="btn-whatsapp2" src="https://clientes.dongee.com/whatsapp.png"
+                style="max-width: 90px; border-radius: 10px;max-height: 90px;margin-top: 15px;" align="right" alt="Whatsapp"
+                onclick="window.location.href='https://wa.me/525515833826'" fetchpriority="high"></a>
+   
+   
+   
+   <br><a  target=_blank href=https://www.facebook.com/josuedavid.juarezgomez.37/>Mi FB</a>
+   
+                -->
+
+        </div>
+        </div>
+        <!-- Filtro por precio -->
+        <select visibility: hidden id="filtro-precio" style="height: 0px;width: 0px;">
+            <option value="0">NA</option>
+        </select>
+    </header>
+
+    <main>
+        <section style="z-index: -100; padding-top: 130px;" class="view" id="USBFormatCMD">
+            <h2>Formatea tus unidades USB con CMD en Windows</h2>
+            <div>
+                <p></p>
+                <p>Formatear una memoria USB con Diskpart es una solución avanzada para reparar unidades que Windows no
+                    puede
+                    formatear
+                    de forma convencional, ya sea porque están protegidas contra escritura, corruptas, o tienen
+                    particiones
+                    inaccesibles. Es la mejor opción cuando el explorador de archivos falla, permitiendo limpiar
+                    profundamente la
+                    estructura de la memoria, eliminar virus, y restaurar su capacidad completa.
+                </p>
+
+                <p>Sin embargo, es importante tener cuidado al usar Diskpart, ya que es una herramienta que puede causar
+                    pérdida de datos si se usa incorrectamente. Asegúrate de seleccionar la unidad correcta antes de
+                    ejecutar
+                    cualquier comando de formateo.</p>
+                <p>Ademas, es recomendable hacer una copia de seguridad de los datos importantes antes de proceder con
+                    el formateo.
+                </p>
+                <p>En caso de que la memoria USB tenga un daño físico o a nivel de hardware, Diskpart no podrá
+                    repararla, y es
+                    posible que necesites considerar la compra de una nueva unidad.</p>
+                <p>Sin embargo, si en el explorador de archivos la unidad aparece sin detalles de almacenamiento, haces
+                    doble clic
+                    en ella y dice:</p>
+                <p style="margin:auto 10%;">"Por favor, inserte un disco en la unidad USB (F:, G:, H:, etc.)"</p>
+                <p>
+                <p>O el comando <code>clean</code> en diskpart da esto:</p>
+                <p style="margin:auto 10%;">
+                    DiskPart has encountered an error: Access is denied.<br>
+                    See the System Event Log for more information.
+                </p>
+                <p>Esto puede deverse a:
+                <ul class="uluno">
+                    <li>Corrupción del sistema de archivos: La tabla de particiones o el sistema de archivos (NTFS,
+                        FAT32, exFAT) está
+                        dañado.</li>
+                    <li>Daño físico/falla del controlador USB: La memoria flash interna de la USB ha fallado o no recibe
+                        la energía
+                        suficiente, lo que a menudo ocurre al usar puertos frontales de la PC.</li>
+                </ul>
+
+                <style>
+                    .uluno {
+                        list-style-type: none;
+                        /* Quita el punto predeterminado */
+                        padding-left: 0;
+                    }
+
+                    .uluno li::before {
+                        content: "-🙄";
+                        /* Agrega cualquier emoji o carácter */
+                        color: blue;
+                        /* Puedes cambiar el color del símbolo */
+                    }
+                </style>
+                </p>
+
+                <embed
+                    src="https://es.easeus.com/partition-manager-tips/diskpart-has-encountered-an-error-access-is-denied.html"
+                    type="text/html" width="100%" height="400px"
+                    style="border: 1px solid #ccc; margin-top: 20px; display: none;">
+            </div>
+
+<p>            Paso 1. Conecta el USB a tu PC y pulsa las teclas "Windows + R".</p>
+<p>            Paso 2. Escribe cmd en el cuadro de búsqueda y pulsa "Enter" para que aparezca Símbolo del sistema (CMD).</p>
+<p>            Paso 3. Escribe las siguientes líneas de comando una a una y pulsa "Enter" cada vez:</p>
+<button type="button" class="toast-btn" title="Copiar código" onclick="copyC(this); mostrarToast()">
+  <code>diskpart</code>
+</button>
+
+
+<p>            •	list disk</p>
+<p>            •	select disk + número (Sustituye el número por el número de tu unidad USB).</p>
+<p>            •	list volume</p>
+<p>            •	select volume + número (Sustituye el número por el número de volumen de tu memoria USB).</p>
+<p>            •	format fs=ntfs quick  (También puedes sustituir NTFS por FAT32 o exFAT).</p>
+<p>            •	exit</p>
+
+
+
+            <h2>Video tutorial</h2>
+
+
+            <center> <iframe style="max-width:90%;" width="560" height="280"
+                    src="https://www.youtube.com/embed/wyTmLmI2puE?si=IAoH-X8HcRkjXeIG" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </center>
+
+
+            <!--
+        <p style="text-align: justify;">Si tienes alguna pregunta o necesitas ayuda durante el proceso de compilación,
+            no dudes en buscar ayuda en la comunidad de Blender o en los foros de NVIDIA. ¡Buena suerte y disfruta de tu
+            versión de Blender con DLSS!</p>
+    </div>
+    <div class="comentariosDlSS">
+        <h2 style="font-size: 18px; font-style: normal; text-align: center; color: #ffffff;">Comentarios</h2>
+        <script src="https://giscus.app/client.js" data-repo="WrongCaesar9/PapeleriaLaGoma" data-repo-id="R_kgDOJRUChA"
+            data-category="General" data-category-id="DIC_kwDOJRUChM4C2mw_" data-mapping="title" data-strict="0"
+            data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="gray"
+            data-lang="es" crossorigin="anonymous" async>
+            </script>
+    </div>
+
+
+
+   
+                    <aside>
+                            <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions,
+                                international pavilions, award-winning fireworks and seasonal special events.</p>
+                        </aside>
+                
+                        <details>
+                            <summary>Crear tu formulario</summary>
+                            <p>Para crear tu formulario, sigue estos pasos:</p>
+                            <ol>
+                                <li>Abre tu editor de texto o IDE favorito.</li>
+                                <li>Escribe el código HTML para tu formulario. Aquí tienes un ejemplo básico:</li>
+                                <pre><code class="language-html">
+                <form action="/submit" method="post">
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="name"><br><br>
+                  
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email"><br><br>
+                  
+                  <input type="submit" value="Enviar">
+                </form>
+                    </code></pre>
+                                <li>Personaliza el formulario según tus necesidades, agregando más campos o estilos CSS si lo deseas.
+                                </li>
+                                <li>Guarda el archivo con una extensión .html, por ejemplo, "formulario.html".</li>
+                                <li>Abre el archivo en tu navegador para ver tu formulario en acción.</li>
+                        </details>
+                        -->
+        </section>
+
+
+
+
+
+
+
+            <!-- Contenedor de alertas -->
+    <div id="toast-container"></div>
+        <div class="go-top-container">
+            <div class="go-top-button">
+                <a id="go-top-button" title="Dar Salto"></a>
+            </div>
+        </div>
+
+        <footer>
+
+            <!--<a id="whatsapp" title="WhatsApp Principal"><img class="btn-whatsapp"
+                    src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp"
+                    onclick="window.location.href='https://wa.me/525515833826'"></a> -->
+            <a id="instagram" title="Instagram wrongcaesar9.0"><img style="margin-left: 60px;" class="btn-instagram"
+                    src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
+                    width="64" height="64" alt="Instagram"
+                    onclick="window.location.href='https://www.instagram.com/wrongcaesar9.0/'"></a>
+
+            <p>Copyright © 2026 "La Goma"</p>
+            <p style="font-size: 0.8rem;">Última actualización: 04/03/2026 at: 02:18</p>
+            <!--Barra de iconos compartir Init
+        <div>
+            <div class="sharethis-inline-share-buttons st-center st-lang-es st-has-labels  st-inline-share-buttons"
+                id="st-5">
+                <div class="st-total"></div>
+                <span class="st-label"></span>
+                <span class="st-shares">
+                    Veces compartido
+            </div>
+        </div>-->
+            <script async="async" type="text/javascript"
+                src="https://platform-api.sharethis.com/js/sharethis.js#property=650476d13b8450001ac45ec7&amp;product=inline-share-buttons&amp;source=platform"></script>
+            <!--Barra de iconos compartir End-->
+        </footer>
+    </main>
+
+
+    <script>
+        // Script para abrir enlaces en una nueva pestaña mediante un selector
+        document.getElementById('list-ch').addEventListener('change', function () {
+            const url = this.value;
+            if (url) {
+                window.open(url, '_blank');
+                this.value = ''; // Vuelve a la opción por defecto
+            }
+        });
+    </script>
+    <script>
+        // Script sirve para mostrar la hora en formato de 12 horas con AM/PM en el elemento con id "datetime" dentro del header
+        // create a function to update the date and time
+        function updateDateTime() {
+            // create a new `Date` object
+            const now = new Date();
+
+            // specify 12-hour format options
+            const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+
+            // get the current date and time as a string in 12-hour format
+            const currentDateTime = now.toLocaleString('es-MX', options);
+
+            // update the `textContent` property of the `span` element with the `id` of `datetime`
+            document.querySelector('#datetime').textContent = currentDateTime;
+        }
+
+        // call the `updateDateTime` function every second
+        setInterval(updateDateTime, 1000);
+    </script>
+    <script src="mainpg.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+</body>
+
+</html>
