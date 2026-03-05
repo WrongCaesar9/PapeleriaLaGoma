@@ -540,6 +540,13 @@
 
 
 
+        
+        {
+            "nombre": "Vacunas de Memorias USB<br>Descarga los tres archivos, ponlos en tu usb y ejecuta el .exe y el .vbs",
+            "img": "impg/vacunas.png",
+            "enlace": "https://www.mediafire.com/folder/ygjpcmrvmvk95/Vacunas+Memorias",
+            "modelo": "Herramientas"
+        },
         {
             "nombre": "Freesets<br>Es una amplia colección de los mejores recursos y herramientas gratuitos para desarrolladores y artistas, como iconos, ilustraciones, fotos, vídeos, blogs, fuentes, ...",
             "img": "impg/freesets.png",
@@ -631,6 +638,12 @@
             "modelo": "Herramientas"
         },
         {
+            "nombre": "Signal<br>Aplicación de mensajería segura y cifrada",
+            "img": "impg/signal.png",
+            "enlace": "https://signal.org/",
+            "modelo": "Herramientas"
+        },
+        {
             "nombre": "Proton Mail<br>Correo electrónico seguro y cifrado",
             "img": "impg/",
             "enlace": "https://proton.me/mail",
@@ -670,6 +683,18 @@
             "nombre": "Figma<br>Herramienta de diseño de interfaces y prototipado de diseño UX/UI",
             "img": "impg/figma.png",
             "enlace": "https://www.figma.com/",
+            "modelo": "Herramientas"
+        },
+        {
+            "nombre": "Canva<br>Herramienta de diseño gráfico en línea para crear gráficos, presentaciones, carteles y otros contenidos visuales",
+            "img": "impg/canva.png",
+            "enlace": "https://www.canva.com/",
+            "modelo": "Herramientas"
+        },
+        {
+            "nombre": "PDF24<br>Suite de herramientas gratuitas para gestionar archivos PDF, disponible tanto en versión web (online) como de escritorio (PDF24 Creator) para Windows. Permite crear, editar, comprimir, convertir, unir, dividir, firmar y proteger documentos sin costes ocultos ni limitaciones, siendo una opción versátil y segura desarrollada en Alemania.",
+            "img": "impg/pdf24.png",
+            "enlace": "https://www.pdf24.org/es/",
             "modelo": "Herramientas"
         },
         
@@ -1619,12 +1644,6 @@
             "nombre": "Autodesk Education<br>Debes iniciar sesión con tu cuenta normal y, en verificar, subes tu comprobante de inscripción para tener acceso a los softwares",
             "img": "impg/autodeskeducation.png",
             "enlace": "https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual#card-f360",
-            "modelo": "Otros"
-        },
-        {
-            "nombre": "Vacunas de Memorias USB<br>Descarga los tres archivos, ponlos en tu usb y ejecuta el .exe y el .vbs",
-            "img": "impg/vacunas.png",
-            "enlace": "https://www.mediafire.com/folder/ygjpcmrvmvk95/Vacunas+Memorias",
             "modelo": "Otros"
         },
         {
