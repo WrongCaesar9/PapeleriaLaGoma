@@ -1116,7 +1116,7 @@
             "modelo": "IA"
         },
         {
-            "nombre": "Qwen Image Edit 2511 — 3D Camera Control<br>📈🤨📉<br>🔴🤲🏾🔵",
+            "nombre": "Qwen Image Edit 2511 — 3D Camera Control<br>📈🤨📉<br>🔴🤲🏾🔵<br><a  target=_blank href=https://github.com/jtydhr88/ComfyUI-qwenmultiangle?tab=readme-ov-file#installation>Nodo para ComfyUI</a>",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfkJzTiJZ5xUMlzzgGCOfmsV6yLJEyEuu_A&s",
             "enlace": "https://huggingface.co/spaces/multimodalart/qwen-image-multiple-angles-3d-camera",
             "modelo": "IA"
