@@ -141,13 +141,13 @@
         },
         {
             "nombre": "Armory3D<br>Motor de juego 3D integrado con Blender",
-            "img": "impg/",
+            "img": "https://armory3d.org/img/FeaturedCover.jpg",
             "enlace": "https://armory3d.org/",
             "modelo": "Modelado y Diseño 3D"
         }, 
         {
             "nombre": "Blockbench<br>Editor de modelos 3D gratuito para crear modelos de baja poli y pixel art",
-            "img": "impg/",
+            "img": "https://media.sketchfab.com/models/ebb20c0ac30f4319985e19bc5b1d3bdd/thumbnails/fe40f80baee04b7bb9f67ccb24b5e73a/0300d5060edb477785f7f14298622d93.jpeg",
             "enlace": "https://www.blockbench.net/",
             "modelo": "Modelado y Diseño 3D"
         },
@@ -275,25 +275,25 @@
         },
         {
             "nombre": "GIMP<br>Programa de edición de imágenes de código abierto",
-            "img": "impg/",
+            "img": "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/08/gimp-1.jpg?w=1600&h=900&fit=crop",
             "enlace": "https://www.gimp.org/downloads/",
             "modelo": "Edición"
         },
         {
             "nombre": "Inkscape<br>Editor de gráficos vectoriales de código abierto",
-            "img": "impg/",
+            "img": "https://images.seeklogo.com/logo-png/24/1/inkscape-logo-png_seeklogo-246387.png",
             "enlace": "https://inkscape.org/release/inkscape-1.4.2/windows/64-bit/exe/dl/",
             "modelo": "Edición"
         },
         {
             "nombre": "Darktable<br>Software de flujo de trabajo fotográfico de código abierto y editor de imágenes RAW",
-            "img": "impg/",
+            "img": "https://www.free-codecs.com/pictures/screenshots/darktable.jpg",
             "enlace": "https://www.darktable.org/install/",
             "modelo": "Edición"
         },
         {
             "nombre": "Affinity<br>ofrece edición fotográfica, diseño vectorial, ilustración y maquetación profesional; todo en una sola aplicación y de forma gratuita.",
-            "img": "impg/",
+            "img": "https://mir-s3-cdn-cf.behance.net/projects/404/309882239029707.Y3JvcCwxMDM1LDgxMCwyMDIsMA.png",
             "enlace": "https://www.affinity.studio/es_es/download",
             "modelo": "Edición"
         },
@@ -395,13 +395,13 @@
         },
         {
             "nombre": "Plugins 4 Free<br>Descarga plugins VST gratis para producción musical",
-            "img": "impg/",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36x0aYDLNSIikEzvegRghznHTVXtSBPO74Q&s",
             "enlace": "https://plugins4free.com/",
             "modelo": "Edición"
         },
         {
-            "nombre": "TouchDesigner<br>Plataforma visual para la creación de experiencias interactivas en tiempo real y multimedia unificadas atraves de la programación visual",
-            "img": "impg/",
+            "nombre": "TouchDesigner<br>Plataforma visual para la creación de experiencias interactivas en tiempo real y multimedia unificadas atraves de la programación visual<br><a  target=_blank href=https://www.youtube.com/watch?v=I_FDigcL7qw>Ejemplo de uso: Tutorial Efecto Displacement - TouchDesigner / Blender</a>",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGS4BUO4ClAJgU0ohW8Ft6TgCbPy2GBWxmfA&s",
             "enlace": "https://derivative.ca/download",
             "modelo": "Edición"
         },
@@ -451,7 +451,7 @@
         },        
         {
             "nombre": "Snow Bros 1 y 2",
-            "img": "impg/",
+            "img": "https://i.ytimg.com/vi/WFfJJp2r5Jc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCE0Y3SZuen70dKkwpSK63iHnLXjQ",
             "enlace": "https://lagoma.netlify.app/Archivos/SnowBros1y2.rar",
             "modelo": "Juegos"
         },      
@@ -498,8 +498,8 @@
             "modelo": "Juegos"
         },
         {
-            "nombre": "PCSX2<br>Emulador de PlayStation 2",
-            "img": "impg/",
+            "nombre": "PCSX2<br>Emulador de PlayStation 2<br><a  target=_blank href=https://www.mediafire.com/file/sncrg1xbocdlwqy/bios.rar/file>BIOS</a><br><a  target=_blank href=https://www.youtube.com/watch?v=XdV_iiV1d9I>Tutoriaal de que bios seleccionar</a>",
+            "img": "https://new-game-plus.fr/wp-content/uploads/2025/11/pcsx2-99-emulation1.webp",
             "enlace": "https://pcsx2.net/",
             "modelo": "Juegos"
         },
@@ -585,7 +585,7 @@
         },
         {
             "nombre": "Pago de Tenencia y Derechos de Control Vehicular",
-            "img": "impg/tenenciavehicular.png",
+            "img": "https://wp.lajornada.prod.andes.news/wp-content/uploads/2026/01/image-5.png",
             "enlace": "https://tenencia.edomex.gob.mx/TenenciaIndividual/tenencia/A06E1A88B8A6ED4B#/",
             "modelo": "Herramientas"
         },
@@ -621,7 +621,7 @@
         },                        
         {
             "nombre": "Temp Mail<br>Servicio de correo electrónico temporal para proteger tu privacidad en línea",
-            "img": "impg/",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqtoKsZr1bYAMI4K_V0uxZ0sFacuHUEjGhQ&s",
             "enlace": "https://temp-mail.org/",
             "modelo": "Herramientas"
         },
@@ -639,61 +639,67 @@
         },
         {
             "nombre": "Signal<br>Aplicación de mensajería segura y cifrada",
-            "img": "impg/signal.png",
+            "img": "https://www.figma.com/community/resource/fbd27fc8-3979-4f0c-82dd-51c88985e962/thumbnail",
             "enlace": "https://signal.org/",
             "modelo": "Herramientas"
         },
         {
+            "nombre": "SimpleX Chat<br>Aplicación de mensajería segura y cifrada",
+            "img": "https://play-lh.googleusercontent.com/Em1xX7Zh3WtNeXC0TQdRr0oSE_2gMxainzWzqp_ec-Bair5XVIQ23GTRTDIe35aRog",
+            "enlace": "https://simplex.chat/",
+            "modelo": "Herramientas"
+        },
+        {
             "nombre": "Proton Mail<br>Correo electrónico seguro y cifrado",
-            "img": "impg/",
+            "img": "https://www.bleepstatic.com/content/hl-images/2025/01/09/proton-mail-header.jpg",
             "enlace": "https://proton.me/mail",
             "modelo": "Herramientas"
         },
         {
             "nombre": "Proton VPN<br>Servicio de VPN seguro y privado",
-            "img": "impg/",
+            "img": "https://www.redeszone.net/app/uploads-redeszone.net/2019/10/proton.png",
             "enlace": "https://protonvpn.com/",
             "modelo": "Herramientas"
         },
         {
             "nombre": "VoiceMod<br>Aplicación para cambiar la voz en tiempo real",
-            "img": "impg/",
+            "img": "https://gitlab.com/uploads/-/system/project/avatar/36139896/Voicemod_Logo_256x256.png",
             "enlace": "https://www.voicemod.net/",
             "modelo": "Herramientas"
         },
         {
             "nombre": "TikFinity<br>ofrece una amplia gama de funciones interactivas gratuitas para tu transmisión en vivo en TikTok, con integración desde Texto a Voz y Alertas de Sonido hasta integraciones IFTTT para dispositivos inteligentes",
-            "img": "impg/tikfinity.png",
+            "img": "https://play-lh.googleusercontent.com/ZtHQAKLD9tE5TfCCG4CCsMVh6Wg8n4ma3PvaPbXhLq1sgrUUG0iJUh1cOeJSqgK273EA",
             "enlace": "https://tikfinity.zerody.one/",
             "modelo": "Herramientas"
         },
         {
             "nombre": "RIFE Video Frame Interpolation<br>Ayuda a aumentar los FPS de un video por medio de interpolación de frames<br><a  target=_blank href=https://www.youtube.com/watch?v=gf_on-dbwyU>Video de instlación</a>",
-            "img": "impg/rifeframe.png",
+            "img": "https://www.aiseesoft.com/images/resource/rife-ai-interpolation/rife-ai-interpolation.jpg",
             "enlace": "https://github.com/hzwer/ECCV2022-RIFE?tab=readme-ov-file",
             "modelo": "Herramientas"
         },
         {
-            "nombre": "Wix Toolset<br>Software para crear instaladores de Windows",
-            "img": "impg/wixtoolset.png",
+            "nombre": "Wix Toolset<br>Software para crear instaladores de Windows msi",
+            "img": "https://avatars.githubusercontent.com/u/91997072?s=200&v=4",
             "enlace": "https://www.firegiant.com/wixtoolset/",
             "modelo": "Herramientas"
         },        
         {
             "nombre": "Figma<br>Herramienta de diseño de interfaces y prototipado de diseño UX/UI",
-            "img": "impg/figma.png",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgl7wpiJVouzQ_6Jgf4zGvIN4uiRsOYOcbQ&s",
             "enlace": "https://www.figma.com/",
             "modelo": "Herramientas"
         },
         {
             "nombre": "Canva<br>Herramienta de diseño gráfico en línea para crear gráficos, presentaciones, carteles y otros contenidos visuales",
-            "img": "impg/canva.png",
+            "img": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxo4K81Ei7WzcnqEk8W.MgwYKXD7FOghvNjFDjAW2n_n9G17dCS5MiDbyIZ_jyNltdF9RoV.SfZuqrFB1prlcL8k-&format=source",
             "enlace": "https://www.canva.com/",
             "modelo": "Herramientas"
         },
         {
             "nombre": "PDF24<br>Suite de herramientas gratuitas para gestionar archivos PDF, disponible tanto en versión web (online) como de escritorio (PDF24 Creator) para Windows. Permite crear, editar, comprimir, convertir, unir, dividir, firmar y proteger documentos sin costes ocultos ni limitaciones, siendo una opción versátil y segura desarrollada en Alemania.",
-            "img": "impg/pdf24.png",
+            "img": "https://cdn-1.webcatalog.io/catalog/pdf24/pdf24-social-preview.png?v=1714775420105",
             "enlace": "https://www.pdf24.org/es/",
             "modelo": "Herramientas"
         },
@@ -786,8 +792,8 @@
             "modelo": "Electrónica y Robots"
         },
         {
-            "nombre": "DCA Lab<br>Plataforma para experimentar con circuitos electrónicos",
-            "img": "impg/",
+            "nombre": "DCAC Lab<br>Plataforma para experimentar con circuitos electrónicos",
+            "img": "https://dcaclab-discourse-forum.s3.dualstack.us-east-1.amazonaws.com/original/1X/4face1e214f3ca00f12bdd6a4723bbdaf64f888d.png",
             "enlace": "https://dcaclab.com/es/lab",
             "modelo": "Electrónica y Robots"
         },
@@ -1057,7 +1063,7 @@
         },
         {
             "nombre": "Emergent",
-            "img": "impg/",
+            "img": "https://iaperfecta.com/wp-content/uploads/2025/05/emergent.jpg",
             "enlace": "https://app.emergent.sh/home",
             "modelo": "IA"
         },
@@ -1065,6 +1071,12 @@
             "nombre": "DeepL Translator<br>Traductor de idiomas por IA",
             "img": "impg/deepltranslator.png",
             "enlace": "https://www.deepl.com/translator",
+            "modelo": "IA"
+        },        
+        {
+            "nombre": "Claude",
+            "img": "https://hipaatimes.com/hubfs/Is%20Claude%20AI%20HIPAA%20compliant-1.jpg",
+            "enlace": "https://claude.ai/new",
             "modelo": "IA"
         },
         {
@@ -1321,14 +1333,14 @@
             "modelo": "Coding"
         },                
         {
-            "nombre": "Wireshark es un analizador de protocolos de red de código abierto. Se utiliza para capturar y examinar datos que se transmiten a través de redes informáticas en tiempo real. Wireshark permite a los usuarios ver detalles minuciosos de los paquetes de datos, lo que facilita la identificación y solución de problemas de red, el análisis de seguridad y la comprensión del comportamiento del tráfico de red.",
+            "nombre": "Wireshark<br>Es un analizador de protocolos de red de código abierto. Se utiliza para capturar y examinar datos que se transmiten a través de redes informáticas en tiempo real. Wireshark permite a los usuarios ver detalles minuciosos de los paquetes de datos, lo que facilita la identificación y solución de problemas de red, el análisis de seguridad y la comprensión del comportamiento del tráfico de red.",
             "img": "impg/wireshark.png",
             "enlace": "https://www.wireshark.org/download.html",
             "modelo": "Coding"
         },     
         {
-            "nombre": "Nmap es una herramienta de código abierto para la exploración de redes y auditorías de seguridad. Permite descubrir hosts y servicios en una red informática, creando un mapa de la red. Nmap utiliza paquetes IP crudos para determinar qué hosts están disponibles en la red, qué servicios ofrecen, qué sistemas operativos están ejecutando, qué tipos de filtros de paquetes/firewalls están en uso, y otras características.",
-            "img": "impg/",
+            "nombre": "Nmap<br>Herramienta de código abierto para la exploración de redes y auditorías de seguridad. Permite descubrir hosts y servicios en una red informática, creando un mapa de la red. Nmap utiliza paquetes IP crudos para determinar qué hosts están disponibles en la red, qué servicios ofrecen, qué sistemas operativos están ejecutando, qué tipos de filtros de paquetes/firewalls están en uso, y otras características.",
+            "img": "https://blog.walthercuro.com/wp-content/uploads/2025/03/image-2.png",
             "enlace": "https://nmap.org/download.html",
             "modelo": "Coding"
         },             
@@ -1381,17 +1393,11 @@
             "modelo": "Coding"
         },
         {
-            "nombre": "Artemis es un escáner modular de vulnerabilidades. Es la herramienta que impulsa las actividades de escaneo de CERT PL comprobando diversos aspectos de la seguridad del sitio web y creando mensajes fáciles de leer listos para ser enviados a las organizaciones escaneadas.",
-            "img": "impg/",
+            "nombre": "Artemis<br>Escáner modular de vulnerabilidades. Es la herramienta que impulsa las actividades de escaneo de CERT PL comprobando diversos aspectos de la seguridad del sitio web y creando mensajes fáciles de leer listos para ser enviados a las organizaciones escaneadas.",
+            "img": "https://media.licdn.com/dms/image/v2/D4D22AQGVFg68qEFGPw/feedshare-shrink_800/B4DZRKzO9cGUAk-/0/1736421732600?e=2147483647&v=beta&t=vJD96ElKSkqPZUZxvsleDOOqwojWpjKzopqiDzmnvIA",
             "enlace": "https://github.com/CERT-Polska/Artemis",
             "modelo": "Coding"
         }, 
-        {
-            "nombre": "TeKnoLiberty<br>\"Su objetivo es desmentir toda la mierda desperdigada por los feds y lamebotas estadistas\" - TeknoLiberty",
-            "img": "impg/",
-            "enlace": "https://teknoliberty.com",
-            "modelo": "Coding"
-        },   
 
 
 
@@ -1536,21 +1542,27 @@
             "modelo": "GitHub"
         },                        
         {
-            "nombre": "Arduino Xbox Series X Controller ESP32<br>librería para usar un control Xbox Series X con Arduino y ESP32",
-            "img": "impg/",
+            "nombre": "Arduino Xbox Series X Controller ESP32<br>Librería para usar un control Xbox Series X con Arduino y ESP32",
+            "img": "https://hackster.imgix.net/uploads/attachments/1897393/_UsbWR6p3M0.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg",
             "enlace": "https://github.com/asukiaaa/arduino-XboxSeriesXControllerESP32?tab=readme-ov-file",
             "modelo": "GitHub"
         },                                   
         {
             "nombre": "copyparty<br>Servidor de archivos web de código abierto y autohospedado",
-            "img": "impg/",
+            "img": "https://cdn.ilsoftware.it/Jlxwz0BRl9Qr54du9SF2Y459nd8=/480x300/filters:format(webp)/https://www.ilsoftware.it/app/uploads/2025/07/copyparty-file-server.jpg",
             "enlace": "https://github.com/9001/copyparty",
             "modelo": "GitHub"
         },                    
         {
             "nombre": "RemoveWindowsAI<br>¿Porqué? La versión actual de Windows 11 para 25H2 y futuras incluirán cada vez más funciones y componentes de IA. Este script pretende eliminar TODAS estas funciones para mejorar la experiencia del usuario, la privacidad y la seguridad.",
-            "img": "impg/",
-            "enlace": "https://github.com/zoicware/RemoveWindowsAI",
+            "img": "https://private-user-images.githubusercontent.com/118035521/337743561-33efb033-c935-416c-977d-777bb69a3737.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI3NzQ5MDEsIm5iZiI6MTc3Mjc3NDYwMSwicGF0aCI6Ii8xMTgwMzU1MjEvMzM3NzQzNTYxLTMzZWZiMDMzLWM5MzUtNDE2Yy05NzdkLTc3N2JiNjlhMzczNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwNlQwNTIzMjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04N2Y0NTc4YjhkMTIyNmJlYjUzYTFlN2I4NTA0OWQxMTI2ZTMyZGE3OTU4ODc4ZmVhMjgyNzMxZWZmOTQzN2Q1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.slpwevJAt5w4imhP2rVbMXjaLCT0bhMd4yCj88QPWNQ",
+            "enlace": "https://github.com/zoicware/RemoveWindowsAI?tab=readme-ov-file#how-to-use",
+            "modelo": "GitHub"
+        },                    
+        {
+            "nombre": "Chris Titus Tech's Windows Utility<br>Esta utilidad es una recopilación de tareas de Windows que realizo en cada sistema Windows que utilizo. Está pensado para agilizar instalaciones, deshacer ajustes con desplom, solucionar problemas con la configuración y arreglar actualizaciones de Windows. ",
+            "img": "https://cidgraphics.com/wp-content/uploads/chris-titus-logo-img3.webp",
+            "enlace": "https://github.com/ChrisTitusTech/winutil",
             "modelo": "GitHub"
         },     
 
@@ -1744,7 +1756,7 @@
         },
         {
             "nombre": "pelisplushd<br>Página para ver películas en streaming, tiene una gran variedad de películas y series",
-            "img": "impg/pelisplushd.png",
+            "img": "https://image.winudf.com/v2/image1/cGVsaXNwbHVzLmFwbGlrZnRfc2NyZWVuXzRfMTY0Mjk3OTI4OV8wMzQ/screen-4.jpg?fakeurl=1&type=.jpg",
             "enlace": "https://www25.pelisplushd.to/",
             "modelo": "Otros"
         },
@@ -1828,7 +1840,7 @@
         },
         {
             "nombre": "Henry Matzar<br>Herramientas gratuitas para diseñadores",
-            "img": "impg/",
+            "img": "https://scontent.flov1-1.fna.fbcdn.net/v/t39.30808-6/480383815_655156730200973_4701650517180624840_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEDfrdsOufyJWeTMLSLW6g8mznwD8kG4mKbOfAPyQbiYlzLLakZDbIX-vYZsEBjpy10tXhYhQe4nI3GZ4_vFxKA&_nc_ohc=u5T6TvmUbVMQ7kNvwFXKOLc&_nc_oc=AdnQ2SXikOcx6uBt1-vZ_Qnz1blGq5S4gU39zP9ksV4fXfiPwusnrZ3q2d7jVnAxe31EOUZVixCsoqtoQQMfmq1f&_nc_zt=23&_nc_ht=scontent.flov1-1.fna&_nc_gid=Dcq7D2dIlQfTTMz5AsXvcQ&_nc_ss=8&oh=00_Afwfs_LsEI9iHuqUSK4mfYuGR4npl1QmvPn1MmI6l6LxcA&oe=69B0414F",
             "enlace": "https://www.henrymatzar.com/herramientas/",
             "modelo": "Otros"
         },
@@ -1840,10 +1852,16 @@
         },
         {
             "nombre": "PingMe<br>Servicio de mensajería instantánea enfocado en la privacidad y seguridad de los usuarios</br>Es de pago y el mejor pais para elegir es UnitedKingdom(demomento)",
-            "img": "impg/",
+            "img": "https://play-lh.googleusercontent.com/1Qzyn7aq31Y5-bYwHLOq_FOOomFnnqE7bX6WJm-SPc8wvcdK05ZV2DrDY64FLNkono4",
             "enlace": "https://pingme.tel/",
             "modelo": "Otros"
-        },
+        },         
+        {
+            "nombre": "TeKnoLiberty<br>\"Su objetivo es desmentir toda la mierda desperdigada por los feds y lamebotas estadistas\" - TeknoLiberty",
+            "img": "https://static.vecteezy.com/system/resources/thumbnails/010/227/846/small/silhouette-hands-and-broken-chains-freedom-concept-photo.jpg",
+            "enlace": "https://teknoliberty.com",
+            "modelo": "Otros"
+        },  
 
 
 
@@ -1896,43 +1914,49 @@
 
         {
             "nombre": "Web Devs<br>Recopilación de tutoriales y recursos para desarrolladores web",
-            "img": "impg/",
+            "img": "https://www.comunicare.es/wp-content/uploads/2021/08/desarrollo-web.jpg",
             "enlace": "https://desarrolladoresweb.org/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "CSS Text Animations",
-            "img": "impg/",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ94h8ncQrOuwcqUFAji6UfiZ3YjCtszBDLyA&s",
             "enlace": "https://prismic.io/blog/css-text-animations",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "HTML Color Codes",
-            "img": "impg/",
+            "img": "https://htmlcolorcodes.com/icon2.png?e54694489ec32db1",
             "enlace": "https://htmlcolorcodes.com/es/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "CSS Gradient<br>Generador de degradados para CSS",
-            "img": "impg/",
+            "img": "https://cdn-1.webcatalog.io/catalog/css-gradient/css-gradient-icon-filled-256.png?v=1736412961294",
             "enlace": "https://cssgradient.io/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "Can I use...<br>Comprueba la compatibilidad de las características web en los navegadores",
-            "img": "impg/",
+            "img": "https://super-monitoring.com/blog/wp-content/uploads/2016/09/caniuse.png",
             "enlace": "https://caniuse.com/",
             "modelo": "Desarrollo Web"
         },
         {
             "nombre": "WebDevTrick<br>Recopilación de tutoriales y recursos para desarrolladores web",
-            "img": "impg/",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1xRJF2OeyZDsbL1DhzByqgwEImsmmUjuPQ&s",
             "enlace": "https://webdevtrick.com/",
             "modelo": "Desarrollo Web"
         },
         {
+            "nombre": "W3Schools<br>Learn to Code With the <strong>world's largest web developer</strong> site.",
+            "img": "https://cdn.prod.website-files.com/60ffdd9e3c66d71b667eba0b/6470ee2574766c89099e3497_JcqFK_yAO6Av33xfNUmTM0r7f2bXs1HA0eqm_j7VTdw.png",
+            "enlace": "https://www.w3schools.com/",
+            "modelo": "Desarrollo Web"
+        },
+        {
             "nombre": "Model Viewer<br>Visualizador de modelos 3D en el navegador",
-            "img": "impg/",
+            "img": "https://pbs.twimg.com/profile_images/1161337646460760064/SFFIMxqt_400x400.jpg",
             "enlace": "https://modelviewer.dev/",
             "modelo": "Desarrollo Web"
         },
