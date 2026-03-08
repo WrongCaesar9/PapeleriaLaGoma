@@ -2210,9 +2210,9 @@
 
 
         {
-            "nombre": "Blender con DLSS",
+            "nombre": "Blender con DLSS<br>Custom Built de Blender: aquí están los pasos para compilar Blender, además de que puedes descargarlo. :D",
             "img": "imgDlSS/splashMod.jpg",
-            "enlace": "https://www.instagram.com/wrongcaesar9.0/",
+            "enlace": "https://lagoma.netlify.app/index.html#blenderDLSS",
             "modelo": "Otros",
             "fecha":"2026-03-09"
         },
