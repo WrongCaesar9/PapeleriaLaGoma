@@ -22,70 +22,70 @@
             "fecha":"2026-03-01"
         },        
         {
-            "nombre": "Blender Studio<br>Aqui encuentras rigs y modelos 3D hechos por blender :D",
+            "nombre": "Blender Studio<br>Aquí encuentras rigs y modelos 3D hechos por blender :D",
             "img": "impg/blenderstudio.png",
             "enlace": "https://studio.blender.org/characters/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "blendswap<br>repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita",
+            "nombre": "blendswap<br>Repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita.",
             "img": "impg/blendswap.png",
             "enlace": "https://blendswap.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "Polyhaven<br>Página donde encontraras HDRI's, Texturas y Modelos",
+            "nombre": "Polyhaven<br>Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/polyhaven.png",
             "enlace": "https://polyhaven.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "Poliigon<br>Página donde encontraras HDRI's, Texturas y Modelos hechos por Polygon Runway",
+            "nombre": "POLLIGON<br>Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/polygonRun.png",
             "enlace": "https://www.poliigon.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "ambientCG<br>Página donde encontraras HDRI's, Texturas y Modelos",
+            "nombre": "ambientCG<br>Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/ambientcg.png",
             "enlace": "https://ambientcg.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "CGHeaven<br>Página donde encontraras HDRI's, Texturas y Modelos",
+            "nombre": "CGHeaven<br>Encontrarás HDRI's, Texturas y Modelos 3D",
             "img": "impg/CGheaven.png",
             "enlace": "https://cgheven.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "Sketchfab<br>Página para descargar modelos 3D en distintos formatos",
+            "nombre": "Sketchfab<br>Podrás descargar modelos 3D en distintos formatos",
             "img": "impg/sketchfab.png",
             "enlace": "https://sketchfab.com/feed",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "Thingiverse<br>Para impresión 3D<br>Página para descargar modelos 3D en formato STL",
+            "nombre": "Thingiverse<br>Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
             "img": "impg/thingiverse.png",
             "enlace": "https://sketchfab.com/feed",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "Cults 3D<br>Para impresión 3D<br>Página para descargar modelos 3D en formato STL",
+            "nombre": "Cults 3D<br>Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
             "img": "impg/cults.png",
             "enlace": "https://cults3d.com/es",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "Materialize<br>Software de creación de texturas",
+            "nombre": "Materialize<br>Software de creación de texturas PBR con imagenes o fotos.",
             "img": "impg/materialize.png",
             "enlace": "https://boundingboxsoftware.com/materialize/getkey.php",
             "modelo": "Modelado y Diseño 3D",
@@ -106,7 +106,7 @@
             "fecha":"2026-03-01"
         },
         {
-            "nombre": "Mixamo<br>Página para descargar animaciones para tus modelos 3D 'humanoides'",
+            "nombre": "Mixamo<br>Podrás descargar animaciones para tus modelos 3D 'humanoides'",
             "img": "impg/mixamo.png",
             "enlace": "https://www.mixamo.com/#",
             "modelo": "Modelado y Diseño 3D",
@@ -210,6 +210,13 @@
 
 
 
+        {
+            "nombre": "8th Wall<br>Plataforma líder de desarrollo de contenido de realidad virtual (WebAR, WebVR y WebXR)",
+            "img": "https://assets.arpost.co/wp-content/uploads/2018/09/28213736/Screen_Shot_2018-09-10_at_1.28.31_PM.png",
+            "enlace": "https://8thwall.org/",
+            "modelo": "VR y AR",
+            "fecha":"2026-03-08"
+        },
         {
             "nombre": "Spark AR Studio<br>Pronto agrego más de esta categoría xD",
             "img": "impg/SparkARStudio.png",
@@ -549,7 +556,7 @@
             "img": "https://new-game-plus.fr/wp-content/uploads/2025/11/pcsx2-99-emulation1.webp",
             "enlace": "https://pcsx2.net/",
             "modelo": "Juegos",
-            "fecha":"2026-03-01"
+            "fecha":"2026-03-08"
         },
         {
             "nombre": "GTA SA para PC<br>Si no sabes como se instala, preguntame 🤙🏾",
@@ -927,7 +934,7 @@
             "img": "impg/frodobots.png",
             "enlace": "https://school.frodobots.com/testdrive/",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01"
+            "fecha":"2026-03-07"
         },
 
 
@@ -1228,7 +1235,7 @@
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfkJzTiJZ5xUMlzzgGCOfmsV6yLJEyEuu_A&s",
             "enlace": "https://huggingface.co/spaces/multimodalart/qwen-image-multiple-angles-3d-camera",
             "modelo": "IA",
-            "fecha":"2026-03-01"
+            "fecha":"2026-03-08"
         },
 
 
@@ -1685,10 +1692,10 @@
         },                    
         {
             "nombre": "RemoveWindowsAI<br>¿Porqué? La versión actual de Windows 11 para 25H2 y futuras incluirán cada vez más funciones y componentes de IA. Este script pretende eliminar TODAS estas funciones para mejorar la experiencia del usuario, la privacidad y la seguridad.",
-            "img": "https://private-user-images.githubusercontent.com/118035521/337743561-33efb033-c935-416c-977d-777bb69a3737.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI3NzQ5MDEsIm5iZiI6MTc3Mjc3NDYwMSwicGF0aCI6Ii8xMTgwMzU1MjEvMzM3NzQzNTYxLTMzZWZiMDMzLWM5MzUtNDE2Yy05NzdkLTc3N2JiNjlhMzczNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwNlQwNTIzMjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04N2Y0NTc4YjhkMTIyNmJlYjUzYTFlN2I4NTA0OWQxMTI2ZTMyZGE3OTU4ODc4ZmVhMjgyNzMxZWZmOTQzN2Q1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.slpwevJAt5w4imhP2rVbMXjaLCT0bhMd4yCj88QPWNQ",
+            "img": "https://i0.wp.com/laverdadnoticias.com/wp-content/uploads/2026/01/RemoveWindowsAI-desactiva-la-IA-en-Windows-11-paso-a-paso.webp",
             "enlace": "https://github.com/zoicware/RemoveWindowsAI?tab=readme-ov-file#how-to-use",
             "modelo": "GitHub",
-            "fecha":"2026-03-01"
+            "fecha":"2026-03-06"
         },                    
         {
             "nombre": "Chris Titus Tech's Windows Utility<br>Esta utilidad es una recopilación de tareas de Windows que realizo en cada sistema Windows que utilizo. Está pensado para agilizar instalaciones, deshacer ajustes con desplom, solucionar problemas con la configuración y arreglar actualizaciones de Windows. ",
@@ -2167,7 +2174,7 @@
             "img": "https://cdn.prod.website-files.com/60ffdd9e3c66d71b667eba0b/6470ee2574766c89099e3497_JcqFK_yAO6Av33xfNUmTM0r7f2bXs1HA0eqm_j7VTdw.png",
             "enlace": "https://www.w3schools.com/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01"
+            "fecha":"2026-03-08"
         },
         {
             "nombre": "Model Viewer<br>Visualizador de modelos 3D en el navegador",
@@ -2202,13 +2209,19 @@
 
 
 
-        
+        {
+            "nombre": "Blender con DLSS",
+            "img": "imgDlSS/splashMod.jpg",
+            "enlace": "https://www.instagram.com/wrongcaesar9.0/",
+            "modelo": "Otros",
+            "fecha":"2026-03-09"
+        },
         {
             "nombre": "<a  target=_blank href=https://www.instagram.com/wrongcaesar9.0/>Mi Instagram</a><br><a  target=_blank href=https://www.thingiverse.com/wrongcaesar9/designs>Mi Thingiverse</a><br><a  target=_blank href=https://cults3d.com/es/usuarios/WrongCaesar9>Mi Cults</a>",
             "img": "impg/miinsta.png",
             "enlace": "https://www.instagram.com/wrongcaesar9.0/",
             "modelo": "Otros",
-            "fecha": "01/03/2026"
+            "fecha":"2025-02-01"
         }
    
     ]

@@ -397,8 +397,120 @@ function mostrarToast() {
 }
 
 
+async function iniciarCarruselPro() {
+    try {
+        const respuesta = await fetch('datapg.json');
+        const datos = await respuesta.json();
+        const gallery = document.getElementById('carouselGallery');
 
+        const programas = datos.programas
+            .sort((a, b) => new Date(b.fecha) - new Date(a.fecha))
+            .slice(0, 10);
+        
+        const n = programas.length;
 
+        const crearSlide = (p) => `
+            <div class="carousel-slide">
+                <img src="${p.img}" alt="Imagen de programa">
+                <div class="info-overlay">
+                    <div class="info-content">
+                        <h3>${p.nombre}</h3>
+                        <p class="modelo-tag">Filtro: ${p.modelo}</p>
+                        <center><a href="${p.enlace}" target="_blank" class="btn-directo">Da el Salto 🐸🤙</a></center>
+                    </div>
+                </div>
+            </div>`;
+
+        // Clonado para infinito
+        let contenidoTrack = crearSlide(programas[n - 1]); 
+        programas.forEach(p => contenidoTrack += crearSlide(p));
+        contenidoTrack += crearSlide(programas[0]);
+
+        // Inyectamos HTML (incluyendo el contenedor de dots vacío)
+        gallery.innerHTML = `
+            <div class="carousel-track">${contenidoTrack}</div>
+            <button class="carousel-btn prev">◀</button>
+            <button class="carousel-btn next">▶</button>
+            <div class="carousel-dots" id="dotsContainer"></div>
+        `;
+
+        const track = gallery.querySelector('.carousel-track');
+        const dotsContainer = document.getElementById('dotsContainer');
+        let index = 0; 
+        let isTransitioning = false;
+
+        // --- CREAR LOS PUNTOS ---
+        programas.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => mover(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll('.dot');
+
+        function actualizarDots(idx) {
+            dots.forEach(dot => dot.classList.remove('active'));
+            // Lógica para que el clon del final active el primer dot y viceversa
+            let realIdx = idx;
+            if (idx === n) realIdx = 0;
+            if (idx === -1) realIdx = n - 1;
+            dots[realIdx].classList.add('active');
+        }
+
+        track.style.transform = `translateX(-100%)`;
+        void track.offsetWidth; 
+
+        function mover(objetivo) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            index = objetivo;
+            
+            track.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+            track.style.transform = `translateX(-${(index + 1) * 100}%)`;
+            actualizarDots(index);
+        }
+
+        track.addEventListener('transitionend', () => {
+            isTransitioning = false;
+            if (index === n) {
+                track.style.transition = 'none';
+                index = 0;
+                track.style.transform = `translateX(-100%)`;
+            }
+            if (index === -1) {
+                track.style.transition = 'none';
+                index = n - 1;
+                track.style.transform = `translateX(-${(index + 1) * 100}%)`;
+            }
+        });
+
+        gallery.querySelector('.next').addEventListener('click', () => mover(index + 1));
+        gallery.querySelector('.prev').addEventListener('click', () => mover(index - 1));
+
+        // Autoplay
+        let intervalo = setInterval(() => mover(index + 1), 1500);
+        gallery.addEventListener('mouseenter', () => clearInterval(intervalo));
+        gallery.addEventListener('mouseleave', () => {
+            intervalo = setInterval(() => mover(index + 1), 1500);
+        });
+
+        // --- LÓGICA DE SWIPE (Sustituye al overflow-x) ---
+        let startX = 0;
+        gallery.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+        gallery.addEventListener('touchend', e => {
+            const endX = e.changedTouches[0].clientX;
+            if (startX - endX > 50) mover(index + 1); // Deslizar a la izquierda
+            else if (endX - startX > 50) mover(index - 1); // Deslizar a la derecha
+        });
+
+    } catch (error) {
+        console.error("Hubo un error:", error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', iniciarCarruselPro);
 /* 
 function copyCode(button) {
   const codeElement = button.nextElementSibling.querySelector("code");

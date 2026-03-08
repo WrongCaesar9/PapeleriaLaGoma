@@ -54,7 +54,7 @@ p {
   font-size: 18px;
   line-height: 1.2;
   color: #000000;
-  margin: 10px 20px 10px 20px; 
+  margin: 10px 20px 10px 20px;
   text-align: justify;
 }
 
@@ -62,7 +62,7 @@ footer p {
   font-size: 14px;
   line-height: 1.2;
   color: #ffffff;
-  margin: 10px 20px 10px 20px; 
+  margin: 10px 20px 10px 20px;
   text-align: center;
 }
 
@@ -70,7 +70,7 @@ li {
   font-size: 18px;
   line-height: 1.5;
   color: #000000;
-  margin: 10px 20px 10px 40px; 
+  margin: 10px 20px 10px 40px;
   text-align: justify;
 }
 
@@ -98,11 +98,9 @@ li {
 */
 
 header {
-
   position: fixed;
   width: 100%;
   top: 0;
-
 }
 
 /* 1. IDENTIDAD (Logo y Texto) */
@@ -207,7 +205,8 @@ header {
   width: max-content;
 }
 
-.thingi-btn:hover, .thingi-btn.link-btn:hover,
+.thingi-btn:hover,
+.thingi-btn.link-btn:hover,
 .thingi-select:hover {
   background-color: #9797f4;
   border-color: #daf747;
@@ -290,7 +289,7 @@ header {
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
     font-weight: 800;
-        display: none;
+    display: none;
   }
 
   .header__logo-image {
@@ -405,7 +404,7 @@ section cont {
   display: inline-flex;
   margin: 10px auto;
   width: 100%;
-  
+
 }
 
 .whole-search-bar input {
@@ -909,7 +908,8 @@ h1 {
   border-radius: 8px;
 }
 
-.projectDLSS ul,li {
+.projectDLSS ul,
+li {
   font-size: 16px;
   margin-bottom: 10px;
   align-items: stretch;
@@ -923,7 +923,7 @@ h1 {
 }
 
 code {
-  font-family: Consolas,"courier new";
+  font-family: Consolas, "courier new";
   color: rgb(220, 100, 20);
   background-color: #2b2a2a;
   padding: 2px;
@@ -948,6 +948,7 @@ pre {
   margin: 5px auto;
 
 }
+
 .dlssinfo p {
   margin-bottom: 10px;
 
@@ -999,7 +1000,7 @@ details[open] {
   background-color: #ffffff7b;
 }
 
- summary{
+summary {
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
@@ -1054,43 +1055,49 @@ details[open] {
 
 
 #toast-container {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .toast {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 25px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    opacity: 0;
-    transform: translateX(100px);
-    transition: all 0.5s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  background-color: #333;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .toast.show {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Tipos de alerta */
-.toast.success { background-color: #4CAF50; }
-.toast.error { background-color: #f44336; }
+.toast.success {
+  background-color: #4CAF50;
+}
+
+.toast.error {
+  background-color: #f44336;
+}
 
 .toast-btn {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
+
 .toast-btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 
@@ -1513,16 +1520,162 @@ header,
 
 
 
+/* Contenedor principal */
+.carousel-gallery {
+
+  max-width: 400px;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+
+/* La fila que contiene todas las fotos */
+.carousel-track {  
+  display: flex;
+  width: 100%;
+  /* No pongas transition aquí todavía, el JS la pondrá */
+}
+
+/* Cada cuadro de imagen */
+.carousel-slide {
+  flex: 0 0 100%;
+  /* FIX: Esto evita que las imágenes se encimen */
+  min-width: 100%;
+  aspect-ratio: 1 / 1;
+  /* Mantiene el cuadrado perfecto */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  /* Llena el cuadro sin deformarse */
+  display: block;
+  border-radius: 10px;
+
+}
+
+/* El Overlay de información (Estilo Netflix) */
+.info-overlay {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.info-content {
+  color: white;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.info-content a {
+  color: rgb(118, 205, 71);
+
+}
+
+.modelo-tag {
+  color: white;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.btn-directo {
+  color: #449502;
+  padding: 1px 5px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.carousel-slide:hover .info-overlay {
+  opacity: 1;
+}
+
+.carousel-slide:hover img {
+  transform: scale(1.05);
+}
+
+/* Botones y Dots (Mantén los que ya tenías en tu código) */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgb(165, 50, 14);
+  border: none;
+  color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: grab;
+
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+/* Contenedor de los puntos */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Estilo de cada punto */
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(165, 14, 152, 0.768);
+}
+
+/* Punto activo (el que estás viendo) */
+.dot.active {
+    background: rgb(72, 165, 14); /* El color naranja/rojo de tus botones */
+    transform: scale(1.3);
+    box-shadow: 0 0 5px rgba(155, 14, 165, 0.8);
+}
 /* The entire scrollbar */
 ::-webkit-scrollbar {
-  width: 10px; /* width of the vertical scrollbar */
-  height: 10px; /* height of the horizontal scrollbar */
+  width: 10px;
+  /* width of the vertical scrollbar */
+  height: 10px;
+  /* height of the horizontal scrollbar */
   position: inherit;
 }
 
 /* The track (background) */
 ::-webkit-scrollbar-track {
-background: #b2b2b2;
+  background: #b2b2b2;
   border-radius: 10px;
 }
 
