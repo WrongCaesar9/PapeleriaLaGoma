@@ -1510,3 +1510,31 @@ header,
     transform: translatex(0px);
   }
 }
+
+
+
+/* The entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* width of the vertical scrollbar */
+  height: 10px; /* height of the horizontal scrollbar */
+  position: inherit;
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+background: #b2b2b2;
+  border-radius: 10px;
+}
+
+/* The handle (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #442c2c;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* The handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9c408e;
+  transition: 0.5s;
+}
