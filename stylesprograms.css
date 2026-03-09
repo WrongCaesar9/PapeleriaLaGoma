@@ -1619,7 +1619,7 @@ header,
 /* Botones y Dots (Mantén los que ya tenías en tu código) */
 .carousel-btn {
   position: absolute;
-  top: 50%;
+  top: 95%;
   transform: translateY(-50%);
   z-index: 10;
   background: rgb(165, 50, 14);

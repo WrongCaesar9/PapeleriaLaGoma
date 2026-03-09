@@ -410,7 +410,8 @@ async function iniciarCarruselPro() {
         const n = programas.length;
 
         const crearSlide = (p) => `
-            <div class="carousel-slide">
+        
+            <div class="carousel-slide"><h3 style="position: absolute; margin-top: 92%; background: rgba(0, 0, 0, 0.42); color: white; border-radius: 5px; padding: 5px 5px 2px 5px; backdrop-filter: blur(10px);">${p.titulo}</h3>
                 <img src="${p.img}" alt="Imagen de programa">
                 <div class="info-overlay">
                     <div class="info-content">
