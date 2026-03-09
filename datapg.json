@@ -1,7 +1,7 @@
 {
     "programas": [
         {
-            "nombre": "Blender<br>Es un programa de...<br>¿Como no vas a saber?🤨",
+            "description": "Es un programa de...<br>¿Como no vas a saber?🤨",
             "img": "impg/blender.png",
             "enlace": "https://www.blender.org/download/",
             "modelo": "Modelado y Diseño 3D",
@@ -9,7 +9,7 @@
             "titulo":"Blender"
         },
         {
-            "nombre": "Cinema4D R20<br>contraseña:<br>www.programasvirtualespc.net ",
+            "description": "contraseña:<br>www.programasvirtualespc.net ",
             "img": "impg/cinema4dr20.png",
             "enlace": "https://drive.google.com/file/d/19dZlXy0UeGLWeb0oY3T3OVLXw7YaGQXX/view",
             "modelo": "Modelado y Diseño 3D",
@@ -17,7 +17,7 @@
             "titulo":"Cinema4D R20"
         },        
         {
-            "nombre": "Houdini 19.0<br>Simulaciones mamalonas",
+            "description": "Simulaciones mamalonas",
             "img": "impg/houdini.png",
             "enlace": "https://drive.google.com/file/d/1GhUq_M8gIFyu3x9VFB609Sm6H5XHwUaK/view?usp=sharing",
             "modelo": "Modelado y Diseño 3D",
@@ -25,7 +25,7 @@
             "titulo":"Houdini 19.0"
         },        
         {
-            "nombre": "Blender Studio<br>Aquí encuentras rigs y modelos 3D hechos por blender :D",
+            "description": "Aquí encuentras rigs y modelos 3D hechos por blender :D",
             "img": "impg/blenderstudio.png",
             "enlace": "https://studio.blender.org/characters/",
             "modelo": "Modelado y Diseño 3D",
@@ -33,7 +33,7 @@
             "titulo":"Blender Studio"
         },
         {
-            "nombre": "blendswap<br>Repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita.",
+            "description": "Repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita.",
             "img": "impg/blendswap.png",
             "enlace": "https://blendswap.com/",
             "modelo": "Modelado y Diseño 3D",
@@ -41,7 +41,7 @@
             "titulo":"blendswap"
         },
         {
-            "nombre": "Polyhaven<br>Encontrarás HDRI's, Texturas y Modelos 3D.",
+            "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/polyhaven.png",
             "enlace": "https://polyhaven.com/",
             "modelo": "Modelado y Diseño 3D",
@@ -49,7 +49,7 @@
             "titulo":"Polyhaven"
         },
         {
-            "nombre": "POLLIGON<br>Encontrarás HDRI's, Texturas y Modelos 3D.",
+            "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/polygonRun.png",
             "enlace": "https://www.poliigon.com/",
             "modelo": "Modelado y Diseño 3D",
@@ -57,7 +57,7 @@
             "titulo":"POLLIGON"
         },
         {
-            "nombre": "ambientCG<br>Encontrarás HDRI's, Texturas y Modelos 3D.",
+            "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/ambientcg.png",
             "enlace": "https://ambientcg.com/",
             "modelo": "Modelado y Diseño 3D",
@@ -65,7 +65,7 @@
             "titulo":"ambientCG"
         },
         {
-            "nombre": "CGHeaven<br>Encontrarás HDRI's, Texturas y Modelos 3D",
+            "description": "Encontrarás HDRI's, Texturas y Modelos 3D",
             "img": "impg/CGheaven.png",
             "enlace": "https://cgheven.com/",
             "modelo": "Modelado y Diseño 3D",
@@ -73,7 +73,7 @@
             "titulo":"CGHeaven"
         },
         {
-            "nombre": "Sketchfab<br>Podrás descargar modelos 3D en distintos formatos",
+            "description": "Podrás descargar modelos 3D en distintos formatos",
             "img": "impg/sketchfab.png",
             "enlace": "https://sketchfab.com/feed",
             "modelo": "Modelado y Diseño 3D",
@@ -81,7 +81,7 @@
             "titulo":"Sketchfab"
         },
         {
-            "nombre": "Thingiverse<br>Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
+            "description": "Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
             "img": "impg/thingiverse.png",
             "enlace": "https://sketchfab.com/feed",
             "modelo": "Modelado y Diseño 3D",
@@ -89,7 +89,7 @@
             "titulo":"Thingiverse"
         },
         {
-            "nombre": "Cults 3D<br>Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
+            "description": "Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
             "img": "impg/cults.png",
             "enlace": "https://cults3d.com/es",
             "modelo": "Modelado y Diseño 3D",
@@ -97,7 +97,7 @@
             "titulo":"Cults 3D"
         },
         {
-            "nombre": "Materialize<br>Software de creación de texturas PBR con imagenes o fotos.",
+            "description": "Software de creación de texturas PBR con imagenes o fotos.",
             "img": "impg/materialize.png",
             "enlace": "https://boundingboxsoftware.com/materialize/getkey.php",
             "modelo": "Modelado y Diseño 3D",
@@ -105,7 +105,7 @@
             "titulo":"Materialize"
         },
         {
-            "nombre": "Rokoko Vision<br>MOCAP",
+            "description": "MOCAP",
             "img": "impg/rokokovision.png",
             "enlace": "https://vision.rokoko.com/dashboard",
             "modelo": "Modelado y Diseño 3D",
@@ -113,7 +113,7 @@
             "titulo":"Rokoko Vision"
         },
         {
-            "nombre": "Plask.ai<br>MOCAP",
+            "description": "MOCAP",
             "img": "impg/plask.png",
             "enlace": "https://plask.ai/",
             "modelo": "Modelado y Diseño 3D",
@@ -121,7 +121,7 @@
             "titulo":"Plask.ai"
         },
         {
-            "nombre": "Mixamo<br>Podrás descargar animaciones para tus modelos 3D 'humanoides'",
+            "description": "Podrás descargar animaciones para tus modelos 3D 'humanoides'",
             "img": "impg/mixamo.png",
             "enlace": "https://www.mixamo.com/#",
             "modelo": "Modelado y Diseño 3D",
@@ -129,7 +129,7 @@
             "titulo":"Mixamo"
         },
         {
-            "nombre": "UltiMaker Cura<br>Slicer para impresiones en 3D",
+            "description": "Slicer para impresiones en 3D",
             "img": "impg/ultimakercura.png",
             "enlace": "https://ultimaker.com/es/software/ultimaker-cura/#downloads",
             "modelo": "Modelado y Diseño 3D",
@@ -137,7 +137,7 @@
             "titulo":"UltiMaker Cura"
         },
         {
-            "nombre": "EPIC GAMES<br>La idea es que descargues Unreal Engine xd<br>En video esta como instalarlo",
+            "description": "La idea es que descargues Unreal Engine xd<br>En video esta como instalarlo",
             "img": "impg/epicgames.png",
             "enlace": "https://www.unrealengine.com/en-US/download",
             "modelo": "Modelado y Diseño 3D",
@@ -145,7 +145,7 @@
             "titulo":"EPIC GAMES"
         },
         {
-            "nombre": "Quixel Mixer<br>Mix de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
+            "description": "Mix de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
             "img": "impg/quixelmixer.png",
             "enlace": "https://quixel.com/products/mixer",
             "modelo": "Modelado y Diseño 3D",
@@ -153,7 +153,7 @@
             "titulo":"Quixel Mixer"
         },             
         {
-            "nombre": "Houdini Varias VERSIONES<br>Debes crear una cuenta que será para SideFX y te dará acceso a los daily buils",
+            "description": "Debes crear una cuenta que será para SideFX y te dará acceso a los daily buils",
             "img": "impg/houdini.png",
             "enlace": "https://www.sidefx.com/download/daily-builds/?production=true&python3=true",
             "modelo": "Modelado y Diseño 3D",
@@ -161,7 +161,7 @@
             "titulo":"Houdini"
         },
         {
-            "nombre": "Adobe Substance 3D Painter<br>Para la creación de texturas",
+            "description": "Aplica texturas y pintura detallada directamente sobre modelos 3D",
             "img": "impg/adobesubstancepainter.png",
             "enlace": "https://www.mediafire.com/file/xg27e1x8w9r7xu0/ADB.PNT.8.3.WIN.AP.ZNT.rar/file",
             "modelo": "Modelado y Diseño 3D",
@@ -169,7 +169,7 @@
             "titulo":"Adobe Substance 3D Painter"
         },
         {
-            "nombre": "Adobe Substance 3D Designer<br>Para la creación de texturas",
+            "description": "Crea materiales PBR procedurales (basados en nodos, infinitamente ajustables) desde cero",
             "img": "impg/adobesubstancedesigner.png",
             "enlace": "https://www.mediafire.com/file/nxptpg6q8sxf0n8/ADB.SUB3D.DES.12.1.AP.ZNT.rar/file",
             "modelo": "Modelado y Diseño 3D",
@@ -177,7 +177,7 @@
             "titulo":"Adobe Substance 3D Designer"
         },
         {
-            "nombre": "COLMAP workflow<br><a  target=_blank href=https://github.com/colmap/colmap/releases/tag/3.12.3>Colmap</a><br><a  target=_blank href=https://ffmpeg.org/>Ffmpeg</a><br><a  target=_blank href=https://gist.github.com/polyfjord/4ed7e8988bdb9674145f1c270440200d>Batch reconstruct</a><br><a  target=_blank href=https://github.com/SBCV/Blender-Addon-Photogrammetry-Importer>BlenderAddonPhotogrammetryImporter</a><br>Video de instalación y uso en el enlace de abajo",
+            "description": "COLMAP workflow<br><a  target=_blank href=https://github.com/colmap/colmap/releases/tag/3.12.3>Colmap</a><br><a  target=_blank href=https://ffmpeg.org/>Ffmpeg</a><br><a  target=_blank href=https://gist.github.com/polyfjord/4ed7e8988bdb9674145f1c270440200d>Batch reconstruct</a><br><a  target=_blank href=https://github.com/SBCV/Blender-Addon-Photogrammetry-Importer>BlenderAddonPhotogrammetryImporter</a><br>Video de instalación y uso en el enlace de abajo",
             "img": "impg/colmap.png",
             "enlace": "https://www.youtube.com/watch?v=xx85eyN1Xc0",
             "modelo": "Modelado y Diseño 3D",
@@ -185,7 +185,7 @@
             "titulo":"COLMAP"
         },
         {
-            "nombre": "Armory3D<br>Motor de juego 3D integrado con Blender",
+            "description": "Motor de juego 3D integrado con Blender",
             "img": "https://armory3d.org/img/FeaturedCover.jpg",
             "enlace": "https://armory3d.org/",
             "modelo": "Modelado y Diseño 3D",
@@ -193,15 +193,39 @@
             "titulo":"Armory3D"
         }, 
         {
-            "nombre": "Blockbench<br>Editor de modelos 3D gratuito para crear modelos de baja poli y pixel art",
+            "description": "Editor de modelos 3D gratuito para crear modelos de baja poli y pixel art",
             "img": "https://media.sketchfab.com/models/ebb20c0ac30f4319985e19bc5b1d3bdd/thumbnails/fe40f80baee04b7bb9f67ccb24b5e73a/0300d5060edb477785f7f14298622d93.jpeg",
             "enlace": "https://www.blockbench.net/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
             "titulo":"Blockbench"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "8th Wall<br>Plataforma líder de desarrollo de contenido de realidad virtual (WebAR, WebVR y WebXR)",
+            "description": "Plataforma líder de desarrollo de contenido de realidad virtual (WebAR, WebVR y WebXR)",
             "img": "https://assets.arpost.co/wp-content/uploads/2018/09/28213736/Screen_Shot_2018-09-10_at_1.28.31_PM.png",
             "enlace": "https://8thwall.org/",
             "modelo": "VR y AR",
@@ -209,7 +233,7 @@
             "titulo":"8th Wall"
         },
         {
-            "nombre": "Spark AR Studio<br>Pronto agrego más de esta categoría xD",
+            "description": "Plataforma gratuita de escritorio (PC/Mac) de Meta utilizada para crear efectos y filtros de Realidad Aumentada (RA) para Instagram y Facebook.",
             "img": "impg/SparkARStudio.png",
             "enlace": "https://spark.meta.com/download/",
             "modelo": "VR y AR",
@@ -217,7 +241,7 @@
             "titulo":"Spark AR Studio"
         },
         {
-            "nombre": "Onirix<br>La app que nos recomendo la Profa. Karen",
+            "description": "Plataforma de low-code especializada en la creación de experiencias de realidad aumentada web (WebAR) sin necesidad de programar.<br>La app que nos recomendo la Profa. Karen",
             "img": "impg/onirix.png",
             "enlace": "https://studio.onirix.com/projects",
             "modelo": "VR y AR",
@@ -225,15 +249,33 @@
             "titulo":"Onirix"
         },
         {
-            "nombre": "Cubo de papel para Merge Object Viewer",
+            "description": "Cubo de papel para Merge Object Viewer",
             "img": "impg/mergecubepaper.png",
             "enlace": "https://mergeedu.com/download/file.php?f=paper-merge-cube.pdf",
             "modelo": "VR y AR",
             "fecha":"2026-03-01",
             "titulo":"Merge Cube"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Photoshop Portable CS6<br>Al ser portable, no contendra todas las funciones de la versión PRO, pero te sacara de un apuro",
+            "description": "Al ser portable, no contendra todas las funciones de la versión PRO, pero te sacara de un apuro",
             "img": "impg/phopor.png",
             "enlace": "https://drive.google.com/file/d/11c-oxEzf_1gFsfCznvLsIqxXVKPvJrLh/view",
             "modelo": "Edición",
@@ -241,7 +283,7 @@
             "titulo":"Photoshop Portable CS6"
         },
         {
-            "nombre": "Photoshop 2024 V25.6.0.433",
+            "description": "Photoshop 2024 V25.6.0.433",
             "img": "impg/photo2024.png",
             "enlace": "https://drive.google.com/file/d/15kWTHGL4XZcQ3kJ5BY9N8TN-dIGrlGBD/view?usp=sharing",
             "modelo": "Edición",
@@ -249,7 +291,7 @@
             "titulo":"Photoshop 2024"
         },        
         {
-            "nombre": "<h1 style=\"text-transform: lowercase;font-size: 16px;\">Photoshop 2025 V27.0.0.25</h1><br>Si, es la versión 2025<br>contraseña: www.programasvirtualespc.net",
+            "description": "<h1 style=\"text-transform: lowercase;font-size: 16px;\">Photoshop 2025 V27.0.0.25</h1><br>Si, es la versión 2025<br>contraseña: www.programasvirtualespc.net",
             "img": "impg/photo2024.png",
             "enlace": "https://drive.google.com/file/d/17OgxRHN3_qo9Z9qfaODBzwQHJOTpJSUc/view?usp=sharing",
             "modelo": "Edición",
@@ -257,7 +299,7 @@
             "titulo":"Photoshop 2025"
         },
         {
-            "nombre": "Photopea<br>Practicamente es Photoshop, pero Online",
+            "description": "Practicamente es Photoshop, pero Online",
             "img": "impg/photopea.png",
             "enlace": "https://www.photopea.com/",
             "modelo": "Edición",
@@ -265,7 +307,7 @@
             "titulo":"Photopea"
         },
         {
-            "nombre": "GIMP<br>Programa de edición de imágenes de código abierto",
+            "description": "Programa de edición de imágenes de código abierto",
             "img": "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/08/gimp-1.jpg?w=1600&h=900&fit=crop",
             "enlace": "https://www.gimp.org/downloads/",
             "modelo": "Edición",
@@ -273,7 +315,7 @@
             "titulo":"GIMP"
         },
         {
-            "nombre": "Inkscape<br>Editor de gráficos vectoriales de código abierto",
+            "description": "Editor de gráficos vectoriales de código abierto",
             "img": "https://images.seeklogo.com/logo-png/24/1/inkscape-logo-png_seeklogo-246387.png",
             "enlace": "https://inkscape.org/release/inkscape-1.4.2/windows/64-bit/exe/dl/",
             "modelo": "Edición",
@@ -281,7 +323,7 @@
             "titulo":"Inkscape"
         },
         {
-            "nombre": "Darktable<br>Software de flujo de trabajo fotográfico de código abierto y editor de imágenes RAW",
+            "description": "Software de flujo de trabajo fotográfico de código abierto y editor de imágenes RAW",
             "img": "https://www.free-codecs.com/pictures/screenshots/darktable.jpg",
             "enlace": "https://www.darktable.org/install/",
             "modelo": "Edición",
@@ -289,7 +331,7 @@
             "titulo":"Darktable"
         },
         {
-            "nombre": "Affinity<br>ofrece edición fotográfica, diseño vectorial, ilustración y maquetación profesional; todo en una sola aplicación y de forma gratuita.",
+            "description": "Ofrece edición fotográfica, diseño vectorial, ilustración y maquetación profesional; todo en una sola aplicación y de forma gratuita.",
             "img": "https://mir-s3-cdn-cf.behance.net/projects/404/309882239029707.Y3JvcCwxMDM1LDgxMCwyMDIsMA.png",
             "enlace": "https://www.affinity.studio/es_es/download",
             "modelo": "Edición",
@@ -297,7 +339,7 @@
             "titulo":"Affinity"
         },
         {
-            "nombre": "Krita",
+            "description": "Krita",
             "img": "impg/krita.png",
             "enlace": "https://krita.org/es/download/",
             "modelo": "Edición",
@@ -305,7 +347,7 @@
             "titulo":"Krita"
         },
         {
-            "nombre": "Adobe Illustrator CC2024<br>Ultima Version",
+            "description": "Versión CC2024",
             "img": "impg/aipor.png",
             "enlace": "https://drive.google.com/file/d/1Jq1-gKtTLfY-kCN2qdOO0KxirMHeiHXU/view?usp=sharing",
             "modelo": "Edición",
@@ -313,7 +355,7 @@
             "titulo":"Adobe Illustrator CC2024"
         },
         {
-            "nombre": "After effects Portable<br>Ni idea de la versión XD",
+            "description": "Ni idea de la versión XD",
             "img": "impg/AEPorta.png",
             "enlace": "https://drive.google.com/file/d/1p-TvsfANEY0lTlc9SUSSnneLnoFk8F1Q/view?usp=sharing",
             "modelo": "Edición",
@@ -321,7 +363,7 @@
             "titulo":"After effects Portable"
         },
         {
-            "nombre": "After Effects V.2024<br>contraseña: www.artistapirata.com",
+            "description": "contraseña: www.artistapirata.com",
             "img": "impg/afterfxpc.png",
             "enlace": "https://drive.google.com/file/d/1CHKZOJ09KnKKBiymL3oYLDNu0iqN53Z5/view?usp=sharing",
             "modelo": "Edición",
@@ -329,7 +371,7 @@
             "titulo":"After Effects 2024"
         },
         {
-            "nombre": "CorelDRAW 2021<br>Software de diseño gráfico<br>contraseña: www.programasvirtualespc.net",
+            "description": "Software de diseño gráfico<br>contraseña: www.programasvirtualespc.net",
             "img": "impg/corel21.png",
             "enlace": "https://www.mediafire.com/file/m93kaf0e4c61nrb/23.1.0.389-PVP.rar/file",
             "modelo": "Edición",
@@ -337,7 +379,7 @@
             "titulo":"CorelDRAW 2021"
         },
         {
-            "nombre": "Mocha Pro 2023 10.0.1 Windows",
+            "description": "Mocha Pro 2023 10.0.1 Windows",
             "img": "impg/mochaae.png",
             "enlace": "https://cdn.borisfx.com/borisfx/store/mpp-adobe/MochaPro2023-Adobe-10.0.1-54.g58678bac292c.win.msi",
             "modelo": "Edición",
@@ -345,7 +387,7 @@
             "titulo":"Mocha Pro 2023"
         },
         {
-            "nombre": "Mocha Pro para AfterFx",
+            "description": "Mocha Pro para AfterFx",
             "img": "impg/mochaae.png",
             "enlace": "https://drive.google.com/file/d/179pA1yDlLp0DpDAN2JbkJCHmovCLjQg0/view?usp=sharing",
             "modelo": "Edición",
@@ -353,7 +395,7 @@
             "titulo":"Mocha Pro"
         },
         {
-            "nombre": "Element 3D AfterFX",
+            "description": "Element 3D AfterFX",
             "img": "impg/element3D.png",
             "enlace": "https://drive.google.com/file/d/1hxZEWxV6-QElpfYS9s0iOPD7Tqk2STZv/view?usp=sharing",
             "modelo": "Edición",
@@ -361,23 +403,23 @@
             "titulo":"Element 3D"
         },
         {
-            "nombre": "Duik Bassel v2_16.2.30<br>Herramienta gratuita de rigging y animación de personajes para After Effects.",
+            "description": "Herramienta gratuita de rigging y animación de personajes para After Effects.",
             "img": "impg/duikae.png",
             "enlace": "https://drive.google.com/file/d/1cl41oLExZVeT6UN2b7lceMZpNmv3eKtQ/view?usp=sharing",
             "modelo": "Edición",
             "fecha":"2026-03-01",
-            "titulo":"Duik Bassel"
+            "titulo":"Duik Bassel v2_16.2.30"
         },
         {
-            "nombre": "SynthEyes Pro 2024 v23.10.1057",
+            "description": "Software avanzado de camera tracking y matchmoving desarrollado por Boris FX, diseñado para integrar elementos 3D en escenas reales grabadas. Permite analizar el movimiento de cámara, la geometría de la escena y la distorsión del lente con alta precisión para producciones de efectos visuales (VFX), cine y realidad virtual.",
             "img": "impg/syntheyes.png",
             "enlace": "https://drive.google.com/file/d/1Px0_VlL7tyRAuMdA1dE9vFVlwruJe-fP/view?usp=sharing",
             "modelo": "Edición",
             "fecha":"2026-03-01",
-            "titulo":"SynthEyes Pro 2024"
+            "titulo":"SynthEyes Pro 2024 v23.10.1057"
         },
         {
-            "nombre": "Resolume",
+            "description": "Software líder de mezcla de video en directo (VJs) y mapeo de proyección (mapping), diseñado para VJs, intérpretes audiovisuales y artistas, permitiendo reproducir, mezclar y aplicar efectos a visuales en tiempo real",
             "img": "impg/resolume.png",
             "enlace": "https://www.resolume.com/download/",
             "modelo": "Edición",
@@ -385,7 +427,7 @@
             "titulo":"Resolume"
         },
         {
-            "nombre": "EYECANDY<br>Página de biblioteca de técnicas visuales",
+            "description": "Página de biblioteca de técnicas visuales",
             "img": "impg/eyecannndy.png",
             "enlace": "https://eyecannndy.com/",
             "modelo": "Edición",
@@ -393,7 +435,7 @@
             "titulo":"EYECANDY"
         },
         {
-            "nombre": "GyroFlow<br>Herramienta avanzada de estabilización de video giroscópica para cinematografía, videografía con drones y mucho más.",
+            "description": "Herramienta avanzada de estabilización de video giroscópica para cinematografía, videografía con drones y mucho más.",
             "img": "impg/gyroflow.png",
             "enlace": "https://gyroflow.xyz/",
             "modelo": "Edición",
@@ -401,15 +443,23 @@
             "titulo":"GyroFlow"
         },
         {
-            "nombre": "PHYSICALLY BASED<br>A database of physically based values for CG artists",
+            "description": "Base de datos de valores físicos para artistas de CG.",
             "img": "impg/physicallybased.png",
             "enlace": "https://physicallybased.info/",
             "modelo": "Edición",
             "fecha":"2026-03-01",
             "titulo":"PHYSICALLY BASED"
+        },        
+        {
+            "description": "Adobe Color",
+            "img": "impg/adobecolor.png",
+            "enlace": "https://color.adobe.com/es/create/color-wheel",
+            "modelo": "Edición",
+            "fecha":"2026-03-01",
+            "titulo":"Adobe Color"
         },
         {
-            "nombre": "Ableton Live<br>software de creación musical (DAW)Espera a que se genere un nuevo link<br>contraseña: elenemigos.com",
+            "description": "Software de creación musical (DAW)Espera a que se genere un nuevo link<br>contraseña: elenemigos.com",
             "img": "impg/abletondoce.png",
             "enlace": "https://download856.mediafire.com/w6nmftp3ybvg6kyv3fcCvX587KY9y5PRuTiwKLrBlWJVvtNvUWCBFzpSP7L259Y7x3mwVvpGBjOI-7s8RvrmhdAp92gOiT969zgathSrUDyMBQlc7EPyEo1-hMuUXIudZTFkBYomjVfckgVbuyteuNeMLl5Y_pVYiL4GAP9vOSgVfHE/4zeqxcs2co36lyi/Ableton+Live+12+Suite+v12.1.10_ELENEMIGOS.rar",
             "modelo": "Edición",
@@ -417,7 +467,7 @@
             "titulo":"Ableton Live"
         },
         {
-            "nombre": "Serum2<br>Popular sintetizador virtual Xfer Records Serum<br>Funciona en FL Studio y Ableton Live",
+            "description": "Popular sintetizador virtual Xfer Records Serum<br>Funciona en FL Studio y Ableton Live",
             "img": "impg/serumdos.png",
             "enlace": "https://www.mediafire.com/file/kvyl18ws3b0nc2z/Xfer+Records+Serum+v2.0.18+WIN-VR.zip",
             "modelo": "Edición",
@@ -425,7 +475,7 @@
             "titulo":"Serum2"
         },
         {
-            "nombre": "Plugins 4 Free<br>Descarga plugins VST gratis para producción musical",
+            "description": "Descarga plugins VST gratis para producción musical",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36x0aYDLNSIikEzvegRghznHTVXtSBPO74Q&s",
             "enlace": "https://plugins4free.com/",
             "modelo": "Edición",
@@ -433,15 +483,64 @@
             "titulo":"Plugins 4 Free"
         },
         {
-            "nombre": "TouchDesigner<br>Plataforma visual para la creación de experiencias interactivas en tiempo real y multimedia unificadas atraves de la programación visual<br><a  target=_blank href=https://www.youtube.com/watch?v=I_FDigcL7qw>Ejemplo de uso: Tutorial Efecto Displacement - TouchDesigner / Blender</a>",
+            "description": "Plataforma visual para la creación de experiencias interactivas en tiempo real y multimedia unificadas atraves de la programación visual<br><a  target=_blank href=https://www.youtube.com/watch?v=I_FDigcL7qw>Ejemplo de uso: Tutorial Efecto Displacement - TouchDesigner / Blender</a>",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGS4BUO4ClAJgU0ohW8Ft6TgCbPy2GBWxmfA&s",
             "enlace": "https://derivative.ca/download",
             "modelo": "Edición",
             "fecha":"2026-03-01",
             "titulo":"TouchDesigner"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Geometry Dash 2.2<br>Debes descargar los ddl para que funcione el juego, de lo contrario te saldra un error",
+            "description": "Debes descargar los ddl para que funcione el juego, de lo contrario te saldra un error",
             "img": "impg/geo.png",
             "enlace": "https://drive.google.com/drive/folders/1DFExIddmm5UN513Byh8ei_Yo8kexQwFM?usp=sharing",
             "modelo": "Juegos",
@@ -449,7 +548,7 @@
             "titulo":"Geometry Dash 2.2"
         },
         {
-            "nombre": "Emulador NeoRAGEx<br>La neta esta mamalón, si tienes palanca puedes utilizarla",
+            "description": "La neta esta mamalón, si tienes botonera puedes utilizarla",
             "img": "impg/emuladorneo.png",
             "enlace": "https://drive.google.com/drive/folders/1K4Q1Dz_P7UJGiI8QIsWbh3WnJDhjA32h?usp=sharing",
             "modelo": "Juegos",
@@ -457,7 +556,7 @@
             "titulo":"NeoRAGEx"
         },        
         {
-            "nombre": "Snow Bros 1 y 2",
+            "description": "Snow Bros 1 y 2",
             "img": "https://i.ytimg.com/vi/WFfJJp2r5Jc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCE0Y3SZuen70dKkwpSK63iHnLXjQ",
             "enlace": "https://lagoma.netlify.app/Archivos/SnowBros1y2.rar",
             "modelo": "Juegos",
@@ -465,7 +564,7 @@
             "titulo":"Snow Bros"
         },      
         {
-            "nombre": "THE HOUSE OF THE DEAD III",
+            "description": "THE HOUSE OF THE DEAD III",
             "img": "impg/housedeadlll.png",
             "enlace": "https://drive.google.com/drive/folders/1HRk-SNVwZ6EbKRkSM9bMh0PRCf_Sv0ww?usp=sharing",
             "modelo": "Juegos",
@@ -473,7 +572,7 @@
             "titulo":"THE HOUSE OF THE DEAD III"
         },
         {
-            "nombre": "Colección de Mario Bros",
+            "description": "Colección de Mario Bros",
             "img": "impg/colmb.png",
             "enlace": "https://drive.google.com/file/d/18IxelUIrfkFdvCWHeveQmyARU9prVZD_/view?usp=sharing",
             "modelo": "Juegos",
@@ -481,7 +580,7 @@
             "titulo":"Mario Bros"
         },
         {
-            "nombre": "Contra",
+            "description": "Contra",
             "img": "impg/contra.png",
             "enlace": "https://drive.google.com/file/d/1J_KlLxBoWlt03zQesBEXGcHy6poKYqJo/view?usp=sharing",
             "modelo": "Juegos",
@@ -489,7 +588,7 @@
             "titulo":"Contra"
         },
         {
-            "nombre": "3D Pinball Space Cadet",
+            "description": "CLA SI CA ZO",
             "img": "impg/pinball3dw.png",
             "enlace": "https://drive.google.com/file/d/1ClDf41v3rAWZFbzh4wKTZpMflmFWxiOR/view?usp=sharing",
             "modelo": "Juegos",
@@ -497,7 +596,7 @@
             "titulo":"3D Pinball Space Cadet"
         },
         {
-            "nombre": "FREE ROMS<br>Descargue juegos ISO portátiles de PSP/Playstation",
+            "description": "Descargua ISO de juegos portátiles de PSP/Playstation",
             "img": "impg/freeroms.png",
             "enlace": "https://drive.google.com/file/d/1ClDf41v3rAWZFbzh4wKTZpMflmFWxiOR/view?usp=sharing",
             "modelo": "Juegos",
@@ -505,7 +604,7 @@
             "titulo":"FREE ROMS"
         },
         {
-            "nombre": "PPSSPP<br>Emulador de psp, en el link viene para PC, Android y macOS",
+            "description": "Emulador de PSP, en el link viene para PC, Android y macOS",
             "img": "impg/ppsspp.png",
             "enlace": "https://www.ppsspp.org/download/",
             "modelo": "Juegos",
@@ -513,7 +612,7 @@
             "titulo":"PPSSPP"
         },
         {
-            "nombre": "Myemulator<br>El sitio web donde podrás jugar a los mejores juegos retro jamás desbloqueados en línea",
+            "description": "El sitio web donde podrás jugar a los mejores juegos retro jamás desbloqueados en línea",
             "img": "impg/myemulator.png",
             "enlace": "https://myemulator.onl/",
             "modelo": "Juegos",
@@ -521,7 +620,7 @@
             "titulo":"Myemulator"
         },
         {
-            "nombre": "PCSX2<br>Emulador de PlayStation 2<br><a  target=_blank href=https://www.mediafire.com/file/sncrg1xbocdlwqy/bios.rar/file>BIOS</a><br><a  target=_blank href=https://www.youtube.com/watch?v=XdV_iiV1d9I>Tutoriaal de que bios seleccionar</a>",
+            "description": "Emulador de PlayStation 2<br><a  target=_blank href=https://www.mediafire.com/file/sncrg1xbocdlwqy/bios.rar/file>BIOS</a><br><a  target=_blank href=https://www.youtube.com/watch?v=XdV_iiV1d9I>Tutoriaal de que bios seleccionar</a>",
             "img": "https://new-game-plus.fr/wp-content/uploads/2025/11/pcsx2-99-emulation1.webp",
             "enlace": "https://pcsx2.net/",
             "modelo": "Juegos",
@@ -529,7 +628,7 @@
             "titulo":"PCSX2"
         },
         {
-            "nombre": "GTA SA para PC<br>Si no sabes como se instala, preguntame 🤙🏾",
+            "description": "Si no sabes como se instala, preguntame 🤙🏾",
             "img": "impg/gtasapc.png",
             "enlace": "https://drive.google.com/drive/folders/1ahkA7_kaR68TG9gRoKEfe7vT8kX1f7sE?usp=sharing",
             "modelo": "Juegos",
@@ -537,7 +636,7 @@
             "titulo":"GTA SA"
         },
         {
-            "nombre": "EL Enemeigos<br>Página para descargar videojuegos y programas",
+            "description": "Página para descargar videojuegos y programas",
             "img": "impg/elenemigos.png",
             "enlace": "https://elenemigos.com/",
             "modelo": "Juegos",
@@ -545,7 +644,7 @@
             "titulo":"El Enemigos"
         },
         {
-            "nombre": "Colección de emuladores retro<br>Emuladores de distintas consolas de Nintendo",
+            "description": "Colección de emuladores retro<br>Emuladores de distintas consolas de Nintendo",
             "img": "impg/coleccioemuladores.png",
             "enlace": "https://mega.nz/folder/7shhgaYA#_K51l2982e9g4wccaIRAAw",
             "modelo": "Juegos",
@@ -553,23 +652,159 @@
             "titulo":"Emuladores retro"
         },
         {
-            "nombre": "Pack de emuladores<br>No recuerdo todos, pero tiene PS1, PS2, PSP, N64, SNES, GBA, entre otros",
+            "description": "No recuerdo todos, pero tiene PS1, PS2, PSP, N64, SNES, GBA, entre otros",
             "img": "impg/coleccioemuPS.png",
             "enlace": "https://www.mediafire.com/file/uj8sl3uznercc9n/Pack_de_Emuladores_Para_PC.rar/file",
             "modelo": "Juegos",
             "fecha":"2026-03-01",
             "titulo":"Pack de emuladores"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Vacunas de Memorias USB<br>Descarga los tres archivos, ponlos en tu usb y ejecuta el .exe y el .vbs",
+            "description": "Herramienta de análisis de archivos y páginas web a través de un antivirus Online",
+            "img": "impg/virustotal.png",
+            "enlace": "https://www.virustotal.com/gui/home/upload",
+            "modelo": "Antivirus",
+            "fecha":"2026-03-01",
+            "titulo":"VirusTotal"
+        },
+        {
+            "description": "Explora el entorno de pruebas de análisis de malware de Triage para analizar sus muestras de malware.",
+            "img": "impg/triage.png",
+            "enlace": "https://tria.ge/dashboard",
+            "modelo": "Antivirus",
+            "fecha":"2026-03-01",
+            "titulo":"Triage"
+        },
+        {
+            "description": "Jotti's malware scan es un servicio gratuito que le permite analizar archivos sospechosos con varios programas antivirus.",
+            "img": "impg/jotti.png",
+            "enlace": "https://virusscan.jotti.org/",
+            "modelo": "Antivirus",
+            "fecha":"2026-03-01",
+            "titulo":"Jotti"
+        },        
+        {
+            "description": "Plataforma de ciberseguridad para detectar y prevenir amenazas de malware en archivos",
+            "img": "impg/opswat.png",
+            "enlace": "https://metadefender.opswat.com/",
+            "modelo": "Antivirus",
+            "fecha":"2026-03-01",
+            "titulo":"OPSWAT"
+        },        
+        {
+            "description": "Joe Sandbox<br>Detecta y analiza posibles archivos y URL maliciosos en Windows, Mac OS y Linux en busca de actividades sospechosas.",
+            "img": "impg/joesandbox.png",
+            "enlace": "https://www.joesandbox.com/",
+            "modelo": "Antivirus",
+            "fecha":"2026-03-01",
+            "titulo":"Joe Sandbox"
+        },        
+        {
+            "description": "HYBRID ANALYSIS<br>Servicio gratuito que detecta y analiza amenazas desconocidas utilizando una tecnología única de análisis híbrido.",
+            "img": "impg/hybridanalysis.png",
+            "enlace": "https://www.hybrid-analysis.com/",
+            "modelo": "Antivirus",
+            "fecha":"2026-03-01",
+            "titulo":"HYBRID ANALYSIS"
+        },  
+        {
+            "description": "Descarga los tres archivos, ponlos en tu usb y ejecuta el .exe y el .vbs",
             "img": "impg/vacunas.png",
             "enlace": "https://www.mediafire.com/folder/ygjpcmrvmvk95/Vacunas+Memorias",
-            "modelo": "Herramientas",
+            "modelo": "Antivirus",
             "fecha":"2026-03-01",
             "titulo":"Vacunas USB"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Freesets<br>Es una amplia colección de los mejores recursos y herramientas gratuitos para desarrolladores y artistas, como iconos, ilustraciones, fotos, vídeos, blogs, fuentes, ...",
+            "description": "Es una amplia colección de los mejores recursos y herramientas gratuitos para desarrolladores y artistas, como iconos, ilustraciones, fotos, vídeos, blogs, fuentes, ...",
             "img": "impg/freesets.png",
             "enlace": "https://freesets.dev/",
             "modelo": "Herramientas",
@@ -577,23 +812,23 @@
             "titulo":"Freesets"
         },
         {
-            "nombre": "Consulta de afiliados por clave de elector<br>Checa si te afiliaron a un partido político",
+            "description": "Checa si te afiliaron a un partido político",
             "img": "impg/ineafiliado.png",
             "enlace": "https://deppp-partidos.ine.mx/afiliadosPartidos/app/publico/consultaAfiliados/nacionales?execution=e1s1#form:pnlDetalleAfiliado",
             "modelo": "Herramientas",
             "fecha":"2026-03-01",
-            "titulo":"Consulta INE"
-        },        
+            "titulo":"Consulta INE Afiliados"
+        },
         {
-            "nombre": "Squoosh<br>Optimizador de imágenes que permite comprimir y comparar imágenes con diferentes códecs en su navegador",
+            "description": ">Optimizador de imágenes que permite comprimir y comparar imágenes con diferentes códecs en su navegador",
             "img": "impg/squoosh.png",
             "enlace": "https://squoosh.app/",
             "modelo": "Herramientas",
             "fecha":"2026-03-01",
             "titulo":"Squoosh"
-        },        
+        },
         {
-            "nombre": "Tinify<br>Smart AVIF, WebP, PNG and JPEG Compression for Faster Websites",
+            "description": "Smart AVIF, WebP, PNG and JPEG Compression for Faster Websites",
             "img": "impg/tinify.png",
             "enlace": "https://tinypng.com/",
             "modelo": "Herramientas",
@@ -601,7 +836,7 @@
             "titulo":"Tinify"
         },        
         {
-            "nombre": "PineTools<br>ofrece una colección de herramientas en línea gratuitas para trabajar con texto, imágenes, listas, números y archivos",
+            "description": "Ofrece una colección de herramientas en línea gratuitas para trabajar con texto, imágenes, listas, números y archivos",
             "img": "impg/pinetools.png",
             "enlace": "https://pinetools.com/es/",
             "modelo": "Herramientas",
@@ -609,7 +844,7 @@
             "titulo":"PineTools"
         },
         {
-            "nombre": "Consulta tu recibo de luz CFE",
+            "description": "Consulta tu recibo de luz CFE",
             "img": "impg/cferecibo.png",
             "enlace": "https://app.cfe.mx/aplicaciones/CCFE/SolicitudesCFE/Solicitudes/ConsultaTuReciboLuzGmx",
             "modelo": "Herramientas",
@@ -617,7 +852,7 @@
             "titulo":"CFE Recibo"
         },
         {
-            "nombre": "Pago de Tenencia y Derechos de Control Vehicular",
+            "description": "Pago de Tenencia y Derechos de Control Vehicular",
             "img": "https://wp.lajornada.prod.andes.news/wp-content/uploads/2026/01/image-5.png",
             "enlace": "https://tenencia.edomex.gob.mx/TenenciaIndividual/tenencia/A06E1A88B8A6ED4B#/",
             "modelo": "Herramientas",
@@ -625,7 +860,7 @@
             "titulo":"Tenencia"
         },
         {
-            "nombre": "CURP",
+            "description": "CURP",
             "img": "impg/curp.png",
             "enlace": "https://www.gob.mx/curp/",
             "modelo": "Herramientas",
@@ -633,7 +868,7 @@
             "titulo":"CURP"
         },        
         {
-            "nombre": "NO derechohabiente IMSS",
+            "description": "NO derechohabiente IMSS",
             "img": "impg/noderechohabienteimss.png",
             "enlace": "https://digital.imss.gob.mx/derechohabiencia/tramite/solicitudConstancia",
             "modelo": "Herramientas",
@@ -641,7 +876,7 @@
             "titulo":"IMSS"
         },        
         {
-            "nombre": "Acreditación de No Afiliación ISSSTE",
+            "description": "Acreditación de No Afiliación ISSSTE",
             "img": "impg/acreditacióndenoafiliación.png",
             "enlace": "https://oficinavirtual.issste.gob.mx/Servicios/Acreditaci%C3%B3n-de-no-Afiliaci%C3%B3n",
             "modelo": "Herramientas",
@@ -649,15 +884,15 @@
             "titulo":"ISSSTE"
         },
         {
-            "nombre": "Portal de Servicios al Contribuyente<br>En Organismos Auxiliares se paga lo del TESCHI",
+            "description": "En Organismos Auxiliares se paga lo del TESCHI",
             "img": "impg/servicioscontri.png",
             "enlace": "https://sfpya.edomexico.gob.mx/recaudacion/",
             "modelo": "Herramientas",
             "fecha":"2026-03-01",
-            "titulo":"Contribuyente"
+            "titulo":"Portal de Servicios al Contribuyente"
         },
         {
-            "nombre": "VCCGenerator<br>Generates 100% valid test credit card numbers for all major brands with required details such as Name, Address, Expiry, Money, PIN, and CVV code.",
+            "description": "Generates 100% valid test credit card numbers for all major brands with required details such as Name, Address, Expiry, Money, PIN, and CVV code.",
             "img": "impg/vccgenerator.png",
             "enlace": "https://www.vccgenerator.org/",
             "modelo": "Herramientas",
@@ -665,7 +900,7 @@
             "titulo":"VCCGenerator"
         },                        
         {
-            "nombre": "Temp Mail<br>Servicio de correo electrónico temporal para proteger tu privacidad en línea",
+            "description": "Servicio de correo electrónico temporal para proteger tu privacidad en línea",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqtoKsZr1bYAMI4K_V0uxZ0sFacuHUEjGhQ&s",
             "enlace": "https://temp-mail.org/",
             "modelo": "Herramientas",
@@ -673,7 +908,7 @@
             "titulo":"Temp Mail"
         },
         {
-            "nombre": "spacedesk<br>Convierte tu tablet o smartphone en una segunda pantalla para tu PC, no es mirror de pantalla, es una extensión de escritorio",
+            "description": "Convierte tu tablet o smartphone en una segunda pantalla para tu PC, no es mirror de pantalla, es una extensión de escritorio",
             "img": "impg/spacedesk.png",
             "enlace": "https://www.spacedesk.net/",
             "modelo": "Herramientas",
@@ -681,7 +916,7 @@
             "titulo":"spacedesk"
         },
         {
-            "nombre": "Exe para instalar Office 365 <br><a  target=_blank href=https://massgrave.dev/>Guia de activación</a><br><a  target=_blank href=https://github.com/massgravel/Microsoft-Activation-Scripts?tab=readme-ov-file> Te recomiendo ver el GitHub </a>",
+            "description": "Exe para instalar Office 365 <br><a  target=_blank href=https://massgrave.dev/>Guia de activación</a><br><a  target=_blank href=https://github.com/massgravel/Microsoft-Activation-Scripts?tab=readme-ov-file> Te recomiendo ver el GitHub </a>",
             "img": "impg/officeinstaller.png",
             "enlace": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?productReleaseID=O365ProPlusRetail&platform=Def&language=es-es&TaxRegion=pr&correlationId=65675957-173e-4ce3-a2ac-aea917252b04&token=0c8ef2d3-a5d6-4df8-9b9e-0d86488908ec&version=O16GA&source=O15OLSO365&Br=2",
             "modelo": "Herramientas",
@@ -689,7 +924,7 @@
             "titulo":"Office 365"
         },
         {
-            "nombre": "Signal<br>Aplicación de mensajería segura y cifrada",
+            "description": "Aplicación de mensajería segura y cifrada",
             "img": "https://www.figma.com/community/resource/fbd27fc8-3979-4f0c-82dd-51c88985e962/thumbnail",
             "enlace": "https://signal.org/",
             "modelo": "Herramientas",
@@ -697,7 +932,7 @@
             "titulo":"Signal"
         },
         {
-            "nombre": "SimpleX Chat<br>Aplicación de mensajería segura y cifrada",
+            "description": "Aplicación de mensajería segura y cifrada",
             "img": "https://play-lh.googleusercontent.com/Em1xX7Zh3WtNeXC0TQdRr0oSE_2gMxainzWzqp_ec-Bair5XVIQ23GTRTDIe35aRog",
             "enlace": "https://simplex.chat/",
             "modelo": "Herramientas",
@@ -705,7 +940,7 @@
             "titulo":"SimpleX Chat"
         },
         {
-            "nombre": "Proton Mail<br>Correo electrónico seguro y cifrado",
+            "description": "Correo electrónico seguro y cifrado",
             "img": "https://www.bleepstatic.com/content/hl-images/2025/01/09/proton-mail-header.jpg",
             "enlace": "https://proton.me/mail",
             "modelo": "Herramientas",
@@ -713,7 +948,7 @@
             "titulo":"Proton Mail"
         },
         {
-            "nombre": "Proton VPN<br>Servicio de VPN seguro y privado",
+            "description": "Servicio de VPN seguro y privado",
             "img": "https://www.redeszone.net/app/uploads-redeszone.net/2019/10/proton.png",
             "enlace": "https://protonvpn.com/",
             "modelo": "Herramientas",
@@ -721,7 +956,7 @@
             "titulo":"Proton VPN"
         },
         {
-            "nombre": "VoiceMod<br>Aplicación para cambiar la voz en tiempo real",
+            "description": "Aplicación para cambiar la voz en tiempo real",
             "img": "https://gitlab.com/uploads/-/system/project/avatar/36139896/Voicemod_Logo_256x256.png",
             "enlace": "https://www.voicemod.net/",
             "modelo": "Herramientas",
@@ -729,7 +964,7 @@
             "titulo":"VoiceMod"
         },
         {
-            "nombre": "TikFinity<br>ofrece una amplia gama de funciones interactivas gratuitas para tu transmisión en vivo en TikTok, con integración desde Texto a Voz y Alertas de Sonido hasta integraciones IFTTT para dispositivos inteligentes",
+            "description": "Ofrece una amplia gama de funciones interactivas gratuitas para tu transmisión en vivo en TikTok, con integración desde Texto a Voz y Alertas de Sonido hasta integraciones IFTTT para dispositivos inteligentes",
             "img": "https://play-lh.googleusercontent.com/ZtHQAKLD9tE5TfCCG4CCsMVh6Wg8n4ma3PvaPbXhLq1sgrUUG0iJUh1cOeJSqgK273EA",
             "enlace": "https://tikfinity.zerody.one/",
             "modelo": "Herramientas",
@@ -737,15 +972,15 @@
             "titulo":"TikFinity"
         },
         {
-            "nombre": "RIFE Video Frame Interpolation<br>Ayuda a aumentar los FPS de un video por medio de interpolación de frames<br><a  target=_blank href=https://www.youtube.com/watch?v=gf_on-dbwyU>Video de instlación</a>",
+            "description": "Ayuda a aumentar los FPS de un video por medio de interpolación de frames<br><a  target=_blank href=https://www.youtube.com/watch?v=gf_on-dbwyU>Video de instlación</a>",
             "img": "https://www.aiseesoft.com/images/resource/rife-ai-interpolation/rife-ai-interpolation.jpg",
             "enlace": "https://github.com/hzwer/ECCV2022-RIFE?tab=readme-ov-file",
             "modelo": "Herramientas",
             "fecha":"2026-03-01",
-            "titulo":"RIFE"
+            "titulo":"RIFE Video Frame Interpolation"
         },
         {
-            "nombre": "Wix Toolset<br>Software para crear instaladores de Windows msi",
+            "description": "Software para crear instaladores de Windows msi",
             "img": "https://avatars.githubusercontent.com/u/91997072?s=200&v=4",
             "enlace": "https://www.firegiant.com/wixtoolset/",
             "modelo": "Herramientas",
@@ -753,7 +988,7 @@
             "titulo":"Wix Toolset"
         },        
         {
-            "nombre": "Figma<br>Herramienta de diseño de interfaces y prototipado de diseño UX/UI",
+            "description": "Herramienta de diseño de interfaces y prototipado de diseño UX/UI",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgl7wpiJVouzQ_6Jgf4zGvIN4uiRsOYOcbQ&s",
             "enlace": "https://www.figma.com/",
             "modelo": "Herramientas",
@@ -761,7 +996,7 @@
             "titulo":"Figma"
         },
         {
-            "nombre": "Canva<br>Herramienta de diseño gráfico en línea para crear gráficos, presentaciones, carteles y otros contenidos visuales",
+            "description": "Herramienta de diseño gráfico en línea para crear gráficos, presentaciones, carteles y otros contenidos visuales",
             "img": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxo4K81Ei7WzcnqEk8W.MgwYKXD7FOghvNjFDjAW2n_n9G17dCS5MiDbyIZ_jyNltdF9RoV.SfZuqrFB1prlcL8k-&format=source",
             "enlace": "https://www.canva.com/",
             "modelo": "Herramientas",
@@ -769,55 +1004,89 @@
             "titulo":"Canva"
         },
         {
-            "nombre": "PDF24<br>Suite de herramientas gratuitas para gestionar archivos PDF, disponible tanto en versión web (online) como de escritorio (PDF24 Creator) para Windows. Permite crear, editar, comprimir, convertir, unir, dividir, firmar y proteger documentos sin costes ocultos ni limitaciones, siendo una opción versátil y segura desarrollada en Alemania.",
+            "description": "Suite de herramientas gratuitas para gestionar archivos PDF, disponible tanto en versión web (online) como de escritorio (PDF24 Creator) para Windows. Permite crear, editar, comprimir, convertir, unir, dividir, firmar y proteger documentos sin costes ocultos ni limitaciones, siendo una opción versátil y segura desarrollada en Alemania.",
             "img": "https://cdn-1.webcatalog.io/catalog/pdf24/pdf24-social-preview.png?v=1714775420105",
             "enlace": "https://www.pdf24.org/es/",
             "modelo": "Herramientas",
             "fecha":"2026-03-01",
             "titulo":"PDF24"
         },
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Los gatos sueñan con física cuántica<br>De: Jorge Blaschke",
+            "description": "Explica los complejos principios de la mecánica cuántica, la teoría de cuerdas y paradojas físicas de manera amena, accesible y con ejemplos cotidianos para todo público, explorando el nuevo paradigma de la realidad.<br>De: Jorge Blaschke",
             "img": "impg/Lgscfc.png",
             "enlace": "https://drive.google.com/file/d/13ivf5C0nbgEf2e114-ztpwKOTXayG1y1/view?usp=drive_link",
             "modelo": "Libros",
             "fecha":"2026-03-01",
-            "titulo":"Los gatos sueñan"
+            "titulo":"Los gatos sueñan con física cuántica"
         },
         {
-            "nombre": "Manipulacion y Psicologia Oscura<br>De: Alejandro Mendoza",
+            "description": "Habla sobre las técnicas de control mental, influencia emocional y engaño utilizadas por personalidades manipuladoras (narcisistas, maquiavélicos, psicópatas) en relaciones personales y laborales. Enseña a reconocer estas tácticas, defenderse de ellas, interpretar el lenguaje corporal y proteger la propia salud mental, incluso enseñando métodos éticos de persuasión.<br>De: Alejandro Mendoza",
             "img": "impg/manipsytree.png",
             "enlace": "https://drive.google.com/file/d/1ae36JN6rT2pDD8EfAfRTWcTxzgd5CtJC/view?usp=sharing",
             "modelo": "Libros",
             "fecha":"2026-03-01",
-            "titulo":"Manipulacion y Psicologia"
+            "titulo":"Manipulacion y Psicologia Oscura"
         },
         {
-            "nombre": "Arduino Curso Práctico<br>De: Óscar Torrente Artero",
+            "description": "De: Óscar Torrente Artero",
             "img": "impg/acursoforma.png",
             "enlace": "https://drive.google.com/file/d/1ae36JN6rT2pDD8EfAfRTWcTxzgd5CtJC/view?usp=sharing",
             "modelo": "Libros",
             "fecha":"2026-03-01",
-            "titulo":"Arduino Curso"
+            "titulo":"Arduino Curso Práctico"
         },
         {
-            "nombre": "Psicologia Oscura<br>De: Victor Sykes",
+            "description": "Es una guía enfocada en identificar, comprender y defenderse de las tácticas de manipulación mental que las personas utilizan en la vida cotidiana.<br>De: Victor Sykes",
             "img": "impg/psyblack.png",
             "enlace": "https://drive.google.com/file/d/1aYZx2RWX0p75iCM6LqBC2-G4LF3ppVhm/view?usp=sharing",
             "modelo": "Libros",
             "fecha":"2026-03-01",
             "titulo":"Psicologia Oscura"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Fritzing 0.9.9 x64<br>Programa de diseño electrónico",
+            "description": "Programa de diseño electrónico",
             "img": "impg/frit.png",
             "enlace": "https://drive.google.com/file/d/1K3pKL1TOYL8FBDirhib6So9bHO3UsP6L/view?usp=sharing",
             "modelo": "Electrónica y Robots",
             "fecha":"2026-03-01",
-            "titulo":"Fritzing"
+            "titulo":"Fritzing 0.9.9 x64"
         },
         {
-            "nombre": "PCB wizard<br>Software para la creación de placas de circuito impreso",
+            "description": "Software para la creación de placas de circuito impreso",
             "img": "impg/pcbwizard.png",
             "enlace": "https://drive.google.com/drive/folders/1LumVkkEGghDvqDLbcsIGuGiuUWzp_3OC?usp=sharing",
             "modelo": "Electrónica y Robots",
@@ -825,7 +1094,7 @@
             "titulo":"PCB wizard"
         },
         {
-            "nombre": "DCAC Lab<br>Plataforma para experimentar con circuitos electrónicos",
+            "description": "Plataforma para experimentar con circuitos electrónicos",
             "img": "https://dcaclab-discourse-forum.s3.dualstack.us-east-1.amazonaws.com/original/1X/4face1e214f3ca00f12bdd6a4723bbdaf64f888d.png",
             "enlace": "https://dcaclab.com/es/lab",
             "modelo": "Electrónica y Robots",
@@ -833,23 +1102,23 @@
             "titulo":"DCAC Lab"
         },
         {
-            "nombre": "Arduino",
+            "description": "Arduino",
             "img": "impg/arduinoide.png",
             "enlace": "https://www.arduino.cc/en/software",
             "modelo": "Electrónica y Robots",
             "fecha":"2026-03-01",
-            "titulo":"Arduino"
+            "titulo":"Arduino IDE"
         },
         {
-            "nombre": "Driver Arduino Chino CH341SDER",
+            "description": "Driver para Arduinos Chinos CH341SDER",
             "img": "impg/CH341SDERdriver.png",
             "enlace": "https://drive.google.com/file/d/1sF-d5LKccgjK4dEwruoZINOaW9W2JDQa/view?usp=sharing",
             "modelo": "Electrónica y Robots",
             "fecha":"2026-03-01",
-            "titulo":"CH341SDER"
+            "titulo":"Driver CH341SDER"
         },
         {
-            "nombre": "IFTTT",
+            "description": "Es una plataforma gratuita basada en la nube que permite automatizar tareas entre diferentes aplicaciones, dispositivos y servicios web. Su funcionamiento se basa en reglas simples, conocidas como \"Applets\" o recetas, donde un disparador (\"Si esto\") provoca una acción automática (\"Entonces aquello\").",
             "img": "impg/iftttweb.png",
             "enlace": "https://ifttt.com/explore",
             "modelo": "Electrónica y Robots",
@@ -857,15 +1126,15 @@
             "titulo":"IFTTT"
         },
         {
-            "nombre": "Convierte tu ESP8266/ESP32<br>en un repetidor de WIFI!!",
+            "description": "Convierte tu ESP8266/ESP32<br>en un repetidor de WIFI!!",
             "img": "impg/espwifi.png",
             "enlace": "https://drive.google.com/drive/folders/1degx7So3FDlYn9Pk8Smxtrzm0gHCJz0x?usp=sharing",
             "modelo": "Electrónica y Robots",
             "fecha":"2026-03-01",
-            "titulo":"ESP8266/ESP32"
+            "titulo":"ESP8266/ESP32 Repetidor WiFi"
         },        
         {
-            "nombre": "Bottango<br>software gratuito y de código abierto diseñado para animar robots, animatrónicos y otros proyectos de hardware de forma visual y sin necesidad de programar", 
+            "description": "Software gratuito y de código abierto diseñado para animar robots, animatrónicos y otros proyectos de hardware de forma visual y sin necesidad de programar", 
             "img": "impg/bottango.png",
             "enlace": "https://www.bottango.com/#download",
             "modelo": "Electrónica y Robots",
@@ -873,15 +1142,40 @@
             "titulo":"Bottango"
         },        
         {
-            "nombre": "Frodobots<br>experiencia de controlar remotamente robots reales (conocidos como FrodoBots o Earth Rovers) desde cualquier parte del mundo a través de una interfaz de juego en línea", 
+            "description": "Experiencia de controlar remotamente robots reales (conocidos como FrodoBots o Earth Rovers) desde cualquier parte del mundo a través de una interfaz de juego en línea", 
             "img": "impg/frodobots.png",
             "enlace": "https://school.frodobots.com/testdrive/",
             "modelo": "Electrónica y Robots",
             "fecha":"2026-03-07",
             "titulo":"Frodobots"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Raspbian OS",
+            "description": "Sistema operativo oficial y gratuito, basado en Debian Linux, optimizado específicamente para las computadoras de placa única Raspberry Pi",
             "img": "impg/raspbian.png",
             "enlace": "https://www.raspberrypi.com/software/operating-systems/",
             "modelo": "OS & Burners",
@@ -889,7 +1183,7 @@
             "titulo":"Raspbian OS"
         },            
         {
-            "nombre": "Kaly Linux OS",
+            "description": "Distro de Linux diseñada específicamente para seguridad informática, pentesting, auditorías de seguridad e investigación forense digital.",
             "img": "impg/kaly.png",
             "enlace": "https://www.kali.org/get-kali/#kali-platforms",
             "modelo": "OS & Burners",
@@ -897,7 +1191,7 @@
             "titulo":"Kali Linux"
         },            
         {
-            "nombre": "ubuntu OS",
+            "description": "Distro diseñado para ser fácil de usar y seguro. Lanzado por Canonical en 2004, es una de las más populares, ideal para computadoras de escritorio, servidores y dispositivos IoT. Su enfoque principal es la accesibilidad, ofreciendo actualizaciones constantes y software preinstalado.",
             "img": "impg/ubuntu.png",
             "enlace": "https://ubuntu.com/download/desktop#download",
             "modelo": "OS & Burners",
@@ -905,7 +1199,7 @@
             "titulo":"Ubuntu"
         },            
         {
-            "nombre": "Tails OS<br>Live OS para preservar tu privacidad y anonimato",
+            "description": "Tails OS<br> Se ejecuta desde un USB(Live OS), no deja rastro en la computadora usada y fuerza todo el tráfico de internet a través de la red Tor, siendo ideal para evitar vigilancia y censura. ",
             "img": "impg/tailsos.png",
             "enlace": "https://tails.net/install/index.es.html",
             "modelo": "OS & Burners",
@@ -913,7 +1207,7 @@
             "titulo":"Tails OS"
         },            
         {
-            "nombre": "TOMEX OS V2.63<br>W10/11",
+            "description": "TOMEX OS V2.63<br>W10/11",
             "img": "impg/tomexos.png",
             "enlace": "https://www.mediafire.com/file/2ne9gn67l6kgto8/TomexOS+V2.2.iso/fil",
             "modelo": "OS & Burners",
@@ -921,7 +1215,7 @@
             "titulo":"TOMEX OS"
         },             
         {
-            "nombre": "WinterOS Windows11<br>23H2W11Rev11",
+            "description": "WinterOS Windows11<br>23H2W11Rev11",
             "img": "impg/winterOS11.png",
             "enlace": "https://www.mediafire.com/file/wpxgw0ltldq4wsk/23H2W11Rev11.iso",
             "modelo": "OS & Burners",
@@ -929,7 +1223,7 @@
             "titulo":"WinterOS"
         },            
         {
-            "nombre": "Windows11 Asistente de Instalación<br>Programa oficial para crear ISO de Windows11",
+            "description": "Windows11 Asistente de Instalación<br>Programa oficial para crear ISO de Windows11",
             "img": "impg/w11assistantins.png",
             "enlace": "https://download.microsoft.com/download/5/4/c/54c22b82-d0cd-4e34-9a06-b75823a8aede/Windows11InstallationAssistant.exe",
             "modelo": "OS & Burners",
@@ -937,23 +1231,23 @@
             "titulo":"Windows 11"
         },             
         {
-            "nombre": "Beini 1.2.5 OS",
+            "description": "Distro ligera y portátil diseñada específicamente para realizar auditorías de seguridad en redes Wi-Fi. Es conocido principalmente por su capacidad para recuperar o descifrar claves de seguridad WEP y WPA/WPA2.<br>Lamentablemente ya esta avandonado :(",
             "img": "impg/beini.png",
             "enlace": "https://netactuate.dl.sourceforge.net/project/archiveos/b/beini/Beini-1.2.5.iso",
             "modelo": "OS & Burners",
             "fecha":"2026-03-01",
-            "titulo":"Beini OS"
+            "titulo":"Beini 1.2.5 OS"
         },            
         {
-            "nombre": "Wifislax OS<br>4.0",
+            "description": "Distro GNU/Linux basada en Slackware, diseñada específicamente para la auditoría de seguridad y pruebas de penetración, especialmente en redes Wi-Fi. Se ejecuta como LiveCD/LiveUSB, incluye herramientas de hacking y controladores preinstalados para múltiples tarjetas de red.",
             "img": "impg/wifislaxos.png",
             "enlace": "https://foro.seguridadwireless.net/live-wifislax/wifislax64-4-0-final-iso-para-descarga",
             "modelo": "OS & Burners",
             "fecha":"2026-03-01",
-            "titulo":"Wifislax"
+            "titulo":"Wifislax 4.0"
         },            
         {
-            "nombre": "DRIVER NVIDIA PARA HASHCAT",
+            "description": "DRIVER NVIDIA PARA HASHCAT",
             "img": "impg/wifislaxdriver.png",
             "enlace": "https://www.nvidia.com/es-es/drivers/unix/",
             "modelo": "OS & Burners",
@@ -961,7 +1255,7 @@
             "titulo":"NVIDIA Driver"
         },                     
         {
-            "nombre": "VirtualBox",
+            "description": "Máquina virtual (desarrollado por Oracle) que permite instalar y ejecutar múltiples sistemas operativos (como Windows, Linux, macOS).",
             "img": "impg/virtualbox.png",
             "enlace": "https://www.virtualbox.org/wiki/Downloads",
             "modelo": "OS & Burners",
@@ -969,31 +1263,31 @@
             "titulo":"VirtualBox"
         },            
         {
-            "nombre": "VMware Workstation Player 17.6.3 Windows<br>Ultima version gratuita para uso personal",
+            "description": "Máquina virtual Ultima version gratuita para uso personal",
             "img": "impg/vmwarew.png",
             "enlace": "https://files04.tchspt.com/down/VMware-player-17.6.3-24583834.exe",
             "modelo": "OS & Burners",
             "fecha":"2026-03-01",
-            "titulo":"VMware Player"
+            "titulo":"VMware Workstation Player 17.6.3 Windows"
         },             
         {
-            "nombre": "VMware Workstation Player 17.6.3 Linux<br><a target='_blank' href='https://www.techspot.com/downloads/1969-vmware-player.html'>Links alternos</a>",
+            "description": "Máquina virtual<br><a target='_blank' href='https://www.techspot.com/downloads/1969-vmware-player.html'>Links alternos</a>",
             "img": "impg/vmwarel.png",
             "enlace": "https://files02.tchspt.com/down/VMware-Player-17.6.3-24583834.x86_64.bundle.tar",
             "modelo": "OS & Burners",
             "fecha":"2026-03-01",
-            "titulo":"VMware Linux"
+            "titulo":"VMware Workstation Player 17.6.3 Linux"
         },             
         {
-            "nombre": "DigitalOcean<br>De pago<br>Mas enfocado a Gaming e IA",
+            "description": "Proveedor de Infraestructura como Servicio (IaaS) en la nube.<br>De pago.<br>Mas enfocado a Gaming e IA",
             "img": "impg/paperspaceVM.png",
             "enlace": "https://www.paperspace.com/",
             "modelo": "OS & Burners",
             "fecha":"2026-03-01",
-            "titulo":"Paperspace"
+            "titulo":"DigitalOcean"
         },                                 
         {
-            "nombre": "Rufus",
+            "description": "Utilidad gratuita y de código abierto para Windows, diseñada para formatear y crear unidades flash USB arrancables (bootables).",
             "img": "impg/rufus.png",
             "enlace": "https://rufus.ie/es/",
             "modelo": "OS & Burners",
@@ -1001,7 +1295,7 @@
             "titulo":"Rufus"
         },                
         {
-            "nombre": "balena etcher",
+            "description": "Herramienta gratuita y de código abierto, desarrollada por Balena, que se utiliza para grabar archivos de imagen (.iso, .img, zip) en tarjetas SD y unidades USB.",
             "img": "impg/balenaetcher.png",
             "enlace": "https://etcher.balena.io/#download-etcher",
             "modelo": "OS & Burners",
@@ -1009,7 +1303,7 @@
             "titulo":"Balena Etcher"
         },                
         {
-            "nombre": "Win32 Disk Imager",
+            "description": "Es ampliamente utilizada para crear unidades de arranque, respaldar tarjetas SD de Raspberry Pi y clonar memorias.",
             "img": "impg/win32diskimager.png",
             "enlace": "https://zenlayer.dl.sourceforge.net/project/win32diskimager/Archive/win32diskimager-1.0.0-install.exe",
             "modelo": "OS & Burners",
@@ -1017,7 +1311,7 @@
             "titulo":"Win32 Disk Imager"
         },                
         {
-            "nombre": "Licencia digital Windows 10/11",
+            "description": "Licencia digital Windows 10/11",
             "img": "impg/licenciaw1011.png",
             "enlace": "https://drive.google.com/file/d/1_z4Rotv4hoaFuuD8MoBo7heoLiYraVRl/view?usp=sharing",
             "modelo": "OS & Burners",
@@ -1025,15 +1319,42 @@
             "titulo":"Licencia Windows"
         },                
         {
-            "nombre": "copyshv86<br>Emula maquinas virtuales, específicamente el HW y la CPU de un PC x86",
+            "description": "Emula maquinas virtuales OnLine, específicamente el HW y la CPU de un PC x86",
             "img": "impg/copyshv86.png",
-            "enlace": "https://drive.google.com/file/d/1_z4Rotv4hoaFuuD8MoBo7heoLiYraVRl/view?usp=sharing",
+            "enlace": "https://copy.sh/v86/",
             "modelo": "OS & Burners",
             "fecha":"2026-03-01",
-            "titulo":"v86"
+            "titulo":"copyshv86"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "ChatGPT",
+            "description": "ChatGPT",
             "img": "impg/chatgpt.png",
             "enlace": "https://chat.openai.com/",
             "modelo": "IA",
@@ -1041,7 +1362,7 @@
             "titulo":"ChatGPT"
         },
         {
-            "nombre": "DeepSeek",
+            "description": "DeepSeek",
             "img": "impg/deepseek.png",
             "enlace": "https://chat.deepseek.com/",
             "modelo": "IA",
@@ -1049,7 +1370,7 @@
             "titulo":"DeepSeek"
         },
         {
-            "nombre": "Qwen AI<br>IA de Alibaba",
+            "description": "IA de Alibaba",
             "img": "impg/qwenai.png",
             "enlace": "https://chat.qwen.ai/",
             "modelo": "IA",
@@ -1057,7 +1378,7 @@
             "titulo":"Qwen AI"
         },
         {
-            "nombre": "Bing COPILOT",
+            "description": "Bing COPILOT",
             "img": "impg/bingcopilot.png",
             "enlace": "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx",
             "modelo": "IA",
@@ -1065,7 +1386,7 @@
             "titulo":"Bing COPILOT"
         },
         {
-            "nombre": "Google Bard",
+            "description": "Google Bard",
             "img": "impg/googlebard.png",
             "enlace": "https://bard.google.com/chat",
             "modelo": "IA",
@@ -1073,7 +1394,7 @@
             "titulo":"Google Bard"
         },
         {
-            "nombre": "Gemini Nano Banana<br>Tip: Genera un nuevo chat para volver a tener tokens",
+            "description": "Tip: Genera un nuevo chat para volver a tener tokens",
             "img": "impg/nanobanana.png",
             "enlace": "https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image-preview",
             "modelo": "IA",
@@ -1081,7 +1402,7 @@
             "titulo":"Gemini"
         },
         {
-            "nombre": "Emergent",
+            "description": "Emergent",
             "img": "https://iaperfecta.com/wp-content/uploads/2025/05/emergent.jpg",
             "enlace": "https://app.emergent.sh/home",
             "modelo": "IA",
@@ -1089,7 +1410,7 @@
             "titulo":"Emergent"
         },
         {
-            "nombre": "DeepL Translator<br>Traductor de idiomas por IA",
+            "description": "Traductor de idiomas por IA",
             "img": "impg/deepltranslator.png",
             "enlace": "https://www.deepl.com/translator",
             "modelo": "IA",
@@ -1097,7 +1418,7 @@
             "titulo":"DeepL"
         },        
         {
-            "nombre": "Claude",
+            "description": "Claude",
             "img": "https://hipaatimes.com/hubfs/Is%20Claude%20AI%20HIPAA%20compliant-1.jpg",
             "enlace": "https://claude.ai/new",
             "modelo": "IA",
@@ -1105,7 +1426,7 @@
             "titulo":"Claude"
         },
         {
-            "nombre": "Bing Creator<br>Generador de imagenes por IA",
+            "description": "Generador de imagenes por IA",
             "img": "impg/bingcreator.png",
             "enlace": "https://www.bing.com/images/create",
             "modelo": "IA",
@@ -1113,7 +1434,7 @@
             "titulo":"Bing Creator"
         },
         {
-            "nombre": "Leonardo.AI<br>Generador de imagenes por IA",
+            "description": "Generador de imagenes por IA",
             "img": "impg/leonardoai.png",
             "enlace": "https://app.leonardo.ai/",
             "modelo": "IA",
@@ -1121,7 +1442,7 @@
             "titulo":"Leonardo.AI"
         },                
         {
-            "nombre": "Lovart<br>Generador de imagenes por IA",
+            "description": "Generador de imagenes por IA",
             "img": "impg/lovart.png",
             "enlace": "https://www.lovart.ai/fr",
             "modelo": "IA",
@@ -1129,7 +1450,7 @@
             "titulo":"Lovart"
         },
         {
-            "nombre": "DeepFiction AI<br>Generador de historias con imagenes/videos por IA",
+            "description": "Generador de historias con imagenes/videos por IA",
             "img": "impg/deepfiction.png",
             "enlace": "https://www.deepfiction.ai/",
             "modelo": "IA",
@@ -1137,7 +1458,7 @@
             "titulo":"DeepFiction"
         },
         {
-            "nombre": "You.com<br>Motor de búsqueda con IA que proporciona acceso a herramientas de IA personalizables",
+            "description": "Motor de búsqueda con IA(Tipo Google) que proporciona acceso a herramientas de IA personalizables",
             "img": "impg/youcom.png",
             "enlace": "https://you.com/home",
             "modelo": "IA",
@@ -1145,7 +1466,7 @@
             "titulo":"You.com"
         },
         {
-            "nombre": "FlowGPT",
+            "description": "FlowGPT",
             "img": "impg/flowgpt.png",
             "enlace": "https://flowgpt.com/",
             "modelo": "IA",
@@ -1153,15 +1474,43 @@
             "titulo":"FlowGPT"
         },
         {
-            "nombre": "Qwen Image Edit 2511 — 3D Camera Control<br>📈🤨📉<br>🔴🤲🏾🔵<br><a  target=_blank href=https://github.com/jtydhr88/ComfyUI-qwenmultiangle?tab=readme-ov-file#installation>Nodo para ComfyUI</a>",
+            "description": "📈🤨📉<br>🔴🤲🏾🔵<br><a  target=_blank href=https://github.com/jtydhr88/ComfyUI-qwenmultiangle?tab=readme-ov-file#installation>Nodo para ComfyUI</a>",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfkJzTiJZ5xUMlzzgGCOfmsV6yLJEyEuu_A&s",
             "enlace": "https://huggingface.co/spaces/multimodalart/qwen-image-multiple-angles-3d-camera",
             "modelo": "IA",
             "fecha":"2026-03-08",
-            "titulo":"Qwen Image Edit"
+            "titulo":"Qwen Image Edit 2511 — 3D Camera Control"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Ubica-T<br>App Institucional del TESCHI para conocer la distribución de los departamentos<br>",
+            "description": "App Institucional del TESCHI para conocer la distribución de los departamentos.",
             "img": "impg/ubica_t.png",
             "enlace": "https://lagoma.netlify.app/Archivos/Ubica-T.apk",
             "modelo": "Android",
@@ -1169,7 +1518,7 @@
             "titulo":"Ubica-T"
         },
         {
-            "nombre": "Blender para ANDROID!! v0.0.5",
+            "description": "Blender para ANDROID!! v0.0.5<br>No la han actualizado",
             "img": "impg/blenderAndroid.png",
             "enlace": "https://github.com/dshawshank/APP-android_arm64/releases/download/v0.0.5/blender.on.Android.v0.0.5.apk",
             "modelo": "Android",
@@ -1177,7 +1526,7 @@
             "titulo":"Blender Android"
         },
         {
-            "nombre": "GTA San Andreas",
+            "description": "GTA San Andreas",
             "img": "impg/gtasaAndroid.png",
             "enlace": "https://drive.google.com/file/d/1AIhTCy7WzF9ELZiQ6k-x3anoyJiJ5KfA/view?usp=sharing",
             "modelo": "Android",
@@ -1185,23 +1534,15 @@
             "titulo":"GTA SA Android"
         },
         {
-            "nombre": "HiPER Calc Pro_9.2.1<br>La mejor calculadora para Android que he probado",
+            "description": "La mejor calculadora para Android que he probado.<br><a  target=_blank href=https://play.google.com/store/apps/details?id=cz.hipercalc.pro&hl=es_MX>Te recomiendo comprarla</a>",
             "img": "impg/HiPER Calc Pro_9.2.1.png",
             "enlace": "https://drive.google.com/file/d/1fj8mD13q6uTqZRZ3lhKI5Ja-kStUyLV7/view?usp=sharing",
             "modelo": "Android",
             "fecha":"2026-03-01",
-            "titulo":"HiPER Calc"
+            "titulo":"HiPER Calc Pro_9.2.1"
         },
         {
-            "nombre": "Soul Knight<br>",
-            "img": "impg/soulknight.png",
-            "enlace": "https://play.google.com/store/apps/details?id=com.ChillyRoom.DungeonShooter&hl=es_419&gl=US",
-            "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Soul Knight"
-        },
-        {
-            "nombre": "Loquendo para Android",
+            "description": "Loquendo para Android",
             "img": "impg/loquendoandroid.png",
             "enlace": "https://drive.google.com/file/d/1DO_DNYWIWHKqOwET0zu3Zm-YLvdIMLAP/view?usp=drive_link",
             "modelo": "Android",
@@ -1209,31 +1550,31 @@
             "titulo":"Loquendo"
         },
         {
-            "nombre": "FLStudio para Android",
+            "description": "DAW completa diseñada para crear, editar, mezclar y renderizar canciones multipista.",
             "img": "impg/flandroid.png",
             "enlace": "https://liteapks.com/download/fl-studio-mobile-6151/1",
             "modelo": "Android",
             "fecha":"2026-03-01",
-            "titulo":"FL Studio"
+            "titulo":"FL Studio Mobile"
         },
         {
-            "nombre": "Escritorio remoto de Chrome<br>APK conectarse a la pc",
+            "description": "APK conectarse a la pc",
             "img": "impg/remotecontrolapk.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop&hl=es&gl=US",
             "modelo": "Android",
             "fecha":"2026-03-01",
-            "titulo":"Chrome Remote"
+            "titulo":"Escritorio remoto de Chrome"
         },
         {
-            "nombre": "Dark Wolf<br>Aplicación de android para ver peliculas, muy buena app",
-            "img": "impg/darkwolf.png",
-            "enlace": "https://play.google.com/store/apps/details?id=dark.wolf&hl=es_419&gl=US",
+            "description": "Reproductor de música sin conexión potente, interactivo y fácil de usar.<br>No daba nada por esta app, pero la verdad es muy buena, solo que tiene muchos anuncios, en la DNS de los telefonos se pueden bloquear usando una privada, que es: dns.adguard.com ",
+            "img": "https://play-lh.googleusercontent.com/y8u-wfz96-wSCPXXI7rPIHuSz2yp1gzfRiycLV6CN4l0ikQiHlH6T6S0Lv8diyd2DTI=w480-h960-rw",
+            "enlace": "https://play.google.com/store/apps/details?id=com.musivibe.player.allmusic&hl=es_MX",
             "modelo": "Android",
             "fecha":"2026-03-01",
-            "titulo":"Dark Wolf"
+            "titulo":"Musivibe"
         },
         {
-            "nombre": "DroidCam para Android",
+            "description": "DroidCam para Android",
             "img": "impg/droidcam.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.dev47apps.droidcam&hl=es_419&gl=US",
             "modelo": "Android",
@@ -1241,7 +1582,7 @@
             "titulo":"DroidCam"
         },
         {
-            "nombre": "Radio Garden",
+            "description": "Permite escuchar miles de emisoras de radio en vivo de todo el mundo girando un globo terráqueo virtual.",
             "img": "impg/radiogardenandroid.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.jonathanpuckey.radiogarden",
             "modelo": "Android",
@@ -1249,15 +1590,15 @@
             "titulo":"Radio Garden"
         },
         {
-            "nombre": "Merge Object Viewer",
+            "description": "Aplicación de realidad aumentada (RA) para dispositivos móviles, Mac y visores, diseñada para visualizar, sostener e interactuar con cientos de modelos 3D educativos.",
             "img": "impg/mergeobjectviewerapp.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.MergeCube.ObjectViewer&hl=es_419&gl=US",
             "modelo": "Android",
             "fecha":"2026-03-01",
-            "titulo":"Merge Viewer"
+            "titulo":"Merge Object Viewer"
         },
         {
-            "nombre": "Blynk IoT<br>IoT basado en la nube para la conexión de HW. Código abierto, AWS, Google",
+            "description": "IoT basado en la nube para la conexión de HW. Código abierto, AWS, Google",
             "img": "impg/blynkiotapp.png",
             "enlace": "https://play.google.com/store/apps/details?id=cloud.blynk",
             "modelo": "Android",
@@ -1265,7 +1606,7 @@
             "titulo":"Blynk IoT"
         },
         {
-            "nombre": "Termux<br>Emulador de terminal y entorno Linux para Android",
+            "description": "Emulador de terminal y entorno Linux para Android",
             "img": "impg/termux.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.termux&hl=es_MX&gl=US",
             "modelo": "Android",
@@ -1273,15 +1614,15 @@
             "titulo":"Termux"
         },
         {
-            "nombre": "APK Editor Free<br>Editor de APK para Android (renombrar, recompilar, firmar, etc.)",
+            "description": "Editor de APK para Android (renombrar, recompilar, firmar, etc.)",
             "img": "impg/apkeditorfree.png",
             "enlace": "https://drive.google.com/file/d/1jPxGGIMW9udkixHgcs3fIfqZXRyyrXQK/view?usp=sharing",
             "modelo": "Android",
             "fecha":"2026-03-01",
-            "titulo":"APK Editor"
+            "titulo":"APK Editor FREE"
         },
         {
-            "nombre": "3D PDF Reader<br>Lector de archivos 3D en PDF",
+            "description": "Lector de archivos 3D en PDF",
             "img": "impg/pdfreadertresde.png",
             "enlace": "https://drive.google.com/file/d/1yr1mb1rFSMXq5vKAcrkXWcgloWhRogKX/view?usp=sharing",
             "modelo": "Android",
@@ -1289,7 +1630,7 @@
             "titulo":"3D PDF Reader"
         },
         {
-            "nombre": "Nomad Sculp<br>Escultura 3D para Android de pago<br>similar a ZBrush, subiere la apk crackeada después xd",
+            "description": "Escultura 3D para Android de pago si quieres exportar.<br>Similar a ZBrush, subiere la apk crackeada después xd",
             "img": "impg/nomadsculp.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.stephaneginier.nomad&hl=es_MX",
             "modelo": "Android",
@@ -1297,7 +1638,7 @@
             "titulo":"Nomad Sculp"
         },        
         {
-            "nombre": "RealityScan Mobile<br>Escanea objetos del mundo real y conviértelos en modelos 3D de alta calidad<br>por Epic Games<br>Fotogrametría para los compas",
+            "description": "Escanea objetos del mundo real y conviértelos en modelos 3D de alta calidad<br>por Epic Games<br>Fotogrametría para los compas",
             "img": "impg/realityscan.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.epicgames.realityscan",
             "modelo": "Android",
@@ -1305,15 +1646,37 @@
             "titulo":"RealityScan"
         },      
         {
-            "nombre": "MeowFace<br>facetracking app, envia ARKit-style blendshapes a varias aplicaciones VTuber(Inochi Session, VSeeFace, Live2D)<br>el Prof. Portillo le sabe a esto XD",
+            "description": "Facetracking app, envia ARKit-style blendshapes a varias aplicaciones VTuber(Inochi Session, VSeeFace, Live2D)<br>el Prof. Portillo le sabe a esto XD",
             "img": "impg/meowface.png",
             "enlace": "https://suvidriel.itch.io/meowface",
             "modelo": "Android",
             "fecha":"2026-03-01",
             "titulo":"MeowFace"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Sololearn - Learn to Code",
+            "description": "Sololearn - Learn to Code",
             "img": "impg/sololearnandroid.png",
             "enlace": "https://play.google.com/store/apps/details?id=com.sololearn&hl=es_MX&gl=US",
             "modelo": "Coding",
@@ -1321,7 +1684,7 @@
             "titulo":"Sololearn"
         },
         {
-            "nombre": "FraudGPT",
+            "description": "FraudGPT",
             "img": "impg/fraudgpt.png",
             "enlace": "https://flowgpt.com/p/fraudgpt-16",
             "modelo": "Coding",
@@ -1329,7 +1692,7 @@
             "titulo":"FraudGPT"
         },
         {
-            "nombre": "Git",
+            "description": "Sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para gestionar el historial de cambios en archivos de código fuente de forma eficiente.",
             "img": "impg/git.png",
             "enlace": "https://git-scm.com/downloads",
             "modelo": "Coding",
@@ -1337,7 +1700,7 @@
             "titulo":"Git"
         }, 
         {
-            "nombre": "eDEX-UI<br>Programa que emula al CMD con cosillas extra 💀🐱‍👤🕸",
+            "description": "Programa que emula al CMD con cosillas extra 🐱‍👤🕸",
             "img": "impg/edexui.png",
             "enlace": "https://github.com/GitSquared/edex-ui/releases",
             "modelo": "Coding",
@@ -1345,7 +1708,7 @@
             "titulo":"eDEX-UI"
         },
         {
-            "nombre": "Sourcetree",
+            "description": "Sirve para gestionar repositorios de Git y Mercurial en Windows y Mac. Permite realizar operaciones complejas como commits, push, pull, ramas y merges de forma visual e intuitiva",
             "img": "impg/sourcetree.png",
             "enlace": "https://www.sourcetreeapp.com/",
             "modelo": "Coding",
@@ -1353,7 +1716,7 @@
             "titulo":"Sourcetree"
         },                
         {
-            "nombre": "Wireshark<br>Es un analizador de protocolos de red de código abierto. Se utiliza para capturar y examinar datos que se transmiten a través de redes informáticas en tiempo real. Wireshark permite a los usuarios ver detalles minuciosos de los paquetes de datos, lo que facilita la identificación y solución de problemas de red, el análisis de seguridad y la comprensión del comportamiento del tráfico de red.",
+            "description": "Es un analizador de protocolos de red de código abierto. Se utiliza para capturar y examinar datos que se transmiten a través de redes informáticas en tiempo real. Wireshark permite a los usuarios ver detalles minuciosos de los paquetes de datos, lo que facilita la identificación y solución de problemas de red, el análisis de seguridad y la comprensión del comportamiento del tráfico de red.",
             "img": "impg/wireshark.png",
             "enlace": "https://www.wireshark.org/download.html",
             "modelo": "Coding",
@@ -1361,7 +1724,7 @@
             "titulo":"Wireshark"
         },     
         {
-            "nombre": "Nmap<br>Herramienta de código abierto para la exploración de redes y auditorías de seguridad. Permite descubrir hosts y servicios en una red informática, creando un mapa de la red. Nmap utiliza paquetes IP crudos para determinar qué hosts están disponibles en la red, qué servicios ofrecen, qué sistemas operativos están ejecutando, qué tipos de filtros de paquetes/firewalls están en uso, y otras características.",
+            "description": "Herramienta de código abierto para la exploración de redes y auditorías de seguridad. Permite descubrir hosts y servicios en una red informática, creando un mapa de la red. Nmap utiliza paquetes IP crudos para determinar qué hosts están disponibles en la red, qué servicios ofrecen, qué sistemas operativos están ejecutando, qué tipos de filtros de paquetes/firewalls están en uso, y otras características.",
             "img": "https://blog.walthercuro.com/wp-content/uploads/2025/03/image-2.png",
             "enlace": "https://nmap.org/download.html",
             "modelo": "Coding",
@@ -1369,7 +1732,7 @@
             "titulo":"Nmap"
         },             
         {
-            "nombre": "XAMPP",
+            "description": "Permite crear un entorno de servidor web local en tu ordenador para desarrollar, probar y depurar aplicaciones web (especialmente con PHP y MySQL) sin necesidad de internet.",
             "img": "impg/xampp.png",
             "enlace": "https://www.apachefriends.org/es/download.html",
             "modelo": "Coding",
@@ -1377,15 +1740,15 @@
             "titulo":"XAMPP"
         },                
         {
-            "nombre": "Visual Studio Code",
+            "description": "Es un editor de código fuente ligero y gratuito de Microsoft, utilizado para escribir, depurar y desarrollar software en múltiples lenguajes.",
             "img": "impg/vscode.png",
             "enlace": "https://code.visualstudio.com/",
             "modelo": "Coding",
             "fecha":"2026-03-01",
-            "titulo":"VS Code"
+            "titulo":"Visual Studio Code"
         },
         {
-            "nombre": "Anaconda",
+            "description": "Es un IDE que te permite tener lenguajes de programación Python y R, que se utilizan para aplicaciones de ciencia de datos.",
             "img": "impg/anaconda.png",
             "enlace": "https://www.anaconda.com/download",
             "modelo": "Coding",
@@ -1393,7 +1756,7 @@
             "titulo":"Anaconda"
         },
         {
-            "nombre": "Netlify",
+            "description": "Netlify",
             "img": "impg/netlify.png",
             "enlace": "https://app.netlify.com/",
             "modelo": "Coding",
@@ -1401,7 +1764,7 @@
             "titulo":"Netlify"
         },        
         {
-            "nombre": "Sololearn",
+            "description": "Plataforma en línea con más de 25 cursos en línea centrados en lenguajes de programación populares como Python, C++, Java, C#, JavaScript, etc.",
             "img": "impg/sololearn.png",
             "enlace": "https://www.sololearn.com/",
             "modelo": "Coding",
@@ -1409,23 +1772,23 @@
             "titulo":"Sololearn"
         },
         {
-            "nombre": "PageSpeed Insightsge<br>Herramienta de Google que analiza el rendimiento de una página web en dispositivos móviles y de escritorio",
+            "description": "Herramienta de Google que analiza el rendimiento de una página web en dispositivos móviles y de escritorio",
             "img": "impg/pagespeedinsi.png",
             "enlace": "https://pagespeed.web.dev/",
             "modelo": "Coding",
             "fecha":"2026-03-01",
-            "titulo":"PageSpeed"
+            "titulo":"PageSpeed Insightsge"
         },
         {
-            "nombre": "PSeInt on rollApp<br>PSeInt es un intérprete de pseudocódigo para estudiantes de programación de habla hispana.",
+            "description": "PSeInt es un intérprete de pseudocódigo para estudiantes de programación de habla hispana.",
             "img": "impg/pseint.png",
             "enlace": "https://www.rollapp.com/app/pseint",
             "modelo": "Coding",
             "fecha":"2026-03-01",
-            "titulo":"PSeInt"
+            "titulo":"PSeInt on rollApp"
         },
         {
-            "nombre": "vx-underground<br>Sitio web sobre malware y ciberseguridad. Afirma tener el mayor repositorio de malware en línea</br>Si no le sabes, no descargues nada de ahí",
+            "description": "Sitio web sobre malware y ciberseguridad. Afirma tener el mayor repositorio de malware en línea</br>Si no le sabes, no descargues nada de ahí",
             "img": "impg/vxunderground.png",
             "enlace": "https://vx-underground.org/",
             "modelo": "Coding",
@@ -1433,15 +1796,43 @@
             "titulo":"vx-underground"
         },
         {
-            "nombre": "Artemis<br>Escáner modular de vulnerabilidades. Es la herramienta que impulsa las actividades de escaneo de CERT PL comprobando diversos aspectos de la seguridad del sitio web y creando mensajes fáciles de leer listos para ser enviados a las organizaciones escaneadas.",
+            "description": "Escáner modular de vulnerabilidades. Es la herramienta que impulsa las actividades de escaneo de CERT PL comprobando diversos aspectos de la seguridad del sitio web y creando mensajes fáciles de leer listos para ser enviados a las organizaciones escaneadas.",
             "img": "https://media.licdn.com/dms/image/v2/D4D22AQGVFg68qEFGPw/feedshare-shrink_800/B4DZRKzO9cGUAk-/0/1736421732600?e=2147483647&v=beta&t=vJD96ElKSkqPZUZxvsleDOOqwojWpjKzopqiDzmnvIA",
             "enlace": "https://github.com/CERT-Polska/Artemis",
             "modelo": "Coding",
             "fecha":"2026-03-01",
             "titulo":"Artemis"
         }, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "ExifTool<br>Es una aplicación de CMD para leer, escribir y editar metadatos en una amplia variedad de archivos",
+            "description": "Es una aplicación de CMD para leer, escribir y editar metadatos en una amplia variedad de archivos",
             "img": "impg/exiftool.png",
             "enlace": "https://exiftool.org/",
             "modelo": "Metadatos",
@@ -1449,23 +1840,53 @@
             "titulo":"ExifTool"
         },                
         {
-            "nombre": "Google Dorking Documentation<br>El arte de buscar en Google utilizando operadores avanzados para encontrar información específica que no es fácilmente accesible a través de búsquedas estándar.",
+            "description": "El arte de buscar en Google utilizando operadores avanzados para encontrar información específica que no es fácilmente accesible a través de búsquedas estándar.",
             "img": "impg/googledorking.png",
             "enlace": "https://www.splunk.com/en_us/blog/learn/google-dorking.html",
             "modelo": "Metadatos",
             "fecha":"2026-03-01",
-            "titulo":"Google Dorking"
+            "titulo":"Google Dorking Documentation"
         },                        
         {
-            "nombre": "Facebook Crawler<br>Es una herramienta que permite verificar y depurar cómo Facebook ve y extrae información de sus páginas web.",
+            "description": "Es una herramienta que permite verificar y depurar cómo Facebook ve y extrae información de sus páginas web.",
             "img": "impg/facebookcrawler.png",
             "enlace": "https://developers.facebook.com/tools/debug/",
             "modelo": "Metadatos",
             "fecha":"2026-03-01",
             "titulo":"Facebook Crawler"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "GitHub",
+            "description": "GitHub",
             "img": "impg/github.png",
             "enlace": "https://github.com/",
             "modelo": "GitHub",
@@ -1473,23 +1894,23 @@
             "titulo":"GitHub"
         },                                        
         {
-            "nombre": "Google Dorking/Hacking<br>Repo con varios dorks hecho por speinador en donde encontraras dorks y ejemplos de uso",
+            "description": "Repo con varios dorks hecho por speinador en donde encontraras dorks y ejemplos de uso",
             "img": "impg/googledorkinggithub.png",
             "enlace": "https://github.com/speinador/Google_Hacking",
             "modelo": "GitHub",
             "fecha":"2026-03-01",
-            "titulo":"Google Hacking Repo"
+            "titulo":"Google Dorking/Hacking"
         }, 
         {
-            "nombre": "Releases de la APK<br>de Blender",
+            "description": "Releases de la APK<br>de Blender",
             "img": "impg/blenderandroidreleases.png",
             "enlace": "https://github.com/dshawshank/APP-android_arm64/releases/",
             "modelo": "GitHub",
             "fecha":"2026-03-01",
-            "titulo":"Blender Releases"
+            "titulo":"Blender APK Releases"
         },
         {
-            "nombre": "Screencast-Keys<br>para Blender",
+            "description": "Permite ver dentro del viewport de Blender las teclas presionadas del teclado y mouse.",
             "img": "impg/screencastkeysblender.png",
             "enlace": "https://github.com/nutti/Screencast-Keys",
             "modelo": "GitHub",
@@ -1497,15 +1918,15 @@
             "titulo":"Screencast Keys"
         },
         {
-            "nombre": "fSPY Ejecutable",
+            "description": "Software open source de camera matching (coincidencia de cámara) que estima los parámetros de una cámara real (longitud focal, posición, orientación) a partir de una fotografía.",
             "img": "impg/fspyexe.png",
             "enlace": "https://github.com/stuffmatic/fSpy/releases/tag/v1.0.3",
             "modelo": "GitHub",
             "fecha":"2026-03-01",
-            "titulo":"fSPY"
+            "titulo":"fSPY Ejecutable"
         },
         {
-            "nombre": "fSPY Add-On",
+            "description": "Add-On Blender",
             "img": "impg/fspyadd.png",
             "enlace": "https://github.com/stuffmatic/fSpy-Blender/releases/tag/v1.0.3",
             "modelo": "GitHub",
@@ -1513,7 +1934,7 @@
             "titulo":"fSPY Addon"
         },        
         {
-            "nombre": "Blender CNC",
+            "description": "Blender CNC",
             "img": "impg/cncblender.png",
             "enlace": "https://github.com/manahter/nCNC",
             "modelo": "GitHub",
@@ -1521,7 +1942,7 @@
             "titulo":"Blender CNC"
         },                
         {
-            "nombre": "BlenderGPT",
+            "description": "BlenderGPT",
             "img": "impg/blendergpt.png",
             "enlace": "https://github.com/gd3kr/BlenderGPT?tab=MIT-1-ov-file",
             "modelo": "GitHub",
@@ -1529,15 +1950,15 @@
             "titulo":"BlenderGPT"
         },                
         {
-            "nombre": "BlenderDEV",
+            "description": "Repo de Blender",
             "img": "impg/blenderdev.png",
             "enlace": "https://github.com/blender/blender",
             "modelo": "GitHub",
             "fecha":"2026-03-01",
-            "titulo":"Blender Dev"
+            "titulo":"BlenderDev"
         },                        
         {
-            "nombre": "Open Moonray",
+            "description": "Motor de renderizado de alto rendimiento, de código abierto (open source) y basado en trazado de rayos (path-tracing), desarrollado por DreamWorks Animation",
             "img": "impg/moonray.png",
             "enlace": "https://github.com/dreamworksanimation/openmoonray",
             "modelo": "GitHub",
@@ -1545,15 +1966,15 @@
             "titulo":"Open Moonray"
         },                        
         {
-            "nombre": "Arduino Xbox Series X Controller ESP32<br>Librería para usar un control Xbox Series X con Arduino y ESP32",
+            "description": "Librería para usar un control Xbox Series X con Arduino y ESP32",
             "img": "https://hackster.imgix.net/uploads/attachments/1897393/_UsbWR6p3M0.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg",
             "enlace": "https://github.com/asukiaaa/arduino-XboxSeriesXControllerESP32?tab=readme-ov-file",
             "modelo": "GitHub",
             "fecha":"2026-03-01",
-            "titulo":"Xbox Controller"
+            "titulo":"Arduino Xbox Series X Controller ESP32"
         },                                   
         {
-            "nombre": "copyparty<br>Servidor de archivos web de código abierto y autohospedado",
+            "description": "Servidor de archivos web de código abierto y autohospedado",
             "img": "https://cdn.ilsoftware.it/Jlxwz0BRl9Qr54du9SF2Y459nd8=/480x300/filters:format(webp)/https://www.ilsoftware.it/app/uploads/2025/07/copyparty-file-server.jpg",
             "enlace": "https://github.com/9001/copyparty",
             "modelo": "GitHub",
@@ -1561,7 +1982,7 @@
             "titulo":"copyparty"
         },                    
         {
-            "nombre": "RemoveWindowsAI<br>¿Porqué? La versión actual de Windows 11 para 25H2 y futuras incluirán cada vez más funciones y componentes de IA. Este script pretende eliminar TODAS estas funciones para mejorar la experiencia del usuario, la privacidad y la seguridad.",
+            "description": "¿Porqué? La versión actual de Windows 11 para 25H2 y futuras incluirán cada vez más funciones y componentes de IA. Este script pretende eliminar TODAS estas funciones para mejorar la experiencia del usuario, la privacidad y la seguridad.",
             "img": "https://i0.wp.com/laverdadnoticias.com/wp-content/uploads/2026/01/RemoveWindowsAI-desactiva-la-IA-en-Windows-11-paso-a-paso.webp",
             "enlace": "https://github.com/zoicware/RemoveWindowsAI?tab=readme-ov-file#how-to-use",
             "modelo": "GitHub",
@@ -1569,63 +1990,36 @@
             "titulo":"RemoveWindowsAI"
         },                    
         {
-            "nombre": "Chris Titus Tech's Windows Utility<br>Esta utilidad es una recopilación de tareas de Windows que realizo en cada sistema Windows que utilizo. Está pensado para agilizar instalaciones, deshacer ajustes con desplom, solucionar problemas con la configuración y arreglar actualizaciones de Windows. ",
+            "description": "Esta utilidad es una recopilación de tareas de Windows que realizo en cada sistema Windows que utilizo. Está pensado para agilizar instalaciones, deshacer ajustes con desplom, solucionar problemas con la configuración y arreglar actualizaciones de Windows. ",
             "img": "https://cidgraphics.com/wp-content/uploads/chris-titus-logo-img3.webp",
             "enlace": "https://github.com/ChrisTitusTech/winutil",
             "modelo": "GitHub",
             "fecha":"2026-03-01",
-            "titulo":"Chris Titus Tool"
-        },     
+            "titulo":"Chris Titus Tech's Windows Utility"
+        }, 
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "VirusTotal<br>Página de análisis de archivos y páginas web a través de un antivirus",
-            "img": "impg/virustotal.png",
-            "enlace": "https://www.virustotal.com/gui/home/upload",
-            "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"VirusTotal"
-        },
-        {
-            "nombre": "Triage<br>Explore el entorno de pruebas de análisis de malware de Triage para analizar sus muestras de malware.",
-            "img": "impg/triage.png",
-            "enlace": "https://tria.ge/dashboard",
-            "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Triage"
-        },
-        {
-            "nombre": "Jotti<br>Jotti's malware scan es un servicio gratuito que le permite analizar archivos sospechosos con varios programas antivirus.",
-            "img": "impg/jotti.png",
-            "enlace": "https://virusscan.jotti.org/",
-            "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Jotti"
-        },        
-        {
-            "nombre": "OPSWAT<br>Plataforma de ciberseguridad para detectar y prevenir amenazas de malware en archivos",
-            "img": "impg/opswat.png",
-            "enlace": "https://metadefender.opswat.com/",
-            "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"OPSWAT"
-        },        
-        {
-            "nombre": "Joe Sandbox<br>Detecta y analiza posibles archivos y URL maliciosos en Windows, Mac OS y Linux en busca de actividades sospechosas.",
-            "img": "impg/joesandbox.png",
-            "enlace": "https://www.joesandbox.com/",
-            "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Joe Sandbox"
-        },        
-        {
-            "nombre": "HYBRID ANALYSIS<br>Servicio gratuito que detecta y analiza amenazas desconocidas utilizando una tecnología única de análisis híbrido.",
-            "img": "impg/hybridanalysis.png",
-            "enlace": "https://www.hybrid-analysis.com/",
-            "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"HYBRID ANALYSIS"
-        },       
-        {
-            "nombre": "Driver Identifier<br>software gratuito para uso personal, tiene la mayor base de datos de controladores de Windows para todas las computadoras portátiles y de escritorio.",
+            "description": "Software gratuito para uso personal, tiene la mayor base de datos de controladores de Windows para todas las computadoras portátiles y de escritorio.",
             "img": "impg/driverident.png",
             "enlace": "https://www.driveridentifier.com/",
             "modelo": "Otros",
@@ -1633,39 +2027,39 @@
             "titulo":"Driver Identifier"
         },
         {
-            "nombre": "Autodesk Education<br>Debes iniciar sesión con tu cuenta normal y, en verificar, subes tu comprobante de inscripción para tener acceso a los softwares",
+            "description": "Debes iniciar sesión con tu cuenta normal y, en verificar, subes tu comprobante de inscripción para tener acceso a los softwares",
             "img": "impg/autodeskeducation.png",
             "enlace": "https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual#card-f360",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"Autodesk"
+            "titulo":"Autodesk Education"
         },
         {
-            "nombre": "Winrar x64",
+            "description": "XD",
             "img": "impg/winrar.png",
             "enlace": "https://drive.google.com/file/d/1ull86dlglB5qpfxpDnS1n9zam2zBLXiq/view?usp=sharing",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"WinRAR"
+            "titulo":"WinRAR x64"
         },        
         {
-            "nombre": "Escritorio remoto de Chrome<br>Página para conectarse de forma remota a la pc",
+            "description": "Página para conectarse de forma remota a la pc<br><a  target=_blank href=https://chromewebstore.google.com/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai>Extención Chrome</a>",
             "img": "impg/remotecontrolpc.png",
             "enlace": "https://remotedesktop.google.com/home",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"Chrome Remote"
+            "titulo":"Escritorio remoto de Chrome"
         },        
         {
-            "nombre": "Fast.com",
+            "description": "Comprueba la velocidad de tu Internet",
             "img": "impg/fastdotcom.png",
             "enlace": "https://fast.com/es/#",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"Fast"
+            "titulo":"Fast.com"
         },
         {
-            "nombre": "I♥PDF",
+            "description": "I♥PDF",
             "img": "impg/ilovepdf.png",
             "enlace": "https://www.ilovepdf.com/es",
             "modelo": "Otros",
@@ -1673,7 +2067,7 @@
             "titulo":"iLovePDF"
         },        
         {
-            "nombre": "dafont<br>Página donde encontraras fuentes para Word",
+            "description": "Página donde encontraras fuentes para Word",
             "img": "impg/dafont.png",
             "enlace": "https://www.dafont.com/es/",
             "modelo": "Otros",
@@ -1681,23 +2075,23 @@
             "titulo":"dafont"
         },
         {
-            "nombre": "MIT App Inventor<br>Página de creación de apps 'sencillas'",
+            "description": "Página de creación de apps \"sencillas\" del MIT",
             "img": "impg/appinventor.png",
             "enlace": "https://ai2.appinventor.mit.edu/",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"MIT Inventor"
+            "titulo":"MIT App Inventor"
         },
         {
-            "nombre": "Encontrar tu móvil<br>Página para encontrar tu teléfono, debe contar con WIFI o datos y tu cuenta",
+            "description": "Página para encontrar tu teléfono, debe contar con WIFI o datos y tu cuenta",
             "img": "impg/googlefind.png",
             "enlace": "https://www.google.com/android/find/",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"Find Device"
+            "titulo":"Encontrar tu móvil"
         },
         {
-            "nombre": "Heavens Above<br>Página para 'observar y rastrear' satélites que orbitan la Tierra",
+            "description": "Página para observar y rastrear satélites que orbitan la Tierra",
             "img": "impg/heavensabove.png",
             "enlace": "https://www.heavens-above.com/",
             "modelo": "Otros",
@@ -1705,23 +2099,15 @@
             "titulo":"Heavens Above"
         },
         {
-            "nombre": "Radio Garden",
+            "description": "Radio Garden",
             "img": "impg/radiogardenpc.png",
             "enlace": "https://www.radio.garden/listen/dfm-psy-trance/PQMJuLxX",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"Radio Garden"
+            "titulo":"Radio Garden Web"
         },
         {
-            "nombre": "Adobe Color",
-            "img": "impg/adobecolor.png",
-            "enlace": "https://color.adobe.com/es/create/color-wheel",
-            "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Adobe Color"
-        },
-        {
-            "nombre": "VideoSmaller<br>Página para reducir el peso de un video no mayor a 499MB",
+            "description": "Página para reducir el peso de un video no mayor a 499MB",
             "img": "impg/videosmaller.png",
             "enlace": "https://www.videosmaller.com/es/",
             "modelo": "Otros",
@@ -1729,31 +2115,31 @@
             "titulo":"VideoSmaller"
         },
         {
-            "nombre": "y2mate.com.co<br>Página para descargar videos de YouTube a mp4 o mp3",
+            "description": "Página para descargar videos de YouTube a mp4 o mp3",
             "img": "impg/you2mate.png",
-            "enlace": "https://y2mate.com.co/es222bn/",
+            "enlace": "https://y2mate.bet/en233/",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"y2mate"
+            "titulo":"y2mate.bet"
         },
         {
-            "nombre": "Programasvirtualespc.net<br>Página para descargar multitud de programas, la contraseña es:<br>www.programasvirtualespc.net",
+            "description": "Página para descargar multitud de programas, la contraseña es:<br>www.programasvirtualespc.net<br>Tiene MUCHOS anuncios.",
             "img": "impg/pvpc.png",
             "enlace": "https://www.programasvirtualespc.net/",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"ProgramasVirtualesPC"
+            "titulo":"Programasvirtualespc.net"
         },        
         {
-            "nombre": "Google Academico<br>Navegador super útil si lo sabes utilizar xd",
+            "description": "Navegador super útil si lo sabes utilizar xd",
             "img": "impg/googleaca.png",
             "enlace": "https://scholar.google.es/schhp?hl=es",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"Google Scholar"
+            "titulo":"Google Academico"
         },
         {
-            "nombre": "Cuevana 3",
+            "description": "Uno de los sitios web de piratería más populares y grandes de Latinoamérica, dedicado a la transmisión gratuita (streaming) de series y películas sin tener los derechos de autor.",
             "img": "impg/cuevana.png",
             "enlace": "https://cue.cuevana3.nu/",
             "modelo": "Otros",
@@ -1761,7 +2147,7 @@
             "titulo":"Cuevana 3"
         },
         {
-            "nombre": "TokyVideo<br>Free original series in streaming for desktop, game console, Smart TV, Mac, mobile and tablet",
+            "description": "Series originales gratis en streaming para escritorio, consolas, Smart TV, Mac, móviles y tabletas",
             "img": "impg/tokyvideo.png",
             "enlace": "https://www.tokyvideo.com/es",
             "modelo": "Otros",
@@ -1769,7 +2155,7 @@
             "titulo":"TokyVideo"
         },
         {
-            "nombre": "pelisplushd<br>Página para ver películas en streaming, tiene una gran variedad de películas y series",
+            "description": "Página para ver películas en streaming, tiene una gran variedad de películas y series",
             "img": "https://image.winudf.com/v2/image1/cGVsaXNwbHVzLmFwbGlrZnRfc2NyZWVuXzRfMTY0Mjk3OTI4OV8wMzQ/screen-4.jpg?fakeurl=1&type=.jpg",
             "enlace": "https://www25.pelisplushd.to/",
             "modelo": "Otros",
@@ -1777,31 +2163,31 @@
             "titulo":"pelisplushd"
         },
         {
-            "nombre": "DroidCam",
+            "description": "Aplicación de escritorio (para Windows o Linux) que, junto con la app móvil, permite usar tu celular Android o iOS como webcam inalámbrica o USB de alta calidad.",
             "img": "impg/droidcam.png",
             "enlace": "https://www.dev47apps.com/",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"DroidCam"
+            "titulo":"DroidCam CLient"
         },
         {
-            "nombre": "CrystalDiskMark",
+            "description": "Herramienta gratuita de código abierto para Windows diseñada para medir el rendimiento de velocidad de lectura y escritura de unidades de almacenamiento.",
             "img": "impg/crystaldiskmark.png",
-            "enlace": "https://netactuate.dl.sourceforge.net/project/crystaldiskmark/8.0.4c/CrystalDiskMark8_0_4c.exe",
+            "enlace": "https://sourceforge.net/projects/crystaldiskmark/files/9.0.2/CrystalDiskMark9_0_2.exe/download",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"CrystalDiskMark"
+            "titulo":"CrystalDiskMark V_9_0_2"
         },
         {
-            "nombre": "HDD Regenerator",
+            "description": "Herramienta de software especializada en reparar sectores defectuosos (bad sectors) en discos duros mecánicos (HDD) e incluso SSD en versiones modernas (2024).",
             "img": "impg/hddregenerator.png",
             "enlace": "https://drive.google.com/file/d/1jPl9rKJVwh94Me4BcxmRj6bcSm5BwBx2/view?usp=sharing",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"HDD Regenerator"
+            "titulo":"HDD Regenerator 2018"
         },
         {
-            "nombre": "MSI Afterburner",
+            "description": "Es el software de overclocking de tarjetas gráficas más reconocida y utilizada del mundo.",
             "img": "impg/msiafterburner.png",
             "enlace": "https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1707365167~acl=/*~hmac=850193a09bf2aca57899a9fbc4bbe0e7065b78a3a8d0d1ea358883b24eeb8cac",
             "modelo": "Otros",
@@ -1809,15 +2195,15 @@
             "titulo":"MSI Afterburner"
         },
         {
-            "nombre": "Plagiarism<br>Detector de plagio",
+            "description": "Detector de plagio",
             "img": "impg/plagiarism.png",
             "enlace": "https://plagiarismdetector.net/es",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"Plagiarism Detector"
+            "titulo":"Plagiarism"
         },        
         {
-            "nombre": "Generador APA de Scribbr",
+            "description": "Generador APA de Scribbr",
             "img": "impg/formatoapa.png",
             "enlace": "https://www.scribbr.es/citar/generador/apa/",
             "modelo": "Otros",
@@ -1825,7 +2211,7 @@
             "titulo":"APA Generador"
         },        
         {
-            "nombre": "Generador de Citas APA",
+            "description": "Generador de Citas APA",
             "img": "impg/biggurucitas.png",
             "enlace": "https://app.bibguru.com/p/71554a6d-0c19-4076-b458-e8cad5f763be",
             "modelo": "Otros",
@@ -1833,7 +2219,7 @@
             "titulo":"BibGuru"
         },
         {
-            "nombre": "Video Highlight<br>Resumidor de videos de YouTube",
+            "description": "Resumidor de videos de YouTube",
             "img": "impg/videohighlight.png",
             "enlace": "https://videohighlight.com/account/login?callbackUrl=https%3A%2F%2Fvideohighlight.com%2Fvideo%2Fai%2Fnew",
             "modelo": "Otros",
@@ -1841,7 +2227,7 @@
             "titulo":"Video Highlight"
         },
         {
-            "nombre": "OBS<br>",
+            "description": "Programa gratuito y de código abierto diseñado para la grabación de video y la transmisión en vivo (streaming) de alto rendimiento.",
             "img": "impg/obs.png",
             "enlace": "https://obsproject.com/download",
             "modelo": "Otros",
@@ -1849,7 +2235,7 @@
             "titulo":"OBS"
         },
         {
-            "nombre": "Lucid<br>Puedes crear diagramas de flujo",
+            "description": "Puedes crear diagramas de flujo",
             "img": "impg/lucid.png",
             "enlace": "https://lucid.app/",
             "modelo": "Otros",
@@ -1857,7 +2243,7 @@
             "titulo":"Lucid"
         },                
         {
-            "nombre": "Noiiz<br>Banco de sonidos",
+            "description": "Banco de sonidos",
             "img": "impg/noiiz.png",
             "enlace": "https://www.noiiz.com/sounds",
             "modelo": "Otros",
@@ -1865,7 +2251,7 @@
             "titulo":"Noiiz"
         },                
         {
-            "nombre": "Splice Sounds<br>Banco de sonidos por créditos mensuales",
+            "description": "Banco de sonidos por créditos mensuales",
             "img": "impg/splicesounds.png",
             "enlace": "https://splice.com/sounds",
             "modelo": "Otros",
@@ -1873,7 +2259,7 @@
             "titulo":"Splice Sounds"
         },                
         {
-            "nombre": "Kubernetes",
+            "description": "Orquesta implementaciones mediante una API de código abierto, agrupando los contenedores en pods para escalar según la demanda y la disponibilidad de recursos . Kubernetes también automatiza el descubrimiento de servicios, el balanceo de carga y la asignación de recursos, y supervisa el estado para permitir la autorreparación reiniciando o replicando contenedores.",
             "img": "impg/kubernetes.png",
             "enlace": "https://kubernetes.io/releases/download/",
             "modelo": "Otros",
@@ -1881,7 +2267,7 @@
             "titulo":"Kubernetes"
         },
         {
-            "nombre": "Henry Matzar<br>Herramientas gratuitas para diseñadores",
+            "description": "Herramientas gratuitas para diseñadores",
             "img": "https://scontent.flov1-1.fna.fbcdn.net/v/t39.30808-6/480383815_655156730200973_4701650517180624840_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEDfrdsOufyJWeTMLSLW6g8mznwD8kG4mKbOfAPyQbiYlzLLakZDbIX-vYZsEBjpy10tXhYhQe4nI3GZ4_vFxKA&_nc_ohc=u5T6TvmUbVMQ7kNvwFXKOLc&_nc_oc=AdnQ2SXikOcx6uBt1-vZ_Qnz1blGq5S4gU39zP9ksV4fXfiPwusnrZ3q2d7jVnAxe31EOUZVixCsoqtoQQMfmq1f&_nc_zt=23&_nc_ht=scontent.flov1-1.fna&_nc_gid=Dcq7D2dIlQfTTMz5AsXvcQ&_nc_ss=8&oh=00_Afwfs_LsEI9iHuqUSK4mfYuGR4npl1QmvPn1MmI6l6LxcA&oe=69B0414F",
             "enlace": "https://www.henrymatzar.com/herramientas/",
             "modelo": "Otros",
@@ -1889,15 +2275,15 @@
             "titulo":"Henry Matzar"
         },
         {
-            "nombre": "Mapa de las lineas del metro de CDMX<br><a  target=_blank href=https://elmetrocdmx.com/wp-content/uploads/2022/03/plano_red19ok-1-836x1024.png>Link mapa unicamente de las lineas del metro</a>",
+            "description": "Mapa de las lineas del metro de CDMX<br><a  target=_blank href=https://elmetrocdmx.com/wp-content/uploads/2022/03/plano_red19ok-1-836x1024.png>Link mapa unicamente de las lineas del metro</a>",
             "img": "https://www.entornoturistico.com/wp-content/uploads/2023/10/Mapa-Metro-CDMX-completo-150x150.jpg",
             "enlace": "https://semovi.cdmx.gob.mx/storage/app/media/Mapa%20MI%20CDMX%20JPG.jpg?utm_source=web&utm_medium=boton&utm_campaign=naranja",
             "modelo": "Otros",
             "fecha":"2026-03-01",
-            "titulo":"Metro CDMX"
+            "titulo":"Mapa Metro CDMX"
         },
         {
-            "nombre": "PingMe<br>Servicio de mensajería instantánea enfocado en la privacidad y seguridad de los usuarios</br>Es de pago y el mejor pais para elegir es UnitedKingdom(demomento)",
+            "description": "Servicio de mensajería instantánea enfocado en la privacidad y seguridad de los usuarios</br>Es de pago y el mejor pais para elegir es UnitedKingdom(demomento)",
             "img": "https://play-lh.googleusercontent.com/1Qzyn7aq31Y5-bYwHLOq_FOOomFnnqE7bX6WJm-SPc8wvcdK05ZV2DrDY64FLNkono4",
             "enlace": "https://pingme.tel/",
             "modelo": "Otros",
@@ -1905,15 +2291,45 @@
             "titulo":"PingMe"
         },         
         {
-            "nombre": "TeKnoLiberty<br>\"Su objetivo es desmentir toda la mierda desperdigada por los feds y lamebotas estadistas\" - TeknoLiberty",
+            "description": "\"Somos una comunidad de cypherpunks, buscando escapar de la vigilancia masiva y algoritmos manipuladores.\" - TeknoLiberty",
             "img": "https://static.vecteezy.com/system/resources/thumbnails/010/227/846/small/silhouette-hands-and-broken-chains-freedom-concept-photo.jpg",
             "enlace": "https://teknoliberty.com",
             "modelo": "Otros",
             "fecha":"2026-03-01",
             "titulo":"TeKnoLiberty"
-        },  
+        }, 
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Canal 6 MTCH-TDT En Vivo<br>Multimedios Televisión<br><a  target=_blank href=https://mdstrm.com/live-stream/5f2d9d6ff17144074bd8a284>Recarga la página directamente en la barra de búsqueda</a>",
+            "description": "N+ FORO En Vivo",
+            "img": "https://video-assets.nmas.com.mx/1237568/snapshot.webp?v=1726608200",
+            "enlace": "https://www.nmas.com.mx/foro-tv/",
+            "modelo": "Canales TV ",
+            "fecha":"2026-03-09",
+            "titulo":"N+ Foro Canal 4"
+        },
+        {
+            "description": "Canal 6 MTCH-TDT En Vivo<br>Multimedios Televisión<br><a  target=_blank href=https://mdstrm.com/live-stream/5f2d9d6ff17144074bd8a284>Recarga la página directamente en la barra de búsqueda</a>",
             "img": "impg/canalseiscdmx.png",
             "enlace": "https://www.multimediostv.com/en-vivo/cdmx",
             "modelo": "Canales TV",
@@ -1921,7 +2337,7 @@
             "titulo":"Canal 6"
         },
         {
-            "nombre": "Azteca 7 XHIMT-TDT En Vivo",
+            "description": "Azteca 7 XHIMT-TDT En Vivo",
             "img": "impg/canalsiete.png",
             "enlace": "https://mdstrm.com/live-stream/609ad46a7a441137107d7a81",
             "modelo": "Canales TV",
@@ -1929,15 +2345,38 @@
             "titulo":"Azteca 7"
         },
         {
-            "nombre": "ADN40 En Vivo",
+            "description": "ADN40 En Vivo",
             "img": "impg/adncuarenta.png",
             "enlace": "https://mdstrm.com/live-stream/60b578b060947317de7b57ac",
             "modelo": "Canales TV",
             "fecha":"2026-03-01",
             "titulo":"ADN40"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "Web Devs<br>Recopilación de tutoriales y recursos para desarrolladores web",
+            "description": "Recopilación de tutoriales y recursos para desarrolladores web",
             "img": "https://www.comunicare.es/wp-content/uploads/2021/08/desarrollo-web.jpg",
             "enlace": "https://desarrolladoresweb.org/",
             "modelo": "Desarrollo Web",
@@ -1945,7 +2384,7 @@
             "titulo":"Web Devs"
         },
         {
-            "nombre": "CSS Text Animations",
+            "description": "CSS Text Animations",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ94h8ncQrOuwcqUFAji6UfiZ3YjCtszBDLyA&s",
             "enlace": "https://prismic.io/blog/css-text-animations",
             "modelo": "Desarrollo Web",
@@ -1953,7 +2392,7 @@
             "titulo":"CSS Animations"
         },
         {
-            "nombre": "HTML Color Codes",
+            "description": "HTML Color Codes",
             "img": "https://htmlcolorcodes.com/icon2.png?e54694489ec32db1",
             "enlace": "https://htmlcolorcodes.com/es/",
             "modelo": "Desarrollo Web",
@@ -1961,7 +2400,7 @@
             "titulo":"HTML Colors"
         },
         {
-            "nombre": "CSS Gradient<br>Generador de degradados para CSS",
+            "description": "Generador de degradados para CSS",
             "img": "https://cdn-1.webcatalog.io/catalog/css-gradient/css-gradient-icon-filled-256.png?v=1736412961294",
             "enlace": "https://cssgradient.io/",
             "modelo": "Desarrollo Web",
@@ -1969,15 +2408,15 @@
             "titulo":"CSS Gradient"
         },
         {
-            "nombre": "Can I use...<br>Comprueba la compatibilidad de las características web en los navegadores",
+            "description": "Comprueba la compatibilidad de las características web en los navegadores",
             "img": "https://super-monitoring.com/blog/wp-content/uploads/2016/09/caniuse.png",
             "enlace": "https://caniuse.com/",
             "modelo": "Desarrollo Web",
             "fecha":"2026-03-01",
-            "titulo":"Can I use"
+            "titulo":"Can I use..."
         },
         {
-            "nombre": "WebDevTrick<br>Recopilación de tutoriales y recursos para desarrolladores web",
+            "description": "Recopilación de tutoriales y recursos para desarrolladores web",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1xRJF2OeyZDsbL1DhzByqgwEImsmmUjuPQ&s",
             "enlace": "https://webdevtrick.com/",
             "modelo": "Desarrollo Web",
@@ -1985,7 +2424,7 @@
             "titulo":"WebDevTrick"
         },
         {
-            "nombre": "W3Schools<br>Learn to Code With the <strong>world's largest web developer</strong> site.",
+            "description": "Learn to Code With the <strong>world's largest web developer</strong> site.",
             "img": "https://cdn.prod.website-files.com/60ffdd9e3c66d71b667eba0b/6470ee2574766c89099e3497_JcqFK_yAO6Av33xfNUmTM0r7f2bXs1HA0eqm_j7VTdw.png",
             "enlace": "https://www.w3schools.com/",
             "modelo": "Desarrollo Web",
@@ -1993,7 +2432,7 @@
             "titulo":"W3Schools"
         },
         {
-            "nombre": "Model Viewer<br>Visualizador de modelos 3D en el navegador",
+            "description": "Visualizador de modelos 3D en el navegador",
             "img": "https://pbs.twimg.com/profile_images/1161337646460760064/SFFIMxqt_400x400.jpg",
             "enlace": "https://modelviewer.dev/",
             "modelo": "Desarrollo Web",
@@ -2001,15 +2440,33 @@
             "titulo":"Model Viewer"
         },
         {
-            "nombre": "Blender con DLSS<br>Custom Built de Blender: aquí están los pasos para compilar Blender, además de que puedes descargarlo. :D",
+            "description": "Custom Built de Blender: aquí están los pasos para compilar Blender, además de que puedes descargarlo. :D",
             "img": "imgDlSS/splashMod.jpg",
             "enlace": "https://lagoma.netlify.app/index.html#blenderDLSS",
             "modelo": "Otros",
             "fecha":"2026-03-09",
-            "titulo":"Blender DLSS"
+            "titulo":"Blender con DLSS"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
-            "nombre": "<a  target=_blank href=https://www.instagram.com/wrongcaesar9.0/>Mi Instagram</a><br><a  target=_blank href=https://www.thingiverse.com/wrongcaesar9/designs>Mi Thingiverse</a><br><a  target=_blank href=https://cults3d.com/es/usuarios/WrongCaesar9>Mi Cults</a>",
+            "description": "<a  target=_blank href=https://www.instagram.com/wrongcaesar9.0/>Mi Instagram</a><br><a  target=_blank href=https://www.thingiverse.com/wrongcaesar9/designs>Mi Thingiverse</a><br><a  target=_blank href=https://cults3d.com/es/usuarios/WrongCaesar9>Mi Cults</a>",
             "img": "impg/miinsta.png",
             "enlace": "https://www.instagram.com/wrongcaesar9.0/",
             "modelo": "Otros",

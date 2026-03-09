@@ -49,13 +49,13 @@ function mostrarprogramas() {
   // 2. FILTRAR PRIMERO (Creamos una lista temporal con los resultados válidos)
   // Usamos .filter en lugar de .forEach para obtener un nuevo array limpio
   const programasFiltrados = window.programas.filter(producto => {
-    const nombreProducto = producto.nombre.toLowerCase();
+    const descriptionProducto = producto.description.toLowerCase();
 
     // Tu misma lógica de filtrado:
     return (
       (filtroModelo === "" || producto.modelo === filtroModelo) &&
       (filtroPrecio === 0 || producto.precio <= filtroPrecio) &&
-      (nombreProducto.includes(terminoBusqueda) || terminoBusqueda === "")
+      (descriptionProducto.includes(terminoBusqueda) || terminoBusqueda === "")
     );
   });
 
@@ -67,7 +67,7 @@ function mostrarprogramas() {
     programasContenedor.innerHTML = `
           <div class="no-resultados">
               <h3>🐸 Ups, no encontramos nada por aquí</h3>
-              <p>Salta a otros filtros o busca con otro nombre.</p>
+              <p>Salta a otros filtros o busca con otra palabra.</p>
           </div>
       `;
 
@@ -98,9 +98,13 @@ function mostrarprogramas() {
     programasImg.alt = producto.modelo;
     programasDiv.appendChild(programasImg);
 
-    const programasNombre = document.createElement("h3");
-    programasNombre.innerHTML = producto.nombre;
-    programasDiv.appendChild(programasNombre);
+    const programasTitulo = document.createElement("h2");
+    programasTitulo.innerHTML = producto.titulo;
+    programasDiv.appendChild(programasTitulo);
+
+    const programasDescripcion = document.createElement("h3");
+    programasDescripcion.innerHTML = producto.description;
+    programasDiv.appendChild(programasDescripcion);
 
     const programasEnlace = document.createElement("h3");
     const enlaceProducto = document.createElement("a");
@@ -271,7 +275,7 @@ window.addEventListener('load', () => {
     if (hash) {
         const botones = document.querySelectorAll('.thingi-btn');
         botones.forEach(btn => {
-            // Verifica si el onclick del botón contiene el nombre de la sección
+            // Verifica si el onclick del botón contiene el description de la sección
             if (btn.getAttribute('onclick').includes(`'${hash}'`)) {
                 btn.classList.add('active');
             } else {
@@ -307,9 +311,9 @@ formulario.addEventListener('submit', (event) => {
   buttonSubmit.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i>'
   buttonSubmit.disabled = true
   setTimeout(() => {
-    let nombre = document.querySelector('#nombre').value
+    let description = document.querySelector('#description').value
     let pedidof = document.querySelector('#pedidof').value
-    let mensaje = 'send?phone=' + telefono + '&text=*_Formulario de Sugerencia_*%0A*¿Cuál es tu nombre?*%0A' + nombre + '%0A*¿Qué deseas colocar? :D*%0A' + pedidof + ''
+    let mensaje = 'send?phone=' + telefono + '&text=*_Formulario de Sugerencia_*%0A*¿Cuál es tu description?*%0A' + description + '%0A*¿Qué deseas colocar? :D*%0A' + pedidof + ''
     if (isMobile()) {
       window.open(urlMobile + mensaje, '_blank')
     } else {
@@ -411,11 +415,11 @@ async function iniciarCarruselPro() {
 
         const crearSlide = (p) => `
         
-            <div class="carousel-slide"><h3 style="position: absolute; margin-top: 92%; background: rgba(0, 0, 0, 0.42); color: white; border-radius: 5px; padding: 5px 5px 2px 5px; backdrop-filter: blur(10px);">${p.titulo}</h3>
+            <div class="carousel-slide"><h3 style="font-size: 16px; font-weight: bold; position: absolute; margin-top: 92%; background: rgba(0, 0, 0, 0.42); color: white; border-radius: 5px; padding: 5px 5px 2px 5px; backdrop-filter: blur(10px);">${p.titulo}</h3>
                 <img src="${p.img}" alt="Imagen de programa">
                 <div class="info-overlay">
                     <div class="info-content">
-                        <h3>${p.nombre}</h3>
+                        <h3>${p.description}</h3>
                         <p class="modelo-tag">Filtro: ${p.modelo}</p>
                         <center><a href="${p.enlace}" target="_blank" class="btn-directo">Da el Salto 🐸🤙</a></center>
                     </div>
@@ -490,20 +494,40 @@ async function iniciarCarruselPro() {
         gallery.querySelector('.next').addEventListener('click', () => mover(index + 1));
         gallery.querySelector('.prev').addEventListener('click', () => mover(index - 1));
 
-        // Autoplay
-        let intervalo = setInterval(() => mover(index + 1), 1500);
-        gallery.addEventListener('mouseenter', () => clearInterval(intervalo));
-        gallery.addEventListener('mouseleave', () => {
-            intervalo = setInterval(() => mover(index + 1), 1500);
-        });
+// --- GESTIÓN DE AUTOPLAY MEJORADA ---
+        let intervalo;
 
-        // --- LÓGICA DE SWIPE (Sustituye al overflow-x) ---
-        let startX = 0;
-        gallery.addEventListener('touchstart', e => startX = e.touches[0].clientX);
-        gallery.addEventListener('touchend', e => {
-            const endX = e.changedTouches[0].clientX;
-            if (startX - endX > 50) mover(index + 1); // Deslizar a la izquierda
-            else if (endX - startX > 50) mover(index - 1); // Deslizar a la derecha
+        function iniciarAutoplay() {
+            detenerAutoplay(); // Limpieza preventiva
+            intervalo = setInterval(() => {
+                // Solo movemos si la pestaña es visible para evitar que se trabe
+                if (!document.hidden) {
+                    mover(index + 1);
+                }
+            }, 2500); // Lo subí un pelín a 2.5s para que no sea tan frenético, pero ajustalo a tu gusto
+        }
+
+        function detenerAutoplay() {
+            clearInterval(intervalo);
+        }
+
+        // Iniciar por primera vez
+        iniciarAutoplay();
+
+        // Pausar con el mouse
+        gallery.addEventListener('mouseenter', detenerAutoplay);
+        gallery.addEventListener('mouseleave', iniciarAutoplay);
+
+        // --- EL FIX MAESTRO: Visibility Change ---
+        // Esto detecta cuando cambias de pestaña o sección y regresas
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                detenerAutoplay();
+            } else {
+                // Al regresar, reseteamos el bloqueo por si acaso se quedó trabado
+                isTransitioning = false; 
+                iniciarAutoplay();
+            }
         });
 
     } catch (error) {

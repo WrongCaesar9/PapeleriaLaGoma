@@ -485,12 +485,27 @@ footer {
   /* fuerza al div a ocupar todo el alto posible */
   font-size: 100%;
   width: auto;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 22%;
 }
+
 
 .programas img {
   width: 100%;
-  object-fit: fill;
+  /* ESTA ES LA MAGIA DEL CLS */
+  aspect-ratio: 1 / 1;
+  /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
+  object-fit: cover;
+  /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
+  display: block;
+  /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
+  background-image: url(https://i.pinimg.com/originals/a4/62/d1/a462d192479048db0f02f4466b900e0a.gif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
 }
+
 
 .programas a {
   font-size: 0.8rem;
@@ -1011,26 +1026,6 @@ summary {
 
 
 
-.programas {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 22%;
-}
-
-.programas img {
-  width: 100%;
-  /* ESTA ES LA MAGIA DEL CLS */
-  aspect-ratio: 1 / 1;
-  /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
-  object-fit: cover;
-  /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
-  display: block;
-  /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
-  background-image: url(https://i.pinimg.com/originals/a4/62/d1/a462d192479048db0f02f4466b900e0a.gif);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
 
 
 
@@ -1622,8 +1617,11 @@ header,
   top: 95%;
   transform: translateY(-50%);
   z-index: 10;
-  background: rgb(165, 50, 14);
-  border: none;
+  background-color: #6666ed;
+  border: 3px solid #daf747;
+  
+ 
+
   color: rgb(255, 255, 255);
   width: 40px;
   height: 40px;
@@ -1655,15 +1653,24 @@ header,
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 1px solid rgba(165, 14, 152, 0.768);
+    border: 2px solid #6666ed;
+}
+
+
+.dot:hover{
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgb(242, 67, 255);
+  background: rgb(46, 55, 222);
+  
 }
 
 /* Punto activo (el que estás viendo) */
 .dot.active {
-    background: rgb(72, 165, 14); /* El color naranja/rojo de tus botones */
+    background: #daf747; /* El color naranja/rojo de tus botones */
     transform: scale(1.3);
-    box-shadow: 0 0 5px rgba(155, 14, 165, 0.8);
+    box-shadow: 0 0 5px rgba(72, 59, 73, 0.8);
 }
+
 /* The entire scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
