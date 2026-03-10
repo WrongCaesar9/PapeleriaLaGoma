@@ -100,7 +100,7 @@ function mostrarprogramas() {
         hoverElement.classList.add("img-hide");
         hoverElement.style.cssText = `
             width: 100%;
-            height: 300px;
+            height: 70%;
             display: none;
             margin: 0 auto;
             background-color: white;
@@ -114,11 +114,11 @@ function mostrarprogramas() {
             } 
                     else if (producto.iframeHover) {
                 hoverElement = document.createElement("iframe");
-                hoverElement.dataset.src = producto.iframeHover + "&autoplay=1&mute=1&controls=1"; // Guardamos la URL aquí
+                hoverElement.dataset.src = producto.iframeHover + "&autoplay=1&mute=0&controls=1"; // Guardamos la URL aquí
                 hoverElement.classList.add("img-hide");
                 hoverElement.style.cssText = `
                     width: 100%;
-                    height: 300px;
+                    height: 70%;
                     display: none;
                     margin: 0 auto;
                     background-color: white;
@@ -200,7 +200,7 @@ function mostrarprogramas() {
         programasDiv.appendChild(programasEnlace);
 
         const programasModel = document.createElement("p");
-        programasModel.innerHTML = producto.modelo + " - Updated:" + producto.fecha;
+        programasModel.innerHTML = producto.modelo; // + " - Updated:" + producto.fecha
         programasDiv.appendChild(programasModel);
 
         programasContenedor.appendChild(programasDiv);
