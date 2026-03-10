@@ -6,11 +6,13 @@
             "enlace": "https://www.blender.org/download/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
+            "imgHover": "https://yelzkizi.org/wp-content/uploads/2025/01/redfw3-ezgif.com-video-to-gif-converter.gif",
             "titulo":"Blender"
         },
         {
             "description": "contraseña:<br>www.programasvirtualespc.net ",
             "img": "impg/cinema4dr20.png",
+            "imgHover": "https://cdn.prod.website-files.com/650b672b6d49343e2368aa57/65538708db6b4cb6173bd1bf_6168aa0cf35e025b2aaa9cea_Cinema_4D_R21_-_Force_Fields_Vectors-Optimized.gif",
             "enlace": "https://drive.google.com/file/d/19dZlXy0UeGLWeb0oY3T3OVLXw7YaGQXX/view",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -19,6 +21,7 @@
         {
             "description": "Simulaciones mamalonas",
             "img": "impg/houdini.png",
+            "iframeHover": "https://www.youtube.com/embed/zxiqA8_CiC4?si=mffc8GMitiJuOwXm",
             "enlace": "https://drive.google.com/file/d/1GhUq_M8gIFyu3x9VFB609Sm6H5XHwUaK/view?usp=sharing",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -27,6 +30,8 @@
         {
             "description": "Aquí encuentras rigs y modelos 3D hechos por blender :D",
             "img": "impg/blenderstudio.png",
+            "imgHover": "https://miro.medium.com/1*4E2RQMjAOfxRvUucrM4C5w.png",
+            "vidHover": "",
             "enlace": "https://studio.blender.org/characters/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -35,6 +40,7 @@
         {
             "description": "Repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita.",
             "img": "impg/blendswap.png",
+            "imgHover": "https://www.blendswap.com/static/img/card.png",
             "enlace": "https://blendswap.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -43,6 +49,7 @@
         {
             "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/polyhaven.png",
+            "imgHover": "https://3dnchu.com/wp-content/uploads/2021/06/Poly-Haven.gif",
             "enlace": "https://polyhaven.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -51,6 +58,7 @@
         {
             "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/polygonRun.png",
+            "iframeHover": "https://www.youtube.com/embed/9myzxNYqIOU?si=H-cZ7J2B49jhfYfe",
             "enlace": "https://www.poliigon.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -59,6 +67,7 @@
         {
             "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/ambientcg.png",
+            "imgHover": "https://modelinghappy.com/wp-content/uploads/2023/03/20230315_ambientCG-min.gif",
             "enlace": "https://ambientcg.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -67,14 +76,16 @@
         {
             "description": "Encontrarás HDRI's, Texturas y Modelos 3D",
             "img": "impg/CGheaven.png",
+            "iframeHover": "https://www.youtube.com/embed/FTGoPmBZSOM?si=11vA677O947z-5tb",
             "enlace": "https://cgheven.com/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
-            "titulo":"CGHeaven"
+            "titulo":"CGHeven"
         },
         {
             "description": "Podrás descargar modelos 3D en distintos formatos",
             "img": "impg/sketchfab.png",
+            "imgHover": "https://www.elearnmagazine.com/wp-content/uploads/2015/07/sketchfab.gif",
             "enlace": "https://sketchfab.com/feed",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -107,6 +118,7 @@
         {
             "description": "MOCAP",
             "img": "impg/rokokovision.png",
+            "vidHover": "https://vision.rokoko.com/vision-landing.mp4",
             "enlace": "https://vision.rokoko.com/dashboard",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -115,6 +127,7 @@
         {
             "description": "MOCAP",
             "img": "impg/plask.png",
+            "vidHover": "https://homepage.plask.ai/storage/v1/object/public/content/Video/thumbnail_gif/motion.mp4?t=2024-08-11T07%3A28%3A42.052Z",
             "enlace": "https://plask.ai/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -226,7 +239,8 @@
 
         {
             "description": "Plataforma líder de desarrollo de contenido de realidad virtual (WebAR, WebVR y WebXR)",
-            "img": "https://assets.arpost.co/wp-content/uploads/2018/09/28213736/Screen_Shot_2018-09-10_at_1.28.31_PM.png",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTziXzpfOrTZX57g5O6IBrAZsVHX8xipvxpIg&s",
+            "iframeHover": "https://www.youtube.com/embed/i9hpAFDFnQo?si=7sz1YfHW3ekjj63c",
             "enlace": "https://8thwall.org/",
             "modelo": "VR y AR",
             "fecha":"2026-03-08",
@@ -1353,154 +1367,6 @@
 
 
 
-        {
-            "description": "ChatGPT",
-            "img": "impg/chatgpt.png",
-            "enlace": "https://chat.openai.com/",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"ChatGPT"
-        },
-        {
-            "description": "DeepSeek",
-            "img": "impg/deepseek.png",
-            "enlace": "https://chat.deepseek.com/",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"DeepSeek"
-        },
-        {
-            "description": "IA de Alibaba",
-            "img": "impg/qwenai.png",
-            "enlace": "https://chat.qwen.ai/",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Qwen AI"
-        },
-        {
-            "description": "Bing COPILOT",
-            "img": "impg/bingcopilot.png",
-            "enlace": "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Bing COPILOT"
-        },
-        {
-            "description": "Google Bard",
-            "img": "impg/googlebard.png",
-            "enlace": "https://bard.google.com/chat",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Google Bard"
-        },
-        {
-            "description": "Tip: Genera un nuevo chat para volver a tener tokens",
-            "img": "impg/nanobanana.png",
-            "enlace": "https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image-preview",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Gemini"
-        },
-        {
-            "description": "Emergent",
-            "img": "https://iaperfecta.com/wp-content/uploads/2025/05/emergent.jpg",
-            "enlace": "https://app.emergent.sh/home",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Emergent"
-        },
-        {
-            "description": "Traductor de idiomas por IA",
-            "img": "impg/deepltranslator.png",
-            "enlace": "https://www.deepl.com/translator",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"DeepL"
-        },        
-        {
-            "description": "Claude",
-            "img": "https://hipaatimes.com/hubfs/Is%20Claude%20AI%20HIPAA%20compliant-1.jpg",
-            "enlace": "https://claude.ai/new",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Claude"
-        },
-        {
-            "description": "Generador de imagenes por IA",
-            "img": "impg/bingcreator.png",
-            "enlace": "https://www.bing.com/images/create",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Bing Creator"
-        },
-        {
-            "description": "Generador de imagenes por IA",
-            "img": "impg/leonardoai.png",
-            "enlace": "https://app.leonardo.ai/",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Leonardo.AI"
-        },                
-        {
-            "description": "Generador de imagenes por IA",
-            "img": "impg/lovart.png",
-            "enlace": "https://www.lovart.ai/fr",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Lovart"
-        },
-        {
-            "description": "Generador de historias con imagenes/videos por IA",
-            "img": "impg/deepfiction.png",
-            "enlace": "https://www.deepfiction.ai/",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"DeepFiction"
-        },
-        {
-            "description": "Motor de búsqueda con IA(Tipo Google) que proporciona acceso a herramientas de IA personalizables",
-            "img": "impg/youcom.png",
-            "enlace": "https://you.com/home",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"You.com"
-        },
-        {
-            "description": "FlowGPT",
-            "img": "impg/flowgpt.png",
-            "enlace": "https://flowgpt.com/",
-            "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"FlowGPT"
-        },
-        {
-            "description": "📈🤨📉<br>🔴🤲🏾🔵<br><a  target=_blank href=https://github.com/jtydhr88/ComfyUI-qwenmultiangle?tab=readme-ov-file#installation>Nodo para ComfyUI</a>",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfkJzTiJZ5xUMlzzgGCOfmsV6yLJEyEuu_A&s",
-            "enlace": "https://huggingface.co/spaces/multimodalart/qwen-image-multiple-angles-3d-camera",
-            "modelo": "IA",
-            "fecha":"2026-03-08",
-            "titulo":"Qwen Image Edit 2511 — 3D Camera Control"
-        },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1653,6 +1519,193 @@
             "fecha":"2026-03-01",
             "titulo":"MeowFace"
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {
+            "description": "ChatGPT",
+            "img": "impg/chatgpt.png",
+            "enlace": "https://chat.openai.com/",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"ChatGPT"
+        },
+        {
+            "description": "DeepSeek",
+            "img": "impg/deepseek.png",
+            "enlace": "https://chat.deepseek.com/",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"DeepSeek"
+        },
+        {
+            "description": "IA de Alibaba",
+            "img": "impg/qwenai.png",
+            "enlace": "https://chat.qwen.ai/",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Qwen AI"
+        },
+        {
+            "description": "Bing COPILOT",
+            "img": "impg/bingcopilot.png",
+            "enlace": "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Bing COPILOT"
+        },
+        {
+            "description": "Google Bard",
+            "img": "impg/googlebard.png",
+            "enlace": "https://bard.google.com/chat",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Google Bard"
+        },
+        {
+            "description": "Tip: Genera un nuevo chat para volver a tener tokens",
+            "img": "impg/nanobanana.png",
+            "enlace": "https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image-preview",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Gemini"
+        },
+        {
+            "description": "Emergent",
+            "img": "https://iaperfecta.com/wp-content/uploads/2025/05/emergent.jpg",
+            "enlace": "https://app.emergent.sh/home",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Emergent"
+        },
+        {
+            "description": "Traductor de idiomas por IA",
+            "img": "impg/deepltranslator.png",
+            "enlace": "https://www.deepl.com/translator",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"DeepL"
+        },        
+        {
+            "description": "Claude",
+            "img": "https://hipaatimes.com/hubfs/Is%20Claude%20AI%20HIPAA%20compliant-1.jpg",
+            "enlace": "https://claude.ai/new",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Claude"
+        },
+        {
+            "description": "Generador de imagenes por IA",
+            "img": "impg/bingcreator.png",
+            "enlace": "https://www.bing.com/images/create",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Bing Creator"
+        },
+        {
+            "description": "Generador de imagenes por IA",
+            "img": "impg/leonardoai.png",
+            "enlace": "https://app.leonardo.ai/",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Leonardo.AI"
+        },                
+        {
+            "description": "Generador de imagenes por IA",
+            "img": "impg/lovart.png",
+            "enlace": "https://www.lovart.ai/fr",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"Lovart"
+        },
+        {
+            "description": "Generador de historias con imagenes/videos por IA",
+            "img": "impg/deepfiction.png",
+            "enlace": "https://www.deepfiction.ai/",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"DeepFiction"
+        },
+        {
+            "description": "Motor de búsqueda con IA(Tipo Google) que proporciona acceso a herramientas de IA personalizables",
+            "img": "impg/youcom.png",
+            "enlace": "https://you.com/home",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"You.com"
+        },
+        {
+            "description": "FlowGPT",
+            "img": "impg/flowgpt.png",
+            "enlace": "https://flowgpt.com/",
+            "modelo": "IA",
+            "fecha":"2026-03-01",
+            "titulo":"FlowGPT"
+        },
+        {
+            "description": "📈🤨📉<br>🔴🤲🏾🔵<br><a  target=_blank href=https://github.com/jtydhr88/ComfyUI-qwenmultiangle?tab=readme-ov-file#installation>Nodo para ComfyUI</a>",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfkJzTiJZ5xUMlzzgGCOfmsV6yLJEyEuu_A&s",
+            "enlace": "https://huggingface.co/spaces/multimodalart/qwen-image-multiple-angles-3d-camera",
+            "modelo": "IA",
+            "fecha":"2026-03-08",
+            "titulo":"Qwen Image Edit 2511 — 3D Camera Control"
+        },
+        {
+            "description": "Es una herramienta potenciada por IA que ayuda a los creadores de apps a generar interfaces de usuario de alta calidad para apps web y móviles, y a exportarlas fácilmente a Figma o acceder directamente al código de frontend.",
+            "img": "https://oopy.lazyrockets.com/api/v2/notion/image?src=attachment%3Ac11b1374-65fa-41ee-b897-7842ea6ccc23%3AIMG_2313.gif&blockId=226fdea8-0034-805e-960b-d9724787d65d",
+            "enlace": "https://stitch.withgoogle.com/",
+            "modelo": "IA",
+            "fecha":"2026-03-09",
+            "titulo":"Stitch Beta"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1831,6 +1884,14 @@
 
 
 
+
+
+
+
+
+
+
+
         {
             "description": "Es una aplicación de CMD para leer, escribir y editar metadatos en una amplia variedad de archivos",
             "img": "impg/exiftool.png",
@@ -1855,6 +1916,18 @@
             "fecha":"2026-03-01",
             "titulo":"Facebook Crawler"
         },
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1998,6 +2071,20 @@
             "titulo":"Chris Titus Tech's Windows Utility"
         }, 
      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2297,6 +2384,15 @@
             "modelo": "Otros",
             "fecha":"2026-03-01",
             "titulo":"TeKnoLiberty"
+        },         
+        {
+            "description": "Es un programa y plataforma donde usuarios pueden probar experimentos tempranos de IA, búsqueda y herramientas de Workspace (como Gemini) antes de su lanzamiento oficial. Funciona como un espacio colaborativo para interactuar con tecnología en desarrollo, dar comentarios y moldear el futuro de los productos de Google.",
+            "img": "https://play-lh.googleusercontent.com/avC94Zn1AaROHYut4iVOJCn7aHAjKmQdeZvKjxB1DW2MYK-Skec84SIGz38ciJqBEw48",
+            "iframeHover": "https://www.youtube.com/embed/A4CE6gH30vw?si=RSkzcTlY6GUj1pg5",
+            "enlace": "https://labs.google/",
+            "modelo": "Otros",
+            "fecha":"2026-03-01",
+            "titulo":"Google Labs"
         }, 
         
         

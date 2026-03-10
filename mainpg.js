@@ -1,22 +1,22 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Obtener el menú lateral y los enlaces
-  const sidebar = document.querySelector('.sidebar');
-  const links = document.querySelectorAll('.sidebar nav button');
+    // Obtener el menú lateral y los enlaces
+    const sidebar = document.querySelector('.sidebar');
+    const links = document.querySelectorAll('.sidebar nav button');
 
-  // Añadir un evento de clic a cada enlace
-  links.forEach(link => {
-    link.addEventListener('click', function() {
-      // Cerrar el menú lateral
-      sidebar.classList.remove('active');
+    // Añadir un evento de clic a cada enlace
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            // Cerrar el menú lateral
+            sidebar.classList.remove('active');
+        });
     });
-  });
 
-  // Código para el menú hamburguesa
-  const hamburger = document.querySelector('.hamburger');
-  hamburger.addEventListener('click', function() {
-    sidebar.classList.toggle('active');
-  });
+    // Código para el menú hamburguesa
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+    });
 });
 
 // Código de paginación
@@ -29,101 +29,185 @@ const elementosPorPagina = 15; // ¡Cámbialo a 10, 20 o lo que gustes!
 
 // Obtener los datos
 fetch("datapg.json")
-  .then(response => response.json())
-  .then(data => {
-    window.programas = data.programas;
-    mostrarprogramas();
-  })
-  .catch(error => console.error(error));
+    .then(response => response.json())
+    .then(data => {
+        window.programas = data.programas;
+        mostrarprogramas();
+    })
+    .catch(error => console.error(error));
 
 
 function mostrarprogramas() {
-  programasContenedor.innerHTML = "";
+    programasContenedor.innerHTML = "";
 
-  // 1. OBTENER VALORES DE FILTROS
-  const filtroModelo = document.getElementById("filtro-modelo").value;
-  // Usamos || 0 por si el input está vacío o es inválido
-  
-  const terminoBusqueda = document.getElementById("barra-busqueda").value.toLowerCase();
+    // 1. OBTENER VALORES DE FILTROS
+    const filtroModelo = document.getElementById("filtro-modelo").value;
+    
+    const terminoBusqueda = document.getElementById("barra-busqueda").value.toLowerCase();
 
-  // 2. FILTRAR PRIMERO (Creamos una lista temporal con los resultados válidos)
-  // Usamos .filter en lugar de .forEach para obtener un nuevo array limpio
-  const programasFiltrados = window.programas.filter(producto => {
-    const descriptionProducto = producto.description.toLowerCase();
-    const tituloProducto = producto.titulo.toLowerCase();
+    // 2. FILTRAR PRIMERO
+    const programasFiltrados = window.programas.filter(producto => {
+        const descriptionProducto = producto.description.toLowerCase();
+        const tituloProducto = producto.titulo.toLowerCase();
 
-    // Tu misma lógica de filtrado:
-    return (
-      (filtroModelo === "" || producto.modelo === filtroModelo) &&
-      (descriptionProducto.includes(terminoBusqueda) || tituloProducto.includes(terminoBusqueda) || terminoBusqueda === "")
-    );
-  });
+        return (
+            (filtroModelo === "" || producto.modelo === filtroModelo) &&
+            (descriptionProducto.includes(terminoBusqueda) || tituloProducto.includes(terminoBusqueda) || terminoBusqueda === "")
+        );
+    });
+
+    // --- NUEVO CÓDIGO: EL MESERO RESPONDE ---
+    if (programasFiltrados.length === 0) {
+        programasContenedor.innerHTML = `
+                    <div class="no-resultados">
+                            <h3>🐸 Ups, no encontramos nada por aquí</h3>
+                            <p>Salta a otros filtros o busca con otra palabra.</p>
+                    </div>
+            `;
+
+        paginacionContenedor.innerHTML = "";
+        return;
+    }
+
+    // 3. MATEMÁTICAS DE PAGINACIÓN
+    const indiceInicio = (paginaActual - 1) * elementosPorPagina;
+    const indiceFinal = indiceInicio + elementosPorPagina;
+
+    const programasParaMostrar = programasFiltrados.slice(indiceInicio, indiceFinal);
+
+    // 4. DIBUJAR LOS programas (Solo los de esta página)
+    programasParaMostrar.forEach(producto => {
+        const programasDiv = document.createElement("div");
+        programasDiv.classList.add("programas");
+
+        // Contenedor para la imagen con overlay
+        const imgContainer = document.createElement("div");
+        imgContainer.classList.add("programas-contenedor");
+
+        const programasImg = document.createElement("img");
+        programasImg.src = producto.img;
+        programasImg.title = producto.titulo;
+        programasImg.classList.add("img-nohide");
+        imgContainer.appendChild(programasImg);
 
 
+        // Variable para manejar el elemento hover (Video, Iframe o Imagen)
+    let hoverElement = null;
+        // --- 1. LÓGICA PARA VIDEO ---
+    if (producto.vidHover) {
+        hoverElement = document.createElement("video");
+        hoverElement.dataset.src = producto.vidHover; // Guardamos la URL en un atributo temporal
+        hoverElement.classList.add("img-hide");
+        hoverElement.style.cssText = `
+            width: 100%;
+            height: 300px;
+            display: none;
+            margin: 0 auto;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        `;
+        hoverElement.loop = true;
+        hoverElement.muted = true;
+            } 
+                    else if (producto.iframeHover) {
+                hoverElement = document.createElement("iframe");
+                hoverElement.dataset.src = producto.iframeHover + "&autoplay=1&mute=1&controls=1"; // Guardamos la URL aquí
+                hoverElement.classList.add("img-hide");
+                hoverElement.style.cssText = `
+                    width: 100%;
+                    height: 300px;
+                    display: none;
+                    margin: 0 auto;
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                    border: 0;
+                `;
+                // IMPORTANTE: Permisos necesarios para autoplay y controles
+    hoverElement.setAttribute("allow", "autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    hoverElement.setAttribute("allowfullscreen", "");
+            }
 
-  // --- NUEVO CÓDIGO: EL MESERO RESPONDE ---
-  if (programasFiltrados.length === 0) {
-    // 1. Limpiamos el contenedor
-    programasContenedor.innerHTML = `
-          <div class="no-resultados">
-              <h3>🐸 Ups, no encontramos nada por aquí</h3>
-              <p>Salta a otros filtros o busca con otra palabra.</p>
-          </div>
-      `;
+// --- 3. LÓGICA PARA IMAGEN HOVER ---
+    else if (producto.imgHover) {
+        hoverElement = document.createElement("img");
+        hoverElement.dataset.src = producto.imgHover;
+        hoverElement.classList.add("img-hide");
+        hoverElement.style.cssText = `
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+        `;
+    }
+ // --- CONTROL DE EVENTOS (Hover) ---
+    if (hoverElement) {
+        imgContainer.appendChild(hoverElement);
 
-    // 2. Limpiamos la paginación (para que no salgan botones)
-    paginacionContenedor.innerHTML = "";
+       imgContainer.onmouseenter = () => {
+            // Asignamos el src siempre o validamos si está vacío
+            if (!hoverElement.src || hoverElement.src === "" || hoverElement.tagName === "IFRAME") {
+                hoverElement.src = hoverElement.dataset.src;
+            }
+            
+            hoverElement.style.display = "block";
+            programasImg.style.visibility = "hidden";
 
-    // 3. DETENEMOS LA FUNCIÓN (Return)
-    // Esto es importante: le decimos al código "ya no hagas nada más abajo"
-    return;
-  }
-  // --- FIN DEL NUEVO CÓDIGO ---
+            if (hoverElement.tagName === "VIDEO") {
+                hoverElement.play().catch(e => console.log("Autoplay bloqueado:", e));
+            }
+        };
 
-  // 3. MATEMÁTICAS DE PAGINACIÓN
-  const indiceInicio = (paginaActual - 1) * elementosPorPagina;
-  const indiceFinal = indiceInicio + elementosPorPagina;
+        imgContainer.onmouseleave = () => {
+            hoverElement.style.display = "none";
+            programasImg.style.visibility = "visible";
 
-  // Recortamos la lista filtrada para mostrar solo la página actual
-  const programasParaMostrar = programasFiltrados.slice(indiceInicio, indiceFinal);
+            if (hoverElement.tagName === "VIDEO") {
+                hoverElement.pause();
+            }
+            
+            // EL TRUCO PARA EL IFRAME:
+            // Al quitar el src, forzamos al navegador a liberar la memoria y 
+            // evitar que se quede en blanco o "congelado" al volver a entrar.
+            if (hoverElement.tagName === "IFRAME") {
+                hoverElement.src = ""; 
+            }
+        };
+    }
+        programasDiv.appendChild(imgContainer);
 
-  // 4. DIBUJAR LOS programas (Solo los de esta página)
-  programasParaMostrar.forEach(producto => {
-    // --- Aquí va TU código de creación de elementos intacto ---
-    const programasDiv = document.createElement("div");
-    programasDiv.classList.add("programas");
+        const programasTitulo = document.createElement("h2");
+        programasTitulo.innerHTML = "<br>" + producto.titulo;
+        programasDiv.appendChild(programasTitulo);
 
-    const programasImg = document.createElement("img");
-    programasImg.src = producto.img;
-    programasImg.title = producto.titulo;
-    programasDiv.appendChild(programasImg);
+        const programasDescripcion = document.createElement("h3");
+        programasDescripcion.innerHTML = producto.description;
+        programasDiv.appendChild(programasDescripcion);
 
-    const programasTitulo = document.createElement("h2");
-    programasTitulo.innerHTML = producto.titulo;
-    programasDiv.appendChild(programasTitulo);
+        const programasEnlace = document.createElement("h3");
+        const enlaceProducto = document.createElement("a");
+        enlaceProducto.href = producto.enlace;
+        enlaceProducto.target = "__blank";
+        enlaceProducto.textContent = "Da el Salto 🐸🤙";
+        programasEnlace.appendChild(enlaceProducto);
+        programasDiv.appendChild(programasEnlace);
 
-    const programasDescripcion = document.createElement("h3");
-    programasDescripcion.innerHTML = producto.description;
-    programasDiv.appendChild(programasDescripcion);
+        const programasModel = document.createElement("p");
+        programasModel.innerHTML = producto.modelo + " - Updated:" + producto.fecha;
+        programasDiv.appendChild(programasModel);
 
-    const programasEnlace = document.createElement("h3");
-    const enlaceProducto = document.createElement("a");
-    enlaceProducto.href = producto.enlace;
-    enlaceProducto.target = "__blank";
-    enlaceProducto.textContent = "Da el Salto 🐸🤙";
-    programasEnlace.appendChild(enlaceProducto);
-    programasDiv.appendChild(programasEnlace);
+        programasContenedor.appendChild(programasDiv);
+    });
 
-    const programasModel = document.createElement("p");
-    programasModel.innerHTML = producto.modelo;
-    programasDiv.appendChild(programasModel);
-
-    programasContenedor.appendChild(programasDiv);
-  });
-
-  // 5. DIBUJAR LOS BOTONES DE PAGINACIÓN     programasModel.innerHTML = producto.modelo + " - Updated:" + producto.fecha;
-  // Le pasamos el total de programas FILTRADOS (no el total global)
-  setupPaginacion(programasFiltrados.length);
+    // 5. DIBUJAR LOS BOTONES DE PAGINACIÓN
+    setupPaginacion(programasFiltrados.length);
 }
 
 function setupPaginacion(totalItems) {
