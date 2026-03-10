@@ -1613,21 +1613,27 @@ header,
 
 /* Botones y Dots (Mantén los que ya tenías en tu código) */
 .carousel-btn {
+  transition: all 2s ease;
   position: absolute;
   top: 95%;
   transform: translateY(-50%);
   z-index: 10;
   background-color: #6666ed;
   border: 3px solid #daf747;
-  
- 
-
   color: rgb(255, 255, 255);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   cursor: grab;
+}
 
+.carousel-btn:hover{
+  transition: all 0.5s ease;
+  color: #6666ed;
+  box-shadow: 0 0 5px rgb(242, 67, 255);
+  background: #daf747;
+  border: 3px solid #6666ed;
+  
 }
 
 .prev {

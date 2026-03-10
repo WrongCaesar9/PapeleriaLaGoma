@@ -43,19 +43,19 @@ function mostrarprogramas() {
   // 1. OBTENER VALORES DE FILTROS
   const filtroModelo = document.getElementById("filtro-modelo").value;
   // Usamos || 0 por si el input está vacío o es inválido
-  const filtroPrecio = parseFloat(document.getElementById("filtro-precio").value) || 0;
+  
   const terminoBusqueda = document.getElementById("barra-busqueda").value.toLowerCase();
 
   // 2. FILTRAR PRIMERO (Creamos una lista temporal con los resultados válidos)
   // Usamos .filter en lugar de .forEach para obtener un nuevo array limpio
   const programasFiltrados = window.programas.filter(producto => {
     const descriptionProducto = producto.description.toLowerCase();
+    const tituloProducto = producto.titulo.toLowerCase();
 
     // Tu misma lógica de filtrado:
     return (
       (filtroModelo === "" || producto.modelo === filtroModelo) &&
-      (filtroPrecio === 0 || producto.precio <= filtroPrecio) &&
-      (descriptionProducto.includes(terminoBusqueda) || terminoBusqueda === "")
+      (descriptionProducto.includes(terminoBusqueda) || tituloProducto.includes(terminoBusqueda) || terminoBusqueda === "")
     );
   });
 
@@ -95,7 +95,7 @@ function mostrarprogramas() {
 
     const programasImg = document.createElement("img");
     programasImg.src = producto.img;
-    programasImg.alt = producto.modelo;
+    programasImg.title = producto.titulo;
     programasDiv.appendChild(programasImg);
 
     const programasTitulo = document.createElement("h2");
