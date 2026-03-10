@@ -444,6 +444,10 @@ async function iniciarCarruselPro() {
         let index = 0; 
         let isTransitioning = false;
 
+        // --- VARIABLES PARA TOUCH SWIPE ---
+        let touchStartX = 0;
+        let touchEndX = 0;
+
         // --- CREAR LOS PUNTOS ---
         programas.forEach((_, i) => {
             const dot = document.createElement('div');
@@ -476,7 +480,7 @@ async function iniciarCarruselPro() {
             track.style.transform = `translateX(-${(index + 1) * 100}%)`;
             actualizarDots(index);
         }
-
+                        
         track.addEventListener('transitionend', () => {
             isTransitioning = false;
             if (index === n) {
@@ -494,7 +498,30 @@ async function iniciarCarruselPro() {
         gallery.querySelector('.next').addEventListener('click', () => mover(index + 1));
         gallery.querySelector('.prev').addEventListener('click', () => mover(index - 1));
 
-// --- GESTIÓN DE AUTOPLAY MEJORADA ---
+        // --- TOUCH SWIPE EVENTS ---
+        gallery.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        gallery.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const diferencia = touchStartX - touchEndX;
+            const umbral = 50;
+
+            if (diferencia > umbral) {
+                // Swipe a la izquierda (siguiente)
+                mover(index + 1);
+            } else if (diferencia < -umbral) {
+                // Swipe a la derecha (anterior)
+                mover(index - 1);
+            }
+        }
+
+        // --- GESTIÓN DE AUTOPLAY MEJORADA ---
         let intervalo;
 
         function iniciarAutoplay() {
@@ -504,7 +531,7 @@ async function iniciarCarruselPro() {
                 if (!document.hidden) {
                     mover(index + 1);
                 }
-            }, 2500); // Lo subí un pelín a 2.5s para que no sea tan frenético, pero ajustalo a tu gusto
+            }, 2500);
         }
 
         function detenerAutoplay() {
@@ -519,12 +546,10 @@ async function iniciarCarruselPro() {
         gallery.addEventListener('mouseleave', iniciarAutoplay);
 
         // --- EL FIX MAESTRO: Visibility Change ---
-        // Esto detecta cuando cambias de pestaña o sección y regresas
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
                 detenerAutoplay();
             } else {
-                // Al regresar, reseteamos el bloqueo por si acaso se quedó trabado
                 isTransitioning = false; 
                 iniciarAutoplay();
             }
@@ -534,6 +559,16 @@ async function iniciarCarruselPro() {
         console.error("Hubo un error:", error);
     }
 }
+
+// --- REINICIAR CARRUSEL AL VOLVER A LA SECCIÓN ---
+const originalNavegar = window.navegar;
+window.navegar = function(idSeccion, event) {
+    originalNavegar(idSeccion, event);
+    
+    if (idSeccion === 'programas') {
+        iniciarCarruselPro();
+    }
+};
 
 document.addEventListener('DOMContentLoaded', iniciarCarruselPro);
 /* 
