@@ -94,6 +94,7 @@
         {
             "description": "Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
             "img": "impg/thingiverse.png",
+            "imgHover": "https://pbs.twimg.com/media/GyDCKQ5WEAIPLQ8?format=jpg&name=large",
             "enlace": "https://sketchfab.com/feed",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -102,6 +103,7 @@
         {
             "description": "Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
             "img": "impg/cults.png",
+            "imgHover": "https://printer.tools/screenshots/cults3d.jpeg",
             "enlace": "https://cults3d.com/es",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -110,6 +112,7 @@
         {
             "description": "Software de creación de texturas PBR con imagenes o fotos.",
             "img": "impg/materialize.png",
+            "iframeHover": "https://www.youtube.com/embed/zKYr3Ca-xqg?si=rVfqOwKYFMJY5wf3",
             "enlace": "https://boundingboxsoftware.com/materialize/getkey.php",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -136,6 +139,7 @@
         {
             "description": "Podrás descargar animaciones para tus modelos 3D 'humanoides'",
             "img": "impg/mixamo.png",
+            "imgHover": "https://docs.monaverse.com/~gitbook/image?url=https%3A%2F%2F3438761929-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MkgZbQzoznBJC_ld633%252Fuploads%252FZnWzILg8spgBH27rDQUx%252FMixamo_AnimationTest.gif%3Falt%3Dmedia%26token%3Dedea56d2-8f1c-455e-a015-edd69d555fd2&width=768&dpr=3&quality=100&sign=fc8404d&sv=2",
             "enlace": "https://www.mixamo.com/#",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -144,6 +148,7 @@
         {
             "description": "Slicer para impresiones en 3D",
             "img": "impg/ultimakercura.png",
+            "imgHover": "https://i0.wp.com/morristownmakers.com/wp-content/uploads/2019/05/layer_view.gif?resize=322%2C309",
             "enlace": "https://ultimaker.com/es/software/ultimaker-cura/#downloads",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -152,6 +157,7 @@
         {
             "description": "La idea es que descargues Unreal Engine xd<br>En video esta como instalarlo",
             "img": "impg/epicgames.png",
+            "imgHover": "https://preview.redd.it/round-2-free-games-script-using-desktop-app-v0-soalip5auo8c1.gif?width=1920&auto=webp&s=fb6598b84345c94dc68e900b328bfcbe3b0557f4",
             "enlace": "https://www.unrealengine.com/en-US/download",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -160,6 +166,7 @@
         {
             "description": "Mix de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
             "img": "impg/quixelmixer.png",
+            "imgHover": "https://cdn2.unrealengine.com/Unreal+Engine%2Fblog%2Fcreating-digital-worlds-with-megascans-and-unreal-engine%2FMegascans-Ecosystem-Intro_gif-01-704112a77fc57d1e9c0c5ac2ec3b754c42217377.gif",
             "enlace": "https://quixel.com/products/mixer",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -168,6 +175,7 @@
         {
             "description": "Debes crear una cuenta que será para SideFX y te dará acceso a los daily buils",
             "img": "impg/houdini.png",
+            "imgHover": "https://64.media.tumblr.com/de3e4c15ea2c7852b2fae44d49cca3a3/tumblr_inline_nt9i2sCaeJ1qznhu8_540.jpg",
             "enlace": "https://www.sidefx.com/download/daily-builds/?production=true&python3=true",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -176,6 +184,7 @@
         {
             "description": "Aplica texturas y pintura detallada directamente sobre modelos 3D",
             "img": "impg/adobesubstancepainter.png",
+            "imgHover": "https://yelzkizi.org/wp-content/uploads/2025/04/rdfvegv-ezgif.com-video-to-gif-converter.gif",
             "enlace": "https://www.mediafire.com/file/xg27e1x8w9r7xu0/ADB.PNT.8.3.WIN.AP.ZNT.rar/file",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -184,6 +193,7 @@
         {
             "description": "Crea materiales PBR procedurales (basados en nodos, infinitamente ajustables) desde cero",
             "img": "impg/adobesubstancedesigner.png",
+            "imgHover": "https://helpx.adobe.com/content/dam/help/en/substance-3d/documentation/sddoc/files/129368159/223053281/1/1637771532678/interface-customisation-resize.gif",
             "enlace": "https://www.mediafire.com/file/nxptpg6q8sxf0n8/ADB.SUB3D.DES.12.1.AP.ZNT.rar/file",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -192,6 +202,7 @@
         {
             "description": "COLMAP workflow<br><a  target=_blank href=https://github.com/colmap/colmap/releases/tag/3.12.3>Colmap</a><br><a  target=_blank href=https://ffmpeg.org/>Ffmpeg</a><br><a  target=_blank href=https://gist.github.com/polyfjord/4ed7e8988bdb9674145f1c270440200d>Batch reconstruct</a><br><a  target=_blank href=https://github.com/SBCV/Blender-Addon-Photogrammetry-Importer>BlenderAddonPhotogrammetryImporter</a><br>Video de instalación y uso en el enlace de abajo",
             "img": "impg/colmap.png",
+            "iframeHover": "https://www.youtube.com/embed/xx85eyN1Xc0?si=oOFbXRwhtV1m5yJQ",
             "enlace": "https://www.youtube.com/watch?v=xx85eyN1Xc0",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -200,6 +211,7 @@
         {
             "description": "Motor de juego 3D integrado con Blender",
             "img": "https://armory3d.org/img/FeaturedCover.jpg",
+            "vidHover": "https://rpaladin.github.io/img/features/features-navigation.mp4",
             "enlace": "https://armory3d.org/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -208,6 +220,7 @@
         {
             "description": "Editor de modelos 3D gratuito para crear modelos de baja poli y pixel art",
             "img": "https://media.sketchfab.com/models/ebb20c0ac30f4319985e19bc5b1d3bdd/thumbnails/fe40f80baee04b7bb9f67ccb24b5e73a/0300d5060edb477785f7f14298622d93.jpeg",
+            "imgHover": "https://forum.gdevelop.io/uploads/default/original/3X/2/c/2c445d8d50f8b720da59ee3f54eeb2fad51d6625.gif",
             "enlace": "https://www.blockbench.net/",
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01",
@@ -249,6 +262,7 @@
         {
             "description": "Plataforma gratuita de escritorio (PC/Mac) de Meta utilizada para crear efectos y filtros de Realidad Aumentada (RA) para Instagram y Facebook.",
             "img": "impg/SparkARStudio.png",
+            "imgHover": "https://miro.medium.com/v2/resize:fit:1200/1*-0p5v95L3ndcunqhNcFsYg.gif",
             "enlace": "https://spark.meta.com/download/",
             "modelo": "VR y AR",
             "fecha":"2026-03-01",
@@ -257,6 +271,7 @@
         {
             "description": "Plataforma de low-code especializada en la creación de experiencias de realidad aumentada web (WebAR) sin necesidad de programar.<br>La app que nos recomendo la Profa. Karen",
             "img": "impg/onirix.png",
+            "iframeHover": "https://www.youtube.com/embed/MIQmVMP_l7g?si=-E7tEug2TYcTMjSa",
             "enlace": "https://studio.onirix.com/projects",
             "modelo": "VR y AR",
             "fecha":"2026-03-01",
@@ -265,6 +280,7 @@
         {
             "description": "Cubo de papel para Merge Object Viewer",
             "img": "impg/mergecubepaper.png",
+            "imgHover": "https://support.mergeedu.com/hc/article_attachments/5547580331149",
             "enlace": "https://mergeedu.com/download/file.php?f=paper-merge-cube.pdf",
             "modelo": "VR y AR",
             "fecha":"2026-03-01",
@@ -315,6 +331,7 @@
         {
             "description": "Practicamente es Photoshop, pero Online",
             "img": "impg/photopea.png",
+            "imgHover": "https://codingireland.blob.core.windows.net/images/steps%5Cllu445_photopea-new-project.gif",
             "enlace": "https://www.photopea.com/",
             "modelo": "Edición",
             "fecha":"2026-03-01",
@@ -347,6 +364,7 @@
         {
             "description": "Ofrece edición fotográfica, diseño vectorial, ilustración y maquetación profesional; todo en una sola aplicación y de forma gratuita.",
             "img": "https://mir-s3-cdn-cf.behance.net/projects/404/309882239029707.Y3JvcCwxMDM1LDgxMCwyMDIsMA.png",
+            "imgHover": "https://www.affinity.studio/cdn-cgi/image/width=1600,fit=scale-down,format=auto/https://content-management-files.canva.com/d9d291f8-7987-4a2d-8c4a-c5c4f3628d63/Vectordesign2x.png",
             "enlace": "https://www.affinity.studio/es_es/download",
             "modelo": "Edición",
             "fecha":"2026-03-01",
@@ -355,6 +373,7 @@
         {
             "description": "Krita",
             "img": "impg/krita.png",
+            "iframeHover": "https://www.youtube.com/embed/CY5XppRTpBY?si=LZxh6VUF0yfql5mu",
             "enlace": "https://krita.org/es/download/",
             "modelo": "Edición",
             "fecha":"2026-03-01",
@@ -395,21 +414,23 @@
         {
             "description": "Mocha Pro 2023 10.0.1 Windows",
             "img": "impg/mochaae.png",
+            "imgHover": "https://flashbackj.com/wp-content/uploads/2020/07/19132947/auto_rebuild_and_convert.gif",
             "enlace": "https://cdn.borisfx.com/borisfx/store/mpp-adobe/MochaPro2023-Adobe-10.0.1-54.g58678bac292c.win.msi",
             "modelo": "Edición",
             "fecha":"2026-03-01",
             "titulo":"Mocha Pro 2023"
         },
         {
-            "description": "Mocha Pro para AfterFx",
+            "description": "Mocha Pro para AfterFx<br>Tutorial para tracking de mallas como telas y esas cosas XD<a  target=_blank href=https://www.youtube.com/watch?v=ljw4SC9jIco>PowerMesh</a>",
             "img": "impg/mochaae.png",
+            "iframeHover": "https://www.youtube.com/embed/G4oEKhBePxU?si=uQuRlxioHMFPAbFO",
             "enlace": "https://drive.google.com/file/d/179pA1yDlLp0DpDAN2JbkJCHmovCLjQg0/view?usp=sharing",
             "modelo": "Edición",
             "fecha":"2026-03-01",
             "titulo":"Mocha Pro"
         },
         {
-            "description": "Element 3D AfterFX",
+            "description": "Element 3D AfterFX/Video Copilot<br>Primero hay que instalar antes de parchear",
             "img": "impg/element3D.png",
             "enlace": "https://drive.google.com/file/d/1hxZEWxV6-QElpfYS9s0iOPD7Tqk2STZv/view?usp=sharing",
             "modelo": "Edición",
@@ -2417,12 +2438,12 @@
 
 
         {
-            "description": "N+ FORO En Vivo",
+            "description": "Canal 4<br>N+ FORO En Vivo",
             "img": "https://video-assets.nmas.com.mx/1237568/snapshot.webp?v=1726608200",
             "enlace": "https://www.nmas.com.mx/foro-tv/",
             "modelo": "Canales TV ",
             "fecha":"2026-03-09",
-            "titulo":"N+ Foro Canal 4"
+            "titulo":"N+ Foro"
         },
         {
             "description": "Canal 6 MTCH-TDT En Vivo<br>Multimedios Televisión<br><a  target=_blank href=https://mdstrm.com/live-stream/5f2d9d6ff17144074bd8a284>Recarga la página directamente en la barra de búsqueda</a>",
