@@ -1179,6 +1179,7 @@
         {
             "description": "Experiencia de controlar remotamente robots reales (conocidos como FrodoBots o Earth Rovers) desde cualquier parte del mundo a través de una interfaz de juego en línea", 
             "img": "impg/frodobots.png",
+            "iframeHover": "https://www.youtube.com/embed/mswO0rzbPnM?si=vFyZykxI36l4BqJU",
             "enlace": "https://school.frodobots.com/testdrive/",
             "modelo": "Electrónica y Robots",
             "fecha":"2026-03-07",
