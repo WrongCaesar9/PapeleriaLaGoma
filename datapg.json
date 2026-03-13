@@ -1,239 +1,290 @@
 {
     "programas": [
         {
+            "titulo":"Blender",
             "description": "Es un programa de...<br>¿Como no vas a saber?🤨",
             "img": "impg/blender.png",
+            "imgHover": "https://yelzkizi.org/wp-content/uploads/2025/01/redfw3-ezgif.com-video-to-gif-converter.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.blender.org/download/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "imgHover": "https://yelzkizi.org/wp-content/uploads/2025/01/redfw3-ezgif.com-video-to-gif-converter.gif",
-            "titulo":"Blender"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Cinema4D R20",
             "description": "contraseña:<br>www.programasvirtualespc.net ",
             "img": "impg/cinema4dr20.png",
             "imgHover": "https://cdn.prod.website-files.com/650b672b6d49343e2368aa57/65538708db6b4cb6173bd1bf_6168aa0cf35e025b2aaa9cea_Cinema_4D_R21_-_Force_Fields_Vectors-Optimized.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/19dZlXy0UeGLWeb0oY3T3OVLXw7YaGQXX/view",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Cinema4D R20"
-        },        
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Houdini 19.0",
             "description": "Simulaciones mamalonas",
             "img": "impg/houdini.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/zxiqA8_CiC4?si=mffc8GMitiJuOwXm",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1GhUq_M8gIFyu3x9VFB609Sm6H5XHwUaK/view?usp=sharing",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Houdini 19.0"
-        },          
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Marvelous Designer",
             "description": "Marvelous Designer 2024 Enterprise 2025.1.107 + <strong>Crack</strong><br>Software líder para el diseño y simulación de ropa 3D, especializado en crear prendas realistas mediante patrones digitales similares a la confección real.<br><a  target=_blank href=https://mega.nz/file/fYUWQK6J#OAAFYs30t4VVNjsAqArSrKelgtTUHF5Xtsi86CKwiQo>Mega</a><br>contraseña:<br>www.programasvirtualespc.net",
             "img": "https://storagefiles.clo-set.com/public/community/202509/49bf23b949ac4f80b4d2f8fa8f614643/images/43c34762130d455cbe34602a4e24e218Selected%20September%2030%202025%20.png?resize=1&f=webp&w=720&fit=scale-down",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/fbhSKjMzepA?si=B_8jWsDBk5FQF_D6",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1kOball6YuiBPomR5qDkUPYrNC7RVvw4i/view",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-11",
-            "titulo":"Marvelous Designer"
-        },       
+            "fecha":"2026-03-11"
+        },
         {
+            "titulo":"Blender Studio",
             "description": "Aquí encuentras rigs y modelos 3D hechos por blender :D",
             "img": "impg/blenderstudio.png",
             "imgHover": "https://miro.medium.com/1*4E2RQMjAOfxRvUucrM4C5w.png",
+            "iframeHover": "",
             "vidHover": "",
             "enlace": "https://studio.blender.org/characters/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Blender Studio"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"blendswap",
             "description": "Repositorio donde los artistas de Blender pueden descargar y compartir creaciones de manera gratuita.",
             "img": "impg/blendswap.png",
             "imgHover": "https://www.blendswap.com/static/img/card.png",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://blendswap.com/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"blendswap"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Polyhaven",
             "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/polyhaven.png",
             "imgHover": "https://3dnchu.com/wp-content/uploads/2021/06/Poly-Haven.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://polyhaven.com/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Polyhaven"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"POLLIGON",
             "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/polygonRun.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/9myzxNYqIOU?si=H-cZ7J2B49jhfYfe",
+            "vidHover": "",
             "enlace": "https://www.poliigon.com/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"POLLIGON"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"ambientCG",
             "description": "Encontrarás HDRI's, Texturas y Modelos 3D.",
             "img": "impg/ambientcg.png",
             "imgHover": "https://modelinghappy.com/wp-content/uploads/2023/03/20230315_ambientCG-min.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://ambientcg.com/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"ambientCG"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"CGHeven",
             "description": "Encontrarás HDRI's, Texturas y Modelos 3D",
             "img": "impg/CGheaven.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/FTGoPmBZSOM?si=11vA677O947z-5tb",
+            "vidHover": "",
             "enlace": "https://cgheven.com/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"CGHeven"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Sketchfab",
             "description": "Podrás descargar modelos 3D en distintos formatos",
             "img": "impg/sketchfab.png",
             "imgHover": "https://www.elearnmagazine.com/wp-content/uploads/2015/07/sketchfab.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://sketchfab.com/feed",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Sketchfab"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Thingiverse",
             "description": "Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
             "img": "impg/thingiverse.png",
             "imgHover": "https://pbs.twimg.com/media/GyDCKQ5WEAIPLQ8?format=jpg&name=large",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://sketchfab.com/feed",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Thingiverse"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Cults 3D",
             "description": "Para impresión 3D<br>Podrás descargar y subir modelos 3D en formato STL",
             "img": "impg/cults.png",
             "imgHover": "https://printer.tools/screenshots/cults3d.jpeg",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://cults3d.com/es",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Cults 3D"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Materialize",
             "description": "Software de creación de texturas PBR con imagenes o fotos.",
             "img": "impg/materialize.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/zKYr3Ca-xqg?si=rVfqOwKYFMJY5wf3",
+            "vidHover": "",
             "enlace": "https://boundingboxsoftware.com/materialize/getkey.php",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Materialize"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Rokoko Vision",
             "description": "MOCAP",
             "img": "impg/rokokovision.png",
+            "imgHover": "",
+            "iframeHover": "",
             "vidHover": "https://vision.rokoko.com/vision-landing.mp4",
             "enlace": "https://vision.rokoko.com/dashboard",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Rokoko Vision"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Plask.ai",
             "description": "MOCAP",
             "img": "impg/plask.png",
+            "imgHover": "",
+            "iframeHover": "",
             "vidHover": "https://homepage.plask.ai/storage/v1/object/public/content/Video/thumbnail_gif/motion.mp4?t=2024-08-11T07%3A28%3A42.052Z",
             "enlace": "https://plask.ai/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Plask.ai"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Mixamo",
             "description": "Podrás descargar animaciones para tus modelos 3D 'humanoides'",
             "img": "impg/mixamo.png",
             "imgHover": "https://docs.monaverse.com/~gitbook/image?url=https%3A%2F%2F3438761929-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MkgZbQzoznBJC_ld633%252Fuploads%252FZnWzILg8spgBH27rDQUx%252FMixamo_AnimationTest.gif%3Falt%3Dmedia%26token%3Dedea56d2-8f1c-455e-a015-edd69d555fd2&width=768&dpr=3&quality=100&sign=fc8404d&sv=2",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mixamo.com/#",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Mixamo"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"UltiMaker Cura",
             "description": "Slicer para impresiones en 3D",
             "img": "impg/ultimakercura.png",
             "imgHover": "https://i0.wp.com/morristownmakers.com/wp-content/uploads/2019/05/layer_view.gif?resize=322%2C309",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://ultimaker.com/es/software/ultimaker-cura/#downloads",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"UltiMaker Cura"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"EPIC GAMES",
             "description": "La idea es que descargues Unreal Engine xd<br>En video esta como instalarlo",
             "img": "impg/epicgames.png",
             "imgHover": "https://preview.redd.it/round-2-free-games-script-using-desktop-app-v0-soalip5auo8c1.gif?width=1920&auto=webp&s=fb6598b84345c94dc68e900b328bfcbe3b0557f4",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.unrealengine.com/en-US/download",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"EPIC GAMES"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Quixel Mixer",
             "description": "Mix de texturas mediante la biblioteca Megascans de Quixel<br>Descarga la versión más reciente y deacuerdo a tu SO",
             "img": "impg/quixelmixer.png",
             "imgHover": "https://cdn2.unrealengine.com/Unreal+Engine%2Fblog%2Fcreating-digital-worlds-with-megascans-and-unreal-engine%2FMegascans-Ecosystem-Intro_gif-01-704112a77fc57d1e9c0c5ac2ec3b754c42217377.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://quixel.com/products/mixer",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Quixel Mixer"
-        },             
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Houdini",
             "description": "Debes crear una cuenta que será para SideFX y te dará acceso a los daily buils",
             "img": "impg/houdini.png",
             "imgHover": "https://64.media.tumblr.com/de3e4c15ea2c7852b2fae44d49cca3a3/tumblr_inline_nt9i2sCaeJ1qznhu8_540.jpg",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.sidefx.com/download/daily-builds/?production=true&python3=true",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Houdini"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Adobe Substance 3D Painter",
             "description": "Aplica texturas y pintura detallada directamente sobre modelos 3D",
             "img": "impg/adobesubstancepainter.png",
             "imgHover": "https://yelzkizi.org/wp-content/uploads/2025/04/rdfvegv-ezgif.com-video-to-gif-converter.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mediafire.com/file/xg27e1x8w9r7xu0/ADB.PNT.8.3.WIN.AP.ZNT.rar/file",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Adobe Substance 3D Painter"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Adobe Substance 3D Designer",
             "description": "Crea materiales PBR procedurales (basados en nodos, infinitamente ajustables) desde cero",
             "img": "impg/adobesubstancedesigner.png",
             "imgHover": "https://helpx.adobe.com/content/dam/help/en/substance-3d/documentation/sddoc/files/129368159/223053281/1/1637771532678/interface-customisation-resize.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mediafire.com/file/nxptpg6q8sxf0n8/ADB.SUB3D.DES.12.1.AP.ZNT.rar/file",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Adobe Substance 3D Designer"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"COLMAP",
             "description": "COLMAP workflow<br><a  target=_blank href=https://github.com/colmap/colmap/releases/tag/3.12.3>Colmap</a><br><a  target=_blank href=https://ffmpeg.org/>Ffmpeg</a><br><a  target=_blank href=https://gist.github.com/polyfjord/4ed7e8988bdb9674145f1c270440200d>Batch reconstruct</a><br><a  target=_blank href=https://github.com/SBCV/Blender-Addon-Photogrammetry-Importer>BlenderAddonPhotogrammetryImporter</a><br>Video de instalación y uso en el enlace de abajo",
             "img": "impg/colmap.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/xx85eyN1Xc0?si=oOFbXRwhtV1m5yJQ",
+            "vidHover": "",
             "enlace": "https://www.youtube.com/watch?v=xx85eyN1Xc0",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"COLMAP"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Armory3D",
             "description": "Motor de juego 3D integrado con Blender",
             "img": "https://armory3d.org/img/FeaturedCover.jpg",
+            "imgHover": "",
+            "iframeHover": "",
             "vidHover": "https://rpaladin.github.io/img/features/features-navigation.mp4",
             "enlace": "https://armory3d.org/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Armory3D"
-        }, 
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Blockbench",
             "description": "Editor de modelos 3D gratuito para crear modelos de baja poli y pixel art",
             "img": "https://media.sketchfab.com/models/ebb20c0ac30f4319985e19bc5b1d3bdd/thumbnails/fe40f80baee04b7bb9f67ccb24b5e73a/0300d5060edb477785f7f14298622d93.jpeg",
             "imgHover": "https://forum.gdevelop.io/uploads/default/original/3X/2/c/2c445d8d50f8b720da59ee3f54eeb2fad51d6625.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.blockbench.net/",
             "modelo": "Modelado y Diseño 3D",
-            "fecha":"2026-03-01",
-            "titulo":"Blockbench"
+            "fecha":"2026-03-01"
         },
 
 
@@ -260,40 +311,48 @@
 
 
         {
+            "titulo":"8th Wall",
             "description": "Plataforma líder de desarrollo de contenido de realidad virtual (WebAR, WebVR y WebXR)",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTziXzpfOrTZX57g5O6IBrAZsVHX8xipvxpIg&s",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/i9hpAFDFnQo?si=7sz1YfHW3ekjj63c",
+            "vidHover": "",
             "enlace": "https://8thwall.org/",
             "modelo": "VR y AR",
-            "fecha":"2026-03-08",
-            "titulo":"8th Wall"
+            "fecha":"2026-03-08"
         },
         {
+            "titulo":"Spark AR Studio",
             "description": "Plataforma gratuita de escritorio (PC/Mac) de Meta utilizada para crear efectos y filtros de Realidad Aumentada (RA) para Instagram y Facebook.",
             "img": "impg/SparkARStudio.png",
             "imgHover": "https://miro.medium.com/v2/resize:fit:1200/1*-0p5v95L3ndcunqhNcFsYg.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://spark.meta.com/download/",
             "modelo": "VR y AR",
-            "fecha":"2026-03-01",
-            "titulo":"Spark AR Studio"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Onirix",
             "description": "Plataforma de low-code especializada en la creación de experiencias de realidad aumentada web (WebAR) sin necesidad de programar.<br>La app que nos recomendo la Profa. Karen",
             "img": "impg/onirix.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/MIQmVMP_l7g?si=-E7tEug2TYcTMjSa",
+            "vidHover": "",
             "enlace": "https://studio.onirix.com/projects",
             "modelo": "VR y AR",
-            "fecha":"2026-03-01",
-            "titulo":"Onirix"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Merge Cube",
             "description": "Cubo de papel para Merge Object Viewer",
             "img": "impg/mergecubepaper.png",
             "imgHover": "https://support.mergeedu.com/hc/article_attachments/5547580331149",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://mergeedu.com/download/file.php?f=paper-merge-cube.pdf",
             "modelo": "VR y AR",
-            "fecha":"2026-03-01",
-            "titulo":"Merge Cube"
+            "fecha":"2026-03-01"
         },
 
 
@@ -314,225 +373,301 @@
 
 
         {
+            "titulo":"Photoshop Portable CS6",
             "description": "Al ser portable, no contendra todas las funciones de la versión PRO, pero te sacara de un apuro",
             "img": "impg/phopor.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/11c-oxEzf_1gFsfCznvLsIqxXVKPvJrLh/view",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Photoshop Portable CS6"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Photoshop 2024",
             "description": "Photoshop 2024 V25.6.0.433",
             "img": "impg/photo2024.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/15kWTHGL4XZcQ3kJ5BY9N8TN-dIGrlGBD/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Photoshop 2024"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Photoshop 2025",
             "description": "<h1 style=\"text-transform: lowercase;font-size: 16px;\">Photoshop 2025 V27.0.0.25</h1><br>Si, es la versión 2025<br>contraseña: www.programasvirtualespc.net",
             "img": "impg/photo2024.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/17OgxRHN3_qo9Z9qfaODBzwQHJOTpJSUc/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Photoshop 2025"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Photopea",
             "description": "Practicamente es Photoshop, pero Online",
             "img": "impg/photopea.png",
             "imgHover": "https://codingireland.blob.core.windows.net/images/steps%5Cllu445_photopea-new-project.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.photopea.com/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Photopea"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"GIMP",
             "description": "Programa de edición de imágenes de código abierto",
             "img": "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/08/gimp-1.jpg?w=1600&h=900&fit=crop",
+            "imgHover": "https://blog.desdelinux.net/wp-content/uploads/2018/04/gimp-2.10.jpg",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.gimp.org/downloads/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"GIMP"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Inkscape",
             "description": "Editor de gráficos vectoriales de código abierto",
             "img": "https://images.seeklogo.com/logo-png/24/1/inkscape-logo-png_seeklogo-246387.png",
+            "imgHover": "https://wiki.inkscape.org/wiki/images/c/c4/Ezgif.com-resizeasd.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://inkscape.org/release/inkscape-1.4.2/windows/64-bit/exe/dl/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Inkscape"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Darktable",
             "description": "Software de flujo de trabajo fotográfico de código abierto y editor de imágenes RAW",
             "img": "https://www.free-codecs.com/pictures/screenshots/darktable.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.darktable.org/install/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Darktable"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Affinity",
             "description": "Ofrece edición fotográfica, diseño vectorial, ilustración y maquetación profesional; todo en una sola aplicación y de forma gratuita.",
             "img": "https://mir-s3-cdn-cf.behance.net/projects/404/309882239029707.Y3JvcCwxMDM1LDgxMCwyMDIsMA.png",
             "imgHover": "https://www.affinity.studio/cdn-cgi/image/width=1600,fit=scale-down,format=auto/https://content-management-files.canva.com/d9d291f8-7987-4a2d-8c4a-c5c4f3628d63/Vectordesign2x.png",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.affinity.studio/es_es/download",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Affinity"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Krita",
             "description": "Krita",
             "img": "impg/krita.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/CY5XppRTpBY?si=LZxh6VUF0yfql5mu",
+            "vidHover": "",
             "enlace": "https://krita.org/es/download/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Krita"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Adobe Illustrator CC2024",
             "description": "Versión CC2024",
             "img": "impg/aipor.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1Jq1-gKtTLfY-kCN2qdOO0KxirMHeiHXU/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Adobe Illustrator CC2024"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"After effects Portable",
             "description": "Ni idea de la versión XD",
             "img": "impg/AEPorta.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1p-TvsfANEY0lTlc9SUSSnneLnoFk8F1Q/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"After effects Portable"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"After Effects 2024",
             "description": "contraseña: www.artistapirata.com",
             "img": "impg/afterfxpc.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1CHKZOJ09KnKKBiymL3oYLDNu0iqN53Z5/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"After Effects 2024"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"CorelDRAW 2021",
             "description": "Software de diseño gráfico<br>contraseña: www.programasvirtualespc.net",
             "img": "impg/corel21.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mediafire.com/file/m93kaf0e4c61nrb/23.1.0.389-PVP.rar/file",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"CorelDRAW 2021"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Mocha Pro 2023",
             "description": "Mocha Pro 2023 10.0.1 Windows",
             "img": "impg/mochaae.png",
             "imgHover": "https://flashbackj.com/wp-content/uploads/2020/07/19132947/auto_rebuild_and_convert.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://cdn.borisfx.com/borisfx/store/mpp-adobe/MochaPro2023-Adobe-10.0.1-54.g58678bac292c.win.msi",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Mocha Pro 2023"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Mocha Pro",
             "description": "Mocha Pro para AfterFx<br>Tutorial para tracking de mallas como telas y esas cosas XD<a  target=_blank href=https://www.youtube.com/watch?v=ljw4SC9jIco>PowerMesh</a>",
             "img": "impg/mochaae.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/G4oEKhBePxU?si=uQuRlxioHMFPAbFO",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/179pA1yDlLp0DpDAN2JbkJCHmovCLjQg0/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Mocha Pro"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Element 3D",
             "description": "Element 3D AfterFX/Video Copilot<br>Primero hay que instalar antes de parchear",
             "img": "impg/element3D.png",
+            "imgHover": "https://img2.99ku.vip/manage/book/2017/10/26/15090010741384.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1hxZEWxV6-QElpfYS9s0iOPD7Tqk2STZv/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Element 3D"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Duik Bassel v2_16.2.30",
             "description": "Herramienta gratuita de rigging y animación de personajes para After Effects.",
             "img": "impg/duikae.png",
+            "imgHover": "https://miro.medium.com/v2/resize:fit:1400/1*VvUKCMBxOe-Jud6BFHkBDA.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1cl41oLExZVeT6UN2b7lceMZpNmv3eKtQ/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Duik Bassel v2_16.2.30"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"SynthEyes Pro 2024 v23.10.1057",
             "description": "Software avanzado de camera tracking y matchmoving desarrollado por Boris FX, diseñado para integrar elementos 3D en escenas reales grabadas. Permite analizar el movimiento de cámara, la geometría de la escena y la distorsión del lente con alta precisión para producciones de efectos visuales (VFX), cine y realidad virtual.",
             "img": "impg/syntheyes.png",
+            "imgHover": "https://flashbackj.com/wp-content/uploads/2023/09/06175945/syntheyes_scene_exports.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1Px0_VlL7tyRAuMdA1dE9vFVlwruJe-fP/view?usp=sharing",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"SynthEyes Pro 2024 v23.10.1057"
+            "fecha":"2026-03-01"
         },
         {
-            "description": "Software líder de mezcla de video en directo (VJs) y mapeo de proyección (mapping), diseñado para VJs, intérpretes audiovisuales y artistas, permitiendo reproducir, mezclar y aplicar efectos a visuales en tiempo real",
+            "titulo":"Resolume",
+            "description": "Software líder de mezcla de video en directo (VJs) y mapeo de proyección (mapping), diseñado para VJs, intérpretes audiovisuales y artistas, permitiendo reproducir, mezclar y aplicar efectos a visuales en tiempo real.",
             "img": "impg/resolume.png",
+            "imgHover": "",
+            "iframeHover": "https://www.youtube.com/embed/PfrcW7g1zbE?si=bmnCWxBBGEbKc_7V",
+            "vidHover": "",
             "enlace": "https://www.resolume.com/download/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Resolume"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"EYECANDY",
             "description": "Página de biblioteca de técnicas visuales",
             "img": "impg/eyecannndy.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://eyecannndy.com/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"EYECANDY"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"GyroFlow",
             "description": "Herramienta avanzada de estabilización de video giroscópica para cinematografía, videografía con drones y mucho más.",
             "img": "impg/gyroflow.png",
+            "imgHover": "https://docs.gyroflow.xyz/app/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fgyroflow%2Fgyroflow%2Fraw%2Fmaster%2Fresources%2Fcomparison1.gif&width=300&dpr=3&quality=100&sign=d4dd1986&sv=2",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://gyroflow.xyz/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"GyroFlow"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"PHYSICALLY BASED",
             "description": "Base de datos de valores físicos para artistas de CG.",
             "img": "impg/physicallybased.png",
+            "imgHover": "https://i.ytimg.com/vi/ErX4vYUpD7I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBpqK9xZ0WUiiDikVDFsSA_A2wB0g",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://physicallybased.info/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"PHYSICALLY BASED"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Adobe Color",
             "description": "Adobe Color",
             "img": "impg/adobecolor.png",
+            "imgHover": "https://cdn.prod.website-files.com/6176ff418ea60502a33e9180/63c6d7581893c47124d74c21_Adobe%20Color%20CC.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://color.adobe.com/es/create/color-wheel",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Adobe Color"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Ableton Live",
             "description": "Software de creación musical (DAW)Espera a que se genere un nuevo link<br>contraseña: elenemigos.com",
             "img": "impg/abletondoce.png",
+            "imgHover": "https://pluginoise.com/wp-content/uploads/2025/03/Ableton-Workflow.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://download856.mediafire.com/w6nmftp3ybvg6kyv3fcCvX587KY9y5PRuTiwKLrBlWJVvtNvUWCBFzpSP7L259Y7x3mwVvpGBjOI-7s8RvrmhdAp92gOiT969zgathSrUDyMBQlc7EPyEo1-hMuUXIudZTFkBYomjVfckgVbuyteuNeMLl5Y_pVYiL4GAP9vOSgVfHE/4zeqxcs2co36lyi/Ableton+Live+12+Suite+v12.1.10_ELENEMIGOS.rar",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Ableton Live"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Serum2",
             "description": "Popular sintetizador virtual Xfer Records Serum<br>Funciona en FL Studio y Ableton Live",
             "img": "impg/serumdos.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mediafire.com/file/kvyl18ws3b0nc2z/Xfer+Records+Serum+v2.0.18+WIN-VR.zip",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Serum2"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Plugins 4 Free",
             "description": "Descarga plugins VST gratis para producción musical",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36x0aYDLNSIikEzvegRghznHTVXtSBPO74Q&s",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://plugins4free.com/",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"Plugins 4 Free"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"TouchDesigner",
             "description": "Plataforma visual para la creación de experiencias interactivas en tiempo real y multimedia unificadas atraves de la programación visual<br><a  target=_blank href=https://www.youtube.com/watch?v=I_FDigcL7qw>Ejemplo de uso: Tutorial Efecto Displacement - TouchDesigner / Blender</a>",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGS4BUO4ClAJgU0ohW8Ft6TgCbPy2GBWxmfA&s",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://derivative.ca/download",
             "modelo": "Edición",
-            "fecha":"2026-03-01",
-            "titulo":"TouchDesigner"
+            "fecha":"2026-03-01"
         },
 
 
@@ -584,124 +719,169 @@
 
 
         {
+            "titulo":"Geometry Dash 2.2",
             "description": "Debes descargar los ddl para que funcione el juego, de lo contrario te saldra un error",
             "img": "impg/geo.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/drive/folders/1DFExIddmm5UN513Byh8ei_Yo8kexQwFM?usp=sharing",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"Geometry Dash 2.2"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"NeoRAGEx",
             "description": "La neta esta mamalón, si tienes botonera puedes utilizarla",
             "img": "impg/emuladorneo.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/drive/folders/1K4Q1Dz_P7UJGiI8QIsWbh3WnJDhjA32h?usp=sharing",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"NeoRAGEx"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Snow Bros",
             "description": "Snow Bros 1 y 2",
             "img": "https://i.ytimg.com/vi/WFfJJp2r5Jc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCE0Y3SZuen70dKkwpSK63iHnLXjQ",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://lagoma.netlify.app/Archivos/SnowBros1y2.rar",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"Snow Bros"
+            "fecha":"2026-03-01"
         },      
         {
+            "titulo":"THE HOUSE OF THE DEAD III",
             "description": "THE HOUSE OF THE DEAD III",
             "img": "impg/housedeadlll.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/drive/folders/1HRk-SNVwZ6EbKRkSM9bMh0PRCf_Sv0ww?usp=sharing",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"THE HOUSE OF THE DEAD III"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Mario Bros",
             "description": "Colección de Mario Bros",
             "img": "impg/colmb.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/18IxelUIrfkFdvCWHeveQmyARU9prVZD_/view?usp=sharing",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"Mario Bros"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Contra",
             "description": "Contra",
             "img": "impg/contra.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1J_KlLxBoWlt03zQesBEXGcHy6poKYqJo/view?usp=sharing",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"Contra"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"3D Pinball Space Cadet",
             "description": "CLA SI CA ZO",
             "img": "impg/pinball3dw.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1ClDf41v3rAWZFbzh4wKTZpMflmFWxiOR/view?usp=sharing",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"3D Pinball Space Cadet"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"FREE ROMS",
             "description": "Descargua ISO de juegos portátiles de PSP/Playstation",
             "img": "impg/freeroms.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1ClDf41v3rAWZFbzh4wKTZpMflmFWxiOR/view?usp=sharing",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"FREE ROMS"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"PPSSPP",
             "description": "Emulador de PSP, en el link viene para PC, Android y macOS",
             "img": "impg/ppsspp.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.ppsspp.org/download/",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"PPSSPP"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Myemulator",
             "description": "El sitio web donde podrás jugar a los mejores juegos retro jamás desbloqueados en línea",
             "img": "impg/myemulator.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://myemulator.onl/",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"Myemulator"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"PCSX2",
             "description": "Emulador de PlayStation 2<br><a  target=_blank href=https://www.mediafire.com/file/sncrg1xbocdlwqy/bios.rar/file>BIOS</a><br><a  target=_blank href=https://www.youtube.com/watch?v=XdV_iiV1d9I>Tutoriaal de que bios seleccionar</a>",
             "img": "https://new-game-plus.fr/wp-content/uploads/2025/11/pcsx2-99-emulation1.webp",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://pcsx2.net/",
             "modelo": "Juegos",
-            "fecha":"2026-03-08",
-            "titulo":"PCSX2"
+            "fecha":"2026-03-08"
         },
         {
+            "titulo":"GTA SA",
             "description": "Si no sabes como se instala, preguntame 🤙🏾",
             "img": "impg/gtasapc.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/drive/folders/1ahkA7_kaR68TG9gRoKEfe7vT8kX1f7sE?usp=sharing",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"GTA SA"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"El Enemigos",
             "description": "Página para descargar videojuegos y programas",
             "img": "impg/elenemigos.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://elenemigos.com/",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"El Enemigos"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Emuladores retro",
             "description": "Colección de emuladores retro<br>Emuladores de distintas consolas de Nintendo",
             "img": "impg/coleccioemuladores.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://mega.nz/folder/7shhgaYA#_K51l2982e9g4wccaIRAAw",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"Emuladores retro"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Pack de emuladores",
             "description": "No recuerdo todos, pero tiene PS1, PS2, PSP, N64, SNES, GBA, entre otros",
             "img": "impg/coleccioemuPS.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mediafire.com/file/uj8sl3uznercc9n/Pack_de_Emuladores_Para_PC.rar/file",
             "modelo": "Juegos",
-            "fecha":"2026-03-01",
-            "titulo":"Pack de emuladores"
+            "fecha":"2026-03-01"
         },
 
 
@@ -748,60 +928,81 @@
 
 
         {
+            "titulo":"VirusTotal",
             "description": "Herramienta de análisis de archivos y páginas web a través de un antivirus Online",
             "img": "impg/virustotal.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.virustotal.com/gui/home/upload",
             "modelo": "Antivirus",
-            "fecha":"2026-03-01",
-            "titulo":"VirusTotal"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Triage",
             "description": "Explora el entorno de pruebas de análisis de malware de Triage para analizar sus muestras de malware.",
             "img": "impg/triage.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://tria.ge/dashboard",
             "modelo": "Antivirus",
-            "fecha":"2026-03-01",
-            "titulo":"Triage"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Jotti",
             "description": "Jotti's malware scan es un servicio gratuito que le permite analizar archivos sospechosos con varios programas antivirus.",
             "img": "impg/jotti.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://virusscan.jotti.org/",
             "modelo": "Antivirus",
-            "fecha":"2026-03-01",
-            "titulo":"Jotti"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"OPSWAT",
             "description": "Plataforma de ciberseguridad para detectar y prevenir amenazas de malware en archivos",
             "img": "impg/opswat.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://metadefender.opswat.com/",
             "modelo": "Antivirus",
-            "fecha":"2026-03-01",
-            "titulo":"OPSWAT"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Joe Sandbox",
             "description": "Joe Sandbox<br>Detecta y analiza posibles archivos y URL maliciosos en Windows, Mac OS y Linux en busca de actividades sospechosas.",
             "img": "impg/joesandbox.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.joesandbox.com/",
             "modelo": "Antivirus",
-            "fecha":"2026-03-01",
-            "titulo":"Joe Sandbox"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"HYBRID ANALYSIS",
             "description": "HYBRID ANALYSIS<br>Servicio gratuito que detecta y analiza amenazas desconocidas utilizando una tecnología única de análisis híbrido.",
             "img": "impg/hybridanalysis.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.hybrid-analysis.com/",
             "modelo": "Antivirus",
-            "fecha":"2026-03-01",
-            "titulo":"HYBRID ANALYSIS"
+            "fecha":"2026-03-01"
         },  
         {
+            "titulo":"Vacunas USB",
             "description": "Descarga los tres archivos, ponlos en tu usb y ejecuta el .exe y el .vbs",
             "img": "impg/vacunas.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mediafire.com/folder/ygjpcmrvmvk95/Vacunas+Memorias",
             "modelo": "Antivirus",
-            "fecha":"2026-03-01",
-            "titulo":"Vacunas USB"
+            "fecha":"2026-03-01"
         },
 
 
@@ -848,212 +1049,290 @@
 
 
         {
+            "titulo":"Freesets",
             "description": "Es una amplia colección de los mejores recursos y herramientas gratuitos para desarrolladores y artistas, como iconos, ilustraciones, fotos, vídeos, blogs, fuentes, ...",
             "img": "impg/freesets.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://freesets.dev/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Freesets"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Consulta INE Afiliados",
             "description": "Checa si te afiliaron a un partido político",
             "img": "impg/ineafiliado.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://deppp-partidos.ine.mx/afiliadosPartidos/app/publico/consultaAfiliados/nacionales?execution=e1s1#form:pnlDetalleAfiliado",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Consulta INE Afiliados"
+            "fecha":"2026-03-01"
         },
         {
-            "description": ">Optimizador de imágenes que permite comprimir y comparar imágenes con diferentes códecs en su navegador",
+            "titulo":"Squoosh",
+            "description": "Optimizador de imágenes que permite comprimir y comparar imágenes con diferentes códecs en su navegador",
             "img": "impg/squoosh.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://squoosh.app/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Squoosh"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Tinify",
             "description": "Smart AVIF, WebP, PNG and JPEG Compression for Faster Websites",
             "img": "impg/tinify.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://tinypng.com/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Tinify"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"PineTools",
             "description": "Ofrece una colección de herramientas en línea gratuitas para trabajar con texto, imágenes, listas, números y archivos",
             "img": "impg/pinetools.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://pinetools.com/es/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"PineTools"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"CFE Recibo",
             "description": "Consulta tu recibo de luz CFE",
             "img": "impg/cferecibo.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://app.cfe.mx/aplicaciones/CCFE/SolicitudesCFE/Solicitudes/ConsultaTuReciboLuzGmx",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"CFE Recibo"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Tenencia",
             "description": "Pago de Tenencia y Derechos de Control Vehicular",
             "img": "https://wp.lajornada.prod.andes.news/wp-content/uploads/2026/01/image-5.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://tenencia.edomex.gob.mx/TenenciaIndividual/tenencia/A06E1A88B8A6ED4B#/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Tenencia"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"CURP",
             "description": "CURP",
             "img": "impg/curp.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.gob.mx/curp/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"CURP"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"IMSS",
             "description": "NO derechohabiente IMSS",
             "img": "impg/noderechohabienteimss.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://digital.imss.gob.mx/derechohabiencia/tramite/solicitudConstancia",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"IMSS"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"ISSSTE",
             "description": "Acreditación de No Afiliación ISSSTE",
             "img": "impg/acreditacióndenoafiliación.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://oficinavirtual.issste.gob.mx/Servicios/Acreditaci%C3%B3n-de-no-Afiliaci%C3%B3n",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"ISSSTE"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Portal de Servicios al Contribuyente",
             "description": "En Organismos Auxiliares se paga lo del TESCHI",
             "img": "impg/servicioscontri.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://sfpya.edomexico.gob.mx/recaudacion/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Portal de Servicios al Contribuyente"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"VCCGenerator",
             "description": "Generates 100% valid test credit card numbers for all major brands with required details such as Name, Address, Expiry, Money, PIN, and CVV code.",
             "img": "impg/vccgenerator.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.vccgenerator.org/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"VCCGenerator"
+            "fecha":"2026-03-01"
         },                        
         {
+            "titulo":"Temp Mail",
             "description": "Servicio de correo electrónico temporal para proteger tu privacidad en línea",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqtoKsZr1bYAMI4K_V0uxZ0sFacuHUEjGhQ&s",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://temp-mail.org/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Temp Mail"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"spacedesk",
             "description": "Convierte tu tablet o smartphone en una segunda pantalla para tu PC, no es mirror de pantalla, es una extensión de escritorio",
             "img": "impg/spacedesk.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.spacedesk.net/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"spacedesk"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Office 365",
             "description": "Exe para instalar Office 365 <br><a  target=_blank href=https://massgrave.dev/>Guia de activación</a><br><a  target=_blank href=https://github.com/massgravel/Microsoft-Activation-Scripts?tab=readme-ov-file> Te recomiendo ver el GitHub </a>",
             "img": "impg/officeinstaller.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?productReleaseID=O365ProPlusRetail&platform=Def&language=es-es&TaxRegion=pr&correlationId=65675957-173e-4ce3-a2ac-aea917252b04&token=0c8ef2d3-a5d6-4df8-9b9e-0d86488908ec&version=O16GA&source=O15OLSO365&Br=2",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Office 365"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Signal",
             "description": "Aplicación de mensajería segura y cifrada",
             "img": "https://www.figma.com/community/resource/fbd27fc8-3979-4f0c-82dd-51c88985e962/thumbnail",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://signal.org/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Signal"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"SimpleX Chat",
             "description": "Aplicación de mensajería segura y cifrada",
             "img": "https://play-lh.googleusercontent.com/Em1xX7Zh3WtNeXC0TQdRr0oSE_2gMxainzWzqp_ec-Bair5XVIQ23GTRTDIe35aRog",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://simplex.chat/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"SimpleX Chat"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Proton Mail",
             "description": "Correo electrónico seguro y cifrado",
             "img": "https://www.bleepstatic.com/content/hl-images/2025/01/09/proton-mail-header.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://proton.me/mail",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Proton Mail"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Proton VPN",
             "description": "Servicio de VPN seguro y privado",
             "img": "https://www.redeszone.net/app/uploads-redeszone.net/2019/10/proton.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://protonvpn.com/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Proton VPN"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"VoiceMod",
             "description": "Aplicación para cambiar la voz en tiempo real",
             "img": "https://gitlab.com/uploads/-/system/project/avatar/36139896/Voicemod_Logo_256x256.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.voicemod.net/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"VoiceMod"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"TikFinity",
             "description": "Ofrece una amplia gama de funciones interactivas gratuitas para tu transmisión en vivo en TikTok, con integración desde Texto a Voz y Alertas de Sonido hasta integraciones IFTTT para dispositivos inteligentes",
             "img": "https://play-lh.googleusercontent.com/ZtHQAKLD9tE5TfCCG4CCsMVh6Wg8n4ma3PvaPbXhLq1sgrUUG0iJUh1cOeJSqgK273EA",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://tikfinity.zerody.one/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"TikFinity"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"RIFE Video Frame Interpolation",
             "description": "Ayuda a aumentar los FPS de un video por medio de interpolación de frames<br><a  target=_blank href=https://www.youtube.com/watch?v=gf_on-dbwyU>Video de instlación</a>",
             "img": "https://www.aiseesoft.com/images/resource/rife-ai-interpolation/rife-ai-interpolation.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/hzwer/ECCV2022-RIFE?tab=readme-ov-file",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"RIFE Video Frame Interpolation"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Wix Toolset",
             "description": "Software para crear instaladores de Windows msi",
             "img": "https://avatars.githubusercontent.com/u/91997072?s=200&v=4",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.firegiant.com/wixtoolset/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Wix Toolset"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Figma",
             "description": "Herramienta de diseño de interfaces y prototipado de diseño UX/UI",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgl7wpiJVouzQ_6Jgf4zGvIN4uiRsOYOcbQ&s",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.figma.com/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Figma"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Canva",
             "description": "Herramienta de diseño gráfico en línea para crear gráficos, presentaciones, carteles y otros contenidos visuales",
             "img": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxo4K81Ei7WzcnqEk8W.MgwYKXD7FOghvNjFDjAW2n_n9G17dCS5MiDbyIZ_jyNltdF9RoV.SfZuqrFB1prlcL8k-&format=source",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.canva.com/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"Canva"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"PDF24",
             "description": "Suite de herramientas gratuitas para gestionar archivos PDF, disponible tanto en versión web (online) como de escritorio (PDF24 Creator) para Windows. Permite crear, editar, comprimir, convertir, unir, dividir, firmar y proteger documentos sin costes ocultos ni limitaciones, siendo una opción versátil y segura desarrollada en Alemania.",
             "img": "https://cdn-1.webcatalog.io/catalog/pdf24/pdf24-social-preview.png?v=1714775420105",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.pdf24.org/es/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01",
-            "titulo":"PDF24"
+            "fecha":"2026-03-01"
         },
 
 
@@ -1066,37 +1345,63 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
+            "titulo":"Los gatos sueñan con física cuántica",
             "description": "Explica los complejos principios de la mecánica cuántica, la teoría de cuerdas y paradojas físicas de manera amena, accesible y con ejemplos cotidianos para todo público, explorando el nuevo paradigma de la realidad.<br>De: Jorge Blaschke",
             "img": "impg/Lgscfc.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/13ivf5C0nbgEf2e114-ztpwKOTXayG1y1/view?usp=drive_link",
             "modelo": "Libros",
-            "fecha":"2026-03-01",
-            "titulo":"Los gatos sueñan con física cuántica"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Manipulacion y Psicologia Oscura",
             "description": "Habla sobre las técnicas de control mental, influencia emocional y engaño utilizadas por personalidades manipuladoras (narcisistas, maquiavélicos, psicópatas) en relaciones personales y laborales. Enseña a reconocer estas tácticas, defenderse de ellas, interpretar el lenguaje corporal y proteger la propia salud mental, incluso enseñando métodos éticos de persuasión.<br>De: Alejandro Mendoza",
             "img": "impg/manipsytree.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1ae36JN6rT2pDD8EfAfRTWcTxzgd5CtJC/view?usp=sharing",
             "modelo": "Libros",
-            "fecha":"2026-03-01",
-            "titulo":"Manipulacion y Psicologia Oscura"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Arduino Curso Práctico",
             "description": "De: Óscar Torrente Artero",
             "img": "impg/acursoforma.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1ae36JN6rT2pDD8EfAfRTWcTxzgd5CtJC/view?usp=sharing",
             "modelo": "Libros",
-            "fecha":"2026-03-01",
-            "titulo":"Arduino Curso Práctico"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Psicologia Oscura",
             "description": "Es una guía enfocada en identificar, comprender y defenderse de las tácticas de manipulación mental que las personas utilizan en la vida cotidiana.<br>De: Victor Sykes",
             "img": "impg/psyblack.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1aYZx2RWX0p75iCM6LqBC2-G4LF3ppVhm/view?usp=sharing",
             "modelo": "Libros",
-            "fecha":"2026-03-01",
-            "titulo":"Psicologia Oscura"
+            "fecha":"2026-03-01"
         },
 
 
@@ -1121,78 +1426,115 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
         {
+            "titulo":"Fritzing 0.9.9 x64",
             "description": "Programa de diseño electrónico",
             "img": "impg/frit.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1K3pKL1TOYL8FBDirhib6So9bHO3UsP6L/view?usp=sharing",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01",
-            "titulo":"Fritzing 0.9.9 x64"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"PCB wizard",
             "description": "Software para la creación de placas de circuito impreso",
             "img": "impg/pcbwizard.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/drive/folders/1LumVkkEGghDvqDLbcsIGuGiuUWzp_3OC?usp=sharing",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01",
-            "titulo":"PCB wizard"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"DCAC Lab",
             "description": "Plataforma para experimentar con circuitos electrónicos",
             "img": "https://dcaclab-discourse-forum.s3.dualstack.us-east-1.amazonaws.com/original/1X/4face1e214f3ca00f12bdd6a4723bbdaf64f888d.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://dcaclab.com/es/lab",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01",
-            "titulo":"DCAC Lab"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Arduino IDE",
             "description": "Arduino",
             "img": "impg/arduinoide.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.arduino.cc/en/software",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01",
-            "titulo":"Arduino IDE"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Driver CH341SDER",
             "description": "Driver para Arduinos Chinos CH341SDER",
             "img": "impg/CH341SDERdriver.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1sF-d5LKccgjK4dEwruoZINOaW9W2JDQa/view?usp=sharing",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01",
-            "titulo":"Driver CH341SDER"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"IFTTT",
             "description": "Es una plataforma gratuita basada en la nube que permite automatizar tareas entre diferentes aplicaciones, dispositivos y servicios web. Su funcionamiento se basa en reglas simples, conocidas como \"Applets\" o recetas, donde un disparador (\"Si esto\") provoca una acción automática (\"Entonces aquello\").",
             "img": "impg/iftttweb.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://ifttt.com/explore",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01",
-            "titulo":"IFTTT"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"ESP8266/ESP32 Repetidor WiFi",
             "description": "Convierte tu ESP8266/ESP32<br>en un repetidor de WIFI!!",
             "img": "impg/espwifi.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/drive/folders/1degx7So3FDlYn9Pk8Smxtrzm0gHCJz0x?usp=sharing",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01",
-            "titulo":"ESP8266/ESP32 Repetidor WiFi"
-        },        
+            "fecha":"2026-03-01"
+        },
         {
-            "description": "Software gratuito y de código abierto diseñado para animar robots, animatrónicos y otros proyectos de hardware de forma visual y sin necesidad de programar", 
+            "titulo":"Bottango",
+            "description": "Software gratuito y de código abierto diseñado para animar robots, animatrónicos y otros proyectos de hardware de forma visual y sin necesidad de programar",
             "img": "impg/bottango.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.bottango.com/#download",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-01",
-            "titulo":"Bottango"
-        },        
+            "fecha":"2026-03-01"
+        },
         {
-            "description": "Experiencia de controlar remotamente robots reales (conocidos como FrodoBots o Earth Rovers) desde cualquier parte del mundo a través de una interfaz de juego en línea", 
+            "titulo":"Frodobots",
+            "description": "Experiencia de controlar remotamente robots reales (conocidos como FrodoBots o Earth Rovers) desde cualquier parte del mundo a través de una interfaz de juego en línea",
             "img": "impg/frodobots.png",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/mswO0rzbPnM?si=vFyZykxI36l4BqJU",
+            "vidHover": "",
             "enlace": "https://school.frodobots.com/testdrive/",
             "modelo": "Electrónica y Robots",
-            "fecha":"2026-03-07",
-            "titulo":"Frodobots"
+            "fecha":"2026-03-07"
         },
 
 
@@ -1218,158 +1560,219 @@
 
 
 
+        
+
+
+
 
         {
+            "titulo":"Raspbian OS",
             "description": "Sistema operativo oficial y gratuito, basado en Debian Linux, optimizado específicamente para las computadoras de placa única Raspberry Pi",
             "img": "impg/raspbian.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.raspberrypi.com/software/operating-systems/",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Raspbian OS"
+            "fecha":"2026-03-01"
         },            
         {
+            "titulo":"Kali Linux",
             "description": "Distro de Linux diseñada específicamente para seguridad informática, pentesting, auditorías de seguridad e investigación forense digital.",
             "img": "impg/kaly.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.kali.org/get-kali/#kali-platforms",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Kali Linux"
+            "fecha":"2026-03-01"
         },            
         {
+            "titulo":"Ubuntu",
             "description": "Distro diseñado para ser fácil de usar y seguro. Lanzado por Canonical en 2004, es una de las más populares, ideal para computadoras de escritorio, servidores y dispositivos IoT. Su enfoque principal es la accesibilidad, ofreciendo actualizaciones constantes y software preinstalado.",
             "img": "impg/ubuntu.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://ubuntu.com/download/desktop#download",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Ubuntu"
-        },            
+            "fecha":"2026-03-01"
+        },       
         {
+            "titulo":"Tails OS",
             "description": "Tails OS<br> Se ejecuta desde un USB(Live OS), no deja rastro en la computadora usada y fuerza todo el tráfico de internet a través de la red Tor, siendo ideal para evitar vigilancia y censura. ",
             "img": "impg/tailsos.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://tails.net/install/index.es.html",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Tails OS"
-        },            
+            "fecha":"2026-03-01"
+        },              
         {
+             "titulo":"TOMEX OS",
             "description": "TOMEX OS V2.63<br>W10/11",
             "img": "impg/tomexos.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mediafire.com/file/2ne9gn67l6kgto8/TomexOS+V2.2.iso/fil",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"TOMEX OS"
+            "fecha":"2026-03-01"
         },             
         {
+            "titulo":"WinterOS",
             "description": "WinterOS Windows11<br>23H2W11Rev11",
             "img": "impg/winterOS11.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.mediafire.com/file/wpxgw0ltldq4wsk/23H2W11Rev11.iso",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"WinterOS"
-        },            
+            "fecha":"2026-03-01"
+        }, 
         {
+            "titulo":"Windows 11",
             "description": "Windows11 Asistente de Instalación<br>Programa oficial para crear ISO de Windows11",
             "img": "impg/w11assistantins.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://download.microsoft.com/download/5/4/c/54c22b82-d0cd-4e34-9a06-b75823a8aede/Windows11InstallationAssistant.exe",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Windows 11"
-        },             
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Beini 1.2.5 OS",
             "description": "Distro ligera y portátil diseñada específicamente para realizar auditorías de seguridad en redes Wi-Fi. Es conocido principalmente por su capacidad para recuperar o descifrar claves de seguridad WEP y WPA/WPA2.<br>Lamentablemente ya esta avandonado :(",
             "img": "impg/beini.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://netactuate.dl.sourceforge.net/project/archiveos/b/beini/Beini-1.2.5.iso",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Beini 1.2.5 OS"
-        },            
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Wifislax 4.0",
             "description": "Distro GNU/Linux basada en Slackware, diseñada específicamente para la auditoría de seguridad y pruebas de penetración, especialmente en redes Wi-Fi. Se ejecuta como LiveCD/LiveUSB, incluye herramientas de hacking y controladores preinstalados para múltiples tarjetas de red.",
             "img": "impg/wifislaxos.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://foro.seguridadwireless.net/live-wifislax/wifislax64-4-0-final-iso-para-descarga",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Wifislax 4.0"
-        },            
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"NVIDIA Driver",
             "description": "DRIVER NVIDIA PARA HASHCAT",
             "img": "impg/wifislaxdriver.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.nvidia.com/es-es/drivers/unix/",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"NVIDIA Driver"
-        },                     
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"VirtualBox",
             "description": "Máquina virtual (desarrollado por Oracle) que permite instalar y ejecutar múltiples sistemas operativos (como Windows, Linux, macOS).",
             "img": "impg/virtualbox.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.virtualbox.org/wiki/Downloads",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"VirtualBox"
-        },            
+            "fecha":"2026-03-01"
+        },
         {
-            "description": "Máquina virtual Ultima version gratuita para uso personal",
+            "titulo":"VMware Workstation Player 17.6.3 Windows",
+            "description": "Máquina virtual Ultima version gratuita para uso personal<br><a target='_blank' href='https://files04.tchspt.com/down/VMware-player-17.6.3-24583834.exe'>Link alterno</a>",
             "img": "impg/vmwarew.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://files04.tchspt.com/down/VMware-player-17.6.3-24583834.exe",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"VMware Workstation Player 17.6.3 Windows"
-        },             
+            "fecha":"2026-03-01"
+        },
         {
-            "description": "Máquina virtual<br><a target='_blank' href='https://www.techspot.com/downloads/1969-vmware-player.html'>Links alternos</a>",
+            "titulo":"VMware Workstation Player 17.6.3 Linux",
+            "description": "Máquina virtual<br><a target='_blank' href='https://www.techspot.com/downloads/1969-vmware-player.html'>Link alterno</a>",
             "img": "impg/vmwarel.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://files02.tchspt.com/down/VMware-Player-17.6.3-24583834.x86_64.bundle.tar",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"VMware Workstation Player 17.6.3 Linux"
-        },             
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"DigitalOcean",
             "description": "Proveedor de Infraestructura como Servicio (IaaS) en la nube.<br>De pago.<br>Mas enfocado a Gaming e IA",
             "img": "impg/paperspaceVM.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.paperspace.com/",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"DigitalOcean"
-        },                                 
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Rufus",
             "description": "Utilidad gratuita y de código abierto para Windows, diseñada para formatear y crear unidades flash USB arrancables (bootables).",
             "img": "impg/rufus.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://rufus.ie/es/",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Rufus"
-        },                
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Balena Etcher",
             "description": "Herramienta gratuita y de código abierto, desarrollada por Balena, que se utiliza para grabar archivos de imagen (.iso, .img, zip) en tarjetas SD y unidades USB.",
             "img": "impg/balenaetcher.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://etcher.balena.io/#download-etcher",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Balena Etcher"
-        },                
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Win32 Disk Imager",
             "description": "Es ampliamente utilizada para crear unidades de arranque, respaldar tarjetas SD de Raspberry Pi y clonar memorias.",
             "img": "impg/win32diskimager.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://zenlayer.dl.sourceforge.net/project/win32diskimager/Archive/win32diskimager-1.0.0-install.exe",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Win32 Disk Imager"
-        },                
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Licencia Windows",
             "description": "Licencia digital Windows 10/11",
             "img": "impg/licenciaw1011.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1_z4Rotv4hoaFuuD8MoBo7heoLiYraVRl/view?usp=sharing",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"Licencia Windows"
-        },                
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"copyshv86",
             "description": "Emula maquinas virtuales OnLine, específicamente el HW y la CPU de un PC x86",
             "img": "impg/copyshv86.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://copy.sh/v86/",
             "modelo": "OS & Burners",
-            "fecha":"2026-03-01",
-            "titulo":"copyshv86"
+            "fecha":"2026-03-01"
         },
 
 
@@ -1404,317 +1807,390 @@
 
 
 
-
-
         {
+            "titulo":"Ubica-T",
             "description": "App Institucional del TESCHI para conocer la distribución de los departamentos.",
             "img": "impg/ubica_t.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://lagoma.netlify.app/Archivos/Ubica-T.apk",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Ubica-T"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Blender Android",
             "description": "Blender para ANDROID!! v0.0.5<br>No la han actualizado",
             "img": "impg/blenderAndroid.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/dshawshank/APP-android_arm64/releases/download/v0.0.5/blender.on.Android.v0.0.5.apk",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Blender Android"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"GTA SA Android",
             "description": "GTA San Andreas",
             "img": "impg/gtasaAndroid.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1AIhTCy7WzF9ELZiQ6k-x3anoyJiJ5KfA/view?usp=sharing",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"GTA SA Android"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"HiPER Calc Pro_9.2.1",
             "description": "La mejor calculadora para Android que he probado.<br><a  target=_blank href=https://play.google.com/store/apps/details?id=cz.hipercalc.pro&hl=es_MX>Te recomiendo comprarla</a>",
             "img": "impg/HiPER Calc Pro_9.2.1.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1fj8mD13q6uTqZRZ3lhKI5Ja-kStUyLV7/view?usp=sharing",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"HiPER Calc Pro_9.2.1"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Loquendo",
             "description": "Loquendo para Android",
             "img": "impg/loquendoandroid.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1DO_DNYWIWHKqOwET0zu3Zm-YLvdIMLAP/view?usp=drive_link",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Loquendo"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"FL Studio Mobile",
             "description": "DAW completa diseñada para crear, editar, mezclar y renderizar canciones multipista.",
             "img": "impg/flandroid.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://liteapks.com/download/fl-studio-mobile-6151/1",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"FL Studio Mobile"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Escritorio remoto de Chrome",
             "description": "APK conectarse a la pc",
             "img": "impg/remotecontrolapk.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop&hl=es&gl=US",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Escritorio remoto de Chrome"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Musivibe",
             "description": "Reproductor de música sin conexión potente, interactivo y fácil de usar.<br>No daba nada por esta app, pero la verdad es muy buena, solo que tiene muchos anuncios, en la DNS de los telefonos se pueden bloquear usando una privada, que es: dns.adguard.com ",
             "img": "https://play-lh.googleusercontent.com/y8u-wfz96-wSCPXXI7rPIHuSz2yp1gzfRiycLV6CN4l0ikQiHlH6T6S0Lv8diyd2DTI=w480-h960-rw",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.musivibe.player.allmusic&hl=es_MX",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Musivibe"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"DroidCam",
             "description": "DroidCam para Android",
             "img": "impg/droidcam.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.dev47apps.droidcam&hl=es_419&gl=US",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"DroidCam"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Radio Garden",
             "description": "Permite escuchar miles de emisoras de radio en vivo de todo el mundo girando un globo terráqueo virtual.",
             "img": "impg/radiogardenandroid.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.jonathanpuckey.radiogarden",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Radio Garden"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Merge Object Viewer",
             "description": "Aplicación de realidad aumentada (RA) para dispositivos móviles, Mac y visores, diseñada para visualizar, sostener e interactuar con cientos de modelos 3D educativos.",
             "img": "impg/mergeobjectviewerapp.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.MergeCube.ObjectViewer&hl=es_419&gl=US",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Merge Object Viewer"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Blynk IoT",
             "description": "IoT basado en la nube para la conexión de HW. Código abierto, AWS, Google",
             "img": "impg/blynkiotapp.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=cloud.blynk",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Blynk IoT"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Termux",
             "description": "Emulador de terminal y entorno Linux para Android",
             "img": "impg/termux.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.termux&hl=es_MX&gl=US",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Termux"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"APK Editor FREE",
             "description": "Editor de APK para Android (renombrar, recompilar, firmar, etc.)",
             "img": "impg/apkeditorfree.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1jPxGGIMW9udkixHgcs3fIfqZXRyyrXQK/view?usp=sharing",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"APK Editor FREE"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"3D PDF Reader",
             "description": "Lector de archivos 3D en PDF",
             "img": "impg/pdfreadertresde.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1yr1mb1rFSMXq5vKAcrkXWcgloWhRogKX/view?usp=sharing",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"3D PDF Reader"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Nomad Sculp",
             "description": "Escultura 3D para Android de pago si quieres exportar.<br>Similar a ZBrush, subiere la apk crackeada después xd",
             "img": "impg/nomadsculp.png",
+            "imgHover": "https://europe1.discourse-cdn.com/flex005/uploads/nomadsculpt/original/2X/9/9f5309e33d958766dd6c04cb6bd3400f19a862ea.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.stephaneginier.nomad&hl=es_MX",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"Nomad Sculp"
-        },        
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"RealityScan",
             "description": "Escanea objetos del mundo real y conviértelos en modelos 3D de alta calidad<br>por Epic Games<br>Fotogrametría para los compas",
             "img": "impg/realityscan.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.epicgames.realityscan",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"RealityScan"
-        },      
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"MeowFace",
             "description": "Facetracking app, envia ARKit-style blendshapes a varias aplicaciones VTuber(Inochi Session, VSeeFace, Live2D)<br>el Prof. Portillo le sabe a esto XD",
             "img": "impg/meowface.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://suvidriel.itch.io/meowface",
             "modelo": "Android",
-            "fecha":"2026-03-01",
-            "titulo":"MeowFace"
+            "fecha":"2026-03-01"
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                {
+        {
+            "titulo":"ChatGPT",
             "description": "ChatGPT",
             "img": "impg/chatgpt.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://chat.openai.com/",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"ChatGPT"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"DeepSeek",
             "description": "DeepSeek",
             "img": "impg/deepseek.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://chat.deepseek.com/",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"DeepSeek"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Qwen AI",
             "description": "IA de Alibaba",
             "img": "impg/qwenai.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://chat.qwen.ai/",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Qwen AI"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Bing COPILOT",
             "description": "Bing COPILOT",
             "img": "impg/bingcopilot.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Bing COPILOT"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Google Bard",
             "description": "Google Bard",
             "img": "impg/googlebard.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://bard.google.com/chat",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Google Bard"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Gemini",
             "description": "Tip: Genera un nuevo chat para volver a tener tokens",
             "img": "impg/nanobanana.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image-preview",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Gemini"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Emergent",
             "description": "Emergent",
             "img": "https://iaperfecta.com/wp-content/uploads/2025/05/emergent.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://app.emergent.sh/home",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Emergent"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"DeepL",
             "description": "Traductor de idiomas por IA",
             "img": "impg/deepltranslator.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.deepl.com/translator",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"DeepL"
-        },        
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Claude",
             "description": "Claude",
             "img": "https://hipaatimes.com/hubfs/Is%20Claude%20AI%20HIPAA%20compliant-1.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://claude.ai/new",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Claude"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Bing Creator",
             "description": "Generador de imagenes por IA",
             "img": "impg/bingcreator.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.bing.com/images/create",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Bing Creator"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Leonardo.AI",
             "description": "Generador de imagenes por IA",
             "img": "impg/leonardoai.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://app.leonardo.ai/",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Leonardo.AI"
-        },                
+            "fecha":"2026-03-01"
+        },
         {
+            "titulo":"Lovart",
             "description": "Generador de imagenes por IA",
             "img": "impg/lovart.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.lovart.ai/fr",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"Lovart"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"DeepFiction",
             "description": "Generador de historias con imagenes/videos por IA",
             "img": "impg/deepfiction.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.deepfiction.ai/",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"DeepFiction"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"You.com",
             "description": "Motor de búsqueda con IA(Tipo Google) que proporciona acceso a herramientas de IA personalizables",
             "img": "impg/youcom.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://you.com/home",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"You.com"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"FlowGPT",
             "description": "FlowGPT",
             "img": "impg/flowgpt.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://flowgpt.com/",
             "modelo": "IA",
-            "fecha":"2026-03-01",
-            "titulo":"FlowGPT"
+            "fecha":"2026-03-01"
         },
         {
-            "description": "📈🤨📉<br>🔴🤲🏾🔵<br><a  target=_blank href=https://github.com/jtydhr88/ComfyUI-qwenmultiangle?tab=readme-ov-file#installation>Nodo para ComfyUI</a>",
+            "titulo":"Qwen Image Edit 2511 — 3D Camera Control",
+            "description": "📈🤨📉<br>🔴🤲🏾🔵<br><a target=_blank href=https://github.com/jtydhr88/ComfyUI-qwenmultiangle?tab=readme-ov-file#installation>Nodo para ComfyUI</a>",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfkJzTiJZ5xUMlzzgGCOfmsV6yLJEyEuu_A&s",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://huggingface.co/spaces/multimodalart/qwen-image-multiple-angles-3d-camera",
             "modelo": "IA",
-            "fecha":"2026-03-08",
-            "titulo":"Qwen Image Edit 2511 — 3D Camera Control"
+            "fecha":"2026-03-08"
         },
         {
+            "titulo":"Stitch Beta",
             "description": "Es una herramienta potenciada por IA que ayuda a los creadores de apps a generar interfaces de usuario de alta calidad para apps web y móviles, y a exportarlas fácilmente a Figma o acceder directamente al código de frontend.",
             "img": "https://oopy.lazyrockets.com/api/v2/notion/image?src=attachment%3Ac11b1374-65fa-41ee-b897-7842ea6ccc23%3AIMG_2313.gif&blockId=226fdea8-0034-805e-960b-d9724787d65d",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://stitch.withgoogle.com/",
             "modelo": "IA",
-            "fecha":"2026-03-09",
-            "titulo":"Stitch Beta"
+            "fecha":"2026-03-09"
         },
 
 
@@ -1760,134 +2236,181 @@
 
 
         {
-            "description": "Sololearn - Learn to Code",
+            "titulo":"Sololearn - Learn to Code",
+            "description": "Plataforma en línea con más de 25 cursos en línea centrados en lenguajes de programación populares como Python, C++, Java, C#, JavaScript, etc.",
             "img": "impg/sololearnandroid.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://play.google.com/store/apps/details?id=com.sololearn&hl=es_MX&gl=US",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Sololearn"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"FraudGPT",
             "description": "FraudGPT",
             "img": "impg/fraudgpt.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://flowgpt.com/p/fraudgpt-16",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"FraudGPT"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Git",
             "description": "Sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para gestionar el historial de cambios en archivos de código fuente de forma eficiente.",
             "img": "impg/git.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://git-scm.com/downloads",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Git"
+            "fecha":"2026-03-01"
         }, 
         {
+            "titulo":"eDEX-UI",
             "description": "Programa que emula al CMD con cosillas extra 🐱‍👤🕸",
             "img": "impg/edexui.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/GitSquared/edex-ui/releases",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"eDEX-UI"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Sourcetree",
             "description": "Sirve para gestionar repositorios de Git y Mercurial en Windows y Mac. Permite realizar operaciones complejas como commits, push, pull, ramas y merges de forma visual e intuitiva",
             "img": "impg/sourcetree.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.sourcetreeapp.com/",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Sourcetree"
+            "fecha":"2026-03-01"
         },                
         {
+            "titulo":"Wireshark",
             "description": "Es un analizador de protocolos de red de código abierto. Se utiliza para capturar y examinar datos que se transmiten a través de redes informáticas en tiempo real. Wireshark permite a los usuarios ver detalles minuciosos de los paquetes de datos, lo que facilita la identificación y solución de problemas de red, el análisis de seguridad y la comprensión del comportamiento del tráfico de red.",
             "img": "impg/wireshark.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.wireshark.org/download.html",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Wireshark"
+            "fecha":"2026-03-01"
         },     
         {
+            "titulo":"Nmap",
             "description": "Herramienta de código abierto para la exploración de redes y auditorías de seguridad. Permite descubrir hosts y servicios en una red informática, creando un mapa de la red. Nmap utiliza paquetes IP crudos para determinar qué hosts están disponibles en la red, qué servicios ofrecen, qué sistemas operativos están ejecutando, qué tipos de filtros de paquetes/firewalls están en uso, y otras características.",
             "img": "https://blog.walthercuro.com/wp-content/uploads/2025/03/image-2.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://nmap.org/download.html",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Nmap"
+            "fecha":"2026-03-01"
         },             
         {
+            "titulo":"XAMPP",
             "description": "Permite crear un entorno de servidor web local en tu ordenador para desarrollar, probar y depurar aplicaciones web (especialmente con PHP y MySQL) sin necesidad de internet.",
             "img": "impg/xampp.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.apachefriends.org/es/download.html",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"XAMPP"
+            "fecha":"2026-03-01"
         },                
         {
+            "titulo":"Visual Studio Code",
             "description": "Es un editor de código fuente ligero y gratuito de Microsoft, utilizado para escribir, depurar y desarrollar software en múltiples lenguajes.",
             "img": "impg/vscode.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://code.visualstudio.com/",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Visual Studio Code"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Anaconda",
             "description": "Es un IDE que te permite tener lenguajes de programación Python y R, que se utilizan para aplicaciones de ciencia de datos.",
             "img": "impg/anaconda.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.anaconda.com/download",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Anaconda"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Netlify",
             "description": "Netlify",
             "img": "impg/netlify.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://app.netlify.com/",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Netlify"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Sololearn",
             "description": "Plataforma en línea con más de 25 cursos en línea centrados en lenguajes de programación populares como Python, C++, Java, C#, JavaScript, etc.",
             "img": "impg/sololearn.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.sololearn.com/",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Sololearn"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"PageSpeed Insights",
             "description": "Herramienta de Google que analiza el rendimiento de una página web en dispositivos móviles y de escritorio",
             "img": "impg/pagespeedinsi.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://pagespeed.web.dev/",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"PageSpeed Insightsge"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"PSeInt on rollApp",
             "description": "PSeInt es un intérprete de pseudocódigo para estudiantes de programación de habla hispana.",
             "img": "impg/pseint.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.rollapp.com/app/pseint",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"PSeInt on rollApp"
+            "fecha":"2026-03-01"
         },
         {
-            "description": "Sitio web sobre malware y ciberseguridad. Afirma tener el mayor repositorio de malware en línea</br>Si no le sabes, no descargues nada de ahí",
+            "titulo":"vx-underground",
+            "description": "Sitio web sobre malware y ciberseguridad. Afirma tener el mayor repositorio de malware en línea. Si no le sabes, no descargues nada de ahí",
             "img": "impg/vxunderground.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://vx-underground.org/",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"vx-underground"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Artemis",
             "description": "Escáner modular de vulnerabilidades. Es la herramienta que impulsa las actividades de escaneo de CERT PL comprobando diversos aspectos de la seguridad del sitio web y creando mensajes fáciles de leer listos para ser enviados a las organizaciones escaneadas.",
             "img": "https://media.licdn.com/dms/image/v2/D4D22AQGVFg68qEFGPw/feedshare-shrink_800/B4DZRKzO9cGUAk-/0/1736421732600?e=2147483647&v=beta&t=vJD96ElKSkqPZUZxvsleDOOqwojWpjKzopqiDzmnvIA",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/CERT-Polska/Artemis",
             "modelo": "Coding",
-            "fecha":"2026-03-01",
-            "titulo":"Artemis"
-        }, 
-
+            "fecha":"2026-03-01"
+        },
 
 
 
@@ -1924,28 +2447,37 @@
 
 
         {
+            "titulo":"ExifTool",
             "description": "Es una aplicación de CMD para leer, escribir y editar metadatos en una amplia variedad de archivos",
             "img": "impg/exiftool.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://exiftool.org/",
             "modelo": "Metadatos",
-            "fecha":"2026-03-01",
-            "titulo":"ExifTool"
+            "fecha":"2026-03-01"
         },                
         {
+            "titulo":"Google Dorking Documentation",
             "description": "El arte de buscar en Google utilizando operadores avanzados para encontrar información específica que no es fácilmente accesible a través de búsquedas estándar.",
             "img": "impg/googledorking.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.splunk.com/en_us/blog/learn/google-dorking.html",
             "modelo": "Metadatos",
-            "fecha":"2026-03-01",
-            "titulo":"Google Dorking Documentation"
+            "fecha":"2026-03-01"
         },                        
         {
+            "titulo":"Facebook Crawler",
             "description": "Es una herramienta que permite verificar y depurar cómo Facebook ve y extrae información de sus páginas web.",
             "img": "impg/facebookcrawler.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://developers.facebook.com/tools/debug/",
             "modelo": "Metadatos",
-            "fecha":"2026-03-01",
-            "titulo":"Facebook Crawler"
+            "fecha":"2026-03-01"
         },
 
 
@@ -1988,122 +2520,160 @@
 
 
 
-
         {
+            "titulo":"GitHub",
             "description": "GitHub",
             "img": "impg/github.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"GitHub"
+            "fecha":"2026-03-01"
         },                                        
         {
+            "titulo":"Google Dorking/Hacking",
             "description": "Repo con varios dorks hecho por speinador en donde encontraras dorks y ejemplos de uso",
             "img": "impg/googledorkinggithub.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/speinador/Google_Hacking",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"Google Dorking/Hacking"
+            "fecha":"2026-03-01"
         }, 
         {
-            "description": "Releases de la APK<br>de Blender",
+            "titulo":"Blender APK Releases",
+            "description": "Releases de la APK de Blender",
             "img": "impg/blenderandroidreleases.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/dshawshank/APP-android_arm64/releases/",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"Blender APK Releases"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Screencast Keys",
             "description": "Permite ver dentro del viewport de Blender las teclas presionadas del teclado y mouse.",
             "img": "impg/screencastkeysblender.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/nutti/Screencast-Keys",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"Screencast Keys"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"fSPY Ejecutable",
             "description": "Software open source de camera matching (coincidencia de cámara) que estima los parámetros de una cámara real (longitud focal, posición, orientación) a partir de una fotografía.",
             "img": "impg/fspyexe.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/stuffmatic/fSpy/releases/tag/v1.0.3",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"fSPY Ejecutable"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"fSPY Addon",
             "description": "Add-On Blender",
             "img": "impg/fspyadd.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/stuffmatic/fSpy-Blender/releases/tag/v1.0.3",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"fSPY Addon"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Blender CNC",
             "description": "Blender CNC",
             "img": "impg/cncblender.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/manahter/nCNC",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"Blender CNC"
+            "fecha":"2026-03-01"
         },                
         {
+            "titulo":"BlenderGPT",
             "description": "BlenderGPT",
             "img": "impg/blendergpt.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/gd3kr/BlenderGPT?tab=MIT-1-ov-file",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"BlenderGPT"
+            "fecha":"2026-03-01"
         },                
         {
+            "titulo":"BlenderDev",
             "description": "Repo de Blender",
             "img": "impg/blenderdev.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/blender/blender",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"BlenderDev"
+            "fecha":"2026-03-01"
         },                        
         {
+            "titulo":"Open Moonray",
             "description": "Motor de renderizado de alto rendimiento, de código abierto (open source) y basado en trazado de rayos (path-tracing), desarrollado por DreamWorks Animation",
             "img": "impg/moonray.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/dreamworksanimation/openmoonray",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"Open Moonray"
+            "fecha":"2026-03-01"
         },                        
         {
+            "titulo":"Arduino Xbox Series X Controller ESP32",
             "description": "Librería para usar un control Xbox Series X con Arduino y ESP32",
             "img": "https://hackster.imgix.net/uploads/attachments/1897393/_UsbWR6p3M0.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/asukiaaa/arduino-XboxSeriesXControllerESP32?tab=readme-ov-file",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"Arduino Xbox Series X Controller ESP32"
+            "fecha":"2026-03-01"
         },                                   
         {
+            "titulo":"copyparty",
             "description": "Servidor de archivos web de código abierto y autohospedado",
             "img": "https://cdn.ilsoftware.it/Jlxwz0BRl9Qr54du9SF2Y459nd8=/480x300/filters:format(webp)/https://www.ilsoftware.it/app/uploads/2025/07/copyparty-file-server.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/9001/copyparty",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"copyparty"
+            "fecha":"2026-03-01"
         },                    
         {
+            "titulo":"RemoveWindowsAI",
             "description": "¿Porqué? La versión actual de Windows 11 para 25H2 y futuras incluirán cada vez más funciones y componentes de IA. Este script pretende eliminar TODAS estas funciones para mejorar la experiencia del usuario, la privacidad y la seguridad.",
             "img": "https://i0.wp.com/laverdadnoticias.com/wp-content/uploads/2026/01/RemoveWindowsAI-desactiva-la-IA-en-Windows-11-paso-a-paso.webp",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/zoicware/RemoveWindowsAI?tab=readme-ov-file#how-to-use",
             "modelo": "GitHub",
-            "fecha":"2026-03-06",
-            "titulo":"RemoveWindowsAI"
+            "fecha":"2026-03-06"
         },                    
         {
-            "description": "Esta utilidad es una recopilación de tareas de Windows que realizo en cada sistema Windows que utilizo. Está pensado para agilizar instalaciones, deshacer ajustes con desplom, solucionar problemas con la configuración y arreglar actualizaciones de Windows. ",
+            "titulo":"Chris Titus Tech's Windows Utility",
+            "description": "Esta utilidad es una recopilación de tareas de Windows que realizo en cada sistema Windows que utilizo. Está pensado para agilizar instalaciones, deshacer ajustes con desplom, solucionar problemas con la configuración y arreglar actualizaciones de Windows.",
             "img": "https://cidgraphics.com/wp-content/uploads/chris-titus-logo-img3.webp",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://github.com/ChrisTitusTech/winutil",
             "modelo": "GitHub",
-            "fecha":"2026-03-01",
-            "titulo":"Chris Titus Tech's Windows Utility"
-        }, 
-     
-
-
+            "fecha":"2026-03-01"
+        },
 
 
 
@@ -2137,297 +2707,401 @@
 
 
         {
+            "titulo":"Driver Identifier",
             "description": "Software gratuito para uso personal, tiene la mayor base de datos de controladores de Windows para todas las computadoras portátiles y de escritorio.",
             "img": "impg/driverident.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.driveridentifier.com/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Driver Identifier"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Autodesk Education",
             "description": "Debes iniciar sesión con tu cuenta normal y, en verificar, subes tu comprobante de inscripción para tener acceso a los softwares",
             "img": "impg/autodeskeducation.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual#card-f360",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Autodesk Education"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"WinRAR x64",
             "description": "XD",
             "img": "impg/winrar.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1ull86dlglB5qpfxpDnS1n9zam2zBLXiq/view?usp=sharing",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"WinRAR x64"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Escritorio remoto de Chrome",
             "description": "Página para conectarse de forma remota a la pc<br><a  target=_blank href=https://chromewebstore.google.com/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai>Extención Chrome</a>",
             "img": "impg/remotecontrolpc.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://remotedesktop.google.com/home",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Escritorio remoto de Chrome"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Fast.com",
             "description": "Comprueba la velocidad de tu Internet",
             "img": "impg/fastdotcom.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://fast.com/es/#",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Fast.com"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"iLovePDF",
             "description": "I♥PDF",
             "img": "impg/ilovepdf.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.ilovepdf.com/es",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"iLovePDF"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"dafont",
             "description": "Página donde encontraras fuentes para Word",
             "img": "impg/dafont.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.dafont.com/es/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"dafont"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"MIT App Inventor",
             "description": "Página de creación de apps \"sencillas\" del MIT",
             "img": "impg/appinventor.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://ai2.appinventor.mit.edu/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"MIT App Inventor"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Encontrar tu móvil",
             "description": "Página para encontrar tu teléfono, debe contar con WIFI o datos y tu cuenta",
             "img": "impg/googlefind.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.google.com/android/find/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Encontrar tu móvil"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Heavens Above",
             "description": "Página para observar y rastrear satélites que orbitan la Tierra",
             "img": "impg/heavensabove.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.heavens-above.com/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Heavens Above"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Radio Garden Web",
             "description": "Radio Garden",
             "img": "impg/radiogardenpc.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.radio.garden/listen/dfm-psy-trance/PQMJuLxX",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Radio Garden Web"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"VideoSmaller",
             "description": "Página para reducir el peso de un video no mayor a 499MB",
             "img": "impg/videosmaller.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.videosmaller.com/es/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"VideoSmaller"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"y2mate.bet",
             "description": "Página para descargar videos de YouTube a mp4 o mp3",
             "img": "impg/you2mate.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://y2mate.bet/en233/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"y2mate.bet"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Programasvirtualespc.net",
             "description": "Página para descargar multitud de programas, la contraseña es:<br>www.programasvirtualespc.net<br>Tiene MUCHOS anuncios.",
             "img": "impg/pvpc.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.programasvirtualespc.net/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Programasvirtualespc.net"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"Google Academico",
             "description": "Navegador super útil si lo sabes utilizar xd",
             "img": "impg/googleaca.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://scholar.google.es/schhp?hl=es",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Google Academico"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Cuevana 3",
             "description": "Uno de los sitios web de piratería más populares y grandes de Latinoamérica, dedicado a la transmisión gratuita (streaming) de series y películas sin tener los derechos de autor.",
             "img": "impg/cuevana.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://cue.cuevana3.nu/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Cuevana 3"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"TokyVideo",
             "description": "Series originales gratis en streaming para escritorio, consolas, Smart TV, Mac, móviles y tabletas",
             "img": "impg/tokyvideo.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.tokyvideo.com/es",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"TokyVideo"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"pelisplushd",
             "description": "Página para ver películas en streaming, tiene una gran variedad de películas y series",
             "img": "https://image.winudf.com/v2/image1/cGVsaXNwbHVzLmFwbGlrZnRfc2NyZWVuXzRfMTY0Mjk3OTI4OV8wMzQ/screen-4.jpg?fakeurl=1&type=.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www25.pelisplushd.to/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"pelisplushd"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"DroidCam CLient",
             "description": "Aplicación de escritorio (para Windows o Linux) que, junto con la app móvil, permite usar tu celular Android o iOS como webcam inalámbrica o USB de alta calidad.",
             "img": "impg/droidcam.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.dev47apps.com/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"DroidCam CLient"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"CrystalDiskMark V_9_0_2",
             "description": "Herramienta gratuita de código abierto para Windows diseñada para medir el rendimiento de velocidad de lectura y escritura de unidades de almacenamiento.",
             "img": "impg/crystaldiskmark.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://sourceforge.net/projects/crystaldiskmark/files/9.0.2/CrystalDiskMark9_0_2.exe/download",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"CrystalDiskMark V_9_0_2"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"HDD Regenerator 2018",
             "description": "Herramienta de software especializada en reparar sectores defectuosos (bad sectors) en discos duros mecánicos (HDD) e incluso SSD en versiones modernas (2024).",
             "img": "impg/hddregenerator.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://drive.google.com/file/d/1jPl9rKJVwh94Me4BcxmRj6bcSm5BwBx2/view?usp=sharing",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"HDD Regenerator 2018"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"MSI Afterburner",
             "description": "Es el software de overclocking de tarjetas gráficas más reconocida y utilizada del mundo.",
             "img": "impg/msiafterburner.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1707365167~acl=/*~hmac=850193a09bf2aca57899a9fbc4bbe0e7065b78a3a8d0d1ea358883b24eeb8cac",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"MSI Afterburner"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Plagiarism",
             "description": "Detector de plagio",
             "img": "impg/plagiarism.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://plagiarismdetector.net/es",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Plagiarism"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"APA Generador",
             "description": "Generador APA de Scribbr",
             "img": "impg/formatoapa.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.scribbr.es/citar/generador/apa/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"APA Generador"
+            "fecha":"2026-03-01"
         },        
         {
+            "titulo":"BibGuru",
             "description": "Generador de Citas APA",
             "img": "impg/biggurucitas.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://app.bibguru.com/p/71554a6d-0c19-4076-b458-e8cad5f763be",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"BibGuru"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Video Highlight",
             "description": "Resumidor de videos de YouTube",
             "img": "impg/videohighlight.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://videohighlight.com/account/login?callbackUrl=https%3A%2F%2Fvideohighlight.com%2Fvideo%2Fai%2Fnew",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Video Highlight"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"OBS",
             "description": "Programa gratuito y de código abierto diseñado para la grabación de video y la transmisión en vivo (streaming) de alto rendimiento.",
             "img": "impg/obs.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://obsproject.com/download",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"OBS"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Lucid",
             "description": "Puedes crear diagramas de flujo",
             "img": "impg/lucid.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://lucid.app/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Lucid"
+            "fecha":"2026-03-01"
         },                
         {
+            "titulo":"Noiiz",
             "description": "Banco de sonidos",
             "img": "impg/noiiz.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.noiiz.com/sounds",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Noiiz"
+            "fecha":"2026-03-01"
         },                
         {
+            "titulo":"Splice Sounds",
             "description": "Banco de sonidos por créditos mensuales",
             "img": "impg/splicesounds.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://splice.com/sounds",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Splice Sounds"
+            "fecha":"2026-03-01"
         },                
         {
+            "titulo":"Kubernetes",
             "description": "Orquesta implementaciones mediante una API de código abierto, agrupando los contenedores en pods para escalar según la demanda y la disponibilidad de recursos . Kubernetes también automatiza el descubrimiento de servicios, el balanceo de carga y la asignación de recursos, y supervisa el estado para permitir la autorreparación reiniciando o replicando contenedores.",
             "img": "impg/kubernetes.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://kubernetes.io/releases/download/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Kubernetes"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Henry Matzar",
             "description": "Herramientas gratuitas para diseñadores",
-            "img": "https://scontent.flov1-1.fna.fbcdn.net/v/t39.30808-6/480383815_655156730200973_4701650517180624840_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEDfrdsOufyJWeTMLSLW6g8mznwD8kG4mKbOfAPyQbiYlzLLakZDbIX-vYZsEBjpy10tXhYhQe4nI3GZ4_vFxKA&_nc_ohc=u5T6TvmUbVMQ7kNvwFXKOLc&_nc_oc=AdnQ2SXikOcx6uBt1-vZ_Qnz1blGq5S4gU39zP9ksV4fXfiPwusnrZ3q2d7jVnAxe31EOUZVixCsoqtoQQMfmq1f&_nc_zt=23&_nc_ht=scontent.flov1-1.fna&_nc_gid=Dcq7D2dIlQfTTMz5AsXvcQ&_nc_ss=8&oh=00_Afwfs_LsEI9iHuqUSK4mfYuGR4npl1QmvPn1MmI6l6LxcA&oe=69B0414F",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlQyRM68VTy2CLHwRsrJQb9IuMOJdR3wDsyQ&s",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.henrymatzar.com/herramientas/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Henry Matzar"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"Mapa Metro CDMX",
             "description": "Mapa de las lineas del metro de CDMX<br><a  target=_blank href=https://elmetrocdmx.com/wp-content/uploads/2022/03/plano_red19ok-1-836x1024.png>Link mapa unicamente de las lineas del metro</a>",
             "img": "https://www.entornoturistico.com/wp-content/uploads/2023/10/Mapa-Metro-CDMX-completo-150x150.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://semovi.cdmx.gob.mx/storage/app/media/Mapa%20MI%20CDMX%20JPG.jpg?utm_source=web&utm_medium=boton&utm_campaign=naranja",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"Mapa Metro CDMX"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"PingMe",
             "description": "Servicio de mensajería instantánea enfocado en la privacidad y seguridad de los usuarios</br>Es de pago y el mejor pais para elegir es UnitedKingdom(demomento)",
             "img": "https://play-lh.googleusercontent.com/1Qzyn7aq31Y5-bYwHLOq_FOOomFnnqE7bX6WJm-SPc8wvcdK05ZV2DrDY64FLNkono4",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://pingme.tel/",
             "modelo": "Otros",
-            "fecha":"2026-03-01",
-            "titulo":"PingMe"
+            "fecha":"2026-03-01"
         },         
         {
+            "titulo":"TeKnoLiberty",
             "description": "\"Somos una comunidad de cypherpunks, buscando escapar de la vigilancia masiva y algoritmos manipuladores.\" - TeknoLiberty",
             "img": "https://static.vecteezy.com/system/resources/thumbnails/010/227/846/small/silhouette-hands-and-broken-chains-freedom-concept-photo.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://teknoliberty.com",
             "modelo": "Otros",
-            "fecha":"2026-03-07",
-            "titulo":"TeKnoLiberty"
+            "fecha":"2026-03-07"
         },         
         {
+            "titulo":"Google Labs",
             "description": "Es un programa y plataforma donde usuarios pueden probar experimentos tempranos de IA, búsqueda y herramientas de Workspace (como Gemini) antes de su lanzamiento oficial. Funciona como un espacio colaborativo para interactuar con tecnología en desarrollo, dar comentarios y moldear el futuro de los productos de Google.",
             "img": "https://play-lh.googleusercontent.com/avC94Zn1AaROHYut4iVOJCn7aHAjKmQdeZvKjxB1DW2MYK-Skec84SIGz38ciJqBEw48",
+            "imgHover": "",
             "iframeHover": "https://www.youtube.com/embed/A4CE6gH30vw?si=RSkzcTlY6GUj1pg5",
+            "vidHover": "",
             "enlace": "https://labs.google/",
             "modelo": "Otros",
-            "fecha":"2026-03-10",
-            "titulo":"Google Labs"
-        }, 
-        
-        
-
+            "fecha":"2026-03-10"
+        },
 
 
 
@@ -2448,36 +3122,49 @@
 
 
         {
+            "titulo":"N+ Foro",
             "description": "Canal 4<br>N+ FORO En Vivo",
             "img": "https://video-assets.nmas.com.mx/1237568/snapshot.webp?v=1726608200",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.nmas.com.mx/foro-tv/",
             "modelo": "Canales TV",
-            "fecha":"2026-03-09",
-            "titulo":"N+ Foro"
+            "fecha":"2026-03-09"
         },
         {
+            "titulo":"Canal 6",
             "description": "Canal 6 MTCH-TDT En Vivo<br>Multimedios Televisión<br><a  target=_blank href=https://mdstrm.com/live-stream/5f2d9d6ff17144074bd8a284>Recarga la página directamente en la barra de búsqueda</a>",
             "img": "impg/canalseiscdmx.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.multimediostv.com/en-vivo/cdmx",
             "modelo": "Canales TV",
-            "fecha":"2026-03-01",
-            "titulo":"Canal 6"
+            "fecha":"2026-03-01"            
         },
         {
+            "titulo":"Azteca 7",
             "description": "Azteca 7 XHIMT-TDT En Vivo",
             "img": "impg/canalsiete.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://mdstrm.com/live-stream/609ad46a7a441137107d7a81",
             "modelo": "Canales TV",
-            "fecha":"2026-03-01",
-            "titulo":"Azteca 7"
+            "fecha":"2026-03-01"
+            
         },
         {
+            "titulo":"ADN40",
             "description": "ADN40 En Vivo",
             "img": "impg/adncuarenta.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://mdstrm.com/live-stream/60b578b060947317de7b57ac",
             "modelo": "Canales TV",
-            "fecha":"2026-03-01",
-            "titulo":"ADN40"
+            "fecha":"2026-03-01"
         },
 
 
@@ -2503,76 +3190,106 @@
 
 
         {
+            "titulo":"Web Devs",
             "description": "Recopilación de tutoriales y recursos para desarrolladores web",
-            "img": "https://www.comunicare.es/wp-content/uploads/2021/08/desarrollo-web.jpg",
+            "img": "https://thumbs.dreamstime.com/b/web-development-icon-trendy-flat-vector-white-background-programming-collection-illustration-can-be-use-mobile-eps-130326341.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://desarrolladoresweb.org/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01",
-            "titulo":"Web Devs"
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"CSS Animations",
             "description": "CSS Text Animations",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ94h8ncQrOuwcqUFAji6UfiZ3YjCtszBDLyA&s",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://prismic.io/blog/css-text-animations",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01",
-            "titulo":"CSS Animations"
+            "fecha":"2026-03-01"            
         },
         {
+            "titulo":"HTML Colors",
             "description": "HTML Color Codes",
             "img": "https://htmlcolorcodes.com/icon2.png?e54694489ec32db1",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://htmlcolorcodes.com/es/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01",
-            "titulo":"HTML Colors"
+            "fecha":"2026-03-01"
+            
         },
         {
+            "titulo":"CSS Gradient",
             "description": "Generador de degradados para CSS",
             "img": "https://cdn-1.webcatalog.io/catalog/css-gradient/css-gradient-icon-filled-256.png?v=1736412961294",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://cssgradient.io/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01",
-            "titulo":"CSS Gradient"
+            "fecha":"2026-03-01"            
         },
         {
+            "titulo":"Can I use...",
             "description": "Comprueba la compatibilidad de las características web en los navegadores",
             "img": "https://super-monitoring.com/blog/wp-content/uploads/2016/09/caniuse.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://caniuse.com/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01",
-            "titulo":"Can I use..."
+            "fecha":"2026-03-01"
         },
         {
+            "titulo":"WebDevTrick",
             "description": "Recopilación de tutoriales y recursos para desarrolladores web",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1xRJF2OeyZDsbL1DhzByqgwEImsmmUjuPQ&s",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://webdevtrick.com/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01",
-            "titulo":"WebDevTrick"
+            "fecha":"2026-03-01"            
         },
         {
+            "titulo":"W3Schools",
             "description": "Learn to Code With the <strong>world's largest web developer</strong> site.",
             "img": "https://cdn.prod.website-files.com/60ffdd9e3c66d71b667eba0b/6470ee2574766c89099e3497_JcqFK_yAO6Av33xfNUmTM0r7f2bXs1HA0eqm_j7VTdw.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.w3schools.com/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-08",
-            "titulo":"W3Schools"
+            "fecha":"2026-03-08"
+            
         },
         {
+            "titulo":"Model Viewer",
             "description": "Visualizador de modelos 3D en el navegador",
             "img": "https://pbs.twimg.com/profile_images/1161337646460760064/SFFIMxqt_400x400.jpg",
+            "imgHover": "https://user-images.githubusercontent.com/240083/66498161-7f095480-ea72-11e9-8b0e-0cb974133bbb.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://modelviewer.dev/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01",
-            "titulo":"Model Viewer"
+            "fecha":"2026-03-01"
+            
         },
         {
+            "titulo":"Blender con DLSS",
             "description": "Custom Built de Blender: aquí están los pasos para compilar Blender, además de que puedes descargarlo. :D",
             "img": "imgDlSS/splashMod.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://lagoma.netlify.app/index.html#blenderDLSS",
             "modelo": "Otros",
-            "fecha":"2026-03-09",
-            "titulo":"Blender con DLSS"
+            "fecha":"2026-03-09"
         },
 
 
@@ -2593,12 +3310,16 @@
 
 
         {
+            "titulo":"WrongCaesar9",
             "description": "<a  target=_blank href=https://www.instagram.com/wrongcaesar9.0/>Mi Instagram</a><br><a  target=_blank href=https://www.thingiverse.com/wrongcaesar9/designs>Mi Thingiverse</a><br><a  target=_blank href=https://cults3d.com/es/usuarios/WrongCaesar9>Mi Cults</a>",
             "img": "impg/miinsta.png",
+            "imgHover": "https://media.tenor.com/5XNfYyBGDNgAAAAM/wazappp.gif",
+            "iframeHover": "",
+            "vidHover": "",
             "enlace": "https://www.instagram.com/wrongcaesar9.0/",
             "modelo": "Otros",
-            "fecha":"2025-02-01",
-            "titulo":"Blender DLSS"
+            "fecha":"2025-02-01"
+            
         }
    
     ]
