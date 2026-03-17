@@ -1796,3 +1796,20 @@ header,
   background: #9c408e;
   transition: 0.5s;
 }
+
+
+
+.marquee-js {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(45deg,#2b2b2b, #2b2b2b, #363535, #2b2b2b, #2b2b2b);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.marquee-content-js {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+}

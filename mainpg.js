@@ -680,12 +680,28 @@ function copyCode(button) {
   }
 }
 
-
-
-
 Código de fecha de actualización
 document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";*/
 const dateText = "2026/03/09";
-const hourText = "22:525"
+const hourText = "22:52"
 const dateContenedor = document.getElementById("date-update");
 dateContenedor.innerHTML = "<p style=\"font-size: 18px;\">Copyright © 2026 \"La Goma\"</p>"+"<p style=\"font-size: 16px;\">Última actualización: "+ dateText + " at: " + hourText + "</p>";
+
+
+
+const marquee = document.querySelector('.marquee-content-js');
+let position = window.innerWidth;
+const speed = 2; // píxeles por frame
+
+function moveMarquee() {
+    position -= speed;
+    
+    if (position < -marquee.offsetWidth) {
+        position = window.innerWidth;
+    }
+    
+    marquee.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(moveMarquee);
+}
+
+moveMarquee();
