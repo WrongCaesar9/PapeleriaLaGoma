@@ -286,6 +286,30 @@
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-01"
         },
+        {
+            "titulo":"PoseMy.Art",
+            "description": "Web \"gratuita\" de modelado 3D diseñada para que artistas, tanto 2D como 3D, creen referencias personalizadas de posturas humanas, personajes, animales y objetos.",
+            "img": "https://pbs.twimg.com/media/FWxkgSHaAAA5ffp.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "https://posemyart3.nyc3.cdn.digitaloceanspaces.com/video/multiple_props.webm",
+            "enlace": "https://posemy.art/",
+            "modelo": "Modelado y Diseño 3D",
+            "fecha":"2026-03-17"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
