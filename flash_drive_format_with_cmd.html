@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
     <!-- Fecha de publicación/creación (Dublin Core) <a  target=_blank href=https://lagoma.netlify.app/portfolio>Mi portfolio</a>-->
     <meta name="dcterms.created" content="2025-04-01">
@@ -49,30 +49,32 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="stylesprograms.css">
-
+    
     <!-- Bloque de código con botón copiar -->
     <!-- Incluye Prism -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="marquee-wrapper">
+    
             <div class="marquee-wrapper">
-
-                            <div class="marquee-wrapper">
                 <div id="marqueeJS" class="marquee-js">
                     <div class="marquee-content-js">
                         Hora: <span style="font-family:'Times New Roman', Times, serif" id="datetime"></span> Si detectas un
                         link caído, repórtamelo 🤙🏽 - Espero ir agregando más programas y páginas útiles <a
                             class="thingi-btn link-btn" href="/Archivos/Ubica-T.apk">App TESChi</a>
-            
+    
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
+        <div>
+    
             <div class="header-brand">
                 <a id="Logo_LaGoma" title="La Goma Piratera" href="https://lagoma.netlify.app/indexprograms">
                     <img class="header__logo-image" src="/logos/lagomaGM.png" alt="lagoma">
@@ -85,37 +87,21 @@
                 <div class="nav-group">
                     <button class="thingi-btn"
                         onclick="location.href='https://lagoma.netlify.app/index.html#programas'">Programas</button>
-                    <button class="thingi-btn" onclick="location.href='https://lagoma.netlify.app/index.html#videos'">Videos</button>
-                    <button class="thingi-btn" onclick="location.href='https://lagoma.netlify.app/index.html#addons'">Addons</button>
+                    <button class="thingi-btn"
+                        onclick="location.href='https://lagoma.netlify.app/index.html#videos'">Videos</button>
+                    <button class="thingi-btn"
+                        onclick="location.href='https://lagoma.netlify.app/index.html#addons'">Addons</button>
                     <button class="thingi-btn active" onclick="navegar('USBFormatCMD')">¿Sirve?</button>
                     <button class="thingi-btn blenderDLSS"
                         onclick="location.href='https://lagoma.netlify.app/index.html#blenderDLSS'">Blender con
                         DLSS</button>
                     <button class="thingi-btn" onclick="window.open('https://lagoma.netlify.app/index.html#sugerencia')"
                         style="display: none;">¿Algo más?</button>
-
+    
                 </div>
-
+    
             </div>
-
-            <!--<button onclick="history.back()">Retroceder</button>
-<button onclick="history.forward()">Avanzar</button>
-        <a id="whatsapp" title="WhatsApp"><img class="btn-whatsapp2" src="https://clientes.dongee.com/whatsapp.png"
-                style="max-width: 90px; border-radius: 10px;max-height: 90px;margin-top: 15px;" align="right" alt="Whatsapp"
-                onclick="window.location.href='https://wa.me/525515833826'" fetchpriority="high"></a>
-   
-   
-   
-   <br><a  target=_blank href=https://www.facebook.com/josuedavid.juarezgomez.37/>Mi FB</a>
-   
-                -->
-
         </div>
-        </div>
-        <!-- Filtro por precio -->
-        <select visibility: hidden id="filtro-precio" style="height: 0px;width: 0px;">
-            <option value="0">NA</option>
-        </select>
     </header>
 
     <main>
@@ -369,39 +355,9 @@ Ten cuidado al utilizar este comando. El uso inadecuado puede provocar daños en
     </main>
 
 
-    <script>
-        // Script para abrir enlaces en una nueva pestaña mediante un selector
-        document.getElementById('list-ch').addEventListener('change', function () {
-            const url = this.value;
-            if (url) {
-                window.open(url, '_blank');
-                this.value = ''; // Vuelve a la opción por defecto
-            }
-        });
-    </script>
-    <script>
-        // Script sirve para mostrar la hora en formato de 12 horas con AM/PM en el elemento con id "datetime" dentro del header
-        // create a function to update the date and time
-        function updateDateTime() {
-            // create a new `Date` object
-            const now = new Date();
 
-            // specify 12-hour format options
-            const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
-
-            // get the current date and time as a string in 12-hour format
-            const currentDateTime = now.toLocaleString('es-MX', options);
-
-            // update the `textContent` property of the `span` element with the `id` of `datetime`
-            document.querySelector('#datetime').textContent = currentDateTime;
-        }
-
-        // call the `updateDateTime` function every second
-        setInterval(updateDateTime, 1000);
-    </script>
     <script src="mainpg.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js">
-    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>

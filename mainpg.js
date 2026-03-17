@@ -705,3 +705,23 @@ function moveMarquee() {
 }
 
 moveMarquee();
+
+
+        // Script sirve para mostrar la hora en formato de 12 horas con AM/PM en el elemento con id "datetime" dentro del header
+        // create a function to update the date and time
+        function updateDateTime() {
+            // create a new `Date` object
+            const now = new Date();
+
+            // specify 12-hour format options
+            const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+
+            // get the current date and time as a string in 12-hour format
+            const currentDateTime = now.toLocaleString('es-MX', options);
+
+            // update the `textContent` property of the `span` element with the `id` of `datetime`
+            document.querySelector('#datetime').textContent = currentDateTime;
+        }
+
+        // call the `updateDateTime` function every second
+        setInterval(updateDateTime, 1000);
