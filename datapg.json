@@ -297,6 +297,28 @@
             "modelo": "Modelado y Diseño 3D",
             "fecha":"2026-03-17"
         },
+        {
+            "titulo":"FreeCAD",
+            "description": "Modelador 3D paramétrico de código abierto (open-source) y gratuito, diseñado principalmente para ingeniería mecánica, diseño de productos y arquitectura.",
+            "img": "https://deingenierias.com/wp-content/uploads/FreeCAD-software-de-ingenieria.jpg",
+            "imgHover": "https://raw.githubusercontent.com/realthunder/files/master/screencast/asm3/asm-body.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://www.freecad.org/",
+            "modelo": "Modelado y Diseño 3D",
+            "fecha":"2026-03-25"
+        },
+        {
+            "titulo":"SolidWorks",
+            "description": "Software de diseño asistido por computadora (CAD) en 3D, basado en el modelado paramétrico, utilizado para crear, simular, publicar y gestionar piezas y ensamblajes mecánicos.<br>Contraseña: www.artistapirata.com",
+            "img": "https://tech.coe.drexel.edu/images/software/solidworks.jpg",
+            "imgHover": "https://blog-assets.solidworks.com/uploads/sites/15/2019/01/04-3D-Texture-for-Branding-on-Mass-Customized-Product.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://drive.usercontent.google.com/download?id=1wJMdkiTDeiuo_g2IuhQx5G3sHQZXETXX&export=download&authuser=0",
+            "modelo": "Modelado y Diseño 3D",
+            "fecha":"2026-03-25"
+        },
 
 
 
