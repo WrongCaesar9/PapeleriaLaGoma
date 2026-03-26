@@ -1380,6 +1380,17 @@
             "modelo": "Herramientas",
             "fecha":"2026-03-01"
         },
+        {
+            "titulo":"PowerToys",
+            "description": "Conjunto de utilidades gratuitas diseñado para usuarios avanzados y desarrolladores, permite personalizar y optimizar la experiencia del SO",
+            "img": "https://articles-img.sftcdn.net/t_article_cover_xl/auto-mapping-folder/sites/2/2024/10/Microsoft-PowerToys-031124.jpg",
+            "imgHover": "https://cultura-informatica.com/wp-content/uploads/2022/12/PowerToys.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://github.com/microsoft/PowerToys/releases",
+            "modelo": "Herramientas",
+            "fecha":"2026-03-25"
+        },
 
 
 
