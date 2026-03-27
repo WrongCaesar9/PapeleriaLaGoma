@@ -2252,13 +2252,24 @@
         {
             "titulo":"Stitch Beta",
             "description": "Es una herramienta potenciada por IA que ayuda a los creadores de apps a generar interfaces de usuario de alta calidad para apps web y móviles, y a exportarlas fácilmente a Figma o acceder directamente al código de frontend.",
-            "img": "https://oopy.lazyrockets.com/api/v2/notion/image?src=attachment%3Ac11b1374-65fa-41ee-b897-7842ea6ccc23%3AIMG_2313.gif&blockId=226fdea8-0034-805e-960b-d9724787d65d",
-            "imgHover": "",
+            "img": "https://img-c.udemycdn.com/course/480x270/6722491_4284.jpg",
+            "imgHover": "https://oopy.lazyrockets.com/api/v2/notion/image?src=attachment%3Ac11b1374-65fa-41ee-b897-7842ea6ccc23%3AIMG_2313.gif&blockId=226fdea8-0034-805e-960b-d9724787d65d",
             "iframeHover": "",
             "vidHover": "",
             "enlace": "https://stitch.withgoogle.com/",
             "modelo": "IA",
             "fecha":"2026-03-09"
+        },
+        {
+            "titulo":"ComfyUI",
+            "description": "Interfaz de usuario avanzada y de código abierto diseñada para la generación de imágenes, video y audio mediante modelos de inteligencia artificial como Stable Diffusion y Flux.",
+            "img": "https://tjzk.replicate.delivery/models_organizations_avatar/0afd7e95-4834-4d5a-9c31-ba4c915412bd/comfy-org.png",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://comfy.org/",
+            "modelo": "IA",
+            "fecha":"2026-03-27"
         },
 
 
