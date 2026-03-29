@@ -682,8 +682,8 @@ function copyCode(button) {
 
 Código de fecha de actualización
 document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";*/
-const dateText = "2026/03/27";
-const hourText = "14:12"
+const dateText = "2026/03/29";
+const hourText = "16:42"
 const dateContenedor = document.getElementById("date-update");
 dateContenedor.innerHTML = "<p style=\"font-size: 18px;\">Copyright © 2026 \"La Goma\"</p>"+"<p style=\"font-size: 16px;\">Última actualización: "+ dateText + " a las: " + hourText + "</p>";
 
