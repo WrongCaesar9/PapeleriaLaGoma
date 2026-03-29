@@ -940,6 +940,17 @@
             "modelo": "Juegos",
             "fecha":"2026-03-01"
         },
+        {
+            "titulo":"Color Game — How Well Can You Remember Colors?",
+            "description": "Juega al juego de la memoria del color del que todo el mundo habla. Te mostramos colores, tú los recreas de memoria. Reta a tus amigos en multijugador.",
+            "img": "https://substackcdn.com/image/fetch/$s_!-3A4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F501619a0-03c9-4946-8b77-f6862262cb7e_1992x1202.png",
+            "imgHover": "https://i.pinimg.com/originals/f1/69/37/f16937aee1202bcba272a69845d55c99.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://dialed.gg/",
+            "modelo": "Juegos",
+            "fecha":"2026-03-29"
+        },
 
 
 
