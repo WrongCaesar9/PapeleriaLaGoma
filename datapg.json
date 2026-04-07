@@ -726,6 +726,17 @@
             "modelo": "Edición",
             "fecha":"2026-03-01"
         },
+        {
+            "titulo":"ProductionCrate",
+            "description": "Biblioteca de recursos digitales y VFX que ofrece miles de VFX, sonidos y modelos 3D , diseñados para elevar el nivel de proyectos audiovisuales. Esta plataforma es el ecosistema definitivo para cineastas y creadores de video, proporcionando assets profesionales y plugins exclusivos listos para usar.",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_sbW5wMx4hP2Y8wrJkjxjlSbrpy5f1Zgbw&s",
+            "imgHover": "https://insiderapps.com/sites/default/files/2022-09/Production%20crate%20GIF.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://www.productioncrate.com/",
+            "modelo": "Edición",
+            "fecha":"2026-04-07"
+        },
 
 
 
