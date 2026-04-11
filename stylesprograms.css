@@ -1619,6 +1619,20 @@ header,
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 10px;
+
+
+
+    width: 100%;
+  /* ESTA ES LA MAGIA DEL CLS */
+  aspect-ratio: 1 / 1;
+  /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
+  object-fit: cover;
+  /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
+  display: block;
+  /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: center;
+  border-radius: 10px;
 }
 
 /* La fila que contiene todas las fotos */
@@ -1812,4 +1826,20 @@ header,
     white-space: nowrap;
     display: inline-block;
     font-size: 14px;
+}
+
+
+#progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  background: rgb(224, 115, 26);
+  height: 2px;
+
+  animation: progress-grow auto linear;
+  animation-timeline: scroll(root block);
+}
+@keyframes progress-grow{
+  0% { width: 0%}
+  100% { width: 100%}
 }
