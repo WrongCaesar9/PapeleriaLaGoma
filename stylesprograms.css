@@ -539,33 +539,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .programas {
   display: flex;
   flex-direction: column;
@@ -1834,7 +1807,7 @@ header,
   top: 0;
   width: 0%;
   background: rgb(224, 115, 26);
-  height: 2px;
+  height: 4px;
 
   animation: progress-grow auto linear;
   animation-timeline: scroll(root block);
