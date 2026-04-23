@@ -1414,6 +1414,17 @@
             "fecha":"2026-03-01"
         },
         {
+            "titulo":"TurboScribe - Download YT videos",
+            "description": "Descargador de videos de YouTube gratuito de TurboScribe te permite guardar videos rápida y fácilmente en solo unos clics, sin anuncios, sin registros, sin complicaciones.",
+            "img": "https://cdn.prod.website-files.com/64f605bdfa749671fed117a9/65551d084fc6004de2148375_TurboScribe.png",
+            "imgHover": "https://images.squarespace-cdn.com/content/v1/62c2efa12ef74f3dffc37646/e367e2ab-dbab-4431-a0c8-c95ddbf0d516/turboscribe-unlimited-audio-video-transcription.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://turboscribe.ai/es/downloader/2025-01-01/youtube/video",
+            "modelo": "Herramientas",
+            "fecha":"2026-04-22"
+        },
+        {
             "titulo":"PowerToys",
             "description": "Conjunto de utilidades gratuitas diseñado para usuarios avanzados y desarrolladores, permite personalizar y optimizar la experiencia del SO",
             "img": "https://articles-img.sftcdn.net/t_article_cover_xl/auto-mapping-folder/sites/2/2024/10/Microsoft-PowerToys-031124.jpg",
@@ -2445,18 +2456,7 @@
             "enlace": "https://www.anaconda.com/download",
             "modelo": "Coding",
             "fecha":"2026-03-01"
-        },
-        {
-            "titulo":"Netlify",
-            "description": "Netlify",
-            "img": "impg/netlify.png",
-            "imgHover": "",
-            "iframeHover": "",
-            "vidHover": "",
-            "enlace": "https://app.netlify.com/",
-            "modelo": "Coding",
-            "fecha":"2026-03-01"
-        },        
+        },       
         {
             "titulo":"Sololearn",
             "description": "Plataforma en línea con más de 25 cursos en línea centrados en lenguajes de programación populares como Python, C++, Java, C#, JavaScript, etc.",
@@ -3381,6 +3381,119 @@
             "fecha":"2026-03-01"
             
         },
+        {
+            "titulo":"Astro",
+            "description": "Framework web de JavaScript diseñado para crear sitios rápidos enfocados en contenido (blogs, marketing, e-commerce) mediante renderizado en el servidor y envío mínimo de JavaScript al navegador.",
+            "img": "https://img-c.udemycdn.com/course/480x270/4902868_1f01_2.jpg?w=3840&q=75",
+            "imgHover": "https://web.dev/static/articles/how-we-built-designcember/image/animation-shows-this-wi-d3d793d038213.gif?hl=es-419",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://astro.build/",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-22"
+            
+        },        
+        {
+            "titulo":"Codi.link",
+            "description": "Editor de código en tiempo real (playground) diseñado para desarrollo web, enfocado en HTML, CSS y JavaScript. Creado por Midudev.",
+            "img": "data:image/png;base64,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",
+            "imgHover": "",
+            "iframeHover": "https://www.youtube.com/embed/EsE8MvxJTdA?si=dcKAkzkOKzzDrnb4",
+            "vidHover": "",
+            "enlace": "https://codi.link/",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-22"
+            
+        },       
+        {
+            "titulo":"MDN - Your first website",
+            "description": "Tutorial introductorio y práctico de MDN Web Docs de Mozilla.",
+            "img": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+            "imgHover": "https://hacks.mozilla.org/wp-content/uploads/2022/02/moz_mdn_navigation.2022-02-24-13_14_00.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-22"
+            
+        },      
+        {
+            "titulo":"Node.js",
+            "description": "Entorno de ejecución de código abierto y multiplataforma para JavaScript, diseñado para ejecutarse fuera del navegador, principalmente en el servidor.",
+            "img": "https://cdn.prod.website-files.com/62876589ec366575fa309b1e/671fa4901aa93a47628b5bd3_Node%20NES%20Announcement.png",
+            "imgHover": "https://codigoencasa.com/content/images/2023/04/Vnode-gif.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://nodejs.org/en/download",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-22"
+            
+        },      
+        {
+            "titulo":"Domain Name Search",
+            "description": "Herramienta web rápida y gratuita que verifica la disponibilidad de dominios en tiempo real mientras escribes, mostrando resultados instantáneos (.com, .net, .org, etc.) en menos de 25 milisegundos.",
+            "img": "https://instantdomainsearch.com/favicon.svg?v=3",
+            "imgHover": "https://bloggingx.com/wp-content/uploads/2025/11/InstantDomainSearch.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://instantdomainsearch.com/?q=",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-22"
+            
+        },
+        {
+            "titulo":"Netlify",
+            "description": "Powerful platform for deploying, managing, and hosting modern web projects (static sites, SPAs, Jamstack) directly from Git or local files.",
+            "img": "impg/netlify.png",
+            "imgHover": "https://assets.den.dev/images/postmedia/api-authentication-netlify-builds/deploy-to-netlify.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://app.netlify.com/",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-03-01"
+        }, 
+        {
+            "titulo":"Vercel",
+            "description": "Provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.",
+            "img": "https://assets.vercel.com/image/upload/front/vercel/twitter-card.png",
+            "imgHover": "https://cdn.hashnode.com/res/hashnode/image/upload/v1729808085843/7061315b-ca1e-4201-bd00-6d3b02bfa456.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://vercel.com/home",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-23"
+        }, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {
             "titulo":"Blender con DLSS",
             "description": "Custom Built de Blender: aquí están los pasos para compilar Blender, además de que puedes descargarlo. :D",

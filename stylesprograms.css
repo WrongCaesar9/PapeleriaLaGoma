@@ -1584,26 +1584,13 @@ header,
 /* Contenedor principal */
 .carousel-gallery {
   max-width: 400px;
-  margin: 30px auto;
+  margin: 10px auto;
+  padding: 10px;
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 10px;
-
-
-
-    width: 100%;
-  /* ESTA ES LA MAGIA DEL CLS */
-  aspect-ratio: 1 / 1;
-  /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
-  object-fit: cover;
-  /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
-  display: block;
-  /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
-  background-color: rgba(0, 0, 0, 0.1);
+aspect-ratio: 3/3.2;
+background-color: rgba(0, 0, 0, 0.379);
   background-position: center;
   border-radius: 10px;
 }
@@ -1785,7 +1772,7 @@ header,
 }
 
 
-
+/*Este Css es para el marquee, ya que el marquee que se tenia quedo obsoleto y se complementa con el codigo en JS*/
 .marquee-js {
     width: 100%;
     overflow: hidden;
