@@ -2638,7 +2638,7 @@
             "titulo":"ExifTool",
             "description": "Es una aplicación de CMD para leer, escribir y editar metadatos en una amplia variedad de archivos",
             "img": "impg/exiftool.png",
-            "imgHover": "",
+            "imgHover": "https://lucasgelfond.online/assets/images/portfolio/exiftool/demo.gif",
             "iframeHover": "",
             "vidHover": "",
             "enlace": "https://exiftool.org/",
@@ -2649,7 +2649,7 @@
             "titulo":"Google Dorking Documentation",
             "description": "El arte de buscar en Google utilizando operadores avanzados para encontrar información específica que no es fácilmente accesible a través de búsquedas estándar.",
             "img": "impg/googledorking.png",
-            "imgHover": "",
+            "imgHover": "https://media.licdn.com/dms/image/v2/D4D22AQGSmaFJJzYuUA/feedshare-shrink_2048_1536/B4DZomuPauGkA4-/0/1761586249428?e=2147483647&v=beta&t=6r3OHNmKZrRQ4l6yDZUqxo0SZBwH_XXL2i5FfXeEEXM",
             "iframeHover": "",
             "vidHover": "",
             "enlace": "https://www.splunk.com/en_us/blog/learn/google-dorking.html",
@@ -2660,12 +2660,23 @@
             "titulo":"Facebook Crawler",
             "description": "Es una herramienta que permite verificar y depurar cómo Facebook ve y extrae información de sus páginas web.",
             "img": "impg/facebookcrawler.png",
-            "imgHover": "",
+            "imgHover": "https://community.hubspot.com/t5/image/serverpage/image-id/3674i36F87DB40705C728/image-size/large?v=v2&px=999",
             "iframeHover": "",
             "vidHover": "",
             "enlace": "https://developers.facebook.com/tools/debug/",
             "modelo": "Metadatos",
             "fecha":"2026-03-01"
+        },                        
+        {
+            "titulo":"GeoPlugin",
+            "description": "API de geolocalización por IP que permite a los desarrolladores y webmasters identificar la ubicación geográfica de los visitantes de un sitio web (país, ciudad, latitud, longitud) en tiempo real.",
+            "img": "impg/geoplugin.webp",
+            "imgHover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAAU2UW8OzFXuwDbiAO4QJAMjwSPuoG_BI4wilshQu0cJKa7Vp18SGRxCEKcBNJUGlbjyRAMWq1jmom0W78Yt_8r_FD9EbO3D3goo9wE3K2J40bKxrdFvGGa0KGg1FusmVjvFVUXyO43E/s1600/AjIm.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://www.geoplugin.com/",
+            "modelo": "Metadatos",
+            "fecha":"2026-04-25"
         },
 
 
