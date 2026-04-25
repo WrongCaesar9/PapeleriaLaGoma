@@ -298,6 +298,17 @@
             "fecha":"2026-03-17"
         },
         {
+            "titulo":"Cascadeur",
+            "description": "Software 3D independiente que permite crear animaciones por fotogramas clave, así como limpiar y editar las importadas. Gracias a sus herramientas de física y asistencia por IA, acelera considerablemente el proceso de animación y permite obtener resultados de alta calidad.",
+            "img": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxueNwogpi7rhieISnFTXSx2Xvbvnk1I9QOvMjuhstWr6vX1skGJAf.AiMD7p_9rJzkEBxwMwWE7Wmtw8gDWpoO4-&format=source",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "https://cdn.cascadeur.com/video/main-video.mp4",
+            "enlace": "https://cascadeur.com/",
+            "modelo": "Modelado y Diseño 3D",
+            "fecha":"2026-04-24"
+        },
+        {
             "titulo":"FreeCAD",
             "description": "Modelador 3D paramétrico de código abierto (open-source) y gratuito, diseñado principalmente para ingeniería mecánica, diseño de productos y arquitectura.",
             "img": "https://deingenierias.com/wp-content/uploads/FreeCAD-software-de-ingenieria.jpg",
@@ -897,15 +908,26 @@
             "fecha":"2026-03-01"
         },
         {
-            "titulo":"PCSX2",
+            "titulo":"PCSX2  - emulador PS2",
             "description": "Emulador de PlayStation 2<br><a  target=_blank href=https://www.mediafire.com/file/sncrg1xbocdlwqy/bios.rar/file>BIOS</a><br><a  target=_blank href=https://www.youtube.com/watch?v=XdV_iiV1d9I>Tutoriaal de que bios seleccionar</a>",
             "img": "https://new-game-plus.fr/wp-content/uploads/2025/11/pcsx2-99-emulation1.webp",
             "imgHover": "",
-            "iframeHover": "",
+            "iframeHover": "https://www.youtube.com/embed/XdV_iiV1d9I?si=JTtjP7-sblrCcOQC",
             "vidHover": "",
             "enlace": "https://pcsx2.net/",
             "modelo": "Juegos",
             "fecha":"2026-03-08"
+        },
+        {
+            "titulo":"RPCS3 - emulador PS3",
+            "description": "RPCS3 es un emulador y depurador multiplataforma de código abierto para Sony PlayStation 3, escrito en C++ para Windows, Linux, macOS y FreeBSD.",
+            "img": "https://images.hothardware.com//contentimages/newsitem/70292/thumbnail/default/rpcs3-system-requirements-4k-thumb.jpeg",
+            "imgHover": "",
+            "iframeHover": "https://www.youtube.com/embed/IvH3hELnwyc?si=wNimkPLnZaCddL32",
+            "vidHover": "",
+            "enlace": "https://rpcs3.net/download",
+            "modelo": "Juegos",
+            "fecha":"2026-04-25"
         },
         {
             "titulo":"GTA SA",
@@ -1426,16 +1448,70 @@
         },
         {
             "titulo":"PowerToys",
-            "description": "Conjunto de utilidades gratuitas diseñado para usuarios avanzados y desarrolladores, permite personalizar y optimizar la experiencia del SO",
-            "img": "https://articles-img.sftcdn.net/t_article_cover_xl/auto-mapping-folder/sites/2/2024/10/Microsoft-PowerToys-031124.jpg",
+            "description": "Conjunto de utilidades gratuitas diseñado para usuarios avanzados y desarrolladores, permite personalizar y optimizar la experiencia del SO.",
+            "img": "https://www.windows-faq.de/wp-content/uploads/2019/09/PowerToys-Windows-10.png",
             "imgHover": "https://cultura-informatica.com/wp-content/uploads/2022/12/PowerToys.gif",
             "iframeHover": "",
             "vidHover": "",
             "enlace": "https://github.com/microsoft/PowerToys/releases",
             "modelo": "Herramientas",
             "fecha":"2026-03-25"
+        },        
+        {
+            "titulo":"cloudconvert",
+            "description": "Convertidor de archivos en línea. Admite prácticamente todos los formatos de audio, vídeo, documentos, libros electrónicos, archivos comprimidos, imágenes, hojas de cálculo y presentaciones.",
+            "img": "https://super-monitoring.com/blog/wp-content/uploads/2015/10/cloudconvert.png",
+            "imgHover": "https://0800happy.com/wp-content/uploads/%E6%8A%8A%E5%BD%B1%E7%89%87%E8%BD%89%E6%88%90gif%E6%AA%94.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://github.com/microsoft/PowerToys/releases",
+            "modelo": "Herramientas",
+            "fecha":"2026-04-25"
         },
-
+        {
+            "titulo":"Voicebox",
+            "description": "Clona cualquier voz en segundos. <br>Estudio de clonación de voz de código abierto con soporte para múltiples motores de síntesis de voz. Clona cualquier voz, genera habla natural y crea proyectos con varias voces. Todo se ejecuta localmente en tu PC.",
+            "img": "https://voicebox.sh/apple-touch-icon.png",
+            "imgHover": "",
+            "iframeHover": "https://www.youtube.com/embed/Mr3ErJAenaA?si=h4pfZZTDxfndqEUC",
+            "vidHover": "",
+            "enlace": "https://voicebox.sh/",
+            "modelo": "Herramientas",
+            "fecha":"2026-04-24"
+        },
+        {
+            "titulo":"tabler - icons",
+            "description": "Iconos SVG gratuitos y de código abierto. Tamaño, color y grosor personalizables. ¡Disponibles gratis para React, SolidJS, Vue, Figma y más!",
+            "img": "https://justmytools.com/wp-content/uploads/2023/11/tabler-icons-logo.webp",
+            "imgHover": "https://trae-forum-cdn.trae.com.cn/prod/original/2X/8/88db9824215fbec00bcb5537d43e2f5c713c07f0.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://tabler.io/icons",
+            "modelo": "Herramientas",
+            "fecha":"2026-04-24"
+        },
+        {
+            "titulo":"SNAZZY MAPS",
+            "description": "Es un repositorio de diferentes combinaciones de colores para Google Maps, dirigido a diseñadores y desarrolladores web.",
+            "img": "https://ps.w.org/snazzy-maps/assets/icon-256x256.png?rev=1130667",
+            "imgHover": "https://help.webriti.com/wp-content/uploads/2017/11/elite-docrep-57.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://snazzymaps.com/",
+            "modelo": "Herramientas",
+            "fecha":"2026-04-24"
+        },
+        {
+            "titulo":"engineering.com",
+            "description": "plataforma en línea y sitio web de recursos dirigido a la comunidad global de ingenieros. Funciona como un centro de información que ofrece artículos, tutoriales, noticias sobre tendencias, soluciones de ingeniería, webinars, vídeos y calculadoras técnicas.",
+            "img": "https://media.licdn.com/dms/image/v2/C4D1BAQGO62rqoRVZuA/company-background_10000/company-background_10000/0/1583183060875?e=2147483647&v=beta&t=49yJ3S9_XBSGGj18fBUKUTedZLx0XSB1XUPDa0daG8Y",
+            "imgHover": "https://leadersaward.com/wp-content/uploads/2017/11/lego-hoover.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://www.engineering.com/",
+            "modelo": "Herramientas",
+            "fecha":"2026-04-25"
+        },
 
 
 
@@ -2281,6 +2357,17 @@
             "enlace": "https://huggingface.co/spaces/multimodalart/qwen-image-multiple-angles-3d-camera",
             "modelo": "IA",
             "fecha":"2026-03-08"
+        },
+        {
+            "titulo":"Stitch Beta",
+            "description": "Herramientas para crear imágenes y vídeos creativos, basadas en métodos de inteligencia artificial generativa de última generación.",
+            "img": "https://r2.veo3ai.io/model-landing/kling-3-0/9ed7318e4fcd-1770215434448_gl1h12.jpg",
+            "imgHover": "",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://kling.ai/app/video/new?ac=1",
+            "modelo": "IA",
+            "fecha":"2026-03-09"
         },
         {
             "titulo":"Stitch Beta",
@@ -3366,8 +3453,7 @@
             "vidHover": "",
             "enlace": "https://www.w3schools.com/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-08"
-            
+            "fecha":"2026-03-08"            
         },
         {
             "titulo":"Model Viewer",
@@ -3378,8 +3464,7 @@
             "vidHover": "",
             "enlace": "https://modelviewer.dev/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-03-01"
-            
+            "fecha":"2026-03-01"            
         },
         {
             "titulo":"Astro",
@@ -3390,8 +3475,7 @@
             "vidHover": "",
             "enlace": "https://astro.build/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-04-22"
-            
+            "fecha":"2026-04-22"            
         },        
         {
             "titulo":"Codi.link",
@@ -3402,8 +3486,7 @@
             "vidHover": "",
             "enlace": "https://codi.link/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-04-22"
-            
+            "fecha":"2026-04-22"            
         },       
         {
             "titulo":"MDN - Your first website",
@@ -3414,8 +3497,7 @@
             "vidHover": "",
             "enlace": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-04-22"
-            
+            "fecha":"2026-04-22"            
         },      
         {
             "titulo":"Node.js",
@@ -3426,8 +3508,7 @@
             "vidHover": "",
             "enlace": "https://nodejs.org/en/download",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-04-22"
-            
+            "fecha":"2026-04-22"            
         },      
         {
             "titulo":"Domain Name Search",
@@ -3438,8 +3519,51 @@
             "vidHover": "",
             "enlace": "https://instantdomainsearch.com/?q=",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-04-22"
-            
+            "fecha":"2026-04-22"            
+        },      
+        {
+            "titulo":"TURSO",
+            "description": "Turso es la DB ligera que escala hasta millones de instancias. Construye agentes, asistentes de IA y apps inteligentes desplegando bases de datos en todas partes: en servidores, navegadores y dispositivos, igual que archivos. ",
+            "img": "https://avatars.githubusercontent.com/u/139391156?s=200&v=4",
+            "imgHover": "https://turso.tech/images/blog/a-b-testing-use-case-with-turso-decd0483d235/yme68gigbslqrjtgtetv.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://turso.tech/",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-24"            
+        },      
+        {
+            "titulo":"GSAP",
+            "description": "GSAP: una biblioteca de animación JavaScript extremadamente robusta diseñada para profesionales.",
+            "img": "https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6762c1cc9a3dab4c445ffe7c_-viewport_width-1440-viewport_height-1600-device_scale_factor-2-format-jpg-delay-10-cache-false-block_cookie_banners-true.jpeg",
+            "imgHover": "https://miro.medium.com/0*7p0ObfMGqbyed-OL",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://gsap.com/",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-24"            
+        },      
+        {
+            "titulo":"Specificity Calculator",
+            "description": "Una forma visual de comprender las particularidades de CSS. Modifique los selectores o inserte los suyos propios.",
+            "img": "https://cdn-media-1.freecodecamp.org/images/1*S_3XEtQfi_4W_3WPf7T7Ww.png",
+            "imgHover": "https://devtoolstips.org/assets/img/edit-position.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://specificity.keegan.st/",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-24"            
+        },      
+        {
+            "titulo":"HTMLrev",
+            "description": "Plantillas HTML y CSS gratuitas. Para sitios web, páginas de destino, blogs, portafolios, comercio electrónico y paneles de control.",
+            "img": "https://ph-files.imgix.net/cf357b87-c95d-4e4a-b090-f0468e855a58.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=351&h=210&fit=max&frame=1",
+            "imgHover": "https://cdn.dribbble.com/userupload/15585510/file/original-2a48bac3628492d07c3884def17729df.jpg",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://htmlrev.com/",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-24"            
         },
         {
             "titulo":"Netlify",
@@ -3500,8 +3624,19 @@
             "img": "imgDlSS/splashMod.jpg",
             "imgHover": "",
             "iframeHover": "",
-            "vidHover": "",
+            "vidHover": "https://v.redd.it/xm5tfk0ym3ig1/CMAF_1080.mp4",
             "enlace": "https://lagoma.netlify.app/index.html#blenderDLSS",
+            "modelo": "Otros",
+            "fecha":"2026-03-09"
+        },
+        {
+            "titulo":"HydroFX - de pago (aprox. 2,955.33 MXN)",
+            "description": "Custom Built de Blender: aquí están los pasos para compilar Blender, además de que puedes descargarlo. :D",
+            "img": "https://i.ytimg.com/vi/2akTaB_4AnE/sddefault.jpg",
+            "imgHover": "",
+            "iframeHover": "https://www.youtube.com/embed/SgGq4H75ztw?si=2DIZYTu6anh-Ifok",
+            "vidHover": "",
+            "enlace": "https://stormvfx.gumroad.com/l/hydrofx",
             "modelo": "Otros",
             "fecha":"2026-03-09"
         },
