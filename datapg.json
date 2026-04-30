@@ -111,6 +111,17 @@
             "fecha":"2026-03-01"
         },
         {
+            "titulo":"Material Maker",
+            "description": "Es una herramienta de creación procedural de materiales y pintura de modelos 3D (experimental), basada en el motor Godot. Los materiales y pinceles se definen como gráficos donde los nodos crean o transforman texturas, y se pueden exportar para los motores de juego Godot, Unity y Unreal.",
+            "img": "https://i.ytimg.com/vi/MOZU1MKn6zU/maxresdefault.jpg",
+            "imgHover": "",
+            "iframeHover": "https://www.youtube.com/embed/MOZU1MKn6zU?si=TTBrzS_6CSCrXqiO",
+            "vidHover": "",
+            "enlace": "https://rodzilla.itch.io/material-maker",
+            "modelo": "Modelado y Diseño 3D",
+            "fecha":"2026-04-30"
+        },
+        {
             "titulo":"Sketchfab",
             "description": "Podrás descargar modelos 3D en distintos formatos",
             "img": "impg/sketchfab.png",
