@@ -1228,7 +1228,7 @@
         },
         {
             "titulo":"Tenencia",
-            "description": "Pago de Tenencia y Derechos de Control Vehicular",
+            "description": "Pago de Tenencia y Derechos de Control Vehicular. EDO. MÉX.",
             "img": "https://wp.lajornada.prod.andes.news/wp-content/uploads/2026/01/image-5.png",
             "imgHover": "",
             "iframeHover": "",
@@ -1236,6 +1236,17 @@
             "enlace": "https://tenencia.edomex.gob.mx/TenenciaIndividual/tenencia/A06E1A88B8A6ED4B#/",
             "modelo": "Herramientas",
             "fecha":"2026-03-01"
+        },
+        {
+            "titulo":"Cita verificación vehicular",
+            "description": "Servicio de registro de citas de verificación vehicular. EDO. MÉX.",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHe8ROZidB1V52SkiW7YPdurDaS2ZLdAIbOA&s",
+            "imgHover": "https://verificentros.org/wp-content/uploads/2025/08/Paso-1-2.png",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://citaverificacion.edomex.gob.mx/RegistroCitas/",
+            "modelo": "Herramientas",
+            "fecha":"2026-05-08"
         },
         {
             "titulo":"CURP",
@@ -1721,6 +1732,28 @@
             "iframeHover": "https://www.youtube.com/embed/mswO0rzbPnM?si=vFyZykxI36l4BqJU",
             "vidHover": "",
             "enlace": "https://school.frodobots.com/testdrive/",
+            "modelo": "Electrónica y Robots",
+            "fecha":"2026-03-07"
+        },
+        {
+            "titulo":"Isaac Sim",
+            "description": "Plataforma de simulación robótica basada en la nube y fotorrealista, construida sobre NVIDIA Omniverse, diseñada para entrenar, probar y validar robots con inteligencia artificial (IA) y robots autónomos en entornos virtuales físicamente precisos.",
+            "img": "https://repo.valu3s.eu/tools/external-not-improved-tool/isaac-sim/view/++widget++form.widgets.logo/@@download/ISAAC_SIM.png",
+            "imgHover": "https://developer-blogs.nvidia.com/wp-content/uploads/2025/10/2025_R2D2_RoboticManipulation.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://docs.isaacsim.omniverse.nvidia.com/5.0.0/installation/download.html",
+            "modelo": "Electrónica y Robots",
+            "fecha":"2026-03-07"
+        },
+        {
+            "titulo":"Omniverse",
+            "description": "Plataforma informática de simulación y colaboración en tiempo real que funciona principalmente como un núcleo para la simulación física, la inteligencia artificial y el renderizado RTX, optimizado para estaciones de trabajo con GPUs NVIDIA.",
+            "img": "https://docs.omniverse.nvidia.com/kit/docs/omni.kit.window.extensions/1.4.17/_static/main_ov_logo_square.png",
+            "imgHover": "https://torquety.com/wp-content/uploads/2025/07/NVIDIA-Isaac-SIM.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://developer.nvidia.com/es-la/nvidia-omniverse-platform",
             "modelo": "Electrónica y Robots",
             "fecha":"2026-03-07"
         },
