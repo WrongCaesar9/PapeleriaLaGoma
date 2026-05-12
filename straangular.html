@@ -1,19 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-MX">
 
-<html>
-  <head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="dns-prefetch" href="https://lagoma.netlify.app/card-0001">
+    <link rel="preconnect" href="https://lagoma.netlify.app/card-0001" crossorigin>
+
+    <!-- SEO básico -->
+    <title>Evento | Nombre festejado</title>
+    <meta name="description"
+        content="Evento | Nombre festejado | Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
+    <meta name="keywords" content="invitación, card, invitation card">
+    <meta name="author" content="WrongCaesar9">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lagoma.netlify.app/card-0001">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="XV años | Luis Ángel Mora Ramírez">
+    <meta property="og:site_name" content="La Goma">
+    <meta property="og:description"
+        content="XV años | Luis Ángel Mora Ramírez | Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
+    <meta property="og:url" content="https://lagoma.netlify.app/card-0001">
+    <meta property="og:image" content="https://lagoma.netlify.app/logos/og_splash_600.jpg?v2">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="OG Image XV años | Luis Ángel Mora Ramírez">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XV años | Luis Ángel Mora Ramírez">
+    <meta name="twitter:description"
+        content="XV años | Luis Ángel Mora Ramírez | Nos encantaría que puedas acompañarnos, da click para ver todos los detalles.">
+    <meta name="twitter:image" content="https://lagoma.netlify.app/logos/og_splash_600.jpg?v2">
+    <meta name="twitter:site" content="@WrongCaesar9">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+NG+Modern:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="https://lagoma.netlify.app/logos/xv_ico.ico" sizes="192x192">
+    <link rel="shortcut icon" href="/logos/xv_ico.ico">
+
+    
+</head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
+  
   <body>
-    <audio src="https://cdn.pixabay.com/audio/2026/03/23/audio_cda50b143f.mp3" autoplay controls></audio>
     <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
         <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.png" />
         <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
       </a-assets>
 
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-camera position="0 0 0" look-controls="enabled: false">
+        <audio src="https://cdn.pixabay.com/audio/2026/03/23/audio_cda50b143f.mp3" autoplay controls loop style="padding-top: 10%;"></audio>
+      </a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
         <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
         <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
