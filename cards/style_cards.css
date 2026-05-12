@@ -1,71 +1,66 @@
+ /* Variables generales */
+ :root {
+     --fondo-col: #653f62;
+     --gradiente: linear-gradient(45deg, orangered, orange, gold, lightgreen, rgb(255, 0, 149), rgb(31, 50, 156), rgb(138, 80, 255), hotpink, orangered);
+ }
+
+ /* Reset CSS */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
  /* Animación de texto ondulado */
-        .wave-text span {
-            display: inline-block;
-            font-family: "Playwrite NG Modern", cursive;
-            font-optical-sizing: auto;
-            font-weight: 100;
-            font-style: normal;
-            font-size: 2rem;
-            animation: wave 2s ease-in-out infinite;
-        }
+ .wave-text span {
+     display: inline-block;
+     font-family: "Playwrite NG Modern", cursive;
+     font-optical-sizing: auto;
+     font-weight: 100;
+     font-style: normal;
+     font-size: 2rem;
+     animation: wave 2s ease-in-out infinite;
+ }
 
-        /* Asignar diferentes retrasos a cada letra */
-        .wave-text span:nth-child(1) {
-            animation-delay: 0s;
-        }
+ /* Asignar diferentes retrasos a cada letra */
+ .wave-text span:nth-child(1) {
+     animation-delay: 0s;
+ }
 
-        .wave-text span:nth-child(2) {
-            animation-delay: 0.2s;
-        }
+ .wave-text span:nth-child(2) {
+     animation-delay: 0.2s;
+ }
 
-        .wave-text span:nth-child(3) {
-            animation-delay: 0.4s;
-        }
+ .wave-text span:nth-child(3) {
+     animation-delay: 0.4s;
+ }
 
-        .wave-text span:nth-child(4) {
-            animation-delay: 0.6s;
-        }
+ .wave-text span:nth-child(4) {
+     animation-delay: 0.6s;
+ }
 
-        .wave-text span:nth-child(5) {
-            animation-delay: 0.8s;
-        }
+ .wave-text span:nth-child(5) {
+     animation-delay: 0.8s;
+ }
 
-        .wave-text span:nth-child(6) {
-            animation-delay: 1s;
-        }
+ .wave-text span:nth-child(6) {
+     animation-delay: 1s;
+ }
 
-        .wave-text span:nth-child(7) {
-            animation-delay: 1.2s;
-        }
+ .wave-text span:nth-child(7) {
+     animation-delay: 1.2s;
+ }
 
-        @keyframes wave {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
+ /* Ocultar scrollbar */
+ ::-webkit-scrollbar {
+     display: none;
+ }
 
 
-        /* Ocultar scrollbar */
-        ::-webkit-scrollbar {
-            display: none;
-        }
 
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            /* Base del terciopelo morado
+ body {
+     font-family: 'Arial', sans-serif;
+     /* Base del terciopelo morado
             background: linear-gradient(45deg,
                     #7620b4 0%,
                     #340c59 25%,
@@ -79,600 +74,652 @@
                     #380544 75%,
                     #1d011d 100%);
             
-            */
-            background: linear-gradient(45deg,
-                    #470c70 0%,
-                    #1f0539 25%,
-                    #310549 50%,
-                    #4f094f 75%,
-                    #3c074c 100%);
-            background-size: 100% 400%;
-            background-blend-mode: overlay, screen, screen, screen;
-            color: white;
-            overflow-x: hidden;
-            position: relative;
-            min-height: 100vh;
-        }
-
-        /* Patrón de textura de terciopelo */
-        body::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image:
-                radial-gradient(circle at 25% 25%, rgba(255, 212, 19, 0.064) 2px, transparent 2px),
-                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 50px 50px, 30px 30px;
-            z-index: -1;
-        }
-
-        /* Custom controls */
-        .controls {
-            position: absolute;
-            left: 12px;
-            right: 12px;
-            bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.48));
-            padding: 8px;
-            border-radius: 10px
-        }
-
-        /* Modal/Pantalla Inicial */
-        .modal {
-            overflow-x: hidden;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            transition: opacity 0.5s ease;
-        }
-
-        .modal-contenido {
-            text-align: center;
-            animation: aparecer 0.7s ease-in-out backwards;
-        }
-
-        @keyframes aparecer {
-            from {
-                opacity: 0;
-                transform: scale(0.1);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .imagen-invitacion {
-            /*300x500*/
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
-            border-radius: 15px;
-            /*margin-bottom: 20px;*/
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-
-        }
-
-        /* Botón con corona animada */
-        .btn-tocar {
-            background: linear-gradient(45deg, #38083a, #764ba2);
-            color: #8B4513;
-            border: none;
-            padding: 20px 20px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(241, 148, 255, 0.928);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            font-weight: 600;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgb(255, 255, 255);
-        }
-
-        .btn-tocar:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(241, 48, 255, 0.6);
-
-        }
-
-        /* Animación de "suspiro" - escala continua */
-        @keyframes suspiro {
-
-            0%,
-            100% {
-                transform: scale(0.6);
-            }
-
-            50% {
-                transform: scale(0.9);
-            }
-        }
-
-        /* Animación de "suspiro" - escala continua */
-        @keyframes suspirodos {
-
-            0%,
-            100% {
-                left: 100%
-            }
-
-            50% {
-                left: -100%;
-            }
-        }
-
-        /* Animación específica para la corona */
-        .corona-svg {
-            animation: suspiro 1s ease-in-out infinite;
-            filter: drop-shadow(0 2px 3px rgba(229, 45, 232, 0.3));
-
-        }
-
-        /* Efecto de brillo en hover */
-        .btn-tocar::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: left 0.5s;
-            animation: suspirodos 2s ease-in-out infinite;
-        }
-
-        .btn-tocar:hover::before {
-            left: 100%;
-        }
-
-        /* Efecto de partículas doradas (opcional) */
-        .btn-tocar:hover .corona-svg {
-            filter: drop-shadow(0 0 8px rgba(247, 160, 255, 0.8));
-        }
-
-        /*Countdown Pantalla Principal */
-        .countdown {
-            margin-top: 5%;
-            align-items: center;
-            display: inline-flex;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 12px;
-        }
-
-        .countdown .item {
-
-            background: rgba(255, 255, 255, 0.03);
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-            min-width: 64px;
-            border: 2px solid rgba(255, 202, 244, 0.755);
-        }
-
-        .countdown .item .num {
-
-            font-weight: 700;
-            font-size: 20px
-        }
-
-        /* Contenido Principal */
-        .contenido-principal {
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .contenido-principal {
-            text-align: center;
-            animation: aparecer-principal 1.5s ease-out backwards;
-        }
-
-
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: -50px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            font-family: "Great Vibes", cursive;
-            padding-top: 7%;
-        }
-
-        .navegacion {
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-            position: fixed;
-            top: 10px;
-            left: 0;
-            right: 0;
-            display: flex;
-            gap: 10px;
-            padding: 0px 100px;
-            z-index: 1000;
-
-        }
-
-        .nav-btn {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 10px 40px;
-            /*20px*/
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-            margin-top: 10px;
-            font-family: "Playwrite NG Modern", cursive;
-            font-optical-sizing: auto;
-            font-weight: 100;
-            font-style: normal;
-
-        }
-
-        .nav-btn.activo,
-        .nav-btn:hover {
-            background: rgba(199, 219, 234, 0.461);
-            border-color: rgba(154, 123, 178, 0.707);
-        }
-
-        /* Secciones */
-        .secciones {
-            position: relative;
-            max-width: 600px;
-            margin: 0 auto;
-
-        }
-
-        .seccion {
-            display: none;
-            animation: deslizar 0.5s ease;
-
-        }
-
-        @keyframes deslizar {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-
-            }
-        }
-
-        .seccion.activa {
-            display: block;
-
-        }
-
-        .seccion h2 {
-            margin-bottom: 10px;
-            font-family: "Playwrite NG Modern", cursive;
-            font-optical-sizing: auto;
-            font-weight: 100;
-            font-style: normal;
-            font-size: 2rem;
-
-        }
-
-        .seccion p {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-
-        }
-
-        /* Efecto de desvanecimiento */
-        .desvanecer {
-            animation: desvanecer 0.1s ease forwards;
-
-        }
-
-        @keyframes desvanecer {
-            to {
-                opacity: 0;
-
-            }
-        }
-
-
-
-        /* Estilos para las opciones de radio personalizadas */
-        .opcion-asistencia {
-            display: flex;
-            font-family: "Playwrite NG Modern", cursive;
-            font-optical-sizing: auto;
-            font-weight: 100;
-            font-style: normal;
-            flex-direction: column;
-            gap: 15px;
-            margin-bottom: 25px;
-
-        }
-
-        .opcion-asistencia label {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-
-        }
-
-        .opcion-asistencia label:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateX(5px);
-
-        }
-
-        .opcion-asistencia input[type="radio"] {
-            display: none;
-
-        }
-
-        .radio-custom {
-            width: 20px;
-            height: 20px;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            position: relative;
-            transition: all 0.3s ease;
-
-        }
-
-        .opcion-asistencia input[type="radio"]:checked+.radio-custom {
-            border-color: #25D366;
-            background: #25D366;
-
-        }
-
-        .opcion-asistencia input[type="radio"]:checked+.radio-custom::after {
-            content: '';
-            position: absolute;
-            top: 4px;
-            left: 4px;
-            width: 8px;
-            height: 8px;
-            background: white;
-            border-radius: 50%;
-
-        }
-
-        .opcion-asistencia input[type="radio"]:checked~span:last-child {
-            color: #25D366;
-            font-weight: bold;
-        }
-
-        /* Botón de WhatsApp con logo */
-        .btn-whatsapp {
-            background: linear-gradient(45deg, #25D366, #128C7E) !important;
-            color: white !important;
-            border: none !important;
-            padding: 15px 25px !important;
-            font-family: "Playwrite NG Modern", cursive !important;
-            font-optical-sizing: auto;
-            font-weight: 100;
-            font-style: normal;
-            border-radius: 50px !important;
-            cursor: pointer !important;
-            transition: all 0.3s ease !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            gap: 12px !important;
-            margin-top: 15px !important;
-            font-weight: 600 !important;
-            letter-spacing: 0.5px !important;
-        }
-
-        .btn-whatsapp:hover {
-            transform: scale(1.05) !important;
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
-            background: linear-gradient(45deg, #25D366, #25D366) !important;
-        }
-
-        .btn-whatsapp:active {
-            transform: scale(1.02) !important;
-        }
-
-        /* Asegurar que el SVG herede los colores correctamente */
-        .btn-whatsapp svg {
-            flex-shrink: 0;
-        }
-
-
-
-
-        /* Estilos mínimos para los controles de audio
+            
+     background: linear-gradient(45deg,
+             #470c70 0%,
+             #1f0539 25%,
+             #310549 50%,
+             #4f094f 75%,
+             #3c074c 100%);var(--fondo-col)
+    */
+     background-color: wheat;
+     animation: colorxd 24s linear infinite;
+
+     background-size: 100vw 100vh;
+     background-blend-mode: overlay, screen;
+     color: white;
+     overflow-x: hidden;
+     position: relative;
+     min-height: 100vh;
+ }
+
+ /* Patrón de textura de terciopelo */
+ body::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image:
+         radial-gradient(circle at 25% 25%, rgba(255, 212, 19, 0.064) 2px, transparent 2px),
+         radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+     background-size: 50px 50px, 30px 30px;
+     z-index: -1;
+ }
+
+ /* Custom controls */
+ .controls {
+     position: absolute;
+     left: 12px;
+     right: 12px;
+     bottom: 12px;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     background: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.48));
+     padding: 8px;
+     border-radius: 10px
+ }
+
+ /* Modal/Pantalla Inicial */
+ .modal {
+     overflow-x: hidden;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 1000;
+     transition: opacity 0.5s ease;
+ }
+
+ .modal-contenido {
+     text-align: center;
+     animation: aparecer 0.7s ease-in-out backwards;
+ }
+
+ .imagen-invitacion {
+     /*300x500*/
+     width: 100%;
+     height: 600px;
+     object-fit: cover;
+     border-radius: 15px;
+     /*margin-bottom: 20px;*/
+     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+
+ }
+
+ /* Botón con corona animada */
+ .btn-tocar {
+     background: linear-gradient(45deg, #38083a, #764ba2);
+     color: #8B4513;
+     border: none;
+     padding: 20px 20px;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     box-shadow: 0 5px 15px rgba(241, 148, 255, 0.928);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 12px;
+     font-weight: 600;
+     position: relative;
+     overflow: hidden;
+     border: 1px solid rgb(255, 255, 255);
+ }
+
+ .btn-tocar:hover {
+     transform: scale(1.05);
+     box-shadow: 0 8px 20px rgba(241, 48, 255, 0.6);
+
+ }
+
+
+
+ /* Animación específica para la corona */
+ .corona-svg {
+     animation: suspiro 1s ease-in-out infinite;
+     filter: drop-shadow(0 2px 3px rgba(229, 45, 232, 0.3));
+
+ }
+
+ /* Efecto de brillo en hover */
+ .btn-tocar::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+     transition: left 0.5s;
+     animation: suspirodos 2s ease-in-out infinite;
+ }
+
+ .btn-tocar:hover::before {
+     left: 100%;
+ }
+
+ /* Efecto de partículas doradas (opcional) */
+ .btn-tocar:hover .corona-svg {
+     filter: drop-shadow(0 0 8px rgba(247, 160, 255, 0.8));
+ }
+
+ /*Countdown Pantalla Principal */
+ .countdown {
+     margin-top: 5%;
+     align-items: center;
+     display: inline-flex;
+     gap: 10px;
+     justify-content: center;
+     margin-bottom: 12px;
+ }
+
+ .countdown .item {
+
+     background: rgba(255, 255, 255, 0.03);
+     padding: 10px;
+     border-radius: 8px;
+     text-align: center;
+     min-width: 64px;
+     border: 2px solid rgba(255, 202, 244, 0.755);
+ }
+
+ .countdown .item .num {
+
+     font-weight: 700;
+     font-size: 20px
+ }
+
+ /* Contenido Principal */
+ .contenido-principal {
+     min-height: 100vh;
+     padding: 20px;
+ }
+
+ .contenido-principal {
+     text-align: center;
+     animation: aparecer-principal 1.5s ease-out backwards;
+ }
+
+
+
+ .header {
+     text-align: center;
+     margin-bottom: 40px;
+ }
+
+ .header h1 {
+     font-size: 50px;
+     margin-bottom: -50px;
+     text-shadow: 2px 2px 24px rgba(254, 191, 255, 0.998);
+     font-family: "Great Vibes", cursive;
+     word-spacing: 12px;
+     padding: 80px 0 30px 0;
+ }
+
+ .navegacion {
+     justify-content: center;
+     gap: 15px;
+     margin-bottom: 30px;
+     position: fixed;
+     top: 10px;
+     left: 0;
+     right: 0;
+     display: flex;
+     gap: 10px;
+     padding: 0px 100px;
+     z-index: 1000;
+
+ }
+
+ .nav-btn {
+     background: rgba(255, 255, 255, 0.2);
+     color: white;
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     padding: 10px 40px;
+     /*20px*/
+     border-radius: 25px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     backdrop-filter: blur(10px);
+     margin-top: 10px;
+     font-family: "Playwrite NG Modern", cursive;
+     font-optical-sizing: auto;
+     font-weight: 100;
+     font-style: normal;
+
+ }
+
+ .nav-btn.activo,
+ .nav-btn:hover {
+     background: rgba(199, 219, 234, 0.461);
+     border-color: rgba(154, 123, 178, 0.707);
+ }
+
+ /* Secciones */
+ .secciones {
+     position: relative;
+     max-width: 600px;
+     margin: 0 auto;
+
+ }
+
+ .seccion {
+     display: none;
+     animation: deslizar 0.5s ease;
+
+ }
+
+ .seccion.activa {
+     display: block;
+
+ }
+
+ .seccion h2 {
+     margin-bottom: 10px;
+     font-family: "Playwrite NG Modern", cursive;
+     font-optical-sizing: auto;
+     font-weight: 100;
+     font-style: normal;
+     font-size: 2rem;
+
+ }
+
+ .seccion p {
+     margin-bottom: 10px;
+     font-size: 1.1rem;
+
+ }
+
+ /* Efecto de desvanecimiento */
+ .desvanecer {
+     animation: desvanecer 0.1s ease forwards;
+
+ }
+
+ /* Estilos para las opciones de radio personalizadas */
+ .opcion-asistencia {
+     display: flex;
+     font-family: "Playwrite NG Modern", cursive;
+     font-optical-sizing: auto;
+     font-weight: 100;
+     font-style: normal;
+     flex-direction: column;
+     gap: 15px;
+     margin-bottom: 25px;
+
+ }
+
+ .opcion-asistencia label {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     padding: 15px;
+     background: rgba(255, 255, 255, 0.1);
+     border-radius: 10px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     border: 2px solid transparent;
+
+ }
+
+ .opcion-asistencia label:hover {
+     background: rgba(255, 255, 255, 0.2);
+     transform: translateX(5px);
+
+ }
+
+ .opcion-asistencia input[type="radio"] {
+     display: none;
+
+ }
+
+ .radio-custom {
+     width: 20px;
+     height: 20px;
+     border: 2px solid rgba(255, 255, 255, 0.5);
+     border-radius: 50%;
+     position: relative;
+     transition: all 0.3s ease;
+
+ }
+
+ .opcion-asistencia input[type="radio"]:checked+.radio-custom {
+     border-color: #25D366;
+     background: #25D366;
+
+ }
+
+ .opcion-asistencia input[type="radio"]:checked+.radio-custom::after {
+     content: '';
+     position: absolute;
+     top: 4px;
+     left: 4px;
+     width: 8px;
+     height: 8px;
+     background: white;
+     border-radius: 50%;
+
+ }
+
+ .opcion-asistencia input[type="radio"]:checked~span:last-child {
+     color: #25D366;
+     font-weight: bold;
+ }
+
+ /* Botón de WhatsApp con logo */
+ .btn-whatsapp {
+     background: linear-gradient(45deg, #25D366, #128C7E) !important;
+     color: white !important;
+     border: none !important;
+     padding: 15px 25px !important;
+     font-family: "Playwrite NG Modern", cursive !important;
+     font-optical-sizing: auto;
+     font-weight: 100;
+     font-style: normal;
+     border-radius: 50px !important;
+     cursor: pointer !important;
+     transition: all 0.3s ease !important;
+     display: flex !important;
+     align-items: center !important;
+     justify-content: center !important;
+     gap: 12px !important;
+     margin-top: 15px !important;
+     font-weight: 600 !important;
+     letter-spacing: 0.5px !important;
+ }
+
+ .btn-whatsapp:hover {
+     transform: scale(1.05) !important;
+     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
+     background: linear-gradient(45deg, #25D366, #25D366) !important;
+ }
+
+ .btn-whatsapp:active {
+     transform: scale(1.02) !important;
+ }
+
+ /* Asegurar que el SVG herede los colores correctamente */
+ .btn-whatsapp svg {
+     flex-shrink: 0;
+ }
+
+
+
+
+ /* Estilos mínimos para los controles de audio
          style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;
         
         
         */
-        .audio-controls {
-            position: fixed;
-            margin-bottom: 1px;
-            display: flex;
-            top: 95%;
-            left: 90%;
-            transform: translate(-50%, -50%);
-            z-index: 1200;
-        }
+ .audio-controls {
+     position: fixed;
+     margin-bottom: 1px;
+     display: flex;
+     top: 95%;
+     left: 90%;
+     transform: translate(-50%, -50%);
+     z-index: 1200;
+ }
 
-        .audio-wrapper audio {
-            display: none;
-        }
+ .audio-wrapper audio {
+     display: none;
+ }
 
-        .audioBtns {
-            /* arriba de los controles existentes */
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 6px 6px;
-            border-radius: 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
+ .audioBtns {
+     /* arriba de los controles existentes */
+     background: rgba(255, 255, 255, 0.2);
+     color: white;
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     padding: 6px 6px;
+     border-radius: 16px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     backdrop-filter: blur(10px);
+ }
 
 
-        /* Responsive design */
+ /* Responsive design */
 
-        .xv-a-a p {
-            padding-top: 100%;
-        }
+ .xv-a-a p {
+     padding-top: 100%;
+ }
 
-        @media (max-width: 1000px) {
+ @media (max-width: 1000px) {
 
-            /* Contenedor para los botones */
-            .navegacion {
-                position: fixed;
-                top: 10px;
-                left: 0;
-                right: 0;
-                display: flex;
-                justify-content: center;
-                gap: 10px;
-                padding: 0px 100px;
-                z-index: 1000;
-            }
+     /* Contenedor para los botones */
+     .navegacion {
+         position: fixed;
+         top: 10px;
+         left: 0;
+         right: 0;
+         display: flex;
+         justify-content: center;
+         gap: 10px;
+         padding: 0px 100px;
+         z-index: 1000;
+     }
 
-            .nav-btn {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                background: rgba(255, 255, 255, 0.2);
-                color: rgb(255, 255, 255);
-                border: 2px solid rgba(255, 255, 255, 0.3);
-                padding: 8px 15px;
-                border-radius: 25px;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                backdrop-filter: blur(10px);
-                font-family: "Playwrite NG Modern", cursive;
-                font-optical-sizing: auto;
-                font-weight: 100;
-                font-style: normal;
-                font-size: 12px;
-                white-space: nowrap;
-                flex: 1;
-                /* Que se expandan igual */
-                max-width: 90px;
-                /* Ancho máximo */
-            }
+     .nav-btn {
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         background: rgba(255, 255, 255, 0.2);
+         color: rgb(255, 255, 255);
+         border: 2px solid rgba(255, 255, 255, 0.3);
+         padding: 8px 15px;
+         border-radius: 25px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         backdrop-filter: blur(10px);
+         font-family: "Playwrite NG Modern", cursive;
+         font-optical-sizing: auto;
+         font-weight: 100;
+         font-style: normal;
+         font-size: 12px;
+         white-space: nowrap;
+         flex: 1;
+         /* Que se expandan igual */
+         max-width: 90px;
+         /* Ancho máximo */
+     }
 
-            .header h1 {
-                font-size: 2.5rem;
-                margin-bottom: -35px;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-                font-family: "Great Vibes", cursive;
-                padding-top: 18%;
-            }
+     .header h1 {
+         font-size: 40px;
+         margin-bottom: -50px;
+         text-shadow: 2px 2px 24px rgba(254, 191, 255, 0.998);
+         font-family: "Great Vibes", cursive;
+         word-spacing: 12px;
+         padding: 70px 0 30px 0;
+     }
 
-            .audio-controls {
-                position: fixed;
-                margin-bottom: 1px;
-                display: flex;
-                top: 95%;
-                left: 92%;
-                transform: translate(-50%, -50%);
-                z-index: 1200;
-                animation: aparecer-principal 1.5s ease;
-            }
+     .audio-controls {
+         position: fixed;
+         margin-bottom: 1px;
+         display: flex;
+         top: 95%;
+         left: 92%;
+         transform: translate(-50%, -50%);
+         z-index: 1200;
+         animation: aparecer-principal 1.5s ease;
+     }
 
-            .imagen-invitacion {
-                /*300x500*/
-                width: 100%;
-                height: 600px;
-                object-fit: cover;
-                border-radius: 15px;
-                /*margin-bottom: 20px;*/
-                box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
+     .imagen-invitacion {
+         /*300x500*/
+         width: 100%;
+         height: 600px;
+         object-fit: cover;
+         border-radius: 15px;
+         /*margin-bottom: 20px;*/
+         box-shadow: 0 100px 80px rgba(0, 0, 0, 0.5);
 
-            }
-        }
+     }
+ }
 
-        @keyframes aparecer-principal {
-            from {
-                opacity: 0;
-                transform: scale(0);
-            }
+ .video-aparecer {
+     animation: video-aparecer 0.4s ease-in-out forwards;
 
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
+ }
 
-        .video-aparecer {
-            animation: video-aparecer 0.4s ease-in-out forwards;
+ .damas_style {
+     width: 100%;
+     max-width: 400px;
+     margin: 30px auto;
+     overflow: hidden;
+     position: relative;
+     border-radius: 15px;
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     padding: 10px;
+ }
 
-        }
+ .vidspost_style {
+     height: 100%;
+     max-height: 832px;
+     width: 100%;
+     /*max-width: 400px;*/
+     margin: 30px auto;
+     overflow: hidden;
+     position: relative;
+     border-radius: 15px;
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     padding: 10px;
+ }
 
-        @keyframes video-aparecer {
-            from {
-                opacity: 1;
-                transform: scale(1);
-            }
 
-            to {
-                opacity: -1.0;
-                transform: scale(1.5);
-            }
-        }
 
-        .damas_style {
-            width: 100%;
-            max-width: 400px;
-            margin: 30px auto;
-            overflow: hidden;
-            position: relative;
-            border-radius: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 10px;
-        }
 
-        .vidspost_style {
-           height: 100%;
-            max-height: 832px;
-            width: 100%;
-            /*max-width: 400px;*/
-            margin: 30px auto;
-            overflow: hidden;
-            position: relative;
-            border-radius: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 10px;
-        }
+
+
+
+ /* Animaciones*/
+ @keyframes wave {
+
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-10px);
+     }
+ }
+
+ @keyframes aparecer {
+     from {
+         opacity: 0;
+         transform: scale(0.1);
+     }
+
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+
+ /* Animación de "suspiro" - escala continua */
+ @keyframes suspiro {
+
+     0%,
+     100% {
+         transform: scale(0.6);
+     }
+
+     50% {
+         transform: scale(0.9);
+     }
+ }
+
+ /* Animación de "suspiro" - escala continua */
+ @keyframes suspirodos {
+
+     0%,
+     100% {
+         left: 100%
+     }
+
+     50% {
+         left: -100%;
+     }
+ }
+
+ @keyframes deslizar {
+     from {
+         opacity: 0;
+         transform: translateX(20px);
+
+     }
+
+     to {
+         opacity: 1;
+         transform: translateX(0);
+
+     }
+ }
+
+
+ @keyframes desvanecer {
+     to {
+         opacity: 0;
+
+     }
+ }
+
+ @keyframes aparecer-principal {
+     from {
+         opacity: 0;
+         transform: scale(0);
+     }
+
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+
+ .video-aparecer {
+     animation: video-aparecer 0.4s ease-in-out forwards;
+
+ }
+
+ @keyframes video-aparecer {
+     from {
+         opacity: 1;
+         transform: scale(1);
+     }
+
+     to {
+         opacity: -1.0;
+         transform: scale(1.5);
+     }
+ }
+
+ @keyframes testdecolor {
+     100% {
+
+         background-position: -2000vw;
+     }
+ }
+
+ @keyframes colorxd {
+     0% {
+         background-color: #555555;
+     }
+
+     50% {
+         background-color: rgb(60, 54, 119);
+     }
+
+     100% {
+         background-color: #555555;
+     }
+ }
