@@ -728,6 +728,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 let musicChangue = document.getElementById("bgAudio");
-const getSourcemusic = "https://cdn.pixabay.com/audio/2025/11/05/audio_8e8311f716.mp3"
+const getSourcemusic = "https://cdn.pixabay.com/audio/2026/03/23/audio_cda50b143f.mp3"
 musicChangue.src = getSourcemusic;
 musicChangue.preload = "auto";
