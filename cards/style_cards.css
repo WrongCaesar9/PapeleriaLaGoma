@@ -1,7 +1,14 @@
  /* Variables generales */
  :root {
-     --fondo-col: #653f62;
+  color-scheme: light dark; 
+     --text-col: light-dark(rgb(31, 50, 156), white);
+     --referencia-color: rgb(67, 12, 70);
+     --fondo-col: 67, 12, 70;
+     --fondo-buttons: var(--fondo-col);
+     --border-gros-col: 3px solid rgba(var(--fondo-buttons), 0.5);
      --gradiente: linear-gradient(45deg, orangered, orange, gold, lightgreen, rgb(255, 0, 149), rgb(31, 50, 156), rgb(138, 80, 255), hotpink, orangered);
+     --font-Event: "Great Vibes", cursive;
+
  }
 
  /* Reset CSS */
@@ -82,12 +89,11 @@
              #4f094f 75%,
              #3c074c 100%);var(--fondo-col)
     */
-     background-color: wheat;
-     animation: colorxd 24s linear infinite;
-
+     background-color: rgba(var(--fondo-col), 0.7);
+     /*animation: colorxd 24s linear infinite;*/
      background-size: 100vw 100vh;
      background-blend-mode: overlay, screen;
-     color: white;
+     color: light-dark(rgb(31, 50, 156), white); 
      overflow-x: hidden;
      position: relative;
      min-height: 100vh;
@@ -175,11 +181,9 @@
 
  .btn-tocar:hover {
      transform: scale(1.05);
-     box-shadow: 0 8px 20px rgba(241, 48, 255, 0.6);
+     box-shadow: 0 8px 20px rgba(241, 48, 255, 0.);
 
  }
-
-
 
  /* Animación específica para la corona */
  .corona-svg {
@@ -221,19 +225,25 @@
  }
 
  .countdown .item {
-
-     background: rgba(255, 255, 255, 0.03);
+     background: rgba(255, 255, 255, 0.2);
      padding: 10px;
      border-radius: 8px;
      text-align: center;
      min-width: 64px;
-     border: 2px solid rgba(255, 202, 244, 0.755);
+     border: var(--border-gros-col);
  }
 
  .countdown .item .num {
-
      font-weight: 700;
-     font-size: 20px
+     font-size: 20px;
+ }
+
+ #dateText {
+     font-family: Crimson Text, serif;
+     font-weight: 700;
+     font-style: italic;
+     letter-spacing: 3px;
+     word-spacing: 4px;
  }
 
  /* Contenido Principal */
@@ -247,8 +257,6 @@
      animation: aparecer-principal 1.5s ease-out backwards;
  }
 
-
-
  .header {
      text-align: center;
      margin-bottom: 40px;
@@ -258,7 +266,7 @@
      font-size: 50px;
      margin-bottom: -50px;
      text-shadow: 2px 2px 24px rgba(254, 191, 255, 0.998);
-     font-family: "Great Vibes", cursive;
+     font-family: var(--font-Event);
      word-spacing: 12px;
      padding: 80px 0 30px 0;
  }
@@ -280,8 +288,8 @@
 
  .nav-btn {
      background: rgba(255, 255, 255, 0.2);
-     color: white;
-     border: 2px solid rgba(255, 255, 255, 0.3);
+     color: var(--text-col);
+     border: var(--border-gros-col);
      padding: 10px 40px;
      /*20px*/
      border-radius: 25px;
@@ -298,8 +306,8 @@
 
  .nav-btn.activo,
  .nav-btn:hover {
-     background: rgba(199, 219, 234, 0.461);
-     border-color: rgba(154, 123, 178, 0.707);
+     background: rgba(var(--fondo-buttons), 0.3);
+     border-color: rgba(var(--fondo-buttons),0.5);
  }
 
  /* Secciones */
@@ -511,16 +519,15 @@
          align-items: center;
          justify-content: center;
          background: rgba(255, 255, 255, 0.2);
-         color: rgb(255, 255, 255);
-         border: 2px solid rgba(255, 255, 255, 0.3);
+         border: var(--border-gros-col);
          padding: 8px 15px;
          border-radius: 25px;
          cursor: pointer;
          transition: all 0.3s ease;
-         backdrop-filter: blur(10px);
+         backdrop-filter: blur(5px);
          font-family: "Playwrite NG Modern", cursive;
          font-optical-sizing: auto;
-         font-weight: 100;
+         font-weight: 800;
          font-style: normal;
          font-size: 12px;
          white-space: nowrap;
@@ -534,7 +541,7 @@
          font-size: 40px;
          margin-bottom: -50px;
          text-shadow: 2px 2px 24px rgba(254, 191, 255, 0.998);
-         font-family: "Great Vibes", cursive;
+         font-family: var(--font-Event);
          word-spacing: 12px;
          padding: 70px 0 30px 0;
      }

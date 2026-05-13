@@ -1,3 +1,6 @@
+<!doctype html>
+<html lang="es-MX">
+
 <!DOCTYPE html>
 <html lang="es-MX">
 
@@ -98,7 +101,7 @@
                 </button>
             </div>
             <span class="wave-text"
-                style="font-size: 0.8rem; color: white; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);"> Toque dos veces
+                style="z-index: 5000000000000;font-size: 0.8rem; color: white; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);"> Toque dos veces
                 la pantalla para omitir</span>
         </div>
     </div>
@@ -107,7 +110,7 @@
 
 
     <!-- Contenido Principal (oculto inicialmente) -->
-    <div id="contenidoPrincipal" class="contenido-principal" style="display: none;">
+    <div id="contenidoPrincipal" class="contenido-principal" style="display: none;"><!-- display: none; -->
         <!-- Contenido Principal (oculto inicialmente) -->
         <!-- Audio de fondo + controles insertar en JS-->
         <div class="audio-wrapper" aria-hidden="false">
@@ -128,7 +131,7 @@
                 <button class="nav-btn" data-seccion="confirmar">Confirmar</button>
                 <button class="nav-btn" data-seccion="Galeria">Galería</button>
             </nav>
-            <h1>XV<br>Tu nombre completo</h1>
+            <h1>Tipo de Evento<br>Tu nombre completo</h1>
             <div style="padding-top: 50px;">
                 <iframe data-testid="embed-iframe" style="border-radius:12px"
                     src="https://open.spotify.com/embed/track/6pWgRkpqVfxnj3WuIcJ7WP?utm_source=generator&theme=0"
@@ -186,11 +189,8 @@
                             <div class="lbl">Seg</div>
                         </div>
                     </div>
-                </center>
-                <center>
-                    <p style="font-family: Crimson Text, serif;
-                  font-weight: 700;
-                  font-style: italic; letter-spacing: 3px; word-spacing: 4px;"><span id="dateText">--</span></p>
+                    <p><span id="dateText"></span></p>
+                    
                 </center>
 
 
@@ -261,21 +261,7 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <div style="border:0; padding-bottom: 50px;">
-                    <a style="background: rgba(255, 255, 255, 0.2);
-                        color: white;
-                        border: 2px solid rgba(255, 255, 255, 0.3);
-                        padding: 10px 40px;
-                        /*20px*/
-                        border-radius: 25px;
-                        cursor: pointer;
-                        transition: all 0.3s ease;
-                        backdrop-filter: blur(10px);
-                        margin-top: 10px;
-                        font-family: Playwrite NG Modern, cursive;
-                        font-optical-sizing: auto;
-                        font-weight: 100;
-                        font-style: normal;
-            " href='https://maps.app.goo.gl/mCR2TwrysLMy1TVE9'>Abrir Mapa</a>
+                    <a class="nav-btn" href='https://maps.app.goo.gl/mCR2TwrysLMy1TVE9'>Abrir Mapa</a>
                 </div>
 
 
@@ -298,21 +284,7 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <div style="border:0; padding-bottom: 50px;">
-                    <a style="background: rgba(255, 255, 255, 0.2);
-                        color: white;
-                        border: 2px solid rgba(255, 255, 255, 0.3);
-                        padding: 10px 40px;
-                        /*20px*/
-                        border-radius: 25px;
-                        cursor: pointer;
-                        transition: all 0.3s ease;
-                        backdrop-filter: blur(10px);
-                        margin-top: 10px;
-                        font-family: Playwrite NG Modern, cursive;
-                        font-optical-sizing: auto;
-                        font-weight: 100;
-                        font-style: normal;
-            " href='https://maps.app.goo.gl/jhBk9HQ6zskGXHEV7'>Abrir Mapa</a>
+                    <a class="nav-btn" href='https://maps.app.goo.gl/jhBk9HQ6zskGXHEV7'>Abrir Mapa</a>
                 </div>
             </section>
 

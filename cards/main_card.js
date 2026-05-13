@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!typewriterStarted) {
                 startTypewriter();
             }
-        }, 2000);
+        }, 500);
 
     } else {
         // Si no hay video, iniciar inmediatamente
