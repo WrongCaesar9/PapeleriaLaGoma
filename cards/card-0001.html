@@ -1,6 +1,3 @@
-<!doctype html>
-<html lang="es-MX">
-
 <!DOCTYPE html>
 <html lang="es-MX">
 
@@ -118,7 +115,22 @@
 
             <div class="audio-controls" role="region" aria-label="Controles de audio">
                 <button visibility: hidden class="audioBtns" id="btnMute" type="button" aria-pressed="false"></button>
-                <button class="audioBtns" id="btnPause" type="button" aria-pressed="false"></button>
+                <button class="audioBtns" id="btnPause" type="button" aria-pressed="false"><svg style="scale: calc(2);" class="corona-svg" width="32" height="32" viewBox="0 0 24 24"
+                        fill="none">
+                        <!-- Corona más detallada -->
+
+                        <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5Z" stroke="#FEE7FE" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 16H19V19C19 20.1046 18.1046 21 17 21H7C5.89543 21 5 20.1046 5 19V16Z"
+                            stroke="#FEE7FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <!-- Piedras preciosas -->
+                        <circle cx="12" cy="8" r="1.5" fill="#F216F2" />
+                        <circle cx="8" cy="10" r="0.9" fill="#F665F6" />
+                        <circle cx="16" cy="10" r="0.9" fill="#F665F6" />
+                        <circle cx="6" cy="12" r="0.7" fill="#FBBCFB" />
+                        <circle cx="18" cy="12" r="0.7" fill="#FBBCFB" />
+                    </svg></button>
             </div>
         </div>
 
@@ -132,17 +144,16 @@
                 <button class="nav-btn" data-seccion="Galeria">Galería</button>
             </nav>
             <h1>Tipo de Evento<br>Tu nombre completo</h1>
-            <div style="padding-top: 50px;">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/6pWgRkpqVfxnj3WuIcJ7WP?utm_source=generator&theme=0"
-                    width="100%" height="152" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-            </div>
         </header>
 
         <main class="secciones">
             <section id="seccion-inicio" class="seccion activa">
+                            <div style="padding-top: 50px;">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/track/6pWgRkpqVfxnj3WuIcJ7WP?utm_source=generator&theme=0" width="100%"
+                                    height="152" frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
                 <h2 id="line1" style="margin-top: 80px;"></h2>
                 <h2 id="line2"></h2>
                 <h2 id="line3"></h2>

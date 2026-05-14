@@ -2,8 +2,8 @@
  :root {
   color-scheme: light dark; 
      --text-col: light-dark(rgb(31, 50, 156), white);
-     --referencia-color: rgb(67, 12, 70);
-     --fondo-col: 67, 12, 70;
+     --referencia-color: rgb(239, 236, 215);
+     --fondo-col: 0, 0, 20;
      --fondo-buttons: var(--fondo-col);
      --border-gros-col: 3px solid rgba(var(--fondo-buttons), 0.5);
      --gradiente: linear-gradient(45deg, orangered, orange, gold, lightgreen, rgb(255, 0, 149), rgb(31, 50, 156), rgb(138, 80, 255), hotpink, orangered);
@@ -90,9 +90,10 @@
              #3c074c 100%);var(--fondo-col)
     */
      background-color: rgba(var(--fondo-col), 0.7);
-     /*animation: colorxd 24s linear infinite;*/
-     background-size: 100vw 100vh;
-     background-blend-mode: overlay, screen;
+     /*background-image: url(/impg/bggames.png);*/
+     animation: colorxd 24s linear infinite;
+     background-size: 100vh 100vw;
+     background-blend-mode: overlay, screen, screen, screen;
      color: light-dark(rgb(31, 50, 156), white); 
      overflow-x: hidden;
      position: relative;
@@ -259,7 +260,7 @@
 
  .header {
      text-align: center;
-     margin-bottom: 40px;
+     margin-bottom: 10px;
  }
 
  .header h1 {
@@ -276,7 +277,7 @@
      gap: 15px;
      margin-bottom: 30px;
      position: fixed;
-     top: 10px;
+     top: 90vh;
      left: 0;
      right: 0;
      display: flex;
@@ -299,23 +300,23 @@
      margin-top: 10px;
      font-family: "Playwrite NG Modern", cursive;
      font-optical-sizing: auto;
-     font-weight: 100;
+     font-weight: 800;
      font-style: normal;
 
  }
 
  .nav-btn.activo,
  .nav-btn:hover {
-     background: rgba(var(--fondo-buttons), 0.3);
+     background: rgba(var(--fondo-buttons), 0.1);
      border-color: rgba(var(--fondo-buttons),0.5);
+     box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.619);
  }
 
  /* Secciones */
  .secciones {
      position: relative;
-     max-width: 600px;
+     max-width: 100dvw;
      margin: 0 auto;
-
  }
 
  .seccion {
@@ -500,17 +501,15 @@
  }
 
  @media (max-width: 1000px) {
-
      /* Contenedor para los botones */
      .navegacion {
          position: fixed;
-         top: 10px;
+         top: 90dvh;
          left: 0;
          right: 0;
+         transition: top 0.3s ease;
          display: flex;
          justify-content: center;
-         gap: 10px;
-         padding: 0px 100px;
          z-index: 1000;
      }
 
@@ -520,8 +519,8 @@
          justify-content: center;
          background: rgba(255, 255, 255, 0.2);
          border: var(--border-gros-col);
-         padding: 8px 15px;
-         border-radius: 25px;
+         padding: 4px 10px;
+         border-radius: 18px;
          cursor: pointer;
          transition: all 0.3s ease;
          backdrop-filter: blur(5px);
@@ -543,14 +542,13 @@
          text-shadow: 2px 2px 24px rgba(254, 191, 255, 0.998);
          font-family: var(--font-Event);
          word-spacing: 12px;
-         padding: 70px 0 30px 0;
+         padding: 1px 0 10px 0;
      }
 
      .audio-controls {
          position: fixed;
-         margin-bottom: 1px;
          display: flex;
-         top: 95%;
+         top: 5vh;
          left: 92%;
          transform: translate(-50%, -50%);
          z-index: 1200;
