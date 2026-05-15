@@ -1785,3 +1785,77 @@ background-color: rgba(0, 0, 0, 0.379);
   0% { width: 0%}
   100% { width: 100%}
 }
+
+/* 1. Fondo difuminado que cubre toda la pantalla */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+  backdrop-filter: blur(4px); /* Difumina lo que está detrás */
+  z-index: 9999; /* Asegura que esté por encima de todo */
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2. La caja contenedora (La "notificación") */
+.contenido-modal {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 500px; /* Tamaño ideal para celular y computadora */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  
+  /* Animación de entrada estilo notificación */
+  animation: deslizarEntrada 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 3. El botón de cerrar (Arriba a la derecha) */
+.contenido-modal button {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  z-index: 10;
+}
+
+.contenido-modal button:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+
+/* 4. Estilos para que el iframe se adapte perfectamente */
+.contenido-modal iframe {
+  border-radius: 8px;
+  margin-top: 15px;
+  border: none;
+}
+
+/* 5. Animación keyframe */
+@keyframes deslizarEntrada {
+  from {
+    transform: translateY(50px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}

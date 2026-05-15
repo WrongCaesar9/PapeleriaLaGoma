@@ -1,3 +1,7 @@
+//constantes
+const telefono = '525620886202';
+const ubi = 'https://maps.app.goo.gl/jhBk9HQ6zskGXHEV7';
+//constantes
 /* Typewriter */
 document.addEventListener('DOMContentLoaded', function () {
     const video = document.getElementById('videoInvitacion');
@@ -50,11 +54,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Por si el video ya terminó o hay algún error
     if (video) {
 
-    // Esperar a que el video termine
-    video.addEventListener('ended', function () {
-        // Iniciar el typewriter cuando termine el video
-        setTimeout(typeLine, 2500);
-    });
+        // Esperar a que el video termine
+        video.addEventListener('ended', function () {
+            // Iniciar el typewriter cuando termine el video
+            setTimeout(typeLine, 2500);
+        });
         video.addEventListener('ended', startTypewriter);
 
         // También iniciar si el video ya terminó
@@ -71,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     } else {
         // Si no hay video, iniciar inmediatamente
-        setTimeout(typeLine,2000);
-        
+        setTimeout(typeLine, 2000);
+
     }
 });
 /* Typewriter */
@@ -453,170 +457,183 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /* Script para las funciones de saltar el video y eso */
-        document.addEventListener('DOMContentLoaded', function () {
-            // 3. Manejar el envío del formulario a WhatsApp
-            const formulario = document.querySelector('.formulario-confirmacion');
-            if (formulario) {
-                formulario.addEventListener('submit', function (e) {
-                    e.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+    // 3. Manejar el envío del formulario a WhatsApp
+    const formulario = document.querySelector('.formulario-confirmacion');
+    if (formulario) {
+        formulario.addEventListener('submit', function (e) {
+            e.preventDefault();
 
-                    // Obtener la opción seleccionada
-                    const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
+            // Obtener la opción seleccionada
+            const opcionSeleccionada = document.querySelector('input[name="asistencia"]:checked');
 
-                    if (!opcionSeleccionada) {
-                        alert('Por favor, selecciona una opción de asistencia.');
-                        return;
-                    }
+            
+            if (!opcionSeleccionada) {
+                alert('Si no deseas mandar WhatsApp, rellena este formulario, por favor. Esto es importante para tener control de los invitados');
+                return;
+            }
+            const asistencia = opcionSeleccionada.value;
 
-                    const asistencia = opcionSeleccionada.value;
-                    let mensaje = '';
+            let mensaje = '';
 
-                    // Personalizar el mensaje según la opción
-                    switch (asistencia) {
-                        case 'si':
-                            mensaje = '¡Hola! Confirmo que *SÍ asistiré* al evento. ¡Nos vemos!';
-                            break;
-                        case 'no':
-                            mensaje = '¡Hola! Lamentablemente *NO podré asistir* al evento. ¡Mucho éxito!';
-                            break;
-                        case 'talvez':
-                            mensaje = '¡Hola! Aún *no estoy seguro* si podré asistir al evento. Te confirmo más cerca de la fecha.';
-                            break;
-                    }
 
-                    /* Agregar información del evento al mensaje (opcional
-                   'Ceremonia: <br>Parroquia de San Buenaventura<br>a las 13:45 hrs' },
-        { id: 'line6', text: 'Recepción: <br>Boutique Y Regalos "Pablin" <br>a partir de las 16:00 hrs' 
-                
-                
-                )*/
-                    mensaje += '%0A%0A*XV Años |* Luis Ángel Mora Ramírez%0A%0A*Fecha:* 11 de Enero 2026%0A%0A*Ceremonia:* 01:45 PM en Parroquia de San Buenaventura%0A%0A*Recepción:* 04:00 PM en Boutique y Regalos "Pablin"%0A';
+            var urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+            switch (asistencia) {
 
-                    // Número de teléfono (reemplaza con el número real)
-                    const telefono = '525620886202'; // ← CAMBIA ESTE NÚMERO
-
-                    // Crear el enlace de WhatsApp
-                    const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
-
-                    // Abrir WhatsApp
+                case 'si':
+                    mensaje = '¡Hola! Confirmo que *SÍ asistiré* al evento. ¡Nos vemos!';
+                    mensaje += '%0A%0A*XV Años |* Luis Ángel Mora Ramírez%0A%0A*Fecha:* 11 de Enero 2026%0A%0A*Ceremonia:* 01:45 PM en Parroquia de San Buenaventura%0A%0A*Recepción:* 04:00 PM en Boutique y Regalos "Pablin"%0A' + `${ubi}`;
+                    alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
+                    urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
                     window.open(urlWhatsApp, '_blank');
 
-                    // Opcional: Mostrar mensaje de confirmación
+                    break;
+
+
+
+                case 'no':
+                    mensaje = '¡Hola! Lamentablemente *NO podré asistir* al evento. ¡Mucho éxito!';
                     alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
-                });
+                    urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+                    window.open(urlWhatsApp, '_blank');
+                    break;
+
+                case 'talvez':
+                    mensaje = '¡Hola! Aún *no estoy seguro* si podré asistir al evento. Te confirmo más cerca de la fecha.';
+                    alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
+                    urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+                    window.open(urlWhatsApp, '_blank');
+                    break;
+
             }
 
+        });
+    }
 
 
-        // -------- CONFIG ----------
-        // Cambia esto por la fecha y hora del evento (ISO 8601) ejemplo 2025-11-29T18:00:00-06:00
-        const eventDate = new Date('2027-01-11T13:45:00-06:00');
-        // Título/fecha de texto
-        document.getElementById('dateText').textContent = eventDate.toLocaleString();
+});
 
-        // -------- COUNTDOWN ----------
-        const $days = document.getElementById('days');
-        const $hours = document.getElementById('hours');
-        const $mins = document.getElementById('mins');
-        const $secs = document.getElementById('secs');
 
-        function updateCountdown() {
-            const now = new Date();
-            let diff = Math.max(0, eventDate - now);
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            diff -= days * (1000 * 60 * 60 * 24);
-            const hours = Math.floor(diff / (1000 * 60 * 60));
-            diff -= hours * (1000 * 60 * 60);
-            const mins = Math.floor(diff / (1000 * 60));
-            diff -= mins * (1000 * 60);
-            const secs = Math.floor(diff / 1000);
-            $days.textContent = String(days).padStart(2, '0');
-            $hours.textContent = String(hours).padStart(2, '0');
-            $mins.textContent = String(mins).padStart(2, '0');
-            $secs.textContent = String(secs).padStart(2, '0');
+
+// -------- CONFIG ----------
+// Cambia esto por la fecha y hora del evento (ISO 8601) ejemplo 2025-11-29T18:00:00-06:00
+const eventDate = new Date('2027-01-11T13:45:00-06:00');
+// Título/fecha de texto
+document.getElementById('dateText').textContent = eventDate.toLocaleString();
+
+// -------- COUNTDOWN ----------
+const $days = document.getElementById('days');
+const $hours = document.getElementById('hours');
+const $mins = document.getElementById('mins');
+const $secs = document.getElementById('secs');
+
+function updateCountdown() {
+    const now = new Date();
+    let diff = Math.max(0, eventDate - now);
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    diff -= days * (1000 * 60 * 60 * 24);
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    diff -= hours * (1000 * 60 * 60);
+    const mins = Math.floor(diff / (1000 * 60));
+    diff -= mins * (1000 * 60);
+    const secs = Math.floor(diff / 1000);
+    $days.textContent = String(days).padStart(2, '0');
+    $hours.textContent = String(hours).padStart(2, '0');
+    $mins.textContent = String(mins).padStart(2, '0');
+    $secs.textContent = String(secs).padStart(2, '0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+
+
+//Script Audio de fondo + controles
+document.addEventListener('DOMContentLoaded', function () {
+    const audio = document.getElementById('bgAudio');
+    const btnMute = document.getElementById('btnMute');
+    const btnPause = document.getElementById('btnPause');
+    const contenido = document.getElementById('contenidoPrincipal');
+
+    function updateButtons() {
+        // SVG para sonido activado
+        const muteIcon = audio.muted ?
+            '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>' :
+            '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>';
+
+        // SVG para play/pause
+        const pauseIcon = audio.paused ?
+            '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>' :
+            '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+
+        btnMute.innerHTML = muteIcon;
+        btnMute.setAttribute('aria-pressed', String(audio.muted));
+        btnPause.innerHTML = pauseIcon;
+        btnPause.setAttribute('aria-pressed', String(!audio.paused));
+    }
+
+    btnMute.addEventListener('click' || e.key === ' ', function () {
+        audio.muted = !audio.muted;
+        updateButtons();
+    });
+
+    btnPause.addEventListener('click' || e.key === ' ', function () {
+        if (audio.paused) {
+            audio.play().catch(() => {
+                audio.muted = true;
+                audio.play().catch(() => { });
+            }).finally(updateButtons);
+        } else {
+            audio.pause();
+            updateButtons();
         }
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
+    });
 
+    // Detener audio al salir del navegador
+    document.addEventListener('visibilitychange', function () {
+        const audio = document.getElementById('bgAudio');
+        if (document.visibilityState === 'hidden') {
+            audio.pause();
+            updateButtons();
+        } else {
+            audio.play();
+            updateButtons();
+        }
+    });
 
-
-        //Script Audio de fondo + controles
-        document.addEventListener('DOMContentLoaded', function () {
-            const audio = document.getElementById('bgAudio');
-            const btnMute = document.getElementById('btnMute');
-            const btnPause = document.getElementById('btnPause');
-            const contenido = document.getElementById('contenidoPrincipal');
-
-            function updateButtons() {
-                // SVG para sonido activado
-                const muteIcon = audio.muted ?
-                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>' :
-                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>';
-
-                // SVG para play/pause
-                const pauseIcon = audio.paused ?
-                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>' :
-                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
-
-                btnMute.innerHTML = muteIcon;
-                btnMute.setAttribute('aria-pressed', String(audio.muted));
-                btnPause.innerHTML = pauseIcon;
-                btnPause.setAttribute('aria-pressed', String(!audio.paused));
-            }
-
-            btnMute.addEventListener('click' || e.key === ' ', function () {
-                audio.muted = !audio.muted;
-                updateButtons();
-            });
-
-            btnPause.addEventListener('click' || e.key === ' ', function () {
-                if (audio.paused) {
-                    audio.play().catch(() => {
-                        audio.muted = true;
-                        audio.play().catch(() => { });
-                    }).finally(updateButtons);
-                } else {
-                    audio.pause();
-                    updateButtons();
-                }
-            });
-
-            // Detener audio al salir del navegador
-            document.addEventListener('visibilitychange', function () {
-                const audio = document.getElementById('bgAudio');
-                if (document.visibilityState === 'hidden') {
-                    audio.pause();
-                    updateButtons();
-                } else {
-                    audio.play();
-                    updateButtons();
-                }
-            });
-
-            if (contenido) {
-                const mo = new MutationObserver(() => {
-                    const visible = window.getComputedStyle(contenido).display !== 'none';
-                    if (visible) {
-                        audio.play().catch(() => {
-                            audio.muted = true;
-                            audio.play().catch(() => { });
-                        }).finally(updateButtons);
-                        mo.disconnect();
-                    }
-                });
-                mo.observe(contenido, { attributes: true, attributeFilter: ['style'] });
-
-                if (window.getComputedStyle(contenido).display !== 'none') {
-                    audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
-                    mo.disconnect();
-                }
-            } else {
-                audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
+    if (contenido) {
+        const mo = new MutationObserver(() => {
+            const visible = window.getComputedStyle(contenido).display !== 'none';
+            if (visible) {
+                audio.play().catch(() => {
+                    audio.muted = true;
+                    audio.play().catch(() => { });
+                }).finally(updateButtons);
+                mo.disconnect();
             }
         });
+        mo.observe(contenido, { attributes: true, attributeFilter: ['style'] });
+
+        if (window.getComputedStyle(contenido).display !== 'none') {
+            audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
+            mo.disconnect();
+        }
+    } else {
+        audio.play().catch(() => { audio.muted = true; audio.play().catch(() => { }); }).finally(updateButtons);
+    }
+});
 
 
 
+function abrirModal() {
+  const modal = document.getElementById('modalFormulario');
+  modal.style.display = 'flex'; // Muestra el fondo y centra el contenido
+}
+
+function cerrarModal() {
+    alert('Gracias por el tiempo brindado');
+  const modal = document.getElementById('modalFormulario');
+  modal.style.display = 'none'; // Vuelve a ocultarlo
+}
 
 
 let musicChangue = document.getElementById("bgAudio");
