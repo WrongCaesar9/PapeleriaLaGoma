@@ -1,0 +1,1787 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+
+  /*En esta seccion se agrego la imagen de fondo
+    background-color: rgba(81, 81, 81, 0.6);*/
+  background-image: url(/impg/bggames.png);
+  background-size: 20%;
+  background-color: rgb(162, 163, 175);
+  background-repeat: repeat;
+}
+
+body a {
+  color: #112a7d;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+body a:hover {
+  color: #903bd5;
+  text-decoration: wavy underline;
+  transition: color 0.3s ease;
+}
+
+main {
+  min-width: 480px;
+  min-height: 100dvh;
+  transition: all 1s ease;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 10px 20px 10px 20px;
+  text-align: justify;
+}
+
+footer {
+  background-color: rgba(11, 11, 12, 0.931);
+  /*background-image: url(/logos/mvcsuper.gif);
+    background-size: auto; */
+  font-size: 10;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+li {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 10px 20px 10px 40px;
+  text-align: justify;
+}
+
+/*
+  body{
+    background-color: #000000;
+    animation-name: colorchange;
+    animation-duration:120s;
+    animation-iteration-count: infinite;
+    font-family: 'Fugaz One',cursive ;
+}
+@keyframes colorchange {
+     0% {background-color: orangered;color:#000000; }
+    10% {background-color: orange;color:#222222; }
+    20% {background-color: #dac59f;color:#222222; }
+    30% {background-color: lightgreen;color:#414141; }
+    40% {background-color: rgb(8, 150, 175);color:#878787; }
+    50% {background-color: rgb(41, 77, 112);color:#A8A8A8; }
+    60% {background-color: rgb(137, 78, 255);color:#D0D0D0; }
+    70% {background-color: hotpink;color:#EDEDED; }
+    80% {background-color: pink;color:#FFFFFF; }
+    90% {background-color: #0036FF;color:#FFEFDA; }
+    100%{background-color: orangered;color:#FFE3C0; } 
+}   background-image: url(/logos/mvcsuper.gif);
+*/
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* 1. IDENTIDAD (Logo y Texto) */
+.header-brand {
+  background-color: #2b2b2b;
+  /* Tu color oscuro base */
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+  /* No se encoge */
+}
+
+.header__logo-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #333;
+  margin-left: 20px;
+}
+
+.brand-text h1 {
+  font-family: 'Times New Roman', serif;
+  /* Tu fuente original */
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  line-height: 1;
+}
+
+.brand-text span {
+  font-size: 0.6rem;
+  color: #afddff;
+  /* Acento azul */
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+
+
+/* 2. BARRA DE BÚSQUEDA (Estilo Wide) */
+.header-search {
+  flex: 1 1 300px;
+  /* Crece, pero mínimo 300px antes de bajar */
+  display: flex;
+  justify-content: center;
+}
+
+.search-box-container {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  background-color: #4d4d4d;
+  border-radius: 25px;
+  padding: 4px 10px;
+  border: 1px solid #444;
+}
+
+#barra-busqueda {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 8px;
+  margin: 15px 5px 10px 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* 3. CONTROLES Y NAVEGACIÓN */
+
+
+.nav-group {
+  margin: -35px 5px 10px 5px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+/* Estilo de Botones tipo "Thingiverse" */
+.thingi-btn,
+.thingi-select {
+  background-color: #3a3a43;
+  color: #ffffff;
+  border: 2px solid #444;
+  padding: 4px 15px;
+  margin: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 1s;
+  width: max-content;
+}
+
+.thingi-btn:hover,
+.thingi-btn.link-btn:hover,
+.thingi-select:hover {
+  background-color: #9797f4;
+  border-color: #daf747;
+  color: white;
+}
+
+/* Este es el estilo que se mantendrá fijo al hacer clic */
+.thingi-btn.active {
+  background-color: #6666ed;
+  border-color: #daf747;
+  color: white;
+}
+
+/* Botón "Primario" (Para resaltar Programas) */
+.thingi-btn.primary {
+  background-color: #248bfb;
+  border-color: #248bfb;
+  color: white;
+  font-weight: bold;
+}
+
+.thingi-btn.primary:hover {
+  background-color: #1a6fc4;
+}
+
+.thingi-btn.blenderDLSS {
+  background-color: #dc7e37;
+  font-weight: 600;
+}
+
+.thingi-btn.link-btn {
+  background-color: #59c946;
+  border-color: #076402;
+  color: white;
+}
+
+/* Estilo específico para los selects */
+.thingi-select {
+
+  max-width: 300px;
+  /* Evita que el select se haga gigante */
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* RESPONSIVE: Ajustes para móvil */
+@media (max-width: 768px) {
+  .page-header-capsule {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    font-size: 10px;
+  }
+
+  .brand-text h1 {
+    font-family: 'Times New Roman', serif;
+    /* Tu fuente original */
+    font-size: 10px;
+    color: white;
+    margin: 0;
+    line-height: 1;
+    display: none;
+  }
+
+  /* 1. IDENTIDAD (Logo y Texto) */
+  .header-brand {
+    background-color: #2b2b2b;
+    font-size: 1rem;
+    flex: 0 0 auto;
+    /* No se encoge */
+    width: 100%;
+    height: 100px;
+  }
+
+  .brand-text span {
+    font-size: 0.5rem;
+    color: #b8ffaf;
+    /* Acento azul */
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 800;
+    display: none;
+  }
+
+  .header__logo-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    object-fit: cover;
+
+  }
+
+  .nav-group,
+  .filter-group {
+    display: inline-flex;
+    inline-size: 1px;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* Estilo de Botones tipo "Thingiverse" */
+  .thingi-btn,
+  .thingi-select {
+    background-color: #3a3a43;
+    color: #ffffff;
+    border: 1px solid #444;
+    padding: 1px 8px;
+    margin: 10px 10px 0px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 1s;
+    width: max-content;
+  }
+
+  .thingi-btn:hover,
+  .thingi-select:hover {
+    background-color: #9797f4;
+    border-color: #daf747;
+    color: white;
+  }
+
+  /* Botón "Primario" (Para resaltar Programas) */
+  .thingi-btn.primary {
+    background-color: #248bfb;
+    border-color: #248bfb;
+    color: white;
+    font-weight: bold;
+  }
+
+  .thingi-btn.primary:hover {
+    background-color: #1a6fc4;
+  }
+
+  /* Estilo específico para los selects */
+  .thingi-select {
+    max-width: 190px;
+    /* Evita que el select se haga gigante */
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+}
+
+
+
+.marquee-wrapper {
+  background-color: #1a1919;
+  /* Azul estilo Thingiverse */
+  color: white;
+  font-size: 16px;
+  padding: 0 0;
+}
+
+
+
+
+main {
+  margin: 0 auto;
+  max-width: 900;
+
+}
+
+/*Aqui modifica parte del fondo rosa en donde se muestran los programas  #e9dcffac;*/
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffaa5f00;
+}
+
+section h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+section ubic {
+  text-align: center;
+  margin-top: 0;
+}
+
+section cont {
+  text-align: center;
+  margin-top: 0;
+}
+
+
+
+.whole-search-bar {
+  background-color: #393939;
+  display: inline-flex;
+  margin: 10px auto;
+  width: 100%;
+
+}
+
+.whole-search-bar input {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  border: 2px solid #444;
+  padding: 4px 3px 4px 2px;
+  /*xUp yLarge yHihg */
+
+  padding: 8px;
+
+}
+
+input[type="search"]::placeholder {
+  color: #ededed;
+  /* Un azul vibrante */
+  font-size: 16px;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  width: 105%;
+}
+
+.datetime {
+  position: relative;
+  top: -130px;
+  left: 50px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#programas-contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  font-family: Arial;
+  font-size: 16px;
+  align-items: stretch;
+  /*  obliga a las tarjetas a medir lo mismo */
+}
+
+
+/* Contenedor principal de programas */
+.programas-contenedor {
+  width: 100%;
+  /* ESTA ES LA MAGIA DEL CLS */
+  aspect-ratio: 1 / 1;
+  /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
+  object-fit: cover;
+  /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
+  display: block;
+  /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
+  background-image: url(https://i.pinimg.com/originals/a4/62/d1/a462d192479048db0f02f4466b900e0a.gif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+
+/* Imagen principal (sin hover) */
+.img-nohide {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Imagen de hover (overlay) */
+.img-hide {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+}
+
+/* Efecto hover */
+.programas-contenedor:hover .img-nohide {
+    display: none;
+}
+
+.programas-contenedor:hover .img-hide {
+    display: block; /* Obligatorio para que aparezca */
+    opacity: 1; 
+    
+}
+
+
+
+.programas:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.programas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #335a613f;
+  /* opcional, para dar uniformidad */
+  padding: 3px;
+  border-radius: 10px;
+  height: 100%;
+  /* fuerza al div a ocupar todo el alto posible */
+  font-size: 100%;
+  width: auto;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 22%;
+}
+
+
+.programas img {
+  width: 100%;
+  /* ESTA ES LA MAGIA DEL CLS */
+  aspect-ratio: 1 / 1;
+  /* O la proporción que tengan tus imágenes (4/3, 1/1, etc.) */
+  object-fit: cover;
+  /* Esto asegura que si la imagen no encaja, se recorte y no se deforme */
+  display: block;
+  /* Elimina un pequeño espacio en blanco fantasma que sale abajo de las imágenes */
+  background-image: url(https://i.pinimg.com/originals/a4/62/d1/a462d192479048db0f02f4466b900e0a.gif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+
+.programas a {
+  font-size: 0.8rem;
+  color: #021395;
+  transition: 0.5s;
+}
+
+.programas a:hover {
+  color: #449502;
+  padding: 1px 5px;
+  border-radius: 10px;
+  background-color: cornsilk;
+  transition: 0.5s;
+}
+
+.programas p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.paginacion-estilos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.paginacion-estilos button {
+  background-color: #335a61;
+  /* Usé un color parecido a tu fondo */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.paginacion-estilos button:hover {
+  background-color: #1a2f33;
+}
+
+/* Estilo para el botón de la página actual */
+.paginacion-estilos button.active {
+  background-color: #ff9800;
+  /* Un color que resalte (naranja ejemplo) */
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+/* Clase para cuando no hay programas */
+.no-resultados {
+  grid-column: 1 / -1;
+  /* TRUCO: Hace que ocupe todo el ancho del grid */
+  text-align: center;
+  padding: 50px;
+  color: #335a61;
+  /* Tu color temático */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.no-resultados p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+/* Estilos para los títulos con efecto de color animado */
+
+
+
+h1 {
+  font-size: 25px;
+  
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-image: linear-gradient(to right,
+      orangered,
+      orange, gold, lightgreen, rgb(255, 0, 149), rgb(31, 50, 156), rgb(138, 80, 255), hotpink, orangered);
+  background-size: 110vw;
+  background-clip: 10px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 24px rgb(251, 0, 255);
+  animation: color 240s linear infinite;
+}
+
+
+@keyframes color {
+  100% {
+    background-position: -2000vw;
+  }
+}
+
+.go-top-container {
+  position: fixed;
+  bottom: 2.5rem;
+  right: -1.5rem;
+  width: 7.6rem;
+  height: 7.6rem;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #1f6197;
+  cursor: pointer;
+  transition: 0.9s;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+
+.show {
+  z-index: 30;
+}
+
+.show .go-top-button {
+  animation: popup 0.8s ease-in-out;
+  width: 5.0rem;
+  height: 5.0rem;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/892/892550.png);
+  background-size: cover;
+  z-index: 20;
+}
+
+.go-top-button:hover {
+  background-color: #ff0000;
+  border: solid 5px #aefa97;
+  transition: .5s;
+}
+
+
+
+
+.btn-instagram {
+  position: static;
+  width: 4rem;
+  height: 4rem;
+  background: #1f6197;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.8s;
+
+}
+
+.btn-instagram:hover {
+  border: solid 6px #ffa1f7;
+  transition: 0.8s;
+}
+
+
+.btn-whatsapp {
+  position: static;
+  width: 4rem;
+  height: 4rem;
+  background: #1f6197;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.8s;
+
+}
+
+.btn-whatsapp:hover {
+  border: solid 4px #44ff54;
+  transition: 0.3s;
+}
+
+
+
+
+.formulario h4 {
+  font-size: 15px;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-image: linear-gradient(to left,
+      orangered, rgb(10, 250, 254), rgb(115, 0, 255), rgb(31, 50, 156), rgb(138, 80, 255), orangered);
+  background-size: 110vw;
+  background-clip: 110vw;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: color 240s linear infinite;
+}
+
+.formulario {
+
+  width: 290px;
+  background-color: rgba(255, 255, 255, 0.374);
+  height: 320px;
+  padding: 7px;
+  border-radius: 25px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: auto;
+
+
+  box-shadow: 2px 2px 10px 5px rgba(61, 238, 120, 0.74);
+}
+
+.formulario h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1d1b1b;
+  font-weight: 600;
+}
+
+.box-input {
+
+  border-bottom: 3px solid #66e7a7;
+  position: relative;
+  margin: 5px;
+  text-align: center;
+}
+
+.box-input input {
+  text-align: center;
+  font-size: 16px;
+  color: #100d0d;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 10px;
+}
+
+.box-input span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 25%;
+  left: 5px;
+  color: #000000;
+  transform: translateY(-150%);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.box-input span::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(120deg, #3498db, #8e44ad);
+  transition: .5s;
+}
+
+.focus+span::before {
+  top: -30px;
+}
+
+.focus+span::after {
+  width: 200%;
+}
+
+.boton {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #55c985;
+  border: solid 2px #2c9b5a;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.boton:hover {
+  background-color: #2F855A;
+  border: solid 2px #2F855A;
+  transition: .5s;
+}
+
+.img-buscar {
+
+  background-color: #09090900;
+  border: #09090900;
+  margin-bottom: -0.5rem;
+
+}
+
+.btn-buscar {
+  margin-top: -160px;
+  background-color: #09090900;
+  border: #09090900;
+
+}
+
+.toplistxd {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: none;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+
+.toplistxd:hover {
+  color: #d3d3d3;
+  background-color: rgb(72, 72, 72);
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: auto;
+}
+
+.list-ch {
+  color: rgb(255, 255, 255);
+  background-color: rgb(72, 72, 72);
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+
+.list-ch:hover {
+  color: #d3d3d3;
+  background-color: rgb(72, 72, 72);
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: auto;
+}
+
+
+
+
+.btn-redirigirN {
+  background-color: #51fc2e;
+  width: 150px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  /* Alineación horizontal al centro */
+  align-items: center;
+
+}
+
+
+/* Estilos de los proyectos */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.project {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.project img,
+.project video {
+  width: 100%;
+  border-bottom: 4px solid #646363;
+  border-radius: 8px;
+  border-style: dotted;
+}
+
+.project h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #fff9f9;
+  align-items: stretch;
+}
+
+.project p {
+  color: #f7f4f4;
+  font-size: 16px;
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+
+
+
+.projectDLSS {
+  background-color: #808080;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 4px 4px;
+  width: 70%;
+  max-width: 700px;
+}
+
+.projectDLSS img,
+.projectDLSS video {
+  width: 100%;
+  border-bottom: 4px solid #646363;
+  border-radius: 8px;
+}
+
+.projectDLSS ul,
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  align-items: stretch;
+  text-align: justify;
+}
+
+.code-container {
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+}
+
+code {
+  font-family: Consolas, "courier new";
+  color: rgb(220, 100, 20);
+  background-color: #2b2a2a;
+  padding: 2px;
+  font-size: 16px;
+
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+  font-size: 16px;
+}
+
+.dlssinfo {
+  background-color: #6b6b6b7b;
+  padding: 5px 2px 5px 5px;
+  border-radius: 8px;
+  font-family: monospace;
+  width: 95%;
+  margin: 5px auto;
+
+}
+
+.dlssinfo p {
+  margin-bottom: 10px;
+
+  text-align: justify;
+}
+
+aside {
+  color: #000000;
+  width: 30%;
+  margin: 10px auto;
+  background-color: #6b6b6b7b;
+  border-radius: 5px;
+
+}
+
+.comentariosDlSS {
+  background-color: rgba(44, 44, 44, 0.898);
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #005f99;
+}
+
+details {
+  padding: 5px 5px 5px 10px;
+  border-radius: 8px;
+  font-family: monospace;
+  width: 95%;
+  margin: 5px auto;
+}
+
+details[open] {
+  background-color: #ffffff7b;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Tipos de alerta */
+.toast.success {
+  background-color: #4CAF50;
+}
+
+.toast.error {
+  background-color: #f44336;
+}
+
+.toast-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toast-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. Agregamos suavidad al movimiento */
+header,
+.header-brand nav {
+  transition: top 0.4s ease-in-out;
+  /* Esto hace que suba y baje suavecito */
+  z-index: 1000;
+  /* Aseguramos que siempre esté encima de todo */
+}
+
+/* 2. Clase para cuando se esconden */
+/* Usamos !important para asegurar que sobreescriba tu 'top' original */
+.escondido {
+  top: -200px !important;
+  /* Los mandamos muy arriba, fuera de la pantalla */
+}
+
+
+
+
+
+
+/* Media Queries para Responsividad */
+
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1600px) {
+  #programas-contenedor {
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 0.7rem;
+  }
+
+  #programas {
+    padding-top: 130px;
+
+  }
+
+  #addons {
+    padding-top: 130px;
+  }
+
+  #videos {
+    padding-top: 130px;
+  }
+
+  #sugerencia {
+    padding-top: 130px;
+  }
+
+  #blenderDLSS {
+    padding-top: 130px;
+  }
+
+
+  .go-top-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #1f6197;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 3.0rem;
+    height: 3.0rem;
+
+  }
+
+  .datetime {
+    position: relative;
+    top: -140px;
+    left: 90px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1370px) {
+  #programas-contenedor {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 0.8rem;
+  }
+
+  #programas {
+    padding-top: 130px;
+
+  }
+
+  #addons {
+    padding-top: 130px;
+  }
+
+  #videos {
+    padding-top: 130px;
+  }
+
+  #sugerencia {
+    padding-top: 130px;
+  }
+
+  #blenderDLSS {
+    padding-top: 130px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+  .go-top-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #1f6197;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 3.0rem;
+    height: 3.0rem;
+
+  }
+
+  nav {
+    background-color: rgb(19, 19, 20);
+    text-align: center;
+    width: 100%;
+    height: 85px;
+    font-size: 1.2rem;
+  }
+
+  .whole-search-bar {
+    position: relative;
+    top: -150px;
+    left: 570px;
+    display: inline-block;
+    scale: 100%;
+  }
+
+  .escondido {
+    top: -250px !important;
+    /* Los mandamos muy arriba, fuera de la pantalla */
+  }
+
+  .datetime {
+    position: relative;
+    top: -140px;
+    left: 25px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1230px) {
+  #programas-contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 0.6rem;
+  }
+
+  #programas {
+    padding-top: 130px;
+
+  }
+
+  #addons {
+    padding-top: 130px;
+  }
+
+  #videos {
+    padding-top: 130px;
+  }
+
+  #sugerencia {
+    padding-top: 130px;
+  }
+
+  #blenderDLSS {
+    padding-top: 130px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+  .go-top-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #1f6197;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 3.0rem;
+    height: 3.0rem;
+
+  }
+
+
+  nav {
+    background-color: rgb(19, 19, 20);
+    text-align: center;
+    width: 100%;
+    height: 125px;
+    font-size: 1.2rem;
+  }
+
+  .whole-search-bar {
+    position: relative;
+    top: -150px;
+    left: -350px;
+    display: inline-block;
+    scale: 100%;
+  }
+
+  .escondido {
+    top: -250px !important;
+    /* Los mandamos muy arriba, fuera de la pantalla */
+  }
+
+  .datetime {
+    position: relative;
+    top: -140px;
+    left: -100px;
+    display: inline-block;
+  }
+}
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+  #programas-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 12px;
+  }
+
+  #programas {
+    padding-top: 140px;
+
+  }
+
+  #addons {
+    padding-top: 130px;
+  }
+
+  #videos {
+    padding-top: 130px;
+  }
+
+  #sugerencia {
+    padding-top: 130px;
+  }
+
+  #blenderDLSS {
+    padding-top: 130px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+  .nav-group {
+    display: table-cell;
+    inline-size: 1px;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+  }
+
+  .go-top-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #1f6197;
+    cursor: pointer;
+    transition: 0.9s;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .show .go-top-button {
+    animation: popup 0.8s ease-in-out;
+    width: 3.0rem;
+    height: 3.0rem;
+  }
+
+  .whole-search-bar {
+    position: relative;
+    display: inline-block;
+  }
+
+  .projectDLSS {
+    background-color: #808080;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 4px 4px;
+    width: 100%;
+  }
+}
+
+/* Opcional: aún más chico (teléfonos muy pequeños)
+@media (max-width: 480px) {
+  #programas-contenedor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #programas {
+    padding-top: 16rem;
+
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+    #addons {
+    padding-top: 14rem;
+  }
+
+  #videos {
+    padding-top: 14rem;
+  }
+  nav {
+  background-color: rgb(19, 19, 20);
+  text-align: center;
+  width: 100%;
+  height: 180px;
+  font-size: 1.2rem;
+}
+
+.whole-search-bar {
+  position: relative;
+  top: -30px;
+  left: -20px;
+  display: inline-block;
+  scale: 85%;
+}
+}
+ */
+/* Animaciones */
+
+@keyframes popup {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  50% {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  100% {
+    width: 3.0rem;
+    height: 3.0rem;
+  }
+}
+
+@keyframes appear {
+  from {
+
+    clip-path: inset(10% 10% 0 0);
+    transform: translatex(-200px);
+  }
+
+  to {
+
+    clip-path: inset(0 0 0 0);
+    transform: translatex(0px);
+  }
+}
+
+
+
+/* Contenedor principal */
+.carousel-gallery {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+aspect-ratio: 3/3.2;
+background-color: rgba(0, 0, 0, 0.379);
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* La fila que contiene todas las fotos */
+.carousel-track {  
+  display: flex;
+  width: 100%;
+  /* No pongas transition aquí todavía, el JS la pondrá */
+}
+
+/* Cada cuadro de imagen */
+.carousel-slide {
+  flex: 0 0 100%;
+  /* FIX: Esto evita que las imágenes se encimen */
+  min-width: 100%;
+  aspect-ratio: 1 / 1;
+  /* Mantiene el cuadrado perfecto */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  /* Llena el cuadro sin deformarse */
+  display: block;
+  border-radius: 10px;
+
+}
+
+/* El Overlay de información (Estilo Netflix) */
+.info-overlay {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.info-content {
+  color: white;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.info-content a {
+  color: rgb(118, 205, 71);
+
+}
+
+.modelo-tag {
+  color: white;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.btn-directo {
+  color: #449502;
+  padding: 1px 5px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.carousel-slide:hover .info-overlay {
+  opacity: 1;
+}
+
+.carousel-slide:hover img {
+  transform: scale(1.05);
+}
+
+/* Botones y Dots (Mantén los que ya tenías en tu código) */
+.carousel-btn {
+  transition: all 2s ease;
+  position: absolute;
+  top: 95%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #6666ed;
+  border: 3px solid #daf747;
+  color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: grab;
+}
+
+.carousel-btn:hover{
+  transition: all 0.5s ease;
+  color: #6666ed;
+  box-shadow: 0 0 5px rgb(242, 67, 255);
+  background: #daf747;
+  border: 3px solid #6666ed;
+  
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+/* Contenedor de los puntos */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Estilo de cada punto */
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #6666ed;
+}
+
+
+.dot:hover{
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgb(242, 67, 255);
+  background: rgb(46, 55, 222);
+  
+}
+
+/* Punto activo (el que estás viendo) */
+.dot.active {
+    background: #daf747; /* El color naranja/rojo de tus botones */
+    transform: scale(1.3);
+    box-shadow: 0 0 5px rgba(72, 59, 73, 0.8);
+}
+
+/* The entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  /* width of the vertical scrollbar */
+  height: 10px;
+  /* height of the horizontal scrollbar */
+  position: inherit;
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+  background: #b2b2b2;
+  border-radius: 10px;
+}
+
+/* The handle (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #442c2c;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* The handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9c408e;
+  transition: 0.5s;
+}
+
+
+/*Este Css es para el marquee, ya que el marquee que se tenia quedo obsoleto y se complementa con el codigo en JS*/
+.marquee-js {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(45deg,#2b2b2b, #2b2b2b, #363535, #2b2b2b, #2b2b2b);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.marquee-content-js {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+#progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  background: rgb(224, 115, 26);
+  height: 4px;
+
+  animation: progress-grow auto linear;
+  animation-timeline: scroll(root block);
+}
+@keyframes progress-grow{
+  0% { width: 0%}
+  100% { width: 100%}
+}

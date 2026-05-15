@@ -454,105 +454,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* Script para las funciones de saltar el video y eso */
         document.addEventListener('DOMContentLoaded', function () {
-            // Elementos principales
-            const modal = document.getElementById('invitacionModal');
-            const contenidoPrincipal = document.getElementById('contenidoPrincipal');
-            const btnAbrir = document.getElementById('btnAbrir');
-            const video = document.getElementById('videoInvitacion');
-            const pantallaInicial = document.getElementById('pantallaInicial');
-
-            // Elementos de navegación
-            const navBtns = document.querySelectorAll('.nav-btn');
-            const secciones = document.querySelectorAll('.seccion');
-
-            // Función para saltar al final del video
-            function skipToEnd() {
-                const video = document.getElementById('videoInvitacion');
-                video.pause();
-                video.currentTime = video.duration;
-                video.dispatchEvent(new Event('ended'));
-            }
-
-            // Llamar la función cuando quieras
-
-            // Variables para detectar doble tap
-            let lastTap = 0;
-            const doubleTapDelay = 300; // milisegundos entre taps
-
-            // 1. Manejar la apertura de la invitación
-            btnAbrir.addEventListener('click', function () {
-                abrirInvitacion();
-            });
-
-            function abrirInvitacion() {
-                // Ocultar la pantalla inicial y mostrar el video
-                pantallaInicial.style.display = 'none';
-                video.style.display = 'block';
-                video.play();
-
-                // Cuando el video termine, mostrar el contenido principal
-                video.onended = function () {
-                    cerrarModal();
-                };
-            }
-
-            function cerrarModal() {
-                // Efecto de desvanecimiento
-
-                modal.classList.add('desvanecer');
-                modal.classList.add('video-aparecer');
-
-                // Después de la animación, ocultar modal y mostrar contenido
-                setTimeout(function () {
-                    modal.style.display = 'none';
-                    contenidoPrincipal.style.display = 'block';
-
-                    // Pequeño retraso para la animación de entrada del contenido
-                    setTimeout(function () {
-                        contenidoPrincipal.style.opacity = '1';
-                    }, 50);
-                }, 500);
-            }
-
-            // Detectar doble tap en pantalla táctil
-            modal.addEventListener('touchend', function (e) {
-                const currentTime = new Date().getTime();
-                const tapLength = currentTime - lastTap;
-
-                if (tapLength < doubleTapDelay && tapLength > 0) {
-                    // Doble tap detectado
-                    e.preventDefault();
-                    if (video.style.display === 'block') {
-                        cerrarModal();
-                        skipToEnd();// Saltar al final del video
-                    } else {
-                        abrirInvitacion();
-                    }
-                }
-                lastTap = currentTime;
-            });
-
-            // 2. Navegación entre secciones
-            navBtns.forEach(btn => {
-                btn.addEventListener('click', function () {
-                    const seccionObjetivo = this.getAttribute('data-seccion');
-
-                    // Actualizar botones activos
-                    navBtns.forEach(b => b.classList.remove('activo'));
-                    this.classList.add('activo');
-
-                    // Mostrar sección correspondiente
-                    secciones.forEach(seccion => {
-                        seccion.classList.remove('activa');
-                        if (seccion.id === `seccion-${seccionObjetivo}`) {
-                            setTimeout(() => {
-                                seccion.classList.add('activa');
-                            }, 50);
-                        }
-                    });
-                });
-            });
-
             // 3. Manejar el envío del formulario a WhatsApp
             const formulario = document.querySelector('.formulario-confirmacion');
             if (formulario) {
@@ -592,7 +493,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     mensaje += '%0A%0A*XV Años |* Luis Ángel Mora Ramírez%0A%0A*Fecha:* 11 de Enero 2026%0A%0A*Ceremonia:* 01:45 PM en Parroquia de San Buenaventura%0A%0A*Recepción:* 04:00 PM en Boutique y Regalos "Pablin"%0A';
 
                     // Número de teléfono (reemplaza con el número real)
-                    const telefono = '525620881515'; // ← CAMBIA ESTE NÚMERO
+                    const telefono = '525620886202'; // ← CAMBIA ESTE NÚMERO
 
                     // Crear el enlace de WhatsApp
                     const urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
@@ -604,16 +505,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert('¡Redirigiendo a WhatsApp! Completa el envío del mensaje por favor.');
                 });
             }
-
-            // 4. Opcional: Permitir saltar el video con tecla Escape
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' || e.key === 'Enter' && modal.style.display !== 'none') {
-                    modal.style.display = 'none';
-                    contenidoPrincipal.style.display = 'block';
-                    skipToEnd();
-                }
-            });
-        });
 
 
 
