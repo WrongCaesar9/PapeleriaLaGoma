@@ -759,7 +759,28 @@
             "modelo": "Edición",
             "fecha":"2026-04-07"
         },
-
+        {
+            "titulo":"DaVinci Resolve 20",
+            "description": "Software profesional de edición de video, corrección de color, postproducción de audio y efectos visuales.",
+            "img": "https://imgproxy.domestika.org/unsafe/w:1200/rs:fill/plain/src://blog-post-open-graph-covers/000/002/401/2401-original.jpg?1641566999",
+            "imgHover": "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/cbb6172e-febf-445d-a9d5-8dcf1990d5c0.gif?ClientID=sulu&Date=1740347824&Signature=a1a07d7c7d2f9972b53f269cfb8864f462e21951",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://www.blackmagicdesign.com/mx/products/davinciresolve",
+            "modelo": "Edición",
+            "fecha":"2026-05-18"
+        },
+        {
+            "titulo":"EbSynth",
+            "description": "Aplicación de software gratuita que le permite animar material de archivo existente utilizando solo unos pocos fotogramas clave con estilo.",
+            "img": "https://ebsynth.com/img/ebsynth-icon-shadow.png",
+            "imgHover": "",
+            "iframeHover": "https://www.youtube.com/embed/Ki9NVyD3It4?si=ztSquqTjqTN24MWN",
+            "vidHover": "",
+            "enlace": "https://ebsynth.com/app",
+            "modelo": "Edición",
+            "fecha":"2026-05-18"
+        },
 
 
 
@@ -1006,6 +1027,17 @@
             "modelo": "Juegos",
             "fecha":"2026-05-18"
         },
+        {
+            "titulo":"Strudel",
+            "description": "Entorno de programación y software gratuito de código abierto que permite crear y modificar música en tiempo real escribiendo código (una práctica conocida como live coding o codificación en vivo).",
+            "img": "https://algorithmicpattern.org/wp-content/uploads/sites/11/2023/05/strudel.png",
+            "imgHover": "https://www.possibilityspace.org/cc/images/strudel.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://strudel.cc/",
+            "modelo": "Juegos",
+            "fecha":"2026-05-18"
+        },
 
 
 
@@ -1224,7 +1256,7 @@
             "vidHover": "",
             "enlace": "https://svgomg.net/",
             "modelo": "Herramientas",
-            "fecha":"2026-03-01"
+            "fecha":"2026-05-18"
         },        
         {
             "titulo":"PineTools",
@@ -3673,7 +3705,7 @@
             "vidHover": "",
             "enlace": "https://supabase.com/",
             "modelo": "Desarrollo Web",
-            "fecha":"2026-04-23"
+            "fecha":"2026-05-18"
         },
 
 
