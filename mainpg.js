@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     // Obtener el menú lateral y los enlaces
     const sidebar = document.querySelector('.sidebar');
@@ -682,7 +681,7 @@ function copyCode(button) {
 
 Código de fecha de actualización
 document.getElementById("fecha-actualizacion").textContent = "Última actualización: 09/09/2025 01:42:33";*/
-const dateText = "2026/05/08";
+const dateText = "2026/05/18";
 const hourText = "15:05"
 const dateContenedor = document.getElementById("date-update");
 dateContenedor.innerHTML = "<p style=\"font-size: 18px;\">Copyright © 2026 \"La Goma\"</p>"+"<p style=\"font-size: 16px;\">Última actualización: "+ dateText + " a las: " + hourText + "</p>";

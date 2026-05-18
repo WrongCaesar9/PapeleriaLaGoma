@@ -995,6 +995,17 @@
             "modelo": "Juegos",
             "fecha":"2026-03-29"
         },
+        {
+            "titulo":"ROMSFUN.COM",
+            "description": "Sitio web de descargas no oficial que ofrece ROMs e imágenes ISO de videojuegos para diferentes consolas (como Nintendo, PlayStation, Sega, Xbox).",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6nif8nKjLrV1V165uGssC2T4hpjVbR9lkZQ&s",
+            "imgHover": "https://i.ytimg.com/vi/nhHWEsmuXbo/maxresdefault.jpg",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://romsfun.com/",
+            "modelo": "Juegos",
+            "fecha":"2026-05-18"
+        },
 
 
 
@@ -1195,12 +1206,23 @@
         },
         {
             "titulo":"Tinify",
-            "description": "Smart AVIF, WebP, PNG and JPEG Compression for Faster Websites",
-            "img": "impg/tinify.png",
-            "imgHover": "",
+            "description": "Smart AVIF, WebP, PNG and JPEG Compression for Faster Websites.",
+            "img": "https://tinypng.com/images/social/website.jpg",
+            "imgHover": "https://blog.tinify.com/wp-content/uploads/2024/08/gif-batch-converter.gif",
             "iframeHover": "",
             "vidHover": "",
             "enlace": "https://tinypng.com/",
+            "modelo": "Herramientas",
+            "fecha":"2026-03-01"
+        }, 
+        {
+            "titulo":"SVGOMG",
+            "description": "Herramienta Web gratuita que funciona como una interfaz visual (GUI) para SVGO, permitiendo optimizar y comprimir archivos SVG de manera sencilla y visual.",
+            "img": "https://jakearchibald.github.io/svgomg/imgs/icon.png",
+            "imgHover": "https://miro.medium.com/v2/resize:fit:1400/1*QOMMtOm57yMMo5ClFjtLyQ.gif",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://svgomg.net/",
             "modelo": "Herramientas",
             "fecha":"2026-03-01"
         },        
@@ -3641,7 +3663,18 @@
             "enlace": "https://vercel.com/home",
             "modelo": "Desarrollo Web",
             "fecha":"2026-04-23"
-        }, 
+        },  
+        {
+            "titulo":"supabase",
+            "description": "Supabase is the Postgres development platform. Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings.",
+            "img": "https://cdn.prod.website-files.com/6088303c28a7c75678aa21d8/6896089af02a14234d22792b_logo1.jpg",
+            "imgHover": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/e77c95fd-1c08-44f3-a956-e500b82e62db/e0072-fluxo-animado.gif?t=1743965619",
+            "iframeHover": "",
+            "vidHover": "",
+            "enlace": "https://supabase.com/",
+            "modelo": "Desarrollo Web",
+            "fecha":"2026-04-23"
+        },
 
 
 
